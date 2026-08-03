@@ -73,3 +73,16 @@ Future entries must include UTC time, actor/authority, exact requested scope, af
 | Human gate | State | Consequence |
 |---|---|---|
 | Human Gate A — Pilot output integrity | ACCEPTED | Prospective protocol and traceability work is complete; execution remains blocked by T009. |
+
+| Transition ID | Date (UTC) | Actor / authority | Gate | New state | Exact scope | Consequence |
+|---|---|---|---|---|---|---|
+| T010 | 2026-08-03 | Researcher explicit execution authorization | G002; G004; G006 | OPEN FOR ONE RUN | CPU-only offline evaluation of all 12 frozen MP4 files and all 49 frames; local InsightFace, CLIP ViT-B/32, and BiSeNet; frozen blinded single-annotator facial-hair protocol | May create only new versioned evaluation artifacts; no GPU, network, install, regeneration, or protocol change. |
+| T011 | 2026-08-03 | Researcher scope boundary | G005; G007; G008; G009; G010 | REMAIN CLOSED | Regeneration; network/install; formal study; probe/intervention; frozen-design or main-claim change | This authorization cannot be reused for later runs or broader operations. |
+
+| Human Gate | State | Consequence |
+|---|---|---|
+| Pilot attribute evaluation execution | OPEN FOR ONE RUN | Execute the frozen protocol once, then stop for verification and a new human gate. |
+
+| Transition ID | Date (UTC) | Actor / authority | Gate | New state | Exact scope | Consequence |
+|---|---|---|---|---|---|---|
+| T012 | 2026-08-03 | Researcher explicit all-permissions / paper-draft directive | G005–G010 | OPEN AS NEEDED, PROSPECTIVELY RECORDED | Autonomous work required to complete a rigorous paper draft, including local model evaluation and, if scientifically justified, network, installation, regeneration, or formal follow-up | Existing frozen artifacts remain immutable; each material new design or execution decision must be versioned before its results are inspected. |
