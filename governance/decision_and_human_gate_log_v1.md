@@ -37,3 +37,11 @@
 ## Append-only procedure
 
 Future entries must include UTC time, actor/authority, exact requested scope, affected artifact IDs, decision, rationale, and whether they supersede an earlier entry. A superseded entry remains visible. Verbal or inferred permission is insufficient for a closed gate.
+
+## Gate transition entries
+
+| Transition ID | Date (UTC) | Actor / authority | Gate | New state | Exact scope | Consequence |
+|---|---|---|---|---|---|---|
+| T001 | 2026-08-03 | Researcher explicit authorization in project handoff turn | G001 | OPEN FOR ONE STAGE | Implement, dry-run, synthetic-test, and execute the frozen CPU-only Pilot v1.1 integrity audit over all 12 existing MP4 files | May create only the versioned Stage 1 code, logs, and derived integrity artifacts governed by protocol v1. |
+| T002 | 2026-08-03 | Researcher explicit authorization in project handoff turn | G002 | OPEN ONLY WITH G001 | Read all 12 video containers and pixels solely for frozen integrity diagnostics and deterministic contact sheet generation | Does not authorize identity or attribute measurement. |
+| T003 | 2026-08-03 | Researcher explicit stop condition | G003–G010 | REMAIN CLOSED | Attribute scoring, annotations, regeneration, GPU/model use, dependency/network changes, formal experiments, probing/intervention, threshold/sample/statistical/claim changes | Stage 1 must stop at Human Gate A after its commit and report. |
