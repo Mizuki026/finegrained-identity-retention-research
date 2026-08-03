@@ -15,3 +15,8 @@ def test_roi_is_inside_parser_grid():
     _, _, _, _, x0, y0, x1, y1 = geometry
     assert 0 <= x0 < x1 <= 512
     assert 0 <= y0 < y1 <= 512
+
+def test_eyeglasses_expected_label_mapping():
+    assert mod.expected_match("eyeglasses", "present", "positive") == "True"
+    assert mod.expected_match("eyeglasses", "absent", "negative") == "True"
+    assert mod.expected_match("eyeglasses", "present", "negative") == "False"

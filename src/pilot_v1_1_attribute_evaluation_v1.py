@@ -150,6 +150,16 @@ def expected_ref_lstar(sample):
     records=json.load(open(HAIR_SPEC))["reference_audit_result"]["records"]
     return next((r["L_median"] for r in records if r["identity"]==sample["identity"]),None)
 
+def expected_match(attribute, prediction, manifest_label):
+    """Map the frozen manifest condition vocabulary to each instrument vocabulary."""
+    if not prediction:
+        return ""
+    if attribute == "eyeglasses":
+        target = {"positive": "present", "negative": "absent"}.get(manifest_label)
+        if target is None: fail(f"unexpected eyeglasses manifest label: {manifest_label}")
+        return str(prediction == target)
+    return str(prediction == manifest_label)
+
 def summarize(rows, manifest, run):
     import math, statistics
     out=[]
@@ -170,12 +180,12 @@ def summarize(rows, manifest, run):
     return out
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument("--mode",choices=["dry-run","run"],required=True); ap.add_argument("--run-dir",type=Path,required=True); args=ap.parse_args(); synthetic_tests()
+    ap=argparse.ArgumentParser(); ap.add_argument("--mode",choices=["dry-run","run"],required=True); ap.add_argument("--run-dir",type=Path,required=True); ap.add_argument("--run-id",default="pilot_v1_1_attribute_evaluation_v1"); args=ap.parse_args(); synthetic_tests()
     manifest,imap=preflight(args.run_dir)
     if args.mode=="dry-run": print(json.dumps({"status":"PREFLIGHT_PASS","samples":12,"frames":588,"attributes":3,"no_models_loaded":True},indent=2)); return
     import cv2, numpy as np
     args.run_dir.mkdir(parents=True); log=open(args.run_dir/"attribute_evaluation_v1.log","x",encoding="utf-8"); log.write(f"{now()} RUN_START\n")
-    run="pilot_v1_1_attribute_evaluation_v1"; torch,clip,processor,face,parser=load_models(); spec=json.load(open(GLASSES_SPEC)); protos=clip_prototypes(torch,clip,processor,spec)
+    run=args.run_id; torch,clip,processor,face,parser=load_models(); spec=json.load(open(GLASSES_SPEC)); protos=clip_prototypes(torch,clip,processor,spec)
     rows=[]; ann=[]; random.seed(20260803)
     for sample in manifest:
       sid=sample["sample_id"]; cap=cv2.VideoCapture(imap[sid]["observed_video_path"])
@@ -190,7 +200,8 @@ def main():
           if attr=="eyeglasses":
             try:
               pp,pn,margin,box,_=score_glasses(torch,clip,processor,frame,selected.bbox,protos); pred="present" if margin>0 else ("absent" if margin<0 else "")
-              set_status(r,"VALID_OBSERVABLE","","",f"largest_face_bbox={','.join(f'{x:.1f}' for x in selected.bbox)};crop={box}"); r.update(eyeglasses_p_present=f"{pp:.8f}",eyeglasses_p_absent=f"{pn:.8f}",eyeglasses_margin=f"{margin:.8f}",eyeglasses_predicted_label=pred,eyeglasses_expected_label_match=str(pred==sample['label']) if sample['attribute']==attr and pred else "")
+              set_status(r,"VALID_OBSERVABLE","","",f"largest_face_bbox={','.join(f'{x:.1f}' for x in selected.bbox)};crop={box}")
+              r.update(eyeglasses_p_present=f"{pp:.8f}",eyeglasses_p_absent=f"{pn:.8f}",eyeglasses_margin=f"{margin:.8f}",eyeglasses_predicted_label=pred,eyeglasses_expected_label_match=expected_match(attr,pred,sample['label']) if sample['attribute']==attr else "")
             except Exception as e: set_status(r,"PIPELINE_FAILURE","EYEGLASSES_SCORING_ERROR","",type(e).__name__)
           elif attr=="hair_color":
             try:
