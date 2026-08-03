@@ -69,3 +69,18 @@ Do not claim that:
 3. Stop if the integrity gate fails; preserve all failures and request a research decision rather than excluding or regenerating samples.
 4. Only after integrity review may a separate authorization start frame-level observability, identity, or attribute evaluation.
 5. Pilot go/no-go must precede formal experiments, probing, intervention, and method development.
+
+## Stage 1 evidence update — 2026-08-03 UTC
+
+This section supersedes only the temporal cutoff in F007–F008. It does not alter any frozen input, protocol, threshold, hypothesis, or scientific claim boundary.
+
+| ID | Class | Statement | Evidence | Boundary |
+|---|---|---|---|---|
+| F010 | Fact | The CPU-only Pilot v1.1 output-integrity audit completed over all twelve frozen MP4 files under protocol v1 and assigned PASS to 12/12 videos and the Pilot aggregate. | `video_integrity_audit_v1.csv` SHA256 `a762dcf9d3b85334d557fbdb223594689d926b7f4e8e703f3432f17911c118d5`; `pilot_output_audit_v1.json` SHA256 `616373e6e5e63e039ac3fabc12c09fe8f1eff0d47f850de4ae32b7740be1fc32` | Engineering integrity only; it does not measure identity or attribute retention and does not test H1–H4. |
+| F011 | Fact | OpenCV and Decord each fully decoded 49 frames per video; all twelve videos reported 8.0 FPS, 6.125 seconds, and 720×480 resolution. The frame inventory contains 588 data rows. | Video-level and frame-level audit tables plus execution log | Frame-level observations are correlated diagnostics and are not independent experimental units. |
+| D011 | Diagnostic | Frozen thresholds flagged zero corrupt frames, black frames, exact duplicate transitions, near-duplicate transitions, frozen runs, and static-video anomalies. | Audit tables and independent aggregate verification | Absence of these gross technical anomalies is not evidence that an attribute is preserved. |
+| D012 | Diagnostic | The deterministic five-frame-per-video contact sheet showed twelve visible and internally coherent sequences with no obvious blank, broken, wholly static, or cross-row duplicated sequence. | `pilot_video_contact_sheet_v1.png` SHA256 `e26e58b2455f98c288417b58a7605854564dd846b5bb718ec5d2326c4c6e34e5`; engineering-only human review | This was not an identity or attribute review and cannot replace the numerical audit. |
+| F012 | Fact | An independent no-decode verifier reproduced the sample set, path and byte-hash mappings, schemas, row counts, per-frame aggregates, video status precedence, Pilot summary, checksum manifest, and PNG structure; it returned PASS. | `independent_verification_v1.json` SHA256 `12075e958cf16c6345be5f3d46a024fcedc91e8a4cbe9f8c1f62faf128ae2b83` | The verifier did not independently decode containers; dual-decoder evidence remains in the producer output and log. |
+| R001 | Research decision | Stage 1 is complete and work stops at Human Gate A. Attribute/identity evaluation remains closed pending explicit researcher review and authorization. | Researcher stop condition and gate log | H1–H4 remain untested hypotheses. |
+
+There were no missing samples, damaged files, integrity reason codes, or protocol deviations in Stage 1. This statement is bounded to the frozen integrity rules and is not a Pilot scientific conclusion.

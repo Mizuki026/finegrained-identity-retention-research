@@ -1,0 +1,25 @@
+{
+  "audit_id": "pilot_v1_1_video_integrity_audit_v1",
+  "captured_at_utc": "2026-08-03T06:35:59.842787+00:00",
+  "cuda_visible_devices": "",
+  "decord_context": "cpu(0)",
+  "dependencies_installed": false,
+  "disk_free_bytes_at_preflight": 286746116096,
+  "gpu_accessed": false,
+  "model_loaded": false,
+  "network_used": false,
+  "opencv_threads": 1,
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "python_executable": "/root/autodl-tmp/envs/consisid-pilot/bin/python",
+  "research_pipeline_git_commit": "52a0650aab6065ae20e894f62136517e2205aaa0",
+  "schema_version": 1,
+  "torch_imported": false,
+  "upstream_consisid_git_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "versions": {
+    "decord": "0.6.0",
+    "numpy": "1.26.4",
+    "opencv": "4.10.0",
+    "pillow": "10.4.0",
+    "python": "3.11.15"
+  }
+}

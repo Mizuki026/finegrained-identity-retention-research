@@ -45,3 +45,11 @@ Future entries must include UTC time, actor/authority, exact requested scope, af
 | T001 | 2026-08-03 | Researcher explicit authorization in project handoff turn | G001 | OPEN FOR ONE STAGE | Implement, dry-run, synthetic-test, and execute the frozen CPU-only Pilot v1.1 integrity audit over all 12 existing MP4 files | May create only the versioned Stage 1 code, logs, and derived integrity artifacts governed by protocol v1. |
 | T002 | 2026-08-03 | Researcher explicit authorization in project handoff turn | G002 | OPEN ONLY WITH G001 | Read all 12 video containers and pixels solely for frozen integrity diagnostics and deterministic contact sheet generation | Does not authorize identity or attribute measurement. |
 | T003 | 2026-08-03 | Researcher explicit stop condition | G003–G010 | REMAIN CLOSED | Attribute scoring, annotations, regeneration, GPU/model use, dependency/network changes, formal experiments, probing/intervention, threshold/sample/statistical/claim changes | Stage 1 must stop at Human Gate A after its commit and report. |
+| T004 | 2026-08-03 | Stage completion under T001–T002 | G001–G002 | CLOSED | The authorized 12/12 CPU-only integrity audit and contact-sheet creation are complete | No further video decoding or pixel reading is authorized in this stage. |
+| T005 | 2026-08-03 | Researcher explicit stop condition plus completed Stage 1 evidence | Human Gate A | AWAITING RESEARCHER DECISION | Review PASS 12/12 audit outputs, zero frozen-threshold anomalies, independent verification, and engineering-only contact sheet | G003 remains closed; no identity or attribute evaluation may start without a new explicit authorization. |
+
+## Human review gates
+
+| Human gate | State | Evidence package | Allowed next action |
+|---|---|---|---|
+| Human Gate A — Pilot output integrity | AWAITING RESEARCHER DECISION | `derived/pilot_v1_1/video_integrity_audit_v1/`; producer commit `52a0650aab6065ae20e894f62136517e2205aaa0`; independent verification SHA256 `12075e958cf16c6345be5f3d46a024fcedc91e8a4cbe9f8c1f62faf128ae2b83` | Researcher may accept, reject, or request a prospective follow-up. Attribute evaluation remains unauthorized until acceptance plus separate scope approval. |

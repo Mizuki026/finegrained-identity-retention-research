@@ -1,0 +1,57 @@
+{
+  "anomaly_counts": {
+    "black_frames": 0,
+    "corrupt_frames": 0,
+    "exact_duplicate_transitions": 0,
+    "near_duplicate_transitions": 0,
+    "videos_with_frozen_run": 0,
+    "videos_with_static_anomaly": 0
+  },
+  "audit_checksum_manifest_sha256": "9581c8c2a23575cf39d101940ecb85c69025cb2c23a0683f0f99db585e00a1bf",
+  "contact_sheet_png_dimensions": [
+    1200,
+    2280
+  ],
+  "frame_inventory_row_count": 588,
+  "gpu_used": false,
+  "method": "independent_no_decode_cross_file_and_sha256_verification",
+  "models_loaded": false,
+  "network_used": false,
+  "pilot_status": "PASS",
+  "reason_codes": {},
+  "sample_count": 12,
+  "sample_ids": [
+    "01_eyeglasses_positive_kaiming_he_s4",
+    "02_eyeglasses_positive_yann_lecun_s4",
+    "03_eyeglasses_negative_andrew_ng_s4",
+    "04_eyeglasses_negative_lei_jun_s5",
+    "05_facial_hair_positive_yoshua_bengio_s4",
+    "06_facial_hair_positive_leonardo_dicaprio_s4",
+    "07_facial_hair_negative_turing_s4",
+    "08_facial_hair_negative_jackie_chan_s5",
+    "09_hair_color_light_taylor_swift_s1",
+    "10_hair_color_light_elizabeth_olsen_s5",
+    "11_hair_color_dark_liu_shishi_s2",
+    "12_hair_color_dark_anne_hathaway_s2"
+  ],
+  "schema_version": 1,
+  "scientific_boundary": "Engineering verification only; no attribute, identity, H1-H4, or mechanism claim.",
+  "status": "PASS",
+  "verification_id": "pilot_v1_1_video_integrity_independent_verification_v1",
+  "verified_at_utc": "2026-08-03T06:36:24.275585+00:00",
+  "verified_output_sha256": {
+    "README.md": "48fdf832e335090a20283638e6ac6506bac0bec1df4eb7511d81ac16d0172255",
+    "frame_inventory_v1.csv": "a6f74cf8a7013f7bc621bc71de3c22609e91b21a290f3b2d1c2ba082a2524c27",
+    "input_output_sha256_v1.csv": "9581c8c2a23575cf39d101940ecb85c69025cb2c23a0683f0f99db585e00a1bf",
+    "pilot_output_audit_v1.json": "616373e6e5e63e039ac3fabc12c09fe8f1eff0d47f850de4ae32b7740be1fc32",
+    "pilot_video_contact_sheet_v1.png": "e26e58b2455f98c288417b58a7605854564dd846b5bb718ec5d2326c4c6e34e5",
+    "run_environment_v1.json": "e3da8e8906b952601f12ae6c39a733bca89b2273e02edbc5748c861337ca3557",
+    "video_integrity_audit_v1.csv": "a762dcf9d3b85334d557fbdb223594689d926b7f4e8e703f3432f17911c118d5",
+    "video_integrity_audit_v1.log": "e9fe2bd65fc7c7b7a6b07813198f0d252ce78f2b0b7ea5ac5e52df12775a1f90"
+  },
+  "video_container_opened": false,
+  "video_pixels_read": false,
+  "video_status_counts": {
+    "PASS": 12
+  }
+}
