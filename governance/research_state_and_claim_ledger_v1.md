@@ -84,3 +84,10 @@ This section supersedes only the temporal cutoff in F007–F008. It does not alt
 | R001 | Research decision | Stage 1 is complete and work stops at Human Gate A. Attribute/identity evaluation remains closed pending explicit researcher review and authorization. | Researcher stop condition and gate log | H1–H4 remain untested hypotheses. |
 
 There were no missing samples, damaged files, integrity reason codes, or protocol deviations in Stage 1. This statement is bounded to the frozen integrity rules and is not a Pilot scientific conclusion.
+
+## Post-Human-Gate-A update — 2026-08-03 UTC
+
+| ID | Class | Statement | Evidence | Boundary |
+|---|---|---|---|---|
+| R002 | Research decision | The researcher accepted Human Gate A and authorized autonomous progression toward a paper draft under the already frozen integrity result and all existing evidence controls. | Active-conversation directive and gate-log D011/T006 | This authorizes prospective governance, protocol, code, record, and manuscript preparation; it does not turn H1–H4 into findings. |
+| R003 | Research decision | Model/GPU, network/install, regeneration, formal experiments, probes/interventions, frozen-design changes, and unblinded facial-hair annotation remain operation-specific gates. | Gate-log D012 | No broad instruction can justify silent scope expansion at execution time. |

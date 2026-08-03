@@ -53,3 +53,13 @@ Future entries must include UTC time, actor/authority, exact requested scope, af
 | Human gate | State | Evidence package | Allowed next action |
 |---|---|---|---|
 | Human Gate A — Pilot output integrity | AWAITING RESEARCHER DECISION | `derived/pilot_v1_1/video_integrity_audit_v1/`; producer commit `52a0650aab6065ae20e894f62136517e2205aaa0`; independent verification SHA256 `12075e958cf16c6345be5f3d46a024fcedc91e8a4cbe9f8c1f62faf128ae2b83` | Researcher may accept, reject, or request a prospective follow-up. Attribute evaluation remains unauthorized until acceptance plus separate scope approval. |
+
+## Post-Stage-1 authorization entries
+
+| Decision ID | Date (UTC) | Status | Decision | Basis / authority | Consequence |
+|---|---|---|---|---|---|
+| D011 | 2026-08-03 | Active | The researcher accepted Human Gate A and authorized autonomous progression through a paper draft under all existing evidence, immutability, and fail-closed rules. | Explicit researcher directive in the active conversation | Governance, prospective protocol/code preparation, evidence organization, and manuscript infrastructure may proceed without per-microstep approval. |
+| D012 | 2026-08-03 | Active | The autonomy directive does not silently waive operation-specific protections. | Existing AGENTS and safety policy remain in force | Model/GPU, network/install, regeneration, formal compute, probe/intervention, frozen-design change, and unblinded human annotation need their own recorded scope decision before execution. |
+
+| Transition ID | Date (UTC) | Actor / authority | Gate | New state | Exact scope | Consequence |
+|---|---|---|---|---|---|---|

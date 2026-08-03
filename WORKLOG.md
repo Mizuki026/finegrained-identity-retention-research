@@ -22,3 +22,10 @@
 - **Diagnostic:** Engineering-only contact-sheet review found no obvious blank, broken, wholly static, or cross-row duplicated sequence. Identity and attribute labels were not evaluated.
 - **Fact:** No GPU or model was loaded; no network access or dependency installation occurred; no video was regenerated; no frozen artifact was modified, moved, deleted, or overwritten.
 - **Research decision:** G001 and G002 are closed. G003–G010 remain closed. Work stops at Human Gate A pending researcher review.
+
+## 2026-08-03 — Autonomous-work directive and record infrastructure
+
+- **Research decision:** The researcher accepted Human Gate A and authorized autonomous progression through a paper draft under the existing scientific and safety rules.
+- **Research decision:** Protocol/code preparation, provenance organization, and manuscript infrastructure may proceed. Model/GPU, network/install, regeneration, formal compute, probes/interventions, and unblinded human annotation remain separately gated.
+- **Fact:** The requested Windows path is not mounted in this Linux environment. A versioned Chinese Markdown source and a locally generated DOCX snapshot will be maintained in research_pipeline/research_record/vN/ for export.
+- **Fact:** No existing document-generation tool or python-docx package was available; no dependency installation was attempted.

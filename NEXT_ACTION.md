@@ -1,21 +1,19 @@
 # Next Action
 
-## Stop point
+## Current authorized stage
 
-Stage 1 is complete. The project is stopped at **Human Gate A — Pilot output integrity**, state `AWAITING RESEARCHER DECISION`.
+Human Gate A is accepted. The current authorized stage is prospective Pilot attribute-evaluation and analysis planning plus paper-traceability infrastructure.
 
-Evidence package:
+Create and freeze, before any new attribute-result inspection:
 
-- `derived/pilot_v1_1/video_integrity_audit_v1/`
-- Pilot engineering-integrity status: `PASS` (12/12)
-- independent verification: `PASS`
-- missing, damaged, and protocol-deviation counts: zero
-- H1–H4: untested
+1. a versioned execution protocol that fixes inputs, frame handling, outputs, schemas, error states, and quality controls;
+2. a versioned statistical/claim plan that preserves the Pilot as exploratory and prevents correlated frames from becoming independent samples;
+3. claim–evidence, number provenance, figure/table, lineage, citation-verification, and Chinese research-record infrastructure.
 
-## Researcher decision required
+## Gates still required before execution
 
-The researcher may accept Human Gate A, reject it, or request a separately versioned prospective follow-up. Acceptance alone does not authorize attribute evaluation: a new explicit scope must define which frozen evaluation protocol steps are authorized and any required human-review materials.
+Do not newly decode evaluation frames, load any model or GPU, perform facial-hair annotation, access the network/install dependencies, regenerate, begin a formal experiment, probe/intervene, or change a frozen research decision unless the applicable gate has an explicit recorded scope.
 
-## Closed operations
+## Scientific boundary
 
-Do not decode videos again or begin identity/attribute scoring, facial-hair annotation, Pilot scientific interpretation, regeneration, formal experiments, model/GPU loading, probing, intervention, method work, or paper-result writing without new explicit authorization.
+H1–H4 remain untested. Stage 1 PASS is only evidence of engineering integrity.
