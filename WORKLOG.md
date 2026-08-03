@@ -37,3 +37,8 @@
 - **Research decision:** The planned universe is all 12 videos and all 49 original frame indices per video; frames remain correlated observations and cannot be used as independent sample size.
 - **Research decision:** The Pilot is descriptive only; it cannot produce a composite retention score, confirmatory test, causal conclusion, general metric validation, or H1-H4 finding.
 - **Fact:** Claim-evidence, number provenance, figure/table, experiment-lineage, and citation-verification tables were initialized in a versioned paper traceability directory.
+
+## 2026-08-03 — Record v2 and execution gate
+
+- **Fact:** Chinese record v2 and its DOCX snapshot were generated locally and passed Office Open XML ZIP validation; neither process read a frozen research artifact nor used a model, GPU, network, or installation.
+- **Research decision:** G003 planning scope is complete. T009 retains G002, G004, G006, G007, G008, G009, and G010 as closed execution gates.

@@ -1,0 +1,12 @@
+{
+  "cpu_only": true,
+  "frozen_artifacts_read": false,
+  "generated_at_utc": "2026-08-03T07:28:52.457765+00:00",
+  "models_loaded": false,
+  "network_used": false,
+  "output": "/root/autodl-tmp/finegrained/research_pipeline/research_record/v2/research_activity_record_zh_v2.docx",
+  "output_sha256": "e016e4f5671774ad665ae8880621a83d572a403e290a8cc4ce046b134433c481",
+  "source": "/root/autodl-tmp/finegrained/research_pipeline/research_record/v2/research_activity_record_zh_v2.md",
+  "source_sha256": "7634da8b4414d645b6b191c1b6537ffbcf870bc6e2f05391f14fa3fa652f93a9",
+  "status": "PASS"
+}
