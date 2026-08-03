@@ -1,0 +1,8 @@
+artifact_id,path,role,parent_lineage,sha256,immutable,status,notes
+AE-V1-INVALID,derived/pilot_v1_1/attribute_evaluation_v1,invalid_derived_run,manifest;integrity_audit,NA,true,invalid,Expected-label vocabulary mapping bug; preserve but do not analyze
+AE-V2-AUDIT,derived/pilot_v1_1/attribute_evaluation_v2/attribute_execution_audit_v1.json,derived_execution_audit,manifest;integrity_audit;frozen_protocol;ROI_addendum,030990c00d6e782dd095f6da545efd6f4399384d6ac4dca5a2f540b29feaaad8,true,verified,CPU-only offline complete
+AE-V2-FRAMES,derived/pilot_v1_1/attribute_evaluation_v2/attribute_frame_inventory_v1.csv,derived_frame_measurements,AE-V2-AUDIT,805df7257f1d207a1d693a21337b79e65269246a3fffbcdee3555569cd0e06d3,true,verified,1764 rows
+AE-V2-SUMMARY,derived/pilot_v1_1/attribute_evaluation_v2/attribute_video_summary_v1.csv,derived_video_summaries,AE-V2-FRAMES,0adab5fbe34553861f18357e7026e6f70feaf3c00676197f10b0f14fe2541da5,true,verified,12 rows
+AN-V1-AUDIT,derived/pilot_v1_1/analysis_v1/analysis_audit_v1.json,derived_analysis_audit,AE-V2-FRAMES;AE-V2-SUMMARY,5b5017b079777ca6a756662096327ac489118033410cc3fd672f0cc3ec9d6a86,true,verified,descriptive only
+AN-V1-RESULTS,derived/pilot_v1_1/analysis_v1/pilot_descriptive_results_v1.csv,derived_results_table,AN-V1-AUDIT,0948d54cf47a8aff6a9c1dab58fdd981d45c211f28dfca4c1646b1efe5b791f5,true,verified,8 target rows
+MS-V1,paper/manuscript/v1/pilot_v1_1_exploratory_draft.md,manuscript_draft,AN-V1-RESULTS;integrity_audit;governance,72d7aadafc205bc810afc166bd6cf35a5306f8726c05a98056343c910cc126d3,true,draft,facial-hair result intentionally absent
