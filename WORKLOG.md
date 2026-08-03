@@ -29,3 +29,11 @@
 - **Research decision:** Protocol/code preparation, provenance organization, and manuscript infrastructure may proceed. Model/GPU, network/install, regeneration, formal compute, probes/interventions, and unblinded human annotation remain separately gated.
 - **Fact:** The requested Windows path is not mounted in this Linux environment. A versioned Chinese Markdown source and a locally generated DOCX snapshot will be maintained in research_pipeline/research_record/vN/ for export.
 - **Fact:** No existing document-generation tool or python-docx package was available; no dependency installation was attempted.
+
+## 2026-08-03 — Prospective attribute-evaluation and paper-traceability freeze
+
+- **Fact:** Frozen manifest, config, video-evaluation protocol, and all three metric specifications were rehashed and matched their registered SHA256 values before planning.
+- **Research decision:** Attribute execution protocol v1, analysis/claim plan v1, and output schema v1 were frozen before attribute-result inspection.
+- **Research decision:** The planned universe is all 12 videos and all 49 original frame indices per video; frames remain correlated observations and cannot be used as independent sample size.
+- **Research decision:** The Pilot is descriptive only; it cannot produce a composite retention score, confirmatory test, causal conclusion, general metric validation, or H1-H4 finding.
+- **Fact:** Claim-evidence, number provenance, figure/table, experiment-lineage, and citation-verification tables were initialized in a versioned paper traceability directory.

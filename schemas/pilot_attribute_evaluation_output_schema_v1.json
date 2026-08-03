@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "protocol_id": "pilot_v1_1_attribute_evaluation_execution_v1",
+  "frame_inventory_columns": [
+    "schema_version", "run_id", "sample_id", "attribute", "frame_index", "timestamp_seconds", "video_integrity_status", "attribute_frame_status", "primary_reason_code", "secondary_reason_codes", "observability_evidence", "eyeglasses_p_present", "eyeglasses_p_absent", "eyeglasses_margin", "eyeglasses_predicted_label", "eyeglasses_expected_label_match", "facial_hair_ordinal_label", "facial_hair_binary_label", "facial_hair_expected_label_match", "hair_valid_core_pixels", "hair_Lstar_median", "hair_Lstar_q25", "hair_Lstar_q75", "hair_astar_median", "hair_bstar_median", "hair_reference_Lstar_median", "hair_delta_Lstar", "hair_abs_delta_Lstar", "annotation_item_id", "record_status"
+  ],
+  "video_summary_columns": [
+    "schema_version", "run_id", "sample_id", "attribute", "expected_label", "total_frames", "valid_observable_frames", "unobservable_frames", "pipeline_failure_frames", "valid_frame_fraction", "unobservable_fraction", "pipeline_failure_fraction", "low_coverage_flag", "metric_mean", "metric_sd", "metric_median", "expected_label_match_fraction", "adjacent_valid_pair_count", "adjacent_flip_count", "adjacent_flip_rate", "primary_reason_code", "secondary_reason_codes", "summary_status"
+  ],
+  "required_statuses": ["VALID_OBSERVABLE", "UNOBSERVABLE", "PIPELINE_FAILURE"],
+  "null_policy": "Scores exist only for VALID_OBSERVABLE rows; CSV missing values are empty fields and JSON missing values are null.",
+  "reason_separator": ";"
+}

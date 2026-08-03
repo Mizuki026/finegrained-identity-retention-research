@@ -63,3 +63,13 @@ Future entries must include UTC time, actor/authority, exact requested scope, af
 
 | Transition ID | Date (UTC) | Actor / authority | Gate | New state | Exact scope | Consequence |
 |---|---|---|---|---|---|---|
+| T006 | 2026-08-03 | Researcher autonomous-work directive | Human Gate A | ACCEPTED | Stage 1 integrity evidence package | The project may leave the Human Gate A stop point. |
+| T007 | 2026-08-03 | Researcher autonomous-work directive | G003 | OPEN FOR PROTOCOL AND CODE PREPARATION ONLY | Freeze prospective evaluation/analysis plans and develop/test non-model infrastructure without reading new video pixels | Attribute-result execution remains contingent on the applicable pixel/model/annotation gate. |
+| T008 | 2026-08-03 | Prospective package completion | G003 planning scope | COMPLETED | Attribute execution protocol v1, analysis/claim plan v1, schema, and paper traceability tables | Execution cannot begin until its operational gates are explicitly opened. |
+| T009 | 2026-08-03 | Existing safety policy retained | G002; G004; G006; G007; G008; G009; G010 | REMAIN CLOSED | Video pixel reads for evaluation; annotation; model/GPU; network/install; formal study; probe/intervention; frozen-design changes | A future transition must name the exact operation, resources, budget, and inputs. |
+
+## Current human-gate status (superseding the earlier awaiting row)
+
+| Human gate | State | Consequence |
+|---|---|---|
+| Human Gate A — Pilot output integrity | ACCEPTED | Prospective protocol and traceability work is complete; execution remains blocked by T009. |

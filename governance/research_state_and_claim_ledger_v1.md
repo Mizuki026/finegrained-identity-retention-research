@@ -91,3 +91,9 @@ There were no missing samples, damaged files, integrity reason codes, or protoco
 |---|---|---|---|---|
 | R002 | Research decision | The researcher accepted Human Gate A and authorized autonomous progression toward a paper draft under the already frozen integrity result and all existing evidence controls. | Active-conversation directive and gate-log D011/T006 | This authorizes prospective governance, protocol, code, record, and manuscript preparation; it does not turn H1–H4 into findings. |
 | R003 | Research decision | Model/GPU, network/install, regeneration, formal experiments, probes/interventions, frozen-design changes, and unblinded facial-hair annotation remain operation-specific gates. | Gate-log D012 | No broad instruction can justify silent scope expansion at execution time. |
+
+## Prospective evaluation freeze — 2026-08-03 UTC
+
+| ID | Class | Statement | Evidence | Boundary |
+|---|---|---|---|---|
+| R004 | Research decision | Pilot attribute execution protocol v1 and analysis/claim plan v1 are frozen before generated-frame attribute-result inspection. | Protocol package and strict output schema | This fixes the 12-video/49-frame universe, status/missingness handling, metric boundaries, and descriptive-only interpretation. |

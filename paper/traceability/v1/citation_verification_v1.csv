@@ -1,0 +1,4 @@
+citation_key,claim_supported_cn,source_type,doi_or_url,primary_source_required,verification_status,verified_at_utc,verifier,notes
+CIT-001,ConsisID方法与基线实现的技术描述,primary_paper_or_official_repository,pending,true,pending_network_gate,,,不得以未核验引用支撑论文主张
+CIT-002,CLIP方法与已知局限,primary_paper,pending,true,pending_network_gate,,,仅在后续论文背景中使用且逐条核验
+CIT-003,人脸解析或BiSeNet方法描述,primary_paper_or_official_repository,pending,true,pending_network_gate,,,不等同于本研究中生成视频指标的验证
