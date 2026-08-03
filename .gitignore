@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.venv/
+venv/
+
+# Never place model weights or external datasets in this repository.
+ckpts/
+datasets/
+data/
+models/
+weights/
+cache/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Never copy generated or reference video media into this repository.
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Transient files must not become provenance artifacts.
+*.tmp
+*.swp
+.DS_Store

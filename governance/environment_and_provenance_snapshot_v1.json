@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "finegrained_environment_provenance_v1",
+  "captured_at_utc": "2026-08-03T05:52:19Z",
+  "capture_scope": "governance_and_reproducibility_only_before_video_decode",
+  "workspace": {
+    "root": "/root/autodl-tmp/finegrained",
+    "root_is_git_repository": false,
+    "pilot_root": "/root/autodl-tmp/finegrained/experiments/pilot_v1_1",
+    "research_repository": "/root/autodl-tmp/finegrained/research_pipeline",
+    "research_repository_state_at_capture": "not_yet_initialized; initial commit will be reported externally to avoid a self-referential commit field"
+  },
+  "upstream_baseline": {
+    "path": "/root/autodl-tmp/finegrained/code/ConsisID",
+    "branch_tracking": "main...origin/main",
+    "commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "worktree_clean_at_capture": true,
+    "policy": "read_only; no research code or governance files may be added"
+  },
+  "host": {
+    "os_pretty_name": "Ubuntu 22.04.1 LTS",
+    "kernel": "Linux 5.15.0-78-generic",
+    "architecture": "x86_64",
+    "gpu_hardware_queried_in_this_capture": false
+  },
+  "environment": {
+    "conda_prefix": "/root/autodl-tmp/envs/consisid-pilot",
+    "python_executable": "/root/autodl-tmp/envs/consisid-pilot/bin/python",
+    "python_version": "3.11.15",
+    "conda_version": "22.11.1",
+    "git_version": "2.34.1",
+    "sha256sum_version": "GNU coreutils 8.32",
+    "package_versions_source": "read-only conda list metadata; packages were not imported",
+    "packages": {
+      "torch": "2.5.1+cu121",
+      "torchvision": "0.20.1+cu121",
+      "diffusers": "0.33.1",
+      "transformers": "4.46.3",
+      "accelerate": "1.1.1",
+      "decord": "0.6.0",
+      "opencv-python": "4.10.0.84",
+      "opencv-python-headless": "4.11.0.86",
+      "imageio": "2.37.4",
+      "imageio-ffmpeg": "0.6.0",
+      "insightface": "0.7.3",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "pillow": "10.4.0",
+      "scikit-image": "0.26.0"
+    },
+    "decoder_discovery": {
+      "ffmpeg_on_system_path": false,
+      "ffprobe_on_system_path": false,
+      "opencv_and_decord_imports_tested": false,
+      "opencv_distribution_conflict_note": "Both opencv-python and opencv-python-headless distributions are installed. The future audit preflight must record the actual cv2 import version and stop on import failure or unexpected resolution; dependency changes are not authorized."
+    }
+  },
+  "authoritative_artifacts": {
+    "manifest_sha256": "dcf66f0222986403493a7c9a09d310629909d4aef590634348b41ce12544f79d",
+    "config_sha256": "40014634ef08f17eae3bf41b4d551796efe3855fc7f25c8d3f9b66d9f0e7ef47",
+    "revision_lineage_sha256": "d254cc00a612fad8eb0ca77dfaac9784a7644f588454361fc65b0d7d72dcb1a4",
+    "generation_summary_sha256": "97389045205ca664e2f158d727c15da45a4c2b4a3f90cc6ad260605920fd31c8",
+    "generation_events_sha256": "79aeaeb37787b00c9bf2eff66115e03e334ce2e455b4609e273028f4635f43e3",
+    "formal_generation_log_sha256": "a1a00e620558b89bcbe5d960834e003d6c195adbca3b7d7e8ee9a289b19a066d",
+    "pre_generation_readiness_sha256": "f0fbc9a8fe8e0b576dcbf4b6228dd655bd07484358420b09d7d533f5b61afed5",
+    "video_evaluation_protocol_sha256": "0a096f8e74af5fad769955ce331658bd9ef8373ba526279e96aba778c07a3964",
+    "eyeglasses_metric_spec_sha256": "e0b3a6b480f51b49d503afee7eecc47a334f4d196592540426499deae06eeace",
+    "facial_hair_manual_protocol_sha256": "307f2afb4eb92280359960b70eff81cc188d26a60876db896e451f84cc6f25aa",
+    "hair_color_metric_spec_sha256": "f470674cc4c4e9092619001567db0f874e6a58488c4697d543642fe8366cbe11"
+  },
+  "transcription_control": {
+    "canonical_config_sha256_length": 64,
+    "canonical_config_sha256": "40014634ef08f17eae3bf41b4d551796efe3855fc7f25c8d3f9b66d9f0e7ef47",
+    "incorrect_handoff_value_disposition": "transcription_error_only; never modify existing artifacts to match it"
+  },
+  "operations_during_capture": {
+    "filesystem_metadata_read": true,
+    "whole_file_sha256_read": true,
+    "mp4_byte_hashes_collected_without_container_open": true,
+    "video_container_opened": false,
+    "video_pixels_read": false,
+    "video_decoded": false,
+    "attribute_metric_run": false,
+    "model_loaded": false,
+    "gpu_accessed": false,
+    "video_generated": false,
+    "network_accessed": false,
+    "dependencies_installed_or_modified": false,
+    "frozen_artifacts_modified": false
+  },
+  "detailed_artifact_inventory": "governance/artifact_registry_v1.csv",
+  "next_gate": "separate researcher approval is required before CPU-only video integrity audit execution"
+}
