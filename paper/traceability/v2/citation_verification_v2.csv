@@ -1,0 +1,4 @@
+citation_key,claim_supported,source_url,source_type,verification_status,notes
+yuan2025consisid,ConsisID method background,https://openaccess.thecvf.com/content/CVPR2025/papers/Yuan_Identity-Preserving_Text-to-Video_Generation_by_Frequency_Decomposition_CVPR_2025_paper.pdf,primary_paper,verified,Does not support Pilot findings
+radford2021clip,CLIP method background,https://arxiv.org/abs/2103.00020,primary_paper,verified,Does not validate eyeglasses instrument
+yu2018bisenet,BiSeNet architecture background,https://arxiv.org/abs/1808.00897,primary_paper,verified,Does not validate generated-video hair-colour measurement
