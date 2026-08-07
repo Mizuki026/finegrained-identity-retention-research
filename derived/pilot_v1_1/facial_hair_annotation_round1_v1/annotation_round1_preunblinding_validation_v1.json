@@ -1,0 +1,42 @@
+{
+  "inputs": {
+    "protocol": {
+      "path": "/root/autodl-tmp/finegrained/experiments/pilot_v1/metric_audit/facial_hair_manual_protocol_v2.json",
+      "sha256": "307f2afb4eb92280359960b70eff81cc188d26a60876db896e451f84cc6f25aa"
+    },
+    "template": {
+      "path": "derived/pilot_v1_1/facial_hair_annotation_round1_v1/annotation_round1_v1.csv",
+      "sha256": "246059e6b6a03a275e797e27799b2cb8a44e4060b097a732507b7a91be25dc9a"
+    },
+    "transcript": {
+      "path": "derived/pilot_v1_1/facial_hair_annotation_round1_v1/annotation_raw_transcript_v1.txt",
+      "sha256": "db9039ae72b8ee6949e3077165d76ab8572c62cc3b83e6110a3e63ef560c7aea"
+    }
+  },
+  "label_counts": {
+    "0": 291,
+    "1": 146,
+    "2": 84,
+    "U": 54
+  },
+  "limitations": [
+    "single exploratory annotator; no inter-rater reliability claim",
+    "annotation time was not recorded in the raw transcript",
+    "visible identity and facial appearance could not be hidden"
+  ],
+  "output": {
+    "path": "derived/pilot_v1_1/facial_hair_annotation_round1_v1/annotation_round1_filled_v1.csv",
+    "sha256": "4f0f9117b9853c4a590e5f5f85eb26154c7cfb64ecb6f3b88b0d91d2684e2824"
+  },
+  "private_mapping_read": false,
+  "record_count": 575,
+  "script_path": "/root/autodl-tmp/finegrained/research_pipeline/tools/transcribe_facial_hair_annotations_v1.py",
+  "script_sha256": "fce33c618ee1f9d6e96042ff3a421547bca637be72da13d5937b2b073da1fe28",
+  "status": "PASS_BLINDED_LABELS_FROZEN_PENDING_UNBLINDING",
+  "u_reason_counts": {
+    "ambiguous_shadow": 49,
+    "character_transformation": 5
+  },
+  "unblinding_authorized": false,
+  "validated_at_utc": "2026-08-07T04:17:37.071552+00:00"
+}

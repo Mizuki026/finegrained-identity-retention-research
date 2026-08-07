@@ -1,0 +1,32 @@
+{
+  "anonymous_item_ids_unique": true,
+  "input_sha256": {
+    "filled": "4f0f9117b9853c4a590e5f5f85eb26154c7cfb64ecb6f3b88b0d91d2684e2824",
+    "protocol": "307f2afb4eb92280359960b70eff81cc188d26a60876db896e451f84cc6f25aa",
+    "template": "246059e6b6a03a275e797e27799b2cb8a44e4060b097a732507b7a91be25dc9a",
+    "transcript": "db9039ae72b8ee6949e3077165d76ab8572c62cc3b83e6110a3e63ef560c7aea",
+    "transcription_validation": "37ce4795af606d87170e86b625ff110605a5175f5d339d98ff496694faa0ec99"
+  },
+  "label_counts": {
+    "0": 291,
+    "1": 146,
+    "2": 84,
+    "U": 54
+  },
+  "private_mapping_read": false,
+  "random_order_set": "exactly_1_to_575",
+  "record_count": 575,
+  "research_boundary": "No condition-level or hypothesis result can be computed before separately authorized unblinding.",
+  "schema_version": 1,
+  "status": "PASS_PREUNBLINDING_INDEPENDENT_VALIDATION",
+  "template_lineage_exact": true,
+  "u_reason_counts": {
+    "ambiguous_shadow": 49,
+    "character_transformation": 5
+  },
+  "unblinding_authorized": false,
+  "validated_at_utc": "2026-08-07T04:20:41.961066+00:00",
+  "validation_scope": "anonymous labels only; private mapping not opened",
+  "verifier_script": "/root/autodl-tmp/finegrained/research_pipeline/tools/verify_facial_hair_annotation_round1_v1.py",
+  "verifier_script_sha256": "9e5ffc0203e4b677b2ec6d87b68c3adc0b1e38afa303f7b94ce8467dd3219781"
+}
