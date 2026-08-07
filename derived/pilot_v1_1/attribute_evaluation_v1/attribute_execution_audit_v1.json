@@ -1,0 +1,26 @@
+{
+  "run_id": "pilot_v1_1_attribute_evaluation_v1",
+  "completed_at": "2026-08-03T08:26:47.175794+00:00",
+  "script_sha256": "b6558c3039ccd4bdb310f2b106faef17de31ee4658f6895b9a415326dcb2cd13",
+  "code_commit": "6df0950bc371d991aa5b47dc999a750a37ae9aa9",
+  "inputs": {
+    "manifest": "dcf66f0222986403493a7c9a09d310629909d4aef590634348b41ce12544f79d",
+    "integrity": "a762dcf9d3b85334d557fbdb223594689d926b7f4e8e703f3432f17911c118d5",
+    "protocol": "432a7f624edc2baacc03b5c7ad6edc6ea0ebf4bf45a9f21366307ca119d77935",
+    "roi_addendum": "4f344edf48f3a65f66fa045965e7a121e173b22b5cf790205dfdd72c6ffa1a3a",
+    "schema": "d5075b081648f9d87b584e6478dae745dd0085e1f86b8f49f4e9295afe5fc7f5"
+  },
+  "environment": {
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "cuda_visible_devices": "",
+    "hf_hub_offline": "1"
+  },
+  "row_counts": {
+    "frame_inventory": 1764,
+    "summary": 12,
+    "annotation_items": 575
+  },
+  "status": "MACHINE_EVALUATION_COMPLETE_MANUAL_ANNOTATION_PENDING",
+  "boundary": "Descriptive Pilot only; no H1-H4 claim."
+}

@@ -1,0 +1,14 @@
+2026-08-03T08:34:15.204758+00:00 RUN_START
+2026-08-03T08:35:41.626055+00:00 VIDEO_DONE 01_eyeglasses_positive_kaiming_he_s4
+2026-08-03T08:36:57.773375+00:00 VIDEO_DONE 02_eyeglasses_positive_yann_lecun_s4
+2026-08-03T08:38:25.763924+00:00 VIDEO_DONE 03_eyeglasses_negative_andrew_ng_s4
+2026-08-03T08:39:47.814465+00:00 VIDEO_DONE 04_eyeglasses_negative_lei_jun_s5
+2026-08-03T08:40:48.791748+00:00 VIDEO_DONE 05_facial_hair_positive_yoshua_bengio_s4
+2026-08-03T08:42:08.096026+00:00 VIDEO_DONE 06_facial_hair_positive_leonardo_dicaprio_s4
+2026-08-03T08:43:29.823027+00:00 VIDEO_DONE 07_facial_hair_negative_turing_s4
+2026-08-03T08:44:52.199616+00:00 VIDEO_DONE 08_facial_hair_negative_jackie_chan_s5
+2026-08-03T08:46:12.235560+00:00 VIDEO_DONE 09_hair_color_light_taylor_swift_s1
+2026-08-03T08:47:34.964399+00:00 VIDEO_DONE 10_hair_color_light_elizabeth_olsen_s5
+2026-08-03T08:48:54.060901+00:00 VIDEO_DONE 11_hair_color_dark_liu_shishi_s2
+2026-08-03T08:50:17.372989+00:00 VIDEO_DONE 12_hair_color_dark_anne_hathaway_s2
+2026-08-03T08:50:17.988781+00:00 MACHINE_EVALUATION_COMPLETE rows=1764 annotation_items=575

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "input_sha256": {
+    "/root/autodl-tmp/finegrained/research_pipeline/derived/pilot_v1_1/attribute_evaluation_v2/attribute_frame_inventory_v1.csv": "805df7257f1d207a1d693a21337b79e65269246a3fffbcdee3555569cd0e06d3",
+    "/root/autodl-tmp/finegrained/research_pipeline/derived/pilot_v1_1/attribute_evaluation_v2/attribute_video_summary_v1.csv": "0adab5fbe34553861f18357e7026e6f70feaf3c00676197f10b0f14fe2541da5",
+    "/root/autodl-tmp/finegrained/research_pipeline/derived/pilot_v1_1/attribute_evaluation_v2/attribute_execution_audit_v1.json": "030990c00d6e782dd095f6da545efd6f4399384d6ac4dca5a2f540b29feaaad8"
+  },
+  "output_sha256": {
+    "pilot_descriptive_results_v1.csv": "0948d54cf47a8aff6a9c1dab58fdd981d45c211f28dfca4c1646b1efe5b791f5",
+    "attribute_status_summary_v1.csv": "2b11f9a6d3cf565dcbc3c294e63e73ffd53d45644ca543fd19a0826d55130ba8",
+    "figure_eyeglasses_probability_v1.png": "49f969a605790756b4a1ddb6544c4a8736efc0edde03d75d792ffb90ccdd3e77",
+    "figure_hair_abs_delta_Lstar_v1.png": "2a4cece1da1bb8181df41825334da641f5019a41dcef985d15607d34abc80324"
+  },
+  "row_counts": {
+    "frame_input": 1764,
+    "summary_input": 12,
+    "descriptive_rows": 8,
+    "status_rows": 3
+  },
+  "boundary": "No facial-hair outcome is reported; no cross-sample inferential statistic or H1-H4 conclusion."
+}

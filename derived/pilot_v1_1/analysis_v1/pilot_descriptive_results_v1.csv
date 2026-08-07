@@ -1,0 +1,9 @@
+sample_id,attribute,expected_condition,valid_frames,coverage,mean_probability_present,sd_probability_present,median_probability_present,expected_match_fraction,mean_abs_delta_Lstar,median_abs_delta_Lstar,reference_Lstar
+01_eyeglasses_positive_kaiming_he_s4,eyeglasses,positive,49,1.000000,0.672410,0.080654,0.666726,1.000000,,,
+02_eyeglasses_positive_yann_lecun_s4,eyeglasses,positive,49,1.000000,0.785352,0.075491,0.808557,1.000000,,,
+03_eyeglasses_negative_andrew_ng_s4,eyeglasses,negative,49,1.000000,0.126767,0.032410,0.124855,1.000000,,,
+04_eyeglasses_negative_lei_jun_s5,eyeglasses,negative,49,1.000000,0.178023,0.041215,0.180545,1.000000,,,
+09_hair_color_light_taylor_swift_s1,hair_color,light,49,1.000000,,,,,7.067996,6.011963,52.00195312
+10_hair_color_light_elizabeth_olsen_s5,hair_color,light,47,0.959184,,,,,17.742141,17.605591,39.76440430
+11_hair_color_dark_liu_shishi_s2,hair_color,dark,38,0.775510,,,,,1.313701,1.074219,24.38354492
+12_hair_color_dark_anne_hathaway_s2,hair_color,dark,49,1.000000,,,,,2.116301,1.531982,15.98510742

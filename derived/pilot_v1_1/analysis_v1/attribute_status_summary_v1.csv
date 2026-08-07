@@ -1,0 +1,4 @@
+attribute,planned_frames,valid_observable,unobservable,pipeline_failure,interpretation
+eyeglasses,588,575,13,0,descriptive only
+facial_hair,588,0,588,0,facial-hair labels pending independent blinded annotator
+hair_color,588,330,258,0,descriptive only
