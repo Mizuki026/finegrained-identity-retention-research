@@ -1,0 +1,22 @@
+{
+  "anonymous_id_order_exact": true,
+  "condition_level_analysis_performed": false,
+  "frame_inventory_closure_exact": true,
+  "frozen_label_rows": 575,
+  "frozen_labels_preserved_exactly": true,
+  "input_sha256": {
+    "frame_inventory": "805df7257f1d207a1d693a21337b79e65269246a3fffbcdee3555569cd0e06d3",
+    "frozen_labels": "4f0f9117b9853c4a590e5f5f85eb26154c7cfb64ecb6f3b88b0d91d2684e2824",
+    "manifest": "dcf66f0222986403493a7c9a09d310629909d4aef590634348b41ce12544f79d",
+    "producer_audit": "645fb9db8340606008801250ddc53ae7a13cb4d64cc5acc2e31eac2c54ad6c15",
+    "reconciled": "e97e3f4f8b2e1b11d9463a5d1bb78fe816989700cc8fa3e8934a5a9efe61050c"
+  },
+  "manifest_join_exact": true,
+  "private_mapping_read_by_verifier": false,
+  "reconciled_rows": 575,
+  "schema_version": 1,
+  "script_path": "/root/autodl-tmp/finegrained/research_pipeline/tools/verify_facial_hair_unblinding_v1.py",
+  "script_sha256": "fec4604b1642ea323c0f846950930b21f613f33c8c5b20cc120aa7e083e07241",
+  "status": "PASS_INDEPENDENT_UNBLINDING_VERIFICATION_NO_CONDITION_ANALYSIS",
+  "verified_at_utc": "2026-08-07T04:41:29.924881+00:00"
+}

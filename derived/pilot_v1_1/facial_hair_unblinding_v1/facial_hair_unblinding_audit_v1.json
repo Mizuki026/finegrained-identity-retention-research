@@ -1,0 +1,30 @@
+{
+  "anonymous_id_set_exact_match": true,
+  "condition_level_analysis_performed": false,
+  "executed_at_utc": "2026-08-07T04:39:21.979053+00:00",
+  "frozen_label_rows": 575,
+  "input_sha256": {
+    "config": "40014634ef08f17eae3bf41b4d551796efe3855fc7f25c8d3f9b66d9f0e7ef47",
+    "frame_inventory": "805df7257f1d207a1d693a21337b79e65269246a3fffbcdee3555569cd0e06d3",
+    "frozen_labels": "4f0f9117b9853c4a590e5f5f85eb26154c7cfb64ecb6f3b88b0d91d2684e2824",
+    "manifest": "dcf66f0222986403493a7c9a09d310629909d4aef590634348b41ce12544f79d",
+    "mapping": "25c193ce53bbe9cb57c4629f3775c5b73f20a43c0c71cf30645c9dd00c3c678b",
+    "protocol": "307f2afb4eb92280359960b70eff81cc188d26a60876db896e451f84cc6f25aa",
+    "template": "246059e6b6a03a275e797e27799b2cb8a44e4060b097a732507b7a91be25dc9a"
+  },
+  "manifest_sample_membership_exact_match": true,
+  "mapping_rows": 575,
+  "output": {
+    "path": "/root/autodl-tmp/finegrained/research_pipeline/derived/pilot_v1_1/facial_hair_unblinding_v1/facial_hair_annotation_unblinded_v1.csv",
+    "sha256": "e97e3f4f8b2e1b11d9463a5d1bb78fe816989700cc8fa3e8934a5a9efe61050c"
+  },
+  "private_mapping_bytes_read": 32792,
+  "private_mapping_read_count": 1,
+  "reconciled_rows": 575,
+  "sample_frame_inventory_exact_match": true,
+  "schema_version": 1,
+  "script_path": "/root/autodl-tmp/finegrained/research_pipeline/tools/unblind_facial_hair_annotations_v2.py",
+  "script_sha256": "ec81ebcc125614eeb472c51575d9dfaba7c20d6ffc5f5e79f20420c841982465",
+  "status": "PASS_MAPPING_RECONCILIATION_ONLY_NO_CONDITION_ANALYSIS",
+  "unblinding_authorized": true
+}
