@@ -84,6 +84,8 @@ def synthetic_tests():
     assert face_square((10,20,110,120),200,180)==(0,2,135,137)
     g=hair_geometry((100,100,200,200),640,480); assert g and g[0:4]==(15,10,285,340) and 0<=g[4]<g[6]<=512 and 0<=g[5]<g[7]<=512
     assert hair_geometry((0,0,0,1),10,10) is None
+    assert expected_match("eyeglasses", "present", "present") == "True"
+    assert expected_match("eyeglasses", "absent", "absent") == "True"
 
 def preflight(run_dir):
     if os.environ.get("CUDA_VISIBLE_DEVICES") not in ("", "-1"): fail("GPU visibility is not disabled")
@@ -169,7 +171,7 @@ def expected_match(attribute, prediction, manifest_label):
     if not prediction:
         return ""
     if attribute == "eyeglasses":
-        target = {"positive": "present", "negative": "absent"}.get(manifest_label)
+        target = {"positive": "present", "negative": "absent", "present": "present", "absent": "absent"}.get(manifest_label)
         if target is None: fail(f"unexpected eyeglasses manifest label: {manifest_label}")
         return str(prediction == target)
     return str(prediction == manifest_label)
