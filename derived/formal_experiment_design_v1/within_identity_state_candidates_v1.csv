@@ -1,0 +1,10 @@
+attribute,identity,gender,state_a,state_a_images,state_b,state_b_images
+eyeglasses,Huang,man,present,3,absent,1
+eyeglasses,Jackie Chan,man,present,1,absent,3
+eyeglasses,Robert Downey Jr,man,present,1,absent,4
+eyeglasses,Yann LeCun,man,present,4,absent,1
+hair_color,Elizabeth Olsen,woman,light,4,dark,1
+hair_color,Huang,man,light,2,dark,2
+hair_color,Leonardo DiCaprio,man,light,1,dark,4
+hair_color,Obama,man,light,1,dark,3
+hair_color,Yann LeCun,man,light,1,dark,4

@@ -1,0 +1,292 @@
+{
+  "attributes": {
+    "eyeglasses": {
+      "contrasted_states": [
+        "present",
+        "absent"
+      ],
+      "label_column": "eyeglasses_label",
+      "states": {
+        "absent": {
+          "gender_identities": {
+            "man": 15,
+            "woman": 7
+          },
+          "gender_images": {
+            "man": 61,
+            "woman": 32
+          },
+          "identities": 22,
+          "images": 93
+        },
+        "present": {
+          "gender_identities": {
+            "man": 5
+          },
+          "gender_images": {
+            "man": 14
+          },
+          "identities": 5,
+          "images": 14
+        }
+      },
+      "within_identity_both_states": 4,
+      "within_identity_gender_counts": {
+        "man": 4
+      }
+    },
+    "facial_hair": {
+      "contrasted_states": [
+        "2",
+        "0"
+      ],
+      "label_column": "facial_hair_ordinal",
+      "states": {
+        "0": {
+          "gender_identities": {
+            "man": 13,
+            "woman": 7
+          },
+          "gender_images": {
+            "man": 57,
+            "woman": 32
+          },
+          "identities": 20,
+          "images": 89
+        },
+        "2": {
+          "gender_identities": {
+            "man": 3
+          },
+          "gender_images": {
+            "man": 13
+          },
+          "identities": 3,
+          "images": 13
+        }
+      },
+      "within_identity_both_states": 0,
+      "within_identity_gender_counts": {}
+    },
+    "hair_color": {
+      "contrasted_states": [
+        "light",
+        "dark"
+      ],
+      "label_column": "hair_color_label",
+      "states": {
+        "dark": {
+          "gender_identities": {
+            "man": 12,
+            "woman": 5
+          },
+          "gender_images": {
+            "man": 52,
+            "woman": 20
+          },
+          "identities": 17,
+          "images": 72
+        },
+        "light": {
+          "gender_identities": {
+            "man": 8,
+            "woman": 3
+          },
+          "gender_images": {
+            "man": 23,
+            "woman": 12
+          },
+          "identities": 11,
+          "images": 35
+        }
+      },
+      "within_identity_both_states": 5,
+      "within_identity_gender_counts": {
+        "man": 4,
+        "woman": 1
+      }
+    }
+  },
+  "audit_id": "formal_candidate_pool_feasibility_v1",
+  "boundary": "Aggregate feasibility audit only; no sample selection, randomization, generation, outcome inspection, hypothesis test, or population claim.",
+  "candidate_identities": 23,
+  "candidate_images": 107,
+  "cells": [
+    {
+      "attribute": "eyeglasses",
+      "gender_identities": {
+        "man": 5
+      },
+      "gender_images": {
+        "man": 14
+      },
+      "identities": 5,
+      "images": 14,
+      "state": "present"
+    },
+    {
+      "attribute": "eyeglasses",
+      "gender_identities": {
+        "man": 15,
+        "woman": 7
+      },
+      "gender_images": {
+        "man": 61,
+        "woman": 32
+      },
+      "identities": 22,
+      "images": 93,
+      "state": "absent"
+    },
+    {
+      "attribute": "facial_hair",
+      "gender_identities": {
+        "man": 3
+      },
+      "gender_images": {
+        "man": 13
+      },
+      "identities": 3,
+      "images": 13,
+      "state": "2"
+    },
+    {
+      "attribute": "facial_hair",
+      "gender_identities": {
+        "man": 13,
+        "woman": 7
+      },
+      "gender_images": {
+        "man": 57,
+        "woman": 32
+      },
+      "identities": 20,
+      "images": 89,
+      "state": "0"
+    },
+    {
+      "attribute": "hair_color",
+      "gender_identities": {
+        "man": 8,
+        "woman": 3
+      },
+      "gender_images": {
+        "man": 23,
+        "woman": 12
+      },
+      "identities": 11,
+      "images": 35,
+      "state": "light"
+    },
+    {
+      "attribute": "hair_color",
+      "gender_identities": {
+        "man": 12,
+        "woman": 5
+      },
+      "gender_images": {
+        "man": 52,
+        "woman": 20
+      },
+      "identities": 17,
+      "images": 72,
+      "state": "dark"
+    }
+  ],
+  "design_diagnostics": {
+    "all_attributes_have_within_identity_pair": false,
+    "reasons": [
+      "cells without both represented gender labels: eyeglasses:present, facial_hair:2",
+      "attributes without any within-identity opposite-state pair: facial_hair"
+    ],
+    "six_cell_gender_balanced": false
+  },
+  "factorial_combinations_excluding_facial_hair_ordinal_1": [
+    {
+      "eyeglasses": "absent",
+      "facial_hair_ordinal": "0",
+      "gender": "man",
+      "hair_color": "dark",
+      "identities": 7,
+      "images": 28
+    },
+    {
+      "eyeglasses": "absent",
+      "facial_hair_ordinal": "0",
+      "gender": "woman",
+      "hair_color": "dark",
+      "identities": 5,
+      "images": 20
+    },
+    {
+      "eyeglasses": "absent",
+      "facial_hair_ordinal": "0",
+      "gender": "man",
+      "hair_color": "light",
+      "identities": 6,
+      "images": 16
+    },
+    {
+      "eyeglasses": "absent",
+      "facial_hair_ordinal": "0",
+      "gender": "woman",
+      "hair_color": "light",
+      "identities": 3,
+      "images": 12
+    },
+    {
+      "eyeglasses": "absent",
+      "facial_hair_ordinal": "2",
+      "gender": "man",
+      "hair_color": "dark",
+      "identities": 2,
+      "images": 6
+    },
+    {
+      "eyeglasses": "absent",
+      "facial_hair_ordinal": "2",
+      "gender": "man",
+      "hair_color": "light",
+      "identities": 2,
+      "images": 6
+    },
+    {
+      "eyeglasses": "present",
+      "facial_hair_ordinal": "0",
+      "gender": "man",
+      "hair_color": "dark",
+      "identities": 4,
+      "images": 12
+    },
+    {
+      "eyeglasses": "present",
+      "facial_hair_ordinal": "0",
+      "gender": "man",
+      "hair_color": "light",
+      "identities": 1,
+      "images": 1
+    },
+    {
+      "eyeglasses": "present",
+      "facial_hair_ordinal": "2",
+      "gender": "man",
+      "hair_color": "dark",
+      "identities": 1,
+      "images": 1
+    }
+  ],
+  "gender_identities": {
+    "man": 16,
+    "woman": 7
+  },
+  "gender_images": {
+    "man": 75,
+    "woman": 32
+  },
+  "input": {
+    "filename": "identity_aware_candidate_pool_v2.csv",
+    "sha256": "05f6f005ce609bdb80905c435bc3ba20ba6b19e3cc291540be59ff9dcf6b5242"
+  },
+  "schema_version": 1,
+  "status": "FEASIBILITY_AUDITED_NO_SELECTION"
+}
