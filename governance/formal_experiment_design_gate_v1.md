@@ -56,6 +56,12 @@ selection. At minimum, add eyeglasses-present women and additional independent
 identities with facial-hair ordinal 2. For facial hair, prespecify a man-only
 analysis if that is the intended sampling frame rather than presenting an
 infeasible gender-balanced contrast.
+A concrete minimum target for the recommended first experiment is 10 identities
+per state: eyeglasses present/absent with five man and five woman identities per
+state, plus facial-hair ordinal 2/0 with ten man identities per state. Relative
+to the current eligible pool, this requires at least five additional
+eyeglasses-present woman identities and seven additional facial-hair-ordinal-2
+man identities before selection.
 
 Alternative: construct same-identity edited counterfactual references. This
 controls identity but changes the estimand to responses to audited image edits
@@ -83,9 +89,10 @@ frames, audit artifacts, and backups should be budgeted separately.
 
 | Planning tier | Reference-condition units | Seeds per unit | Videos | Estimated generation GPU-hours |
 |---|---:|---:|---:|---:|
-| feasibility-limited | 38 | 3 | 114 | 8.3 |
-| expanded | 60 | 4 | 240 | 17.5 |
-| stronger replication | 90 | 4 | 360 | 26.2 |
+| current-pool bounded, two attributes | 16 | 3 | 48 | 3.5 |
+| recommended expanded, two attributes | 40 | 4 | 160 | 11.6 |
+| recommended plus exploratory hair colour | 60 | 4 | 240 | 17.5 |
+| stronger six-cell replication | 90 | 4 | 360 | 26.2 |
 
 These are engineering budgets, not power calculations. A formal sample size
 must be justified at the video/identity level after D1-D3 fix the endpoint and
