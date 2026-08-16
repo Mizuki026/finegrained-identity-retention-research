@@ -1,0 +1,13 @@
+{
+  "schema_version": 3,
+  "freeze_id": "pilot_v3_facial_hair_consensus_freeze_v3_1",
+  "frozen_at_utc": "2026-08-16T01:42:27.297463+00:00",
+  "agreement_sha256": "9a108d94d7ac74d47c11b5d1aac6660366d70ede62a50aa33bfe556bc4c5266b",
+  "consensus_sha256": "c0a19054e50cf3f6b3ad7df5dbc176285a7bcda81ab21641a32fc95a89203417",
+  "disagreements_sha256": "b713260db9bfc74cb485c17c975399e1ba497de273f12217262719c4661d4a6a",
+  "items": 196,
+  "resolved_by_exact_agreement": 196,
+  "adjudicated_items": 0,
+  "private_mapping_accessed_before_consensus_freeze": false,
+  "status": "FROZEN_NO_ADJUDICATION_REQUIRED"
+}

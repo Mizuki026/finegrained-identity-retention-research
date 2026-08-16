@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "verification_id": "pilot_v3_facial_hair_unblinding_independent_verification_v3_1",
+  "verified_at_utc": "2026-08-16T01:45:42.388677+00:00",
+  "input_sha256": {
+    "unblinded": "0a3a2a94b36d91596b9fe318c1759e8ea8da76596724bfbdfc8cf3186a5dbc21",
+    "consensus": "c0a19054e50cf3f6b3ad7df5dbc176285a7bcda81ab21641a32fc95a89203417",
+    "frame_inventory": "b5d447a21988b9a1fbcd728df3543c6ac235a90895ba97491ecf60f2895d51ba",
+    "manifest": "7ddb2428793154488b73f05ff3fa2f9b0b61e4bbe8de872f3a53cae0deff1973",
+    "producer_audit": "d9d0ec808e3ee6414f5ee374d9388b1f80f668032873f2ca1d5adbf94892bc27"
+  },
+  "reconciled_rows": 196,
+  "frozen_labels_preserved_exactly": true,
+  "anonymous_id_order_exact": true,
+  "frame_inventory_closure_exact": true,
+  "manifest_join_exact": true,
+  "private_mapping_read_by_verifier": false,
+  "condition_level_analysis_performed": false,
+  "status": "PASS_INDEPENDENT_UNBLINDING_VERIFICATION_NO_CONDITION_ANALYSIS"
+}

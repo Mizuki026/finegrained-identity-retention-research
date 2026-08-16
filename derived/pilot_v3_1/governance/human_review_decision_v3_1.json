@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "decision_id": "pilot_v3_1_post_finalization_human_decision",
+  "recorded_at_utc": "2026-08-16T02:16:03.115338+00:00",
+  "attestation_source": "direct_researcher_confirmation_in_active_session",
+  "decisions": {
+    "independent_annotation_provenance_confirmed": true,
+    "byte_identical_submissions_acknowledged": true,
+    "ref_12_treatment": "retain_and_report_measurement_unavailable_low_coverage",
+    "ref_12_exclusion": false,
+    "ref_12_imputation": false,
+    "hair_color_reporting": "exploratory_result_and_measurement_limitation_only",
+    "future_hair_color_iteration": "separate_future_design_not_started",
+    "claim_boundary": "fixed_12_video_descriptive_only",
+    "causal_claims_authorized": false,
+    "general_model_claims_authorized": false,
+    "frame_level_inference_authorized": false
+  },
+  "status": "APPROVED_FOR_CONSERVATIVE_DESCRIPTIVE_REPORTING"
+}

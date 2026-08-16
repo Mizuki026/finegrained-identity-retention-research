@@ -1,0 +1,18 @@
+{
+  "schema_version": 3,
+  "verification_id": "pilot_v3_finalized_attribute_independent_verification_v3_1",
+  "verified_at_utc": "2026-08-16T02:05:16.120866+00:00",
+  "finalization_script_sha256": "99dd94f5112f417853285572ac088b776625ab238436c908b98884c143319a9e",
+  "output_freeze_sha256": "a65c96516d42430d84d3e4cdfa73d2a48f86465fb44ca07efd09d91993199aa2",
+  "frame_rows": 588,
+  "video_rows": 12,
+  "facial_hair_frame_rows": 196,
+  "facial_hair_video_rows": 4,
+  "sample_ids_exact": true,
+  "forty_nine_frames_each": true,
+  "all_computed_rows_reproduced_exactly": true,
+  "all_listed_output_hashes_verified": true,
+  "private_mapping_read_by_verifier": false,
+  "frame_level_inference_performed": false,
+  "status": "PASS_INDEPENDENT_FINALIZATION_VERIFICATION"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 3,
+  "created_at_utc": "2026-08-15T05:49:04.410384+00:00",
+  "videos_expected": 12,
+  "videos_observed": 12,
+  "videos_passed": 12,
+  "videos_failed": 0,
+  "seed_changes": false,
+  "selective_reruns": false,
+  "integrity_csv_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/video_integrity_audit_v3.csv",
+  "integrity_csv_sha256": "1245045d9f3b3560d6ac9fced513bbf8e71ba44ec0edb3563d1202bf42e11d48",
+  "contact_sheet_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/formal_temporal_contact_sheet_v3.jpg",
+  "contact_sheet_sha256": "a7aed309324380f88effb81f21929d5ca0ad5e8316317798a1eef389e7da6d21",
+  "status": "VIDEO_INTEGRITY_ALL_12_PASS"
+}

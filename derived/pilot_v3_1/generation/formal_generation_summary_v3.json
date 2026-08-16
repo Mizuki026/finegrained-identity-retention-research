@@ -1,0 +1,99 @@
+{
+  "schema_version": 3,
+  "started_at_utc": "2026-08-15T04:46:36.515261+00:00",
+  "completed_at_utc": "2026-08-15T05:44:57.913914+00:00",
+  "generation_manifest_sha256": "528e88f60df88a86063362a4b5634842b45c553287e9fa0a0a602cce1b22c311",
+  "generation_protocol_sha256": "4041223f4509682a941ea6a467c0f3121ae1d054ed849b4cee8f8df371ff3450",
+  "master_freeze_sha256": "13dc3f8fae5d08b1eec95ebd6d57855feaeeb840c3ffa08d46111ab6dcb7d1c9",
+  "successful_videos": 12,
+  "failed_videos": 0,
+  "seed_changes": false,
+  "selective_reruns": false,
+  "references": [
+    {
+      "reference_id": "ref_01",
+      "seed": 136404220,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_01/136404220_0000.mp4",
+      "video_sha256": "6660a7d4a973eb978abbb3cb40dab01a9f4c04c81cc33c577affdfeabf980c42",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_02",
+      "seed": 559908631,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_02/559908631_0000.mp4",
+      "video_sha256": "7169aa05cb1e97a850d1c37d944b4764f4f779c39b787d82086ef5c7e528c130",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_03",
+      "seed": 139585490,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_03/139585490_0000.mp4",
+      "video_sha256": "6c89f87fe95b9c5d124b2040f57f2d2482d29bed478c3eff9f4c974739b7b70c",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_04",
+      "seed": 666273586,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_04/666273586_0000.mp4",
+      "video_sha256": "dd6b0d02159d1782c56ff7a366d3a42f289864acc90426bfdb241280aa552bab",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_05",
+      "seed": 1764944049,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_05/1764944049_0000.mp4",
+      "video_sha256": "4e6ced76e538b8c0a7c89349c1f33350ac16690f0401dbee67bfd3cdb4b1d942",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_06",
+      "seed": 4121072771,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_06/4121072771_0000.mp4",
+      "video_sha256": "ed90b695ee1019eebe8f2007a492f0a0e6a2d671dc19f6765f8fb08e408eb3e8",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_07",
+      "seed": 228601921,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_07/228601921_0000.mp4",
+      "video_sha256": "02116d1c945c86745b83c52a5e5cc41c162071635ab2d9361bf08367a95f9028",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_08",
+      "seed": 268802196,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_08/268802196_0000.mp4",
+      "video_sha256": "9cde2a741ade7b65145c0bf48c54efbb281ebed8e9878af9d5b465916cae8d24",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_09",
+      "seed": 3536772930,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_09/3536772930_0000.mp4",
+      "video_sha256": "4a72074abbc33e5e887e65a546ed524f7be208802ebbabc7a16ec85cce32d830",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_10",
+      "seed": 4282505696,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_10/4282505696_0000.mp4",
+      "video_sha256": "afe085b23eac94a17676d075f925e560708a92cca2901d69df936cbd8cef66eb",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_11",
+      "seed": 1317451259,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_11/1317451259_0000.mp4",
+      "video_sha256": "1f0e18b008de26f4506153102c358d04c5830c95e1e94fe34fb3531589e8b02e",
+      "status": "PASS"
+    },
+    {
+      "reference_id": "ref_12",
+      "seed": 3121712065,
+      "video_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/ref_12/3121712065_0000.mp4",
+      "video_sha256": "60cc354a8a0eb7c399c81e4e363a6297fa84aba62931dce2cc6f0db358726cb5",
+      "status": "PASS"
+    }
+  ],
+  "status": "FORMAL_UNIFIED_GENERATION_ALL_12_PASS"
+}

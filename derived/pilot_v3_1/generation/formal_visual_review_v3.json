@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "created_at_utc": "2026-08-15T05:51:45.078067+00:00",
+  "reviewed_frames_per_reference": [
+    0,
+    24,
+    48
+  ],
+  "references_reviewed": 12,
+  "observations": {
+    "composition": "The calibrated prompt improves visibility of eyes, lower face, and hair regions, but most formal outputs remain close portrait crops rather than literal waist-up compositions.",
+    "major_generation_artifact_references": [
+      "ref_09"
+    ],
+    "artifact_note": "ref_09 shows severe facial distortion and a spurious dark lower-face artifact in sampled frames."
+  },
+  "decision": {
+    "posthoc_exclusions": [],
+    "selective_reruns": false,
+    "seed_changes": false,
+    "all_12_retained_for_frozen_evaluation": true,
+    "rationale": "Composition shortfalls and generative artifacts are model outcomes. Frame-level observability is determined by the frozen evaluator; outputs are not excluded after inspection."
+  },
+  "contact_sheet_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/formal_temporal_contact_sheet_v3.jpg",
+  "contact_sheet_sha256": "a7aed309324380f88effb81f21929d5ca0ad5e8316317798a1eef389e7da6d21",
+  "status": "REVIEW_COMPLETE_NO_POSTHOC_EXCLUSION"
+}

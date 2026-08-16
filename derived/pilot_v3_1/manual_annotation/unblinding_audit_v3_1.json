@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "audit_id": "pilot_v3_facial_hair_unblinding_v3_1",
+  "executed_at_utc": "2026-08-16T01:44:36.210352+00:00",
+  "authorization_basis": "User explicitly instructed autonomous continuation after both completed submissions, until a human audit or judgment is required.",
+  "input_sha256": {
+    "consensus": "c0a19054e50cf3f6b3ad7df5dbc176285a7bcda81ab21641a32fc95a89203417",
+    "consensus_freeze": "acb3902b4ddbfa80ca1d26703fae7c02cf42ddc81d1c80c47ba29ee651c62383",
+    "private_mapping": "011cefe8d097355626f3ae684763223201f8fa428a2a56f139765c12722a48a4",
+    "frame_inventory": "b5d447a21988b9a1fbcd728df3543c6ac235a90895ba97491ecf60f2895d51ba",
+    "manifest": "7ddb2428793154488b73f05ff3fa2f9b0b61e4bbe8de872f3a53cae0deff1973"
+  },
+  "frozen_consensus_rows": 196,
+  "mapping_rows": 196,
+  "reconciled_rows": 196,
+  "anonymous_id_set_exact_match": true,
+  "sample_frame_inventory_exact_match": true,
+  "manifest_sample_membership_exact_match": true,
+  "private_mapping_bytes_read": 5294,
+  "private_mapping_read_count": 1,
+  "condition_level_analysis_performed": false,
+  "output": {
+    "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/facial_hair_unblinding_v3_1/facial_hair_annotation_unblinded_v3_1.csv",
+    "sha256": "0a3a2a94b36d91596b9fe318c1759e8ea8da76596724bfbdfc8cf3186a5dbc21"
+  },
+  "status": "PASS_MAPPING_RECONCILIATION_ONLY_NO_CONDITION_ANALYSIS"
+}

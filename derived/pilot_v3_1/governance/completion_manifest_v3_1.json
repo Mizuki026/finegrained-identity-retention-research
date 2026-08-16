@@ -1,0 +1,69 @@
+{
+  "schema_version": 3,
+  "completion_id": "pilot_v3_1_fixed_12_video_descriptive_completion",
+  "completed_at_utc": "2026-08-16T02:21:26.003258+00:00",
+  "research_branch": "pilot-v3-unified-generation",
+  "research_commit": "d0a4e094c4b4dbcd03e96ebf1d34dfa4ecaa009f",
+  "artifacts": {
+    "finalization_freeze": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/finalized_v3_1/finalization_freeze_v3_1.json",
+      "sha256": "a65c96516d42430d84d3e4cdfa73d2a48f86465fb44ca07efd09d91993199aa2",
+      "bytes": 403
+    },
+    "finalization_verification": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/finalized_v3_1_independent_verification.json",
+      "sha256": "0809234a23fb28fd1e62d2abdf3257bc1fa22b3f75056138f4478bcbcb82cb6c",
+      "bytes": 767
+    },
+    "video_summary": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/finalized_v3_1/attribute_video_summary_final_v3_1.csv",
+      "sha256": "281e305a5645952c4779c319d847c2b5d4f9eb8993a38b2e467cc022f2e073ff",
+      "bytes": 2311
+    },
+    "frame_inventory": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/finalized_v3_1/attribute_frame_inventory_final_v3_1.csv",
+      "sha256": "2b36a41c08dc4820b47200a14aaa4a2e0d67418c9af6a33401a0cae8eaeecb93",
+      "bytes": 123469
+    },
+    "human_decision": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/human_review_gate_v3_1/human_review_decision_v3_1.json",
+      "sha256": "ac669710e82cdb4f10cac94097559db0e755ba9cf9cbae66e18d444776b4a6a6",
+      "bytes": 906
+    },
+    "human_decision_freeze": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/human_review_gate_v3_1/human_review_decision_freeze_v3_1.json",
+      "sha256": "9f425537ec4bd33dfae353e0f662b8b99e45abd7ddce8c58b9f48169c33dcbbc",
+      "bytes": 487
+    },
+    "descriptive_report_json": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/descriptive_report_v3_1/pilot_v3_1_descriptive_results.json",
+      "sha256": "77ee05586717b0195886e197e6add477c269b10cc66ba7a415a417e99b0a4b1c",
+      "bytes": 3613
+    },
+    "descriptive_report_markdown": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/descriptive_report_v3_1/pilot_v3_1_descriptive_results.md",
+      "sha256": "97aff07d269c138053197d374d685676edc660684e5d1e8f530b9c8e22e865b1",
+      "bytes": 2125
+    },
+    "descriptive_report_freeze": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/descriptive_report_v3_1/descriptive_report_freeze_v3_1.json",
+      "sha256": "1fb4660eea42e6026818f7ad44f1dd904473f0f70115cfcdfd9095bf14cdedef",
+      "bytes": 465
+    },
+    "descriptive_report_verification": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/descriptive_report_v3_1/descriptive_report_independent_verification_v3_1.json",
+      "sha256": "2eea82ade9115a5433e11d7b51e371de754b594900f19337ce7b400dc5034d3b",
+      "bytes": 768
+    }
+  },
+  "generation_videos": 12,
+  "final_frame_rows": 588,
+  "final_video_rows": 12,
+  "human_annotation_independence_confirmed": true,
+  "ref_12_retained_as_measurement_unavailable_low_coverage": true,
+  "hair_color_reporting": "exploratory_measurement_limitation_only",
+  "claim_boundary": "fixed_12_video_descriptive_only",
+  "future_iteration_started": false,
+  "repository_pushed": false,
+  "status": "PILOT_V3_1_CURRENT_SCOPE_COMPLETE"
+}

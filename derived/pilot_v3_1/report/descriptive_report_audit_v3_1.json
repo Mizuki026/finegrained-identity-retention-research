@@ -1,0 +1,10 @@
+{
+  "schema_version": 3,
+  "report_id": "pilot_v3_1_fixed_video_descriptive_results",
+  "created_at_utc": "2026-08-16T02:19:19.911892+00:00",
+  "json_sha256": "77ee05586717b0195886e197e6add477c269b10cc66ba7a415a417e99b0a4b1c",
+  "markdown_sha256": "97aff07d269c138053197d374d685676edc660684e5d1e8f530b9c8e22e865b1",
+  "source_commit": "d0a4e094c4b4dbcd03e96ebf1d34dfa4ecaa009f",
+  "human_decision_status": "FROZEN_APPROVED_FOR_CONSERVATIVE_DESCRIPTIVE_REPORTING",
+  "status": "REPORT_BUILD_PASS_PENDING_INDEPENDENT_VERIFICATION"
+}

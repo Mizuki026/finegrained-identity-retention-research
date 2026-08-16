@@ -1,0 +1,11 @@
+{
+  "schema_version": 3,
+  "freeze_id": "pilot_v3_finalized_attribute_outputs_v3_1",
+  "frozen_at_utc": "2026-08-16T02:04:40.048553+00:00",
+  "output_hash_inventory_sha256": "7762e008bccb38c33a4594ec5fd1d7975bda9c8895df7e78be644eb7b5931323",
+  "frame_rows": 588,
+  "video_rows": 12,
+  "facial_hair_frame_rows": 196,
+  "facial_hair_video_rows": 4,
+  "status": "FROZEN_PENDING_INDEPENDENT_VERIFICATION"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "audit_id": "pilot_v3_facial_hair_annotation_agreement_v3_1",
+  "computed_at_utc": "2026-08-16T01:42:27.297330+00:00",
+  "submission_freeze_sha256": "8decc44d1adcf108435ae13a292a5b969885a5efd222cb48ce3d43c05e7b3800",
+  "items": 196,
+  "exact_agreements": 196,
+  "disagreements": 0,
+  "exact_agreement_fraction": 1.0,
+  "cohen_kappa_unweighted": 1.0,
+  "cohen_kappa_linear_weighted_with_U_nominal": 1.0,
+  "annotator_A_label_counts": {
+    "0": 98,
+    "2": 98
+  },
+  "annotator_B_label_counts": {
+    "0": 98,
+    "2": 98
+  },
+  "byte_identical_submissions": true,
+  "notes_preserved": true,
+  "private_mapping_accessed": false,
+  "adjudication_required": false,
+  "status": "AGREEMENT_COMPLETE_NO_ADJUDICATION_REQUIRED"
+}

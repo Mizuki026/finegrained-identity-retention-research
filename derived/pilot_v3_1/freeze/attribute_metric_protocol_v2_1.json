@@ -1,0 +1,209 @@
+{
+  "eyeglasses": {
+    "continuous_outputs": [
+      "p_present",
+      "p_absent",
+      "margin_present_minus_absent"
+    ],
+    "decision_rule": {
+      "absent": "margin_present_minus_absent < 0",
+      "present": "margin_present_minus_absent > 0",
+      "tie": "UNOBSERVABLE"
+    },
+    "image_embedding": "L2-normalized CLIP image embedding",
+    "instrument_id": "pilot_v2_eyeglasses_clip_v1",
+    "local_files_only": true,
+    "logits": "CLIP logit_scale multiplied cosine similarity",
+    "measurement_type": "automated frame-level classification",
+    "model": "openai/clip-vit-base-patch32",
+    "model_source": "/root/autodl-tmp/finegrained/metric_models_v2/clip-vit-base-patch32",
+    "probabilities": "two-class softmax over present and absent logits",
+    "prompt_bank": {
+      "negative_prompts": [
+        "a portrait photo of a person without eyeglasses",
+        "a close-up photo of a face without eyeglasses",
+        "a photograph of a person with no eyeglasses",
+        "a face without visible eyeglass frames"
+      ],
+      "positive_prompts": [
+        "a portrait photo of a person wearing eyeglasses",
+        "a close-up photo of a face wearing eyeglasses",
+        "a photograph of a person with eyeglasses",
+        "a face with visible eyeglass frames"
+      ]
+    },
+    "prototype_construction": "L2-normalize each text embedding, average embeddings within each class, then L2-normalize each class prototype.",
+    "video_summary": [
+      "valid_frame_count",
+      "valid_frame_fraction",
+      "mean_p_present",
+      "median_p_present",
+      "mean_margin",
+      "present_frame_fraction"
+    ]
+  },
+  "face_detection_and_crop": {
+    "crop_center": "detected face bounding-box center",
+    "crop_scale": 1.35,
+    "crop_shape": "square",
+    "detector": "scrfd_10g_bnkps.onnx",
+    "face_selection": "largest detected face by bounding-box area",
+    "image_boundary_policy": "clip crop to image boundaries",
+    "model_family": "insightface_antelopev2",
+    "multiple_faces": "use largest detected face only",
+    "no_face_detected": "UNOBSERVABLE"
+  },
+  "facial_hair": {
+    "annotation_material": "Face crops indexed by anonymous video and frame identifiers.",
+    "condition_blinding": true,
+    "identity_blinding": true,
+    "instrument_id": "pilot_v2_facial_hair_manual_ordinal_v1",
+    "labels": {
+      "0": "no visible facial hair",
+      "1": "faint, sparse, or ambiguous visible facial hair",
+      "2": "clearly visible moustache, beard, goatee, or stubble",
+      "U": "unobservable"
+    },
+    "measurement_type": "blinded manual frame-level annotation",
+    "ordinal_label_1_policy": "Retain as ordinal label 1; do not force into the primary binary positive or negative category.",
+    "primary_negative_label": "0",
+    "primary_positive_label": "2",
+    "seed_blinding": true,
+    "video_summary": [
+      "count_label_0",
+      "count_label_1",
+      "count_label_2",
+      "count_unobservable",
+      "valid_frame_fraction",
+      "label_2_frame_fraction",
+      "ordinal_mean_over_observable_frames"
+    ]
+  },
+  "failure_policy": {
+    "PIPELINE_FAILURE": "The frame could not be processed because of a technical error.",
+    "UNOBSERVABLE": "The frame exists but the target attribute cannot be measured under the frozen observability rules.",
+    "exclude_pipeline_failures_from_valid_measurement_summary": true,
+    "no_imputation": true,
+    "retain_failure_reason": true
+  },
+  "generation_started_before_freeze": false,
+  "hair_color": {
+    "color_space": "CIELAB",
+    "component_policy": "retain largest connected hair component",
+    "continuous_frame_measurement": "median CIELAB L-star over the eroded hair-core pixels",
+    "erosion_kernel": [
+      7,
+      7
+    ],
+    "frame_level_light_dark_threshold": null,
+    "hair_class_index": 17,
+    "input_resolution": [
+      512,
+      512
+    ],
+    "instrument_id": "pilot_v2_hair_cielab_v1",
+    "measurement_type": "automated continuous frame-level measurement",
+    "minimum_component_pixels_before_erosion": 256,
+    "minimum_core_pixels_after_erosion": 1000,
+    "pixel_summary_statistic": "median",
+    "segmentation_model": "BiSeNet face parsing",
+    "segmentation_weight": "/root/autodl-tmp/consisid-smoketest/ckpts/ConsisID-preview/face_encoder/parsing_bisenet.pth",
+    "supporting_frame_outputs": [
+      "hair_Lstar_q25",
+      "hair_Lstar_median",
+      "hair_Lstar_q75",
+      "hair_astar_median",
+      "hair_bstar_median"
+    ],
+    "threshold_policy": "No post-generation light/dark threshold is selected; continuous L-star is the primary outcome.",
+    "video_level_light_dark_threshold": null,
+    "video_summary": [
+      "valid_frame_count",
+      "valid_frame_fraction",
+      "mean_of_frame_median_L_star",
+      "median_of_frame_median_L_star",
+      "standard_deviation_of_frame_median_L_star",
+      "minimum_frame_median_L_star",
+      "maximum_frame_median_L_star"
+    ]
+  },
+  "model_hash_inventory": "/root/autodl-tmp/finegrained/pilot_v2_runtime/experiment_freeze_v2/metric_models_v2/metric_model_hashes_v2.csv",
+  "protocol_id": "pilot_v2_attribute_metric_protocol_v2_1",
+  "schema_version": "2.1",
+  "scope": {
+    "frame_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "frame_observations_are_correlated": true,
+    "frames_per_video": 49,
+    "low_coverage_definition": "A video is flagged LOW_COVERAGE when fewer than 50 percent of its 49 frames have valid observable measurements.",
+    "low_coverage_threshold": 0.5,
+    "missing_value_policy": "No imputation.",
+    "primary_analysis_unit": "video",
+    "primary_metric": "Each reference is evaluated on its preassigned target attribute.",
+    "references": 12,
+    "temporal_subsampling": false,
+    "videos_per_reference": 1
+  },
+  "shared_frame_statuses": [
+    "VALID_OBSERVABLE",
+    "UNOBSERVABLE",
+    "PIPELINE_FAILURE"
+  ],
+  "status": "FROZEN_BEFORE_GENERATION",
+  "supersedes": {
+    "data_had_been_observed": false,
+    "generation_had_started": false,
+    "protocol_path": "/root/autodl-tmp/finegrained/pilot_v2_runtime/experiment_freeze_v2/metric_protocol_v2/attribute_metric_protocol_v2.json",
+    "protocol_sha256": "1560d7b02de6420c10db59f70c499e9b4828b9836080e0ec6a75003369913ebb",
+    "reason": "Pre-generation code-to-protocol conformance correction: the frozen implementation and output schema use the median CIELAB L-star over valid eroded hair-core pixels."
+  }
+}

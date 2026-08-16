@@ -1,0 +1,31 @@
+{
+  "schema_version": 3,
+  "run_id": "pilot_v3_attribute_evaluation_final_v3_1",
+  "completed_at_utc": "2026-08-16T02:04:40.045795+00:00",
+  "script_sha256": "99dd94f5112f417853285572ac088b776625ab238436c908b98884c143319a9e",
+  "code_commit": "d0a4e094c4b4dbcd03e96ebf1d34dfa4ecaa009f",
+  "inputs": {
+    "machine_frames": "b5d447a21988b9a1fbcd728df3543c6ac235a90895ba97491ecf60f2895d51ba",
+    "machine_summary": "b399821acfb15f79db898790a80b5e157339e181af555d70b93e8819137e1dd0",
+    "manifest": "7ddb2428793154488b73f05ff3fa2f9b0b61e4bbe8de872f3a53cae0deff1973",
+    "unblinded_consensus": "0a3a2a94b36d91596b9fe318c1759e8ea8da76596724bfbdfc8cf3186a5dbc21",
+    "unblinding_verification": "713d4aee2b7f0495e6c4a2740f9c7bd75d0f954ca3a2bc8f5636cf43ecb42e81",
+    "aggregation_plan": "b6d0abae93587e6f83826668cae71ca7e1a73a057460272c52f3120c514b8bfb",
+    "aggregation_plan_freeze": "3b6b1e8755d0bdf88a4fcf4b9e364a2b6b9fe783f253ee350d403ea39a0887eb"
+  },
+  "row_counts": {
+    "final_frame_inventory": 588,
+    "unified_video_summary": 12,
+    "facial_hair_frame_ledger": 196,
+    "facial_hair_video_summary": 4
+  },
+  "frame_status_counts": {
+    "VALID_OBSERVABLE": 524,
+    "UNOBSERVABLE": 64
+  },
+  "pipeline_failure_frames": 0,
+  "selective_rerun_performed": false,
+  "imputation_performed": false,
+  "condition_level_inferential_analysis_performed": false,
+  "status": "FINALIZATION_EXECUTION_PASS_PENDING_INDEPENDENT_VERIFICATION"
+}

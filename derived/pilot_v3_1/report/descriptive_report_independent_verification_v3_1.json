@@ -1,0 +1,16 @@
+{
+  "schema_version": 3,
+  "verification_id": "pilot_v3_1_descriptive_report_independent_verification",
+  "verified_at_utc": "2026-08-16T02:20:26.161192+00:00",
+  "source_summary_sha256": "281e305a5645952c4779c319d847c2b5d4f9eb8993a38b2e467cc022f2e073ff",
+  "report_json_sha256": "77ee05586717b0195886e197e6add477c269b10cc66ba7a415a417e99b0a4b1c",
+  "report_markdown_sha256": "97aff07d269c138053197d374d685676edc660684e5d1e8f530b9c8e22e865b1",
+  "fixed_sample_ids_verified": true,
+  "row_counts_recomputed": true,
+  "attribute_values_recomputed": true,
+  "human_decisions_verified": true,
+  "freeze_hashes_verified": true,
+  "private_mapping_accessed": false,
+  "inferential_analysis_performed": false,
+  "status": "PASS_INDEPENDENT_DESCRIPTIVE_REPORT_VERIFICATION"
+}

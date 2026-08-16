@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "freeze_id": "pilot_v3_metric_protocol_binding_v1",
+  "frozen_at_utc": "2026-08-15T04:41:33.841955+00:00",
+  "protocol_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/metric_protocol_v1/attribute_metric_protocol_v2_1.json",
+  "protocol_sha256": "58e85a206838de08c141f69e333d901a48f35eeefbbe50044f17d5a4d600b4c7",
+  "definition_changed": false,
+  "prompt_bank_changed": false,
+  "generation_started_before_freeze": false,
+  "status": "FROZEN"
+}

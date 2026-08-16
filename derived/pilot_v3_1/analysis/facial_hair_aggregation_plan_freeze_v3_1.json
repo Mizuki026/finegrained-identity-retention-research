@@ -1,0 +1,9 @@
+{
+  "schema_version": 3,
+  "freeze_id": "pilot_v3_facial_hair_aggregation_plan_freeze_v3_1",
+  "frozen_at_utc": "2026-08-16T01:47:26.892417+00:00",
+  "plan_json_sha256": "b6d0abae93587e6f83826668cae71ca7e1a73a057460272c52f3120c514b8bfb",
+  "plan_markdown_sha256": "2d434ac9488327b89376415b6552aec826e4171deeb947178834a556059b378e",
+  "condition_summary_inspected_before_freeze": false,
+  "status": "FROZEN"
+}

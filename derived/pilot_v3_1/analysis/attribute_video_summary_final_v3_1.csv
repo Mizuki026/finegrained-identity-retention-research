@@ -1,0 +1,13 @@
+schema_version,run_id,sample_id,attribute,expected_label,total_frames,valid_observable_frames,unobservable_frames,pipeline_failure_frames,valid_frame_fraction,unobservable_fraction,pipeline_failure_fraction,low_coverage_flag,metric_mean,metric_sd,metric_median,expected_label_match_fraction,adjacent_valid_pair_count,adjacent_flip_count,adjacent_flip_rate,primary_reason_code,secondary_reason_codes,summary_status
+1,pilot_v3_attribute_evaluation_v3_1,ref_01,eyeglasses,present,49,49,0,0,1.000000,0.000000,0.000000,false,0.740449,0.068715,0.755249,0.979592,48,1,0.020833,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_02,eyeglasses,present,49,49,0,0,1.000000,0.000000,0.000000,false,0.738616,0.063067,0.751726,0.979592,48,1,0.020833,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_03,eyeglasses,absent,49,49,0,0,1.000000,0.000000,0.000000,false,0.102153,0.015774,0.101772,1.000000,48,0,0.000000,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_04,eyeglasses,absent,49,49,0,0,1.000000,0.000000,0.000000,false,0.128716,0.021362,0.136202,1.000000,48,0,0.000000,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_05,facial_hair,2,49,49,0,0,1.000000,0.000000,0.000000,false,2.000000,0.000000,2.000000,1.000000,48,0,0.000000,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_06,facial_hair,2,49,49,0,0,1.000000,0.000000,0.000000,false,2.000000,0.000000,2.000000,1.000000,48,0,0.000000,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_07,facial_hair,0,49,49,0,0,1.000000,0.000000,0.000000,false,0.000000,0.000000,0.000000,1.000000,48,0,0.000000,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_08,facial_hair,0,49,49,0,0,1.000000,0.000000,0.000000,false,0.000000,0.000000,0.000000,1.000000,48,0,0.000000,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_09,hair_color,light,49,34,15,0,0.693878,0.306122,0.000000,false,54.961799,0.787819,54.910278,,0,0,,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_10,hair_color,light,49,49,0,0,1.000000,0.000000,0.000000,false,38.615449,2.053857,39.080811,,0,0,,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_11,hair_color,dark,49,49,0,0,1.000000,0.000000,0.000000,false,7.884995,0.491348,7.812500,,0,0,,,,COMPLETE
+1,pilot_v3_attribute_evaluation_v3_1,ref_12,hair_color,dark,49,0,49,0,0.000000,1.000000,0.000000,true,,,,,0,0,,,,COMPLETE

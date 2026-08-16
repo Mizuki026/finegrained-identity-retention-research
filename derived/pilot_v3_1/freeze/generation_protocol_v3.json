@@ -1,0 +1,59 @@
+{
+  "schema_version": 3,
+  "protocol_id": "pilot_v3_unified_generation_protocol_v1",
+  "frozen_at_utc": "2026-08-15T04:41:35.588375+00:00",
+  "status": "FROZEN",
+  "model": {
+    "name": "ConsisID-preview",
+    "model_path": "/root/autodl-tmp/consisid-smoketest/ckpts/ConsisID-preview",
+    "code_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "infer_py_sha256": "441dc95e1ca99c57c798249082705634192c2371a73c02bd3614072ec4e102c0",
+    "model_weight_file_count": 72,
+    "model_weight_total_size_bytes": 25090420496,
+    "model_weight_hash_manifest_sha256": "c1ad1b0f49cf65f3c005a443742c7ea00de78e33d8012a96793cce2be8d116a3"
+  },
+  "prompt": {
+    "prompt_id": "calibrated_waist_up_static_v1",
+    "text": "A realistic static-camera waist-up portrait video of one person standing several steps away from the camera. The full upper body is visible from the top of the hair to below the waist. The entire head, all hair, both ears, full chin, neck, shoulders, chest, and upper arms stay completely inside the frame. Generous background space surrounds the person. The person remains centered, looks toward the camera, gently blinks, and makes only subtle natural movements. Fixed eye-level camera, wide portrait framing, no zoom, no crop, stable soft daylight, sharp face, simple softly blurred background.",
+    "negative_prompt": "close-up, extreme close-up, macro shot, zoomed-in face, face filling the frame, cropped head, cropped forehead, cropped hair, cropped chin, partial face, cut-off body, camera zoom, camera push-in, profile view, multiple people, blurred face",
+    "same_prompt_for_all_references": true,
+    "target_attributes_mentioned": false,
+    "calibration_freeze_sha256": "62662b90015d864aa12b488d1a67ac8c2ee2dc31412d42577d496b7a30ea8174"
+  },
+  "seed_policy": {
+    "one_fixed_seed_per_reference": true,
+    "seed_count": 12,
+    "mapping_held_constant": true,
+    "seeds_unique": true,
+    "zero_seed_allowed": false,
+    "seed_change_allowed": false
+  },
+  "inference_parameters": {
+    "num_inference_steps": 50,
+    "guidance_scale": 6.0,
+    "num_videos_per_prompt": 1,
+    "dtype": "bfloat16",
+    "num_frames": 49,
+    "fps": 8,
+    "upscale": false,
+    "frame_interpolation": false,
+    "resolution_policy": "Native ConsisID output; expected 720x480."
+  },
+  "controlled_change": {
+    "reference_mapping_changed": false,
+    "seed_mapping_changed": false,
+    "model_changed": false,
+    "metric_definition_changed": false,
+    "composition_prompt_changed": true
+  },
+  "execution_policy": {
+    "one_new_output_directory_per_reference": true,
+    "expected_files_per_reference": 1,
+    "overwrite_allowed": false,
+    "selective_rerun_allowed": false,
+    "seed_change_allowed": false,
+    "reference_substitution_allowed": false,
+    "stop_on_any_failure": true
+  },
+  "formal_generation_started": false
+}

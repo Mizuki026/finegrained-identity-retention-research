@@ -1,0 +1,120 @@
+{
+  "schema_version": 3,
+  "report_id": "pilot_v3_1_fixed_video_descriptive_results",
+  "created_at_utc": "2026-08-16T02:19:19.911892+00:00",
+  "analysis_unit": "video",
+  "scope": "fixed_12_video_confounded_pilot",
+  "inputs": {
+    "video_summary_sha256": "281e305a5645952c4779c319d847c2b5d4f9eb8993a38b2e467cc022f2e073ff",
+    "frame_inventory_sha256": "2b36a41c08dc4820b47200a14aaa4a2e0d67418c9af6a33401a0cae8eaeecb93",
+    "finalization_verification_sha256": "0809234a23fb28fd1e62d2abdf3257bc1fa22b3f75056138f4478bcbcb82cb6c",
+    "human_decision_sha256": "ac669710e82cdb4f10cac94097559db0e755ba9cf9cbae66e18d444776b4a6a6",
+    "human_decision_freeze_sha256": "9f425537ec4bd33dfae353e0f662b8b99e45abd7ddce8c58b9f48169c33dcbbc"
+  },
+  "overall": {
+    "videos": 12,
+    "frames": 588,
+    "valid_observable_frames": 524,
+    "unobservable_frames": 64,
+    "pipeline_failure_frames": 0,
+    "valid_observable_fraction": 0.891156,
+    "unobservable_fraction": 0.108844
+  },
+  "eyeglasses": {
+    "present_videos": 2,
+    "absent_videos": 2,
+    "present_expected_match_fractions": [
+      0.979592,
+      0.979592
+    ],
+    "absent_expected_match_fractions": [
+      1.0,
+      1.0
+    ],
+    "present_video_median_p_present": [
+      0.755249,
+      0.751726
+    ],
+    "absent_video_median_p_present": [
+      0.101772,
+      0.136202
+    ],
+    "all_four_video_frame_matches": 194,
+    "all_four_binary_eligible_frames": 196,
+    "pooled_descriptive_match_fraction": 0.989796
+  },
+  "facial_hair": {
+    "videos": 4,
+    "frames": 196,
+    "valid_observable_frames": 196,
+    "unobservable_frames": 0,
+    "expected_match_frames": 196,
+    "binary_eligible_frames": 196,
+    "per_video_expected_match_fraction": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "per_video_adjacent_flip_rate": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "annotation_provenance": "two_independent_researchers_confirmed_by_researcher_attestation",
+    "submission_files_byte_identical": true
+  },
+  "hair_color": {
+    "reporting_mode": "exploratory_measurement_limitation_only",
+    "videos": [
+      {
+        "sample_id": "ref_09",
+        "expected": "light",
+        "valid_frames": 34,
+        "unobservable_frames": 15,
+        "median_Lstar": 54.910278,
+        "low_coverage": false
+      },
+      {
+        "sample_id": "ref_10",
+        "expected": "light",
+        "valid_frames": 49,
+        "unobservable_frames": 0,
+        "median_Lstar": 39.080811,
+        "low_coverage": false
+      },
+      {
+        "sample_id": "ref_11",
+        "expected": "dark",
+        "valid_frames": 49,
+        "unobservable_frames": 0,
+        "median_Lstar": 7.8125,
+        "low_coverage": false
+      },
+      {
+        "sample_id": "ref_12",
+        "expected": "dark",
+        "valid_frames": 0,
+        "unobservable_frames": 49,
+        "median_Lstar": null,
+        "low_coverage": true
+      }
+    ],
+    "ref_09_generation_artifact_retained": true,
+    "ref_12_treatment": "retained_measurement_unavailable_low_coverage_no_exclusion_no_imputation",
+    "cross_condition_inference_performed": false
+  },
+  "prohibited_actions_confirmed_absent": {
+    "p_values": true,
+    "regression": true,
+    "frame_level_inference": true,
+    "imputation": true,
+    "post_hoc_exclusion": true,
+    "selective_rerun": true,
+    "causal_claim": true,
+    "general_model_claim": true
+  },
+  "claim_boundary": "Descriptive results for these 12 fixed videos only; frames are correlated; no causal, population, or general-model inference.",
+  "status": "FROZEN_DESCRIPTIVE_REPORT_PENDING_INDEPENDENT_VERIFICATION"
+}

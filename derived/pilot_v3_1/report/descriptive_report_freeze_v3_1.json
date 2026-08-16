@@ -1,0 +1,9 @@
+{
+  "schema_version": 3,
+  "freeze_id": "pilot_v3_1_descriptive_report_freeze",
+  "frozen_at_utc": "2026-08-16T02:19:19.912495+00:00",
+  "report_json_sha256": "77ee05586717b0195886e197e6add477c269b10cc66ba7a415a417e99b0a4b1c",
+  "report_markdown_sha256": "97aff07d269c138053197d374d685676edc660684e5d1e8f530b9c8e22e865b1",
+  "audit_sha256": "0d7e1ef9b063d9c35328c2deea1d0bd7329cb7800062cfdcc0ba0533090d894e",
+  "status": "FROZEN_PENDING_INDEPENDENT_VERIFICATION"
+}

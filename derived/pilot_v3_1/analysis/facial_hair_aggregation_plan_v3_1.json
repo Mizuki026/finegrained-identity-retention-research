@@ -1,0 +1,107 @@
+{
+  "schema_version": 3,
+  "plan_id": "pilot_v3_facial_hair_descriptive_aggregation_plan_v3_1",
+  "frozen_at_utc": "2026-08-16T01:47:26.891716+00:00",
+  "frozen_before_condition_summary_inspection": true,
+  "inputs": {
+    "metric_protocol": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/metric_protocol_v1/attribute_metric_protocol_v2_1.json",
+      "sha256": "58e85a206838de08c141f69e333d901a48f35eeefbbe50044f17d5a4d600b4c7"
+    },
+    "evaluation_manifest": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/evaluation_manifest_v3.csv",
+      "sha256": "7ddb2428793154488b73f05ff3fa2f9b0b61e4bbe8de872f3a53cae0deff1973"
+    },
+    "consensus_freeze": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/manual_annotation_agreement_v3_1/facial_hair_annotation_consensus_freeze_v3_1.json",
+      "sha256": "acb3902b4ddbfa80ca1d26703fae7c02cf42ddc81d1c80c47ba29ee651c62383"
+    },
+    "unblinded_reconciled_labels": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/facial_hair_unblinding_v3_1/facial_hair_annotation_unblinded_v3_1.csv",
+      "sha256": "0a3a2a94b36d91596b9fe318c1759e8ea8da76596724bfbdfc8cf3186a5dbc21"
+    },
+    "independent_unblinding_verification": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/attribute_evaluation_v3/run_002/facial_hair_unblinding_v3_1/facial_hair_unblinding_independent_verification_v3_1.json",
+      "sha256": "713d4aee2b7f0495e6c4a2740f9c7bd75d0f954ca3a2bc8f5636cf43ecb42e81"
+    }
+  },
+  "scope": {
+    "primary_analysis_unit": "video",
+    "target_videos": 4,
+    "frames_per_video": 49,
+    "planned_frame_positions": 196,
+    "frames_are_correlated": true,
+    "include_all_predetermined_target_videos": true,
+    "no_frame_or_video_exclusion": true,
+    "no_imputation": true
+  },
+  "state_mapping": {
+    "0": {
+      "frame_status": "VALID_OBSERVABLE",
+      "ordinal_value": 0,
+      "binary_label": "0"
+    },
+    "1": {
+      "frame_status": "VALID_OBSERVABLE",
+      "ordinal_value": 1,
+      "binary_label": null,
+      "binary_policy": "Retain ordinal 1; exclude from primary binary expected-match denominator."
+    },
+    "2": {
+      "frame_status": "VALID_OBSERVABLE",
+      "ordinal_value": 2,
+      "binary_label": "2"
+    },
+    "U": {
+      "frame_status": "UNOBSERVABLE",
+      "ordinal_value": null,
+      "binary_label": null,
+      "reason": "MANUAL_UNOBSERVABLE"
+    }
+  },
+  "video_outputs": [
+    "planned_frames",
+    "count_label_0",
+    "count_label_1",
+    "count_label_2",
+    "count_label_U",
+    "valid_ordinal_fraction",
+    "binary_eligible_frames",
+    "binary_expected_match_fraction",
+    "ordinal_mean_over_observable",
+    "ordinal_median_over_observable",
+    "adjacent_binary_valid_pairs",
+    "adjacent_binary_flips",
+    "adjacent_binary_flip_rate",
+    "raw_ordinal_sequence"
+  ],
+  "denominators": {
+    "valid_ordinal_fraction": "count(0,1,2)/49",
+    "binary_expected_match_fraction": "matches among labels 0 or 2 only; label 1 and U excluded",
+    "ordinal_mean_and_median": "labels 0,1,2 only",
+    "adjacent_binary_flip_rate": "consecutive original frame indices where both labels are 0 or 2 only"
+  },
+  "coverage_rule": {
+    "low_coverage_threshold": 0.5,
+    "flag_when": "valid_ordinal_fraction < 0.5",
+    "retain_flagged_video": true
+  },
+  "expected_match": {
+    "manifest_label_0": "frame label 0 matches",
+    "manifest_label_2": "frame label 2 matches",
+    "post_hoc_threshold": false
+  },
+  "prohibited": [
+    "frame-level inferential tests",
+    "p-values",
+    "regression",
+    "confidence intervals treating frames as independent",
+    "post-hoc threshold selection",
+    "imputation",
+    "selective reruns",
+    "sample or frame exclusion",
+    "causal or general model claims"
+  ],
+  "permitted_claim_boundary": "Descriptive results for this fixed, confounded Pilot at the video level under the frozen rubric; no confirmatory causal claim.",
+  "status": "FROZEN_READY_FOR_EXECUTION"
+}

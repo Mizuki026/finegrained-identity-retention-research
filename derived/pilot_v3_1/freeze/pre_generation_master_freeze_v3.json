@@ -1,0 +1,97 @@
+{
+  "schema_version": 3,
+  "freeze_id": "pilot_v3_pre_generation_master_freeze_v1",
+  "frozen_at_utc": "2026-08-15T04:41:35.588963+00:00",
+  "status": "FROZEN_READY_FOR_UNIFIED_GENERATION",
+  "artifacts": {
+    "composition_calibration_freeze": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/calibration_v1/composition_calibration_freeze_v1.json",
+      "size_bytes": 2148,
+      "sha256": "62662b90015d864aa12b488d1a67ac8c2ee2dc31412d42577d496b7a30ea8174"
+    },
+    "frozen_reference_files": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/frozen_references_v1/frozen_reference_files_v1.csv",
+      "size_bytes": 4381,
+      "sha256": "9495aa4c29899b043694ebcf979efa2101aab5b6cbaf674e3692aef1b396214e"
+    },
+    "reference_materialization": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/frozen_references_v1/frozen_reference_materialization_v1.json",
+      "size_bytes": 372,
+      "sha256": "d3d667a606c4159cda6aec85ce6714df4af432f81090de14d15986165e09b4f1"
+    },
+    "generation_manifest": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/generation_manifest_v3.csv",
+      "size_bytes": 6155,
+      "sha256": "528e88f60df88a86063362a4b5634842b45c553287e9fa0a0a602cce1b22c311"
+    },
+    "evaluation_manifest": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/evaluation_manifest_v3.csv",
+      "size_bytes": 5058,
+      "sha256": "7ddb2428793154488b73f05ff3fa2f9b0b61e4bbe8de872f3a53cae0deff1973"
+    },
+    "generation_protocol": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/generation_protocol_v3.json",
+      "size_bytes": 2849,
+      "sha256": "4041223f4509682a941ea6a467c0f3121ae1d054ed849b4cee8f8df371ff3450"
+    },
+    "metric_protocol": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/metric_protocol_v1/attribute_metric_protocol_v2_1.json",
+      "size_bytes": 6858,
+      "sha256": "58e85a206838de08c141f69e333d901a48f35eeefbbe50044f17d5a4d600b4c7"
+    },
+    "metric_protocol_freeze": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/metric_protocol_v1/attribute_metric_protocol_freeze_v1.json",
+      "size_bytes": 498,
+      "sha256": "2f1cb2ca7542e24339ce55ccbc58f6924582c77dc2f4ccec9640e319d6ded049"
+    },
+    "runtime_inventory": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/runtime_inventory_v1.json",
+      "size_bytes": 2093,
+      "sha256": "62009ac398abb080d09a95b70ed97f6cf9bb91386719564d57c2a017d2554b89"
+    },
+    "installed_packages": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/installed_packages_v1.txt",
+      "size_bytes": 3199,
+      "sha256": "70b6758c670a981fd90fd48f2cb362f3c67cabb425458a9adc489e2c48a724d2"
+    },
+    "model_weight_hashes": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/model_weight_hashes_v1.csv",
+      "size_bytes": 9303,
+      "sha256": "c1ad1b0f49cf65f3c005a443742c7ea00de78e33d8012a96793cce2be8d116a3"
+    },
+    "metric_model_hashes": {
+      "path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/experiment_freeze_v1/metric_models_v1/metric_model_hashes_v1.csv",
+      "size_bytes": 2969,
+      "sha256": "73d5847dcc2904aec32a23cd1a7f6fd4d045a76a49a382c7793e5f9319821478"
+    },
+    "evaluation_script": {
+      "path": "/root/autodl-tmp/finegrained/research_pipeline/src/pilot_v3_attribute_evaluation_v3.py",
+      "size_bytes": 24695,
+      "sha256": "bbb115942111c22a3f9924cdab95daf7277cc18e4b0b2ecc496e98849b0a8b9c"
+    }
+  },
+  "code": {
+    "research_branch": "pilot-v3-unified-generation",
+    "research_commit": "3f87064542e37586ba201692df350c93f0134be2",
+    "research_working_tree_clean": true,
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_working_tree_clean": true
+  },
+  "design": {
+    "reference_count": 12,
+    "unique_identities": 12,
+    "cells": 6,
+    "references_per_cell": 2,
+    "same_prompt_for_all": true,
+    "one_fixed_seed_per_reference": true,
+    "controlled_change_only": "composition_prompt"
+  },
+  "execution_gate": {
+    "all_required_artifacts_present": true,
+    "all_expected_videos_absent": true,
+    "generation_may_begin": true
+  },
+  "manual_substitutions_allowed": false,
+  "selective_reruns_allowed": false,
+  "generation_started": false
+}

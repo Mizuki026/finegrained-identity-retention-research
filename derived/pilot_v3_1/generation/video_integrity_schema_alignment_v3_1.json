@@ -1,0 +1,13 @@
+{
+  "schema_version": 3,
+  "created_at_utc": "2026-08-15T05:53:19.819146+00:00",
+  "parent_integrity_csv_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/video_integrity_audit_v3.csv",
+  "parent_integrity_csv_sha256": "1245045d9f3b3560d6ac9fced513bbf8e71ba44ec0edb3563d1202bf42e11d48",
+  "aligned_integrity_csv_path": "/root/autodl-tmp/finegrained/pilot_v3_runtime/generation_outputs_v1/video_integrity_audit_v3_1.csv",
+  "aligned_integrity_csv_sha256": "bba345081d639592a735c86bb1c72987fc4293dfc7f4b17901d9a338992fa93b",
+  "rows": 12,
+  "change": "Added sample_id as an exact alias of reference_id; no video paths, hashes, probe values, or PASS statuses changed.",
+  "evaluation_started_before_alignment": false,
+  "videos_regenerated": false,
+  "status": "SCHEMA_ALIGNMENT_PASS"
+}
