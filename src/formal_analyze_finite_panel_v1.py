@@ -39,6 +39,10 @@ def mean(xs): return statistics.mean(xs) if xs else None
 def median(xs): return statistics.median(xs) if xs else None
 def span(xs): return (min(xs),max(xs)) if xs else (None,None)
 def bools(x): return str(bool(x)).lower()
+def facial_expected(task):
+ x=task['expected_state']
+ if x not in ('0','2'): fail('facial expected-state coding mismatch')
+ return x
 
 def verify_inputs():
  if sha(MASTER)!=EXPECTED_MASTER: fail('master freeze hash mismatch')
@@ -89,7 +93,7 @@ def main():
  for m in mapping:
   task=tasks.get(m['task_id']); label=labels[m['annotation_item_id']]
   if task is None or task['attribute']!='facial_hair': fail('mapping task mismatch')
-  expected='2' if task['expected_state']=='present' else '0'
+  expected=facial_expected(task)
   if m['expected_state']!=expected or any(m[k]!=task[k] for k in ('formal_unit_id','formal_pair_id','role','seed_index','seed')): fail('mapping metadata mismatch')
   value=label['final_label']; status='UNOBSERVABLE' if value=='U' else 'VALID_OBSERVABLE'
   row={'schema_version':1,'annotation_item_id':m['annotation_item_id'],'task_id':m['task_id'],'formal_unit_id':m['formal_unit_id'],'formal_pair_id':m['formal_pair_id'],'role':m['role'],'expected_state':expected,'seed_index':m['seed_index'],'seed':m['seed'],'frame_index':m['frame_index'],'final_label':value,'frame_status':status,'expected_state_match':'' if value=='U' else bools(value==expected),'consensus_source':label['consensus_source'],'generated_face_status':m['generated_face_status'],'crop_method':m['crop_method']}
@@ -106,7 +110,7 @@ def main():
   if t['attribute']!='eyeglasses' or any(e[k]!=t[k] for k in ('formal_unit_id','formal_pair_id','role','expected_state','seed_index','seed')): fail('eyeglasses metadata mismatch')
   videos.append({'schema_version':1,'task_id':e['task_id'],'formal_unit_id':e['formal_unit_id'],'formal_pair_id':e['formal_pair_id'],'attribute':'eyeglasses','role':e['role'],'expected_state':e['expected_state'],'seed_index':e['seed_index'],'seed':e['seed'],'planned_frames':49,'valid_frames':e['valid_frames'],'unobservable_frames':e['unobservable_frames'],'pipeline_failure_frames':e['pipeline_failure_frames'],'valid_frame_fraction':e['valid_frame_fraction'],'low_coverage_flag':e['low_coverage_flag'],'primary_expected_state_score':e['mean_expected_state_probability'],'expected_state_match_fraction':e['expected_state_match_fraction'],'mean_signed_expected_state_margin':e['mean_signed_expected_state_margin'],'ordinal_mean':'','label_2_fraction':'','summary_status':e['summary_status']})
  for task_id,rows in facial_by_task.items():
-  t=tasks[task_id]; valid=[r for r in rows if r['frame_status']=='VALID_OBSERVABLE']; vals=[int(r['final_label']) for r in valid]; expected='2' if t['expected_state']=='present' else '0'; n=len(valid); coverage=n/7
+  t=tasks[task_id]; valid=[r for r in rows if r['frame_status']=='VALID_OBSERVABLE']; vals=[int(r['final_label']) for r in valid]; expected=facial_expected(t); n=len(valid); coverage=n/7
   primary=sum(r['final_label']==expected for r in valid)/n if n else None
   videos.append({'schema_version':1,'task_id':task_id,'formal_unit_id':t['formal_unit_id'],'formal_pair_id':t['formal_pair_id'],'attribute':'facial_hair','role':t['role'],'expected_state':t['expected_state'],'seed_index':t['seed_index'],'seed':t['seed'],'planned_frames':7,'valid_frames':n,'unobservable_frames':7-n,'pipeline_failure_frames':0,'valid_frame_fraction':fnum(coverage),'low_coverage_flag':bools(coverage<0.5),'primary_expected_state_score':fnum(primary),'expected_state_match_fraction':fnum(primary),'mean_signed_expected_state_margin':'','ordinal_mean':fnum(mean(vals)),'label_2_fraction':fnum(sum(x==2 for x in vals)/n if n else None),'summary_status':'COMPLETE' if n else 'NO_VALID_FRAMES'})
  if len(videos)!=160 or len({r['task_id'] for r in videos})!=160: fail('normalized video universe mismatch')
