@@ -16,9 +16,17 @@ def main():
  freeze=json.loads((CONS/'eyeglasses_consensus_freeze_v1_1.json').read_text()); final=rcsv(CONS/'eyeglasses_final_consensus_v1_1.csv')
  req(sha(CONS/'eyeglasses_final_consensus_v1_1.csv')==freeze['consensus_sha256'] and len(final)==560,'consensus freeze mismatch')
  snaps={a:{r['annotation_item_id']:r for r in rcsv(AGREE/f'submitted_snapshots/eyeglasses_annotator_{a}_submitted_v1_1.csv')} for a in 'AB'}
+ audit=json.loads((CONS/'eyeglasses_consensus_audit_v1_1.json').read_text(encoding='utf-8'))
+ req(sha(CONS/'eyeglasses_consensus_audit_v1_1.json')==freeze['audit_sha256'],'consensus audit freeze mismatch')
+ req(audit['mechanical_normalization']['adjudication_values_or_rationales_changed'] is False,'decision mutation declared')
  dec={}
  for r in rcsv(CONS/'adjudication_decisions_normalized_v1_1.csv'):
-  req(r['adjudicated_value'] in r['allowed_values'].split('|') and r['rationale'].strip(),'invalid normalized decision');dec[(r['annotation_item_id'],r['field'])]=r
+  item,field=r['annotation_item_id'],r['field'];req(item in snaps['A'] and field in {'face_eye_region_observable_yes_no','eyeglasses_label'},'invalid normalized key')
+  key='face_eye_region_observable_yes_no' if field.startswith('face_') else 'eyeglasses_label';allowed='yes|no' if field.startswith('face_') else 'present|absent|U'
+  req(r['option_A']==snaps['A'][item][key] and r['option_B']==snaps['B'][item][key],'protected option mismatch')
+  req(r['note_A']==snaps['A'][item]['reason_or_note'] and r['note_B']==snaps['B'][item]['reason_or_note'],'protected note mismatch')
+  req(r['allowed_values']==allowed,'protected allowed-values mismatch')
+  req(r['adjudicated_value'] in allowed.split('|') and r['rationale'].strip(),'invalid normalized decision');dec[(item,field)]=r
  req(len(dec)==78,'decision count mismatch'); rebuilt=[]
  for item in sorted(snaps['A']):
   a,b=snaps['A'][item],snaps['B'][item]
