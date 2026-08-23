@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "handoff_id": "finegrained_identity_retention_session_handoff_v1",
+  "created_at_utc": "2026-08-23",
+  "status": "READY_FOR_NEW_WINDOW_READ_ONLY_BOOTSTRAP",
+  "authoritative_source_policy": "Frozen CSV/JSON artifacts, hashes, and Git history supersede this summary if a mismatch is found.",
+  "source_state": {
+    "research_repository": "/root/autodl-tmp/finegrained/research_pipeline",
+    "branch": "measurement-repair-v1",
+    "commit": "c8aee35dcd8150a4c34dabb80722073237e56e51",
+    "working_tree_clean": true,
+    "formal_runtime": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime",
+    "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "python": "/root/autodl-tmp/consisid-smoketest/env/bin/python"
+  },
+  "research_objective": {
+    "topic": "fine-grained identity-attribute retention in reference-conditioned video generation",
+    "current_model_system": "ConsisID",
+    "intended_contribution": [
+      "reliable output-level measurement",
+      "generation-side mechanism analysis",
+      "training-free inference-time method",
+      "prospectively frozen ablation"
+    ],
+    "fine_tuning_planned": false,
+    "lora_planned": false
+  },
+  "formal_generation": {
+    "master_freeze_sha256": "149e5deba4d14b4591186416dbe4e12efb3ed19437c0cca0642eaff8a6d5eed8",
+    "attributes": [
+      "eyeglasses",
+      "facial_hair"
+    ],
+    "matched_pairs_per_attribute": 10,
+    "reference_units": 40,
+    "seeds_per_reference_unit": 4,
+    "tasks": 160,
+    "successful_videos": 160,
+    "frames_per_video": 49,
+    "fps": 8,
+    "integrity_frames": 7840,
+    "seed_changes": false,
+    "manual_substitutions": false,
+    "selective_favorable_reruns": false,
+    "status": "FORMAL_GENERATION_AND_ENGINEERING_INTEGRITY_VERIFIED"
+  },
+  "facial_hair": {
+    "fixed_videos": 80,
+    "fixed_sampled_frames": 560,
+    "annotator_exact_agreement_items": 346,
+    "third_researcher_adjudicated_items": 214,
+    "valid_observable_frames": 371,
+    "unobservable_frames": 189,
+    "valid_matched_pair_contrasts": 10,
+    "mean_matched_positive_minus_control": 0.2052380952,
+    "median_matched_positive_minus_control": 0.0,
+    "minimum_matched_positive_minus_control": -1.0,
+    "maximum_matched_positive_minus_control": 1.0,
+    "low_coverage_reference_units": 4,
+    "low_coverage_videos": 21,
+    "verification_status": "PASS_INDEPENDENT_FORMAL_FINITE_PANEL_RESULTS_VERIFICATION",
+    "interpretation_status": "PENDING_RESEARCHER_REVIEW"
+  },
+  "eyeglasses_measurement_repair": {
+    "fixed_videos": 80,
+    "fixed_frames": 560,
+    "fixed_matched_seed_pairs": 40,
+    "frame_indices": [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48
+    ],
+    "human_consensus": {
+      "present": 230,
+      "absent": 319,
+      "unobservable": 11,
+      "observable": 549,
+      "positive_condition_observable": 278,
+      "positive_condition_present": 230,
+      "control_condition_observable": 271,
+      "control_condition_present": 0,
+      "positive_pair_differences": 33,
+      "zero_pair_differences": 7,
+      "negative_pair_differences": 0,
+      "mean_pair_difference": 0.825,
+      "median_pair_difference": 1.0
+    },
+    "original_instrument": {
+      "detector": "scrfd_640_t05",
+      "measurable_frames_on_fixed_panel": 15,
+      "videos_with_any_measurable_fixed_frame": 4,
+      "use_as_primary_description": false
+    },
+    "repaired_instrument": {
+      "detector": "yunet_native_t03",
+      "technical_pass_frames": 553,
+      "technical_fail_frames_retained": 7,
+      "human_observable_technical_pass_intersection": 542,
+      "clip_accuracy_against_human": 0.988929889298893,
+      "clip_balanced_accuracy_against_human": 0.9866071428571428,
+      "role": "secondary_convergent_measurement_evidence"
+    },
+    "supported_measurement_mechanism": "Original measurement availability was dominated by face-detector non-detection; this is not a generation-quality mechanism.",
+    "verification_status": "PASS_INDEPENDENT_REPAIRED_EYEGLASSES_EVALUATION_VERIFICATION",
+    "interpretation_status": "MEASUREMENT_REPAIR_COMPLETE_PENDING_RESEARCHER_INTERPRETATION_DECISION"
+  },
+  "research_decisions": {
+    "publish_reference_linked_generated_videos": false,
+    "hair_color_primary_formal_attribute": false,
+    "hair_color_role": "exploratory_measurement_limitation_pending_separate_future_design",
+    "manuscript_drafting_authorized": false,
+    "result_dependent_regeneration_allowed": false,
+    "outcome_dependent_exclusion_allowed": false,
+    "frame_independence_claim_allowed": false,
+    "causal_claim_allowed": false,
+    "population_or_model_wide_claim_allowed": false,
+    "cross_attribute_ranking_allowed": false
+  },
+  "verified_facts": [
+    "All 160 planned formal videos were generated without seed changes, substitutions, or selective reruns.",
+    "All 160 videos and 7840 frames passed the frozen engineering-integrity audit and independent verification.",
+    "Facial-hair final consensus and the formal finite-panel analysis were independently verified.",
+    "Eyeglasses human consensus, selected-detector audit, repaired scoring, and summary arithmetic were independently verified.",
+    "The original formal eyeglasses measurement path had severe face-detector coverage loss."
+  ],
+  "current_observations": [
+    "The fixed eyeglasses panel contains 33 positive, 7 zero, and 0 negative matched seed-pair differences under human consensus.",
+    "The fixed facial-hair panel has a positive mean matched contrast, a zero median, substantial unobservability, and heterogeneous pair differences."
+  ],
+  "working_hypotheses": [
+    "Fine-grained attribute failures may arise from insufficient local reference representation, insufficient condition injection, or later suppression by generative priors and spatiotemporal denoising.",
+    "Attribute locality, spatial scale, visibility, and sensitivity to motion or pose may modulate retention."
+  ],
+  "prohibited_inferences": [
+    "causal effect",
+    "population inference",
+    "model-wide performance",
+    "independent-frame inference",
+    "cross-attribute ranking",
+    "generation improvement inferred from detector replacement",
+    "internal ConsisID bottleneck inferred from output metrics alone"
+  ],
+  "next_human_gate": [
+    "Accept or reject human consensus as the main finite-panel eyeglasses description.",
+    "Accept or reject YuNet plus CLIP as secondary convergent measurement evidence only.",
+    "Decide whether the next independent iteration targets generation-side mechanisms rather than further detector repair.",
+    "Approve a conservative interpretation of the facial-hair finite-panel summary."
+  ],
+  "next_window_bootstrap": [
+    "Read all handoff files completely.",
+    "Verify repository branch, HEAD, and working-tree status.",
+    "Verify critical artifact paths and hashes without modifying files.",
+    "Report mismatches before proceeding.",
+    "Restate facts, observations, hypotheses, unresolved decisions, and prohibited claims.",
+    "Do not start generation, probing, intervention, metric changes, or manuscript drafting during bootstrap."
+  ]
+}

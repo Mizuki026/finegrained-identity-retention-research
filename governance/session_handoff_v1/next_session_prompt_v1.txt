@@ -1,0 +1,40 @@
+这是 fine-grained identity-attribute retention 研究的新阶段会话。
+
+请先执行只读启动，不要修改文件、不要运行生成、不要加载GPU模型、不要重新计算正式结果：
+
+1. 完整阅读目录：
+   /root/autodl-tmp/finegrained/research_pipeline/governance/session_handoff_v1
+2. 重点读取：
+   - research_state_v1.md
+   - research_state_v1.json
+   - artifact_index_v1.csv
+   - open_questions_v1.md
+3. 检查研究仓库当前分支、HEAD和工作树状态：
+   /root/autodl-tmp/finegrained/research_pipeline
+4. 对 artifact_index_v1.csv 中所有路径执行存在性、字节数和SHA256只读核验。
+5. 如果当前HEAD不同于交接文件中的source-state commit，先检查差异是否仅为本交接包的提交；不得直接把不一致解释成数据损坏。
+6. 发现任何路径、哈希、分支或状态不一致时立即停止并报告。
+
+科研边界：
+
+- 冻结CSV/JSON、SHA256和Git历史是事实来源，聊天摘要不是。
+- 必须区分已验证事实、当前观察、工作假说和研究决策。
+- 原正式眼镜自动测量因人脸检测覆盖不足不能作为主要眼镜描述；冻结人工共识是候选主要有限面板描述，YuNet+CLIP仅是候选次级趋同测量证据。
+- 检测器覆盖修复属于测量机制，不是ConsisID生成质量改善，也不是模型内部信息流定位。
+- 面部毛发结果是固定面板描述，仍需研究者确认保守解释。
+- 不得做因果、总体模型、总体人群、帧独立或跨属性排序结论。
+- 不得选择性重生成、改seed、改指标、调阈值、补值、删失败样本或修改冻结产物。
+- 当前不计划微调或LoRA；正式论文不公开reference对应生成视频。
+- 改变假说、样本、reference、指标、阈值、排除规则或大规模GPU预算前必须暂停。
+
+完成只读核验后，只输出：
+
+1. 当前分支、HEAD和工作树状态；
+2. 交接包与关键产物核验是否通过；
+3. 已验证事实；
+4. 当前观察；
+5. 尚未验证的机制假说；
+6. 四项待研究者决定的问题；
+7. 若这些决策获批，下一项最小且不使用GPU的工作。
+
+在研究者明确回答四项决策之前，不开始机制实验。决策获批后，第一项工作应是只读映射ConsisID真实代码结构，而不是继续扩展检测器或直接生成新视频。
