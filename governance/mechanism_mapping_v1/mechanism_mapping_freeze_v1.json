@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "freeze_id": "consisid_mechanism_mapping_freeze_v1",
+  "frozen_at_utc": "2026-08-23",
+  "status": "STATIC_MAPPING_COMPLETE_RESEARCHER_REVIEW_REQUIRED",
+  "source_research_commit": "17378a5f22cbfe3cb55ad2a6bb3f005cfaa99a04",
+  "consisid": {
+    "repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+    "commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "working_tree_clean_at_audit": true
+  },
+  "gpu_model_loaded": false,
+  "forward_pass_run": false,
+  "video_generated": false,
+  "formal_result_recomputed": false,
+  "static_evidence_verification": {
+    "entries": 9,
+    "paths_exist": true,
+    "bytes_match": true,
+    "sha256_match": true
+  },
+  "artifacts": {
+    "researcher_decisions_v1.json": {
+      "bytes": 1866,
+      "sha256": "0a8f9793fb1681ae12d74f44efbae41646037f14149dc8160d4d5a96b545e729"
+    },
+    "static_evidence_manifest_v1.csv": {
+      "bytes": 1878,
+      "sha256": "21266ec4d7c3a1b0d707e01126535d6a4ff1b366a5e6554fcd64370f2d5dfa0e"
+    },
+    "consisid_code_structure_mapping_v1.md": {
+      "bytes": 8875,
+      "sha256": "6d6bfc61dee8f651cdc275738f6fb7b538a2dc35572963a1bdb384950649f3ca"
+    },
+    "mechanism_iteration_review_gate_v1.md": {
+      "bytes": 5032,
+      "sha256": "2b2242c3b7dd8cc88c19b2ac2020bcf1c60572775e73bc534b079f126e731f52"
+    }
+  },
+  "claim_boundary": "Static code mapping only; no representation, injection, suppression, causal, population, model-wide, frame-independent, or cross-attribute finding.",
+  "next_gate": "Researcher decisions on all seven items in mechanism_iteration_review_gate_v1.md are required before metrics drafting, implementation, model loading, instrumentation, GPU use, or generation."
+}

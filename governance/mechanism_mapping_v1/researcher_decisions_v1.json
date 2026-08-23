@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "decision_record_id": "mechanism_transition_researcher_decisions_v1",
+  "recorded_at_utc": "2026-08-23",
+  "status": "APPROVED",
+  "source": "Direct researcher decisions in the post-handoff session",
+  "decisions": {
+    "eyeglasses_primary_finite_panel_description": {
+      "accepted": true,
+      "evidence": "frozen_human_consensus",
+      "scope": "fixed_finite_panel_only"
+    },
+    "yunet_clip_role": {
+      "accepted": true,
+      "role": "secondary_convergent_measurement_evidence_only",
+      "generation_quality_claim_allowed": false,
+      "internal_mechanism_claim_allowed": false
+    },
+    "next_independent_iteration": {
+      "accepted": true,
+      "target": "generation_side_identity_attribute_retention_mechanisms",
+      "continue_face_detector_expansion": false
+    },
+    "facial_hair_interpretation": {
+      "accepted": true,
+      "wording": "The fixed panel has a positive mean matched contrast, a zero median, heterogeneous pair differences, and substantial unobservability; the results do not support population, model-wide, causal, or cross-attribute conclusions."
+    }
+  },
+  "continuing_boundaries": {
+    "causal_claim_allowed": false,
+    "population_or_model_wide_claim_allowed": false,
+    "independent_frame_claim_allowed": false,
+    "cross_attribute_ranking_allowed": false,
+    "result_dependent_regeneration_allowed": false,
+    "outcome_dependent_exclusion_allowed": false,
+    "metric_or_threshold_change_without_new_freeze_allowed": false,
+    "fine_tuning_or_lora_planned": false,
+    "publish_reference_linked_generated_videos": false
+  },
+  "authorized_immediate_work": "Read-only mapping of the frozen ConsisID code and checkpoint structure; no GPU model load, generation, probe, or intervention.",
+  "next_gate": "RESEARCHER_REVIEW_REQUIRED_BEFORE_RUNTIME_INSTRUMENTATION_OR_GPU_WORK"
+}
