@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "decision_record_id": "mechanism_trace_design_decisions_v1",
+  "recorded_at_utc": "2026-08-23",
+  "status": "APPROVED_FOR_PROTOCOL_DRAFTING_ONLY",
+  "source": "Researcher accepted all seven autonomous-review decisions in the current session",
+  "decisions": {
+    "universe": "all_40_frozen_formal_reference_units",
+    "attribute_analysis": "eyeglasses_and_facial_hair_separate_no_cross_attribute_ranking",
+    "first_runtime_role": "instrumentation_only_no_video_decode_or_save",
+    "tensor_scope": [
+      "insightface_512_component",
+      "eva_768_component",
+      "five_eva_hidden_states",
+      "local_facial_extractor_32x2048_output",
+      "reference_image_latents",
+      "twenty_one_local_injection_residuals",
+      "twenty_one_pre_post_injection_video_token_summaries"
+    ],
+    "denoising_scope": "all_50_scheduler_positions_as_one_repeated_trajectory",
+    "zero_local_residual_control": "approved_engineering_control_only_on_prospectively_fixed_subset",
+    "condition_permutation_control": "deferred_pending_separate_design_and_interpretation_gate",
+    "storage": "bounded_summaries_only_no_raw_identity_tensors_or_reference_linked_media",
+    "next_authorized_work": "draft_and_freeze_exact_protocol_metrics_analysis_units_multiplicity_failure_rules_code_environment_weight_requirements_and_gpu_ceiling"
+  },
+  "not_authorized": [
+    "instrumentation_implementation",
+    "model_weight_loading",
+    "forward_pass",
+    "gpu_use",
+    "video_generation_or_decode",
+    "metric_selection_after_outcome_inspection"
+  ],
+  "next_gate": "DESIGN_REVIEW_REQUIRED_BEFORE_IMPLEMENTATION; GPU_EXECUTION_REQUIRES_A_LATER_SEPARATE_GATE"
+}

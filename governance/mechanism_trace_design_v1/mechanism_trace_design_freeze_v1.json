@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_trace_design_freeze_v1",
+  "frozen_at_utc": "2026-08-23",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_REVIEW_REQUIRED",
+  "source_research_commit": "b0f1688aa6841ca0588340f5b6d53e4306becee0",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "model_loaded": false,
+  "forward_pass_run": false,
+  "gpu_used": false,
+  "video_generated_or_decoded": false,
+  "formal_result_recomputed": false,
+  "validated_design_counts": {
+    "formal_reference_units": 40,
+    "formal_generation_tasks": 160,
+    "engineering_units": 8,
+    "scientific_seeds_per_unit": 4,
+    "scheduler_positions": 50,
+    "local_injection_sites": 21,
+    "maximum_trajectories": 184,
+    "maximum_transformer_steps": 9200
+  },
+  "evidence_manifest_verification": {
+    "entries": 6,
+    "paths_exist": true,
+    "bytes_match": true,
+    "sha256_match": true
+  },
+  "artifacts": {
+    "researcher_design_decisions_v1.json": {
+      "bytes": 1678,
+      "sha256": "9f61218f7530fb9ef5028bfc971da071907c7e5f36a25df6feb96bd53b24f1f9"
+    },
+    "engineering_subset_v1.csv": {
+      "bytes": 1191,
+      "sha256": "792f01d3a8cbe75d08e8c2dc6859bee21db5bf71f023658359e6d2c28965e826"
+    },
+    "design_evidence_manifest_v1.csv": {
+      "bytes": 1437,
+      "sha256": "aebc8bb7651e19a1d1083c4a6acb264d71476d3e6179ada62cece4d43fcc3d77"
+    },
+    "mechanism_trace_protocol_v1.md": {
+      "bytes": 10189,
+      "sha256": "bed67ac84fcaf9d1b94b104d05ab802b931858f9b6ae07a4a6085c5459a45414"
+    },
+    "mechanism_trace_analysis_plan_v1.json": {
+      "bytes": 3263,
+      "sha256": "79db39d6c330977af66031d958ca4f5c873a3897e694551356c28f9ccf4ed77f"
+    },
+    "implementation_review_gate_v1.md": {
+      "bytes": 2147,
+      "sha256": "4aa664481aa10335ad46b3ad36493ee07bde9442d02745595fe5e889dfacb69a"
+    }
+  },
+  "next_gate": "Explicit researcher decisions on all seven items in implementation_review_gate_v1.md are required before instrumentation implementation. GPU execution remains separately blocked."
+}

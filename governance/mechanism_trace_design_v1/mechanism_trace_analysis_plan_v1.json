@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "analysis_plan_id": "mechanism_trace_analysis_plan_v1",
+  "status": "PROPOSED_FROZEN_DESIGN_REVIEW_REQUIRED",
+  "attributes": ["eyeglasses", "facial_hair"],
+  "cross_attribute_ranking": false,
+  "formal_reference_units": 40,
+  "formal_matched_pairs_per_attribute": 10,
+  "scientific_seeds": [2686238281, 280026145, 2169901996, 2046930553],
+  "scientific_trajectories": 160,
+  "scheduler_position_indices": {
+    "all": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+    "groups": {"early": [0, 16], "middle": [17, 33], "late": [34, 49]}
+  },
+  "injection_block_indices": [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40],
+  "injection_index_groups": {"early": [0, 6], "middle": [7, 13], "late": [14, 20]},
+  "tensor_stages": [
+    "id_ante_embedding",
+    "id_cond_vit",
+    "id_vit_hidden_0",
+    "id_vit_hidden_1",
+    "id_vit_hidden_2",
+    "id_vit_hidden_3",
+    "id_vit_hidden_4",
+    "valid_face_emb",
+    "image_latents",
+    "local_injection_residual",
+    "pre_local_injection_hidden_states",
+    "post_local_injection_hidden_states"
+  ],
+  "primary_representation_readout": {
+    "stage": "valid_face_emb_mean_token_l2_normalized",
+    "method": "leave_one_matched_pair_out_directional_ranking",
+    "tie_absolute_margin": 1e-8,
+    "reported": ["ten_pair_margins", "correct_count", "tie_count", "wrong_count"]
+  },
+  "secondary_representation_stages": [
+    "insightface_l2_normalized",
+    "eva_head_l2_normalized",
+    "eva_hidden_0_patch_mean_l2_normalized",
+    "eva_hidden_1_patch_mean_l2_normalized",
+    "eva_hidden_2_patch_mean_l2_normalized",
+    "eva_hidden_3_patch_mean_l2_normalized",
+    "eva_hidden_4_patch_mean_l2_normalized",
+    "image_latent_first_frame_spatial_mean_l2_normalized"
+  ],
+  "primary_injection_metric": "relative_residual_rms",
+  "primary_injection_formula": "sqrt(mean(R^2))/max(sqrt(mean(H^2)),1e-12)",
+  "secondary_injection_metrics": [
+    "mean_tokenwise_cosine_H_R",
+    "token_rms_R_q10",
+    "token_rms_R_q50",
+    "token_rms_R_q90",
+    "per_latent_frame_rms_R"
+  ],
+  "cfg_branches_reported_separately": ["unconditional", "text"],
+  "aggregation_order": [
+    "online_tensor_reduction",
+    "prespecified_block_by_denoising_3x3_cell_mean_per_task",
+    "four_seed_mean_within_reference_unit",
+    "positive_minus_control_within_matched_pair",
+    "finite_panel_summary_across_ten_pairs"
+  ],
+  "finite_panel_statistics": ["ten_pair_values", "positive_zero_negative_counts", "mean", "median", "minimum", "maximum"],
+  "inferential_tests": false,
+  "confidence_intervals": false,
+  "independent_units": ["reference_unit", "matched_pair"],
+  "non_independent_repeated_dimensions": ["token", "frame", "block", "scheduler_position", "seed", "cfg_branch"],
+  "condition_permutation": "DEFERRED_NOT_IN_V1",
+  "video_decode_or_save": false,
+  "raw_tensor_persistence": false,
+  "compute_ceiling": {
+    "gpu_processes": 1,
+    "engineering_trajectories": 24,
+    "scientific_trajectories": 160,
+    "total_trajectories": 184,
+    "transformer_steps": 9200,
+    "gpu_hours": 72
+  },
+  "execution_authorized": false
+}
