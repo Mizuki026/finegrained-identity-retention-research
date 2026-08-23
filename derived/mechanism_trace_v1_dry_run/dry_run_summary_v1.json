@@ -1,0 +1,24 @@
+{
+  "consisid_modules_imported": false,
+  "counts": {
+    "engineering|eyeglasses|baseline": 8,
+    "engineering|eyeglasses|zero_local_residual": 4,
+    "engineering|facial_hair|baseline": 8,
+    "engineering|facial_hair|zero_local_residual": 4,
+    "scientific|eyeglasses|baseline": 80,
+    "scientific|facial_hair|baseline": 80
+  },
+  "design_freeze_sha256": "45c4ebb7e02ff2383d1f9c92b3e740bc4ce0989f5d0f99b92d4e31e74f47f983",
+  "formal_generation_manifest_sha256": "b4c4210830616ff41722d8fb3c7daf6350d46c971e0e210f1a4788895e88c264",
+  "formal_master_sha256": "149e5deba4d14b4591186416dbe4e12efb3ed19437c0cca0642eaff8a6d5eed8",
+  "local_injection_sites": 21,
+  "phase": "all",
+  "scheduler_positions_per_task": 50,
+  "schema_version": 1,
+  "status": "DRY_RUN_NO_MODEL_IMPORT_NO_WEIGHT_LOAD",
+  "task_count": 184,
+  "task_manifest_canonical_sha256": "7e47a9805f0acc46cc98775fbaa3da05e840ea237b4c3545910bd7d8eb9462b1",
+  "task_manifest_path": "derived/mechanism_trace_v1_dry_run/dry_run_task_manifest_v1.csv",
+  "torch_imported": false,
+  "transformer_steps": 9200
+}

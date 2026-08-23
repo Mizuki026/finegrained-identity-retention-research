@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_IMPLEMENTED_OUTPUT_SCHEMA",
+  "runtime_policy": {
+    "raw_tensor_persistence": false,
+    "decoded_media_persistence": false,
+    "reference_image_copying": false,
+    "csv_finalization": "exclusive_partial_file_then_atomic_rename",
+    "existing_nonempty_output_directory": "fail_closed",
+    "event_log": "append_during_single_authorized_phase_only"
+  },
+  "runtime_csv_columns": {
+    "injection_summaries_v1.csv": [
+      "trace_task_id", "phase", "formal_unit_id", "formal_pair_id", "attribute",
+      "role", "seed_index", "seed", "condition", "repetition", "step_index",
+      "scheduler_timestep", "site_index", "block_index", "cfg_branch",
+      "local_face_scale", "rms_post", "rms_h", "rms_r", "relative_residual_rms",
+      "mean_tokenwise_cosine_h_r", "token_rms_r_q10", "token_rms_r_q50",
+      "token_rms_r_q90", "frame_rms_r_00", "frame_rms_r_01", "frame_rms_r_02",
+      "frame_rms_r_03", "frame_rms_r_04", "frame_rms_r_05", "frame_rms_r_06",
+      "frame_rms_r_07", "frame_rms_r_08", "frame_rms_r_09", "frame_rms_r_10",
+      "frame_rms_r_11", "frame_rms_r_12"
+    ],
+    "route_summaries_v1.csv": [
+      "trace_task_id", "phase", "formal_unit_id", "condition",
+      "image_latents_overall_rms", "image_latents_first_frame_rms",
+      "image_latents_padding_max_abs"
+    ],
+    "task_status_v1.csv": [
+      "trace_task_id", "phase", "formal_unit_id", "seed", "condition", "status",
+      "injection_rows", "started_at_utc", "finished_at_utc", "error_type",
+      "error_message", "reference_vectors_verified_in_memory"
+    ],
+    "representation_margins_v1.csv": [
+      "attribute", "stage", "formal_pair_id", "margin", "direction"
+    ]
+  },
+  "analysis_csv_columns": {
+    "injection_task_3x3_v1.csv": [
+      "trace_task_id", "formal_unit_id", "formal_pair_id", "attribute", "role",
+      "seed_index", "seed", "cfg_branch", "block_group", "denoising_group",
+      "relative_residual_rms_mean", "positions"
+    ],
+    "injection_pair_3x3_v1.csv": [
+      "attribute", "formal_pair_id", "cfg_branch", "block_group",
+      "denoising_group", "positive_four_seed_mean", "control_four_seed_mean",
+      "positive_minus_control"
+    ],
+    "injection_finite_panel_3x3_v1.csv": [
+      "attribute", "cfg_branch", "block_group", "denoising_group", "pairs",
+      "positive_count", "zero_count", "negative_count", "mean", "median",
+      "minimum", "maximum"
+    ],
+    "representation_finite_panel_v1.csv": [
+      "attribute", "stage", "readout_role", "pairs", "correct_count", "tie_count",
+      "wrong_count", "mean_margin", "median_margin", "minimum_margin", "maximum_margin"
+    ]
+  },
+  "phase_e_expected_outputs": {
+    "injection_summaries_v1.csv": {"rows": 50400, "rows_per_task": 2100},
+    "route_summaries_v1.csv": {"rows": 24},
+    "task_status_v1.csv": {"rows": 24},
+    "execution_events_v1.jsonl": {"successful_run_events": 48},
+    "execution_summary_v1.json": {"documents": 1},
+    "representation_margins_v1.csv": {"permitted": false}
+  },
+  "phase_s_expected_outputs": {
+    "injection_summaries_v1.csv": {"rows": 336000, "rows_per_task": 2100},
+    "route_summaries_v1.csv": {"rows": 160},
+    "task_status_v1.csv": {"rows": 160},
+    "execution_events_v1.jsonl": {"successful_run_events": 320},
+    "execution_summary_v1.json": {"documents": 1},
+    "representation_margins_v1.csv": {"rows": 180}
+  },
+  "injection_dimensions": {
+    "scheduler_positions": 50,
+    "injection_sites": 21,
+    "cfg_branches": ["unconditional", "text"],
+    "latent_frame_summaries": 13
+  },
+  "scientific_cpu_analysis_outputs": {
+    "injection_task_3x3_v1.csv": {"rows": 2880},
+    "injection_pair_3x3_v1.csv": {"rows": 360},
+    "injection_finite_panel_3x3_v1.csv": {"rows": 36},
+    "representation_finite_panel_v1.csv": {"rows": 18},
+    "analysis_summary_v1.json": {"documents": 1}
+  },
+  "forbidden_extensions_in_runtime_tree": [
+    ".mp4", ".mov", ".avi", ".mkv", ".webm", ".pt", ".pth", ".ckpt",
+    ".safetensors", ".npy", ".npz"
+  ]
+}

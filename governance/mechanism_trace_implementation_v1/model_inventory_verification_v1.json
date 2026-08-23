@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "executed_at_utc": "2026-08-23",
+  "status": "PASS_MODEL_INVENTORY_ALL_FILES",
+  "inventory_path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/model_weight_hashes_v1.csv",
+  "inventory_entries": 72,
+  "inventory_bytes": 9303,
+  "inventory_sha256": "c1ad1b0f49cf65f3c005a443742c7ea00de78e33d8012a96793cce2be8d116a3",
+  "all_paths_exist": true,
+  "all_byte_counts_match": true,
+  "all_sha256_match": true,
+  "torch_imported": false,
+  "consisid_modules_imported": false,
+  "model_weights_loaded": false,
+  "gpu_used": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "executed_at_utc": "2026-08-23",
+  "status": "PASS_PY_COMPILE_CPU_ONLY",
+  "files_checked": 12,
+  "syntax_errors": 0,
+  "CUDA_VISIBLE_DEVICES": "",
+  "model_weights_loaded": false,
+  "model_forward_pass_run": false,
+  "gpu_used": false
+}

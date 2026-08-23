@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "decision_record_id": "mechanism_trace_implementation_authorization_v1",
+  "recorded_at_utc": "2026-08-23",
+  "status": "IMPLEMENTATION_CPU_TEST_AND_NO_WEIGHT_DRY_RUN_APPROVED",
+  "source": "Direct researcher approval of all seven implementation-review decisions in the current session",
+  "approved_decisions": {
+    "scientific_scope": {
+      "formal_reference_units": 40,
+      "frozen_seeds_per_unit": 4,
+      "baseline_trajectories": 160,
+      "scheduler_positions_per_trajectory": 50
+    },
+    "representation_readout": "leave_one_matched_pair_out_directional_ranking",
+    "injection_description": {
+      "primary_metric": "relative_residual_rms",
+      "aggregation": "fixed_3x3_block_by_denoising_grid",
+      "cfg_branches": "reported_separately"
+    },
+    "engineering_phase": {
+      "selection": "outcome_blind_frozen_8_unit_subset",
+      "baseline_repetitions_per_unit": 2,
+      "zero_local_residual_controls_per_unit": 1
+    },
+    "maximum_budget": {
+      "trajectories": 184,
+      "transformer_steps": 9200,
+      "gpu_processes": 1,
+      "gpu_hours": 72
+    },
+    "implementation_authorized": true,
+    "cpu_only_tests_authorized": true,
+    "no_weight_dry_run_authorized": true,
+    "separate_execution_package_and_explicit_gpu_approval_required": true
+  },
+  "not_authorized": [
+    "model_weight_loading",
+    "model_forward_pass",
+    "gpu_execution",
+    "phase_e_execution",
+    "phase_s_execution",
+    "video_generation_or_decode",
+    "metric_threshold_sample_seed_or_exclusion_change"
+  ],
+  "next_gate": "INDEPENDENT_IMPLEMENTATION_PACKAGE_REVIEW_AND_EXPLICIT_PHASE_E_GPU_APPROVAL"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_trace_implementation_freeze_v1",
+  "frozen_at_utc": "2026-08-23",
+  "status": "IMPLEMENTATION_COMPLETE_PHASE_E_RESEARCHER_APPROVAL_REQUIRED",
+  "base_research_commit": "c1b4f72f2ffb7b7952c167ca4bb60aa658d1b432",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "design_freeze_sha256": "45c4ebb7e02ff2383d1f9c92b3e740bc4ce0989f5d0f99b92d4e31e74f47f983",
+  "implementation_authorization_scope": "CODE_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY",
+  "validated_counts": {
+    "evidence_manifest_entries": 34,
+    "cpu_tests_passed": 14,
+    "dry_run_trajectories": 184,
+    "dry_run_transformer_steps": 9200,
+    "engineering_trajectories": 24,
+    "scientific_trajectories": 160,
+    "scheduler_positions_per_trajectory": 50,
+    "local_injection_sites": 21,
+    "model_inventory_entries": 72
+  },
+  "safety_state": {
+    "model_loaded": false,
+    "forward_pass_run": false,
+    "gpu_compute_used": false,
+    "video_generated_or_decoded": false,
+    "formal_result_recomputed": false,
+    "phase_e_execution_authorized": false,
+    "phase_s_execution_authorized": false
+  },
+  "artifacts": {
+    "implementation_evidence_manifest_v1.csv": {
+      "bytes": 6143,
+      "sha256": "7f42be77d17ebfc668bfc6cc26e10dcf07a9c51a1dbb3ba2af009811aa843bab"
+    },
+    "implementation_package_verification_v1.json": {
+      "bytes": 476,
+      "sha256": "f331e7435d9cd7c270bcf2956d35151b589b33a0e074a88a396e3e77be5825a0"
+    },
+    "implementation_review_v1.md": {
+      "bytes": 4283,
+      "sha256": "cc14f2201bc5aa4e9492a179df1ad5e055a34834a10e0b1b410fe111135076b2"
+    },
+    "output_schema_v1.json": {
+      "bytes": 4014,
+      "sha256": "54d8d6e869d1640c20f69180fea3612ba08e2a4ad6cafb0a173bc6af2caf5ae8"
+    },
+    "phase_e_execution_review_gate_v1.md": {
+      "bytes": 2720,
+      "sha256": "d39267610cb13b4eb5453944cb1020ddda89c1a3538afdc0992752a4af8fee5d"
+    }
+  },
+  "next_gate": "EXPLICIT_RESEARCHER_APPROVAL_OF_PHASE_E_EXECUTION_REVIEW_GATE_V1; PHASE_S_REMAINS_BLOCKED"
+}

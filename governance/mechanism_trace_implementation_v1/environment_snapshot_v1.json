@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-08-23",
+  "status": "IMPLEMENTATION_ENVIRONMENT_CAPTURED_NO_MODEL_LOAD_NO_GPU_COMPUTE",
+  "research_repository": {
+    "path": "/root/autodl-tmp/finegrained/research_pipeline",
+    "branch_at_implementation_start": "measurement-repair-v1",
+    "base_commit": "c1b4f72f2ffb7b7952c167ca4bb60aa658d1b432"
+  },
+  "consisid_repository": {
+    "path": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+    "commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e"
+  },
+  "python": {
+    "executable": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+    "version": "3.11.15",
+    "pip_version": "26.2.1"
+  },
+  "torch_cpu_only_inventory": {
+    "version": "2.5.1+cu121",
+    "cuda_build": "12.1",
+    "cuda_visible_devices_during_query": "",
+    "cuda_available_during_query": false
+  },
+  "gpu_driver_inventory_read_only": {
+    "gpu_count": 1,
+    "model": "NVIDIA GeForce RTX 4090",
+    "driver_version": "580.105.08",
+    "reported_memory_mib": 49140,
+    "gpu_uuid_persisted_in_public_repository": false
+  },
+  "installed_packages": {
+    "path": "governance/mechanism_trace_implementation_v1/installed_packages_v1.txt",
+    "bytes": 3154,
+    "sha256": "8cc640fb9a7f5abed15500927f26b00f1d70b706f07254b11cdfea881d26bb43"
+  },
+  "formal_runtime_inventory": {
+    "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/runtime_inventory_v1.json",
+    "bytes": 743,
+    "sha256": "b7ebd1cafe5e3f3d4ad54a65401d5bb0004ca2714411e01e82c7c71a6d994a04"
+  },
+  "model_inventory_validation": {
+    "inventory_path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/model_weight_hashes_v1.csv",
+    "inventory_entries": 72,
+    "inventory_bytes": 9303,
+    "inventory_sha256": "c1ad1b0f49cf65f3c005a443742c7ea00de78e33d8012a96793cce2be8d116a3",
+    "all_entry_paths_exist_bytes_and_sha256_match": true,
+    "torch_imported_during_validation": false,
+    "consisid_modules_imported_during_validation": false
+  },
+  "gpu_compute_used": false,
+  "model_loaded": false,
+  "forward_pass_run": false
+}
