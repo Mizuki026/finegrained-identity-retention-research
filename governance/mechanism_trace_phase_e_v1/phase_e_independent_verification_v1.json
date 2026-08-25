@@ -1,0 +1,18 @@
+{
+  "engineering_control": {
+    "baseline_repeat_keys": 16800,
+    "maximum_baseline_repeat_absolute_difference": 0.0,
+    "maximum_reference_route_absolute_difference": 0.0,
+    "status": "PASS_ENGINEERING_REPEAT_AND_ZERO_ROUTE_CONTROLS",
+    "units": 8,
+    "zero_control_rows": 16800
+  },
+  "forbidden_raw_tensor_or_media_files": 0,
+  "injection_rows": 50400,
+  "phase": "engineering",
+  "representation_margin_rows": 0,
+  "route_rows": 24,
+  "schema_version": 1,
+  "status": "PASS_INDEPENDENT_MECHANISM_TRACE_VERIFICATION",
+  "tasks": 24
+}

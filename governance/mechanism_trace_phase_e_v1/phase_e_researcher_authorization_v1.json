@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-08-25",
+  "status": "PHASE_E_EXECUTION_APPROVED_AND_CONSUMED",
+  "source": "Direct researcher approval of phase_e_execution_review_gate_v1.md in the current session",
+  "approved_scope": {
+    "phase": "engineering",
+    "units": 8,
+    "trajectories": 24,
+    "transformer_steps": 1200,
+    "scheduler_positions_per_trajectory": 50,
+    "conditions_per_unit": ["baseline_repeat_1", "baseline_repeat_2", "zero_local_residual"],
+    "cuda_device_index": 0,
+    "gpu_processes": 1,
+    "phase_gpu_hours_ceiling": 12.0,
+    "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_e_run_001"
+  },
+  "execution_authorization": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_e_execution_authorization_v1.json",
+    "bytes": 1695,
+    "sha256": "fbdccd4349575de796bde485ea273a07ed6872cbfa96e68f72b0b5c30cc74354",
+    "research_commit": "0e3da052ded4c2c3d09a6035716b9c870a0b6f20",
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e"
+  },
+  "phase_s_was_authorized": false,
+  "next_gate": "PHASE_E_RESULT_PACKAGE_REVIEW_AND_NEW_EXPLICIT_PHASE_S_DECISION"
+}

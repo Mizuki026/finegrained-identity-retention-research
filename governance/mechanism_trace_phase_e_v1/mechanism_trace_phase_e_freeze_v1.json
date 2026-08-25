@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_trace_phase_e_freeze_v1",
+  "frozen_at_utc": "2026-08-25",
+  "status": "PHASE_E_COMPLETE_PASS_PHASE_S_RESEARCHER_APPROVAL_REQUIRED",
+  "base_research_commit": "0e3da052ded4c2c3d09a6035716b9c870a0b6f20",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "phase_e_execution_scope": "EIGHT_UNIT_ENGINEERING_SUBSET_24_TRAJECTORIES_BOUNDED_SUMMARIES_ONLY",
+  "validated_counts": {
+    "evidence_manifest_entries": 10,
+    "engineering_units": 8,
+    "engineering_trajectories": 24,
+    "transformer_steps": 1200,
+    "scheduler_positions_per_trajectory": 50,
+    "local_injection_sites": 21,
+    "cfg_branches": 2,
+    "injection_summary_rows": 50400,
+    "reference_route_rows": 24,
+    "task_status_rows": 24,
+    "event_rows": 48,
+    "scientific_representation_margin_files": 0,
+    "raw_tensor_files": 0,
+    "decoded_media_files": 0
+  },
+  "engineering_control_results": {
+    "baseline_repeat_keys": 16800,
+    "maximum_baseline_repeat_absolute_difference": 0.0,
+    "zero_local_residual_rows": 16800,
+    "maximum_reference_route_absolute_difference": 0.0,
+    "status": "PASS_ENGINEERING_REPEAT_AND_ZERO_ROUTE_CONTROLS"
+  },
+  "resource_accounting": {
+    "cuda_device_indices": [
+      0
+    ],
+    "phase_elapsed_gpu_hours": 1.8860171580604381,
+    "phase_e_gpu_hour_ceiling": 12.0,
+    "accepted_total_gpu_hour_ceiling": 72.0
+  },
+  "safety_state": {
+    "phase_e_execution_authorized": true,
+    "phase_e_execution_complete": true,
+    "model_loaded_for_phase_e": true,
+    "gpu_compute_used_for_phase_e": true,
+    "video_generated_or_decoded": false,
+    "raw_tensor_persisted": false,
+    "formal_result_recomputed": false,
+    "scientific_mechanism_result_computed": false,
+    "phase_s_execution_authorized": false
+  },
+  "artifacts": {
+    "phase_e_independent_verification_v1.json": {
+      "bytes": 545,
+      "sha256": "41dc947de6e508d51c76add660aa12e3c202b26df02510e17553f58c3178f7a3"
+    },
+    "phase_e_package_verification_v1.json": {
+      "bytes": 496,
+      "sha256": "2fbddc15b35bf1e154a6ce020482ce28e97c51ca50243d2d3c2d0e20d204e3c3"
+    },
+    "phase_e_post_run_audit_v1.json": {
+      "bytes": 1417,
+      "sha256": "92bf4cc441cb03ae38bc95f7a62dfb4c0c00df63adb035bf5e25ab5897b12455"
+    },
+    "phase_e_researcher_authorization_v1.json": {
+      "bytes": 1173,
+      "sha256": "2edbdcd27f425d330e011928b8bdc2748f49a026aebe575c71a0f1cff7a8517c"
+    },
+    "phase_e_review_v1.md": {
+      "bytes": 3270,
+      "sha256": "fca507d0fd3da925283f544376299bf2da7a27dc16c6c5b4ef20cc12c95c69a8"
+    },
+    "phase_e_runtime_evidence_manifest_v1.csv": {
+      "bytes": 2093,
+      "sha256": "cad85310138b997221088d308ccf5de28569cbb288d5bfab7a6c7ec839733c4e"
+    },
+    "phase_s_execution_review_gate_v1.md": {
+      "bytes": 3364,
+      "sha256": "9ea2208427956c47566fa6e768821670af7774d84e271439da712c7346bf8328"
+    },
+    "src/audit_mechanism_trace_phase_e_v1.py": {
+      "bytes": 6786,
+      "sha256": "2aed7334e113b03e6cc7165c9056b9d5f21b45fbc4b4c3caf335a2f365d4722a"
+    },
+    "src/verify_mechanism_trace_phase_e_package_v1.py": {
+      "bytes": 5297,
+      "sha256": "d6835371bb989690ffdc532deaeeae9797ceed1fa2ce4cc5c1da6fe2152c3668"
+    }
+  },
+  "interpretation_boundary": "ENGINEERING_MEASUREMENT_MECHANISM_PASS_ONLY_NO_IDENTITY_OR_ATTRIBUTE_RETENTION_CONCLUSION",
+  "next_gate": "EXPLICIT_RESEARCHER_APPROVAL_OF_ALL_SIX_PHASE_S_EXECUTION_REVIEW_DECISIONS"
+}

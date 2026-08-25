@@ -1,0 +1,16 @@
+{
+  "bytes_match": true,
+  "evidence_entries": 10,
+  "forbidden_raw_tensor_or_media_files": 0,
+  "injection_rows": 50400,
+  "maximum_baseline_repeat_absolute_difference": 0.0,
+  "maximum_reference_route_absolute_difference": 0.0,
+  "paths_exist": true,
+  "phase_elapsed_gpu_hours": 1.8860171580604381,
+  "phase_s_execution_authorized": false,
+  "schema_version": 1,
+  "sha256_match": true,
+  "status": "PASS_INDEPENDENT_PHASE_E_PACKAGE_VERIFICATION",
+  "tasks": 24,
+  "transformer_steps": 1200
+}
