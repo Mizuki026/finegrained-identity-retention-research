@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "audit_id": "mechanism_trace_phase_s_abort_001_audit_v1",
+  "audited_at_utc": "2026-08-25",
+  "status": "PASS_OUTCOME_BLIND_PHASE_S_ABORT_AUDIT",
+  "research_commit": "f167ca1decaafa1f56a62208eb65e52f1833fbc9",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "runtime_directory": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_001",
+  "authorization_sha256": "27749d7e11230b319a0ed36f84e617707fc71916978e4b3d4da01926cbb2d0b5",
+  "event_sequence": [
+    "TASK_START",
+    "TASK_COMPLETE",
+    "TASK_START",
+    "PHASE_STOP"
+  ],
+  "attempted_trajectories": 2,
+  "complete_status_rows": 1,
+  "failed_stopped_status_rows": 1,
+  "fully_traced_trajectories": 2,
+  "transformer_steps_attempted": 100,
+  "injection_summary_data_rows": 4200,
+  "route_summary_data_rows": 2,
+  "task_status_data_rows": 2,
+  "representation_margin_data_rows": 0,
+  "execution_summary_exists": false,
+  "failure": {
+    "formal_unit_id": "FEY_01_control",
+    "seed_index": 2,
+    "error_type": "ProtocolError",
+    "error_message": "reference vector changed across seeds: FEY_01_control/image_latent_first_frame_spatial_mean_l2_normalized"
+  },
+  "route_integrity_observation": {
+    "seed_1_image_latents_first_frame_rms": 0.7277534604072571,
+    "seed_2_image_latents_first_frame_rms": 0.7281359434127808,
+    "absolute_difference": 0.00038248300552368164,
+    "both_padding_max_abs_exactly_zero": true
+  },
+  "outcome_blindness": {
+    "injection_metric_values_inspected": false,
+    "identity_or_attribute_margins_computed": false,
+    "scientific_results_interpreted": false,
+    "route_integrity_values_inspected": true
+  },
+  "safety_state": {
+    "phase_s_process_running": false,
+    "partial_artifacts_reused": false,
+    "partial_artifact_analysis_authorized": false,
+    "phase_s_rerun_authorized": false
+  }
+}

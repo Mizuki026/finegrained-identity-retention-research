@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_trace_phase_s_abort_001_freeze_v1",
+  "frozen_at_utc": "2026-08-25",
+  "status": "PHASE_S_RUN_001_ABORT_FROZEN_PROTOCOL_CORRECTION_APPROVAL_REQUIRED",
+  "base_research_commit": "f167ca1decaafa1f56a62208eb65e52f1833fbc9",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "abort_reason": "SEED_SAMPLED_IMAGE_LATENT_WAS_INCORRECTLY_REQUIRED_TO_BE_CROSS_SEED_INVARIANT",
+  "validated_counts": {
+    "evidence_manifest_entries": 11,
+    "attempted_trajectories": 2,
+    "transformer_steps_attempted": 100,
+    "injection_summary_rows": 4200,
+    "route_summary_rows": 2,
+    "task_status_rows": 2,
+    "representation_margin_rows": 0
+  },
+  "resource_revision_proposed_not_authorized": {
+    "phase_e_trajectories": 24,
+    "phase_s_abort_attempts": 2,
+    "proposed_clean_phase_s_trajectories": 160,
+    "proposed_cumulative_trajectory_ceiling": 186,
+    "proposed_cumulative_transformer_step_ceiling": 9300,
+    "accepted_total_gpu_hour_ceiling": 72.0
+  },
+  "safety_state": {
+    "abort_evidence_read_only": true,
+    "partial_artifacts_reused": false,
+    "partial_artifact_analysis_authorized": false,
+    "runtime_code_change_authorized": false,
+    "replacement_phase_s_authorization_exists": false,
+    "phase_s_rerun_authorized": false
+  },
+  "artifacts": {
+    "phase_s_abort_audit_v1.json": {
+      "bytes": 1864,
+      "sha256": "e1204891b5c8a355bb48c1174e14edaa47ee0c8f999b41f7d068612c7f77fc98"
+    },
+    "phase_s_abort_evidence_manifest_v1.csv": {
+      "bytes": 2294,
+      "sha256": "0a25578d0d45b9db184d7a3c7aed950bfb43ea09bfd479831413118d566e2819"
+    },
+    "phase_s_protocol_correction_review_gate_v1.md": {
+      "bytes": 2071,
+      "sha256": "971e09e80bc8efa1ec57309e5006e7c1d66d5f36762cd89a20ec2a2e4b6903d8"
+    },
+    "phase_s_seed_invariance_diagnosis_v1.md": {
+      "bytes": 4212,
+      "sha256": "5939407af89054ef2aeba8970c26fe0f6fbc5e71792cb78235f3d62673c0bbc9"
+    }
+  },
+  "interpretation_boundary": "OUTCOME_BLIND_MEASUREMENT_IMPLEMENTATION_DIAGNOSIS_ONLY_NO_SCIENTIFIC_RESULT",
+  "next_gate": "EXPLICIT_RESEARCHER_APPROVAL_OF_ALL_SIX_PROTOCOL_CORRECTION_DECISIONS"
+}
