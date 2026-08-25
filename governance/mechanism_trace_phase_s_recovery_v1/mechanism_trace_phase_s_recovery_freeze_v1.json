@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_trace_phase_s_run_003_recovery_freeze_v1",
+  "frozen_at_utc": "2026-08-26",
+  "status": "RUN_003_RECOVERY_PACKAGE_FROZEN_EXPLICIT_GPU_APPROVAL_REQUIRED",
+  "base_research_commit": "92b265de34b4179ebf5c903c3213bed7e20e208f",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "run_002_disposition": {
+    "status": "IMMUTABLE_EXTERNAL_POWER_LOSS_ABORT",
+    "attempted_trajectories": 33,
+    "completed_trajectories": 32,
+    "interrupted_trajectories": 1,
+    "transformer_steps_attempted": 1647,
+    "representation_margin_rows": 0,
+    "partial_reuse_authorized": false,
+    "scientific_analysis_authorized": false
+  },
+  "run_003_proposal": {
+    "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003",
+    "fresh_trajectories": 160,
+    "fresh_transformer_steps": 8000,
+    "cuda_device_index": 0,
+    "gpu_processes": 1,
+    "phase_gpu_hours_ceiling": 24.0,
+    "cumulative_trajectory_ceiling": 219,
+    "cumulative_transformer_step_ceiling": 10947,
+    "total_gpu_hour_ceiling": 72.0
+  },
+  "validated_package": {
+    "evidence_manifest_entries": 23,
+    "cpu_tests_passed": 17,
+    "no_weight_dry_run_tasks": 160,
+    "no_weight_dry_run_transformer_steps": 8000,
+    "runtime_scientific_code_changed": false,
+    "model_loaded": false,
+    "gpu_compute_used": false,
+    "run_003_output_directory_exists": false,
+    "pending_external_authorization_exists": false,
+    "final_execution_authorization_exists": false
+  },
+  "safety_state": {
+    "run_002_artifacts_read_only": true,
+    "run_001_partial_reuse_authorized": false,
+    "run_002_partial_reuse_authorized": false,
+    "run_003_model_loading_authorized": false,
+    "run_003_gpu_execution_authorized": false,
+    "final_execution_authorization_authorized": false
+  },
+  "artifacts": {
+    "researcher_phase_s_recovery_authorization_v1.json": {
+      "bytes": 2017,
+      "sha256": "54f8c34516a0e9f12f5c3a3eb237b1fadb1e29a32928810bc50b45256cbb1f75"
+    },
+    "phase_s_run_002_power_loss_audit_v1.json": {
+      "bytes": 2634,
+      "sha256": "9da4b68369993b841d44cd73a8514319fbcd6df320906710972472d5d9c8d5d2"
+    },
+    "recovery_evidence_manifest_v1.csv": {
+      "bytes": 4687,
+      "sha256": "b058b5570de8c467ca6d59e077a20b594e7aa572c07bda13090931f85daca443"
+    },
+    "cpu_test_verification_v1.json": {
+      "bytes": 412,
+      "sha256": "99d1d27e780fbf07743e557b38da416d6108565d1e4eb12ce492365ccfb946cd"
+    },
+    "no_weight_dry_run_verification_v1.json": {
+      "bytes": 570,
+      "sha256": "38856394efc84c439489b24b92a6ff4c0e5ba4dd79fc15622b5244b5cacea1da"
+    },
+    "phase_s_run_003_execution_review_gate_v1.md": {
+      "bytes": 4062,
+      "sha256": "19091cc0c0c7515d8ca161336ccc6073ba78a872d4d42a6bff2462e75b392eec"
+    },
+    "recovery_package_verification_v1.json": {
+      "bytes": 816,
+      "sha256": "13e3932913579dc74d7b161e03a9af668372ae373fbe09709de7d6fcff1f4900"
+    },
+    "verify_mechanism_trace_phase_s_recovery_package_v1.py": {
+      "bytes": 10803,
+      "sha256": "84ac688802ea7e9b1297867523415bc5d45a05c3f2892c1d239271e26cbafdc6"
+    }
+  },
+  "interpretation_boundary": "FIXED_PANEL_DESCRIPTIVE_EVIDENCE_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CONCLUSIONS",
+  "next_gate": "EXPLICIT_RESEARCHER_APPROVAL_OF_ALL_SIX_RUN_003_EXECUTION_DECISIONS"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-08-26",
+  "status": "PASS_INDEPENDENT_RUN_003_NO_WEIGHT_DRY_RUN_VERIFICATION",
+  "phase": "scientific",
+  "task_count": 160,
+  "transformer_steps": 8000,
+  "eyeglasses_baseline_tasks": 80,
+  "facial_hair_baseline_tasks": 80,
+  "scheduler_positions_per_task": 50,
+  "local_injection_sites": 21,
+  "task_manifest_canonical_sha256": "d02cb52493a4fef0e12d3f22348250753c044453c413ca4403ee4fb3f4fa6672",
+  "torch_imported": false,
+  "consisid_modules_imported": false,
+  "model_loaded": false,
+  "gpu_compute_used": false
+}

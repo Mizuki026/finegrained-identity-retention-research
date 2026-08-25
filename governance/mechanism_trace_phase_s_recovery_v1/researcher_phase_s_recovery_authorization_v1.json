@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_trace_phase_s_recovery_authorization_v1",
+  "authorized_at_utc": "2026-08-26",
+  "status": "AUTHORIZED_FOR_ABORT_FREEZE_RECOVERY_PACKAGE_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY",
+  "base_research_commit": "92b265de34b4179ebf5c903c3213bed7e20e208f",
+  "approved_abort_disposition": {
+    "run_id": "phase_s_run_002",
+    "reason": "UNEXPECTED_INSTANCE_POWER_LOSS",
+    "immutable_abort_evidence": true,
+    "partial_trajectory_reuse_authorized": false,
+    "completed_trajectory_reuse_authorized": false,
+    "scientific_analysis_authorized": false
+  },
+  "approved_recovery_accounting": {
+    "phase_e_trajectories": 24,
+    "phase_s_run_001_attempted_trajectories": 2,
+    "phase_s_run_002_attempted_trajectories": 33,
+    "future_clean_phase_s_trajectories": 160,
+    "cumulative_trajectory_ceiling": 219,
+    "phase_e_transformer_steps": 1200,
+    "phase_s_run_001_transformer_steps": 100,
+    "phase_s_run_002_transformer_steps": 1647,
+    "future_clean_phase_s_transformer_steps": 8000,
+    "cumulative_transformer_step_ceiling": 10947,
+    "total_gpu_hour_ceiling": 72.0
+  },
+  "approved_preparation": {
+    "recovery_governance_package": true,
+    "cpu_only_tests": true,
+    "no_weight_dry_run": true,
+    "git_external_pending_authorization": true,
+    "future_runtime_directory": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003"
+  },
+  "model_loading_authorized": false,
+  "gpu_execution_authorized": false,
+  "final_execution_authorization_authorized": false,
+  "researcher_decision": "Accepted run-002 as an immutable non-reusable power-loss abort, accepted cumulative ceilings of 219 trajectory attempts and 10,947 Transformer steps, and authorized a run-003 recovery package, Git-external pending authorization, CPU-only tests, and no-weight dry-run. GPU execution remains unapproved until a new explicit review decision.",
+  "next_gate": "RUN_003_CODE_BOUND_PACKAGE_REVIEW_AND_EXPLICIT_RESEARCHER_GPU_APPROVAL_REQUIRED"
+}

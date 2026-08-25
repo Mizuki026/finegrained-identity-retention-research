@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "audit_id": "mechanism_trace_phase_s_run_002_power_loss_audit_v1",
+  "audited_at_utc": "2026-08-26",
+  "status": "PASS_OUTCOME_BLIND_POWER_LOSS_ABORT_AUDIT",
+  "research_commit_at_execution": "92b265de34b4179ebf5c903c3213bed7e20e208f",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "runtime_directory": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_002",
+  "authorization_sha256": "619022dc9f06ff1b244151b75e82ee2eb184fbcf1efdddec89355d8d3421f579",
+  "observed_terminal_state": {
+    "scientific_runner_process_running": false,
+    "screen_session_state": "DEAD_AFTER_INSTANCE_RESTART",
+    "execution_summary_exists": false,
+    "finalized_csv_artifacts_exist": false,
+    "phase_stop_event_exists": false,
+    "researcher_reported_external_event": "UNEXPECTED_INSTANCE_POWER_LOSS"
+  },
+  "validated_counts": {
+    "task_start_events": 33,
+    "task_complete_events": 32,
+    "phase_stop_events": 0,
+    "attempted_trajectories": 33,
+    "completed_trajectories": 32,
+    "interrupted_trajectories": 1,
+    "transformer_steps_attempted": 1647,
+    "injection_summary_data_rows": 69150,
+    "complete_trajectory_injection_rows": 67200,
+    "interrupted_trajectory_injection_rows": 1950,
+    "route_summary_data_rows": 32,
+    "task_status_data_rows": 32,
+    "representation_margin_data_rows": 0
+  },
+  "interrupted_task": {
+    "trace_task_id": "S__FEY_05_control__s1__baseline__r1",
+    "formal_unit_id": "FEY_05_control",
+    "seed_index": 1,
+    "scheduler_steps_with_any_rows": 47,
+    "last_started_step_index": 46,
+    "rows_at_last_started_step": 18,
+    "expected_rows_per_complete_step": 42
+  },
+  "recovery_capability_observation": {
+    "same_directory_restart_supported": false,
+    "partial_csv_append_supported": false,
+    "reference_readout_persisted_per_task": false,
+    "reason": "The runner rejects a non-empty output directory, opens partial artifacts exclusively, and retains the four-seed representation readout only in process memory until all 160 trajectories complete."
+  },
+  "outcome_blindness": {
+    "injection_metric_values_inspected": false,
+    "route_metric_values_inspected": false,
+    "identity_or_attribute_margins_computed": false,
+    "scientific_results_interpreted": false,
+    "only_identifiers_counts_event_types_and_step_coverage_inspected": true
+  },
+  "safety_state": {
+    "run_002_evidence_to_be_read_only": true,
+    "run_002_partial_artifacts_reused": false,
+    "run_002_scientific_analysis_authorized": false,
+    "run_003_model_loading_authorized": false,
+    "run_003_gpu_execution_authorized": false
+  }
+}
