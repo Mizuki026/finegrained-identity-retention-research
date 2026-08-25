@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_trace_phase_s_run_003_researcher_execution_authorization_v1",
+  "authorized_at_utc": "2026-08-26",
+  "status": "PHASE_S_RUN_003_GPU_EXECUTION_EXPLICITLY_APPROVED",
+  "source": "Direct researcher approval of all six decisions in phase_s_run_003_execution_review_gate_v1.md",
+  "reviewed_recovery_package": {
+    "verification_path": "governance/mechanism_trace_phase_s_recovery_v1/recovery_package_verification_v1.json",
+    "verification_sha256": "13e3932913579dc74d7b161e03a9af668372ae373fbe09709de7d6fcff1f4900",
+    "verification_status": "PASS_INDEPENDENT_PHASE_S_RUN_003_RECOVERY_PACKAGE_VERIFICATION",
+    "pending_authorization_path": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003_execution_authorization_pending_v1.json",
+    "pending_authorization_sha256": "8dd7e988d184a824fac6e38defb96ff7d97e5405da1534a7858fdb4c739063b3"
+  },
+  "approved_decisions": {
+    "run_002_outcome_blind_power_loss_audit_accepted": true,
+    "run_002_partial_artifacts_permanently_excluded": true,
+    "run_003_complete_fresh_execution_required": true,
+    "run_001_or_run_002_trajectory_reuse_authorized": false,
+    "cumulative_trajectory_ceiling": 219,
+    "cumulative_transformer_step_ceiling": 10947,
+    "total_gpu_hour_ceiling": 72.0,
+    "frozen_tasks_seeds_metrics_thresholds_exclusions_and_no_retry_rule_reconfirmed": true,
+    "frozen_privacy_and_output_rules_reconfirmed": true,
+    "fixed_panel_descriptive_only_interpretation_reconfirmed": true
+  },
+  "approved_execution": {
+    "phase": "scientific",
+    "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003",
+    "trajectories": 160,
+    "transformer_steps": 8000,
+    "scheduler_positions_per_trajectory": 50,
+    "cuda_device_index": 0,
+    "gpu_processes": 1,
+    "phase_gpu_hours_ceiling": 24.0,
+    "model_loading_authorized": true,
+    "gpu_execution_authorized": true
+  },
+  "prohibited_actions": {
+    "selective_regeneration": true,
+    "seed_changes": true,
+    "metric_or_threshold_changes": true,
+    "failure_imputation_or_deletion": true,
+    "run_001_or_run_002_partial_reuse": true,
+    "video_decode_or_save": true,
+    "raw_tensor_or_identity_embedding_persistence": true
+  },
+  "interpretation_boundary": "FIXED_PANEL_DESCRIPTIVE_EVIDENCE_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CONCLUSIONS",
+  "next_gate": "PHASE_S_RUN_003_POST_RUN_INDEPENDENT_VERIFICATION_AND_RESEARCHER_REVIEW_REQUIRED"
+}
