@@ -1,0 +1,20 @@
+{
+  "bytes_match": true,
+  "cpu_tests_passed": 17,
+  "cumulative_attempt_ceiling": 186,
+  "cumulative_transformer_step_ceiling": 9300,
+  "deterministic_cross_seed_stages": 8,
+  "dry_run_tasks": 184,
+  "dry_run_transformer_steps": 9200,
+  "evidence_entries": 15,
+  "gpu_compute_used": false,
+  "model_loaded": false,
+  "paths_exist": true,
+  "phase_s_gpu_execution_authorized": false,
+  "phase_s_run_002_exists": false,
+  "replacement_phase_s_authorization_exists": false,
+  "representation_stages": 9,
+  "schema_version": 1,
+  "sha256_match": true,
+  "status": "PASS_INDEPENDENT_PHASE_S_CORRECTION_PACKAGE_VERIFICATION"
+}

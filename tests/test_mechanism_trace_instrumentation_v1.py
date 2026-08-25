@@ -24,20 +24,37 @@ class Collector:
         self.rows.append(row)
 
 
-def task(unit: str = "FEY_01_positive", role: str = "positive") -> dict[str, str]:
+def task(
+    unit: str = "FEY_01_positive",
+    role: str = "positive",
+    seed_index: int = 1,
+    phase: str = "scientific",
+) -> dict[str, str]:
     pair = unit.rsplit("_", 1)[0]
     return {
-        "trace_task_id": f"synthetic__{unit}",
-        "phase": "scientific",
+        "trace_task_id": f"synthetic__{unit}__s{seed_index}",
+        "phase": phase,
         "formal_unit_id": unit,
         "formal_pair_id": pair,
         "attribute": "eyeglasses" if unit.startswith("FEY") else "facial_hair",
         "role": role,
-        "seed_index": "1",
-        "seed": "2686238281",
+        "seed_index": str(seed_index),
+        "seed": trace.FORMAL_SEED_STRINGS[seed_index - 1],
         "condition": "baseline",
         "repetition": "1",
     }
+
+
+def reference_vectors(
+    sign: float = 1.0,
+    image_latent: torch.Tensor | None = None,
+) -> dict[str, torch.Tensor]:
+    base = torch.tensor([sign, 0.0, 0.0, 0.0], dtype=torch.float32)
+    result = {stage: base.clone() for stage in trace.REFERENCE_VECTOR_STAGES}
+    result[trace.IMAGE_LATENT_VECTOR_STAGE] = (
+        image_latent.detach().float().clone() if image_latent is not None else base.clone()
+    )
+    return result
 
 
 class MechanismTraceInstrumentationTests(unittest.TestCase):
@@ -90,27 +107,85 @@ class MechanismTraceInstrumentationTests(unittest.TestCase):
             self.assertAlmostEqual(row["mean_tokenwise_cosine_h_r"], 1.0, places=5)
             self.assertEqual(len([key for key in row if key.startswith("frame_rms_r_")]), 13)
 
+    def test_deterministic_stage_drift_across_seeds_is_blocked(self) -> None:
+        readout = trace.ReferenceReadout()
+        readout.add(task(seed_index=1), reference_vectors())
+        changed = reference_vectors()
+        changed["insightface_l2_normalized"] = torch.tensor(
+            [0.0, 1.0, 0.0, 0.0], dtype=torch.float32
+        )
+        with self.assertRaisesRegex(
+            trace.ProtocolError, "deterministic reference vector changed across seeds"
+        ):
+            readout.add(task(seed_index=2), changed)
+
+    def test_duplicate_scientific_seed_is_blocked(self) -> None:
+        readout = trace.ReferenceReadout()
+        readout.add(task(seed_index=1), reference_vectors())
+        with self.assertRaisesRegex(
+            trace.ProtocolError, "duplicate scientific representation seed"
+        ):
+            readout.add(task(seed_index=1), reference_vectors())
+
+    def test_missing_scientific_seeds_are_blocked(self) -> None:
+        readout = trace.ReferenceReadout()
+        readout.add(task(seed_index=1), reference_vectors())
+        with self.assertRaisesRegex(trace.ProtocolError, "representation seeds incomplete"):
+            readout._unit_mean_vectors()
+
+    def test_image_latent_uses_exact_four_seed_mean_without_renormalization(self) -> None:
+        readout = trace.ReferenceReadout()
+        image_vectors = (
+            torch.tensor([1.0, 0.0, 0.0, 0.0]),
+            torch.tensor([1.0, 0.0, 0.0, 0.0]),
+            torch.tensor([0.0, 1.0, 0.0, 0.0]),
+            torch.tensor([0.0, 1.0, 0.0, 0.0]),
+        )
+        for seed_index, image_vector in enumerate(image_vectors, start=1):
+            readout.add(
+                task(seed_index=seed_index),
+                reference_vectors(image_latent=image_vector),
+            )
+        mean = readout._unit_mean_vectors()["FEY_01_positive"][
+            trace.IMAGE_LATENT_VECTOR_STAGE
+        ]
+        self.assertTrue(
+            torch.equal(mean, torch.tensor([0.5, 0.5, 0.0, 0.0], dtype=torch.float32))
+        )
+        self.assertFalse(torch.isclose(torch.linalg.vector_norm(mean), torch.tensor(1.0)))
+
+    def test_engineering_same_seed_repeats_remain_supported(self) -> None:
+        readout = trace.ReferenceReadout()
+        metadata = task(seed_index=1, phase="engineering")
+        readout.add(metadata, reference_vectors())
+        readout.add(metadata, reference_vectors())
+        self.assertEqual(set(readout.vectors["FEY_01_positive"]), {"2686238281"})
+
     def test_directional_ranking_emits_all_fixed_panel_margins(self) -> None:
         readout = trace.ReferenceReadout()
-        stages = [
-            "insightface_l2_normalized", "eva_head_l2_normalized", "eva_hidden_0_patch_mean_l2_normalized", "eva_hidden_1_patch_mean_l2_normalized",
-            "eva_hidden_2_patch_mean_l2_normalized", "eva_hidden_3_patch_mean_l2_normalized", "eva_hidden_4_patch_mean_l2_normalized",
-            "valid_face_emb_mean_token_l2_normalized", "image_latent_first_frame_spatial_mean_l2_normalized",
-        ]
         for attribute, prefix in (("eyeglasses", "FEY"), ("facial_hair", "FFH")):
             for pair_index in range(1, 11):
                 pair = f"{prefix}_{pair_index:02d}"
                 for role, sign in (("positive", 1.0), ("control", -1.0)):
                     unit = f"{pair}_{role}"
-                    metadata = task(unit, role)
-                    metadata["attribute"] = attribute
-                    vectors = {
-                        stage: torch.tensor([sign, 0.0, 0.0, 0.0], dtype=torch.float32)
-                        for stage in stages
-                    }
-                    readout.add(metadata, vectors)
+                    for seed_index in range(1, 5):
+                        metadata = task(unit, role, seed_index)
+                        metadata["attribute"] = attribute
+                        image = torch.tensor(
+                            [sign, seed_index / 100.0, 0.0, 0.0],
+                            dtype=torch.float32,
+                        )
+                        image = image / torch.linalg.vector_norm(image)
+                        readout.add(
+                            metadata,
+                            reference_vectors(sign=sign, image_latent=image),
+                        )
         rows = readout.margins()
         self.assertEqual(len(rows), 180)
+        self.assertEqual(
+            {row["stage"] for row in rows},
+            set(trace.REFERENCE_VECTOR_STAGES),
+        )
         self.assertEqual({row["direction"] for row in rows}, {"correct"})
         self.assertTrue(all(row["margin"] > 0 for row in rows))
 

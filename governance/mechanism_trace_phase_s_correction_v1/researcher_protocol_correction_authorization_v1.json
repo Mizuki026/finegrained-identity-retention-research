@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_trace_phase_s_protocol_correction_authorization_v1",
+  "authorized_at_utc": "2026-08-25",
+  "status": "AUTHORIZED_FOR_CODE_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY",
+  "base_research_commit": "c089be319f50214c05918000c758603216a09b78",
+  "abort_freeze_sha256": "0858e7516193fed99ce45e46f8b25b87051b9670db90cd30f5b2899abaf99548",
+  "approved_changes": {
+    "deterministic_reference_stages_cross_seed_allclose": true,
+    "image_latent_exact_four_seed_arithmetic_mean": true,
+    "image_latent_second_normalization": false,
+    "all_nine_representation_stages_preserved": true,
+    "directional_ranking_unchanged": true,
+    "tie_absolute_margin": 1e-8,
+    "injection_analysis_unchanged": true
+  },
+  "approved_verification": {
+    "instrumentation_and_tests": true,
+    "cpu_only_tests": true,
+    "no_weight_dry_run": true
+  },
+  "revised_attempt_accounting": {
+    "phase_e_trajectories": 24,
+    "aborted_phase_s_trajectories": 2,
+    "future_clean_phase_s_trajectories": 160,
+    "cumulative_trajectory_ceiling": 186,
+    "cumulative_transformer_step_ceiling": 9300,
+    "total_gpu_hour_ceiling": 72.0
+  },
+  "future_runtime_directory": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_002",
+  "run_001_partial_reuse_authorized": false,
+  "model_loading_authorized": false,
+  "gpu_execution_authorized": false,
+  "replacement_execution_authorization_authorized": false,
+  "researcher_decision": "Accepted all six protocol-correction decisions; authorized instrumentation/test changes, CPU-only tests, and no-weight dry-run; did not authorize GPU; requested a new independently verified execution package before review.",
+  "next_gate": "NEW_CODE_BOUND_EXECUTION_PACKAGE_AND_EXPLICIT_RESEARCHER_GPU_APPROVAL_REQUIRED"
+}

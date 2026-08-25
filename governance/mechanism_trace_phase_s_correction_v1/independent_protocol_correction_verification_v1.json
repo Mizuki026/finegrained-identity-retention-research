@@ -1,0 +1,20 @@
+{
+  "cpu_tests_passed": 17,
+  "cumulative_attempt_ceiling": 186,
+  "cumulative_transformer_step_ceiling": 9300,
+  "deterministic_cross_seed_stages": 8,
+  "dry_run_tasks": 184,
+  "dry_run_transformer_steps": 9200,
+  "four_seed_mean_without_second_normalization": true,
+  "gpu_compute_used": false,
+  "model_loaded": false,
+  "phase_s_gpu_execution_authorized": false,
+  "phase_s_run_002_exists": false,
+  "replacement_phase_s_authorization_exists": false,
+  "representation_stages": 9,
+  "run_001_partial_reused": false,
+  "sampled_image_latent_stages": 1,
+  "schema_version": 1,
+  "status": "PASS_INDEPENDENT_PHASE_S_PROTOCOL_CORRECTION_VERIFICATION",
+  "torch_imported_by_verifier": false
+}

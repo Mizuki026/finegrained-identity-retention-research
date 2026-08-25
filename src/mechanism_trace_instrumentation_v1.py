@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any
 
 from mechanism_trace_protocol_v1 import (
+    FORMAL_SEEDS,
     FORMAL_MASTER,
     ProtocolError,
     build_plan,
@@ -86,6 +87,20 @@ MARGIN_COLUMNS = (
     "margin",
     "direction",
 )
+IMAGE_LATENT_VECTOR_STAGE = "image_latent_first_frame_spatial_mean_l2_normalized"
+REFERENCE_VECTOR_STAGES = (
+    "insightface_l2_normalized",
+    "eva_head_l2_normalized",
+    "eva_hidden_0_patch_mean_l2_normalized",
+    "eva_hidden_1_patch_mean_l2_normalized",
+    "eva_hidden_2_patch_mean_l2_normalized",
+    "eva_hidden_3_patch_mean_l2_normalized",
+    "eva_hidden_4_patch_mean_l2_normalized",
+    "valid_face_emb_mean_token_l2_normalized",
+    IMAGE_LATENT_VECTOR_STAGE,
+)
+DETERMINISTIC_REFERENCE_VECTOR_STAGES = REFERENCE_VECTOR_STAGES[:-1]
+FORMAL_SEED_STRINGS = tuple(str(seed) for seed in FORMAL_SEEDS)
 
 
 def utc_now() -> str:
@@ -335,44 +350,80 @@ class TraceRecorder:
             raise ProtocolError(f"unexpected injection row count: {self.row_count}")
         if self.image_route_summary is None:
             raise ProtocolError("image_latents summary was not recorded")
-        if set(self.reference_vectors) != {
-            "insightface_l2_normalized", "eva_head_l2_normalized", "eva_hidden_0_patch_mean_l2_normalized", "eva_hidden_1_patch_mean_l2_normalized",
-            "eva_hidden_2_patch_mean_l2_normalized", "eva_hidden_3_patch_mean_l2_normalized", "eva_hidden_4_patch_mean_l2_normalized",
-            "valid_face_emb_mean_token_l2_normalized", "image_latent_first_frame_spatial_mean_l2_normalized"
-        }:
+        if set(self.reference_vectors) != set(REFERENCE_VECTOR_STAGES):
             raise ProtocolError(f"reference vector stage mismatch: {sorted(self.reference_vectors)}")
         return self.image_route_summary
 
 
 class ReferenceReadout:
-    """Keep pooled vectors in memory, emit only matched-pair margins."""
+    """Keep four-seed pooled vectors in memory, emit only matched-pair margins."""
 
     def __init__(self):
-        self.vectors: dict[str, dict[str, Any]] = {}
+        self.vectors: dict[str, dict[str, dict[str, Any]]] = {}
         self.meta: dict[str, dict[str, str]] = {}
 
     def add(self, task: dict[str, str], vectors: dict[str, Any]) -> None:
         torch = __import__("torch")
         unit = task["formal_unit_id"]
+        seed = task["seed"]
+        if seed not in FORMAL_SEED_STRINGS:
+            raise ProtocolError(f"unexpected representation seed for {unit}: {seed}")
+        if set(vectors) != set(REFERENCE_VECTOR_STAGES):
+            raise ProtocolError(f"reference vector stage mismatch: {sorted(vectors)}")
         cpu_vectors = {name: value.detach().float().cpu() for name, value in vectors.items()}
-        if unit in self.vectors:
-            for name, value in cpu_vectors.items():
-                if not torch.allclose(value, self.vectors[unit][name], rtol=1e-5, atol=1e-6):
-                    raise ProtocolError(f"reference vector changed across seeds: {unit}/{name}")
-            return
-        self.vectors[unit] = cpu_vectors
-        self.meta[unit] = {
+        metadata = {
             "attribute": task["attribute"],
             "role": task["role"],
             "formal_pair_id": task["formal_pair_id"],
         }
+        if unit not in self.vectors:
+            self.vectors[unit] = {}
+            self.meta[unit] = metadata
+        elif self.meta[unit] != metadata:
+            raise ProtocolError(f"reference metadata changed within unit: {unit}")
+
+        observations = self.vectors[unit]
+        if seed in observations:
+            if task["phase"] == "scientific":
+                raise ProtocolError(f"duplicate scientific representation seed: {unit}/{seed}")
+            for name, value in cpu_vectors.items():
+                if not torch.allclose(value, observations[seed][name], rtol=1e-5, atol=1e-6):
+                    raise ProtocolError(f"reference vector changed within seed: {unit}/{seed}/{name}")
+            return
+
+        if observations:
+            first = observations[next(iter(observations))]
+            for name in DETERMINISTIC_REFERENCE_VECTOR_STAGES:
+                if not torch.allclose(cpu_vectors[name], first[name], rtol=1e-5, atol=1e-6):
+                    raise ProtocolError(
+                        f"deterministic reference vector changed across seeds: {unit}/{name}"
+                    )
+        observations[seed] = cpu_vectors
+
+    def _unit_mean_vectors(self) -> dict[str, dict[str, Any]]:
+        torch = __import__("torch")
+        result: dict[str, dict[str, Any]] = {}
+        expected = set(FORMAL_SEED_STRINGS)
+        for unit, observations in self.vectors.items():
+            if set(observations) != expected:
+                raise ProtocolError(
+                    f"representation seeds incomplete for {unit}: {sorted(observations)}"
+                )
+            result[unit] = {
+                stage: torch.stack(
+                    [observations[seed][stage] for seed in FORMAL_SEED_STRINGS]
+                ).mean(dim=0)
+                for stage in REFERENCE_VECTOR_STAGES
+            }
+        return result
 
     def margins(self) -> list[dict[str, Any]]:
         torch = __import__("torch")
         if len(self.vectors) != 40:
             raise ProtocolError(f"scientific readout expected 40 units, found {len(self.vectors)}")
+        unit_vectors = self._unit_mean_vectors()
         rows: list[dict[str, Any]] = []
-        stages = sorted(next(iter(self.vectors.values())))
+        stages = sorted(REFERENCE_VECTOR_STAGES)
         for attribute in ("eyeglasses", "facial_hair"):
             pairs: dict[str, dict[str, str]] = defaultdict(dict)
             for unit, meta in self.meta.items():
@@ -384,13 +435,13 @@ class ReferenceReadout:
                 for held_pair in sorted(pairs):
                     training_pairs = [pair for pair in sorted(pairs) if pair != held_pair]
                     directions = [
-                        self.vectors[pairs[pair]["positive"]][stage]
-                        - self.vectors[pairs[pair]["control"]][stage]
+                        unit_vectors[pairs[pair]["positive"]][stage]
+                        - unit_vectors[pairs[pair]["control"]][stage]
                         for pair in training_pairs
                     ]
                     direction = torch.stack(directions).mean(dim=0)
-                    positive = self.vectors[pairs[held_pair]["positive"]][stage]
-                    control = self.vectors[pairs[held_pair]["control"]][stage]
+                    positive = unit_vectors[pairs[held_pair]["positive"]][stage]
+                    control = unit_vectors[pairs[held_pair]["control"]][stage]
                     margin = float(torch.dot(positive, direction) - torch.dot(control, direction))
                     label = "tie" if abs(margin) <= 1e-8 else ("correct" if margin > 0 else "wrong")
                     rows.append(
