@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_trace_phase_s_run_003_result_freeze_v1",
+  "frozen_at_utc": "2026-08-26",
+  "status": "PHASE_S_RUN_003_COMPLETE_PASS_RESEARCHER_INTERPRETATION_AND_DISPOSITION_REQUIRED",
+  "execution_research_commit": "7d3cfbe86f109df13f111274585019fb943ce104",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "validated_execution": {
+    "tasks": 160,
+    "transformer_steps": 8000,
+    "injection_rows": 336000,
+    "route_rows": 160,
+    "task_status_rows": 160,
+    "representation_margin_rows": 180,
+    "event_rows": 320,
+    "phase_elapsed_gpu_hours": 12.500112516284506,
+    "phase_gpu_hours_ceiling": 24.0,
+    "cumulative_trajectory_ceiling": 219,
+    "cumulative_transformer_step_ceiling": 10947
+  },
+  "validated_analysis": {
+    "task_3x3_rows": 2880,
+    "pair_3x3_rows": 360,
+    "finite_panel_3x3_rows": 36,
+    "representation_finite_panel_rows": 18,
+    "inferential_tests": false,
+    "confidence_intervals": false,
+    "cross_attribute_ranking": false
+  },
+  "primary_representation_descriptions": {
+    "eyeglasses": {
+      "correct_count": 5,
+      "tie_count": 0,
+      "wrong_count": 5,
+      "mean_margin": 0.0008087739115580916,
+      "median_margin": 0.00018103292677551508,
+      "minimum_margin": -0.007377781439572573,
+      "maximum_margin": 0.009734499268233776
+    },
+    "facial_hair": {
+      "correct_count": 6,
+      "tie_count": 0,
+      "wrong_count": 4,
+      "mean_margin": 0.0012283966992981733,
+      "median_margin": 0.0007300735451281071,
+      "minimum_margin": -0.004065653309226036,
+      "maximum_margin": 0.010493836365640163
+    }
+  },
+  "bounded_observations": {
+    "primary_margins_have_both_signs_for_each_attribute": true,
+    "all_36_injection_cells_have_both_positive_and_negative_pair_differences": true,
+    "secondary_representation_patterns_are_stage_specific_diagnostics_only": true,
+    "insightface_aligned_face_fallback_messages": 76,
+    "fallback_task_mapping_available": false
+  },
+  "safety_state": {
+    "runtime_artifacts_read_only": true,
+    "analysis_artifacts_read_only": true,
+    "run_001_or_run_002_partial_reuse": false,
+    "forbidden_raw_tensor_or_media_files": 0,
+    "post_run_model_loaded": false,
+    "post_run_gpu_compute_used": false,
+    "new_analysis_authorized": false,
+    "new_execution_authorized": false
+  },
+  "artifacts": {
+    "phase_s_run_003_evidence_manifest_v1.csv": {
+      "bytes": 5273,
+      "sha256": "d1da23818b70b5068def46a051847dff72da59295287781c13e7ddbbdf342e47"
+    },
+    "phase_s_run_003_results_review_gate_v1.md": {
+      "bytes": 10259,
+      "sha256": "c40bfaf86a972f04e41bb5062875f1b42dbfb6f6c33d3cc47b978e64bcddef93"
+    },
+    "phase_s_run_003_package_verification_v1.json": {
+      "bytes": 882,
+      "sha256": "79d420fdafbcad6060373d948118e2cd62ce3f5a33aa17746982053010075f92"
+    },
+    "researcher_execution_authorization_v1.json": {
+      "bytes": 2527,
+      "sha256": "48a5e84351f3c91ce7f3dddd381aa1988ce877edd2851f0cf43f649f1c9b9541"
+    },
+    "audit_mechanism_trace_phase_s_v1.py": {
+      "bytes": 11420,
+      "sha256": "154dde32be93e3b257727fe000b9312ac33227e06329ea06561e2021a88edf01"
+    },
+    "verify_mechanism_trace_phase_s_analysis_v1.py": {
+      "bytes": 12109,
+      "sha256": "7b2243f30d9925d7f224b59864fbbbaee4ffcc2c2c17eb3b3d9ee5e608116756"
+    },
+    "verify_mechanism_trace_phase_s_run_003_package_v1.py": {
+      "bytes": 7828,
+      "sha256": "cb501e8dd1afa7ea5dfbd48812f554fa332230af51549911ef01e9c7c57cd10e"
+    },
+    "independent_verification_v1.json": {
+      "bytes": 289,
+      "sha256": "a07c1ce9baff273ca50e3dc8685f2453a628728b9cfa36e4ab8702ed350e755c"
+    },
+    "post_run_audit_v1.json": {
+      "bytes": 2239,
+      "sha256": "7902108a0b209d2825de7826986a30eb8fd7f9daad9460d8f9fe8149d27c9272"
+    },
+    "independent_analysis_verification_v1.json": {
+      "bytes": 665,
+      "sha256": "0dde309e8c9212bc3b88e1413a97223266942cb95baf285fc4e67dc50d0f6ab6"
+    },
+    "injection_finite_panel_3x3_v1.csv": {
+      "bytes": 4921,
+      "sha256": "52b518586b3604a3b67417ec89f10a2ea879453ceb17959bdcd34b97b0ab8467"
+    },
+    "representation_finite_panel_v1.csv": {
+      "bytes": 3042,
+      "sha256": "3baaee5507cddd007384972ae06342e78fe414c32bcdca50a7272c7a16e17ab7"
+    }
+  },
+  "interpretation_boundary": "FIXED_PANEL_DESCRIPTIVE_EVIDENCE_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CONCLUSIONS",
+  "next_gate": "EXPLICIT_RESEARCHER_RESOLUTION_OF_ALL_SIX_PHASE_S_RUN_003_RESULT_DECISIONS"
+}
