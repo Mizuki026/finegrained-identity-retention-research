@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "run_id": "mechanism_outcome_linkage_v1_run_001",
+  "recorded_at_utc": "2026-08-30",
+  "status": "PASS_COMPLETE_FIXED_PANEL_CPU_LINKAGE_AND_INDEPENDENT_VERIFICATION",
+  "base_research_commit": "9c42f85e2e239b257c547f02633fe50ffedcb10c",
+  "execution_environment": {
+    "cpu_only": true,
+    "cuda_visible_devices": "",
+    "gpu_devices_used": 0,
+    "gpu_hours": 0,
+    "model_modules_loaded": false,
+    "model_weights_loaded": false,
+    "network_used": false,
+    "generation_run": false
+  },
+  "pre_execution": {
+    "synthetic_tests_passed": 9,
+    "synthetic_tests_failed": 0,
+    "synthetic_test_seconds": 0.034,
+    "authorization_verification": "PASS_PRE_EXECUTION_AUTHORIZATION_VERIFICATION",
+    "output_directory_preexisting": false,
+    "source_expected_key_counts": {
+      "eyeglasses_outcome": 40,
+      "facial_hair_outcome": 20,
+      "representation_margins": 180,
+      "injection_pair_grid": 360
+    }
+  },
+  "execution_authorization": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_execution_authorization/run_001_execution_authorization_v1.json",
+    "bytes": 36469,
+    "sha256": "0a7786ce912516378c8c66f8a19f5d3c52fb8de1376cfd22d5661faf55e2d0f3",
+    "mode": "0444"
+  },
+  "formal_analysis": {
+    "status": "COMPLETE_FIXED_PANEL_DESCRIPTIVE_ASSOCIATIONS_PENDING_INDEPENDENT_VERIFICATION",
+    "outcomes_constructed": 20,
+    "primary_joined_rows": 20,
+    "secondary_representation_joined_rows": 160,
+    "secondary_injection_joined_rows": 360,
+    "primary_coefficients": 2,
+    "secondary_representation_coefficients": 16,
+    "secondary_injection_coefficients": 36,
+    "association_method": "Spearman rank correlation with average ranks",
+    "wall_seconds": 0.044,
+    "user_seconds": 0.040,
+    "system_seconds": 0.004
+  },
+  "independent_verification": {
+    "status": "PASS_INDEPENDENT_FIXED_PANEL_LINKAGE_VERIFICATION",
+    "all_joined_values_recomputed": true,
+    "all_associations_recomputed": true,
+    "verified_primary_coefficients": 2,
+    "verified_secondary_representation_coefficients": 16,
+    "verified_secondary_injection_coefficients": 36,
+    "wall_seconds": 0.042,
+    "user_seconds": 0.023,
+    "system_seconds": 0.019
+  },
+  "external_runtime": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "files": {
+      "analysis_summary_v1.json": {
+        "bytes": 728,
+        "sha256": "3a382b1605851536629b3a00b5acc2c7c1b660b538e64fbadf46fb213d7e5fae",
+        "mode": "0444"
+      },
+      "independent_verification_v1.json": {
+        "bytes": 1469,
+        "sha256": "6a76ffe4e691a80e9f30e59ca1d9e5df4cb4137a9e929691bf84e9e5cb36e44c",
+        "mode": "0444"
+      },
+      "primary_associations_v1.csv": {
+        "bytes": 232,
+        "sha256": "07b5040c20aca7e65a30291e0626ff5fc7e66c3ee30957065a78641773f51a2f",
+        "mode": "0444"
+      },
+      "primary_joined_pairs_v1.csv": {
+        "bytes": 1770,
+        "sha256": "f48282cc5311b89ccedb21911fa443b1db988b87e52b6388de8a7b12e18a34a8",
+        "mode": "0444"
+      },
+      "secondary_injection_associations_v1.csv": {
+        "bytes": 3188,
+        "sha256": "a1703dc6c70e8dd1b4ca60913e9bba84d74a07685b3c238cf4ee223b060b0d6f",
+        "mode": "0444"
+      },
+      "secondary_injection_joined_pairs_v1.csv": {
+        "bytes": 24479,
+        "sha256": "696df93c2f37f466f840e2396005353eaadc5f3933993da7faac78cac12652c8",
+        "mode": "0444"
+      },
+      "secondary_representation_associations_v1.csv": {
+        "bytes": 1685,
+        "sha256": "6d33220813e72ceba3a23fe7c9d035f9e61dfe8de767e869b4d8a9e5a200adeb",
+        "mode": "0444"
+      },
+      "secondary_representation_joined_pairs_v1.csv": {
+        "bytes": 13012,
+        "sha256": "9289412ac234f368a34e7d7eff7e0466f0f10661066f963ba3e49ccc19d4d638",
+        "mode": "0444"
+      }
+    }
+  },
+  "reporting": {
+    "p_values_computed": false,
+    "confidence_intervals_computed": false,
+    "reduced_panel_used": false,
+    "cross_attribute_ranking_performed": false,
+    "fallback_assigned_or_excluded": false,
+    "joined_pair_tables_committed_to_git": false,
+    "complete_association_families_retained": true
+  },
+  "claim_boundary": "FIXED_PANEL_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_OR_PROVEN_BOTTLENECK_CONCLUSION",
+  "next_gate": "RESEARCHER_DECISION_ON_SCIENTIFIC_INTERPRETATION"
+}

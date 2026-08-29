@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_outcome_linkage_cpu_execution_authorization_v1",
+  "recorded_at_utc": "2026-08-30",
+  "status": "COMPLETE_PRESPECIFIED_CPU_LINKAGE_EXECUTION_APPROVED",
+  "decision_source": "Direct researcher approval in the current session",
+  "base_research_commit": "9c42f85e2e239b257c547f02633fe50ffedcb10c",
+  "authorized": {
+    "eyeglasses_outcome_construction": "four-seed arithmetic mean of frozen human_positive_minus_control for each of ten FEY pairs",
+    "facial_hair_outcome_use": "ten existing frozen primary_positive_minus_control values without reconstruction",
+    "outcome_trace_join": "join separately by attribute and formal_pair_id to the complete prespecified mechanism families",
+    "primary_associations": 2,
+    "secondary_representation_associations": 16,
+    "secondary_injection_associations": 36,
+    "association_method": "Spearman rank correlation with average ranks",
+    "p_values": false,
+    "confidence_intervals": false,
+    "complete_nonselective_reporting": true,
+    "external_only_joined_pair_tables": true,
+    "independent_cpu_result_verification": true,
+    "cpu_only_execution": true
+  },
+  "not_authorized": {
+    "reduced_panel": true,
+    "stage_or_cell_selection": true,
+    "cross_attribute_ranking": true,
+    "fallback_assignment_exclusion_or_rerun": true,
+    "imputation_or_sample_deletion": true,
+    "source_modification": true,
+    "model_loading": true,
+    "gpu_execution": true,
+    "network_access": true,
+    "generation_or_regeneration": true,
+    "route_intervention": true,
+    "fine_tuning_or_lora": true
+  },
+  "bindings": {
+    "approved_plan": {
+      "path": "governance/mechanism_outcome_linkage_implementation_v1/approved_analysis_plan_v1.json",
+      "bytes": 3100,
+      "sha256": "f8ee3ca304fce1dda3226c4d1c8d36a7dcf2c8d1e09e60517859495de82dcd08"
+    },
+    "analyzer": {
+      "path": "src/analyze_mechanism_outcome_linkage_v1.py",
+      "bytes": 24224,
+      "sha256": "bc768fe9c1436a9a1fd54cc79bce19b694078e582012abeb611a42dac86a4b62"
+    },
+    "independent_verifier": {
+      "path": "src/verify_mechanism_outcome_linkage_v1.py",
+      "bytes": 21076,
+      "sha256": "a0d464a9399a3122471066c1756a67d4de1037d64135680847eb1edd5c50f543"
+    },
+    "formal_input_audit_freeze": {
+      "path": "governance/mechanism_outcome_linkage_input_audit_v1/mechanism_outcome_linkage_input_audit_freeze_v1.json",
+      "bytes": 2821,
+      "sha256": "9f39a1e7327761a973fd5cdf2ed4b0702aa5b80fa1b4a9cc7c22f7c8f1a70abc"
+    }
+  },
+  "external_execution_authorization": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_execution_authorization/run_001_execution_authorization_v1.json",
+  "external_runtime": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_runtime/run_001",
+  "compute_budget": {
+    "gpu_hours": 0,
+    "gpu_devices": 0,
+    "cpu_only": true,
+    "expected_wall_time_minutes_upper_planning_bound": 5
+  },
+  "claim_boundary": "FIXED_PANEL_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_OR_PROVEN_BOTTLENECK_CONCLUSION",
+  "next_gate": "INDEPENDENT_RESULT_VERIFICATION_THEN_RESEARCHER_SCIENTIFIC_INTERPRETATION_DECISION"
+}
