@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_outcome_linkage_input_audit_run_001_abort_freeze_v1",
+  "frozen_at_utc": "2026-08-29",
+  "status": "IMMUTABLE_AUDIT_ABORT_NO_REUSE_NO_LINKAGE_EXECUTION",
+  "runtime": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_input_audit/run_001",
+  "attempted_sources_in_order": [
+    "eyeglasses_outcome",
+    "facial_hair_outcome"
+  ],
+  "completed_source_audits": ["eyeglasses_outcome"],
+  "failed_source": "facial_hair_outcome",
+  "not_attempted": ["representation_margins", "injection_pair_grid"],
+  "failure": {
+    "message": "missing required field count: 9",
+    "cause_class": "AUDITOR_TARGET_ROW_SCOPE_TOO_BROAD",
+    "source_data_corruption_established": false,
+    "diagnosis_status": "PASS_CONDITIONAL_CORRECTION_CRITERION_ALL_NINE_MISSING_ARE_NON_TARGET",
+    "missing_rows": {
+      "eyeglasses_non_target": 9,
+      "facial_hair_target": 0
+    }
+  },
+  "immutable_partial_artifacts": {
+    "eyeglasses_outcome/audit_summary_v1.json": {
+      "bytes": 1492,
+      "sha256": "1dd798b55c89b29652f76123dd2363d6bf1a6ccc59d86cc5fac812874414d2ae"
+    },
+    "eyeglasses_outcome/binding_v1.json": {
+      "bytes": 1827,
+      "sha256": "18ac4d21d8be18166626046d3d899712e5defa0c9c53dee2da4c1e9b3af9c4b4"
+    },
+    "eyeglasses_outcome/keys_v1.csv": {
+      "bytes": 485,
+      "sha256": "29faa669a51ee4ca1a892889dc0ecb7bb61bc779589674fd2329e0ecdf827dbc"
+    },
+    "facial_hair_outcome_failure_diagnosis_v1.json": {
+      "bytes": 1608,
+      "sha256": "44bc39b256056268661f726aa784a8e3435a40bc7269e833268477487800d0aa"
+    }
+  },
+  "reuse_policy": {
+    "reuse_completed_eyeglasses_audit": false,
+    "repair_or_complete_run_001": false,
+    "pool_with_run_002": false,
+    "scientific_linkage_input": false
+  },
+  "safety_state": {
+    "numeric_values_exported": false,
+    "pair_outcome_constructed": false,
+    "outcome_trace_joined": false,
+    "association_computed": false,
+    "model_loaded": false,
+    "gpu_used": false,
+    "network_used": false
+  },
+  "next_action": "PROSPECTIVELY_FREEZE_THE_SINGLE_RULE_CORRECTION_AND_RESTART_ALL_FOUR_AUDITS_IN_NEW_RUN_002"
+}

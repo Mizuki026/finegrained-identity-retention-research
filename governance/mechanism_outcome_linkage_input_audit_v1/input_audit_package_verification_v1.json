@@ -1,0 +1,19 @@
+{
+  "association_computed": false,
+  "duplicate_keys": 0,
+  "exact_headers_bound": true,
+  "exact_key_universes_bound_external_only": true,
+  "gpu_used": false,
+  "linkage_execution_authorized": false,
+  "missing_target_values": 0,
+  "model_loaded": false,
+  "network_used": false,
+  "nonfinite_target_values": 0,
+  "outcome_trace_joined": false,
+  "pair_outcome_constructed": false,
+  "run_001_immutable_nonreusable": true,
+  "run_002_independent_verifications_passed": 4,
+  "run_002_sources_passed": 4,
+  "schema_version": 1,
+  "status": "PASS_INDEPENDENT_FORMAL_INPUT_AUDIT_PACKAGE_VERIFICATION"
+}

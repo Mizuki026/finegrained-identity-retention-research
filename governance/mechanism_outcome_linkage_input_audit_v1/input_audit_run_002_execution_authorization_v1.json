@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_outcome_linkage_formal_input_audit_run_002_execution_authorization_v1",
+  "recorded_at_utc": "2026-08-29",
+  "status": "CPU_ONLY_FORMAL_INPUT_AUDIT_APPROVED",
+  "run_id": "run_002",
+  "authority_source": "Researcher-approved conditional correction after the authorized run-001 single-source diagnosis passed",
+  "base_research_commit": "60a14c55ab2b08169c58ea48a41988ef1a5f135f",
+  "correction_binding": {
+    "path": "governance/mechanism_outcome_linkage_input_audit_v1/input_audit_protocol_correction_freeze_v1.json",
+    "bytes": 2147,
+    "sha256": "8a00d53996b895fccf27fae3581b2d1cf67e1a9a4a8d8fba507eda25ea3e4c7e"
+  },
+  "run_001_abort_binding": {
+    "path": "governance/mechanism_outcome_linkage_input_audit_v1/input_audit_run_001_abort_freeze_v1.json",
+    "bytes": 2134,
+    "sha256": "23aba7cdee62f817caf1f663d9ab07e70e9e46d3cf60aae11ec251ce5c67d78c"
+  },
+  "code": {
+    "auditor": {
+      "path": "src/audit_mechanism_outcome_linkage_inputs_v1.py",
+      "bytes": 13550,
+      "sha256": "88db0e17ec7fc99f3690209674802b42e38afed457ff9749fa9386de28ee4beb"
+    },
+    "independent_verifier": {
+      "path": "src/verify_mechanism_outcome_linkage_input_audit_v1.py",
+      "bytes": 12527,
+      "sha256": "14a5c8995b401a2553d6df2cb778163c999e8f0b75674e711ed9b8eaa3278b93"
+    },
+    "synthetic_tests": {
+      "path": "tests/test_mechanism_outcome_linkage_input_audit_v1.py",
+      "bytes": 8059,
+      "sha256": "9751fb11d17f7fad3c449505bcbd3d0b1f3914ceefc70d35f7fc593c9e8e8662"
+    }
+  },
+  "authorized": {
+    "audit_code_implementation": true,
+    "independent_verifier_implementation": true,
+    "read_each_frozen_csv_independently": true,
+    "path_byte_sha256_mode_audit": true,
+    "exact_header_audit": true,
+    "exact_key_universe_audit": true,
+    "duplicate_missing_target_and_nonfinite_audit": true,
+    "cpu_only_execution": true,
+    "external_audit_runtime_write": true
+  },
+  "not_authorized": {
+    "pair_outcome_construction": true,
+    "outcome_trace_join": true,
+    "spearman_or_other_association": true,
+    "cross_source_value_comparison": true,
+    "model_loading": true,
+    "gpu_execution": true,
+    "network_access": true,
+    "source_modification": true,
+    "imputation_exclusion_or_fallback_assignment": true
+  },
+  "sources": {
+    "eyeglasses_outcome": {
+      "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/measurement_repair_v1/repaired_eyeglasses_evaluation_v1/repaired_eyeglasses_matched_seed_pairs_v1.csv",
+      "bytes": 6122,
+      "sha256": "30817cc712063dcbd48ccd1e7b441aba855df24dd91a42bb645bf65035a6cb4d"
+    },
+    "facial_hair_outcome": {
+      "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/formal_analysis_v1/attribute_pair_contrasts_v1.csv",
+      "bytes": 2966,
+      "sha256": "021399f44f47b235b045f5fc8a211bfb98f68e4b41ec9b83acf4876c6f1502a4"
+    },
+    "representation_margins": {
+      "path": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003/representation_margins_v1.csv",
+      "bytes": 15152,
+      "sha256": "5e1d14990eba4ad20ae9ec790850bc2ae344177bcadd61aff61c92c372e85506"
+    },
+    "injection_pair_grid": {
+      "path": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003_analysis_v1/injection_pair_3x3_v1.csv",
+      "bytes": 37911,
+      "sha256": "4cf15298287158fb238c53490b99b6ba2c8cb6f1fc5eba19006441a7dc55c822"
+    }
+  },
+  "execution_policy": {
+    "one_source_per_auditor_invocation": true,
+    "cross_source_rows_in_same_auditor_process": false,
+    "numeric_values_in_git": false,
+    "external_key_manifests": true,
+    "existing_output_overwrite": false,
+    "facial_hair_target_field_scope": "ten facial_hair rows only",
+    "CUDA_VISIBLE_DEVICES": "",
+    "offline": true
+  },
+  "external_runtime": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_input_audit/run_002",
+  "next_gate": "RESEARCHER_REVIEW_OF_FROZEN_RUN_002_INPUT_AUDIT_PACKAGE; REAL_OUTCOME_CONSTRUCTION_JOIN_AND_ASSOCIATION_REMAIN_UNAUTHORIZED"
+}

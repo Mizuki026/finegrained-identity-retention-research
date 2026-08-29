@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "executed_at_utc": "2026-08-29",
+  "status": "PASS_CPU_ONLY_INPUT_AUDIT_SYNTHETIC_TESTS",
+  "python": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "reported_duration_seconds": 0.021,
+  "coverage": [
+    "all four source schemas pass independently",
+    "non-target eyeglasses target-column missingness is permitted in the facial-hair source",
+    "missing facial_hair target value stops before output",
+    "duplicate key stops before output",
+    "non-finite target value stops before output",
+    "authorization must keep join and association blocked"
+  ],
+  "frozen_inputs_used": false,
+  "numeric_values_exported": false,
+  "pair_outcome_constructed": false,
+  "outcome_trace_joined": false,
+  "association_computed": false,
+  "model_loaded": false,
+  "gpu_used": false,
+  "network_used": false
+}

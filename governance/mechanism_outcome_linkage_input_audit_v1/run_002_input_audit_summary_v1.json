@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "summary_id": "mechanism_outcome_linkage_formal_input_audit_run_002_summary_v1",
+  "created_at_utc": "2026-08-29",
+  "status": "PASS_ALL_FOUR_FORMAL_INPUT_AUDITS_AND_INDEPENDENT_VERIFICATIONS",
+  "run_id": "run_002",
+  "external_runtime": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_input_audit/run_002",
+  "sources": {
+    "eyeglasses_outcome": {
+      "rows": 40,
+      "columns": 12,
+      "unique_keys": 40,
+      "finite_target_values_checked": 40,
+      "mode": "644",
+      "header": ["schema_version", "formal_pair_id", "seed_index", "positive_task_id", "control_task_id", "positive_human_present_fraction", "control_human_present_fraction", "human_positive_minus_control", "positive_automated_mean_p_present", "control_automated_mean_p_present", "automated_positive_minus_control", "record_status"],
+      "audit": "PASS",
+      "independent_verification": "PASS"
+    },
+    "facial_hair_outcome": {
+      "rows": 20,
+      "columns": 13,
+      "unique_keys": 20,
+      "finite_target_values_checked": 10,
+      "non_target_rows_with_empty_target_column": 9,
+      "target_facial_hair_rows_with_empty_target_column": 0,
+      "mode": "644",
+      "header": ["schema_version", "formal_pair_id", "attribute", "positive_unit_id", "control_unit_id", "positive_primary_score", "control_primary_score", "primary_positive_minus_control", "positive_valid_frame_fraction", "control_valid_frame_fraction", "positive_low_coverage_flag", "control_low_coverage_flag", "pair_status"],
+      "audit": "PASS",
+      "independent_verification": "PASS"
+    },
+    "representation_margins": {
+      "rows": 180,
+      "columns": 5,
+      "unique_keys": 180,
+      "finite_target_values_checked": 180,
+      "mode": "444",
+      "header": ["attribute", "stage", "formal_pair_id", "margin", "direction"],
+      "audit": "PASS",
+      "independent_verification": "PASS"
+    },
+    "injection_pair_grid": {
+      "rows": 360,
+      "columns": 8,
+      "unique_keys": 360,
+      "finite_target_values_checked": 360,
+      "mode": "444",
+      "header": ["attribute", "formal_pair_id", "cfg_branch", "block_group", "denoising_group", "positive_four_seed_mean", "control_four_seed_mean", "positive_minus_control"],
+      "audit": "PASS",
+      "independent_verification": "PASS"
+    }
+  },
+  "validation": {
+    "paths_bytes_sha256_match": true,
+    "exact_headers_bound": true,
+    "exact_planned_key_universes_match": true,
+    "duplicate_keys": 0,
+    "missing_required_target_values": 0,
+    "nonfinite_target_values": 0,
+    "all_four_sources_restarted_from_beginning": true,
+    "run_001_artifact_reused": false
+  },
+  "safety_state": {
+    "numeric_values_in_git": false,
+    "pair_outcome_constructed": false,
+    "outcome_trace_joined": false,
+    "association_computed": false,
+    "model_loaded": false,
+    "gpu_used": false,
+    "network_used": false
+  },
+  "scientific_result": false,
+  "next_gate": "EXPLICIT_RESEARCHER_AUTHORIZATION_REQUIRED_BEFORE_REAL_OUTCOME_CONSTRUCTION_JOIN_OR_ASSOCIATION_COMPUTATION"
+}

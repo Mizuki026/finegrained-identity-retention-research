@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_outcome_linkage_formal_input_audit_freeze_v1",
+  "frozen_at_utc": "2026-08-29",
+  "status": "FORMAL_INPUT_AUDIT_COMPLETE_LINKAGE_EXECUTION_RESEARCHER_APPROVAL_REQUIRED",
+  "base_research_commit": "60a14c55ab2b08169c58ea48a41988ef1a5f135f",
+  "history": {
+    "run_001": "IMMUTABLE_AUDIT_ABORT_NO_REUSE_NO_LINKAGE_EXECUTION",
+    "run_001_failure": "auditor incorrectly required the facial-hair target column on all source attributes",
+    "authorized_diagnosis": "all nine missing target fields were non-target eyeglasses rows; zero were facial_hair rows",
+    "protocol_correction": "require primary_positive_minus_control nonempty and finite only for the ten facial_hair target rows",
+    "run_002": "COMPLETE_ALL_FOUR_SOURCE_AUDITS_AND_INDEPENDENT_VERIFICATIONS_PASS"
+  },
+  "validated_counts": {
+    "evidence_manifest_entries": 34,
+    "cpu_synthetic_tests_passed": 5,
+    "run_002_sources_audited": 4,
+    "run_002_independent_source_verifications": 4,
+    "eyeglasses_outcome_rows": 40,
+    "facial_hair_source_rows": 20,
+    "facial_hair_target_values_checked": 10,
+    "representation_margin_rows": 180,
+    "injection_pair_grid_rows": 360,
+    "duplicate_keys": 0,
+    "missing_required_target_values": 0,
+    "nonfinite_target_values": 0
+  },
+  "input_binding_state": {
+    "paths_bytes_sha256_match": true,
+    "exact_headers_bound": true,
+    "exact_source_key_universes_bound_external_only": true,
+    "run_001_writable_entries": 0,
+    "run_002_writable_entries": 0,
+    "run_001_artifacts_reused": false
+  },
+  "safety_state": {
+    "numeric_values_in_git": false,
+    "pair_outcome_constructed": false,
+    "outcome_trace_joined": false,
+    "association_computed": false,
+    "model_loaded": false,
+    "gpu_used": false,
+    "network_used": false,
+    "linkage_execution_authorized": false
+  },
+  "artifacts": {
+    "input_audit_evidence_manifest_v1.csv": {
+      "bytes": 7556,
+      "sha256": "352f52282a3cc5bbb2ebe822e2ee325cf7872ad913559ea0720ca24977b0f3bb"
+    },
+    "input_audit_evidence_manifest_verification_v1.json": {
+      "bytes": 816,
+      "sha256": "b66dca2fe6160bfe7b0cfcc866a91f30703c1b7c07ab2fbb3de3ab7f077510b8"
+    },
+    "input_audit_package_verification_v1.json": {
+      "bytes": 601,
+      "sha256": "3c24d96297d75ddf415a52a1ee57e023e78501edf26ba83869b3f26c8dbb8f44"
+    },
+    "run_002_input_audit_summary_v1.json": {
+      "bytes": 3051,
+      "sha256": "dccadf524cde0518c3ad417c636b0d2c87984863273df2aaa5ce685fad12c3ab"
+    }
+  },
+  "scientific_result_added": false,
+  "claim_boundary": "INPUT_SCHEMA_KEY_AND_FINITE_VALUE_INTEGRITY_ONLY_NO_MECHANISM_OR_OUTCOME_ASSOCIATION_RESULT",
+  "next_gate": "EXPLICIT_RESEARCHER_APPROVAL_OF_LINKAGE_EXECUTION_REVIEW_GATE_V1_REQUIRED_BEFORE_OUTCOME_CONSTRUCTION_JOIN_OR_ASSOCIATION"
+}

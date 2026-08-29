@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "verification_id": "mechanism_outcome_linkage_input_audit_evidence_manifest_verification_v1",
+  "verified_at_utc": "2026-08-29",
+  "status": "PASS_ALL_34_INPUT_AUDIT_EVIDENCE_ENTRIES",
+  "manifest": {
+    "path": "governance/mechanism_outcome_linkage_input_audit_v1/input_audit_evidence_manifest_v1.csv",
+    "entries": 34,
+    "bytes": 7556,
+    "sha256": "352f52282a3cc5bbb2ebe822e2ee325cf7872ad913559ea0720ca24977b0f3bb"
+  },
+  "checks": {
+    "paths_exist": true,
+    "bytes_match": true,
+    "sha256_match": true,
+    "mismatches": 0,
+    "run_001_writable_entries": 0,
+    "run_002_writable_entries": 0
+  },
+  "pair_outcome_constructed": false,
+  "outcome_trace_joined": false,
+  "association_computed": false,
+  "model_loaded": false,
+  "gpu_used": false,
+  "network_used": false
+}

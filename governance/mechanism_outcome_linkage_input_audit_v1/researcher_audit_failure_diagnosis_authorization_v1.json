@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_outcome_linkage_input_audit_failure_diagnosis_authorization_v1",
+  "recorded_at_utc": "2026-08-29",
+  "status": "FACIAL_HAIR_OUTCOME_SINGLE_SOURCE_CPU_DIAGNOSIS_APPROVED",
+  "decision_source": "Direct researcher authorization in the current session",
+  "authorized": {
+    "source_name": "facial_hair_outcome",
+    "single_source_cpu_only_missingness_diagnosis": true,
+    "report_missing_target_field_by_attribute_and_pseudonymous_key": true,
+    "conditional_prospective_audit_rule_correction": "Only if all nine missing primary_positive_minus_control fields are in non-target attribute rows, require the field to be nonempty and finite only for the ten facial_hair rows.",
+    "freeze_run_001_as_immutable_nonreusable_failure_history": true,
+    "restart_all_four_source_audits_from_new_run_002_if_condition_passes": true
+  },
+  "not_authorized": {
+    "numeric_value_export": true,
+    "pair_outcome_construction": true,
+    "outcome_trace_join": true,
+    "association_computation": true,
+    "cross_source_diagnosis": true,
+    "source_modification": true,
+    "imputation_or_exclusion": true,
+    "model_loading": true,
+    "gpu_execution": true,
+    "network_access": true
+  },
+  "audited_source": {
+    "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/formal_analysis_v1/attribute_pair_contrasts_v1.csv",
+    "bytes": 2966,
+    "sha256": "021399f44f47b235b045f5fc8a211bfb98f68e4b41ec9b83acf4876c6f1502a4"
+  },
+  "run_001": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_input_audit/run_001",
+  "prospective_run_002": "/root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_input_audit/run_002",
+  "execution_boundary": "NO_OUTCOME_CONSTRUCTION_NO_JOIN_NO_ASSOCIATION"
+}

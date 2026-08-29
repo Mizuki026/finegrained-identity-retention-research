@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_outcome_linkage_input_audit_protocol_correction_freeze_v1",
+  "frozen_at_utc": "2026-08-29",
+  "status": "SINGLE_AUDIT_VALIDATION_RULE_CORRECTION_FROZEN_RUN_002_REQUIRED",
+  "researcher_authorization": "FACIAL_HAIR_OUTCOME_SINGLE_SOURCE_CPU_DIAGNOSIS_APPROVED",
+  "trigger": {
+    "run": "run_001",
+    "failure": "missing required field count: 9",
+    "diagnostic_condition_required": "all nine missing primary_positive_minus_control fields occur in non-target rows and zero occur in facial_hair rows",
+    "diagnostic_condition_observed": true,
+    "non_target_eyeglasses_missing": 9,
+    "target_facial_hair_missing": 0
+  },
+  "sole_correction": {
+    "source": "facial_hair_outcome",
+    "column": "primary_positive_minus_control",
+    "before": "require nonempty primary_positive_minus_control in all 20 attribute_pair_contrasts rows",
+    "after": "require nonempty and finite primary_positive_minus_control only in the ten facial_hair target rows",
+    "non_target_rows": "retain all ten eyeglasses rows in exact source key audit; allow the target column to be empty because those rows are not linkage outcomes"
+  },
+  "unchanged": [
+    "all four source paths, byte counts, and SHA256 values",
+    "exact CSV headers and full source key universes",
+    "ten planned formal_pair_id values per attribute",
+    "four eyeglasses human seed rows per pair",
+    "all nine representation stages",
+    "all 18 injection cells per attribute",
+    "duplicate, missing target-row, and non-finite stop behavior",
+    "no imputation, exclusion, fallback assignment, or source modification",
+    "one source per auditor process",
+    "CPU-only offline execution",
+    "no outcome construction, outcome-trace join, or association computation"
+  ],
+  "run_policy": {
+    "run_001": "IMMUTABLE_ABORT_NO_REUSE",
+    "run_002": "NEW_EMPTY_RUNTIME_RESTART_ALL_FOUR_SOURCES_FROM_BEGINNING",
+    "reuse_run_001_artifact": false
+  },
+  "claim_boundary": "AUDIT_ENGINEERING_CORRECTION_ONLY_NO_SCIENTIFIC_RESULT",
+  "execution_boundary": "FORMAL_INPUT_AUDIT_ONLY_NO_OUTCOME_CONSTRUCTION_NO_JOIN_NO_ASSOCIATION"
+}
