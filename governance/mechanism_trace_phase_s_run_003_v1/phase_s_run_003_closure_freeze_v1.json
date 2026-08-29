@@ -1,0 +1,70 @@
+{
+  "schema_version": "phase_s_run_003_closure_freeze_v1",
+  "created_at_utc": "2026-08-29T11:34:01Z",
+  "source_head_before_closure_commit": "5021fefedc1060d7b46cc4cc9c2d933689212a60",
+  "status": "PHASE_S_RUN_003_ACCEPTED_AND_MECHANISM_TRACE_WINDOW_CLOSED",
+  "accepted_result_policy": {
+    "independent_verification_and_frozen_evidence_package": true,
+    "retain_all_160_tasks": true,
+    "unmapped_fallback_messages_retained_as_limitation": 76,
+    "exclude_or_regenerate_for_fallback": false,
+    "primary_description": "mixed direction with no established consistent readability",
+    "eva_role": "secondary stage-specific diagnostics only",
+    "injection_description": "all 36 cells retained as small heterogeneous differences",
+    "cell_selection_or_localization_claim": false,
+    "new_gpu_experiment_immediately_authorized": false
+  },
+  "scientific_interpretation": {
+    "status": "PROPOSED_RESEARCHER_ACCEPTANCE_OR_REVISION_REQUIRED",
+    "verified_mechanism_claimed": false,
+    "causal_claimed": false,
+    "pair_level_trace_to_outcome_linkage_computed": false
+  },
+  "artifacts": [
+    {
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/researcher_result_decisions_v1.json",
+      "bytes": 2820,
+      "sha256": "ff205cbc9b732e9183650c2f1cd79d8dd981148f257562218ece70c079b8154c"
+    },
+    {
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_closure_v1.md",
+      "bytes": 3025,
+      "sha256": "976a501e61cd5ecd8433eae718cf412dffb111724f1e1e2c46de7ba0aa4f553f"
+    },
+    {
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_closure_evidence_manifest_v1.csv",
+      "bytes": 1231,
+      "sha256": "038d55dc2ea443c59cd1e6981615b1d70e46a0a6074b35a9d993f4f67383ab44"
+    },
+    {
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_closure_verification_v1.json",
+      "bytes": 799,
+      "sha256": "06535df9c9a0eeb915b3382a3be8dbbf1ff42d89655663826358a881afb7bd5a"
+    },
+    {
+      "path": "src/verify_mechanism_trace_phase_s_closure_v1.py",
+      "bytes": 6005,
+      "sha256": "44816f92ed696e88c6ab4a6dcb6fe99edb97ea43c7aadcfd23463a9bb6333257"
+    },
+    {
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_scientific_interpretation_proposal_v1.md",
+      "bytes": 10929,
+      "sha256": "eabe70b85219d1a75949266364594b441db25bb7fab032eaffaef784dad1fbb8"
+    },
+    {
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_scientific_interpretation_evidence_v1.json",
+      "bytes": 1853,
+      "sha256": "8f5647382df8340f0c3672f86a05572bcea0f060961b043fa286ba9c14c0d563"
+    }
+  ],
+  "prohibitions_reaffirmed": [
+    "no_causal_claim",
+    "no_population_wide_claim",
+    "no_model_wide_claim",
+    "no_frame_independence_claim",
+    "no_cross_attribute_ranking",
+    "no_selective_regeneration",
+    "no_metric_or_threshold_change",
+    "no_new_gpu_execution_without_separate_preregistration_and_authorization"
+  ]
+}

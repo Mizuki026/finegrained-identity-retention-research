@@ -1,0 +1,20 @@
+{
+  "all_160_tasks_retained": true,
+  "all_36_injection_cells_retained": true,
+  "analysis_artifacts_read_only": true,
+  "closure_evidence_entries": 6,
+  "eva_role": "SECONDARY_STAGE_SPECIFIC_DIAGNOSTICS_ONLY",
+  "fallback_messages_reported_as_limitation": 76,
+  "gpu_compute_used": false,
+  "mechanism_trace_window_closed": true,
+  "model_loaded": false,
+  "new_analysis_authorized": false,
+  "new_gpu_execution_authorized": false,
+  "new_model_loading_authorized": false,
+  "primary_conservative_description_accepted": true,
+  "researcher_decisions_accepted": 6,
+  "runtime_artifacts_read_only": true,
+  "schema_version": 1,
+  "status": "PASS_INDEPENDENT_PHASE_S_RUN_003_CLOSURE_VERIFICATION",
+  "underlying_result_package_status": "PASS_INDEPENDENT_PHASE_S_RUN_003_RESULT_PACKAGE_VERIFICATION"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "decision_id": "mechanism_trace_phase_s_run_003_researcher_result_decisions_v1",
+  "decided_at_utc": "2026-08-29",
+  "status": "PHASE_S_RUN_003_RESULTS_ACCEPTED_AND_MECHANISM_TRACE_WINDOW_CLOSED",
+  "source": "Direct researcher acceptance of all six decisions in phase_s_run_003_results_review_gate_v1.md",
+  "reviewed_freeze": {
+    "path": "governance/mechanism_trace_phase_s_run_003_v1/mechanism_trace_phase_s_run_003_freeze_v1.json",
+    "sha256": "8a54d8dc8938c0a2d3430bc68ab6a1fd06735230271912f6dc3abe9278ec0b2e",
+    "status": "PHASE_S_RUN_003_COMPLETE_PASS_RESEARCHER_INTERPRETATION_AND_DISPOSITION_REQUIRED"
+  },
+  "accepted_decisions": {
+    "independent_verification_and_frozen_evidence_package_accepted": true,
+    "all_160_tasks_retained": true,
+    "fallback_messages_retained_as_run_level_limitation": 76,
+    "fallback_based_exclusion_or_regeneration_authorized": false,
+    "primary_mixed_direction_conservative_description_accepted": true,
+    "primary_consistent_readability_claim_supported": false,
+    "eva_results_role": "SECONDARY_STAGE_SPECIFIC_DIAGNOSTICS_ONLY",
+    "secondary_endpoint_elevation_authorized": false,
+    "all_36_injection_cells_retained": true,
+    "injection_cell_selection_authorized": false,
+    "localization_or_causal_flow_claim_supported": false,
+    "mechanism_trace_window_closed": true
+  },
+  "accepted_primary_description": {
+    "eyeglasses": "Fixed-panel primary directional margins are mixed: 5 correct, 0 tie, and 5 wrong; the small positive mean and median do not establish consistently readable attribute direction.",
+    "facial_hair": "Fixed-panel primary directional margins are mixed: 6 correct, 0 tie, and 4 wrong; the small positive mean and median coexist with heterogeneous pair values and do not establish consistently readable attribute direction."
+  },
+  "accepted_injection_description": "All 36 fixed 3x3 cells are retained as small heterogeneous positive-minus-control differences in relative_residual_rms, with both positive and negative matched-pair differences in every cell; no cell is selected and no localization, causal mediation, or generation-quality improvement is claimed.",
+  "accepted_fallback_limitation": "The 76 built-in InsightFace-to-aligned-face fallback messages are reported only as an unassigned run-level reference-preprocessing limitation. No post hoc unit mapping, exclusion, replacement, or regeneration is authorized.",
+  "interpretation_boundary": "FIXED_PANEL_DESCRIPTIVE_EVIDENCE_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CONCLUSIONS",
+  "new_analysis_authorized": false,
+  "new_model_loading_authorized": false,
+  "new_gpu_execution_authorized": false,
+  "next_gate": "SEPARATELY_PREREGISTERED_FOLLOW_UP_AND_NEW_EXPLICIT_RESEARCHER_AUTHORIZATION_REQUIRED"
+}

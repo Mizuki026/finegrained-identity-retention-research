@@ -1,0 +1,45 @@
+{
+  "schema_version": "phase_s_run_003_scientific_interpretation_evidence_v1",
+  "created_at_utc": "2026-08-29T11:34:01Z",
+  "status": "PROPOSAL_SOURCES_BOUND_RESEARCHER_ACCEPTANCE_REQUIRED",
+  "scope": {
+    "new_metric_computation": false,
+    "model_loaded": false,
+    "gpu_used": false,
+    "causal_claim_authorized": false,
+    "population_or_model_wide_claim_authorized": false
+  },
+  "sources": [
+    {
+      "role": "frozen_formal_outcomes_and_research_boundaries",
+      "path": "governance/session_handoff_v1/research_state_v1.md",
+      "bytes": 9720,
+      "sha256": "9d489b2ec6b00d9049dfe0ae419db307110cddcc026a1e3f54105f28d8303dea"
+    },
+    {
+      "role": "verified_static_code_structure_mapping",
+      "path": "governance/mechanism_mapping_v1/consisid_code_structure_mapping_v1.md",
+      "bytes": 8875,
+      "sha256": "6d6bfc61dee8f651cdc275738f6fb7b538a2dc35572963a1bdb384950649f3ca"
+    },
+    {
+      "role": "frozen_phase_s_results",
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/mechanism_trace_phase_s_run_003_freeze_v1.json",
+      "bytes": 4537,
+      "sha256": "8a54d8dc8938c0a2d3430bc68ab6a1fd06735230271912f6dc3abe9278ec0b2e"
+    },
+    {
+      "role": "independent_closure_verification",
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_closure_verification_v1.json",
+      "bytes": 799,
+      "sha256": "06535df9c9a0eeb915b3382a3be8dbbf1ff42d89655663826358a881afb7bd5a"
+    },
+    {
+      "role": "scientific_interpretation_proposal",
+      "path": "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_scientific_interpretation_proposal_v1.md",
+      "bytes": 10929,
+      "sha256": "eabe70b85219d1a75949266364594b441db25bb7fab032eaffaef784dad1fbb8"
+    }
+  ],
+  "interpretation_status": "WORKING_HYPOTHESES_AND_RESEARCH_DECISIONS_PENDING_NOT_VERIFIED_MECHANISM"
+}
