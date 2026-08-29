@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_outcome_linkage_implementation_freeze_v1",
+  "frozen_at_utc": "2026-08-29",
+  "status": "IMPLEMENTATION_COMPLETE_CPU_EXECUTION_RESEARCHER_APPROVAL_REQUIRED",
+  "base_research_commit": "72bcb4633597de8ae1c5668b73d357d1e2296637",
+  "design_source": {
+    "draft_protocol_sha256": "4c3b982a49e50644a7c6480a66cc471f21a038c7263edb064d8f782578fdfc76",
+    "draft_analysis_plan_sha256": "a4f276021e76210b6d7f0e5fe7e869ef597cd1e6906c39443fa2ad852ed88e7a",
+    "researcher_decisions": "ALL_SEVEN_ACCEPTED"
+  },
+  "implementation_authorization_scope": "ANALYZER_VERIFIER_CPU_SYNTHETIC_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY",
+  "validated_counts": {
+    "evidence_manifest_entries": 13,
+    "cpu_synthetic_tests_passed": 9,
+    "planned_primary_coefficients": 2,
+    "planned_secondary_representation_coefficients": 16,
+    "planned_secondary_injection_coefficients": 36,
+    "dry_run_real_inputs_opened": 0,
+    "dry_run_joined_rows": 0,
+    "dry_run_associations_computed": 0
+  },
+  "safety_state": {
+    "formal_input_audit_executed": false,
+    "frozen_outcome_values_read_for_linkage": false,
+    "frozen_trace_values_read_for_linkage": false,
+    "real_outcome_trace_joined": false,
+    "real_association_computed": false,
+    "model_loaded": false,
+    "gpu_compute_used": false,
+    "network_used": false,
+    "generation_or_fallback_rerun": false,
+    "frozen_artifact_modified": false,
+    "cpu_linkage_execution_authorized": false
+  },
+  "artifacts": {
+    "implementation_evidence_manifest_v1.csv": {
+      "bytes": 2644,
+      "sha256": "88cbbd9a6e83148adb65103c0f64d6383ac92039744d968f38fc88769f65e4fd"
+    },
+    "implementation_package_verification_v1.json": {
+      "bytes": 530,
+      "sha256": "41e683e389dd0bfeae5e786d46a6cff02f74b24b04c28ce14aa5e484a84a7962"
+    },
+    "approved_analysis_plan_v1.json": {
+      "bytes": 3100,
+      "sha256": "f8ee3ca304fce1dda3226c4d1c8d36a7dcf2c8d1e09e60517859495de82dcd08"
+    },
+    "analyze_mechanism_outcome_linkage_v1.py": {
+      "bytes": 24224,
+      "sha256": "bc768fe9c1436a9a1fd54cc79bce19b694078e582012abeb611a42dac86a4b62"
+    },
+    "verify_mechanism_outcome_linkage_v1.py": {
+      "bytes": 21076,
+      "sha256": "a0d464a9399a3122471066c1756a67d4de1037d64135680847eb1edd5c50f543"
+    }
+  },
+  "claim_boundary": "FIXED_PANEL_DESCRIPTIVE_ASSOCIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_CROSS_ATTRIBUTE_OR_LOCALIZATION_CONCLUSION",
+  "next_gate": "EXPLICIT_RESEARCHER_APPROVAL_OF_CPU_EXECUTION_REVIEW_GATE_V1_AFTER_FORMAL_INPUT_AUDIT_PACKAGE_IS_PROSPECTIVELY FROZEN"
+}

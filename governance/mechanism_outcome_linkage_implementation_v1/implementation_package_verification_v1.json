@@ -1,0 +1,18 @@
+{
+  "association_computation_authorized": false,
+  "bytes_match": true,
+  "cpu_synthetic_tests_passed": 9,
+  "dry_run_association_computed": false,
+  "dry_run_joined_rows": 0,
+  "dry_run_real_inputs_opened": false,
+  "evidence_entries": 13,
+  "formal_input_audit_authorized": false,
+  "gpu_used": false,
+  "input_join_authorized": false,
+  "model_loaded": false,
+  "paths_exist": true,
+  "schema_version": 1,
+  "sha256_match": true,
+  "status": "PASS_INDEPENDENT_IMPLEMENTATION_ONLY_PACKAGE_VERIFICATION",
+  "stdlib_only": true
+}

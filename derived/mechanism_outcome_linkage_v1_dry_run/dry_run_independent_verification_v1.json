@@ -1,0 +1,12 @@
+{
+  "association_computed": false,
+  "gpu_used": false,
+  "joined_rows_created": 0,
+  "model_loaded": false,
+  "real_inputs_opened": false,
+  "schema_version": 1,
+  "status": "PASS_INDEPENDENT_NO_WEIGHT_DRY_RUN_VERIFICATION",
+  "summary_bytes": 853,
+  "summary_path": "/root/autodl-tmp/finegrained/research_pipeline/derived/mechanism_outcome_linkage_v1_dry_run/dry_run_summary_v1.json",
+  "summary_sha256": "3b72efb5f26c2ea0720148783deeb3d74ed21e9349f2fc26256bcb2bc0b0f3f2"
+}

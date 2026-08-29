@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "IMPLEMENTED_SCHEMA_EXECUTION_NOT_AUTHORIZED",
+  "external_only_pair_tables": {
+    "primary_joined_pairs_v1.csv": {
+      "rows": 20,
+      "columns": ["attribute", "formal_pair_id", "outcome", "mechanism_stage", "mechanism_margin"]
+    },
+    "secondary_representation_joined_pairs_v1.csv": {
+      "rows": 160,
+      "columns": ["attribute", "formal_pair_id", "outcome", "mechanism_stage", "mechanism_margin"]
+    },
+    "secondary_injection_joined_pairs_v1.csv": {
+      "rows": 360,
+      "columns": ["attribute", "formal_pair_id", "outcome", "cfg_branch", "block_group", "denoising_group", "positive_minus_control"]
+    }
+  },
+  "aggregate_outputs": {
+    "primary_associations_v1.csv": {
+      "rows": 2,
+      "columns": ["attribute", "mechanism_stage", "pairs", "spearman_rho", "defined", "role"]
+    },
+    "secondary_representation_associations_v1.csv": {
+      "rows": 16,
+      "columns": ["attribute", "mechanism_stage", "pairs", "spearman_rho", "defined", "role"]
+    },
+    "secondary_injection_associations_v1.csv": {
+      "rows": 36,
+      "columns": ["attribute", "cfg_branch", "block_group", "denoising_group", "pairs", "spearman_rho", "defined", "role"]
+    },
+    "analysis_summary_v1.json": {"documents": 1}
+  },
+  "rules": {
+    "attributes_separate": true,
+    "average_ranks_for_ties": true,
+    "p_values": false,
+    "confidence_intervals": false,
+    "reduced_panel": false,
+    "secondary_selection": false,
+    "cross_attribute_ranking": false,
+    "existing_output_overwrite": false,
+    "joined_pair_tables_in_git": false
+  }
+}

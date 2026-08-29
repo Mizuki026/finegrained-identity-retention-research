@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "decision_record_id": "mechanism_outcome_linkage_design_authorization_v1",
+  "recorded_at_utc": "2026-08-29",
+  "status": "ALL_SEVEN_DESIGN_DECISIONS_ACCEPTED_IMPLEMENTATION_ONLY",
+  "source": "Direct researcher approval in the current session: all seven decisions accepted, with autonomous continuation requested",
+  "approved_decisions": {
+    "analysis_unit": "ten formal_pair_id values per attribute; attributes separate; no reduced-panel primary computation",
+    "outcomes": {
+      "eyeglasses": "four-seed mean of frozen human_positive_minus_control; automatic eyeglasses scores excluded",
+      "facial_hair": "existing frozen primary_positive_minus_control without reconstruction"
+    },
+    "primary": "frozen pooled-LFE margin and Spearman rank correlation with average ranks; no p-value or confidence interval",
+    "secondary": "all eight upstream stages and all 18 CFG-by-3x3 injection cells per attribute; no selection or cross-attribute ranking",
+    "data_rules": "accepted missingness, fallback, privacy, external-only joined-pair table, and stop-on-hash-or-key-mismatch rules",
+    "claim_boundary": "fixed-panel descriptive co-variation only; no causal, population, model-wide, frame-independent, localization, route necessity/sufficiency, or cross-attribute conclusion",
+    "implementation_scope": "analyzer and independent verifier writing, CPU-only tests, and no-weight dry-run only"
+  },
+  "authorized_now": [
+    "analyzer_implementation",
+    "independent_verifier_implementation",
+    "cpu_only_unit_tests_with_synthetic_data",
+    "no_weight_dry_run_without_real_input_access"
+  ],
+  "not_authorized": [
+    "formal_input_audit",
+    "real_outcome_input_read_for_linkage",
+    "real_trace_input_read_for_linkage",
+    "outcome_trace_join",
+    "association_computation_on_frozen_inputs",
+    "model_loading",
+    "gpu_execution",
+    "generation_or_fallback_rerun",
+    "fine_tuning_or_lora",
+    "public_release_of_reference_linked_videos"
+  ],
+  "next_gate": "EXPLICIT_CPU_LINKAGE_EXECUTION_AUTHORIZATION_AFTER_IMPLEMENTATION_PACKAGE_REVIEW"
+}

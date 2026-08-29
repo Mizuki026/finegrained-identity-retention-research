@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "executed_at_utc": "2026-08-29",
+  "status": "PASS_CPU_ONLY_SYNTHETIC_TEST_SUITE",
+  "python": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "test_module": "tests.test_mechanism_outcome_linkage_v1",
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "reported_duration_seconds": 0.033,
+  "synthetic_associations_computed_for_testing": true,
+  "frozen_outcome_inputs_opened": false,
+  "frozen_trace_inputs_opened": false,
+  "real_outcome_trace_joined": false,
+  "real_association_computed": false,
+  "model_weights_loaded": false,
+  "gpu_used": false,
+  "network_used": false
+}

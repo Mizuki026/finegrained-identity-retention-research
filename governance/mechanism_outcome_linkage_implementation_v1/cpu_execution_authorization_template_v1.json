@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "TEMPLATE_NOT_AUTHORIZATION",
+  "authority": {
+    "formal_input_audit": false,
+    "real_input_read": false,
+    "input_join": false,
+    "association_computation": false,
+    "independent_verification": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "network": false
+  },
+  "research_commit": "REQUIRED_FUTURE_COMMIT",
+  "analysis_plan": {
+    "path": "REQUIRED_EXACT_PATH",
+    "bytes": 0,
+    "sha256": "REQUIRED_SHA256"
+  },
+  "code": {
+    "analyzer": {"path": "REQUIRED_EXACT_PATH", "bytes": 0, "sha256": "REQUIRED_SHA256"},
+    "verifier": {"path": "REQUIRED_EXACT_PATH", "bytes": 0, "sha256": "REQUIRED_SHA256"}
+  },
+  "sources": {
+    "eyeglasses_outcome": {"path": "REQUIRED", "bytes": 0, "sha256": "REQUIRED", "header": [], "key_columns": [], "expected_keys": []},
+    "facial_hair_outcome": {"path": "REQUIRED", "bytes": 0, "sha256": "REQUIRED", "header": [], "key_columns": [], "expected_keys": []},
+    "representation_margins": {"path": "REQUIRED", "bytes": 0, "sha256": "REQUIRED", "header": [], "key_columns": [], "expected_keys": []},
+    "injection_pair_grid": {"path": "REQUIRED", "bytes": 0, "sha256": "REQUIRED", "header": [], "key_columns": [], "expected_keys": []}
+  },
+  "output_dir": "REQUIRED_NEW_EXTERNAL_DIRECTORY",
+  "note": "A completed copy is valid only after independent input audit, package review, frozen Git commit, and explicit researcher approval."
+}

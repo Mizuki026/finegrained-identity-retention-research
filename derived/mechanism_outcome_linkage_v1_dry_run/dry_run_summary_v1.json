@@ -1,0 +1,21 @@
+{
+  "analysis_plan_bytes": 3100,
+  "analysis_plan_path": "/root/autodl-tmp/finegrained/research_pipeline/governance/mechanism_outcome_linkage_implementation_v1/approved_analysis_plan_v1.json",
+  "analysis_plan_sha256": "f8ee3ca304fce1dda3226c4d1c8d36a7dcf2c8d1e09e60517859495de82dcd08",
+  "association_computed": false,
+  "execution_authorized": false,
+  "gpu_used": false,
+  "input_files_opened": false,
+  "joined_rows_created": 0,
+  "model_modules_imported": false,
+  "model_weights_loaded": false,
+  "network_used": false,
+  "planned_attributes": 2,
+  "planned_pairs_per_attribute": 10,
+  "planned_primary_coefficients": 2,
+  "planned_secondary_injection_coefficients": 36,
+  "planned_secondary_representation_coefficients": 16,
+  "real_input_paths_received": false,
+  "schema_version": 1,
+  "status": "PASS_NO_WEIGHT_DRY_RUN_NO_REAL_INPUT_ACCESS"
+}
