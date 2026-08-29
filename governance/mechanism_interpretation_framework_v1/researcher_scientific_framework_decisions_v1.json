@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "decision_record_id": "mechanism_interpretation_framework_researcher_decisions_v1",
+  "recorded_at_utc": "2026-08-29",
+  "status": "ALL_FIVE_SCIENTIFIC_INTERPRETATION_ITEMS_ACCEPTED",
+  "source": "Direct researcher acceptance in the current session",
+  "accepted_items": [
+    {
+      "item": 1,
+      "classification": "ACCEPTED_INTERPRETIVE_FRAMEWORK_NOT_VERIFIED_MECHANISM",
+      "title": "representation_readout_mismatch_preferred_over_lfe_information_loss",
+      "decision": "Current evidence is more consistent with representation-readout mismatch than with demonstrated disappearance of the attribute in the LFE.",
+      "permitted_explanation": "Stage-specific upstream EVA linear readability can coexist with mixed mean-pooled LFE margins if attribute-related structure is reorganized, distributed across the 32 LFE tokens, or inaccessible to the frozen mean-pooled linear direction.",
+      "prohibited_upgrade": "The existing experiment does not establish that attribute information is absent from or lost in the full LFE representation."
+    },
+    {
+      "item": 2,
+      "classification": "ACCEPTED_WORKING_MODEL_NOT_VERIFIED_MECHANISM_OR_BOTTLENECK",
+      "title": "multi_route_distributed_representation",
+      "decision": "Multi-route distributed representation remains the most defensible working model.",
+      "basis": "Static mapping verifies coexisting local identity-token and spatial reference-latent conditioning paths, while the current trace measures only bounded aspects of the local path.",
+      "prohibited_upgrade": "Mixed pooled-LFE results do not establish that the local route is unused, and the working model does not establish route contribution, interaction, necessity, sufficiency, or a bottleneck."
+    },
+    {
+      "item": 3,
+      "classification": "ACCEPTED_MEASUREMENT_LIMITATION_WITH_UNVERIFIED_MECHANISM_HYPOTHESES",
+      "title": "scalar_residual_rms_is_mechanistically_incomplete",
+      "decision": "Scalar residual RMS is likely an insufficient observation for the full mechanism.",
+      "basis": "All 36 fixed injection cells contain both positive and negative pair differences, so local residual magnitude has no uniform attribute direction in this fixed panel.",
+      "unverified_hypotheses": [
+        "residual vector direction may matter",
+        "token pattern may matter",
+        "alignment with the current video or query state may matter",
+        "interaction across conditioning paths may matter"
+      ],
+      "prohibited_upgrade": "This does not establish that RMS is useless, that residuals lack attribute content, or that the local route is irrelevant."
+    },
+    {
+      "item": 4,
+      "classification": "ACCEPTED_RUN_LEVEL_LIMITATION",
+      "title": "unmapped_preprocessing_heterogeneity",
+      "decision": "Preprocessing heterogeneity is a plausible but retrospectively untraceable source of variation.",
+      "basis": "The 76 fallback messages have no task identifier and therefore cannot be assigned to a task or formal pair.",
+      "required_handling": "Retain all 160 tasks and report fallback only as a run-level limitation; do not assign, exclude, impute, rerun, or construct pair-level fallback explanations."
+    },
+    {
+      "item": 5,
+      "classification": "ACCEPTED_LINKAGE_INTERPRETATION_BOUNDARY",
+      "title": "linkage_tests_fixed_panel_covariation_only",
+      "decision": "The planned linkage can test only whether frozen readout heterogeneity descriptively co-varies with frozen outcome heterogeneity in each fixed attribute panel.",
+      "positive_primary_interpretation": "A positive primary Spearman coefficient would support only same-direction fixed-panel co-variation between the pooled-LFE margin and retention outcome.",
+      "near_zero_or_negative_primary_interpretation": "A near-zero or negative coefficient would not refute the LFE or local route because readout mismatch, multi-route compensation, and measurement heterogeneity remain possible.",
+      "secondary_interpretation": "Complete secondary stage and injection-grid families may describe stage dependence but cannot localize a mechanism or support favorable stage or cell selection."
+    }
+  ],
+  "evidence_vocabulary": {
+    "verified_fact": "directly supported by a frozen artifact, SHA256 value, or independent verification record",
+    "current_observation": "a descriptive pattern in the fixed finite panel",
+    "accepted_working_model": "a researcher-approved explanation class not established by intervention or outcome linkage",
+    "unverified_hypothesis": "a prospective explanation requiring a new test",
+    "research_decision": "an approved scope, interpretation, or authorization boundary"
+  },
+  "claim_boundary": "NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_OR_PROVEN_BOTTLENECK_CONCLUSION",
+  "execution_authority_granted_by_this_record": {
+    "formal_input_audit": false,
+    "real_outcome_read_for_linkage": false,
+    "real_trace_read_for_linkage": false,
+    "outcome_trace_join": false,
+    "association_computation": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "generation_or_fallback_rerun": false,
+    "route_intervention": false
+  },
+  "next_gate": "SEPARATE_EXPLICIT_AUTHORIZATION_FOR_FORMAL_CPU_ONLY_INPUT_AUDIT; REAL_JOIN_AND_ASSOCIATION_REMAIN_SEPARATELY_GATED"
+}

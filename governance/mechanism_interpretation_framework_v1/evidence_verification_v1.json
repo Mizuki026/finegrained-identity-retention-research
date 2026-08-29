@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "verification_id": "mechanism_interpretation_framework_evidence_verification_v1",
+  "verified_at_utc": "2026-08-29",
+  "status": "PASS_ALL_FIVE_BOUND_EVIDENCE_ARTIFACTS",
+  "manifest": {
+    "path": "governance/mechanism_interpretation_framework_v1/evidence_manifest_v1.csv",
+    "entries": 5,
+    "bytes": 1177,
+    "sha256": "a17c03eeee79d3e68e8974b9fbd018d775472809a43b20fe2602f8866c5d72ad"
+  },
+  "checks": {
+    "paths_exist": true,
+    "bytes_match": true,
+    "sha256_match": true,
+    "mismatches": 0
+  },
+  "scientific_result_added": false,
+  "execution_authority_added": false,
+  "formal_input_audit_executed": false,
+  "outcome_trace_joined": false,
+  "association_computed": false,
+  "model_loaded": false,
+  "gpu_used": false
+}

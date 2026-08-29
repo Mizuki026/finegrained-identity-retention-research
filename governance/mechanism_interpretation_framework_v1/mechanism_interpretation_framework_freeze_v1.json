@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_interpretation_framework_freeze_v1",
+  "frozen_at_utc": "2026-08-29",
+  "status": "SCIENTIFIC_INTERPRETATION_FRAMEWORK_ACCEPTED_EXECUTION_AUTHORITY_UNCHANGED",
+  "base_research_commit": "653cf862e38694963cc7b1b56e814a949d3981e6",
+  "accepted_framework": {
+    "items": 5,
+    "representation_readout_mismatch": "ACCEPTED_INTERPRETIVE_FRAMEWORK_NOT_VERIFIED_MECHANISM",
+    "multi_route_distributed_representation": "ACCEPTED_WORKING_MODEL_NOT_VERIFIED_MECHANISM_OR_BOTTLENECK",
+    "scalar_residual_rms_limitation": "ACCEPTED_WITH_VECTOR_TOKEN_QUERY_AND_PATH_INTERACTION_HYPOTHESES_UNVERIFIED",
+    "fallback_preprocessing_heterogeneity": "ACCEPTED_RUN_LEVEL_LIMITATION_NO_PAIR_ASSIGNMENT",
+    "linkage_scope": "FIXED_PANEL_DESCRIPTIVE_COVARIATION_ONLY"
+  },
+  "artifacts": {
+    "researcher_scientific_framework_decisions_v1.json": {
+      "bytes": 5399,
+      "sha256": "3059fd90dd2befef447353b42d587556de680c2f96583d768f074ce47cf78181"
+    },
+    "evidence_manifest_v1.csv": {
+      "bytes": 1177,
+      "sha256": "a17c03eeee79d3e68e8974b9fbd018d775472809a43b20fe2602f8866c5d72ad"
+    },
+    "evidence_verification_v1.json": {
+      "bytes": 768,
+      "sha256": "f8be0d82c24fe35781de1c751d5b99b443f3bb5443136c7221826e301dd2ecae"
+    }
+  },
+  "claim_boundary": "NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_OR_PROVEN_BOTTLENECK_CONCLUSION",
+  "execution_state": {
+    "formal_input_audit_authorized": false,
+    "outcome_trace_join_authorized": false,
+    "association_computation_authorized": false,
+    "model_loading_authorized": false,
+    "gpu_authorized": false,
+    "route_intervention_authorized": false
+  },
+  "next_gate": "SEPARATE_EXPLICIT_RESEARCHER_AUTHORIZATION_FOR_FORMAL_CPU_ONLY_INPUT_AUDIT"
+}
