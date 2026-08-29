@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "handoff_id": "finegrained_identity_retention_session_handoff_v2",
+  "created_at_utc": "2026-08-29",
+  "status": "READY_FOR_NEW_WINDOW_READ_ONLY_BOOTSTRAP_AND_LINKAGE_DESIGN_REVIEW",
+  "supersedes_handoff": "governance/session_handoff_v1",
+  "authoritative_source_policy": "Frozen CSV and JSON artifacts, SHA256 values, and Git history supersede this summary. Stop on any mismatch.",
+  "source_state": {
+    "research_repository": "/root/autodl-tmp/finegrained/research_pipeline",
+    "branch": "measurement-repair-v1",
+    "commit": "ff465f9d3e1707d3b70f9810a8405dff96297e5d",
+    "working_tree_clean": true,
+    "remote": "https://github.com/Mizuki026/finegrained-identity-retention-research.git",
+    "ahead_of_origin_measurement_repair_v1": 2,
+    "formal_runtime": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime",
+    "mechanism_runtime": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime",
+    "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_working_tree_clean": true,
+    "python": "/root/autodl-tmp/consisid-smoketest/env/bin/python"
+  },
+  "research_objective": {
+    "topic": "fine-grained identity-attribute retention in reference-conditioned video generation",
+    "current_model_system": "ConsisID",
+    "current_transition": "review prospective CPU-only pair-level mechanism-to-outcome linkage design",
+    "fine_tuning_planned": false,
+    "lora_planned": false,
+    "publish_reference_linked_generated_videos": false
+  },
+  "formal_generation": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "matched_pairs_per_attribute": 10,
+    "reference_units": 40,
+    "seeds_per_reference_unit": 4,
+    "tasks": 160,
+    "successful_videos": 160,
+    "frames_per_video": 49,
+    "integrity_frames": 7840,
+    "seed_changes": false,
+    "manual_substitutions": false,
+    "selective_favorable_reruns": false,
+    "status": "FORMAL_GENERATION_AND_ENGINEERING_INTEGRITY_VERIFIED"
+  },
+  "accepted_output_measurement_decisions": {
+    "eyeglasses_primary": "frozen_human_consensus_fixed_panel_only",
+    "eyeglasses_positive_zero_negative_seed_pair_differences": [33, 7, 0],
+    "eyeglasses_mean_pair_difference": 0.825,
+    "eyeglasses_median_pair_difference": 1.0,
+    "yunet_clip_role": "secondary_convergent_measurement_evidence_only",
+    "original_low_coverage_automatic_eyeglasses_primary": false,
+    "facial_hair_mean_pair_difference": 0.2052380952,
+    "facial_hair_median_pair_difference": 0.0,
+    "facial_hair_minimum_pair_difference": -1.0,
+    "facial_hair_maximum_pair_difference": 1.0,
+    "facial_hair_interpretation": "fixed-panel positive mean, zero median, heterogeneous pair differences, and substantial unobservability"
+  },
+  "consisid_static_mapping": {
+    "status": "VERIFIED_STATIC_MAPPING_COMPLETE",
+    "local_identity_route": "512-D InsightFace plus 768-D EVA head plus five EVA maps to 32x2048 LFE tokens and 21 Perceiver residual injection sites after blocks 0,2,...,40",
+    "spatial_reference_route": "first-frame reference VAE latent plus zero-padded later latent frames concatenated before patch embedding",
+    "attribute_mask_present": false,
+    "verified_information_flow_or_bottleneck": false
+  },
+  "mechanism_trace": {
+    "phase_e": {
+      "status": "COMPLETE_ENGINEERING_PASS_NO_SCIENTIFIC_RESULT",
+      "trajectories": 24,
+      "transformer_steps": 1200,
+      "gpu_hours": 1.8860171580604381,
+      "repeat_and_zero_residual_controls": "PASS"
+    },
+    "run_001": {
+      "status": "IMMUTABLE_ABORT_EXCLUDED",
+      "attempted_trajectories": 2,
+      "transformer_steps_attempted": 100,
+      "reason": "invalid cross-seed invariance requirement on sampled image latent",
+      "partial_reuse": false,
+      "scientific_analysis": false
+    },
+    "run_002": {
+      "status": "IMMUTABLE_EXTERNAL_POWER_LOSS_ABORT_EXCLUDED",
+      "attempted_trajectories": 33,
+      "completed_trajectories": 32,
+      "interrupted_trajectories": 1,
+      "transformer_steps_attempted": 1647,
+      "partial_reuse": false,
+      "scientific_analysis": false
+    },
+    "run_003": {
+      "status": "COMPLETE_VERIFIED_ACCEPTED_AND_CLOSED",
+      "tasks": 160,
+      "transformer_steps": 8000,
+      "injection_rows": 336000,
+      "representation_margin_rows": 180,
+      "injection_pair_rows": 360,
+      "injection_finite_panel_cells": 36,
+      "representation_finite_panel_rows": 18,
+      "gpu_hours": 12.500112516284506,
+      "phase_gpu_hour_ceiling": 24.0,
+      "accepted_cumulative_trajectory_ceiling": 219,
+      "accepted_cumulative_transformer_step_ceiling": 10947,
+      "accepted_total_gpu_hour_ceiling": 72.0,
+      "runtime_read_only": true,
+      "analysis_read_only": true,
+      "fallback_messages": 76,
+      "fallback_task_mapping_available": false,
+      "all_tasks_retained": true
+    }
+  },
+  "accepted_phase_s_observations": {
+    "primary_lfe": {
+      "eyeglasses": {
+        "correct_tie_wrong": [5, 0, 5],
+        "mean_margin": 0.0008087739115580916,
+        "median_margin": 0.00018103292677551508,
+        "interpretation": "mixed direction with no established consistent readability"
+      },
+      "facial_hair": {
+        "correct_tie_wrong": [6, 0, 4],
+        "mean_margin": 0.0012283966992981733,
+        "median_margin": 0.0007300735451281071,
+        "interpretation": "mixed direction with no established consistent readability"
+      }
+    },
+    "eva": "secondary stage-specific linear-readability diagnostics only",
+    "injection": "all 36 cells retained as small heterogeneous relative-residual-RMS differences with both signs in every cell",
+    "cell_selection_or_localization_supported": false
+  },
+  "accepted_working_model": {
+    "description": "multi-route distributed representation",
+    "verified_mechanism": false,
+    "proven_bottleneck": false,
+    "residual_magnitude_equals_attribute_content": false,
+    "run_003_narrows_mechanism_space": true,
+    "run_003_links_traces_to_generated_outcomes": false
+  },
+  "unverified_mechanism_hypotheses": [
+    "Attribute information may be distributed across LFE tokens and missed by mean-pooled linear readout.",
+    "The spatial reference-latent route, local identity-token route, or their interaction may contribute to retention.",
+    "Reference preprocessing heterogeneity may contribute to pair differences.",
+    "Residual direction, token pattern, or query interaction may matter when scalar residual magnitude does not."
+  ],
+  "current_linkage_draft": {
+    "status": "DRAFT_COMPLETE_SEVEN_RESEARCHER_DECISIONS_REQUIRED",
+    "pairs_per_attribute": 10,
+    "attributes_analyzed_separately": true,
+    "eyeglasses_outcome": "four-seed mean of frozen human_positive_minus_control",
+    "automatic_eyeglasses_outcome_used": false,
+    "facial_hair_outcome": "existing frozen primary_positive_minus_control",
+    "primary_mechanism_variable": "valid_face_emb_mean_token_l2_normalized margin",
+    "primary_association": "Spearman rank correlation with average ranks; no p-value or confidence interval",
+    "complete_secondary_representation_stages": 8,
+    "complete_secondary_injection_cells_per_attribute": 18,
+    "implementation_authorized": false,
+    "input_audit_authorized": false,
+    "dry_run_authorized": false,
+    "input_join_authorized": false,
+    "association_computation_authorized": false,
+    "model_loading_authorized": false,
+    "gpu_authorized": false
+  },
+  "artifact_index": {
+    "path": "governance/session_handoff_v2/artifact_index_v2.csv",
+    "entries": 53,
+    "verification_required_on_bootstrap": true
+  },
+  "prohibited_inferences": [
+    "causal effect",
+    "population inference",
+    "model-wide performance",
+    "independent-frame inference",
+    "cross-attribute ranking",
+    "internal localization",
+    "route necessity or sufficiency",
+    "generation improvement inferred from detector replacement",
+    "attribute content inferred from residual magnitude alone"
+  ],
+  "prohibited_operations_without_new_approval": [
+    "selective regeneration or seed change",
+    "metric or threshold change",
+    "imputation or sample deletion",
+    "fallback assignment, exclusion, or rerun",
+    "favorable stage or injection-cell selection",
+    "modification of frozen artifacts",
+    "analyzer or verifier implementation",
+    "input audit or no-weight dry-run",
+    "outcome-to-trace join or association computation",
+    "model loading or GPU execution",
+    "public release of reference-linked videos"
+  ],
+  "next_human_gate": "Resolve all seven decisions in governance/mechanism_outcome_linkage_design_v1/mechanism_outcome_linkage_review_gate_v1.md",
+  "next_action_if_all_seven_approved": "Write analyzer and independent verifier, run CPU-only tests, and perform a no-weight dry-run only; do not join outcomes to traces or compute associations until a later explicit execution authorization.",
+  "next_window_bootstrap": [
+    "Read all five session_handoff_v2 files completely.",
+    "Verify branch, HEAD, upstream relation, and working-tree status.",
+    "Verify all 53 artifact paths, byte counts, and SHA256 values without modifying files.",
+    "If HEAD differs from ff465f9d3e1707d3b70f9810a8405dff96297e5d, verify that intervening changes are only the v2 handoff commit.",
+    "Verify Phase-S runtime and analysis directories remain read-only.",
+    "Stop and report any mismatch before continuing."
+  ]
+}

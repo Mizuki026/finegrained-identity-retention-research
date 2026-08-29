@@ -1,0 +1,47 @@
+这是 fine-grained identity-attribute retention 研究的新阶段会话。
+
+请先执行严格只读启动：不要修改文件、不要实现分析器、不要连接 outcome 与 trace、不要计算相关系数、不要加载模型、不要使用 GPU、不要运行生成。
+
+1. 完整阅读目录：
+   /root/autodl-tmp/finegrained/research_pipeline/governance/session_handoff_v2
+2. 必须完整读取：
+   - research_state_v2.md
+   - research_state_v2.json
+   - artifact_index_v2.csv
+   - open_questions_v2.md
+   - next_session_prompt_v2.txt
+3. 检查研究仓库当前分支、HEAD、上游关系和工作树：
+   /root/autodl-tmp/finegrained/research_pipeline
+4. 对 artifact_index_v2.csv 的全部 53 个路径执行存在性、字节数和 SHA256 只读核验。
+5. 核验 Phase-S run-003 runtime 与 analysis 目录仍为只读。
+6. 交接记录的 source-state commit 是：
+   ff465f9d3e1707d3b70f9810a8405dff96297e5d
+   如果当前 HEAD 不同，先检查差异是否仅为新增 session_handoff_v2 的交接提交；不得直接解释为数据损坏。
+7. 发现任何路径、哈希、分支、权限或状态不一致时立即停止并报告。
+
+科研边界：
+
+- 冻结 CSV/JSON、SHA256 和 Git 历史是事实来源；聊天摘要和交接说明不是实验数据库。
+- 必须分开报告已验证事实、当前观察、已接受工作模型、尚未验证假说和研究决策。
+- 眼镜主要描述是冻结人工共识；YuNet+CLIP 仅是次级趋同测量证据；原低覆盖自动结果不得恢复为主要描述。
+- Phase-S run-001 与 run-002 是不可复用的中止历史；run-003 是唯一完成并关闭的 Phase-S 科学结果包。
+- 保留 run-003 全部 160 个任务；76 次未映射 fallback 仅是 run-level 限制，不分配、不排除、不重生成。
+- primary pooled LFE 是混合方向；EVA 仅是次级 stage-specific diagnostics；36 个注入格点全部保留，不选择格点或声称定位。
+- “多路径、分布式表征”是已接受的工作模型，不是已验证机制或瓶颈；残差幅度不等于属性内容。
+- 不得作因果、总体人群、总体模型、帧独立、定位、路径必要/充分或跨属性排序结论。
+- 不得改 seed、样本、reference、prompt、指标、阈值、排除规则，不得补值、删失败样本、选择性重生成或修改冻结产物。
+- 当前 linkage 材料只是草案：尚未实现 analyzer/verifier，尚未执行 input audit/dry-run，尚未连接 outcome 和 trace，也没有计算 Spearman 相关。
+- 本阶段不授权模型加载、GPU、生成、fallback 重跑、微调、LoRA 或公开 reference 对应生成视频。
+
+完成只读核验后，只输出：
+
+1. 当前分支、HEAD、上游关系和工作树状态；
+2. v2 交接包及全部 53 项关键产物核验是否通过；
+3. 已验证事实；
+4. 当前固定面板观察；
+5. 已接受但尚未验证的机制工作模型；
+6. 尚未验证的机制假说；
+7. open_questions_v2.md 中七项待研究者决定的问题；
+8. 若七项全部获批，下一项最小且不使用 GPU 的工作及仍然禁止的操作。
+
+在研究者明确回答七项决策之前，不实现或执行 linkage。即使七项获批，下一阶段最多只能在新的明确授权下编写 analyzer/verifier、运行 CPU-only 测试和 no-weight dry-run；正式 input join 与 association computation 仍需再次批准。
