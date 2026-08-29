@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "analysis_plan_id": "mechanism_outcome_linkage_analysis_plan_draft_v1",
+  "status": "DRAFT_ONLY_RESEARCHER_REVIEW_REQUIRED_EXECUTION_NOT_AUTHORIZED",
+  "attributes_analyzed_separately": [
+    "eyeglasses",
+    "facial_hair"
+  ],
+  "planned_pair_ids": {
+    "eyeglasses": ["FEY_01", "FEY_02", "FEY_03", "FEY_04", "FEY_05", "FEY_06", "FEY_07", "FEY_08", "FEY_09", "FEY_10"],
+    "facial_hair": ["FFH_01", "FFH_02", "FFH_03", "FFH_04", "FFH_05", "FFH_06", "FFH_07", "FFH_08", "FFH_09", "FFH_10"]
+  },
+  "independent_unit": "formal_pair_id",
+  "pairs_per_attribute_required": 10,
+  "outcomes": {
+    "eyeglasses": {
+      "source_column": "human_positive_minus_control",
+      "aggregation": "arithmetic_mean_of_four_frozen_seed_pair_values_within_formal_pair_id",
+      "required_seed_indices": [1, 2, 3, 4],
+      "automatic_yunet_clip_used": false,
+      "original_low_coverage_automatic_measure_used": false
+    },
+    "facial_hair": {
+      "source_column": "primary_positive_minus_control",
+      "aggregation": "use_existing_frozen_pair_value_without_reconstruction",
+      "low_coverage_pair_exclusion": false,
+      "imputation": false
+    }
+  },
+  "primary_mechanism_variable": {
+    "source_column": "margin",
+    "stage": "valid_face_emb_mean_token_l2_normalized"
+  },
+  "secondary_representation_stages": [
+    "insightface_l2_normalized",
+    "eva_head_l2_normalized",
+    "eva_hidden_0_patch_mean_l2_normalized",
+    "eva_hidden_1_patch_mean_l2_normalized",
+    "eva_hidden_2_patch_mean_l2_normalized",
+    "eva_hidden_3_patch_mean_l2_normalized",
+    "eva_hidden_4_patch_mean_l2_normalized",
+    "image_latent_first_frame_spatial_mean_l2_normalized"
+  ],
+  "secondary_injection_family": {
+    "source_column": "positive_minus_control",
+    "metric": "relative_residual_rms",
+    "cfg_branches": ["unconditional", "text"],
+    "block_groups": ["early", "middle", "late"],
+    "denoising_groups": ["early", "middle", "late"],
+    "cells_per_attribute": 18,
+    "complete_nonselective_reporting": true
+  },
+  "association": {
+    "method": "spearman_rank_correlation",
+    "ties": "average_ranks",
+    "primary_coefficients": "one_per_attribute_at_primary_lfe_stage",
+    "p_values": false,
+    "confidence_intervals": false,
+    "zero_variance": "record_undefined",
+    "reduced_panel_if_missing": false
+  },
+  "multiplicity": {
+    "secondary_stage_selection": false,
+    "injection_cell_selection": false,
+    "cross_attribute_ranking": false,
+    "inferential_claim": false
+  },
+  "fallback_policy": "RETAIN_AS_UNMAPPED_RUN_LEVEL_LIMITATION_NO_ASSIGNMENT_EXCLUSION_OR_RERUN",
+  "privacy": {
+    "joined_pair_table": "EXTERNAL_ONLY",
+    "git_outputs": "AGGREGATES_HASHES_VERIFICATION_AND_FIXED_PANEL_INTERPRETATION_ONLY",
+    "media_or_raw_tensors": false,
+    "per_pair_publication_requires_separate_review": true
+  },
+  "execution": {
+    "implementation_authorized": false,
+    "dry_run_authorized": false,
+    "input_audit_authorized": false,
+    "association_computation_authorized": false,
+    "gpu_authorized": false,
+    "model_loading_authorized": false,
+    "network_authorized": false
+  },
+  "claim_boundary": "FIXED_PANEL_DESCRIPTIVE_ASSOCIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_CROSS_ATTRIBUTE_OR_LOCALIZATION_CONCLUSION"
+}

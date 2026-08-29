@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "package_id": "mechanism_outcome_linkage_draft_package_v1",
+  "created_at_utc": "2026-08-29",
+  "source_commit_before_draft": "21d7f2c1875c705c69aca60d96f4642249256992",
+  "status": "DRAFT_COMPLETE_RESEARCHER_REVIEW_REQUIRED_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORIZED",
+  "authority": {
+    "protocol_drafting": true,
+    "analyzer_implementation": false,
+    "verifier_implementation": false,
+    "input_audit_execution": false,
+    "dry_run_execution": false,
+    "input_join": false,
+    "association_computation": false,
+    "model_loading": false,
+    "gpu_execution": false
+  },
+  "design": {
+    "attributes_separate": true,
+    "formal_pairs_per_attribute": 10,
+    "primary_mechanism_stage": "valid_face_emb_mean_token_l2_normalized",
+    "primary_association": "spearman_rank_correlation_average_ranks_no_p_value_no_confidence_interval",
+    "secondary_representation_stages_complete": 8,
+    "secondary_injection_cells_per_attribute_complete": 18,
+    "cross_attribute_ranking": false,
+    "reduced_panel_if_missing": false,
+    "fallback_assignment_or_exclusion": false
+  },
+  "artifacts": {
+    "protocol_draft": {
+      "path": "governance/mechanism_outcome_linkage_design_v1/mechanism_outcome_linkage_protocol_draft_v1.md",
+      "bytes": 9052,
+      "sha256": "4c3b982a49e50644a7c6480a66cc471f21a038c7263edb064d8f782578fdfc76"
+    },
+    "analysis_plan_draft": {
+      "path": "governance/mechanism_outcome_linkage_design_v1/mechanism_outcome_linkage_analysis_plan_draft_v1.json",
+      "bytes": 3299,
+      "sha256": "a4f276021e76210b6d7f0e5fe7e869ef597cd1e6906c39443fa2ad852ed88e7a"
+    },
+    "review_gate": {
+      "path": "governance/mechanism_outcome_linkage_design_v1/mechanism_outcome_linkage_review_gate_v1.md",
+      "bytes": 1778,
+      "sha256": "d435e17afc3723478a37239e2c84a268f4a9afd9c31ea451b875791fb0b4d80e"
+    },
+    "evidence_manifest": {
+      "path": "governance/mechanism_outcome_linkage_design_v1/draft_evidence_manifest_v1.csv",
+      "bytes": 2177,
+      "sha256": "0b853217e30382977ae636a54d852c2232a2a4294417a67f47aba921cffdb178"
+    }
+  },
+  "next_gate": "EXPLICIT_RESEARCHER_RESOLUTION_OF_ALL_SEVEN_DRAFT_REVIEW_DECISIONS",
+  "claim_boundary": "FIXED_PANEL_DESCRIPTIVE_ASSOCIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_CROSS_ATTRIBUTE_OR_LOCALIZATION_CONCLUSION"
+}
