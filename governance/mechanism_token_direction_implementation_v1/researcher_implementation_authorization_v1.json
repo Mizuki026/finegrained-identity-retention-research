@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_resolved_lfe_direction_implementation_v1",
+  "authorized_at_utc": "2026-08-30",
+  "status": "IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED",
+  "source_head": "009bbfc67b7589f1188737f0e7b565bfe14bf91d",
+  "approved_design": {
+    "path": "governance/mechanism_token_direction_design_v1/token_resolved_directional_analysis_approval_freeze_v1.json",
+    "bytes": 1871,
+    "sha256": "b3fbc3686bef15ccb1cfe460c8cba2d9b8d2cf7c89d0a4190404810aa17d3be7"
+  },
+  "authorized": {
+    "instrumentation_implementation": true,
+    "analyzer_implementation": true,
+    "independent_verifier_implementation": true,
+    "cpu_only_static_and_synthetic_tests": true,
+    "no_weight_dry_run": true
+  },
+  "not_authorized": {
+    "formal_input_audit": true,
+    "reference_image_access": true,
+    "model_or_weight_loading": true,
+    "gpu_execution": true,
+    "raw_token_capture": true,
+    "scientific_extraction": true,
+    "formal_analysis": true,
+    "outcome_access_or_join": true,
+    "controlled_intervention_preregistration": true,
+    "controlled_intervention_execution": true,
+    "generation": true,
+    "network": true
+  },
+  "dry_run_requirement": "Enumerate and bind the frozen 160 reference-task plan without opening reference images, importing ML model modules, loading weights, capturing tokens, or computing scientific margins.",
+  "next_gate": "SEPARATE_FORMAL_INPUT_AUDIT_AUTHORIZATION_AFTER_IMPLEMENTATION_PACKAGE_REVIEW"
+}

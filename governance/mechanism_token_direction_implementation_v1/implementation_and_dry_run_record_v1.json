@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "record_id": "token_resolved_lfe_direction_implementation_and_dry_run_v1",
+  "recorded_at_utc": "2026-08-30",
+  "status": "PASS_IMPLEMENTATION_CPU_TESTS_NO_WEIGHT_DRY_RUN_AND_INDEPENDENT_VERIFICATION",
+  "source_state_commit": "009bbfc67b7589f1188737f0e7b565bfe14bf91d",
+  "implementation": {
+    "protocol": [
+      "src/token_resolved_lfe_direction_protocol_v1.py",
+      14495,
+      "bb884db237a0f32818e111167f9863494d43c00539a467e8de6ae810f23d0d79"
+    ],
+    "instrumentation": [
+      "src/token_resolved_lfe_direction_instrumentation_v1.py",
+      7196,
+      "8a8814d84d460b20f1aa28ab818750053aaa898072cdad8333c86195e0b244c5"
+    ],
+    "analyzer": [
+      "src/analyze_token_resolved_lfe_direction_v1.py",
+      11748,
+      "dda56c5aaa4c057e34d64a09f87a4851234c2ea7a80eed145cdde3dcad7943f5"
+    ],
+    "independent_verifier": [
+      "src/verify_token_resolved_lfe_direction_v1.py",
+      15403,
+      "4bfa67b028735c55d40f88bb4c6539525793b08b3a58d93b3499e0b798481cdb"
+    ],
+    "tests": [
+      "tests/test_token_resolved_lfe_direction_v1.py",
+      8329,
+      "bd1ac155b288fec392aa42a8e68560158f81da467cdbf05f9c13abbee49fffcf"
+    ],
+    "output_schema": [
+      "governance/mechanism_token_direction_implementation_v1/output_schema_v1.json",
+      1519,
+      "1c6308ed17f1216b8b74a0dd680ace9a0d47fc3b18a1806427f700e063da5af5"
+    ]
+  },
+  "cpu_tests": {
+    "environment": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+    "cuda_visible_devices": "",
+    "torch_version": "2.5.1+cu121",
+    "torch_cuda_available": false,
+    "passed": 10,
+    "failed": 0,
+    "wall_seconds": 1.312,
+    "coverage": [
+      "approved design and implementation gates",
+      "no-weight plan and independent verification",
+      "visible-CUDA rejection",
+      "shape and nonfinite rejection",
+      "direct-repeat and hook equivalence",
+      "equivalence failure closure",
+      "40-unit four-seed-label completeness",
+      "complete 640-margin family and pooled replication",
+      "independent 640-margin summary and pooled recomputation with tamper detection",
+      "outcome and raw-vector prohibitions"
+    ]
+  },
+  "no_weight_dry_run": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_dry_run/run_001",
+    "directory_mode": "0555",
+    "status": "PASS_TOKEN_DIRECTION_NO_WEIGHT_DRY_RUN",
+    "independent_status": "PASS_INDEPENDENT_TOKEN_DIRECTION_NO_WEIGHT_DRY_RUN_VERIFICATION",
+    "engineering_plan_rows": 24,
+    "engineering_units": 8,
+    "direct_passes": 16,
+    "hook_controls": 8,
+    "scientific_reference_plan_rows": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "planned_primary_margins": 640,
+    "files": {
+      "engineering_plan_v1.csv": [
+        3466,
+        "d8fac8fcf39c83caeecf95c437a6d63fbb186c744696ef728cccf08c12ea2b7e"
+      ],
+      "independent_verification_v1.json": [
+        587,
+        "a063e6d888380c71449eb333df722ee3182ce7cbf7d020db6ec6436c0491e1c3"
+      ],
+      "no_weight_dry_run_v1.json": [
+        1322,
+        "9e4a6955709eaf83a1906d10a1aea266a69432484f4ef48a057ac0b7e745a129"
+      ],
+      "scientific_reference_plan_v1.csv": [
+        22070,
+        "6866b4d2fc736556ebb79293319711dc7ab2e2f9e0e2073d98d5bb2fb03d7b74"
+      ]
+    }
+  },
+  "safety": {
+    "formal_input_audit": false,
+    "reference_images_opened": false,
+    "outcomes_opened": false,
+    "model_modules_imported_by_dry_run": false,
+    "model_weights_loaded": false,
+    "raw_tokens_captured": false,
+    "scientific_margins_computed": false,
+    "gpu_used": false,
+    "network_used": false,
+    "generation_run": false,
+    "controlled_intervention_preregistered": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_FORMAL_INPUT_AUDIT_ONLY"
+}

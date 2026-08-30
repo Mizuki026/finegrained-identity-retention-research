@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_resolved_lfe_direction_no_weight_dry_run_v1",
+  "authorized_at_utc": "2026-08-30",
+  "status": "TOKEN_DIRECTION_NO_WEIGHT_DRY_RUN_EXECUTION_AUTHORIZED",
+  "implementation_authorization": {
+    "path": "governance/mechanism_token_direction_implementation_v1/researcher_implementation_authorization_v1.json",
+    "bytes": 1493,
+    "sha256": "6ea97c58220daf360c367e99d576e83b748b0eb48f0682f25b55b8980b6687ac"
+  },
+  "code": {
+    "protocol": {
+      "path": "src/token_resolved_lfe_direction_protocol_v1.py",
+      "bytes": 14495,
+      "sha256": "bb884db237a0f32818e111167f9863494d43c00539a467e8de6ae810f23d0d79"
+    },
+    "instrumentation": {
+      "path": "src/token_resolved_lfe_direction_instrumentation_v1.py",
+      "bytes": 7196,
+      "sha256": "8a8814d84d460b20f1aa28ab818750053aaa898072cdad8333c86195e0b244c5"
+    },
+    "analyzer": {
+      "path": "src/analyze_token_resolved_lfe_direction_v1.py",
+      "bytes": 11748,
+      "sha256": "dda56c5aaa4c057e34d64a09f87a4851234c2ea7a80eed145cdde3dcad7943f5"
+    },
+    "verifier": {
+      "path": "src/verify_token_resolved_lfe_direction_v1.py",
+      "bytes": 15403,
+      "sha256": "4bfa67b028735c55d40f88bb4c6539525793b08b3a58d93b3499e0b798481cdb"
+    }
+  },
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_dry_run/run_001",
+  "authority": {
+    "no_weight_dry_run": true,
+    "independent_verification": true,
+    "formal_input_audit": false,
+    "reference_image_access": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "raw_token_capture": false,
+    "scientific_analysis": false,
+    "outcome_access": false,
+    "generation": false,
+    "network": false
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

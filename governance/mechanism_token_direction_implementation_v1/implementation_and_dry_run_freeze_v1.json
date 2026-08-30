@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_resolved_lfe_direction_implementation_and_dry_run_v1",
+  "frozen_at_utc": "2026-08-30",
+  "source_head_before_implementation_commit": "009bbfc67b7589f1188737f0e7b565bfe14bf91d",
+  "status": "FROZEN_PASS_IMPLEMENTATION_CPU_TESTS_NO_WEIGHT_DRY_RUN_AND_INDEPENDENT_VERIFICATION",
+  "implemented_scope": {
+    "transient_lfe_instrumentation": true,
+    "fixed_640_margin_analyzer": true,
+    "independent_in_memory_recomputation": true,
+    "complete_64_token_panel_and_20_pair_summary_verification": true,
+    "pooled_lfe_replication_verification": true,
+    "raw_tensor_serializer": false,
+    "outcome_linkage": false,
+    "injection_video_token_direction": false
+  },
+  "verification": {
+    "static_ast_and_json": "PASS",
+    "cpu_tests_passed": 10,
+    "cpu_tests_failed": 0,
+    "synthetic_cuda_available": false,
+    "no_weight_dry_run": "PASS_TOKEN_DIRECTION_NO_WEIGHT_DRY_RUN",
+    "independent_dry_run_verification": "PASS_INDEPENDENT_TOKEN_DIRECTION_NO_WEIGHT_DRY_RUN_VERIFICATION",
+    "engineering_plan_rows": 24,
+    "scientific_reference_plan_rows": 160,
+    "planned_primary_margins": 640
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_implementation_v1/implementation_evidence_manifest_v1.csv",
+    "artifact_rows": 14,
+    "bytes": 2556,
+    "sha256": "676295609ebf507c2b6605fc38e078b6a9df6ea27588a2f875550d8d35da32c5"
+  },
+  "actions_not_performed": [
+    "formal_input_audit",
+    "reference_image_access",
+    "outcome_access_or_join",
+    "model_module_import_in_dry_run",
+    "model_or_weight_loading",
+    "raw_token_capture",
+    "scientific_margin_computation",
+    "gpu_execution",
+    "network_access",
+    "generation",
+    "controlled_intervention_preregistration_or_execution"
+  ],
+  "current_authority": {
+    "implementation_complete": true,
+    "cpu_tests_complete": true,
+    "no_weight_dry_run_complete": true,
+    "formal_input_audit": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "scientific_extraction": false,
+    "scientific_analysis": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_FORMAL_INPUT_AUDIT_ONLY"
+}

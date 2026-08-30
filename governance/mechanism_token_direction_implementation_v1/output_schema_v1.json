@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "IMPLEMENTED_SCHEMA_NO_FORMAL_EXECUTION_AUTHORITY",
+  "dry_run_outputs": {
+    "engineering_plan_v1.csv": 24,
+    "scientific_reference_plan_v1.csv": 160,
+    "no_weight_dry_run_v1.json": 1,
+    "independent_verification_v1.json": 1
+  },
+  "future_scientific_outputs": {
+    "lfe_token_margins_v1.csv": {
+      "rows": 640,
+      "columns": ["attribute", "token_index", "formal_pair_id", "margin", "direction"]
+    },
+    "lfe_token_finite_panel_v1.csv": {
+      "rows": 64,
+      "columns": ["attribute", "token_index", "pairs", "correct_count", "tie_count", "wrong_count", "mean_margin", "median_margin", "minimum_margin", "maximum_margin"]
+    },
+    "lfe_pair_token_signs_v1.csv": {
+      "rows": 20,
+      "columns": ["attribute", "formal_pair_id", "tokens", "correct_count", "tie_count", "wrong_count", "mean_margin", "median_margin", "minimum_margin", "maximum_margin"]
+    },
+    "pooled_lfe_replication_v1.csv": {
+      "rows": 20,
+      "columns": ["attribute", "formal_pair_id", "reconstructed_margin", "frozen_run_003_margin", "absolute_difference", "within_tolerance", "direction"]
+    },
+    "analysis_summary_v1.json": 1,
+    "independent_verification_v1.json": 1
+  },
+  "persistence_policy": {
+    "raw_lfe_tokens": false,
+    "raw_identity_embeddings": false,
+    "reference_images": false,
+    "decoded_media": false,
+    "outcomes": false,
+    "pair_level_pseudonymous_margins": true,
+    "aggregate_summaries": true
+  },
+  "formal_execution_authorized": false
+}
