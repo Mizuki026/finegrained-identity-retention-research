@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "decision_id": "mechanism_token_direction_then_intervention_order_v1",
+  "decided_at_utc": "2026-08-30",
+  "status": "TOKEN_RESOLVED_DIRECTIONAL_ANALYSIS_PREREGISTRATION_PRIORITIZED",
+  "ordered_stages": [
+    "preregister_and_later_complete_token_resolved_directional_analysis",
+    "only_after_scientific_review_separately_preregister_prospective_controlled_intervention"
+  ],
+  "current_authority": {
+    "token_direction_preregistration_design": true,
+    "token_direction_implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "raw_vector_capture": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false,
+    "generation": false
+  },
+  "sequence_gate": "CONTROLLED_INTERVENTION_MAY_BE_PREREGISTERED_ONLY_AFTER_TOKEN_DIRECTION_ANALYSIS_IS_COMPLETED_FROZEN_AND_SCIENTIFICALLY_REVIEWED"
+}

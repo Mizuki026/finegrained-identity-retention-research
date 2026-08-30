@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_resolved_lfe_directional_analysis_design_v1",
+  "frozen_at_utc": "2026-08-30",
+  "source_head_before_design_commit": "f298df6856627ce7c044c4a9c1ad853e9c315927",
+  "status": "DESIGN_COMPLETE_RESEARCHER_APPROVAL_REQUIRED_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "research_order": {
+    "token_resolved_directional_analysis_first": true,
+    "controlled_intervention_preregistration_deferred_until_directional_analysis_review": true
+  },
+  "fixed_design": {
+    "tensor_scope": "32_lfe_identity_token_slots_by_2048_dimensions",
+    "attributes": [
+      "eyeglasses",
+      "facial_hair"
+    ],
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "seed_labelled_reference_records": 160,
+    "direction_method": "per_attribute_per_token_leave_one_matched_pair_out_positive_minus_control",
+    "primary_margins": 640,
+    "outcome_blind": true,
+    "raw_tensor_persistence": false,
+    "injection_video_token_direction_included": false
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_design_v1/design_evidence_manifest_v1.csv",
+    "artifact_rows": 10,
+    "bytes": 1934,
+    "sha256": "1ff20d8d993465de3fdf184ebbfd0945f3f1b1b135b68da65b49c0890fbb9bbb"
+  },
+  "proposed_compute_ceiling_not_yet_authorized": {
+    "gpu_devices": 1,
+    "engineering_gpu_hours": 4,
+    "scientific_gpu_hours": 8,
+    "total_gpu_hours": 12,
+    "full_diffusion_trajectories": 0,
+    "video_generation": false
+  },
+  "current_authority": {
+    "design_and_preregistration": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "raw_vector_capture": false,
+    "scientific_analysis": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "next_gate": "RESEARCHER_ACCEPT_REJECT_OR_REVISE_SEVEN_FIXED_DIRECTIONAL_ANALYSIS_DESIGN_DECISIONS"
+}

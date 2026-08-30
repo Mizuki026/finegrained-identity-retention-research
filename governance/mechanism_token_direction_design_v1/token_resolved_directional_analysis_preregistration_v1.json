@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "plan_id": "token_resolved_lfe_directional_analysis_v1",
+  "created_at_utc": "2026-08-30",
+  "status": "PROPOSED_FIXED_DESIGN_RESEARCHER_APPROVAL_REQUIRED_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "scientific_role": "OUTCOME_BLIND_TOKEN_RESOLVED_REPRESENTATION_DIAGNOSTIC",
+  "scope": {
+    "included": "32 learned Local Facial Extractor identity-token indices at 2048 dimensions",
+    "excluded": "17550 video residual tokens at 3072 dimensions, outcome linkage, per-frame linkage, intervention and generation",
+    "reason": "The accepted representation-readout mismatch specifically implicates possible reorganization across the 32 LFE tokens; injection-side raw-vector analysis is a separate high-storage and high-multiplicity design."
+  },
+  "source_bindings": {
+    "formal_master": [
+      "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/pre_generation_master_freeze_v1.json",
+      6294,
+      "149e5deba4d14b4591186416dbe4e12efb3ed19437c0cca0642eaff8a6d5eed8"
+    ],
+    "frozen_run_003_representation_margins": [
+      "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003/representation_margins_v1.csv",
+      15152,
+      "5e1d14990eba4ad20ae9ec790850bc2ae344177bcadd61aff61c92c372e85506"
+    ],
+    "implemented_trace_schema": [
+      "governance/mechanism_trace_implementation_v1/output_schema_v1.json",
+      4014,
+      "54d8d6e869d1640c20f69180fea3612ba08e2a4ad6cafb0a173bc6af2caf5ae8"
+    ],
+    "existing_trace_instrumentation": [
+      "src/mechanism_trace_instrumentation_v1.py",
+      30288,
+      "7306e0cb3af2b951bb9599aa23f083c6ecb2c33cf02e126752969955b8ece609"
+    ],
+    "frozen_model_source": [
+      "/root/autodl-tmp/consisid-smoketest/ConsisID/models/transformer_consisid.py",
+      46480,
+      "b62741974bcde0c3006985a57245cd5c12c23eede7501b6d5146002ce892a7f2"
+    ],
+    "scalar_window_closure": [
+      "governance/mechanism_token_quantile_linkage_execution_v1/scalar_linkage_window_closure_freeze_v1.json",
+      2036,
+      "0998b91a201055f98e1c13dc8d2044a52f698c581c40865affb550549cfccb4a"
+    ]
+  },
+  "model_binding": {
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "lfe_shape": [1, 32, 2048],
+    "token_semantics": "stable learned query indices, not image regions or semantic parts"
+  },
+  "frozen_panel": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "formal_units": 40,
+    "matched_pairs_per_attribute": 10,
+    "seed_labelled_reference_records_per_unit": 4,
+    "scientific_reference_records": 160,
+    "reduced_panel_allowed": false
+  },
+  "direction_definition": {
+    "unit_token_vector": "float32 L2-normalize each 2048-D token, require four seed-labelled copies equal within tolerance, then average",
+    "training": "for each attribute token index and held-out pair, mean the positive-minus-control token vectors from the other nine pairs",
+    "direction_normalization": false,
+    "held_out_margin": "dot(positive_token,direction)-dot(control_token,direction)",
+    "tie_threshold": 1e-8,
+    "outcome_used": false
+  },
+  "planned_outputs": {
+    "lfe_token_margins_rows": 640,
+    "lfe_token_finite_panel_rows": 64,
+    "lfe_pair_token_sign_rows": 20,
+    "pooled_lfe_replication_rows": 20,
+    "raw_vector_rows": 0,
+    "outcome_join_rows": 0,
+    "association_coefficients": 0
+  },
+  "complete_family_policy": {
+    "all_32_token_indices_retained": true,
+    "all_10_pairs_retained": true,
+    "best_token_or_top_k_selection": false,
+    "token_weight_fitting": false,
+    "p_values_or_confidence_intervals": false,
+    "cross_attribute_ranking": false
+  },
+  "engineering_gate": {
+    "units": 8,
+    "direct_lfe_repeats_per_unit": 2,
+    "one_step_hook_equivalence_controls": 8,
+    "elementwise_tolerance": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "failure_action": "ABORT_BEFORE_SCIENTIFIC_EXTRACTION"
+  },
+  "privacy": {
+    "raw_lfe_tokens_persisted": false,
+    "raw_identity_embeddings_persisted": false,
+    "reference_images_copied": false,
+    "decoded_media_persisted": false,
+    "maximum_identity_linkage_level": "pseudonymous matched-pair margins"
+  },
+  "compute_planning_ceiling": {
+    "gpu_devices": 1,
+    "engineering_gpu_hours": 4,
+    "scientific_gpu_hours": 8,
+    "total_gpu_hours": 12,
+    "full_diffusion_trajectories": 0,
+    "video_generation": false,
+    "requires_separate_execution_approval": true
+  },
+  "claim_boundary": "FIXED_PANEL_OUTCOME_BLIND_LINEAR_TOKEN_INDEX_READABILITY_ONLY_NO_ATTRIBUTE_CONTENT_CAUSAL_LOCALIZATION_SPARSITY_DISTRIBUTION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_ROUTE_NECESSITY_SUFFICIENCY_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "sequential_intervention_gate": "DO_NOT_PREREGISTER_CONTROLLED_INTERVENTION_UNTIL_THIS_ANALYSIS_IS_EXECUTED_INDEPENDENTLY_VERIFIED_FROZEN_SCIENTIFICALLY_INTERPRETED_AND_RESEARCHER_REVIEWED",
+  "current_authority": {
+    "preregistration_draft": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "raw_token_capture": false,
+    "scientific_analysis": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  }
+}
