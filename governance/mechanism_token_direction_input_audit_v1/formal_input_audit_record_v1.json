@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "record_id": "token_resolved_lfe_direction_formal_input_audit_run_001",
+  "recorded_at_utc": "2026-08-30",
+  "status": "PASS_FORMAL_INPUT_AUDIT_AND_INDEPENDENT_VERIFICATION",
+  "source_state_commit": "0205a62cada017ce6f8df7063945617b9781b5a3",
+  "audit_scope": {
+    "formal_master_and_artifact_bindings": 16,
+    "generation_tasks": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "unique_reference_files": 40,
+    "reference_file_sha256_verified": 40,
+    "reference_access": "RAW_BYTES_FOR_SHA256_ONLY_NO_IMAGE_DECODING",
+    "pooled_lfe_baseline_rows": 20,
+    "pooled_lfe_all_finite": true,
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_worktree_clean": true,
+    "transformer_source_verified": true,
+    "weight_inventory_binding_verified": true,
+    "full_weight_rehash_repeated": false
+  },
+  "implementation": {
+    "auditor": [
+      "src/audit_token_resolved_lfe_direction_inputs_v1.py",
+      13129,
+      "60b409ed8ee2286ebda4627cace45262b5a066e770c4e81d5a3a0aa0bb1dd7b9"
+    ],
+    "independent_verifier": [
+      "src/verify_token_resolved_lfe_direction_input_audit_v1.py",
+      13074,
+      "4cdfe224c3a7ebf6d3b5bcd79b818945b300e7c936f94c429b0a23b6355aceee"
+    ]
+  },
+  "external_audit_package": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_input_audit/run_001",
+    "directory_mode": "0555",
+    "files": {
+      "artifact_bindings_v1.csv": [
+        1559,
+        "0825fd8c00aeb13fd82a127bad92cd420eb51660fdbb66d1d50fc84dcf8f518d"
+      ],
+      "audit_summary_v1.json": [
+        820,
+        "0f5eb32234c8c21cca7d02c9ae46a5031ac3108c3fd743209e269fb0282b8d2e"
+      ],
+      "independent_verification_v1.json": [
+        461,
+        "a3040b2fd576037ad9c07204e3c1300763246bffd218d3b668500f221273d0bc"
+      ],
+      "pooled_lfe_keys_v1.csv": [
+        1097,
+        "8f7e503ffaebbb9b0f698b703ca376ed48d3946da77e7b50157efc891ba3cccf"
+      ],
+      "reference_keys_v1.csv": [
+        5368,
+        "0d582e781775e18b5f0b57f98099df8db6cc0f712920235afd704b68d4c32183"
+      ]
+    }
+  },
+  "actions_not_performed": [
+    "reference_image_decode_or_visualization",
+    "face_preprocessing_or_detector_execution",
+    "model_or_weight_loading",
+    "full_model_weight_rehash",
+    "gpu_execution",
+    "lfe_token_capture",
+    "scientific_margin_computation",
+    "outcome_access_or_join",
+    "generation",
+    "network_access"
+  ],
+  "next_gate": "RESEARCHER_REVIEW_THEN_SEPARATE_ENGINEERING_MODEL_GPU_EXECUTION_AUTHORIZATION"
+}
