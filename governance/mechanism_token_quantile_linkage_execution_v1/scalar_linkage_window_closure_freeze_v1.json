@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "freeze_id": "scalar_linkage_window_closure_v1",
+  "frozen_at_utc": "2026-08-30",
+  "source_head_before_closure_commit": "6a449f62f4bcb83d003bf8fd58c6ed46330e24eb",
+  "status": "ALL_FIVE_INTERPRETATIONS_ACCEPTED_AND_SCALAR_LINKAGE_WINDOW_CLOSED",
+  "researcher_decision": {
+    "path": "governance/mechanism_token_quantile_linkage_execution_v1/researcher_scientific_interpretation_decisions_v1.json",
+    "bytes": 1946,
+    "sha256": "ae7e2cea0d76fef80e9587ff7b50347cebd9125e789931ed9484345ee5bfab72"
+  },
+  "accepted_scientific_state": {
+    "broad_token_magnitude_ranking_shift_more_compatible_than_q90_only": true,
+    "uniform_or_sparse_token_mechanism_established": false,
+    "magnitude_and_direction_alignment_are_separable_readouts": true,
+    "representation_readout_mismatch_supported_as_interpretation_not_causal_rule": true,
+    "facial_hair_state_and_statistic_dependence_observed": true,
+    "hidden_state_normalization_explanation_verified": false,
+    "multi_path_distributed_representation_retained_as_working_model": true,
+    "multi_path_model_causally_verified": false,
+    "global_scalar_linkage_window_closed": true,
+    "automatic_frame_by_grid_expansion": false
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_quantile_linkage_execution_v1/scalar_linkage_closure_evidence_manifest_v1.csv",
+    "artifact_rows": 7,
+    "bytes": 1538,
+    "sha256": "8098201b525758c230cc277c1f60e94f7ae867bfaa3e298f24fb8ec06ac540ce"
+  },
+  "next_scientific_priority": [
+    "token_resolved_direction",
+    "prospectively_controlled_intervention"
+  ],
+  "next_gate": "SEPARATE_PREREGISTERED_DESIGN_AND_EXPLICIT_SCOPE_APPROVAL",
+  "not_authorized": [
+    "per_frame_linkage",
+    "derived_concentration_metrics",
+    "new_raw_vector_capture",
+    "model_loading",
+    "gpu_tracing",
+    "intervention",
+    "ablation",
+    "generation"
+  ],
+  "claim_boundary": "NO_CAUSAL_LOCALIZATION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_NECESSITY_SUFFICIENCY_OR_CROSS_ATTRIBUTE_RANKING_CLAIMS"
+}

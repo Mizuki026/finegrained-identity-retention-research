@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "decision_id": "mechanism_token_quantile_linkage_scientific_interpretation_decisions_v1",
+  "decided_at_utc": "2026-08-30",
+  "status": "ALL_FIVE_TOKEN_QUANTILE_SCIENTIFIC_INTERPRETATIONS_ACCEPTED",
+  "source_proposal": {
+    "path": "governance/mechanism_token_quantile_linkage_execution_v1/token_quantile_scientific_interpretation_proposal_v1.md",
+    "bytes": 7366,
+    "sha256": "caf6b9577c69a3fc49d361a332d31fc5f571e2b2762525418d4959f7833e59f6"
+  },
+  "accepted_interpretations": {
+    "broad_token_magnitude_ranking_shift_is_more_compatible_than_q90_only": true,
+    "uniform_token_participation_or_absence_of_sparse_attribute_tokens_proven": false,
+    "magnitude_and_directional_alignment_are_separable_readouts": true,
+    "eyeglasses_pattern_supports_representation_readout_mismatch_without_causal_update_claim": true,
+    "facial_hair_linkage_is_state_and_statistic_dependent": true,
+    "hidden_state_normalization_is_plausible_but_unisolated": true,
+    "multi_path_distributed_representation_remains_best_working_model": true,
+    "multi_path_model_is_causally_verified": false,
+    "scalar_linkage_window_should_close": true,
+    "automatic_13_frame_by_36_cell_expansion_authorized": false,
+    "next_mechanism_direction_should_be_token_resolved_direction_or_prospective_controlled_intervention": true
+  },
+  "claim_boundary": "FIXED_TEN_PAIR_PANEL_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_LOCALIZATION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_NECESSITY_SUFFICIENCY_OR_CROSS_ATTRIBUTE_RANKING_CLAIMS",
+  "closed_scope": "GLOBAL_SCALAR_OUTCOME_LINKAGE_EXPANSION",
+  "next_research_gate": "SEPARATELY_PREREGISTER_TOKEN_RESOLVED_DIRECTION_OR_PROSPECTIVE_CONTROLLED_INTERVENTION",
+  "not_authorized_by_this_decision": [
+    "per_frame_linkage",
+    "derived_concentration_metrics",
+    "new_raw_vector_capture",
+    "model_loading",
+    "gpu_tracing",
+    "intervention",
+    "ablation",
+    "generation"
+  ]
+}
