@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_token_quantile_linkage_execution_v1_run_001",
+  "frozen_at_utc": "2026-08-30",
+  "status": "FROZEN_PASS_PENDING_RESEARCHER_SCIENTIFIC_INTERPRETATION_DECISION",
+  "source_state_commit": "3ec1abb0e86fe4a6a162d4106c5e8b4da3a4a37a",
+  "researcher_authorization": {
+    "decision": "APPROVE_BOTH_STAGES",
+    "scope": [
+      "implementation_cpu_tests_dry_run_and_formal_input_audit",
+      "conditional_formal_aggregation_frozen_outcome_join_108_spearman_and_independent_recomputation"
+    ],
+    "condition_satisfied": "formal input audit and independent audit verification both passed before formal execution"
+  },
+  "fixed_family": {
+    "source_statistic": "per-row token_rms_q10 token_rms_q50 token_rms_q90",
+    "attributes": [
+      "eyeglasses",
+      "facial_hair"
+    ],
+    "quantiles": [
+      "q10",
+      "q50",
+      "q90"
+    ],
+    "stages": [
+      "early",
+      "middle",
+      "late"
+    ],
+    "branches": [
+      "text",
+      "unconditional"
+    ],
+    "task_cell_rows": 8640,
+    "pair_cell_rows": 1080,
+    "joined_rows": 1080,
+    "spearman_coefficients": 108,
+    "defined_spearman_coefficients": 108
+  },
+  "verified_results": {
+    "eyeglasses": {
+      "positive_coefficients": 54,
+      "negative_coefficients": 0,
+      "range": [
+        0.0670025210172808,
+        0.28141058827257937
+      ]
+    },
+    "facial_hair": {
+      "positive_coefficients": 30,
+      "negative_coefficients": 24,
+      "range": [
+        -0.45647294162092733,
+        0.13756718788575892
+      ]
+    },
+    "independent_full_recomputation": "PASS_INDEPENDENT_TOKEN_QUANTILE_LINKAGE_VERIFICATION"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_quantile_linkage_execution_v1/execution_evidence_manifest_v1.csv",
+    "artifact_rows": 33,
+    "bytes": 6475,
+    "sha256": "44ec45bc9759c09cc39dbe4b914af7fb3ee77ab860736f899d486502d0e87647"
+  },
+  "scientific_status": {
+    "verified_fact": "the fixed-panel quantile linkage family was computed exactly as approved and independently recomputed",
+    "current_observation": "eyeglasses coefficients are uniformly positive while facial-hair coefficients change sign across fixed cells",
+    "accepted_working_model_preserved": "multi-path distributed representation remains viable but causally unverified",
+    "pending_researcher_decision": "the five synthesis statements in token_quantile_scientific_interpretation_proposal_v1.md",
+    "not_established": [
+      "attribute_information_loss",
+      "mechanistic_localization",
+      "path_necessity_or_sufficiency",
+      "causality",
+      "population_generalization",
+      "cross_attribute_ranking",
+      "quantile_concentration_mechanism"
+    ]
+  },
+  "resource_use": {
+    "cpu_only": true,
+    "formal_analyzer_and_verifier_wall_seconds": 8.919,
+    "gpu_hours": 0,
+    "model_loaded": false,
+    "generation_run": false,
+    "network_used": false
+  },
+  "prohibitions_preserved": [
+    "no new metrics or derived quantile contrasts",
+    "no p values or confidence intervals added",
+    "no sample seed reference prompt threshold or exclusion changes",
+    "no failed-sample deletion or selective regeneration",
+    "no causal localization bottleneck necessity sufficiency or generalization claim"
+  ],
+  "next_gate": "RESEARCHER_ACCEPT_REJECT_OR_REVISE_FIVE_TOKEN_QUANTILE_SCIENTIFIC_SYNTHESIS_STATEMENTS"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_quantile_linkage_two_stage_authorization_v1",
+  "authorized_at_utc": "2026-08-30",
+  "status": "TWO_STAGE_IMPLEMENTATION_AUDIT_AND_CONDITIONAL_FORMAL_EXECUTION_APPROVED",
+  "decision_source": "Researcher selected approval option 2 in the current session",
+  "stage_1": {
+    "analyzer_and_independent_verifier_implementation": true,
+    "input_auditor_and_independent_audit_verifier_implementation": true,
+    "cpu_only_synthetic_tests": true,
+    "no_weight_dry_run": true,
+    "three_source_formal_input_audit": true
+  },
+  "stage_2_conditional": {
+    "condition": "ALL_STAGE_1_TESTS_DRY_RUN_AND_THREE_SOURCE_INPUT_AUDITS_INDEPENDENTLY_PASS",
+    "real_q10_q50_q90_aggregation": true,
+    "task_cell_rows": 8640,
+    "pair_cell_rows": 1080,
+    "outcome_construction": true,
+    "joined_rows": 1080,
+    "spearman_average_rank_associations": 108,
+    "independent_full_recomputation": true,
+    "external_only_pair_level_outputs": true
+  },
+  "not_authorized": {
+    "derived_quantile_spread_ratio_slope_or_concentration_metric": true,
+    "p_values_or_confidence_intervals": true,
+    "metric_or_cell_selection": true,
+    "reduced_panel": true,
+    "cross_attribute_ranking": true,
+    "fallback_assignment_exclusion_or_rerun": true,
+    "model_loading": true,
+    "gpu_execution": true,
+    "network_access": true,
+    "generation_intervention_or_ablation": true,
+    "causal_localization_sparsity_or_attribute_content_claim": true
+  },
+  "compute_boundary": {
+    "cpu_only": true,
+    "gpu_devices": 0,
+    "gpu_hours": 0,
+    "stage_2_wall_time_minutes_upper_bound_including_verification": 5
+  },
+  "failure_policy": "ANY_TEST_DRY_RUN_AUDIT_HASH_KEY_FINITE_MONOTONICITY_OR_COUNT_FAILURE_ABORTS_BEFORE_STAGE_2",
+  "next_gate": "AFTER_INDEPENDENT_FORMAL_RESULT_VERIFICATION_RESEARCHER_DECIDES_SCIENTIFIC_INTERPRETATION"
+}

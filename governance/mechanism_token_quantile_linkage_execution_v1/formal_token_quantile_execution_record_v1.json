@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "run_id": "mechanism_token_quantile_linkage_v1_run_001",
+  "recorded_at_utc": "2026-08-30",
+  "status": "PASS_TWO_STAGE_IMPLEMENTATION_AUDIT_FORMAL_EXECUTION_AND_INDEPENDENT_VERIFICATION",
+  "source_state_commit": "3ec1abb0e86fe4a6a162d4106c5e8b4da3a4a37a",
+  "implementation": {
+    "analyzer": ["src/analyze_token_quantile_outcome_linkage_v1.py", 13099, "f2d7e25fae51312d59da260452b054ec75302b174b1c433375dbff3309955a5b"],
+    "result_verifier": ["src/verify_token_quantile_outcome_linkage_v1.py", 11936, "849448ec80942f342d136881d20806782786e26c11479dee4908c370a1c0b337"],
+    "input_auditor": ["src/audit_token_quantile_outcome_linkage_inputs_v1.py", 7118, "494a0199790cd904cc32e0d74b68501fc4ddc8c13e3b67e713cbfdae232131a4"],
+    "input_audit_verifier": ["src/verify_token_quantile_outcome_linkage_input_audit_v1.py", 7580, "11bd4d7a680bd2b524710cdc612aa8dafe5af53f548bd6b221c994d3eca28a61"],
+    "tests": ["tests/test_token_quantile_outcome_linkage_v1.py", 5456, "c4d862d09639c5090774d721dbb615bc159398fa0a84ce27239a3286b3272b61"]
+  },
+  "synthetic_tests": {
+    "passed": 9,
+    "failed": 0,
+    "wall_seconds": 1.997,
+    "synthetic_task_cells": 8640,
+    "synthetic_pair_cells": 1080,
+    "synthetic_associations": 108,
+    "nonmonotone_triple_rejected": true
+  },
+  "dry_run": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_quantile_linkage_v1_dry_run/run_001",
+    "directory_mode": "0555",
+    "summary": [1080, "b92b7a4e51587fb99cdc69d2cf786e04ab060179642dae12d93047789986334f"],
+    "independent_verification": [516, "a931f479391200c8ad5cf329f90faaf8097422f9bb3022fa1ef2dc194b0806d9"],
+    "real_inputs_opened": false,
+    "quantiles_aggregated": false,
+    "join_or_association": false
+  },
+  "formal_input_audit": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_quantile_linkage_v1_input_audit/run_001",
+    "directory_mode": "0555",
+    "status": "PASS_INDEPENDENT_TOKEN_QUANTILE_INPUT_AUDIT_VERIFICATION",
+    "independent_verification": [1909, "40333230654d7c7de235ae6df884cf9868b6165e80b7da6610e29e97a7b45272"],
+    "eyeglasses_targets": 40,
+    "facial_hair_targets": 10,
+    "injection_rows": 336000,
+    "finite_quantile_values": 1008000,
+    "monotone_quantile_triples": 336000,
+    "nonmonotone_quantile_triples": 0,
+    "derived_metrics": false,
+    "aggregation_join_or_association": false
+  },
+  "formal_execution_authorization": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_quantile_linkage_v1_execution_authorization/run_001_execution_authorization_v1.json",
+    "bytes": 7652,
+    "sha256": "226bbc00f1b13797417339e33cebcfbf3afb2b690eb5129361dec4f22ae9d17c",
+    "mode": "0444"
+  },
+  "formal_analysis": {
+    "status": "COMPLETE_TOKEN_QUANTILE_LINKAGE_PENDING_INDEPENDENT_VERIFICATION",
+    "task_cell_rows": 8640,
+    "pair_cell_rows": 1080,
+    "joined_rows": 1080,
+    "associations": 108,
+    "defined_associations": 108,
+    "derived_metrics": false,
+    "wall_seconds": 4.568,
+    "user_seconds": 3.808,
+    "system_seconds": 0.760
+  },
+  "independent_result_verification": {
+    "status": "PASS_INDEPENDENT_TOKEN_QUANTILE_LINKAGE_VERIFICATION",
+    "all_task_pair_join_and_association_values_recomputed": true,
+    "wall_seconds": 4.351,
+    "user_seconds": 3.651,
+    "system_seconds": 0.700
+  },
+  "external_runtime": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_quantile_linkage_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "files": {
+      "analysis_summary_v1.json": [475, "b8288230f423ad1c3c94de4d356743aadac5639a071bba8baf56c6a925ba6043"],
+      "independent_verification_v1.json": [454, "bcd47ecc26be69fe3b1c8b8fbabcc73b411e2cf91df12bae90fa8c112ca97875"],
+      "quantile_outcome_associations_v1.csv": [11200, "b7f6279745056d13f13e0adb84bdcd49d7a08d45059359bd4239ee1e62d7f4bb"],
+      "quantile_outcome_joined_pairs_v1.csv": [132513, "8e69cb44a38b5b74f3edd3317879f0acbe4c75d5172f702273445f2a47914fd3"],
+      "quantile_pair_3x3_v1.csv": [127203, "e2365e3766bb38757161e71d37c7cfd618f74132da7175dbafa3a2acb9f553f4"],
+      "quantile_task_3x3_v1.csv": [1321945, "78f954b9968a28f6f386b6425a3a498e031008e5d4aa97c6f735d685bedee7c5"]
+    }
+  },
+  "preexecution_note": {
+    "event": "A read-only Python preflight initially used an incorrect package import style and failed with ModuleNotFoundError before validation or execution.",
+    "resolution": "The same preflight was rerun with the tested src path and passed.",
+    "partial_output_created": false,
+    "source_modified": false
+  },
+  "safety": {
+    "cpu_only": true,
+    "gpu_hours": 0,
+    "model_loaded": false,
+    "network_used": false,
+    "generation_run": false,
+    "p_values_or_confidence_intervals": false,
+    "derived_quantile_metrics": false,
+    "pair_level_outputs_committed_to_git": false
+  },
+  "next_gate": "RESEARCHER_ACCEPT_REJECT_OR_REVISE_TOKEN_QUANTILE_SCIENTIFIC_INTERPRETATION"
+}
