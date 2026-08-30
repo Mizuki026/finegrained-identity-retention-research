@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "plan_id": "token_rms_quantile_outcome_linkage_v1",
+  "created_at_utc": "2026-08-30",
+  "status": "PREREGISTERED_FIXED_DESIGN_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "scientific_role": "SECONDARY_COMPLETE_FAMILY",
+  "rationale": "RMS magnitude and mean H-R cosine show different fixed-panel outcome covariation. The already captured q10, q50, and q90 tokenwise residual-RMS summaries permit a prospective test of whether lower, median, and upper portions of the token-magnitude distribution rank retention heterogeneity differently, without new model execution.",
+  "source_bindings": {
+    "original_trace_plan": [
+      "governance/mechanism_trace_design_v1/mechanism_trace_analysis_plan_v1.json",
+      3263,
+      "79db39d6c330977af66031d958ca4f5c873a3897e694551356c28f9ccf4ed77f"
+    ],
+    "implemented_output_schema": [
+      "governance/mechanism_trace_implementation_v1/output_schema_v1.json",
+      4014,
+      "54d8d6e869d1640c20f69180fea3612ba08e2a4ad6cafb0a173bc6af2caf5ae8"
+    ],
+    "existing_read_only_feasibility_audit": [
+      "governance/mechanism_richer_readout_design_v1/richer_summary_feasibility_audit_v1.json",
+      2874,
+      "15c68159815f6d6c22b96fb017c6ef46f776f00fda1cecfd84a073792ce7f27b"
+    ],
+    "frozen_injection_source": [
+      "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003/injection_summaries_v1.csv",
+      186039281,
+      "61ed3d1231b7a9dbac9da7b181e8e9435eb1c0bf5880f6d4e45e69ba306ec80b"
+    ]
+  },
+  "frozen_panels": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "matched_pairs_per_attribute": 10,
+    "seeds_per_reference_unit": 4,
+    "cfg_branches": ["unconditional", "text"],
+    "block_groups": ["early", "middle", "late"],
+    "denoising_groups": ["early", "middle", "late"]
+  },
+  "metrics": [
+    {
+      "source_column": "token_rms_r_q10",
+      "quantile": 0.10,
+      "role": "secondary_complete_family"
+    },
+    {
+      "source_column": "token_rms_r_q50",
+      "quantile": 0.50,
+      "role": "secondary_complete_family"
+    },
+    {
+      "source_column": "token_rms_r_q90",
+      "quantile": 0.90,
+      "role": "secondary_complete_family"
+    }
+  ],
+  "metric_boundary": {
+    "measured": "Three independently reported quantiles of tokenwise rms(R) at each frozen injection position.",
+    "not_measured": "Token identity, token spatial pattern, attribute direction, raw vector direction, or a causal path contribution.",
+    "no_derived_metric": ["q90_minus_q10", "q90_divided_by_q50", "coefficient_of_variation", "quantile_slope", "concentration_index"],
+    "interpretation_limit": "Differences among quantile-specific association patterns may indicate distribution-level readout heterogeneity but cannot by themselves be called concentration or sparsity."
+  },
+  "prespecified_aggregation": [
+    "For each of the three metrics separately, average all row-level values within every trace-task by CFG-branch by 3x3 block/denoising cell.",
+    "Require exact task-cell position counts of 119,119,112 across denoising early,middle,late for every seven-site block group.",
+    "Average the four seed task-cell values within each frozen reference unit.",
+    "Form positive-minus-control within each frozen matched pair.",
+    "Construct the already frozen eyeglasses and facial-hair outcomes exactly as in the two completed linkage analyses.",
+    "Join separately by metric, attribute, and formal_pair_id without a reduced panel.",
+    "Compute Spearman rank correlation with average ranks for all metric-by-attribute-by-branch-by-block-by-denoising combinations."
+  ],
+  "planned_counts": {
+    "metrics": 3,
+    "task_cell_rows_per_metric": 2880,
+    "task_cell_rows_total": 8640,
+    "pair_cell_rows_per_metric": 360,
+    "pair_cell_rows_total": 1080,
+    "joined_pair_rows_per_metric": 360,
+    "joined_pair_rows_total": 1080,
+    "associations_per_metric": 36,
+    "associations_total": 108,
+    "pairs_per_association": 10
+  },
+  "complete_family_reporting": {
+    "all_108_coefficients_retained": true,
+    "metric_selection_after_inspection": false,
+    "cell_selection_after_inspection": false,
+    "cross_attribute_ranking": false,
+    "p_values": false,
+    "confidence_intervals": false,
+    "reduced_panel": false
+  },
+  "prospective_interpretation_rules": {
+    "similar_patterns_across_q10_q50_q90": "Compatible with a broad shift in tokenwise residual magnitude rankings, but not proof of uniform token participation.",
+    "stronger_or_different_q90_pattern": "Compatible with upper-tail magnitude carrying different pair heterogeneity, but not proof of sparse or concentrated attribute writing.",
+    "stronger_or_different_q10_pattern": "Compatible with lower-tail magnitude carrying different pair heterogeneity, but not proof of diffuse attribute writing.",
+    "mixed_signs_across_quantiles_or_grid": "Evidence that quantile-specific magnitude readouts are state-dependent; not localization or causal direction.",
+    "near_zero_family": "The recorded quantiles do not rank outcome heterogeneity in this panel; this does not refute local-route vector or token-pattern mechanisms."
+  },
+  "fail_closed_rules": {
+    "source_path_byte_or_sha_mismatch": "ABORT",
+    "unexpected_header_row_task_or_position_key": "ABORT",
+    "nonfinite_quantile": "ABORT",
+    "row_level_q10_greater_than_q50_or_q50_greater_than_q90": "ABORT",
+    "missing_pair_or_incomplete_four_seed_set": "ABORT_NO_REDUCED_PANEL",
+    "existing_nonempty_output_directory": "ABORT_NO_OVERWRITE",
+    "fallback_policy": "UNMAPPED_RUN_LEVEL_LIMITATION_NO_ASSIGNMENT_EXCLUSION_OR_RERUN"
+  },
+  "compute_planning_bound": {
+    "gpu_devices": 0,
+    "gpu_hours": 0,
+    "model_loading": false,
+    "generation": false,
+    "cpu_only_if_later_authorized": true,
+    "expected_wall_time_minutes_upper_bound_including_independent_verification": 5
+  },
+  "claim_boundary": "FIXED_PANEL_SECONDARY_QUANTILE_SPECIFIC_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_TOKEN_PATTERN_CONCENTRATION_SPARSITY_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_OR_ATTRIBUTE_CONTENT_CONCLUSION",
+  "current_authority": {
+    "preregistration": true,
+    "analyzer_or_verifier_implementation": false,
+    "synthetic_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "real_aggregation": false,
+    "outcome_construction_or_join": false,
+    "association_computation": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "decision_id": "researcher_cosine_interpretation_and_quantile_preregistration_v1",
+  "decided_at_utc": "2026-08-30",
+  "status": "FIVE_INTERPRETATIONS_ACCEPTED_QUANTILE_PREREGISTRATION_ONLY_APPROVED",
+  "decision_source": "Direct researcher approval in the current session",
+  "source_interpretation_proposal": {
+    "path": "governance/mechanism_cosine_linkage_execution_v1/cosine_scientific_interpretation_proposal_v1.md",
+    "bytes": 6783,
+    "sha256": "1a5fdeeebbdb46728cbf7026700a0f077d5d1d85ce846e37ca4c2b4319ace08a"
+  },
+  "accepted_interpretations": {
+    "representation_readout_mismatch_or_reorganization_remains_leading_working_explanation_and_is_modestly_strengthened": true,
+    "representation_reorganization_is_proven": false,
+    "local_route_is_descriptively_structured_but_not_monotonically_interpretable": true,
+    "state_dependent_correction_orthogonal_writing_token_cancellation_or_spatial_interaction_are_individually_verified": false,
+    "multi_path_distributed_representation_remains_viable_and_unverified": true,
+    "path_compensation_interaction_necessity_or_sufficiency_is_verified": false,
+    "mean_cosine_is_an_incomplete_readout_and_not_an_attribute_direction": true,
+    "stronger_residual_vector_hypothesis_is_validated": false,
+    "distributional_structure_is_the_next_mechanism_question": true
+  },
+  "approved_scope": {
+    "preregister_existing_token_rms_q10_q50_q90": true,
+    "complete_secondary_coefficients": 108,
+    "design_and_governance_only": true
+  },
+  "not_authorized": {
+    "analyzer_or_verifier_implementation": true,
+    "synthetic_tests_or_dry_run": true,
+    "formal_input_audit": true,
+    "real_quantile_aggregation": true,
+    "outcome_construction_or_join": true,
+    "association_computation": true,
+    "derived_spread_ratio_or_concentration_metric": true,
+    "raw_vector_or_token_pattern_capture": true,
+    "model_loading_or_gpu_execution": true,
+    "generation_intervention_or_ablation": true
+  },
+  "next_action": "FREEZE_COMPLETE_108_COEFFICIENT_TOKEN_QUANTILE_SECONDARY_FAMILY_DESIGN_ONLY"
+}

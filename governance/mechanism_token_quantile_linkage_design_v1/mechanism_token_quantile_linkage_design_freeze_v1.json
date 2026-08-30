@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_token_quantile_linkage_design_v1",
+  "frozen_at_utc": "2026-08-30",
+  "status": "FROZEN_PREREGISTRATION_ONLY_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "source_state_commit": "66c990b3e2451b69e3fda02bfd977c9b2f357476",
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_quantile_linkage_design_v1/design_evidence_manifest_v1.csv",
+    "bytes": 855,
+    "sha256": "bf07a81f2fab9597904a5b0916491901c5f6aac74a02aa81de1a27cd4ff81575"
+  },
+  "artifacts": {
+    "researcher_cosine_interpretation_and_quantile_preregistration_decision_v1.json": [
+      2095,
+      "dcaf96ed2cb70c77cff1a42b73fd35749b1384658fce588fdedb395cdfdeffa6"
+    ],
+    "token_quantile_outcome_linkage_preregistration_v1.json": [
+      6432,
+      "11a55a9f576b3868298793ac4d594a9f192e0737af96a01900612d58e5415e78"
+    ],
+    "token_quantile_implementation_review_gate_v1.md": [
+      1782,
+      "cbde96cf9ffb15135deb8d3eef17f3f5c2504abe52d5c4488a3109ba3b4ac765"
+    ]
+  },
+  "fixed_family": {
+    "metrics": ["token_rms_r_q10", "token_rms_r_q50", "token_rms_r_q90"],
+    "metric_role": "secondary_complete_family",
+    "attributes": 2,
+    "cfg_branches": 2,
+    "block_groups": 3,
+    "denoising_groups": 3,
+    "associations": 108,
+    "pairs_per_association": 10,
+    "complete_nonselective_reporting": true
+  },
+  "scientific_boundary": {
+    "quantile_specific_magnitude_readout": true,
+    "derived_concentration_or_sparsity_metric": false,
+    "token_identity_or_pattern": false,
+    "attribute_vector_direction": false,
+    "localization_or_causality": false
+  },
+  "current_authority": {
+    "design_and_preregistration": true,
+    "analyzer_or_verifier_implementation": false,
+    "synthetic_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "real_quantile_aggregation": false,
+    "outcome_construction_or_join": false,
+    "association_computation": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "generation": false
+  },
+  "next_gate": "RESEARCHER_APPROVAL_OF_ALL_SIX_ITEMS_IN_TOKEN_QUANTILE_IMPLEMENTATION_REVIEW_GATE_V1"
+}
