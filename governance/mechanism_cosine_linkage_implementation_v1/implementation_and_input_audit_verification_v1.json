@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "verification_id": "mechanism_cosine_linkage_implementation_and_input_audit_v1",
+  "verified_at_utc": "2026-08-30",
+  "status": "PASS_IMPLEMENTATION_TESTS_DRY_RUN_AND_FORMAL_INPUT_AUDIT_NO_EXECUTION_AUTHORITY",
+  "source_state_commit": "b6e14ede1bb8a07c1e6ed4854ef36387e2cb7a8b",
+  "code": {
+    "analyzer": ["src/analyze_cosine_outcome_linkage_v1.py", 19982, "c3e2f76c40f03c8becb60713d805b9581075756296fdf9cdbfe873bf0f1107ba"],
+    "result_verifier": ["src/verify_cosine_outcome_linkage_v1.py", 14568, "91d704fe85a3336ae96b2061bfec437b6cc8ed581f0032d7b11954fe6d790f06"],
+    "input_auditor": ["src/audit_cosine_outcome_linkage_inputs_v1.py", 12287, "07b3118db10ccf9192fa1491c35ca6ab008f4faab492accadb1ec7e698716d17"],
+    "input_audit_verifier": ["src/verify_cosine_outcome_linkage_input_audit_v1.py", 9491, "31be4bdfdbe1a14f3bc08f901fd2cf8291385e07efc1db182766201a625c7b8d"],
+    "synthetic_tests": ["tests/test_cosine_outcome_linkage_v1.py", 6684, "f4b46eeafd4f11102ca525499ce008fa629f00348c6474ef573b8a4b653d36c4"]
+  },
+  "static_verification": {
+    "python_ast_files_passed": 5,
+    "json_files_passed": 3,
+    "forbidden_ml_imports": false
+  },
+  "synthetic_tests": {
+    "passed": 9,
+    "failed": 0,
+    "wall_seconds": 1.163,
+    "complete_synthetic_task_cells": 2880,
+    "complete_synthetic_pair_cells": 360,
+    "complete_synthetic_associations": 36,
+    "formal_mode_rejects_input_audit_authorization": true,
+    "unapproved_input_audit_fails_before_source_access": true,
+    "facial_hair_target_scope_exactly_ten_rows": true
+  },
+  "no_weight_dry_run": {
+    "final_run": "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_dry_run/run_002",
+    "directory_mode": "0555",
+    "status": "PASS_INDEPENDENT_COSINE_LINKAGE_NO_WEIGHT_DRY_RUN_VERIFICATION",
+    "summary": [1003, "4a0fc2bdb76933210f694539066524ddd886b7381980c64ff7baa82989e7ed76"],
+    "verification": [513, "03d31a2c5425d7f03c29a77344063f18752ac1a868f13d76babb585263430000"],
+    "real_input_paths_received": false,
+    "input_files_opened": false,
+    "cosine_aggregated": false,
+    "outcome_constructed": false,
+    "joined_rows_created": 0,
+    "association_computed": false,
+    "run_001_status": "READ_ONLY_SUPERSEDED_BY_RUN_002_AFTER_RESULT_VERIFIER_KEY_UNIVERSE_HARDENING"
+  },
+  "formal_input_audit": {
+    "run": "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_input_audit/run_001",
+    "directory_mode": "0555",
+    "status": "PASS_INDEPENDENT_COSINE_LINKAGE_INPUT_AUDIT_VERIFICATION",
+    "independent_verification": [1744, "238344bb137ad19f0a794630a6dd1e2572e6c97e4fcedfaca81389eae74c4887"],
+    "eyeglasses_outcome": {
+      "rows": 40,
+      "finite_targets": 40,
+      "binding": [1237, "e7df55c7a079c91ff676430be783ca164fbd6bd53ceba41fcb3c63145a6a12ca"],
+      "key_manifest": [485, "29faa669a51ee4ca1a892889dc0ecb7bb61bc779589674fd2329e0ecdf827dbc"]
+    },
+    "facial_hair_outcome": {
+      "rows": 20,
+      "finite_targets_in_facial_hair_scope": 10,
+      "binding": [1187, "ce78559597b1af9cbb837ebae57a75ffa23d63baccc5b990c22530003fd50a49"],
+      "key_manifest": [435, "0c001fffa520de99712c69bee30f506889a5990784f4b42be61fa8ca5e2ab346"]
+    },
+    "injection_summaries": {
+      "rows": 336000,
+      "finite_cosine_targets": 336000,
+      "trace_tasks": 160,
+      "rows_per_task": 2100,
+      "binding": [1621, "35d0adbe22886901f9bfcc6e5a9f988a10540643b080630e46bec02b4604b281"],
+      "key_manifest": [19485709, "a48deaa19e89d03e6bb93429577f522920274d7ac4c38da25a198d4e9379084f"]
+    },
+    "numeric_values_exported": false,
+    "cosine_aggregated": false,
+    "outcome_constructed": false,
+    "join_computed": false,
+    "association_computed": false
+  },
+  "safety": {
+    "gpu_hours": 0,
+    "model_loaded": false,
+    "network_used": false,
+    "generation_run": false,
+    "frozen_sources_modified": false
+  },
+  "next_gate": "SECOND_EXPLICIT_RESEARCHER_APPROVAL_REQUIRED_FOR_REAL_COSINE_AGGREGATION_OUTCOME_CONSTRUCTION_JOIN_36_ASSOCIATIONS_AND_INDEPENDENT_RESULT_VERIFICATION"
+}

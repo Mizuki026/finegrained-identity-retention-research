@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_cosine_linkage_formal_input_audit_run_001",
+  "authorized_at_utc": "2026-08-30",
+  "status": "CPU_ONLY_COSINE_LINKAGE_FORMAL_INPUT_AUDIT_APPROVED",
+  "authorized": {
+    "single_source_schema_key_and_finite_value_audit": true,
+    "three_sources_sequentially": true,
+    "numeric_values_exported": false,
+    "cpu_only": true
+  },
+  "not_authorized": {
+    "cosine_aggregation": true,
+    "pair_outcome_construction": true,
+    "outcome_trace_join": true,
+    "spearman_or_other_association": true,
+    "cross_source_value_comparison": true,
+    "model_loading": true,
+    "gpu_execution": true,
+    "network_access": true
+  },
+  "sources": {
+    "eyeglasses_outcome": {
+      "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/measurement_repair_v1/repaired_eyeglasses_evaluation_v1/repaired_eyeglasses_matched_seed_pairs_v1.csv",
+      "bytes": 6122,
+      "sha256": "30817cc712063dcbd48ccd1e7b441aba855df24dd91a42bb645bf65035a6cb4d"
+    },
+    "facial_hair_outcome": {
+      "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/formal_analysis_v1/attribute_pair_contrasts_v1.csv",
+      "bytes": 2966,
+      "sha256": "021399f44f47b235b045f5fc8a211bfb98f68e4b41ec9b83acf4876c6f1502a4"
+    },
+    "injection_summaries": {
+      "path": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003/injection_summaries_v1.csv",
+      "bytes": 186039281,
+      "sha256": "61ed3d1231b7a9dbac9da7b181e8e9435eb1c0bf5880f6d4e45e69ba306ec80b"
+    }
+  },
+  "external_runtime": "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_input_audit/run_001",
+  "next_gate": "ALL_THREE_SINGLE_SOURCE_AUDITS_AND_INDEPENDENT_PACKAGE_VERIFICATION_MUST_PASS_BEFORE_REQUESTING_FORMAL_AGGREGATION_JOIN_AND_ASSOCIATION_APPROVAL"
+}

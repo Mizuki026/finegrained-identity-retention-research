@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_cosine_linkage_six_item_package_v1",
+  "authorized_at_utc": "2026-08-30",
+  "status": "ALL_SIX_ITEMS_APPROVED_IMPLEMENTATION_AND_INPUT_AUDIT_ONLY",
+  "decision_source": "Direct researcher approval in the current session",
+  "source_review_gate": {
+    "path": "governance/mechanism_richer_readout_design_v1/cosine_outcome_linkage_review_gate_v1.md",
+    "bytes": 2299,
+    "sha256": "e8b12aa1975f191e017e7db750c7db7c30cfa85ca0dbe2391941413f201c6e31"
+  },
+  "approved": {
+    "cosine_remains_secondary": true,
+    "complete_36_cell_family_and_existing_aggregation_order": true,
+    "reuse_frozen_outcomes": true,
+    "planned_spearman_coefficients_after_second_approval": 36,
+    "token_quantile_and_frame_families_deferred": true,
+    "analyzer_and_verifier_implementation": true,
+    "cpu_synthetic_tests": true,
+    "no_weight_dry_run": true,
+    "formal_input_audit": true
+  },
+  "not_authorized": {
+    "real_cosine_aggregation": true,
+    "outcome_construction": true,
+    "outcome_join": true,
+    "association_computation": true,
+    "p_values_or_confidence_intervals": true,
+    "token_quantile_or_frame_linkage": true,
+    "model_loading": true,
+    "gpu_execution": true,
+    "network_access": true,
+    "generation_or_regeneration": true,
+    "fallback_assignment_exclusion_or_rerun": true
+  },
+  "compute_boundary": {
+    "cpu_only": true,
+    "gpu_devices": 0,
+    "gpu_hours": 0
+  },
+  "next_gate": "FORMAL_INPUT_AUDIT_AND_IMPLEMENTATION_VERIFICATION_MUST_PASS_THEN_REAL_AGGREGATION_JOIN_AND_ASSOCIATION_REQUIRE_SECOND_EXPLICIT_APPROVAL"
+}

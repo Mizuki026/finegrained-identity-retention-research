@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_cosine_linkage_implementation_and_input_audit_v1",
+  "frozen_at_utc": "2026-08-30",
+  "status": "FROZEN_PASS_IMPLEMENTATION_DRY_RUN_AND_INPUT_AUDIT_AWAITING_SECOND_EXECUTION_APPROVAL",
+  "source_state_commit": "b6e14ede1bb8a07c1e6ed4854ef36387e2cb7a8b",
+  "evidence_manifest": {
+    "path": "governance/mechanism_cosine_linkage_implementation_v1/implementation_evidence_manifest_v1.csv",
+    "bytes": 2097,
+    "sha256": "67f2453f0bfc38a8bae93b6305afa24890dbbe79f741792bf2d67f862872ba1e"
+  },
+  "bindings": {
+    "researcher_authorization": [1612, "4d047bd23a605e7176a037f716001b80a28ddb48c7613e0a2ecfdb7ca2895f82"],
+    "approved_plan": [2728, "40a6b915cb39aad1c6d02caacf333b1bdefc99f5700ea2dde745b244082b2c1a"],
+    "input_audit_authorization": [1822, "fc8b3c9d9154b65bf67ac058a64bc463ab36eb3a38bdc27daf7d569a0136f427"],
+    "analyzer": [19982, "c3e2f76c40f03c8becb60713d805b9581075756296fdf9cdbfe873bf0f1107ba"],
+    "result_verifier": [14568, "91d704fe85a3336ae96b2061bfec437b6cc8ed581f0032d7b11954fe6d790f06"],
+    "input_auditor": [12287, "07b3118db10ccf9192fa1491c35ca6ab008f4faab492accadb1ec7e698716d17"],
+    "input_audit_verifier": [9491, "31be4bdfdbe1a14f3bc08f901fd2cf8291385e07efc1db182766201a625c7b8d"],
+    "tests": [6684, "f4b46eeafd4f11102ca525499ce008fa629f00348c6474ef573b8a4b653d36c4"],
+    "verification_record": [4049, "234ce119a4283faa0fc124d2bf9f85c8a6768ebae1f0f9edea3134a95a02125b"],
+    "execution_review_gate": [1875, "91a3be208f4392adf39db0407dc4090216cfbf88f984c039e61e72f052773a01"]
+  },
+  "verified": {
+    "synthetic_tests": "PASS_9_OF_9",
+    "no_weight_dry_run": "PASS_RUN_002_FINAL_IMPLEMENTATION",
+    "formal_input_audit": "PASS_THREE_OF_THREE",
+    "independent_input_audit_verification": "PASS",
+    "cosine_source_rows": 336000,
+    "cosine_source_finite_targets": 336000,
+    "eyeglasses_finite_targets": 40,
+    "facial_hair_finite_targets": 10
+  },
+  "current_authority": {
+    "implementation": true,
+    "synthetic_tests": true,
+    "dry_run": true,
+    "formal_input_audit": true,
+    "real_cosine_aggregation": false,
+    "outcome_construction": false,
+    "outcome_join": false,
+    "association_computation": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "network": false,
+    "generation": false
+  },
+  "next_gate": "SECOND_EXPLICIT_RESEARCHER_APPROVAL_FOR_EXACT_FORMAL_CPU_RUN_IN_FORMAL_EXECUTION_REVIEW_GATE_V1"
+}
