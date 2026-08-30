@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_resolved_lfe_directional_analysis_approval_v1",
+  "frozen_at_utc": "2026-08-30",
+  "source_head_before_approval_commit": "a582a629688efe9583a17ad570ae12083aaec651",
+  "status": "ALL_SEVEN_DESIGN_DECISIONS_APPROVED_PREREGISTRATION_FROZEN",
+  "approved_design": {
+    "primary_scope": "32 LFE identity-token indices",
+    "analysis": "per-attribute per-token leave-one-matched-pair-out directional readability",
+    "primary_margins": 640,
+    "outcome_blind": true,
+    "complete_family": true,
+    "raw_tensor_persistence": false,
+    "injection_video_token_direction_excluded": true,
+    "direct_lfe_hook_equivalence_required": true,
+    "pooled_lfe_replication_required": true
+  },
+  "approved_compute_ceiling_not_execution_authority": {
+    "gpu_devices": 1,
+    "engineering_gpu_hours": 4,
+    "scientific_gpu_hours": 8,
+    "total_gpu_hours": 12,
+    "full_diffusion_trajectories": 0,
+    "video_generation": false
+  },
+  "approval_evidence_manifest": {
+    "path": "governance/mechanism_token_direction_design_v1/design_approval_evidence_manifest_v1.csv",
+    "artifact_rows": 6,
+    "bytes": 1147,
+    "sha256": "7f4a564f0df33dfc2fbeb6f9ef6b2c58073f08a61e57b6da0d4f2686b3a39c23"
+  },
+  "current_authority": {
+    "preregistration": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "raw_token_capture": false,
+    "scientific_analysis": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "intervention_sequence_gate": "TOKEN_DIRECTION_ANALYSIS_MUST_BE_COMPLETED_INDEPENDENTLY_VERIFIED_FROZEN_INTERPRETED_AND_RESEARCHER_REVIEWED_FIRST",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "decision_id": "token_resolved_lfe_directional_analysis_seven_design_decisions_v1",
+  "decided_at_utc": "2026-08-30",
+  "status": "ALL_SEVEN_DIRECTIONAL_ANALYSIS_DESIGN_DECISIONS_ACCEPTED",
+  "source_decision_gate": {
+    "path": "governance/mechanism_token_direction_design_v1/researcher_decision_gate_v1.md",
+    "bytes": 1905,
+    "sha256": "d03d44d409d1ba696d3d13a194cf743801c8e314d14df43f7d32a6ce48f00cf0"
+  },
+  "accepted_decisions": {
+    "primary_tensor_scope_is_32_lfe_identity_token_slots": true,
+    "injection_17550_video_residual_tokens_excluded_from_v1": true,
+    "analysis_is_outcome_blind": true,
+    "outcome_join_correlation_p_value_or_confidence_interval_authorized": false,
+    "direction_is_per_attribute_per_token_leave_one_matched_pair_out": true,
+    "per_token_l2_normalization_and_tie_threshold_1e_minus_8": true,
+    "complete_640_margin_family_and_all_fixed_summaries_retained": true,
+    "best_token_top_k_or_token_weight_selection_authorized": false,
+    "direct_lfe_hook_equivalence_engineering_gate_required": true,
+    "pooled_lfe_replication_against_frozen_run_003_required": true,
+    "raw_32_by_2048_tokens_remain_transient": true,
+    "raw_identity_reference_or_media_persistence_authorized": false,
+    "single_gpu_ceiling": 1,
+    "engineering_gpu_hour_ceiling": 4,
+    "scientific_gpu_hour_ceiling": 8,
+    "total_gpu_hour_ceiling": 12,
+    "passing_preregistration_authorizes_execution": false,
+    "controlled_intervention_preregistration_remains_deferred": true
+  },
+  "claim_boundary": "FIXED_PANEL_OUTCOME_BLIND_LINEAR_TOKEN_INDEX_READABILITY_ONLY_NO_ATTRIBUTE_CONTENT_CAUSAL_LOCALIZATION_SPARSITY_DISTRIBUTION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_ROUTE_NECESSITY_SUFFICIENCY_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "current_authority": {
+    "fixed_preregistration_approved": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "raw_token_capture": false,
+    "scientific_analysis": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}
