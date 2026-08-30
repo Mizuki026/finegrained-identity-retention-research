@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_cosine_outcome_linkage_v1_run_001_freeze",
+  "frozen_at_utc": "2026-08-30",
+  "status": "FROZEN_PASS_COMPLETE_CPU_COSINE_LINKAGE_PENDING_RESEARCHER_INTERPRETATION_DECISION",
+  "source_state_commit": "5c96e70410847198523bfb1fe889d295ba4a602f",
+  "governance_artifacts": {
+    "researcher_formal_execution_authorization_v1.json": [2975, "53ccb757eaac9ba67d09d1dc75a4e3670d3d956929376920110d63829ea1dedb"],
+    "formal_cosine_linkage_execution_record_v1.json": [3049, "a22d665ddd6bb0b4e0b93b5bfba0b14d5f54ba6aa083d216799af4850f9c3acd"],
+    "cosine_scientific_interpretation_proposal_v1.md": [6783, "1a5fdeeebbdb46728cbf7026700a0f077d5d1d85ce846e37ca4c2b4319ace08a"]
+  },
+  "external_execution_authorization": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_execution_authorization/run_001_execution_authorization_v1.json",
+    "bytes": 6976,
+    "sha256": "45f5525d43c4d67b51f4a82416fda1926ce4c9c2338428a28bbf91480fef7b4b",
+    "mode": "0444"
+  },
+  "external_runtime": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "file_count": 6,
+    "files": {
+      "analysis_summary_v1.json": [339, "e2ec38a8f95f93c29d3d72987283c0aff122dea75aaedd8ef13dcbdd0a78ed8a"],
+      "cosine_outcome_associations_v1.csv": [3194, "71e0dff6e6be024540062424274c29c664e965690ef49ac97d30327f356d8b6b"],
+      "cosine_outcome_joined_pairs_v1.csv": [39977, "5fa35d81c013d8c1abb727d542242614eed579d07fab9767ce6202d8fc593c34"],
+      "cosine_pair_3x3_v1.csv": [38195, "8faa806761a5de4da1550dc9016e919b980b054082c6beb05cda8c5660055dd1"],
+      "cosine_task_3x3_v1.csv": [400415, "85b946aabaa3fd60e2e18588fba95e097a93ad3406abfa87993b26216f8e06b5"],
+      "independent_verification_v1.json": [327, "bba80dc879312a70351bdc38fc5e0e309a2934eab45cb61955ddebb4882159c9"]
+    }
+  },
+  "verified_counts": {
+    "task_cells": 2880,
+    "pair_cells": 360,
+    "joined_rows": 360,
+    "associations": 36,
+    "defined_associations": 36
+  },
+  "safety": {
+    "gpu_hours": 0,
+    "model_loaded": false,
+    "network_used": false,
+    "generation_run": false,
+    "frozen_sources_modified": false,
+    "token_quantile_or_frame_family_computed": false
+  },
+  "claim_boundary": "FIXED_PANEL_SECONDARY_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_ATTRIBUTE_CONTENT_OR_PROVEN_ALIGNMENT_CONCLUSION",
+  "next_gate": "RESEARCHER_ACCEPT_REJECT_OR_REVISE_COSINE_SCIENTIFIC_INTERPRETATION_PROPOSAL_V1"
+}

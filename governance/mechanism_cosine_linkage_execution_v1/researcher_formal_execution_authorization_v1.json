@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "authorization_id": "mechanism_cosine_outcome_linkage_formal_execution_v1",
+  "authorized_at_utc": "2026-08-30",
+  "status": "COMPLETE_PRESPECIFIED_CPU_COSINE_LINKAGE_EXECUTION_APPROVED",
+  "decision_source": "Direct researcher approval in the current session",
+  "source_review_gate": {
+    "path": "governance/mechanism_cosine_linkage_implementation_v1/formal_execution_review_gate_v1.md",
+    "bytes": 1875,
+    "sha256": "91a3be208f4392adf39db0407dc4090216cfbf88f984c039e61e72f052773a01"
+  },
+  "authorized": {
+    "real_cosine_aggregation": true,
+    "task_cells": 2880,
+    "pair_cells": 360,
+    "outcome_construction": true,
+    "joined_rows": 360,
+    "association_method": "Spearman rank correlation with average ranks",
+    "associations": 36,
+    "complete_family_reporting": true,
+    "independent_full_recomputation": true,
+    "external_only_pair_level_outputs": true,
+    "cpu_only": true
+  },
+  "not_authorized": {
+    "p_values_or_confidence_intervals": true,
+    "token_quantile_or_frame_families": true,
+    "reduced_panel_or_cell_selection": true,
+    "fallback_assignment_exclusion_or_rerun": true,
+    "source_modification": true,
+    "model_loading": true,
+    "gpu_execution": true,
+    "network_access": true,
+    "generation_or_regeneration": true,
+    "intervention_or_ablation": true,
+    "causal_or_localization_claim": true
+  },
+  "bindings": {
+    "approved_plan": [
+      "governance/mechanism_cosine_linkage_implementation_v1/approved_cosine_outcome_linkage_plan_v1.json",
+      2728,
+      "40a6b915cb39aad1c6d02caacf333b1bdefc99f5700ea2dde745b244082b2c1a"
+    ],
+    "analyzer": [
+      "src/analyze_cosine_outcome_linkage_v1.py",
+      19982,
+      "c3e2f76c40f03c8becb60713d805b9581075756296fdf9cdbfe873bf0f1107ba"
+    ],
+    "result_verifier": [
+      "src/verify_cosine_outcome_linkage_v1.py",
+      14568,
+      "91d704fe85a3336ae96b2061bfec437b6cc8ed581f0032d7b11954fe6d790f06"
+    ],
+    "input_audit_verification": [
+      "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_input_audit/run_001/independent_verification_v1.json",
+      1744,
+      "238344bb137ad19f0a794630a6dd1e2572e6c97e4fcedfaca81389eae74c4887"
+    ]
+  },
+  "external_execution_authorization": "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_execution_authorization/run_001_execution_authorization_v1.json",
+  "external_runtime": "/root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_runtime/run_001",
+  "compute_budget": {
+    "gpu_devices": 0,
+    "gpu_hours": 0,
+    "cpu_only": true,
+    "wall_time_minutes_upper_bound_including_verification": 5
+  },
+  "claim_boundary": "FIXED_PANEL_SECONDARY_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_ATTRIBUTE_CONTENT_OR_PROVEN_ALIGNMENT_CONCLUSION",
+  "next_gate": "INDEPENDENT_RESULT_VERIFICATION_THEN_RESEARCHER_SCIENTIFIC_INTERPRETATION_DECISION"
+}
