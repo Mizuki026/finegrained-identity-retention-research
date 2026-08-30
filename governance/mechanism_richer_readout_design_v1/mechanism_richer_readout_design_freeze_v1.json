@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "freeze_id": "mechanism_richer_readout_design_v1",
+  "frozen_at_utc": "2026-08-30",
+  "status": "FROZEN_DESIGN_REVIEW_REQUIRED_NO_EXECUTION_AUTHORITY",
+  "source_state_commit": "6f46b7f94ef20eff529c9950abcc5ffc311ac0fb",
+  "artifacts": {
+    "researcher_linkage_interpretation_acceptance_v1.json": {
+      "bytes": 1870,
+      "sha256": "b5adafb791b45d26e9e007f83211797a0bdbff9b923d4b128aa4b0f4ff7a2b5d"
+    },
+    "richer_summary_feasibility_audit_v1.json": {
+      "bytes": 2874,
+      "sha256": "15c68159815f6d6c22b96fb017c6ef46f776f00fda1cecfd84a073792ce7f27b"
+    },
+    "cosine_outcome_linkage_preregistration_v1.json": {
+      "bytes": 4881,
+      "sha256": "d10ce35465150ed68317e91d15a2848a0d2494653c48672b3a794aa9cc49fa3a"
+    },
+    "cosine_outcome_linkage_review_gate_v1.md": {
+      "bytes": 2299,
+      "sha256": "e8b12aa1975f191e017e7db750c7db7c30cfa85ca0dbe2391941413f201c6e31"
+    }
+  },
+  "frozen_source_binding": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003/injection_summaries_v1.csv",
+    "bytes": 186039281,
+    "sha256": "61ed3d1231b7a9dbac9da7b181e8e9435eb1c0bf5880f6d4e45e69ba306ec80b",
+    "rows": 336000
+  },
+  "approved_scientific_framework": {
+    "representation_readout_mismatch_or_reorganization": "ACCEPTED_WORKING_EXPLANATION_NOT_PROVEN_MECHANISM",
+    "multi_path_distributed_representation": "ACCEPTED_WORKING_MODEL_NOT_CAUSALLY_VERIFIED",
+    "scalar_residual_rms": "NOT_UNIVERSAL_ATTRIBUTE_MECHANISM_OBSERVABLE_DOES_NOT_REFUTE_LOCAL_ROUTE",
+    "linkage_result": "FIXED_PANEL_COVARIATION_HETEROGENEITY_NO_LOCALIZATION_BOTTLENECK_NECESSITY_OR_SUFFICIENCY",
+    "panel_scope": "TEN_PAIRS_PER_ATTRIBUTE_NO_POPULATION_OR_CROSS_ATTRIBUTE_CLAIM"
+  },
+  "next_minimum": "EXISTING_SECONDARY_MEAN_TOKENWISE_COSINE_H_R_COMPLETE_36_CELL_CPU_ONLY_LINKAGE",
+  "current_authority": {
+    "read_only_feasibility_audit": true,
+    "design_freeze": true,
+    "analyzer_or_verifier_implementation": false,
+    "formal_input_audit": false,
+    "real_aggregation": false,
+    "outcome_join": false,
+    "association_computation": false,
+    "model_loading": false,
+    "gpu_execution": false,
+    "generation": false
+  },
+  "next_gate": "RESEARCHER_APPROVAL_OF_ALL_SIX_ITEMS_IN_COSINE_OUTCOME_LINKAGE_REVIEW_GATE_V1"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "decision_id": "mechanism_outcome_linkage_interpretation_acceptance_v1",
+  "decided_at_utc": "2026-08-30",
+  "status": "ALL_FIVE_LINKAGE_INTERPRETATIONS_ACCEPTED",
+  "decision_source": "Direct researcher acceptance in the current session",
+  "source_proposal": {
+    "path": "governance/mechanism_outcome_linkage_execution_v1/scientific_interpretation_proposal_v1.md",
+    "bytes": 8142,
+    "sha256": "a6260ab5d0877e4d530009d3aeea7e2471b446327bb423922b5ac7c3a4ed1c51"
+  },
+  "accepted_interpretations": {
+    "representation_readout_mismatch_or_reorganization_fits_better_than_lfe_disappearance": true,
+    "attribute_disappearance_in_lfe_is_established": false,
+    "multi_path_distributed_representation_remains_working_model": true,
+    "multi_path_distributed_representation_is_causally_verified": false,
+    "scalar_residual_rms_is_not_a_universal_attribute_mechanism_observable": true,
+    "scalar_residual_rms_result_refutes_local_route": false,
+    "fixed_panel_covariation_heterogeneity_is_observed": true,
+    "grid_localization_or_bottleneck_is_established": false,
+    "route_necessity_or_sufficiency_is_established": false,
+    "ten_pairs_per_attribute_support_population_or_cross_attribute_claims": false
+  },
+  "autonomous_continuation": {
+    "read_only_existing_artifact_feasibility_audit": true,
+    "next_stage_preregistration_drafting": true,
+    "scientific_analysis_proposals_for_researcher_decision": true,
+    "new_unapproved_metric_computation": false,
+    "new_model_or_gpu_execution": false
+  },
+  "claim_boundary": "FIXED_PANEL_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_OR_PROVEN_BOTTLENECK_CONCLUSION",
+  "next_action": "READ_ONLY_FEASIBILITY_AUDIT_AND_PREREGISTER_THE_MINIMAL_EXISTING_SECONDARY_READOUT_ANALYSIS"
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "plan_id": "mean_tokenwise_cosine_outcome_linkage_v1",
+  "created_at_utc": "2026-08-30",
+  "status": "PROPOSED_FIXED_DESIGN_RESEARCHER_APPROVAL_REQUIRED_NO_EXECUTION_AUTHORITY",
+  "scientific_priority": "MINIMAL_EXISTING_DIRECTION_SENSITIVE_SECONDARY_DIAGNOSTIC",
+  "rationale": "The accepted linkage interpretation identifies scalar residual RMS as mechanistically incomplete. Mean tokenwise cosine(H,R) was prospectively captured as a secondary injection metric and is the smallest available direction-sensitive summary that does not require model loading, raw tensors, GPU use, or regeneration.",
+  "frozen_panels": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "matched_pairs_per_attribute": 10,
+    "seeds_per_reference_unit": 4,
+    "cfg_branches": ["unconditional", "text"],
+    "block_groups": ["early", "middle", "late"],
+    "denoising_groups": ["early", "middle", "late"]
+  },
+  "mechanism_metric": {
+    "source_column": "mean_tokenwise_cosine_h_r",
+    "original_definition": "mean over video tokens of dot(H,R)/(max(norm(H),1e-12)*max(norm(R),1e-12))",
+    "original_role": "secondary injection diagnostic",
+    "promotion_to_primary": false,
+    "new_tensor_measurement": false,
+    "interpretation": "Compressed directional alignment between the current hidden state and local residual, not attribute content and not an attribute-specific vector direction."
+  },
+  "prespecified_aggregation": [
+    "For every trace task and each complete CFG-branch by 3x3 block/denoising cell, take the arithmetic mean of all frozen row-level mean_tokenwise_cosine_h_r values.",
+    "Require exact task-cell position counts of 119,119,112 across denoising early,middle,late for each seven-site block group.",
+    "Average the four seed task-cell values within each frozen reference unit.",
+    "Form positive-minus-control within each frozen matched pair.",
+    "Construct eyeglasses outcomes by the already-approved four-seed human-consensus mean and reuse the ten frozen facial-hair outcome values unchanged.",
+    "Join separately by attribute and formal_pair_id.",
+    "Compute Spearman rank correlation with average ranks for every one of the 36 attribute-by-branch-by-block-by-denoising cells."
+  ],
+  "planned_outputs": {
+    "task_cell_rows": 2880,
+    "pair_cell_rows": 360,
+    "joined_pair_rows": 360,
+    "associations": 36,
+    "p_values": false,
+    "confidence_intervals": false,
+    "complete_family_reporting": true
+  },
+  "directional_interpretation_rules": {
+    "positive_rho": "Within that fixed attribute panel and cell, a larger positive-minus-control cosine contrast co-varies with a larger retention outcome.",
+    "near_zero_rho": "The compressed mean-cosine contrast does not rank retention heterogeneity in that cell; this does not refute the local route or vector/token mechanisms.",
+    "negative_rho": "A larger positive-minus-control cosine contrast co-varies inversely with retention in that cell; this does not imply harmful causal injection.",
+    "mixed_grid": "Consistent with stage/state dependence of this compressed observable; not localization.",
+    "coherent_grid": "Broad descriptive covariation only; not route necessity, sufficiency, or causal alignment."
+  },
+  "fail_closed_rules": {
+    "source_path_byte_or_sha_mismatch": "ABORT",
+    "unexpected_header_key_or_row_count": "ABORT",
+    "duplicate_or_missing_task_position": "ABORT",
+    "nonfinite_metric_or_outcome": "ABORT",
+    "missing_pair_or_incomplete_seed_set": "ABORT_NO_REDUCED_PANEL",
+    "existing_nonempty_output_directory": "ABORT_NO_OVERWRITE",
+    "fallback_policy": "UNMAPPED_RUN_LEVEL_LIMITATION_NO_ASSIGNMENT_EXCLUSION_OR_RERUN"
+  },
+  "deferred_existing_summaries": {
+    "token_rms_quantiles": "Deferred to avoid expanding the next family from 36 to 108 coefficients before evaluating the minimal direction-sensitive diagnostic.",
+    "per_frame_rms": "Deferred because 13 latent-frame summaries are repeated measurements and a scientifically justified complete-family reporting design is not yet fixed.",
+    "raw_vector_or_token_pattern": "Unavailable from run-003; raw tensors were prospectively forbidden and not persisted."
+  },
+  "compute_budget": {
+    "gpu_devices": 0,
+    "gpu_hours": 0,
+    "model_loading": false,
+    "generation": false,
+    "cpu_only": true,
+    "expected_wall_time_minutes_upper_bound_including_independent_verification": 5
+  },
+  "claim_boundary": "FIXED_PANEL_SECONDARY_DESCRIPTIVE_COVARIATION_ONLY_NO_CAUSAL_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_LOCALIZATION_ROUTE_NECESSITY_OR_SUFFICIENCY_CROSS_ATTRIBUTE_ATTRIBUTE_CONTENT_OR_PROVEN_ALIGNMENT_CONCLUSION",
+  "authorization": {
+    "analyzer_or_verifier_implementation": false,
+    "formal_aggregation": false,
+    "outcome_join": false,
+    "association_computation": false,
+    "requires_new_explicit_researcher_approval": true
+  }
+}

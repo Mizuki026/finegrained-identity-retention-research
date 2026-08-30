@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "audit_id": "phase_s_run_003_richer_summary_feasibility_audit_v1",
+  "audited_at_utc": "2026-08-30",
+  "status": "PASS_RICHER_SUMMARY_SINGLE_SOURCE_FEASIBILITY_AUDIT",
+  "scope": "READ_ONLY_SCHEMA_KEY_FINITE_VALUE_AND_FROZEN_BINDING_AUDIT_NO_AGGREGATION_JOIN_OR_ASSOCIATION",
+  "source": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003/injection_summaries_v1.csv",
+    "bytes": 186039281,
+    "sha256": "61ed3d1231b7a9dbac9da7b181e8e9435eb1c0bf5880f6d4e45e69ba306ec80b",
+    "authority_confirmed_by": [
+      "governance/session_handoff_v2/artifact_index_v2.csv:S003",
+      "governance/mechanism_trace_phase_s_run_003_v1/phase_s_run_003_evidence_manifest_v1.csv:S006"
+    ]
+  },
+  "audited_existing_secondary_fields": [
+    "mean_tokenwise_cosine_h_r",
+    "token_rms_r_q10",
+    "token_rms_r_q50",
+    "token_rms_r_q90",
+    "frame_rms_r_00",
+    "frame_rms_r_01",
+    "frame_rms_r_02",
+    "frame_rms_r_03",
+    "frame_rms_r_04",
+    "frame_rms_r_05",
+    "frame_rms_r_06",
+    "frame_rms_r_07",
+    "frame_rms_r_08",
+    "frame_rms_r_09",
+    "frame_rms_r_10",
+    "frame_rms_r_11",
+    "frame_rms_r_12"
+  ],
+  "checks": {
+    "rows_exact_336000": true,
+    "tasks_exact_160": true,
+    "rows_per_task_exact_2100": true,
+    "unique_task_step_site_branch_keys_exact_336000": true,
+    "attributes_exact_eyeglasses_and_facial_hair": true,
+    "roles_exact_positive_and_control": true,
+    "branches_balanced_168000_each": true,
+    "all_audited_values_parseable_and_finite": true,
+    "bytes_match_freeze": true,
+    "sha256_matches_both_authorities": true
+  },
+  "audit_wall_seconds": 4.953,
+  "gpu_used": false,
+  "model_loaded": false,
+  "aggregation_computed": false,
+  "outcome_opened": false,
+  "join_computed": false,
+  "association_computed": false,
+  "initial_expectation_error": {
+    "occurred": true,
+    "incorrect_locally_supplied_expected_sha256": "3a96d36aa655ea2c2ef4c6e5ef235c638dbe3290acba12c3c7d6d71026fb1419",
+    "observed_sha256": "61ed3d1231b7a9dbac9da7b181e8e9435eb1c0bf5880f6d4e45e69ba306ec80b",
+    "resolution": "Both frozen authorities matched the observed SHA256; the failure was an operator-supplied expectation error, not artifact drift. The same audit was rerun with the authoritative binding and passed.",
+    "artifact_modified": false,
+    "analysis_executed_before_resolution": false
+  },
+  "feasibility_boundary": {
+    "available": "Already-recorded bounded scalar summaries can support CPU-only secondary diagnostics.",
+    "unavailable": "Raw residual vectors, 32-token identity representations, token identities, and query-state tensors were intentionally not persisted and cannot be reconstructed from this run.",
+    "not_proven": "A mean cosine summary is not an attribute-content direction and cannot test causal alignment or token pattern mechanisms."
+  }
+}
