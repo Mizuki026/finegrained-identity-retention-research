@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_direction_scientific_runner_readiness_v1",
+  "frozen_at_utc": "2026-09-01",
+  "status": "FROZEN_PASS_SCIENTIFIC_RUNNER_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN",
+  "researcher_authority": {
+    "path": "governance/mechanism_token_direction_scientific_v1/researcher_scientific_execution_authorization_v1.json",
+    "bytes": 1927,
+    "sha256": "877e913d451bd8c78df80f7e5fd61fa898420c86e8c0740a9fbef43426b6dd6e"
+  },
+  "dry_run_authorization": {
+    "path": "governance/mechanism_token_direction_scientific_v1/scientific_runner_no_weight_dry_run_authorization_v1.json",
+    "bytes": 2580,
+    "sha256": "7f537f5d60cd24f739fd80fb94327d8dd193292326d66768172294521c973730"
+  },
+  "dry_run_outputs": {
+    "plan": ["/root/autodl-tmp/finegrained/mechanism_token_direction_scientific_v1_dry_run/run_001/scientific_execution_plan_v1.csv", 22070, "e175fedca33063b530ced56c395ae09e95b363c75759b2471ac2e4f345c5c979"],
+    "summary": ["/root/autodl-tmp/finegrained/mechanism_token_direction_scientific_v1_dry_run/run_001/scientific_runner_no_weight_dry_run_v1.json", 450, "d9ed8ce34ab883d881c22b378958d6535b47d0d4ca91989e547e3295bd61a15d"]
+  },
+  "verified": {
+    "cpu_tests": 20,
+    "cpu_test_failures": 0,
+    "top_level_ml_imports": 0,
+    "raw_tensor_serializers": 0,
+    "scientific_plan_rows": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "primary_margin_rows": 640,
+    "gpu_used": false,
+    "model_or_weight_loading": false,
+    "reference_access": false,
+    "outcome_access": false
+  },
+  "transaction_rule": "NO_AGGREGATE_OUTPUT_IS_WRITTEN_UNLESS_ALL_160_EXTRACTIONS_FIXED_ANALYSIS_POOLED_REPLICATION_AND_INDEPENDENT_IN_MEMORY_RECOMPUTATION_PASS",
+  "next_gate": "COMMIT_CODE_BOUND_READINESS_THEN_CREATE_FINAL_ACTIVE_SCIENTIFIC_GPU_AUTHORIZATION"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_direction_scientific_runner_no_weight_dry_run_v1",
+  "authorized_at_utc": "2026-09-01",
+  "status": "TOKEN_DIRECTION_SCIENTIFIC_RUNNER_NO_WEIGHT_DRY_RUN_AUTHORIZED",
+  "gpu_execution_explicitly_approved": false,
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_scientific_v1_dry_run/run_001",
+  "formal_input_audit_freeze": {"path": "governance/mechanism_token_direction_input_audit_v1/formal_input_audit_freeze_v1.json", "bytes": 2163, "sha256": "9afb0ba904bcb573716d3d6366efb600b0a674f1750b22f24cc5a17e15a7ca84"},
+  "phase_e_freeze": {"path": "governance/mechanism_token_direction_engineering_v1/phase_e_run_001_execution_freeze_v1.json", "bytes": 1961, "sha256": "83417a2c0a60558b9c72117b0e97558bb49c56ee243e4b9a4b49f6c979f94656"},
+  "code": {
+    "token_resolved_lfe_direction_protocol_v1.py": {"path": "src/token_resolved_lfe_direction_protocol_v1.py", "bytes": 14495, "sha256": "bb884db237a0f32818e111167f9863494d43c00539a467e8de6ae810f23d0d79"},
+    "token_resolved_lfe_direction_instrumentation_v1.py": {"path": "src/token_resolved_lfe_direction_instrumentation_v1.py", "bytes": 7196, "sha256": "8a8814d84d460b20f1aa28ab818750053aaa898072cdad8333c86195e0b244c5"},
+    "analyze_token_resolved_lfe_direction_v1.py": {"path": "src/analyze_token_resolved_lfe_direction_v1.py", "bytes": 11748, "sha256": "dda56c5aaa4c057e34d64a09f87a4851234c2ea7a80eed145cdde3dcad7943f5"},
+    "verify_token_resolved_lfe_direction_v1.py": {"path": "src/verify_token_resolved_lfe_direction_v1.py", "bytes": 15403, "sha256": "4bfa67b028735c55d40f88bb4c6539525793b08b3a58d93b3499e0b798481cdb"},
+    "run_token_resolved_lfe_direction_scientific_v1.py": {"path": "src/run_token_resolved_lfe_direction_scientific_v1.py", "bytes": 9401, "sha256": "0e184f61e6f7d16fbdc8ce98a96b2e6e04d6cd62786ee98f7b5bbdd243b6bd10"},
+    "token_resolved_lfe_direction_scientific_runtime_v1.py": {"path": "src/token_resolved_lfe_direction_scientific_runtime_v1.py", "bytes": 6337, "sha256": "4f4c06285c8136535d8d934e6bc02b26bd353c62a8e129af256f94dc99ddd596"},
+    "verify_token_resolved_lfe_direction_scientific_outputs_v1.py": {"path": "src/verify_token_resolved_lfe_direction_scientific_outputs_v1.py", "bytes": 4299, "sha256": "1cd49ccd02014c115a516e10c7a25a76d6eb2401d0cfbf1df5c7d4a41e418caa"}
+  },
+  "authority": {"cpu_only_no_weight_dry_run": true, "gpu_execution": false, "reference_access": false, "model_or_weight_loading": false, "raw_token_capture": false, "scientific_analysis": false, "outcome_access": false, "network": false}
+}

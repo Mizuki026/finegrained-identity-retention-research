@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_direction_scientific_execution_v1",
+  "authorized_at_utc": "2026-09-01",
+  "researcher_decisions": [
+    "批准下一步 scientific reference extraction",
+    "批准单 GPU scientific run：执行完整 160 次 reference/LFE extraction，并在同一进程内完成预注册的 640-margin outcome-blind analysis、固定汇总、pooled-LFE replication 与独立复算"
+  ],
+  "authorized": {
+    "scientific_runner_implementation_and_audit": true,
+    "cpu_only_tests_and_no_weight_dry_run": true,
+    "single_gpu_scientific_reference_extraction": true,
+    "scientific_reference_records": 160,
+    "transient_in_memory_raw_tokens": true,
+    "fixed_640_margin_outcome_blind_analysis": true,
+    "fixed_64_token_and_20_pair_summaries": true,
+    "pooled_lfe_replication": true,
+    "independent_in_memory_recomputation": true,
+    "aggregate_output_persistence": true
+  },
+  "not_authorized": {
+    "raw_identity_or_token_tensor_persistence": true,
+    "reference_image_or_media_copy": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "p_values_or_confidence_intervals": true,
+    "token_selection_or_weight_fitting": true,
+    "cross_attribute_ranking": true,
+    "video_generation_or_decode": true,
+    "full_diffusion_trajectory": true,
+    "fallback_assignment_exclusion_or_rerun": true,
+    "controlled_intervention": true,
+    "network": true
+  },
+  "phase_e_freeze": {
+    "path": "governance/mechanism_token_direction_engineering_v1/phase_e_run_001_execution_freeze_v1.json",
+    "required_status": "FROZEN_PASS_PHASE_E_EXECUTION_AND_INDEPENDENT_VERIFICATION"
+  },
+  "compute_ceiling": {
+    "gpu_devices": 1,
+    "scientific_gpu_hours": 8,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0
+  },
+  "status": "SCIENTIFIC_RUNNER_AND_SINGLE_GPU_FIXED_ANALYSIS_AUTHORIZED_SUBJECT_TO_FINAL_CODE_BOUND_EXECUTION_GATE"
+}
