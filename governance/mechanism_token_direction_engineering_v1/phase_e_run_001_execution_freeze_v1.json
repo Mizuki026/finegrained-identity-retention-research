@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_direction_phase_e_run_001_execution_v1",
+  "frozen_at_utc": "2026-09-01",
+  "source_head_before_execution_record_commit": "70e5923",
+  "status": "FROZEN_PASS_PHASE_E_EXECUTION_AND_INDEPENDENT_VERIFICATION",
+  "execution_record": {
+    "path": "governance/mechanism_token_direction_engineering_v1/phase_e_run_001_execution_record_v1.json",
+    "bytes": 2568,
+    "sha256": "36fc2d30e91b5d05cc1337e438e7180f3afd33f1e40d8a6b18f2449cc0b95959"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_engineering_v1/phase_e_run_001_execution_evidence_manifest_v1.csv",
+    "artifact_rows": 14,
+    "bytes": 2687,
+    "sha256": "1a9dd32138b887b71f461847500093fd6f8177eba1063b498259fdf2b6424c54"
+  },
+  "verified": {
+    "full_frozen_weight_rehash": true,
+    "model_weight_inventory_rows": 72,
+    "engineering_units": 8,
+    "operations_complete": 24,
+    "direct_lfe_passes": 16,
+    "one_step_hook_controls": 8,
+    "transformer_steps": 8,
+    "direct_repeat_and_hook_equivalence": true,
+    "independent_verification": true,
+    "raw_identity_or_token_tensor_files": 0,
+    "decoded_media_files": 0,
+    "full_diffusion_trajectories": 0,
+    "scientific_reference_extraction": false,
+    "outcome_access_or_join": false,
+    "gpu_released_after_execution": true
+  },
+  "compute": {
+    "gpu_devices": 1,
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "elapsed_gpu_hours": 0.026403488656505943,
+    "hard_ceiling_gpu_hours": 4.0
+  },
+  "scientific_status": "ENGINEERING_GATE_PASSED_NO_TOKEN_DIRECTION_SCIENTIFIC_RESULT_YET",
+  "current_authority": {
+    "phase_e_engineering_execution_complete": true,
+    "scientific_reference_extraction": false,
+    "token_margin_analysis": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_APPROVAL_REQUIRED_FOR_SCIENTIFIC_REFERENCE_EXTRACTION"
+}

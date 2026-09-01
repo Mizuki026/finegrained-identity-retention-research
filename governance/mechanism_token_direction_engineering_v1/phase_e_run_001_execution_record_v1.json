@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "record_id": "token_direction_phase_e_run_001_execution_v1",
+  "executed_at_utc": "2026-09-01",
+  "source_head": "70e5923",
+  "status": "PASS_PHASE_E_EXECUTION_AND_INDEPENDENT_VERIFICATION",
+  "authorization": {
+    "path": "governance/mechanism_token_direction_engineering_v1/phase_e_run_001_final_execution_authorization_v1.json",
+    "bytes": 4853,
+    "sha256": "07c6934bb2650bf0bd931e4773bee23f39aa19a8f7743ea49e1d5b3bb7593b17",
+    "researcher_gpu_execution_approval": true
+  },
+  "runtime": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_runtime/phase_e_run_001",
+    "gpu_uuid": "GPU-1c59572d-873f-52a2-b2f6-4a10b2b5a1f2",
+    "gpu_name": "NVIDIA GeForce RTX 4090",
+    "gpu_devices": 1,
+    "elapsed_gpu_hours": 0.026403488656505943,
+    "phase_gpu_hours_ceiling": 4.0,
+    "full_model_weight_inventory_rows_rehashed": 72
+  },
+  "engineering_results": {
+    "engineering_units": 8,
+    "operations_complete": 24,
+    "operation_start_events": 24,
+    "operation_complete_events": 24,
+    "direct_lfe_passes": 16,
+    "one_step_hook_controls": 8,
+    "transformer_steps": 8,
+    "direct_repeat_and_hook_equivalence_status": "PASS_LFE_DIRECT_REPEAT_AND_HOOK_EQUIVALENCE",
+    "independent_verification_status": "PASS_INDEPENDENT_TOKEN_DIRECTION_PHASE_E_VERIFICATION"
+  },
+  "boundary_audit": {
+    "full_diffusion_trajectories": 0,
+    "decoded_media_files": 0,
+    "raw_identity_or_token_tensor_files": 0,
+    "scientific_reference_extraction": false,
+    "token_margin_analysis": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false,
+    "network_access": false
+  },
+  "run_level_limitations": [
+    "face-detection fallback messages were observed on the execution console",
+    "fallback messages are retained only as a Phase-E run-level limitation",
+    "no fallback event is assigned to a formal unit, pair, attribute, role or task",
+    "no unit was excluded, replaced or rerun"
+  ],
+  "hardware_binding_note": {
+    "draft_gpu_uuid": "GPU-f8e1bff2-2e30-058a-c44f-cc6789f80622",
+    "execution_gpu_uuid": "GPU-1c59572d-873f-52a2-b2f6-4a10b2b5a1f2",
+    "same_model_memory_and_driver": true,
+    "scientific_parameter_change": false,
+    "recorded_as_cloud_node_instance_reallocation": true
+  },
+  "scientific_meaning": "ENGINEERING_GATE_ONLY_THIS_PASS_DOES_NOT_ESTABLISH_TOKEN_DIRECTION_SCIENTIFIC_RESULTS_OR_MECHANISM_CLAIMS",
+  "next_gate": "RESEARCHER_REVIEW_THEN_SEPARATE_SCIENTIFIC_REFERENCE_EXTRACTION_AUTHORIZATION_IF_DESIRED"
+}
