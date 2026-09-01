@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "decision_id": "complete_panel_fresh_preprocessing_repeatability_diagnostic_v1",
+  "decided_at_utc": "2026-09-02",
+  "researcher_instruction": "确认七项设计决定并授权正式预注册",
+  "status": "ALL_SEVEN_FRESH_PREPROCESSING_REPEATABILITY_DESIGN_DECISIONS_APPROVED_PREREGISTRATION_ONLY",
+  "source_design_proposal": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/preprocessing_repeatability_design_decision_proposal_v1.md",
+    "bytes": 4838,
+    "sha256": "71391e34280a09e400d098f86ad710e4db9b462bb7b19c5b66dc2100ed92b5e8"
+  },
+  "approved_design": {
+    "current_runtime_within_process_repeatability_only": true,
+    "complete_40_unit_panel_no_selection": true,
+    "fresh_preprocessing_calls_per_unit": 2,
+    "direct_lfe_repeats_per_preprocessing_result": 2,
+    "total_preprocessing_calls": 80,
+    "total_direct_lfe_calls": 160,
+    "transformer_steps": 0,
+    "complete_prespecified_output_families": true,
+    "frozen_tolerances_unchanged": true,
+    "token_margin_rows_640": 0,
+    "fallback_default_handling": "RUN_LEVEL_ONLY_UNLESS_UNCHANGED_API_EXPOSES_ROBUST_MACHINE_READABLE_STATUS",
+    "gpu_devices": 1,
+    "expected_gpu_hours": [0.05, 0.20],
+    "hard_gpu_hours_ceiling": 2,
+    "raw_tensor_or_media_persistence": false
+  },
+  "current_authority": {
+    "formal_preregistration_only": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false
+  }
+}

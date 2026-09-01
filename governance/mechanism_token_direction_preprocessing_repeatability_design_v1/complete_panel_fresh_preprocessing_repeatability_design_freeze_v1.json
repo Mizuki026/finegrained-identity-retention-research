@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "freeze_id": "complete_panel_fresh_preprocessing_repeatability_diagnostic_design_v1",
+  "frozen_at_utc": "2026-09-02",
+  "source_head_before_design_commit": "1cb4c5c56a0d734d056b0fc3063d8760ba61cf6c",
+  "status": "FROZEN_APPROVED_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_PREREGISTRATION_ONLY",
+  "researcher_decision": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/researcher_preregistration_decision_v1.json",
+    "bytes": 1754,
+    "sha256": "95197a10e3f53ec7b1851968e274ba5c514b0c0277c6deb030a7425a7efb7ede"
+  },
+  "protocol": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/complete_panel_fresh_preprocessing_repeatability_protocol_v1.md",
+    "bytes": 8640,
+    "sha256": "659108ab8247e6fab346f8bf10c49a3e1a5714dfdeb5ff5d87a70b4c30462529"
+  },
+  "machine_preregistration": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/complete_panel_fresh_preprocessing_repeatability_preregistration_v1.json",
+    "bytes": 4165,
+    "sha256": "e0f5eae38b4d34d5d032fe0797bd44989c6071d1b2de989d70d3b1abfd2d7561"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/preprocessing_repeatability_design_evidence_manifest_v1.csv",
+    "artifact_rows": 15,
+    "bytes": 3444,
+    "sha256": "2cbcbdaafc35a407bed0bfde5035b953022408019e271730428e9d4b0428338a"
+  },
+  "frozen_design": {
+    "formal_units": 40,
+    "fresh_preprocessing_calls_per_unit": 2,
+    "total_preprocessing_calls": 80,
+    "direct_lfe_repeats_per_preprocessing_result": 2,
+    "total_direct_lfe_calls": 160,
+    "hooks": 0,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "within_preprocessing_direct_repeat_rows": 80,
+    "cross_preprocessing_lfe_equivalence_rows": 40,
+    "preprocessing_replicate_pooled_margin_rows": 40,
+    "cross_replicate_pooled_comparison_rows": 20,
+    "replicate_vs_frozen_run_003_comparison_rows": 40,
+    "token_index_margin_rows": 0,
+    "fallback_default": "RUN_LEVEL_LIMITATION_ONLY",
+    "raw_tensor_or_media_persistence": false,
+    "outcome_access": false,
+    "selective_or_automatic_rerun": false,
+    "gpu_devices": 1,
+    "expected_gpu_hours": [0.05, 0.20],
+    "hard_gpu_hours_ceiling": 2
+  },
+  "claim_boundary": "CURRENT_WITHIN_PROCESS_COMPLETE_FIXED_PANEL_PREPROCESSING_AND_LFE_READOUT_REPEATABILITY_ONLY_NO_HISTORICAL_SOURCE_LOCALIZATION_ATTRIBUTE_INFORMATION_LOSS_CAUSAL_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "current_authority": {
+    "preregistration_complete": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_RUNNER_ANALYZER_VERIFIER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}

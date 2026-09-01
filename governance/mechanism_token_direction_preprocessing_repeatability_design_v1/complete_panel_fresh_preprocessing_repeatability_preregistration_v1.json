@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "preregistration_id": "complete_panel_fresh_preprocessing_repeatability_diagnostic_v1",
+  "created_at_utc": "2026-09-02",
+  "status": "PREREGISTERED_FIXED_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "scientific_role": "OUTCOME_BLIND_CURRENT_RUNTIME_MEASUREMENT_PATH_REPEATABILITY_DIAGNOSTIC",
+  "trigger": "CURRENT_SAME_PREPROCESSING_DIRECT_HOOK_BIT_EXACT_BUT_20_OF_20_CURRENT_HOOK_POOLED_MARGINS_FAILED_STRICT_HISTORICAL_RUN_003_REPLICATION",
+  "panel": {
+    "formal_units": 40,
+    "attributes": ["eyeglasses", "facial_hair"],
+    "matched_pairs_per_attribute": 10,
+    "roles": ["positive", "control"],
+    "reference_resolution_row": "seed_index_1",
+    "unit_or_pair_selection": false,
+    "reduced_panel_allowed": false
+  },
+  "acquisition": {
+    "same_loaded_process_and_model_state": true,
+    "fresh_preprocessing_calls_per_unit": 2,
+    "fresh_preprocessing_outputs_reused_across_replicates": false,
+    "direct_lfe_calls_per_preprocessing_result": 2,
+    "total_preprocessing_calls": 80,
+    "total_direct_lfe_calls": 160,
+    "hooks": 0,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "decoded_videos": 0,
+    "lfe_shape": [1, 32, 2048],
+    "dtype": "bfloat16",
+    "local_face_scale": 1.0
+  },
+  "frozen_tolerances": {
+    "elementwise": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "pooled_scalar": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "threshold_tuning": false
+  },
+  "output_families": {
+    "within_preprocessing_direct_repeat_rows": 80,
+    "cross_preprocessing_lfe_equivalence_rows": 40,
+    "preprocessing_replicate_pooled_margin_rows": 40,
+    "cross_replicate_pooled_comparison_rows": 20,
+    "replicate_vs_frozen_run_003_comparison_rows": 40,
+    "execution_status_rows": 80,
+    "token_index_margin_rows": 0,
+    "all_rows_retained": true
+  },
+  "pooled_readout": {
+    "representative_direct_repeat": "D1_FIXED_BEFORE_RESULTS",
+    "unit_vector": "l2_normalize(mean_token(LFE_tokens))",
+    "direction": "mean positive-minus-control over the other nine pairs",
+    "direction_normalized": false,
+    "historical_stage": "valid_face_emb_mean_token_l2_normalized",
+    "favorable_replicate_selection": false
+  },
+  "fallback_policy": {
+    "default": "RUN_LEVEL_LIMITATION_ONLY",
+    "structured_assignment_allowed_only_if_unchanged_api_exposes_robust_machine_readable_status": true,
+    "stdout_parsing_for_task_labels": false,
+    "fallback_based_exclusion_or_rerun": false
+  },
+  "privacy": {
+    "raw_identity_inputs_persisted": false,
+    "raw_lfe_tokens_persisted": false,
+    "aligned_images_or_keypoints_persisted": false,
+    "reference_images_copied": false,
+    "latents_or_media_persisted": false
+  },
+  "compute": {
+    "gpu_devices": 1,
+    "expected_gpu_hours": [0.05, 0.20],
+    "hard_ceiling_gpu_hours": 2
+  },
+  "excluded": {
+    "historical_source_localization": true,
+    "attribute_information_loss_claim": true,
+    "causal_mechanism_or_bottleneck_claim": true,
+    "token_index_margin_rows_640": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "p_values_or_confidence_intervals": true,
+    "selection_exclusion_imputation_or_selective_rerun": true,
+    "video_generation_or_decode": true,
+    "controlled_intervention": true
+  },
+  "claim_boundary": "CURRENT_WITHIN_PROCESS_COMPLETE_FIXED_PANEL_PREPROCESSING_AND_LFE_READOUT_REPEATABILITY_ONLY_NO_HISTORICAL_SOURCE_LOCALIZATION_ATTRIBUTE_INFORMATION_LOSS_CAUSAL_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "current_authority": {
+    "preregistration": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_RUNNER_ANALYZER_VERIFIER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}
