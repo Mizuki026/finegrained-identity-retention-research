@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "freeze_id": "complete_panel_direct_hook_diagnostic_scientific_interpretation_acceptance_v1",
+  "frozen_at_utc": "2026-09-01",
+  "base_research_commit": "ddc710faa6003c3d4dd4e55e8f7c34b70f2c8016",
+  "status": "FROZEN_ALL_FIVE_DIRECT_HOOK_DIAGNOSTIC_SCIENTIFIC_INTERPRETATIONS_ACCEPTED",
+  "accepted_scientific_state": {
+    "current_same_preprocessing_direct_hook_equivalence": "ACCEPTED_NARROW_CURRENT_RUNTIME_MEASUREMENT_PATH_FACT",
+    "direct_hook_context_as_historical_mismatch_source": "NOT_SUPPORTED_BY_CURRENT_COMPLETE_PANEL_RESULT",
+    "remaining_mismatch_class": "ACCEPTED_CROSS_RUN_STATE_OR_INPUT_CONSTRUCTION_NONREPLICATION_WITH_SOURCE_UNLOCALIZED",
+    "strict_historical_replication": "FAILED_20_OF_20_AT_FROZEN_TOLERANCE",
+    "descriptive_sign_stability": "OBSERVED_20_OF_20_WITHOUT_EXACT_REPLICATION_OR_MECHANISM_UPGRADE",
+    "scientific_run_001": "NONREUSABLE_FAILED_HISTORY",
+    "scientific_run_002": "NOT_AUTHORIZED",
+    "next_preferred_design": "COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_DIAGNOSTIC"
+  },
+  "unverified_hypotheses": [
+    "fresh_preprocessing_outputs_may_vary_across_calls",
+    "fallback_realization_may_contribute_to_cross_run_variation",
+    "backend_or_runtime_state_may_contribute_to_cross_run_variation",
+    "another_unmeasured_historical_input_construction_difference_may_exist"
+  ],
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_execution_v1/scientific_interpretation_acceptance_evidence_manifest_v1.csv",
+    "artifact_rows": 4,
+    "bytes": 1011,
+    "sha256": "e1bfd6db518197ca1bb84fc5dbd0109c1b23594d4cf0bba6d38569882c4c5d41"
+  },
+  "next_design_proposal": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/preprocessing_repeatability_design_decision_proposal_v1.md",
+    "bytes": 4838,
+    "sha256": "71391e34280a09e400d098f86ad710e4db9b462bb7b19c5b66dc2100ed92b5e8",
+    "status": "DRAFT_FOR_RESEARCHER_DECISION_NOT_PREREGISTERED"
+  },
+  "execution_authority": {
+    "design_proposal_drafting_complete": true,
+    "formal_preregistration": false,
+    "implementation": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false
+  },
+  "claim_boundary": "CURRENT_COMPLETE_FIXED_PANEL_MEASUREMENT_PATH_RESULT_ONLY_NO_CAUSAL_LOCALIZATION_ATTRIBUTE_INFORMATION_LOSS_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "next_gate": "RESEARCHER_CONFIRMATION_OF_SEVEN_PREPROCESSING_REPEATABILITY_DESIGN_DECISIONS_BEFORE_PREREGISTRATION"
+}

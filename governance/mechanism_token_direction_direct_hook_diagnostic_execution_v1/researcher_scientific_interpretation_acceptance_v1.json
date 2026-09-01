@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "decision_id": "complete_panel_direct_hook_diagnostic_scientific_interpretation_acceptance_v1",
+  "decided_at_utc": "2026-09-01",
+  "status": "ALL_FIVE_DIRECT_HOOK_DIAGNOSTIC_SCIENTIFIC_INTERPRETATIONS_ACCEPTED",
+  "decision_source": "Direct researcher acceptance in the current session",
+  "source_proposal": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_execution_v1/diagnostic_scientific_interpretation_proposal_v1.md",
+    "bytes": 4105,
+    "sha256": "37ff27c300ce9ced810058785fde199cfaf6f9929393220316f7d866bf99c3c9"
+  },
+  "source_execution_freeze": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_execution_v1/diagnostic_execution_freeze_v1.json",
+    "bytes": 3021,
+    "sha256": "10ae36c8996196a9983fb8f32494051d1d193ed523435d008fcc86941cc62ae1"
+  },
+  "accepted_interpretations": {
+    "current_same_preprocessing_direct_hook_equivalence_is_accepted_narrowly": true,
+    "cross_runtime_or_cross_preprocessing_equivalence_is_established": false,
+    "current_direct_vs_hook_call_context_is_supported_as_historical_mismatch_source": false,
+    "historical_mismatch_is_cross_run_state_or_input_construction_nonreplication": true,
+    "specific_preprocessing_fallback_backend_or_runtime_source_is_localized": false,
+    "strict_20_of_20_numerical_replication_failures_are_retained": true,
+    "threshold_relaxation_is_permitted": false,
+    "descriptive_20_of_20_sign_stability_is_retained": true,
+    "sign_stability_establishes_exact_replication_or_mechanism": false,
+    "scientific_run_001_remains_nonreusable": true,
+    "scientific_run_002_is_not_authorized": true,
+    "next_preferred_design_is_complete_panel_fresh_preprocessing_repeatability": true
+  },
+  "evidence_classification": {
+    "verified_fact": "40_OF_40_CURRENT_DIRECT_HOOK_TENSORS_BIT_EXACT_AND_20_OF_20_CURRENT_HOOK_POOLED_VALUES_OUTSIDE_FROZEN_RUN_003_TOLERANCE",
+    "current_fixed_panel_observation": "ALL_20_RECONSTRUCTED_AND_FROZEN_MARGINS_SHARE_SIGN_DESPITE_STRICT_NUMERICAL_NONREPLICATION",
+    "accepted_interpretation": "CURRENT_DIRECT_HOOK_CALL_CONTEXT_DOES_NOT_EXPLAIN_THE_OBSERVED_HISTORICAL_MISMATCH",
+    "unverified_hypothesis_class": "PREPROCESSING_FALLBACK_REALIZATION_BACKEND_RUNTIME_OR_OTHER_CROSS_RUN_INPUT_CONSTRUCTION_DIFFERENCE",
+    "research_decision": "DO_NOT_RESUME_TOKEN_DIRECTION_SCIENTIFIC_RUN_BEFORE_A_SEPARATELY_PREREGISTERED_PREPROCESSING_REPEATABILITY_DIAGNOSTIC"
+  },
+  "claim_boundary": "CURRENT_COMPLETE_FIXED_PANEL_MEASUREMENT_PATH_RESULT_ONLY_NO_ATTRIBUTE_INFORMATION_LOSS_CAUSAL_LOCALIZATION_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "authority_granted_by_acceptance": {
+    "read_only_existing_artifact_review": true,
+    "next_design_decision_proposal_drafting": true,
+    "formal_preregistration": false,
+    "implementation": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "RESEARCHER_CONFIRMATION_OF_PREPROCESSING_REPEATABILITY_DESIGN_DECISIONS_BEFORE_PREREGISTRATION"
+}
