@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "freeze_id": "complete_panel_direct_hook_diagnostic_gpu_run_001_v1",
+  "frozen_at_utc": "2026-09-01",
+  "source_head_before_execution_record_commit": "b7eac69500e448474b0110d9c96c660d25a7f8a7",
+  "status": "FROZEN_COMPLETE_VERIFIED_DIRECT_HOOK_DIAGNOSTIC_PREREGISTERED_BRANCH_3",
+  "execution_verified": {
+    "formal_units": 40,
+    "direct_lfe_calls": 40,
+    "one_step_hook_controls": 40,
+    "transformer_steps": 40,
+    "full_diffusion_trajectories": 0,
+    "elapsed_gpu_hours": 0.07360209065696431,
+    "hard_gpu_hours_ceiling": 2,
+    "model_weight_rows_rehashed": 72,
+    "raw_tensor_files": 0,
+    "decoded_media_files": 0,
+    "outcome_access": false,
+    "token_margin_rows": 0
+  },
+  "complete_families": {
+    "direct_hook_rows": 40,
+    "direct_hook_bit_exact_rows": 40,
+    "direct_hook_tolerance_pass_rows": 40,
+    "hook_pooled_rows": 20,
+    "hook_pooled_run_003_tolerance_pass_rows": 0,
+    "hook_pooled_run_003_tolerance_fail_rows": 20,
+    "hook_pooled_reconstructed_vs_frozen_sign_matches": 20
+  },
+  "independent_verification": {
+    "in_memory": "PASS_INDEPENDENT_IN_MEMORY_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_RECOMPUTATION",
+    "persisted": "PASS_INDEPENDENT_PERSISTED_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_VERIFICATION"
+  },
+  "preregistered_interpretation": {
+    "branch": 3,
+    "verified_observation": "CURRENT_SAME_PREPROCESSING_DIRECT_AND_HOOK_OUTPUTS_ARE_BIT_EXACT_BUT_CURRENT_HOOKED_POOLED_VALUES_DO_NOT_STRICTLY_REPRODUCE_HISTORICAL_RUN_003",
+    "mechanism_localized": false,
+    "threshold_changed": false
+  },
+  "scientific_interpretation_proposal": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_execution_v1/diagnostic_scientific_interpretation_proposal_v1.md",
+    "bytes": 4105,
+    "sha256": "37ff27c300ce9ced810058785fde199cfaf6f9929393220316f7d866bf99c3c9",
+    "researcher_accepted": false
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_execution_v1/diagnostic_execution_evidence_manifest_v1.csv",
+    "artifact_rows": 18,
+    "bytes": 3691,
+    "sha256": "e8370e0042fd8e1fd7daddafb06db54088413f619901f1e26c9f568103b5b636"
+  },
+  "runtime_package": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_direct_hook_diagnostic_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "file_mode": "0444"
+  },
+  "run_level_limitations": {
+    "face_detection_fallback_stdout_messages_observed": true,
+    "raw_stdout_log_persisted": false,
+    "task_or_pair_assignment": false,
+    "fallback_based_exclusion_or_rerun": false
+  },
+  "current_authority": {
+    "diagnostic_execution_complete_and_closed": true,
+    "automatic_or_selective_rerun": false,
+    "scientific_run_002": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false,
+    "new_preprocessing_repeatability_diagnostic": false
+  },
+  "next_gate": "RESEARCHER_REVIEW_OF_FIVE_PROPOSED_SCIENTIFIC_INTERPRETATION_DECISIONS"
+}

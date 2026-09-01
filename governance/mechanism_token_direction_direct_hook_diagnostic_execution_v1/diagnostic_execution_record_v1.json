@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "record_id": "complete_panel_direct_hook_diagnostic_gpu_run_001_v1",
+  "recorded_at_utc": "2026-09-01",
+  "status": "COMPLETE_VERIFIED_PREREGISTERED_BRANCH_3_DIRECT_HOOK_BIT_EXACT_HISTORICAL_POOLED_REPLICATION_FAILED",
+  "source_state_commit": "b7eac69500e448474b0110d9c96c660d25a7f8a7",
+  "execution": {
+    "formal_units": 40,
+    "direct_lfe_calls": 40,
+    "one_step_hook_controls": 40,
+    "transformer_steps": 40,
+    "full_diffusion_trajectories": 0,
+    "elapsed_gpu_hours": 0.07360209065696431,
+    "hard_gpu_hours_ceiling": 2,
+    "model_weight_rows_rehashed": 72,
+    "raw_tensor_files": 0,
+    "decoded_media_files": 0,
+    "outcomes_opened": false,
+    "token_margin_rows": 0
+  },
+  "direct_hook_equivalence_family": {
+    "rows": 40,
+    "bit_exact_rows": 40,
+    "within_frozen_tolerance_rows": 40,
+    "maximum_absolute_difference": 0.0,
+    "maximum_rms_difference": 0.0,
+    "eyeglasses_rows": 20,
+    "facial_hair_rows": 20
+  },
+  "hook_pooled_run_003_replication_family": {
+    "rows": 20,
+    "within_frozen_tolerance_rows": 0,
+    "outside_frozen_tolerance_rows": 20,
+    "minimum_absolute_difference": 1.466367393732071e-06,
+    "maximum_absolute_difference": 4.715844988822937e-05,
+    "minimum_frozen_tolerance": 1.0032940274104476e-06,
+    "maximum_frozen_tolerance": 1.1049383636564015e-06,
+    "reconstructed_direction_counts": {
+      "correct": 11,
+      "wrong": 9,
+      "tie": 0
+    },
+    "reconstructed_vs_frozen_sign_matches": 20,
+    "eyeglasses_tolerance_passes": 0,
+    "facial_hair_tolerance_passes": 0
+  },
+  "verification": {
+    "in_memory_status": "PASS_INDEPENDENT_IN_MEMORY_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_RECOMPUTATION",
+    "persisted_status": "PASS_INDEPENDENT_PERSISTED_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_VERIFICATION",
+    "execution_status_rows": 40,
+    "all_execution_rows_complete_transient_only": true
+  },
+  "preregistered_interpretation_branch": {
+    "branch": 3,
+    "frozen_text": "ALL_40_DIRECT_HOOK_COMPARISONS_PASS_BUT_ONE_OR_MORE_HOOKED_POOLED_MARGINS_FAIL_TO_REPRODUCE_RUN_003",
+    "maximum_claim": "CURRENT_PAIRED_RUNTIME_DOES_NOT_STRICTLY_REPRODUCE_HISTORICAL_RUN_003_POOLED_READOUT_DIRECT_AND_HOOK_ARE_EQUIVALENT_WITHIN_CURRENT_SAME_PREPROCESSING_RUNTIME",
+    "not_localized": true,
+    "threshold_relaxation": false
+  },
+  "run_level_limitations": {
+    "face_detection_fallback_stdout_messages_observed": true,
+    "raw_stdout_log_persisted": false,
+    "fallback_count_claimed": false,
+    "task_unit_pair_role_or_attribute_assignment": false,
+    "fallback_based_exclusion_or_rerun": false,
+    "interpretation": "RUN_LEVEL_LIMITATION_ONLY"
+  },
+  "external_runtime_package": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_direct_hook_diagnostic_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "files": {
+      "diagnostic_execution_status_v1.csv": [6222, "209bbea877a82bea00326aa962e08972bf5bbc16da8fd2661eda0d9485b31469"],
+      "diagnostic_execution_summary_v1.json": [818, "b5b3df93734c2ffe2c9ba8b66df20ea43b130d70e7785f6f468c9c1b624ba2f7"],
+      "diagnostic_in_memory_verification_v1.json": [267, "dca13ed0ac721c6aadb759d0006cbcc4ecceb57756c39a101e80dd0fb56d6e7d"],
+      "diagnostic_persisted_verification_v1.json": [244, "5bb163f849e46630580f8893fa5bf60b6446f4aea52f00e2e494715c2cc42ed0"],
+      "direct_hook_equivalence_v1.csv": [2538, "6fc6cb7b9b2af1516c18d294c9d85d96a58f58ad8f26402e12059cc4ebd1f2dd"],
+      "hook_pooled_replication_v1.csv": [2534, "a5c561d419269e3351a5b73de07c4bdf86cc656e4f146df58fcbe88d3bee0aa4"]
+    }
+  },
+  "actions_not_performed": [
+    "unit_pair_role_or_attribute_selection",
+    "automatic_or_selective_rerun",
+    "raw_identity_token_latent_or_media_persistence",
+    "full_diffusion_trajectory_or_video_decode",
+    "token_margin_analysis_640",
+    "outcome_access_or_join",
+    "association_computation",
+    "threshold_modification",
+    "controlled_intervention_or_ablation",
+    "network_access"
+  ],
+  "next_gate": "RESEARCHER_REVIEW_OF_SCIENTIFIC_INTERPRETATION_PROPOSAL_BEFORE_ANY_NEW_DIAGNOSTIC_OR_SCIENTIFIC_RUN"
+}
