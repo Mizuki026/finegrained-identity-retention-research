@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "authorization_id": "complete_panel_direct_hook_diagnostic_formal_input_audit_run_001",
+  "authorized_at_utc": "2026-09-01",
+  "status": "COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_FORMAL_INPUT_AUDIT_EXECUTION_AUTHORIZED",
+  "researcher_authorization": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_input_audit_v1/researcher_formal_input_audit_authorization_v1.json",
+    "bytes": 2220,
+    "sha256": "0aa9b1a16b26716a8a0c57e944667dc97049e2a05615ede915961004da647265"
+  },
+  "code": {
+    "auditor": {
+      "path": "src/audit_token_resolved_lfe_direct_hook_diagnostic_inputs_v1.py",
+      "bytes": 16247,
+      "sha256": "3a3f9b37c7b236f1a3a47644780a89b1d4f3f82b9d08e6fe0fc2efda25caa7ad"
+    },
+    "independent_verifier": {
+      "path": "src/verify_token_resolved_lfe_direct_hook_diagnostic_input_audit_v1.py",
+      "bytes": 16546,
+      "sha256": "c018cd85c7b7ccb9f0449712d50b76ad4d315782ec414e23f6a56d0ac6c0897c"
+    },
+    "diagnostic_protocol": {
+      "path": "src/token_resolved_lfe_direct_hook_diagnostic_protocol_v1.py",
+      "bytes": 4917,
+      "sha256": "8263bef2999f942decfee79fe7cb197f9246fb1c053d42fad8c9179a2826bcb9"
+    }
+  },
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_direct_hook_diagnostic_v1_input_audit/run_001",
+  "authority": {
+    "design_and_readiness_binding_audit": true,
+    "master_and_artifact_binding_audit": true,
+    "manifest_schema_and_160_task_audit": true,
+    "complete_40_unit_plan_audit": true,
+    "reference_raw_byte_sha256_audit": true,
+    "run_003_pooled_lfe_baseline_audit": true,
+    "consisid_commit_and_source_audit": true,
+    "independent_verification": true,
+    "reference_decode": false,
+    "face_preprocessing": false,
+    "model_or_weight_loading": false,
+    "full_model_weight_rehash": false,
+    "gpu_execution": false,
+    "direct_or_hook_lfe_execution": false,
+    "raw_tensor_capture": false,
+    "scientific_margin_computation": false,
+    "outcome_access": false,
+    "association_computation": false,
+    "token_margin_analysis_640": false,
+    "generation_or_video_decode": false,
+    "intervention": false,
+    "network": false
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_COMPLETE_PANEL_DIAGNOSTIC_EXECUTION"
+}

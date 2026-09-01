@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "record_id": "complete_panel_direct_hook_diagnostic_formal_input_audit_run_001",
+  "recorded_at_utc": "2026-09-01",
+  "status": "PASS_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_FORMAL_INPUT_AUDIT_AND_INDEPENDENT_VERIFICATION",
+  "source_state_commit": "be13df2fb5a57c30c3bb4773dd62988624096103",
+  "audit_scope": {
+    "formal_master_verified": true,
+    "formal_master_artifact_bindings": 16,
+    "runner_readiness_bindings": 13,
+    "generation_tasks": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "diagnostic_seed_index_1_plan_rows": 40,
+    "unique_reference_files": 40,
+    "reference_file_sha256_verified": 40,
+    "reference_access": "RAW_BYTES_FOR_SHA256_ONLY_NO_IMAGE_DECODING",
+    "pooled_lfe_baseline_rows": 20,
+    "pooled_lfe_all_finite": true,
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_worktree_clean": true,
+    "transformer_source_verified": true,
+    "pipeline_source_verified": true,
+    "weight_inventory_binding_verified": true,
+    "full_weight_rehash_repeated": false
+  },
+  "independent_verification": {
+    "status": "PASS_INDEPENDENT_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_FORMAL_INPUT_AUDIT_VERIFICATION",
+    "all_16_master_artifacts_rehashed": true,
+    "all_13_readiness_bindings_rehashed": true,
+    "all_160_generation_rows_reaudited": true,
+    "all_40_plan_rows_reconstructed": true,
+    "all_40_reference_files_rehashed": true,
+    "all_20_pooled_lfe_rows_recomputed": true
+  },
+  "implementation": {
+    "auditor": [
+      "src/audit_token_resolved_lfe_direct_hook_diagnostic_inputs_v1.py",
+      16247,
+      "3a3f9b37c7b236f1a3a47644780a89b1d4f3f82b9d08e6fe0fc2efda25caa7ad"
+    ],
+    "independent_verifier": [
+      "src/verify_token_resolved_lfe_direct_hook_diagnostic_input_audit_v1.py",
+      16546,
+      "c018cd85c7b7ccb9f0449712d50b76ad4d315782ec414e23f6a56d0ac6c0897c"
+    ]
+  },
+  "external_audit_package": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_direct_hook_diagnostic_v1_input_audit/run_001",
+    "directory_mode": "0555",
+    "files": {
+      "audit_summary_v1.json": [1204, "2ac527f70f5e1e65b8f2185a63efd41c7a0a96ff33a5cb35870736c34e104000"],
+      "diagnostic_plan_keys_v1.csv": [4132, "7164d333950b88bf372cbe8f37cea5f1444a993e8b2ab0fc980a9831581364b3"],
+      "independent_verification_v1.json": [862, "fe521a3d77f307d2c5e1b5b77b1cd6dba476684a16cc8474ac745836c48c41a7"],
+      "master_artifact_bindings_v1.csv": [1559, "0825fd8c00aeb13fd82a127bad92cd420eb51660fdbb66d1d50fc84dcf8f518d"],
+      "pooled_lfe_keys_v1.csv": [1097, "8f7e503ffaebbb9b0f698b703ca376ed48d3946da77e7b50157efc891ba3cccf"],
+      "readiness_bindings_v1.csv": [2387, "67b5f97b66044559901470540b5563696054d65b68ef25cb6a80b96ddf521c54"],
+      "reference_keys_v1.csv": [5368, "0d582e781775e18b5f0b57f98099df8db6cc0f712920235afd704b68d4c32183"]
+    }
+  },
+  "actions_not_performed": [
+    "reference_image_decode_or_visualization",
+    "face_preprocessing_or_detector_execution",
+    "model_or_weight_loading",
+    "full_model_weight_rehash",
+    "gpu_execution",
+    "direct_or_hook_lfe_execution",
+    "raw_tensor_capture",
+    "scientific_margin_computation",
+    "outcome_access_or_join",
+    "association_computation",
+    "token_margin_analysis_640",
+    "generation_or_video_decode",
+    "intervention_or_ablation",
+    "network_access"
+  ],
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_COMPLETE_PANEL_DIAGNOSTIC_EXECUTION"
+}
