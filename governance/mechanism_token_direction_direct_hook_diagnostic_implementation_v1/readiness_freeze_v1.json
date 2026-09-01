@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "freeze_id": "complete_panel_direct_hook_diagnostic_runner_readiness_v1",
+  "frozen_at_utc": "2026-09-01",
+  "status": "FROZEN_PASS_DIAGNOSTIC_RUNNER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN",
+  "record": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_implementation_v1/readiness_record_v1.json",
+    "bytes": 2027,
+    "sha256": "dba5ff33c47b8076092c69b38be64a983046b656a6f3d074169cc7a736a17f38"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_implementation_v1/readiness_evidence_manifest_v1.csv",
+    "artifact_rows": 13,
+    "bytes": 2444,
+    "sha256": "a76e09fef7d38327756327b91706fc6cc6071e49662e1f4efe2f26ec2d94f65d"
+  },
+  "verified": {
+    "diagnostic_specific_tests": 3,
+    "upstream_regression_tests": 20,
+    "tests_passed": 23,
+    "no_weight_dry_run": true,
+    "independent_dry_run_verification": true,
+    "plan_rows": 40,
+    "direct_calls": 40,
+    "one_step_hooks": 40,
+    "hook_pooled_rows": 20,
+    "token_margin_rows": 0,
+    "top_level_ml_imports": 0,
+    "raw_tensor_serializer": false,
+    "reference_access": false,
+    "model_or_weight_loading": false,
+    "gpu_used": false,
+    "outcome_access": false
+  },
+  "current_authority": {
+    "implementation_complete": true,
+    "cpu_tests_complete": true,
+    "no_weight_dry_run_complete": true,
+    "formal_input_audit": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT"
+}
