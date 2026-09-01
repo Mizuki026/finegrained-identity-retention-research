@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_direction_phase_e_run_001_draft_v1",
+  "generated_at_utc": "2026-08-30",
+  "status": "PHASE_E_EXECUTION_PACKAGE_READY_RESEARCHER_FINAL_APPROVAL_REQUIRED",
+  "phase": "engineering",
+  "gpu_execution_explicitly_approved": false,
+  "scientific_extraction_authorized": false,
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_token_direction_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 2163,
+    "sha256": "9afb0ba904bcb573716d3d6366efb600b0a674f1750b22f24cc5a17e15a7ca84"
+  },
+  "runner_dry_run_evidence": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_runner_dry_run/run_001/phase_e_runner_no_weight_dry_run_v1.json",
+    "bytes": 995,
+    "sha256": "e676cf8c5eddbf6ab34cdfc3bee2e102d5e6a7111d0b7bf78f7e402965ac11c0"
+  },
+  "runner_dry_run_independent_verification": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_runner_dry_run/run_001/phase_e_runner_dry_run_independent_verification_v1.json",
+    "bytes": 605,
+    "sha256": "80cc0192db1f71638958c427229d7fdce0ddbf2ba0986e15f71edaee1681c50f"
+  },
+  "code": {
+    "token_resolved_lfe_direction_protocol_v1.py": {
+      "path": "src/token_resolved_lfe_direction_protocol_v1.py",
+      "bytes": 14495,
+      "sha256": "bb884db237a0f32818e111167f9863494d43c00539a467e8de6ae810f23d0d79"
+    },
+    "token_resolved_lfe_direction_instrumentation_v1.py": {
+      "path": "src/token_resolved_lfe_direction_instrumentation_v1.py",
+      "bytes": 7196,
+      "sha256": "8a8814d84d460b20f1aa28ab818750053aaa898072cdad8333c86195e0b244c5"
+    },
+    "run_token_resolved_lfe_direction_engineering_v1.py": {
+      "path": "src/run_token_resolved_lfe_direction_engineering_v1.py",
+      "bytes": 11902,
+      "sha256": "39e6d7a06e9a34d79ba0dc5f11a2d2fce105ee63deb4ca81d81ad90107fec75f"
+    },
+    "token_resolved_lfe_direction_engineering_runtime_v1.py": {
+      "path": "src/token_resolved_lfe_direction_engineering_runtime_v1.py",
+      "bytes": 11051,
+      "sha256": "a558b00495fb4e004af0cd12d38a225534b8e91345aef6c6e9b01bae7a439a05"
+    },
+    "verify_token_resolved_lfe_direction_engineering_v1.py": {
+      "path": "src/verify_token_resolved_lfe_direction_engineering_v1.py",
+      "bytes": 6266,
+      "sha256": "042ba0e9e7ec23bf1c3dccb18956854c7104c13759b8c8b9ccfedf13db6eac47"
+    }
+  },
+  "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "python": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+  "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_runtime/phase_e_run_001",
+  "cuda_visible_devices": "0",
+  "gpu_binding": {
+    "visible_index": 0,
+    "uuid": "GPU-f8e1bff2-2e30-058a-c44f-cc6789f80622",
+    "name": "NVIDIA GeForce RTX 4090",
+    "memory_total_mib": 49140,
+    "driver_version_observed_at_package_generation": "580.105.08",
+    "device_count_ceiling": 1
+  },
+  "engineering_units": 8,
+  "direct_pass_ceiling": 16,
+  "hook_control_ceiling": 8,
+  "transformer_step_ceiling": 8,
+  "full_diffusion_trajectory_ceiling": 0,
+  "phase_gpu_hours_expected_range": [0.1, 0.3],
+  "phase_gpu_hours_planning_reserve": 0.5,
+  "phase_gpu_hours_ceiling": 4,
+  "runtime_constraints": {
+    "single_gpu_only": true,
+    "distributed_execution": false,
+    "offline_only": true,
+    "output_directory_must_not_exist": true,
+    "full_frozen_weight_rehash_before_ml_import": true,
+    "reference_sha256_recheck_before_each_operation": true,
+    "local_face_scale": 1.0,
+    "num_inference_steps_for_each_hook_control": 1,
+    "output_type": "latent",
+    "decoded_media_persistence": false,
+    "raw_identity_or_token_tensor_persistence": false,
+    "abort_on_any_failure": true
+  },
+  "not_authorized": {
+    "gpu_execution_under_this_draft": true,
+    "scientific_reference_extraction": true,
+    "token_margin_analysis": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "video_generation_or_decode": true,
+    "fallback_rerun_or_task_replacement": true,
+    "controlled_intervention": true,
+    "network": true
+  },
+  "activation_requirements": [
+    "researcher gives a new explicit approval for formal Phase-E GPU execution",
+    "a separate final active authorization is created with status TOKEN_DIRECTION_PHASE_E_GPU_EXECUTION_AUTHORIZED and gpu_execution_explicitly_approved true",
+    "the final active authorization preserves every code hash, input binding, panel count, device limit and ceiling in this draft",
+    "research repository is on clean main and ConsisID repository is clean at the frozen commit",
+    "runtime output directory remains absent"
+  ]
+}

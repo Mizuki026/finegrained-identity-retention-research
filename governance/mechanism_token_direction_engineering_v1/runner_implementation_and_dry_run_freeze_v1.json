@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_direction_phase_e_runner_implementation_and_dry_run_v1",
+  "frozen_at_utc": "2026-08-30",
+  "source_head_before_freeze_commit": "22c13d5f53a599c3db44af400b1ce358629fb2b6",
+  "status": "FROZEN_PASS_RUNNER_AUDIT_AND_NO_WEIGHT_DRY_RUN_PHASE_E_FINAL_GPU_APPROVAL_REQUIRED",
+  "record": {
+    "path": "governance/mechanism_token_direction_engineering_v1/runner_implementation_and_dry_run_record_v1.json",
+    "bytes": 3743,
+    "sha256": "5cb98738821a7c47e43ddd385c4500cfe6ae7265801b46966a4149a9340c0fa3"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_engineering_v1/runner_implementation_and_dry_run_evidence_manifest_v1.csv",
+    "artifact_rows": 13,
+    "bytes": 2477,
+    "sha256": "643bab75b6e82be149641163db62c69c33109b1cb55c032eeaf395aa90186cca"
+  },
+  "verified": {
+    "runner_code_audit": true,
+    "cpu_tests_16_of_16": true,
+    "no_weight_dry_run": true,
+    "independent_dry_run_verification": true,
+    "negative_draft_execution_gate": true,
+    "engineering_units": 8,
+    "direct_lfe_pass_ceiling": 16,
+    "one_step_hook_controls": 8,
+    "transformer_step_ceiling": 8,
+    "raw_tensor_persistence": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false
+  },
+  "phase_e_execution_package": {
+    "path": "governance/mechanism_token_direction_engineering_v1/phase_e_run_001_execution_authorization_draft_v1.json",
+    "bytes": 4716,
+    "sha256": "ec34ebd9609ad11d1347bf940e0b26c039cd6dab4236d47046b2e453f4e51512",
+    "status": "PHASE_E_EXECUTION_PACKAGE_READY_RESEARCHER_FINAL_APPROVAL_REQUIRED",
+    "gpu_execution_explicitly_approved": false
+  },
+  "current_authority": {
+    "runner_implementation_complete": true,
+    "runner_audit_complete": true,
+    "cpu_only_no_weight_dry_run_complete": true,
+    "phase_e_gpu_execution": false,
+    "scientific_reference_extraction": false,
+    "scientific_analysis": false,
+    "outcome_access_or_join": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "RESEARCHER_EXPLICITLY_APPROVES_FORMAL_SINGLE_GPU_PHASE_E_EXECUTION_THEN_FINAL_ACTIVE_AUTHORIZATION_MAY_BE_CREATED"
+}

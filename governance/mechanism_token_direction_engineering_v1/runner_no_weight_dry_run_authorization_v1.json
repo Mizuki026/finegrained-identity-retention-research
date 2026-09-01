@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_direction_phase_e_runner_no_weight_dry_run_v1",
+  "authorized_at_utc": "2026-08-30",
+  "status": "TOKEN_DIRECTION_PHASE_E_RUNNER_NO_WEIGHT_DRY_RUN_AUTHORIZED",
+  "runner_implementation_authorization": {
+    "path": "governance/mechanism_token_direction_engineering_v1/researcher_runner_implementation_authorization_v1.json",
+    "bytes": 1774,
+    "sha256": "d44e1be794c018e2da7f505a634f05295a7032a22ae19a84e030ff0a2e19bb49"
+  },
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_token_direction_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 2163,
+    "sha256": "9afb0ba904bcb573716d3d6366efb600b0a674f1750b22f24cc5a17e15a7ca84"
+  },
+  "code": {
+    "token_resolved_lfe_direction_protocol_v1.py": {
+      "path": "src/token_resolved_lfe_direction_protocol_v1.py",
+      "bytes": 14495,
+      "sha256": "bb884db237a0f32818e111167f9863494d43c00539a467e8de6ae810f23d0d79"
+    },
+    "token_resolved_lfe_direction_instrumentation_v1.py": {
+      "path": "src/token_resolved_lfe_direction_instrumentation_v1.py",
+      "bytes": 7196,
+      "sha256": "8a8814d84d460b20f1aa28ab818750053aaa898072cdad8333c86195e0b244c5"
+    },
+    "run_token_resolved_lfe_direction_engineering_v1.py": {
+      "path": "src/run_token_resolved_lfe_direction_engineering_v1.py",
+      "bytes": 11902,
+      "sha256": "39e6d7a06e9a34d79ba0dc5f11a2d2fce105ee63deb4ca81d81ad90107fec75f"
+    },
+    "token_resolved_lfe_direction_engineering_runtime_v1.py": {
+      "path": "src/token_resolved_lfe_direction_engineering_runtime_v1.py",
+      "bytes": 11051,
+      "sha256": "a558b00495fb4e004af0cd12d38a225534b8e91345aef6c6e9b01bae7a439a05"
+    },
+    "verify_token_resolved_lfe_direction_engineering_v1.py": {
+      "path": "src/verify_token_resolved_lfe_direction_engineering_v1.py",
+      "bytes": 6266,
+      "sha256": "042ba0e9e7ec23bf1c3dccb18956854c7104c13759b8c8b9ccfedf13db6eac47"
+    }
+  },
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_v1_runner_dry_run/run_001",
+  "gpu_execution_explicitly_approved": false,
+  "authority": {
+    "cpu_only_no_weight_runner_dry_run": true,
+    "independent_dry_run_verification": true,
+    "reference_image_access_or_decode": false,
+    "face_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "pipeline_forward": false,
+    "raw_token_capture": false,
+    "scientific_extraction": false,
+    "outcome_access_or_join": false,
+    "generation": false,
+    "network": false
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  }
+}

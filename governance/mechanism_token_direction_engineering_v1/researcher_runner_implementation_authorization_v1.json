@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "authorization_id": "token_direction_engineering_runner_implementation_v1",
+  "authorized_at_utc": "2026-08-30",
+  "researcher_instruction": "实现并审计 engineering runner，运行 CPU-only/no-weight runner dry-run；通过后再生成单 GPU Phase-E execution authorization。正式 GPU 执行仍需再次批准。",
+  "source_head_before_implementation": "22c13d5f53a599c3db44af400b1ce358629fb2b6",
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_token_direction_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 2163,
+    "sha256": "9afb0ba904bcb573716d3d6366efb600b0a674f1750b22f24cc5a17e15a7ca84",
+    "required_status": "FROZEN_PASS_FORMAL_INPUT_AUDIT_AND_INDEPENDENT_VERIFICATION"
+  },
+  "authorized": {
+    "engineering_runner_implementation": true,
+    "independent_runner_verifier_implementation": true,
+    "cpu_only_static_and_synthetic_tests": true,
+    "cpu_only_no_weight_runner_dry_run": true,
+    "runner_code_and_binding_audit": true,
+    "single_gpu_phase_e_execution_authorization_package_generation": true
+  },
+  "not_authorized": {
+    "phase_e_model_or_weight_loading": true,
+    "phase_e_gpu_execution": true,
+    "reference_image_decode_or_face_preprocessing": true,
+    "raw_token_persistence": true,
+    "scientific_reference_extraction": true,
+    "scientific_analysis": true,
+    "outcome_access_or_join": true,
+    "generation": true,
+    "network": true,
+    "controlled_intervention": true
+  },
+  "required_execution_boundary": "THE_GENERATED_PHASE_E_PACKAGE_MUST_REMAIN_FAIL_CLOSED_UNTIL_A_LATER_SEPARATE_RESEARCHER_APPROVAL_AND_FINAL_ACTIVE_AUTHORIZATION",
+  "status": "ENGINEERING_RUNNER_IMPLEMENTATION_AUDIT_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED_GPU_EXECUTION_NOT_AUTHORIZED"
+}
