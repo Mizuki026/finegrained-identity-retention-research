@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "authorization_id": "complete_panel_direct_hook_diagnostic_single_gpu_execution_v1",
+  "authorized_at_utc": "2026-09-01",
+  "researcher_instruction": "授权单 GPU、完整 40-unit direct-vs-one-step-hook diagnostic 正式执行",
+  "status": "RESEARCHER_AUTHORIZED_SINGLE_GPU_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_EXECUTION",
+  "source_head_before_authorization_commit": "935e2183a5dc1ea2ec6169e21d042a238e4926a2",
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 2606,
+    "sha256": "a468a44bcb24c0e49524b3f0ac022ad96295c5c43d5ad5b75b8561ba765b560e",
+    "required_status": "FROZEN_PASS_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_INPUT_AUDIT"
+  },
+  "authorized": {
+    "single_gpu": true,
+    "complete_formal_units": 40,
+    "direct_lfe_calls": 40,
+    "one_step_hook_controls": 40,
+    "transformer_step_ceiling": 40,
+    "full_diffusion_trajectory_ceiling": 0,
+    "direct_hook_equivalence_rows": 40,
+    "hook_pooled_replication_rows": 20,
+    "same_preprocessing_pairing_within_unit": true,
+    "independent_in_memory_and_persisted_verification": true,
+    "full_frozen_weight_rehash_before_model_import": true,
+    "phase_gpu_hours_ceiling": 2
+  },
+  "not_authorized": {
+    "reduced_panel_or_unit_selection": true,
+    "selective_or_automatic_rerun": true,
+    "full_diffusion_trajectory_or_video_decode": true,
+    "raw_identity_token_latent_or_media_persistence": true,
+    "token_margin_analysis_640": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "controlled_intervention_or_ablation": true,
+    "network": true,
+    "scientific_run_002": true
+  },
+  "failure_policy": "ABORT_WITHOUT_REDUCED_PANEL_RESULTS_NO_AUTOMATIC_OR_SELECTIVE_RERUN",
+  "interpretation_boundary": "COMPLETE_FIXED_PANEL_MEASUREMENT_PATH_AGREEMENT_OR_DISAGREEMENT_ONLY_NO_ATTRIBUTE_MECHANISM_CAUSAL_LOCALIZATION_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CLAIMS"
+}
