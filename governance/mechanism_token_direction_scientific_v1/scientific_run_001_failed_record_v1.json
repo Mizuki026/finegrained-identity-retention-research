@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "record_id": "token_direction_scientific_run_001_failed_v1",
+  "recorded_at_utc": "2026-09-01",
+  "source_head": "85890227e1023194af2ff5844394944f3b45bda2",
+  "status": "FAILED_ABORTED_NONREUSABLE_SCIENTIFIC_RUN_001",
+  "authorization": {
+    "path": "governance/mechanism_token_direction_scientific_v1/scientific_run_001_final_execution_authorization_v1.json",
+    "bytes": 3426,
+    "sha256": "0fee0db5fdd5cfdb5df6ed59aa8e3fb07e5691b9467806707312402001be2749"
+  },
+  "execution_progress_before_abort": {
+    "scientific_reference_records_extracted": 160,
+    "formal_units": 40,
+    "seed_labelled_copies_per_unit": 4,
+    "collector_complete_panel_gate_passed": true,
+    "bit_exact_seed_labelled_copy_gate_passed": true,
+    "fixed_640_margin_family_persisted": false,
+    "aggregate_scientific_outputs_persisted": false
+  },
+  "failure": {
+    "stage": "frozen_run_003_pooled_lfe_replication_before_any_scientific_output_write",
+    "exception_type": "DirectionAnalysisError",
+    "exception_message": "pooled run-003 replication mismatch: eyeglasses/FEY_01",
+    "first_reported_key": "eyeglasses/FEY_01",
+    "observed_margin_persisted": false,
+    "partial_output_directory_created": false,
+    "raw_tokens_persisted": false
+  },
+  "verified_facts": [
+    "all 160 frozen reference records reached direct LFE extraction",
+    "all 40 units completed four seed-labelled copies",
+    "seed-labelled LFE copies were bit-exact within every unit",
+    "the current direct-LFE pooled construction did not reproduce the frozen run-003 pooled LFE margin at the first reported key",
+    "the transaction aborted before writing the 640-margin family or any aggregate scientific result",
+    "no raw identity or LFE tensor was persisted",
+    "GPU memory was released after failure"
+  ],
+  "current_observation": "The complete-panel direct extraction route and the frozen run-003 hooked pooled readout are not replication-equivalent under the preregistered gate.",
+  "unverified_hypotheses": [
+    "direct versus in-pipeline hooked LFE context may differ outside the eight-unit Phase-E subset",
+    "historical face-preprocessing or fallback behavior may differ between run-003 and the current extraction",
+    "dtype, casting or pipeline-state context may contribute to the mismatch",
+    "the mismatch may be unit-specific or broader; no complete-panel diagnostic has been executed"
+  ],
+  "run_level_limitations": [
+    "face-detection fallback messages were observed on the console",
+    "fallback messages remain run-level only and are not assigned to a unit, pair, role, attribute or task",
+    "no failed or fallback case was excluded, substituted or selectively rerun"
+  ],
+  "actions_not_taken": [
+    "selective FEY_01 rerun",
+    "reduced-panel analysis",
+    "pooled replication threshold change",
+    "conversion of the replication failure to a warning",
+    "scientific output recovery from transient raw tokens",
+    "outcome access or association computation",
+    "controlled intervention"
+  ],
+  "decision_required": "PROSPECTIVELY_APPROVE_OR_REJECT_A_COMPLETE_40_UNIT_DIRECT_VERSUS_ONE_STEP_HOOK_DIAGNOSTIC_BEFORE_ANY_NEW_SCIENTIFIC_RUN",
+  "claim_boundary": "NO_TOKEN_DIRECTION_SCIENTIFIC_RESULT_OR_MECHANISM_UPDATE_FROM_FAILED_RUN_001"
+}

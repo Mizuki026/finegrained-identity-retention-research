@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_direction_scientific_run_001_failed_v1",
+  "frozen_at_utc": "2026-09-01",
+  "status": "FROZEN_FAILED_NONREUSABLE_SCIENTIFIC_RUN_001_NO_SCIENTIFIC_OUTPUTS",
+  "failed_record": {
+    "path": "governance/mechanism_token_direction_scientific_v1/scientific_run_001_failed_record_v1.json",
+    "bytes": 3283,
+    "sha256": "07b583ac546c66669aa6a207593e6e500aaddc220bddfd8a6a9eb2a8a46853c3"
+  },
+  "failure_gate": "FROZEN_RUN_003_POOLED_LFE_REPLICATION_MISMATCH_AT_EYEGLASSES_FEY_01",
+  "scientific_outputs": {
+    "lfe_token_margins_rows": 0,
+    "lfe_token_finite_panel_rows": 0,
+    "lfe_pair_token_sign_rows": 0,
+    "pooled_lfe_replication_rows": 0,
+    "raw_tensor_files": 0,
+    "output_directory_exists": false
+  },
+  "reuse_policy": {
+    "run_001_reusable": false,
+    "partial_result_recovery": false,
+    "selective_rerun": false,
+    "automatic_full_rerun": false
+  },
+  "current_authority": {
+    "new_scientific_run": false,
+    "complete_panel_direct_hook_diagnostic": false,
+    "pooled_gate_revision": false,
+    "outcome_access_or_join": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "RESEARCHER_DECISION_ON_COMPLETE_40_UNIT_DIRECT_VERSUS_ONE_STEP_HOOK_DIAGNOSTIC"
+}
