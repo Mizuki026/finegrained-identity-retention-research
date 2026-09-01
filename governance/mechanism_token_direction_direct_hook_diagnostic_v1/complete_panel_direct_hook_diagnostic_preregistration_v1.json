@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "preregistration_id": "token_direction_complete_panel_direct_hook_diagnostic_v1",
+  "created_at_utc": "2026-09-01",
+  "status": "PREREGISTERED_FIXED_COMPLETE_PANEL_DIAGNOSTIC_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "trigger": "scientific_run_001_aborted_at_frozen_run_003_pooled_lfe_replication_for_eyeglasses_FEY_01",
+  "scientific_role": "OUTCOME_BLIND_MEASUREMENT_PATH_DIAGNOSTIC",
+  "panel": {
+    "formal_units": 40,
+    "attributes": ["eyeglasses", "facial_hair"],
+    "matched_pairs_per_attribute": 10,
+    "roles": ["positive", "control"],
+    "representative_generation_row": "seed_index_1",
+    "representative_seed": "2686238281",
+    "unit_or_pair_selection": false,
+    "reduced_panel_allowed": false
+  },
+  "paired_measurement": {
+    "preprocessing_calls": 40,
+    "same_preprocessing_outputs_used_for_direct_and_hook": true,
+    "direct_lfe_calls": 40,
+    "one_step_pipeline_hook_controls": 40,
+    "transformer_steps": 40,
+    "full_diffusion_trajectories": 0,
+    "local_face_scale": 1.0,
+    "output_type": "latent",
+    "hook_fire_count_per_unit": 1,
+    "lfe_shape": [1, 32, 2048]
+  },
+  "direct_hook_family": {
+    "rows": 40,
+    "bit_exact_boolean": true,
+    "max_absolute_difference": true,
+    "rms_difference": true,
+    "elementwise_tolerance": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "all_rows_retained": true
+  },
+  "hook_pooled_replication": {
+    "rows": 20,
+    "unit_vector": "l2_normalize(mean_token(hooked_lfe_output))",
+    "direction": "mean positive-minus-control over the other nine pairs",
+    "direction_normalized": false,
+    "frozen_stage": "valid_face_emb_mean_token_l2_normalized",
+    "comparison_tolerance": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "all_pairs_retained": true
+  },
+  "excluded": {
+    "token_index_margin_rows_640": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "p_values_or_confidence_intervals": true,
+    "token_or_unit_selection": true,
+    "selective_rerun": true,
+    "raw_tensor_persistence": true,
+    "video_decode_or_persistence": true,
+    "controlled_intervention": true
+  },
+  "privacy": {
+    "raw_lfe_tokens_persisted": false,
+    "raw_identity_embeddings_persisted": false,
+    "reference_images_copied": false,
+    "aligned_images_or_keypoints_persisted": false,
+    "latent_or_media_persisted": false
+  },
+  "fallback_policy": "RUN_LEVEL_LIMITATION_ONLY_NO_TASK_UNIT_PAIR_ROLE_OR_ATTRIBUTE_ASSIGNMENT",
+  "compute": {
+    "gpu_devices": 1,
+    "expected_gpu_hours": [0.1, 0.3],
+    "hard_ceiling_gpu_hours": 2
+  },
+  "claim_boundary": "COMPLETE_FIXED_PANEL_MEASUREMENT_PATH_AGREEMENT_OR_DISAGREEMENT_ONLY_NO_ATTRIBUTE_MECHANISM_CAUSAL_LOCALIZATION_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "current_authority": {
+    "preregistration": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_linkage": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_DIAGNOSTIC_RUNNER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}

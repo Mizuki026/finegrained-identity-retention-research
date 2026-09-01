@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "freeze_id": "token_direction_complete_panel_direct_hook_diagnostic_design_v1",
+  "frozen_at_utc": "2026-09-01",
+  "source_head_before_design_commit": "1038e9f941e1e817b9efb0e71f25b5282e1a2331",
+  "status": "FROZEN_APPROVED_COMPLETE_40_UNIT_DIRECT_HOOK_DIAGNOSTIC_PREREGISTRATION_ONLY",
+  "researcher_decision": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_v1/researcher_preregistration_decision_v1.json",
+    "bytes": 1067,
+    "sha256": "e1d8823505193743b63a60bbc293d110f476bd4502eea510d7bddfd626229d4f"
+  },
+  "protocol": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_v1/complete_panel_direct_hook_diagnostic_protocol_v1.md",
+    "bytes": 7079,
+    "sha256": "846f7d8d4ea4d844fbda56ab46641c25de57f3a4bc3d0e5505d89ee6ae7f30a8"
+  },
+  "machine_preregistration": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_v1/complete_panel_direct_hook_diagnostic_preregistration_v1.json",
+    "bytes": 3303,
+    "sha256": "868e2568ff1589ea8c922320c0ea311b618c1d519cab12901f18582767efeb75"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_direct_hook_diagnostic_v1/diagnostic_design_evidence_manifest_v1.csv",
+    "artifact_rows": 11,
+    "bytes": 2257,
+    "sha256": "c203f3d6e4f72f5e2633902b0a76a32e4f8cc16a0392447f59936f31349b472e"
+  },
+  "frozen_design": {
+    "formal_units": 40,
+    "direct_lfe_calls": 40,
+    "one_step_hook_controls": 40,
+    "same_preprocessing_pairing": true,
+    "direct_hook_rows": 40,
+    "hook_pooled_replication_rows": 20,
+    "token_margin_rows": 0,
+    "outcome_access": false,
+    "selective_rerun": false,
+    "raw_tensor_persistence": false,
+    "gpu_devices": 1,
+    "expected_gpu_hours": [0.1, 0.3],
+    "hard_gpu_hours_ceiling": 2
+  },
+  "current_authority": {
+    "preregistration_complete": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "formal_input_audit": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_linkage": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_DIAGNOSTIC_RUNNER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}

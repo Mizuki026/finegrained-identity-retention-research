@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "decision_id": "token_direction_complete_panel_direct_hook_diagnostic_v1",
+  "decided_at_utc": "2026-09-01",
+  "researcher_instruction": "批准下一步预注册完整 40-unit direct-vs-one-step-hook 诊断",
+  "approved_design": {
+    "all_40_units_no_subset": true,
+    "same_preprocessing_result_for_direct_and_hook_within_unit": true,
+    "complete_20_hook_pooled_margins_reconstructed_against_frozen_run_003": true,
+    "primary_640_token_margins_computed": false,
+    "outcome_access": false,
+    "selective_rerun": false,
+    "raw_tensor_persistence": false,
+    "expected_gpu_hours_range": [0.1, 0.3],
+    "hard_gpu_hours_ceiling": 2
+  },
+  "current_authority": {
+    "preregistration_only": true,
+    "implementation": false,
+    "cpu_tests_or_dry_run": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_linkage": false,
+    "controlled_intervention": false
+  },
+  "status": "ALL_COMPLETE_PANEL_DIRECT_HOOK_DIAGNOSTIC_DECISIONS_APPROVED_PREREGISTRATION_ONLY"
+}
