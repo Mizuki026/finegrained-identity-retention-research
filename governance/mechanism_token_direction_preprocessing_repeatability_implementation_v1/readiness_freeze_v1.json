@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "freeze_id": "complete_panel_fresh_preprocessing_repeatability_runner_readiness_v1",
+  "frozen_at_utc": "2026-09-02",
+  "status": "FROZEN_PASS_PREPROCESSING_REPEATABILITY_RUNNER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN",
+  "record": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_implementation_v1/readiness_record_v1.json",
+    "bytes": 2731,
+    "sha256": "3005ac0b1abf6239f5d3a82cc8baab52d724fbfc41e78239d8c6ddd252201a94"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_implementation_v1/readiness_evidence_manifest_v1.csv",
+    "artifact_rows": 13,
+    "bytes": 2537,
+    "sha256": "0d5ae4f6138ac06938f77464f7cc1aa4bb75ade082af96787ace8bf912e191be"
+  },
+  "verified": {
+    "diagnostic_specific_tests": 6,
+    "upstream_regression_tests": 23,
+    "tests_passed": 29,
+    "no_weight_dry_run": true,
+    "independent_dry_run_verification": true,
+    "plan_rows": 80,
+    "formal_units": 40,
+    "preprocessing_calls_planned": 80,
+    "direct_lfe_calls_planned": 160,
+    "within_rows_planned": 80,
+    "cross_rows_planned": 40,
+    "pooled_margin_rows_planned": 40,
+    "cross_pooled_rows_planned": 20,
+    "run003_rows_planned": 40,
+    "token_margin_rows": 0,
+    "transformer_steps": 0,
+    "top_level_ml_imports": 0,
+    "raw_tensor_serializer": false,
+    "directory_level_staging_transaction": true,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_used": false,
+    "outcome_access": false
+  },
+  "current_authority": {
+    "implementation_complete": true,
+    "cpu_tests_complete": true,
+    "no_weight_dry_run_complete": true,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "scientific_run_002": false,
+    "outcome_access_or_join": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT"
+}

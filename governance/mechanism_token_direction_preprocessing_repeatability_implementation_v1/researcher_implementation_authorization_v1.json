@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "authorization_id": "complete_panel_fresh_preprocessing_repeatability_implementation_v1",
+  "authorized_at_utc": "2026-09-02",
+  "researcher_instruction": "授权 runner/analyzer/verifier 实现、CPU 测试和 no-weight dry-run",
+  "design_freeze": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/complete_panel_fresh_preprocessing_repeatability_design_freeze_v1.json",
+    "bytes": 3180,
+    "sha256": "bee3b9893e45c3cc96b60b11aa17b5e41582ccebd96a6eab5f078a1b6e4c7e24",
+    "required_status": "FROZEN_APPROVED_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_PREREGISTRATION_ONLY"
+  },
+  "authorized": {
+    "protocol_and_plan_implementation": true,
+    "transient_analyzer_implementation": true,
+    "independent_verifier_implementation": true,
+    "fail_closed_runner_implementation": true,
+    "future_runtime_implementation": true,
+    "cpu_only_static_and_synthetic_tests": true,
+    "cpu_only_no_weight_dry_run": true
+  },
+  "not_authorized": {
+    "formal_input_audit": true,
+    "reference_image_access_or_decode": true,
+    "face_preprocessing": true,
+    "model_or_weight_loading": true,
+    "gpu_execution": true,
+    "raw_identity_or_tensor_capture_in_formal_data": true,
+    "scientific_run_002": true,
+    "token_margin_analysis_640": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "selective_or_automatic_rerun": true,
+    "video_generation_or_decode": true,
+    "controlled_intervention": true,
+    "network": true
+  },
+  "status": "PREPROCESSING_REPEATABILITY_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED_ONLY"
+}

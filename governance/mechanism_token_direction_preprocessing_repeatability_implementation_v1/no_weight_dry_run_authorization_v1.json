@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "authorization_id": "complete_panel_fresh_preprocessing_repeatability_no_weight_dry_run_v1",
+  "authorized_at_utc": "2026-09-02",
+  "status": "PREPROCESSING_REPEATABILITY_NO_WEIGHT_DRY_RUN_AUTHORIZED",
+  "gpu_execution_explicitly_approved": false,
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_preprocessing_repeatability_v1_dry_run/run_001",
+  "design_freeze": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_design_v1/complete_panel_fresh_preprocessing_repeatability_design_freeze_v1.json",
+    "bytes": 3180,
+    "sha256": "bee3b9893e45c3cc96b60b11aa17b5e41582ccebd96a6eab5f078a1b6e4c7e24"
+  },
+  "code": {
+    "preprocessing_repeatability_protocol_v1.py": {
+      "path": "src/preprocessing_repeatability_protocol_v1.py",
+      "bytes": 5979,
+      "sha256": "7b5f2b9cd3b1328f4da325be6ccdbb39244004c6910510ba5eb488f1f40a305b"
+    },
+    "analyze_preprocessing_repeatability_v1.py": {
+      "path": "src/analyze_preprocessing_repeatability_v1.py",
+      "bytes": 6661,
+      "sha256": "c94f637d4f69d54bbdbfff9483c2bbf204d40da44c73ea5fbb44a07b6441965d"
+    },
+    "verify_preprocessing_repeatability_v1.py": {
+      "path": "src/verify_preprocessing_repeatability_v1.py",
+      "bytes": 13887,
+      "sha256": "6bfbcc44ba51c5919117d25cacccde14fa0ee391e326b6f19ca6511a07186480"
+    },
+    "run_preprocessing_repeatability_diagnostic_v1.py": {
+      "path": "src/run_preprocessing_repeatability_diagnostic_v1.py",
+      "bytes": 8028,
+      "sha256": "f64a6b6f34f659c1ac5e9e7270806ea6f5f99ffaf9fd7c458ce39981440a497c"
+    },
+    "preprocessing_repeatability_runtime_v1.py": {
+      "path": "src/preprocessing_repeatability_runtime_v1.py",
+      "bytes": 6059,
+      "sha256": "75e9e56c75e26ba5f78d700caa6b4f8a673b302930401db2410a2152ecadb9b9"
+    }
+  },
+  "authority": {
+    "cpu_only_no_weight_dry_run": true,
+    "independent_verification": true,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "raw_tensor_capture": false,
+    "outcome_access": false,
+    "token_margin_analysis_640": false,
+    "network": false
+  },
+  "planned_counts": {
+    "formal_units": 40,
+    "preprocessing_calls": 80,
+    "direct_lfe_calls": 160,
+    "within_rows": 80,
+    "cross_rows": 40,
+    "pooled_margin_rows": 40,
+    "cross_pooled_rows": 20,
+    "run003_rows": 40,
+    "token_margin_rows": 0,
+    "transformer_steps": 0
+  }
+}
