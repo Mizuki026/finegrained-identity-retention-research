@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "record_id": "complete_panel_fresh_preprocessing_repeatability_formal_input_audit_run_001",
+  "recorded_at_utc": "2026-09-02",
+  "source_head_before_audit_commit": "1ac221246e4f91c961ba761001b30f58ec7c4913",
+  "status": "PASS_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_FORMAL_INPUT_AUDIT_AND_INDEPENDENT_VERIFICATION",
+  "verified_inputs": {
+    "formal_master": true,
+    "formal_master_artifact_bindings": 16,
+    "runner_readiness_bindings": 13,
+    "generation_tasks": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "repeatability_seed_index_1_plan_rows": 40,
+    "planned_fresh_preprocessing_calls": 80,
+    "planned_direct_lfe_calls": 160,
+    "unique_reference_files": 40,
+    "reference_sha256_matches": 40,
+    "reference_images_decoded": false,
+    "pooled_lfe_rows": 20,
+    "pooled_lfe_all_finite": true,
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_worktree_clean": true,
+    "consisid_utils_source_verified": true,
+    "transformer_source_verified": true,
+    "pipeline_source_verified": true,
+    "weight_inventory_binding_verified": true,
+    "full_weight_rehash_repeated": false
+  },
+  "independent_verification": {
+    "status": "PASS_INDEPENDENT_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_FORMAL_INPUT_AUDIT_VERIFICATION",
+    "all_16_master_artifacts_rehashed": true,
+    "all_13_readiness_bindings_rehashed": true,
+    "all_160_generation_rows_reaudited": true,
+    "all_40_plan_rows_reconstructed": true,
+    "all_40_reference_files_rehashed": true,
+    "all_20_pooled_lfe_rows_recomputed": true,
+    "consisid_utils_transformer_pipeline_sources_rehashed": true
+  },
+  "runtime_output": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_preprocessing_repeatability_v1_input_audit/run_001",
+    "artifacts": {
+      "audit_summary_v1.json": {
+        "bytes": 1335,
+        "sha256": "56e143d8b3a798b47a1bb963689336099545eb59acb926aa4ff83a3901302f83"
+      },
+      "independent_verification_v1.json": {
+        "bytes": 929,
+        "sha256": "87f8cc27ad2ee78e0337ca059519aef0ce29e8b1fdeabf7a8d980f5484974b0b"
+      },
+      "master_artifact_bindings_v1.csv": {
+        "bytes": 1559,
+        "sha256": "0825fd8c00aeb13fd82a127bad92cd420eb51660fdbb66d1d50fc84dcf8f518d",
+        "rows": 16
+      },
+      "pooled_lfe_keys_v1.csv": {
+        "bytes": 1097,
+        "sha256": "8f7e503ffaebbb9b0f698b703ca376ed48d3946da77e7b50157efc891ba3cccf",
+        "rows": 20
+      },
+      "readiness_bindings_v1.csv": {
+        "bytes": 2468,
+        "sha256": "9f200345d7614f684d1eee339e90d4bd3db76917c8f19c9b304d27fe6f1a2b2d",
+        "rows": 13
+      },
+      "reference_keys_v1.csv": {
+        "bytes": 5368,
+        "sha256": "0d582e781775e18b5f0b57f98099df8db6cc0f712920235afd704b68d4c32183",
+        "rows": 40
+      },
+      "repeatability_unit_plan_keys_v1.csv": {
+        "bytes": 4126,
+        "sha256": "eb919468e60ca93b49bb91db6b5cabbddd1f9b79a4a251a5596f2afe9bb4c150",
+        "rows": 40
+      }
+    }
+  },
+  "actions_not_performed": [
+    "reference_image_decode_or_visualization",
+    "face_preprocessing_or_detector_execution",
+    "model_or_weight_loading",
+    "full_model_weight_rehash",
+    "gpu_execution",
+    "direct_lfe_execution",
+    "raw_tensor_capture",
+    "scientific_margin_computation",
+    "outcome_access_or_join",
+    "association_computation",
+    "token_margin_analysis_640",
+    "generation_or_video_decode",
+    "intervention_or_ablation",
+    "network_access"
+  ],
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_COMPLETE_PANEL_PREPROCESSING_REPEATABILITY_EXECUTION"
+}

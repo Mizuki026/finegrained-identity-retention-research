@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "authorization_id": "complete_panel_fresh_preprocessing_repeatability_formal_input_audit_v1",
+  "authorized_at_utc": "2026-09-02",
+  "researcher_instruction": "单独授权 CPU-only formal input audit",
+  "status": "CPU_ONLY_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_FORMAL_INPUT_AUDIT_AUTHORIZED",
+  "source_head": "1ac221246e4f91c961ba761001b30f58ec7c4913",
+  "readiness_freeze": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_implementation_v1/readiness_freeze_v1.json",
+    "bytes": 2054,
+    "sha256": "81f1b3e3188b3558182297d5852dd7a362297f021c38dd8e117699ac191b4a75"
+  },
+  "authorized": {
+    "cpu_only_auditor_and_independent_verifier_implementation": true,
+    "frozen_design_readiness_metadata_and_source_binding_audit": true,
+    "generation_manifest_schema_and_complete_160_task_audit": true,
+    "complete_40_unit_seed_index_1_plan_audit": true,
+    "forty_unique_reference_file_existence_size_and_sha256_audit": true,
+    "reference_access_mode": "RAW_BYTES_FOR_SHA256_ONLY_NO_IMAGE_DECODING",
+    "frozen_run_003_pooled_lfe_baseline_audit": true,
+    "consisid_commit_and_preprocessing_lfe_source_audit": true,
+    "formal_audit_execution_and_independent_verification": true
+  },
+  "not_authorized": {
+    "reference_image_decode_or_visualization": true,
+    "face_preprocessing_or_detector_execution": true,
+    "model_or_weight_loading": true,
+    "full_model_weight_rehash": true,
+    "gpu_execution": true,
+    "direct_lfe_execution": true,
+    "raw_tensor_capture": true,
+    "scientific_margin_computation": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "token_margin_analysis_640": true,
+    "intervention_or_ablation": true,
+    "generation_or_video_decode": true,
+    "network": true,
+    "modification_of_frozen_inputs": true
+  },
+  "weight_policy": "VERIFY_FROZEN_MODEL_WEIGHT_INVENTORY_ARTIFACT_BINDING_ONLY_DO_NOT_REPEAT_ACCEPTED_FULL_WEIGHT_AUDIT",
+  "failure_policy": "ABORT_ON_ANY_PATH_SCHEMA_COUNT_SHA256_COMMIT_FINITE_PANEL_PERMISSION_OR_AUTHORITY_MISMATCH_NO_REPAIR_OR_REDUCED_PANEL",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_COMPLETE_PANEL_PREPROCESSING_REPEATABILITY_EXECUTION"
+}
