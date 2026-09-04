@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "authorization_id": "token_direction_v2_formal_input_audit_run_001",
+  "authorized_at_utc": "2026-09-04",
+  "status": "TOKEN_DIRECTION_V2_FORMAL_INPUT_AUDIT_EXECUTION_AUTHORIZED",
+  "researcher_authorization": {
+    "path": "governance/mechanism_token_direction_input_audit_v2/researcher_formal_input_audit_authorization_v2.json",
+    "bytes": 2236,
+    "sha256": "88a6479b94bfb0cf0efdc57c6a41e9d2ead9984a0e1da345ca5cbfed356896d6"
+  },
+  "code": {
+    "auditor": {
+      "path": "src/audit_token_resolved_lfe_direction_inputs_v2.py",
+      "bytes": 16052,
+      "sha256": "488ca5ccb2e6919bdf5652fe485fbe03f1ee5e1674ce8e39208546dbe4230a95"
+    },
+    "independent_verifier": {
+      "path": "src/verify_token_resolved_lfe_direction_input_audit_v2.py",
+      "bytes": 18760,
+      "sha256": "83adc2dbbc6d7a4adb5f560b516cf2db1f3925e28e7a2e7ebe3eb48859512790"
+    },
+    "protocol_dependency": {
+      "path": "src/token_resolved_lfe_direction_protocol_v2.py",
+      "bytes": 11823,
+      "sha256": "a8bb9b82b8304d28de01676a984c6acd796d3858a4656f7a643df5c7c793d844"
+    }
+  },
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_v2_input_audit/run_001",
+  "authority": {
+    "design_and_readiness_binding_audit": true,
+    "master_and_artifact_binding_audit": true,
+    "manifest_schema_and_160_task_audit": true,
+    "complete_160_record_plan_audit": true,
+    "reference_raw_byte_sha256_audit": true,
+    "run_003_pooled_lfe_baseline_audit": true,
+    "consisid_commit_and_preprocessing_lfe_source_audit": true,
+    "independent_verification": true,
+    "reference_decode": false,
+    "face_preprocessing": false,
+    "model_or_weight_loading": false,
+    "full_model_weight_rehash": false,
+    "gpu_execution": false,
+    "direct_lfe_execution": false,
+    "raw_tensor_capture": false,
+    "formal_token_margin_computation": false,
+    "outcome_access": false,
+    "association_computation": false,
+    "generation_or_video_decode": false,
+    "intervention": false,
+    "network": false
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_TOKEN_DIRECTION_V2_EXECUTION"
+}

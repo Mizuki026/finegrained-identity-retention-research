@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "record_id": "token_direction_v2_formal_input_audit_run_001",
+  "recorded_at_utc": "2026-09-04",
+  "source_head_before_audit_commit": "ac3b6ea107e362c614046079760f9b8d590c28de",
+  "status": "PASS_TOKEN_DIRECTION_V2_FORMAL_INPUT_AUDIT_AND_INDEPENDENT_VERIFICATION",
+  "verified_inputs": {
+    "formal_master": true,
+    "formal_master_artifact_bindings": 16,
+    "runner_readiness_bindings": 11,
+    "generation_tasks": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "execution_plan_rows": 160,
+    "planned_fresh_preprocessing_calls": 160,
+    "planned_direct_lfe_calls": 200,
+    "planned_direct_repeat_controls": 40,
+    "planned_four_label_comparisons": 120,
+    "unique_reference_files": 40,
+    "reference_sha256_matches": 40,
+    "reference_images_decoded": false,
+    "pooled_lfe_rows": 20,
+    "pooled_lfe_all_finite": true,
+    "run_003_descriptive_only": true,
+    "run_003_is_validity_gate": false,
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_worktree_clean": true,
+    "consisid_utils_source_verified": true,
+    "transformer_source_verified": true,
+    "pipeline_source_verified": true,
+    "weight_inventory_binding_verified": true,
+    "full_weight_rehash_repeated": false
+  },
+  "independent_verification": {
+    "status": "PASS_INDEPENDENT_TOKEN_DIRECTION_V2_FORMAL_INPUT_AUDIT_VERIFICATION",
+    "all_16_master_artifacts_rehashed": true,
+    "all_11_readiness_bindings_rehashed": true,
+    "all_160_generation_rows_reaudited": true,
+    "all_160_plan_rows_reconstructed": true,
+    "all_40_reference_files_rehashed": true,
+    "all_20_pooled_lfe_rows_recomputed": true,
+    "consisid_utils_transformer_pipeline_sources_rehashed": true
+  },
+  "runtime_output": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v2_input_audit/run_001",
+    "artifacts": {
+      "audit_summary_v2.json": {
+        "bytes": 1388,
+        "sha256": "a48e9ca05c960625145aa1a2285301a9b54ba5963b56867a4def6bd375ef5c1d"
+      },
+      "execution_plan_keys_v2.csv": {
+        "bytes": 22837,
+        "sha256": "059b3b37b25c1230ae38365958fff3c7ee921a54b373635561233a91c8d51754",
+        "rows": 160
+      },
+      "independent_verification_v2.json": {
+        "bytes": 899,
+        "sha256": "48652cd6155189f853b74bc6f6a792219e7f7bc647d1c4fd1847e633ff1a6be8"
+      },
+      "master_artifact_bindings_v2.csv": {
+        "bytes": 1559,
+        "sha256": "0825fd8c00aeb13fd82a127bad92cd420eb51660fdbb66d1d50fc84dcf8f518d",
+        "rows": 16
+      },
+      "pooled_lfe_keys_v2.csv": {
+        "bytes": 1214,
+        "sha256": "4837b8481605c2b69fb8cc36c50ee0847c8012c39465d46991177a2e6c76bd3f",
+        "rows": 20
+      },
+      "readiness_bindings_v2.csv": {
+        "bytes": 1863,
+        "sha256": "5a28b780b540011047bedb271a6c23bbbc07877ba72274a96cf460480cd37c90",
+        "rows": 11
+      },
+      "reference_keys_v2.csv": {
+        "bytes": 5368,
+        "sha256": "0d582e781775e18b5f0b57f98099df8db6cc0f712920235afd704b68d4c32183",
+        "rows": 40
+      }
+    }
+  },
+  "actions_not_performed": [
+    "reference_image_decode_or_visualization",
+    "face_preprocessing_or_detector_execution",
+    "model_or_weight_loading",
+    "full_model_weight_rehash",
+    "gpu_execution",
+    "direct_lfe_execution",
+    "raw_tensor_capture",
+    "formal_token_margin_computation",
+    "outcome_access_or_join",
+    "association_computation",
+    "generation_or_video_decode",
+    "intervention_or_ablation",
+    "network_access"
+  ],
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_TOKEN_DIRECTION_V2_EXECUTION"
+}
