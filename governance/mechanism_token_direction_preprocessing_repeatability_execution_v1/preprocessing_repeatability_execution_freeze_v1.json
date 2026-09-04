@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "freeze_id": "complete_panel_fresh_preprocessing_repeatability_gpu_run_001_v1",
+  "frozen_at_utc": "2026-09-04",
+  "source_head_before_execution_record_commit": "a64e18a2dc5189825b7108789d38a5ce5f56d212",
+  "status": "FROZEN_COMPLETE_VERIFIED_PREPROCESSING_REPEATABILITY_PREREGISTERED_BRANCH_3",
+  "execution_verified": {
+    "formal_units": 40,
+    "preprocessing_calls": 80,
+    "direct_lfe_calls": 160,
+    "hooks": 0,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "elapsed_gpu_hours": 0.015562619236297905,
+    "hard_gpu_hours_ceiling": 2,
+    "model_weight_rows_rehashed": 72,
+    "raw_tensor_files": 0,
+    "decoded_media_files": 0,
+    "outcome_access": false,
+    "token_margin_rows": 0
+  },
+  "complete_families": {
+    "within_preprocessing_rows": 80,
+    "within_preprocessing_bit_exact_rows": 80,
+    "within_preprocessing_tolerance_pass_rows": 80,
+    "cross_preprocessing_rows": 40,
+    "cross_preprocessing_bit_exact_rows": 40,
+    "cross_preprocessing_tolerance_pass_rows": 40,
+    "cross_replicate_pooled_rows": 20,
+    "cross_replicate_pooled_tolerance_pass_rows": 20,
+    "cross_replicate_pooled_sign_match_rows": 20,
+    "replicate_run_003_rows": 40,
+    "replicate_run_003_tolerance_pass_rows": 0,
+    "replicate_run_003_tolerance_fail_rows": 40,
+    "replicate_run_003_sign_match_rows": 40
+  },
+  "independent_verification": {
+    "in_memory": "PASS_INDEPENDENT_IN_MEMORY_PREPROCESSING_REPEATABILITY_RECOMPUTATION",
+    "persisted": "PASS_INDEPENDENT_PERSISTED_PREPROCESSING_REPEATABILITY_VERIFICATION"
+  },
+  "preregistered_interpretation": {
+    "branch": 3,
+    "verified_observation": "CURRENT_WITHIN_PROCESS_PREPROCESSING_AND_LFE_READOUT_ARE_BIT_EXACT_REPEATABLE_BUT_BOTH_CURRENT_POOLED_REPLICATE_FAMILIES_FAIL_STRICT_HISTORICAL_RUN_003_REPLICATION",
+    "historical_source_localized": false,
+    "threshold_changed": false
+  },
+  "scientific_interpretation_proposal": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_execution_v1/preprocessing_repeatability_scientific_interpretation_proposal_v1.md",
+    "bytes": 4686,
+    "sha256": "8d32142b528dfd354a8bcdf41fe5f01d6e8ab6a3d066449a5be051b72e72ee9c",
+    "researcher_accepted": false
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_execution_v1/preprocessing_repeatability_execution_evidence_manifest_v1.csv",
+    "artifact_rows": 20,
+    "bytes": 4437,
+    "sha256": "e9529b245c853b72f0942aad150dea161af5520627d221795895d83d9928ca14"
+  },
+  "runtime_package": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_preprocessing_repeatability_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "file_mode": "0444"
+  },
+  "run_level_limitations": {
+    "face_detection_fallback_stdout_messages_observed": true,
+    "raw_stdout_log_persisted": false,
+    "fallback_count_claimed": false,
+    "task_or_pair_assignment": false,
+    "fallback_based_exclusion_or_rerun": false
+  },
+  "current_authority": {
+    "diagnostic_execution_complete_and_closed": true,
+    "automatic_or_selective_rerun": false,
+    "token_direction_scientific_run_002": false,
+    "baseline_replacement": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false,
+    "new_diagnostic": false
+  },
+  "next_gate": "RESEARCHER_REVIEW_OF_FIVE_PROPOSED_SCIENTIFIC_INTERPRETATION_DECISIONS"
+}

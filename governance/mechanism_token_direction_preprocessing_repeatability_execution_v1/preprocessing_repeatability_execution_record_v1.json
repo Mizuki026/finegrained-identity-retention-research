@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "record_id": "complete_panel_fresh_preprocessing_repeatability_gpu_run_001_v1",
+  "recorded_at_utc": "2026-09-04",
+  "status": "COMPLETE_VERIFIED_PREREGISTERED_BRANCH_3_CURRENT_PREPROCESSING_REPEATABLE_HISTORICAL_RUN_003_REPLICATION_FAILED",
+  "source_state_commit": "a64e18a",
+  "execution": {
+    "formal_units": 40,
+    "preprocessing_calls": 80,
+    "direct_lfe_calls": 160,
+    "hooks": 0,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "elapsed_gpu_hours": 0.015562619236297905,
+    "hard_gpu_hours_ceiling": 2,
+    "model_weight_rows_rehashed": 72,
+    "raw_tensor_files": 0,
+    "decoded_media_files": 0,
+    "outcomes_opened": false,
+    "token_margin_rows": 0
+  },
+  "within_preprocessing_direct_repeat_family": {
+    "rows": 80,
+    "bit_exact_rows": 80,
+    "within_frozen_tolerance_rows": 80,
+    "maximum_absolute_difference": 0.0,
+    "maximum_rms_difference": 0.0
+  },
+  "cross_preprocessing_lfe_family": {
+    "rows": 40,
+    "within_input_controls_pass_rows": 40,
+    "bit_exact_rows": 40,
+    "within_frozen_tolerance_rows": 40,
+    "maximum_absolute_difference": 0.0,
+    "maximum_rms_difference": 0.0,
+    "eyeglasses_rows": 20,
+    "facial_hair_rows": 20
+  },
+  "cross_replicate_pooled_family": {
+    "rows": 20,
+    "within_frozen_tolerance_rows": 20,
+    "sign_match_rows": 20,
+    "maximum_absolute_difference": 0.0
+  },
+  "replicate_run_003_comparison_family": {
+    "rows": 40,
+    "within_frozen_tolerance_rows": 0,
+    "outside_frozen_tolerance_rows": 40,
+    "sign_match_rows": 40,
+    "minimum_absolute_difference": 2.7478672564029694e-06,
+    "maximum_absolute_difference": 4.0709623135626316e-05,
+    "p1_tolerance_passes": 0,
+    "p2_tolerance_passes": 0,
+    "p1_direction_counts": {
+      "correct": 11,
+      "wrong": 9,
+      "tie": 0
+    },
+    "p2_direction_counts": {
+      "correct": 11,
+      "wrong": 9,
+      "tie": 0
+    }
+  },
+  "verification": {
+    "in_memory_status": "PASS_INDEPENDENT_IN_MEMORY_PREPROCESSING_REPEATABILITY_RECOMPUTATION",
+    "persisted_status": "PASS_INDEPENDENT_PERSISTED_PREPROCESSING_REPEATABILITY_VERIFICATION",
+    "execution_status_rows": 80,
+    "all_execution_rows_complete_transient_only": true
+  },
+  "preregistered_interpretation_branch": {
+    "branch": 3,
+    "frozen_text": "ALL_TENSOR_AND_CROSS_REPLICATE_POOLED_COMPARISONS_PASS_BUT_ONE_OR_BOTH_COMPLETE_REPLICATE_FAMILIES_FAIL_STRICT_RUN_003_REPLICATION",
+    "maximum_claim": "CURRENT_WITHIN_PROCESS_PREPROCESSING_AND_LFE_READOUT_ARE REPEATABLE_AT_FROZEN_TOLERANCE_WHILE_HISTORICAL_NUMERICAL_REPLICATION_REMAINS_UNRESOLVED",
+    "historical_source_localized": false,
+    "threshold_relaxation": false
+  },
+  "run_level_limitations": {
+    "face_detection_fallback_stdout_messages_observed": true,
+    "raw_stdout_log_persisted": false,
+    "fallback_count_claimed": false,
+    "task_unit_pair_role_or_attribute_assignment": false,
+    "fallback_based_exclusion_or_rerun": false,
+    "interpretation": "RUN_LEVEL_LIMITATION_ONLY"
+  },
+  "external_runtime_package": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_preprocessing_repeatability_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "file_mode": "0444",
+    "files": {
+      "cross_preprocessing_lfe_equivalence_v1.csv": [2765, "8bcab42b8c6bbf4605c5058ebb5a5424f47c446fae5701d5236f310eac5d449b"],
+      "cross_replicate_pooled_comparison_v1.csv": [2391, "fd7dc7e25138a3c27473154274b27bbaf68fef73c066f32ab7e18509d5bd856a"],
+      "preprocessing_repeatability_execution_status_v1.csv": [12927, "23ee394e6eb9bad1852bfe91285c65d0400cf931e6a88fd891139443abf1da32"],
+      "preprocessing_repeatability_execution_summary_v1.json": [902, "4418e7a4a92809c1800980cad5be55c6b5493f5ca7abb2fcdd5c0cc878715b34"],
+      "preprocessing_repeatability_in_memory_verification_v1.json": [289, "e8a5c94253d7945fcf8d93a64092bfa0a7868e42e79e55b2667d3735bf06ff98"],
+      "preprocessing_repeatability_persisted_verification_v1.json": [299, "ffeb7a40e068bb4aace4c1685d188f8117b0257f193795053dced899b7e0a2ee"],
+      "preprocessing_replicate_pooled_margins_v1.csv": [2084, "0cc808cc67205c639fd8a3259a2abe769c49b85113a2d749ec122f9cef285172"],
+      "replicate_run_003_comparison_v1.csv": [5601, "e8de394eef37b0295ad9feceb63d80af60a79a2e207dbaca6d489fda802af845"],
+      "within_preprocessing_direct_repeat_v1.csv": [5222, "99e177cae6de6c798fd967ce299253aab030e290edcffe378aeb6d61a96767b0"]
+    }
+  },
+  "actions_not_performed": [
+    "unit_pair_role_or_attribute_selection",
+    "automatic_or_selective_rerun",
+    "raw_identity_token_latent_or_media_persistence",
+    "hook_or_transformer_step_execution",
+    "full_diffusion_trajectory_or_video_decode",
+    "token_margin_analysis_640",
+    "outcome_access_or_join",
+    "association_computation",
+    "threshold_modification",
+    "controlled_intervention_or_ablation",
+    "network_access"
+  ],
+  "next_gate": "RESEARCHER_REVIEW_OF_FIVE_PROPOSED_SCIENTIFIC_INTERPRETATION_DECISIONS"
+}
