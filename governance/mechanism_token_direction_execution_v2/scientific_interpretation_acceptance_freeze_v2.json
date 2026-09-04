@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "freeze_id": "token_direction_v2_scientific_interpretation_acceptance",
+  "frozen_at_utc": "2026-09-04",
+  "base_research_commit": "5d8aa3cba4e48696b964189fdd9fb1ebf0a4e346",
+  "status": "FROZEN_ALL_FIVE_TOKEN_DIRECTION_V2_SCIENTIFIC_INTERPRETATIONS_ACCEPTED",
+  "accepted_scientific_state": {
+    "v2_current_transaction_measurement": "VALID_AND_INTERNALLY_COHERENT",
+    "historical_run_003_numerical_nonreplication": "RETAINED_0_OF_20_STRICT_MATCH_AND_20_OF_20_SIGN_MATCH",
+    "run_003_repair_replacement_or_overwrite": false,
+    "main_descriptive_result": "TOKEN_INDEX_AND_PAIR_DIRECTIONAL_HETEROGENEITY",
+    "eyeglasses_extreme_indices": "COMPLETE_FAMILY_DESCRIPTORS_NOT_SELECTED_ATTRIBUTE_TOKENS_OR_TARGETS",
+    "facial_hair_pattern": "BROADLY_STATE_AND_PAIR_DEPENDENT_AT_THIS_READOUT_WITHOUT_CAUSE_LOCALIZATION",
+    "distributed_multi_path_representation": "RETAINED_AS_WORKING_MODEL_NOT_VERIFIED_MECHANISM",
+    "observational_token_direction_stage": "CLOSED"
+  },
+  "researcher_acceptance": {
+    "path": "governance/mechanism_token_direction_execution_v2/researcher_scientific_interpretation_acceptance_v2.json",
+    "bytes": 3759,
+    "sha256": "a20808fce7311cb811acfba9d4edff13c9e80ed67272ebb68060ac5a14ad4a0b"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_execution_v2/scientific_interpretation_acceptance_evidence_manifest_v2.csv",
+    "artifact_rows": 3,
+    "bytes": 699,
+    "sha256": "503c0195d94becfec6a17c6d046a510562e35359befe902bab0980925680e338"
+  },
+  "authority": {
+    "scientific_interpretation_acceptance_frozen": true,
+    "controlled_intervention_design_preregistration_only": true,
+    "implementation_or_cpu_test": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution_generation_or_intervention": false,
+    "outcome_annotation_access_construction_or_join": false,
+    "association_or_hypothesis_testing": false
+  },
+  "claim_boundary": "FIXED_PANEL_CURRENT_TRANSACTION_DIRECTIONAL_READABILITY_ONLY_NO_ATTRIBUTE_INFORMATION_LOSS_SEMANTIC_OR_SPATIAL_TOKEN_LOCALIZATION_SPARSE_OR_UNIFORM_PARTICIPATION_CAUSAL_MEDIATION_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_RANKING_CLAIMS",
+  "next_gate": "FORMALLY_FREEZE_THE_SEPARATE_CONTROLLED_INTERVENTION_DESIGN_WITH_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY"
+}

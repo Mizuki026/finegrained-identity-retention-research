@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "decision_id": "token_direction_v2_scientific_interpretation_acceptance",
+  "decided_at_utc": "2026-09-04",
+  "status": "ALL_FIVE_TOKEN_DIRECTION_V2_SCIENTIFIC_INTERPRETATIONS_ACCEPTED",
+  "decision_source": "Direct researcher instruction in the current session: accept the five interpretations and authorize only preregistration of the next controlled-intervention design",
+  "source_proposal": {
+    "path": "governance/mechanism_token_direction_execution_v2/token_direction_v2_scientific_interpretation_proposal_v2.md",
+    "bytes": 6791,
+    "sha256": "ea785e9ab5ce573b598a22ee713e2bb5e4d255855743d0ac9131e8a158151d08"
+  },
+  "source_execution_freeze": {
+    "path": "governance/mechanism_token_direction_execution_v2/token_direction_v2_execution_freeze_v2.json",
+    "bytes": 3266,
+    "sha256": "26945e910e34acc49e4e29193c0e46a30cfa5d59cfd0d0c36f6cafe37cf92854"
+  },
+  "accepted_interpretations": {
+    "v2_is_valid_as_one_internally_coherent_current_transaction_measurement": true,
+    "historical_run_003_strict_numerical_nonreplication_is_retained": true,
+    "v2_repairs_replaces_or_overwrites_run_003": false,
+    "token_index_and_pair_directional_heterogeneity_is_the_main_descriptive_result": true,
+    "semantic_or_spatial_token_specialization_is_established": false,
+    "uniform_or_sparse_token_participation_is_established": false,
+    "eyeglasses_extreme_indices_are_selected_attribute_tokens_or_intervention_targets": false,
+    "facial_hair_pattern_is_accepted_as_state_and_pair_dependent_at_this_readout": true,
+    "facial_hair_pattern_localizes_its_cause": false,
+    "distributed_multi_path_representation_is_retained_as_a_working_model": true,
+    "distributed_multi_path_representation_is_causally_validated": false,
+    "observational_token_direction_stage_is_closed": true
+  },
+  "evidence_classification": {
+    "verified_fact": "THE_COMPLETE_V2_TRANSACTION_PASSED_ALL_CURRENT_TRANSACTION_VALIDITY_AND_INDEPENDENT_RECOMPUTATION_GATES_AND_PERSISTED_THE_COMPLETE_640_MARGIN_FAMILY",
+    "current_fixed_panel_observation": "TOKEN_DIRECTION_SIGNS_ARE_HETEROGENEOUS_ACROSS_LEARNED_TOKEN_INDICES_AND_MATCHED_PAIRS_WITH_ATTRIBUTE_SPECIFIC_COMPLETE_PANEL_PATTERNS",
+    "accepted_working_model": "REPRESENTATION_READOUT_MISMATCH_OR_REORGANIZATION_WITH_DISTRIBUTED_MULTI_PATH_REPRESENTATION_REMAINING_PLAUSIBLE",
+    "unverified_hypothesis_class": "LOCAL_LFE_DIRECTIONAL_COMPONENTS_MAY_CONTRIBUTE_TO_GENERATED_ATTRIBUTE_RETENTION_WITH_OR_WITHOUT_SPATIAL_ROUTE_COMPENSATION_OR_INTERACTION",
+    "research_decision": "CLOSE_OBSERVATIONAL_TOKEN_DIRECTION_STAGE_AND_PREREGISTER_A_COMPLETE_FAMILY_PROSPECTIVE_CONTROLLED_INTERVENTION_WITHOUT_SELECTING_FAVORABLE_TOKENS"
+  },
+  "authority_granted_by_this_decision": {
+    "freeze_interpretation_acceptance": true,
+    "controlled_intervention_design_preregistration_only": true,
+    "runner_analyzer_or_verifier_implementation": false,
+    "cpu_tests_or_no_weight_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "outcome_access_annotation_or_join": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "video_generation_or_decode": false,
+    "controlled_intervention_execution": false,
+    "association_or_hypothesis_testing": false
+  },
+  "claim_boundary": "FIXED_PANEL_CURRENT_TRANSACTION_DIRECTIONAL_READABILITY_ONLY_NO_ATTRIBUTE_INFORMATION_LOSS_SEMANTIC_OR_SPATIAL_TOKEN_LOCALIZATION_SPARSE_OR_UNIFORM_PARTICIPATION_CAUSAL_MEDIATION_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_RANKING_CLAIMS",
+  "next_gate": "FREEZE_THE_SEPARATELY_VERSIONED_CONTROLLED_INTERVENTION_PREREGISTRATION_WITH_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY"
+}

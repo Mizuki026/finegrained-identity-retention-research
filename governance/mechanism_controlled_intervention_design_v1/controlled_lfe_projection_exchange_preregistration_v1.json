@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "preregistration_id": "controlled_lfe_projection_exchange_intervention_v1",
+  "created_at_utc": "2026-09-04",
+  "status": "FORMALLY_PREREGISTERED_DESIGN_ONLY_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "scientific_question": "DOES_COMPLETE_FAMILY_HELD_PAIR_OUT_LFE_DIRECTIONAL_PROJECTION_EXCHANGE_CHANGE_GENERATED_ATTRIBUTE_ROLE_CONTRAST_RELATIVE_TO_AN_EQUAL_DISPLACEMENT_ORTHOGONAL_SHAM_IN_THE_FIXED_PANEL",
+  "accepted_prior_state": {
+    "token_direction_v2_valid_current_transaction_measurement": true,
+    "historical_run_003_numerical_nonreplication_retained": true,
+    "token_and_pair_directional_heterogeneity_is_descriptive": true,
+    "extreme_token_indices_selected_as_targets": false,
+    "distributed_multi_path_representation": "ACCEPTED_WORKING_MODEL_NOT_CAUSALLY_VALIDATED",
+    "observational_token_direction_stage": "CLOSED"
+  },
+  "discovery_confirmation_policy": {
+    "strategy": "PROSPECTIVE_COMPLETE_32_TOKEN_FAMILY_WITH_HELD_PAIR_OUT_DIRECTIONS",
+    "v2_result_values_used_to_select_or_weight_tokens": false,
+    "best_token_top_k_or_favorable_pair_selection": false,
+    "persisted_v2_directions_loaded": false,
+    "directions_reconstructed_transiently_from_fresh_current_TRANSACTION_lfe": true
+  },
+  "frozen_panel": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "pairs_per_attribute": 10,
+    "pairs_total": 20,
+    "roles": ["positive", "control"],
+    "formal_units": 40,
+    "seeds": [2686238281, 280026145, 2169901996, 2046930553],
+    "source_tasks": 160,
+    "conditions": ["baseline", "target_projection_exchange", "orthogonal_sham"],
+    "scientific_trajectories": 480,
+    "reduced_panel_allowed": false
+  },
+  "model_and_generation": {
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "weight_inventory": "SAME_FROZEN_FORMAL_PANEL_INVENTORY",
+    "dtype": "bfloat16",
+    "decoded_frames": 49,
+    "resolution": [480, 720],
+    "scheduler_positions": 50,
+    "guidance": 6.0,
+    "local_face_scale": 1.0,
+    "same_initial_latent_per_task_across_conditions": true,
+    "fresh_scheduler_and_generator_per_condition": true,
+    "new_transaction_baseline_required": true,
+    "historical_video_or_outcome_as_baseline": false
+  },
+  "intervention_interface": {
+    "tensor": "transformer.local_facial_extractor_output_valid_face_emb",
+    "expected_shape": [1, 32, 2048],
+    "position": "BEFORE_ALL_21_PERCEIVER_CROSS_ATTENTION_INJECTIONS_AFTER_BLOCKS_0_2_THROUGH_40",
+    "same_selected_tensor_all_scheduler_positions_sites_and_cfg_rows": true,
+    "spatial_reference_latent_path_modified": false,
+    "text_or_global_identity_inputs_modified": false,
+    "weights_modified": false
+  },
+  "acquisition_transaction": {
+    "one_loaded_process": true,
+    "order": "ASCENDING_FORMAL_UNIT_ID_BEFORE_ANY_TRAJECTORY",
+    "fresh_face_preprocessing_calls": 40,
+    "direct_lfe_acquisitions": 40,
+    "one_preprocessing_result_and_lfe_tensor_shared_across_four_seeds_and_three_conditions_per_unit": true,
+    "condition_specific_face_preprocessing_calls": 0,
+    "all_cached_identity_tensors_transient": true
+  },
+  "direction": {
+    "per_unit_token": "Z_u_k_EQUALS_X_u_k_DIV_MAX_L2_NORM_1E_MINUS_12",
+    "training": "FOR_EACH_ATTRIBUTE_HELD_PAIR_AND_TOKEN_MEAN_NORMALIZED_POSITIVE_MINUS_CONTROL_OVER_OTHER_NINE_PAIRS",
+    "unit_direction": "L2_NORMALIZE_HELD_PAIR_OUT_MEAN_DIRECTION",
+    "norm_floor": 1e-12,
+    "degenerate_direction_action": "FAIL_COMPLETE_TRANSACTION_BEFORE_GENERATION",
+    "token_indices": 32,
+    "direction_fit_weight_or_threshold": false
+  },
+  "conditions_math": {
+    "baseline": "X",
+    "delta_role_token": "DOT_X_OTHER_MINUS_X_ROLE_WITH_HELD_PAIR_OUT_UNIT_DIRECTION",
+    "target": "X_PLUS_DELTA_TIMES_UNIT_DIRECTION_EXACT_COUNTERPART_RAW_PROJECTION_EXCHANGE",
+    "sham_direction": "DETERMINISTIC_SHAKE256_RADEMACHER_ORTHOGONALIZED_TO_TARGET_DIRECTION_AND_L2_NORMALIZED",
+    "sham": "X_PLUS_SAME_DELTA_TIMES_ORTHOGONAL_SHAM_DIRECTION",
+    "target_and_sham_equal_per_token_displacement_norm": true,
+    "sham_preserves_original_target_direction_projection": true,
+    "alpha_or_dose_sweep": false
+  },
+  "condition_order": {
+    "rule": "SORT_THREE_CONDITION_LABELS_BY_SHA256_NAMESPACE_TASK_ID_CONDITION",
+    "frozen_before_model_load": true,
+    "condition_blinded_annotation": true
+  },
+  "future_engineering_phase": {
+    "requires_separate_authorization": true,
+    "pair_subset_rule": "FIRST_TWO_PAIRS_PER_ATTRIBUTE_BY_ASCENDING_SHA256_FORMAL_PAIR_ID_PLUS_FIXED_ENGINEERING_NAMESPACE",
+    "units": 8,
+    "seed_indices": [1],
+    "conditions": 3,
+    "maximum_one_step_executions": 24,
+    "decoded_or_persisted_media": false,
+    "scientific_use": false,
+    "gpu_hours_ceiling": 2
+  },
+  "validity_gates": {
+    "direct_vs_baseline_hook_tolerance": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "direction_vectors_required": 640,
+    "direction_norm_absolute_tolerance": 1e-6,
+    "target_counterpart_projection_must_match": true,
+    "sham_target_direction_dot_absolute_tolerance": 1e-6,
+    "target_sham_displacement_norm_must_match": true,
+    "shape_dtype_device_task_latent_scheduler_and_spatial_route_invariants_required": true,
+    "any_failure_action": "STOP_AND_RETURN_TO_RESEARCHER_NO_REDUCED_PANEL_THRESHOLD_CHANGE_OR_SELECTIVE_RERUN"
+  },
+  "outcome_plan": {
+    "existing_frozen_outcomes_reused": false,
+    "rubric_bindings": {
+      "eyeglasses_codebook": {"path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/measurement_repair_v1/eyeglasses_blind_annotation_v1_1/eyeglasses_annotation_codebook_v1_1.txt", "bytes": 1216, "sha256": "7e7d2be5bdb39e45134bc222ae73792845ff445392767b6366c2da138046e17e"},
+      "facial_hair_codebook": {"path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/attribute_evaluation_v1/run_001/facial_hair_annotation_materials_v1/facial_hair_codebook_v1.txt", "bytes": 418, "sha256": "75ca640279ac38285c418c7e8bfa21ec8495a94fc9befcd54180cdf26ef3feb1"},
+      "facial_hair_adjudication_codebook": {"path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/attribute_evaluation_v1/manual_annotation_v1/adjudication_v1/facial_hair_adjudication_codebook_v1.txt", "bytes": 504, "sha256": "77d4313c9b2745b7139765ee995742604dcb09f850b2b3a523011a048a8625f9"}
+    },
+    "new_condition_blinded_annotation": true,
+    "sampled_decoded_frame_indices": [0, 8, 16, 24, 32, 40, 48],
+    "planned_frame_observations": 3360,
+    "annotators": 2,
+    "disagreement_adjudication": true,
+    "eyeglasses": "FROZEN_HUMAN_PRESENT_ABSENT_U_AND_EYE_REGION_OBSERVABILITY_RUBRIC_VALID_ONLY_PRESENT_FRACTION",
+    "facial_hair": "FROZEN_ORDINAL_0_1_2_U_RUBRIC_BINARY_PRESENT_1_OR_2_VALID_ONLY_PRESENT_FRACTION_WITH_ORDINAL_COUNTS_RETAINED",
+    "unit_condition_pooling": "FOUR_SEEDS_TIMES_SEVEN_FRAMES_EQUALS_28_PLANNED_STATES",
+    "imputation_exclusion_or_substitution": false,
+    "annotation_and_outcome_construction_require_later_separate_authority": true
+  },
+  "primary_estimand": {
+    "role_contrast": "C_ROLE_EQUALS_SCORE_ROLE_TARGET_MINUS_SCORE_ROLE_SHAM",
+    "pair_effect": "E_ATTRIBUTE_PAIR_EQUALS_0_5_TIMES_C_CONTROL_MINUS_C_POSITIVE",
+    "predicted_direction": "POSITIVE",
+    "tie_threshold": 1e-8,
+    "reported_per_attribute": "ALL_TEN_PAIR_EFFECTS_PLUS_CORRECT_TIE_WRONG_COUNTS_MEAN_MEDIAN_MINIMUM_MAXIMUM",
+    "p_values_or_confidence_intervals": false,
+    "cross_attribute_pooling_or_ranking": false,
+    "zero_valid_or_incomplete_pair_policy": "RETAIN_MISSINGNESS_AND_DO_NOT_COMPUTE_REDUCED_PANEL_ATTRIBUTE_AGGREGATE"
+  },
+  "secondary_complete_families": [
+    "ROLE_ALIGNED_TARGET_MINUS_BASELINE_PAIR_EFFECTS",
+    "ROLE_ALIGNED_SHAM_MINUS_BASELINE_PAIR_EFFECTS",
+    "TARGET_MINUS_SHAM_SEPARATE_POSITIVE_AND_CONTROL_ROLE_CONTRASTS",
+    "EYEGLASSES_OBSERVABILITY_AND_VALID_COVERAGE_BY_COMPLETE_CONDITION",
+    "FACIAL_HAIR_ORDINAL_COUNTS_REASONS_AND_VALID_COVERAGE_BY_COMPLETE_CONDITION"
+  ],
+  "explicitly_excluded_families": [
+    "TOKEN_RESOLVED_GENERATED_OUTCOMES",
+    "THIRTEEN_FRAME_FAMILY",
+    "STAGE_OR_GRID_SEARCH",
+    "HISTORICAL_OUTCOME_ASSOCIATION",
+    "AUTOMATIC_EYEGLASSES_PRIMARY_REPLACEMENT",
+    "IDENTITY_OR_AESTHETIC_THRESHOLD_EXCLUSION"
+  ],
+  "fallback_retry_and_privacy": {
+    "fallback": "RUN_LEVEL_LIMITATION_ONLY_NO_STDOUT_TASK_ASSIGNMENT",
+    "fallback_based_exclusion_imputation_or_rerun": false,
+    "automatic_resume_or_condition_only_recovery": false,
+    "external_interruption_restart": "AT_MOST_ONE_BYTE_IDENTICAL_FULL_TRANSACTION_RESTART_AFTER_NEW_EXPLICIT_RESEARCHER_DECISION",
+    "raw_identity_lfe_direction_or_latent_tensors_persisted": false,
+    "reference_or_public_reference_corresponding_media_in_git": false,
+    "videos_and_annotation_packets": "EXTERNAL_PRIVATE_AND_SEPARATELY_FROZEN"
+  },
+  "compute_planning": {
+    "gpu_devices": 1,
+    "distributed": false,
+    "scientific_trajectories": 480,
+    "transformer_scheduler_steps": 24000,
+    "expected_gpu_hours": [35, 50],
+    "scientific_gpu_hours_hard_ceiling": 72,
+    "engineering_gpu_hours_hard_ceiling": 2,
+    "human_annotation_time_excluded_from_gpu_hours": true
+  },
+  "interpretation_boundary": {
+    "positive_target_vs_sham_effect_may_support": "CAUSAL_CONTRIBUTION_OF_THE_COMPLETE_INTERVENED_LFE_DIRECTIONAL_PROJECTION_UNDER_THIS_FIXED_INTERVENTION_AND_PANEL",
+    "mixed_effects_may_support": "PAIR_OR_STATE_DEPENDENCE_OF_THE_INTERVENTION_EFFECT",
+    "zero_or_negative_effect_does_not_establish": "ABSENCE_OF_ATTRIBUTE_INFORMATION_OR_LOCAL_ROUTE_IRRELEVANCE",
+    "cannot_establish": [
+      "natural_mediation",
+      "attribute_information_loss",
+      "semantic_or_spatial_token_localization",
+      "distributed_or_sparse_token_mechanism",
+      "bottleneck",
+      "local_or_spatial_route_necessity_or_sufficiency",
+      "spatial_route_compensation",
+      "population_or_model_wide_behavior",
+      "frame_independence",
+      "cross_attribute_ordering"
+    ]
+  },
+  "current_authority": {
+    "formal_preregistration": true,
+    "runner_instrumentation_analyzer_or_verifier_implementation": false,
+    "cpu_tests_or_no_weight_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "engineering_gpu_execution": false,
+    "scientific_gpu_execution": false,
+    "video_generation_or_decode": false,
+    "annotation_unblinding_or_outcome_construction": false,
+    "association_or_hypothesis_testing": false,
+    "controlled_intervention_execution": false
+  },
+  "claim_boundary": "FIXED_PANEL_COMPLETE_32_TOKEN_HELD_PAIR_OUT_PROJECTION_EXCHANGE_VERSUS_ORTHOGONAL_SHAM_CAUSAL_CONTRIBUTION_TEST_ONLY_NO_NATURAL_MEDIATION_INFORMATION_LOSS_LOCALIZATION_BOTTLENECK_PATH_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_RANKING_CLAIMS",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_RUNNER_INSTRUMENTATION_ANALYZER_VERIFIER_IMPLEMENTATION_CPU_ONLY_SYNTHETIC_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY"
+}

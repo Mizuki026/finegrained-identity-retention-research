@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_preregistration_only_v1",
+  "authorized_at_utc": "2026-09-04",
+  "status": "AUTHORIZED_FORMAL_PREREGISTRATION_ONLY",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "接受上述五项机制解释，并授权仅预注册下一阶段受控干预设计",
+  "authorized_actions": {
+    "freeze_five_interpretation_acceptance": true,
+    "draft_and_formally_freeze_controlled_intervention_protocol": true,
+    "draft_and_formally_freeze_machine_readable_preregistration": true,
+    "static_schema_formula_count_and_hash_audit": true,
+    "local_git_commit_of_governance_artifacts": true
+  },
+  "not_authorized": {
+    "runner_instrumentation_analyzer_or_verifier_implementation": true,
+    "cpu_tests_or_no_weight_dry_run": true,
+    "formal_input_audit": true,
+    "reference_access_or_preprocessing": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "model_or_weight_loading": true,
+    "gpu_execution": true,
+    "video_generation_or_decode": true,
+    "intervention_or_ablation": true,
+    "association_or_hypothesis_testing": true,
+    "network_access_or_remote_push": true
+  },
+  "required_next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_IMPLEMENTATION_CPU_ONLY_SYNTHETIC_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY"
+}

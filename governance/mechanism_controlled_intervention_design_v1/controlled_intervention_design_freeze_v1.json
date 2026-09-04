@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_intervention_design_v1",
+  "frozen_at_utc": "2026-09-04",
+  "base_research_commit": "5d8aa3cba4e48696b964189fdd9fb1ebf0a4e346",
+  "status": "FROZEN_FORMALLY_PREREGISTERED_DESIGN_ONLY_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/researcher_preregistration_authorization_v1.json",
+    "bytes": 1390,
+    "sha256": "baf848a70e5b2d19c61e7de3e8221d101d24bbbda68910d7c0a7b25ba30815c9"
+  },
+  "accepted_scientific_state": {
+    "path": "governance/mechanism_token_direction_execution_v2/scientific_interpretation_acceptance_freeze_v2.json",
+    "bytes": 2447,
+    "sha256": "ff263c6dff4c89a8cf166b1e2785b59aafde7ad37a470c218942329adb3613b8"
+  },
+  "protocol": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_lfe_projection_exchange_protocol_v1.md",
+    "bytes": 18202,
+    "sha256": "b1603d50909a30924e32294f06965434e4535e22142551a19f0f2f2331bf9b08"
+  },
+  "machine_readable_preregistration": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_lfe_projection_exchange_preregistration_v1.json",
+    "bytes": 10955,
+    "sha256": "02ef043b3391ac931c5a6bb92f8716954abfcf97b4ed9511eaead1a42ade38eb"
+  },
+  "static_audit": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_intervention_preregistration_static_audit_v1.json",
+    "bytes": 2530,
+    "sha256": "40330ee78398a61c5770ee8f9285e652e4b1d5d8cfae89e0235babc9cdfe873b",
+    "status": "PASS_STATIC_PREREGISTRATION_AUDIT"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_intervention_design_evidence_manifest_v1.csv",
+    "artifact_rows": 13,
+    "bytes": 2907,
+    "sha256": "88bacada74a89c32abed46127c1931fbe2140f922eb3383c5d0b5fd44d86fe77"
+  },
+  "frozen_design": {
+    "attributes": 2,
+    "formal_pairs": 20,
+    "formal_units": 40,
+    "frozen_source_tasks": 160,
+    "conditions": ["baseline", "target_projection_exchange", "orthogonal_sham"],
+    "scientific_trajectories": 480,
+    "scientific_scheduler_steps": 24000,
+    "lfe_token_indices": 32,
+    "held_pair_out_direction_vectors": 640,
+    "fresh_preprocessing_calls": 40,
+    "direct_lfe_acquisitions": 40,
+    "sampled_frames_per_video": 7,
+    "planned_blinded_frame_states": 3360,
+    "primary_estimand": "PER_ATTRIBUTE_COMPLETE_TEN_PAIR_ROLE_ALIGNED_TARGET_MINUS_ORTHOGONAL_SHAM_EFFECT",
+    "existing_outcomes_reused": false,
+    "favorable_token_pair_attribute_or_result_selection": false
+  },
+  "compute_plan": {
+    "gpu_devices": 1,
+    "engineering_one_step_executions": 24,
+    "engineering_gpu_hours_ceiling": 2,
+    "scientific_expected_gpu_hours": [35, 50],
+    "scientific_gpu_hours_hard_ceiling": 72,
+    "currently_authorized_gpu_hours": 0
+  },
+  "current_authority": {
+    "formal_preregistration_complete": true,
+    "implementation": false,
+    "cpu_tests_or_no_weight_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "engineering_gpu_execution": false,
+    "scientific_gpu_execution": false,
+    "video_generation_or_decode": false,
+    "annotation_unblinding_outcome_construction_or_analysis": false,
+    "association_or_hypothesis_testing": false,
+    "controlled_intervention_execution": false
+  },
+  "claim_boundary": "FIXED_PANEL_COMPLETE_32_TOKEN_HELD_PAIR_OUT_PROJECTION_EXCHANGE_VERSUS_ORTHOGONAL_SHAM_CAUSAL_CONTRIBUTION_TEST_ONLY_NO_NATURAL_MEDIATION_INFORMATION_LOSS_LOCALIZATION_BOTTLENECK_PATH_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_RANKING_CLAIMS",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_RUNNER_INSTRUMENTATION_ANALYZER_VERIFIER_IMPLEMENTATION_CPU_ONLY_SYNTHETIC_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY"
+}
