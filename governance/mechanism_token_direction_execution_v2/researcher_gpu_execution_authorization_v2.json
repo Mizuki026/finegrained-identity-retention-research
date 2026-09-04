@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "authorization_id": "token_direction_v2_single_gpu_complete_execution",
+  "authorized_at_utc": "2026-09-04",
+  "researcher_instruction": "单独授权单 GPU、完整 token-direction v2 正式执行",
+  "status": "RESEARCHER_AUTHORIZED_SINGLE_GPU_COMPLETE_TOKEN_DIRECTION_V2_EXECUTION",
+  "source_head": "6f76c8bb0dd22752e2c6e0ff1fda317ffc9e6d8b",
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_token_direction_input_audit_v2/formal_input_audit_freeze_v2.json",
+    "bytes": 2833,
+    "sha256": "70b019107f1407b8bd237f9fae1c374e86298e3685be31e8ddeaf7eb04d04e81",
+    "required_status": "FROZEN_PASS_TOKEN_DIRECTION_V2_FORMAL_INPUT_AUDIT"
+  },
+  "authorized": {
+    "gpu_devices": 1,
+    "complete_formal_units": 40,
+    "complete_source_records": 160,
+    "fresh_preprocessing_calls": 160,
+    "direct_lfe_calls": 200,
+    "same_input_direct_repeat_controls": 40,
+    "four_label_equivalence_comparisons": 120,
+    "current_pooled_margins": 20,
+    "historical_descriptive_comparisons": 20,
+    "token_margins": 640,
+    "token_panels": 64,
+    "pair_token_summaries": 20,
+    "independent_in_memory_and_persisted_verification": true,
+    "phase_gpu_hours_ceiling": 2
+  },
+  "not_authorized": {
+    "reduced_panel": true,
+    "selective_or_automatic_rerun": true,
+    "threshold_change": true,
+    "run_003_replacement": true,
+    "raw_tensor_or_vector_persistence": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "transformer_or_diffusion_steps": true,
+    "video_generation_or_decode": true,
+    "controlled_intervention": true,
+    "network": true
+  },
+  "failure_policy": "ABORT_COMPLETE_TRANSACTION_ON_ANY_AUTHORITY_BINDING_INPUT_VALIDITY_TIME_OR_COMPLETENESS_FAILURE_NO_RETRY_REPAIR_OR_REDUCED_PANEL",
+  "next_gate": "INDEPENDENT_VERIFICATION_FREEZE_SCIENTIFIC_INTERPRETATION_AND_RESEARCHER_ACCEPTANCE_BEFORE_CONTROLLED_INTERVENTION_PREREGISTRATION"
+}
