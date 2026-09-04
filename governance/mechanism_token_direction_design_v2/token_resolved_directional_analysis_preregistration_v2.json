@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "preregistration_id": "token_resolved_lfe_directional_analysis_v2",
+  "created_at_utc": "2026-09-04",
+  "status": "PREREGISTERED_APPROVED_PROSPECTIVE_SELF_CONTAINED_TOKEN_DIRECTION_V2_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY",
+  "scientific_role": "OUTCOME_BLIND_CURRENT_TRANSACTION_TOKEN_RESOLVED_LFE_DIRECTIONAL_READABILITY_DIAGNOSTIC",
+  "history_policy": {
+    "v1_scientific_run_001": "FAILED_NONREUSABLE_NO_SCIENTIFIC_OUTPUTS",
+    "v1_repair_resume_retry_or_recovery": false,
+    "run_003": "IMMUTABLE_DESCRIPTIVE_HISTORICAL_COMPARATOR_ONLY",
+    "run_003_numerical_equality_is_v2_validity_gate": false,
+    "run_003_replacement_or_threshold_relaxation": false,
+    "unresolved_difference": "CROSS_RUN_MEASUREMENT_STATE_SOURCE_NOT_LOCALIZED"
+  },
+  "frozen_panel": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "formal_units": 40,
+    "matched_pairs_per_attribute": 10,
+    "matched_pairs_total": 20,
+    "roles": ["positive", "control"],
+    "seed_labelled_source_records_per_unit": 4,
+    "seed_labelled_source_records": 160,
+    "source_order": "formal_unit_id_then_seed_index_1_2_3_4",
+    "reduced_panel_allowed": false
+  },
+  "model_binding": {
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "dtype": "bfloat16",
+    "aligned_face_preprocessing": true,
+    "local_face_scale": 1.0,
+    "lfe_shape": [1, 32, 2048],
+    "token_indices": 32,
+    "token_semantics": "STABLE_LEARNED_QUERY_INDICES_NOT_IMAGE_REGIONS_SEMANTIC_PARTS_OR_INDEPENDENT_OBSERVATIONS"
+  },
+  "acquisition": {
+    "one_loaded_process": true,
+    "gpu_devices": 1,
+    "fresh_preprocessing_calls": 160,
+    "primary_direct_lfe_calls": 160,
+    "seed_index_1_same_input_repeat_lfe_calls": 40,
+    "total_direct_lfe_calls": 200,
+    "hooks": 0,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "decoded_videos": 0,
+    "all_tensors_transient": true
+  },
+  "validity_gates": {
+    "shape_and_finiteness_outputs": 200,
+    "same_input_direct_repeat_comparisons": 40,
+    "four_label_equivalence_comparisons": 120,
+    "elementwise_tolerance": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "all_same_input_controls_must_pass": true,
+    "all_four_label_comparisons_must_pass": true,
+    "historical_run_003_numerical_match_required": false,
+    "failure_action": "ABORT_BEFORE_SCIENTIFIC_FAMILY_PROMOTION_NO_REDUCED_PANEL_RETRY_OR_THRESHOLD_CHANGE"
+  },
+  "current_pooled_readout": {
+    "per_record_vector": "l2_normalize(mean_token(X[u,s,k]))",
+    "unit_vector": "mean_over_four_seed_labelled_per_record_vectors_after_equality_gate",
+    "direction": "per_attribute_leave_one_matched_pair_out_mean_positive_minus_control_over_other_nine_pairs",
+    "direction_normalized_or_fit": false,
+    "current_pooled_margins": 20
+  },
+  "historical_comparison": {
+    "source_stage": "valid_face_emb_mean_token_l2_normalized",
+    "join_keys": ["attribute", "formal_pair_id"],
+    "rows": 20,
+    "same_frozen_scalar_tolerance_reported": true,
+    "all_rows_retained": true,
+    "descriptive_only": true,
+    "can_fail_v2_transaction": false,
+    "can_replace_run_003": false
+  },
+  "token_direction": {
+    "per_record_token": "float32_l2_normalize_each_2048D_token",
+    "unit_token": "mean_over_four_normalized_seed_labelled_copies_after_equality_gate",
+    "training": "per_attribute_per_token_leave_one_matched_pair_out_mean_positive_minus_control_over_other_nine_pairs",
+    "direction_normalized_rotated_fit_or_selected": false,
+    "tie_threshold": 1e-8,
+    "held_out_margin": "dot(positive_token,direction)-dot(control_token,direction)",
+    "outcome_used": false
+  },
+  "output_families": {
+    "same_input_direct_repeat_control_rows": 40,
+    "four_label_lfe_equivalence_rows": 120,
+    "current_pooled_lfe_margin_rows": 20,
+    "historical_run_003_comparison_rows": 20,
+    "lfe_token_margin_rows": 640,
+    "lfe_token_finite_panel_rows": 64,
+    "lfe_pair_token_sign_rows": 20,
+    "execution_status_rows": 160,
+    "raw_tensor_or_vector_rows": 0,
+    "outcome_join_rows": 0,
+    "association_coefficients": 0
+  },
+  "complete_family_policy": {
+    "all_32_token_indices_retained": true,
+    "all_10_pairs_per_attribute_retained": true,
+    "all_160_source_records_retained": true,
+    "best_token_top_k_sparse_token_or_favorable_pair_selection": false,
+    "token_weighting_or_classifier_fitting": false,
+    "threshold_tuning": false,
+    "p_values_or_confidence_intervals": false,
+    "cross_attribute_ranking": false
+  },
+  "privacy": {
+    "raw_identity_inputs_persisted": false,
+    "raw_lfe_tokens_or_normalized_vectors_persisted": false,
+    "learned_direction_vectors_persisted": false,
+    "aligned_images_or_keypoints_persisted": false,
+    "reference_images_copied": false,
+    "latents_frames_or_videos_persisted": false,
+    "maximum_identity_linkage_level": "PSEUDONYMOUS_MATCHED_PAIR_MARGINS_AND_BOUNDED_SUMMARIES"
+  },
+  "fallback_policy": {
+    "default": "RUN_LEVEL_LIMITATION_ONLY",
+    "stdout_parsing_for_task_assignment": false,
+    "fallback_based_exclusion_imputation_or_rerun": false
+  },
+  "compute_planning": {
+    "gpu_devices": 1,
+    "expected_gpu_hours": [0.05, 0.25],
+    "hard_gpu_hours_ceiling": 2,
+    "requires_separate_execution_approval": true
+  },
+  "interpretation_boundary": {
+    "token_pattern_may_support": "COMPATIBILITY_WITH_TOKEN_INDEX_SPECIFIC_LINEAR_READOUT_HETEROGENEITY",
+    "token_pattern_cannot_establish": [
+      "semantic_or_spatial_token_localization",
+      "attribute_content",
+      "causal_contribution",
+      "distributed_or_sparse_mechanism",
+      "route_necessity_or_sufficiency",
+      "population_or_model_wide_behavior",
+      "frame_independence",
+      "cross_attribute_difficulty_ordering"
+    ]
+  },
+  "sequential_intervention_gate": "NO_CONTROLLED_INTERVENTION_PREREGISTRATION_UNTIL_V2_EXECUTION_IS_INDEPENDENTLY_VERIFIED_FROZEN_INTERPRETED_AND_RESEARCHER_ACCEPTED",
+  "current_authority": {
+    "formal_preregistration": true,
+    "implementation": false,
+    "cpu_tests_or_no_weight_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "token_margin_computation": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "claim_boundary": "PROSPECTIVE_FIXED_PANEL_OUTCOME_BLIND_LINEAR_TOKEN_INDEX_READABILITY_ONLY_NO_HISTORICAL_REPAIR_ATTRIBUTE_CONTENT_CAUSAL_LOCALIZATION_SPARSITY_DISTRIBUTION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_ROUTE_NECESSITY_SUFFICIENCY_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_V2_RUNNER_ANALYZER_VERIFIER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}

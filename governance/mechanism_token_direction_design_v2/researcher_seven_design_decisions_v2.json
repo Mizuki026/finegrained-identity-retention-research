@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "decision_id": "token_resolved_lfe_directional_analysis_v2_seven_design_decisions",
+  "decided_at_utc": "2026-09-04",
+  "status": "ALL_SEVEN_POST_REPEATABILITY_TOKEN_DIRECTION_V2_DESIGN_DECISIONS_ACCEPTED_AND_FORMAL_PREREGISTRATION_AUTHORIZED",
+  "decision_source": "Direct researcher confirmation and preregistration authorization in the current session",
+  "source_proposal": {
+    "path": "governance/mechanism_token_direction_post_repeatability_v1/next_stage_design_decision_proposal_v1.md",
+    "bytes": 5253,
+    "sha256": "c5c20832b5381a7ee628faad37685e0c35fc3797b71a7103fef0bcd59791a1d3"
+  },
+  "accepted_scientific_state": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_execution_v1/scientific_interpretation_acceptance_freeze_v1.json",
+    "bytes": 3169,
+    "sha256": "f1ef33b589a3dc747e8ce5df0c742c24bb745507f4859637a71cd191d622a446"
+  },
+  "accepted_decisions": {
+    "historical_source_localization_window_closed_unresolved_but_bounded": true,
+    "new_separately_versioned_token_direction_v2_required": true,
+    "v1_scientific_run_001_repair_resume_or_reuse_authorized": false,
+    "complete_40_unit_20_pair_160_record_panel_retained": true,
+    "current_runtime_measurement_state_constructed_self_consistently_in_one_transaction": true,
+    "run_003_retained_as_immutable_descriptive_historical_comparator": true,
+    "run_003_numerical_equality_is_v2_validity_gate": false,
+    "run_003_baseline_replacement_authorized": false,
+    "complete_640_token_margin_family_retained": true,
+    "best_token_top_k_weighting_threshold_tuning_or_cross_attribute_ranking_authorized": false,
+    "analysis_remains_outcome_blind_and_privacy_bounded": true,
+    "controlled_intervention_remains_sequential_and_separately_preregistered": true
+  },
+  "authority": {
+    "formal_v2_preregistration": true,
+    "implementation": false,
+    "cpu_tests_or_no_weight_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "token_margin_computation": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "claim_boundary": "PROSPECTIVE_FIXED_PANEL_OUTCOME_BLIND_LINEAR_TOKEN_INDEX_READABILITY_ONLY_NO_HISTORICAL_REPAIR_ATTRIBUTE_CONTENT_CAUSAL_LOCALIZATION_SPARSITY_DISTRIBUTION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_ROUTE_NECESSITY_SUFFICIENCY_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_V2_RUNNER_ANALYZER_VERIFIER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}

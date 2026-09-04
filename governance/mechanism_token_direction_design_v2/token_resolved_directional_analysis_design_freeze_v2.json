@@ -1,0 +1,86 @@
+{
+  "schema_version": 2,
+  "freeze_id": "token_resolved_lfe_directional_analysis_design_v2",
+  "frozen_at_utc": "2026-09-04",
+  "source_head_before_preregistration_commit": "eac078894084450fb13795591e825f58b0ff1ca4",
+  "status": "FROZEN_APPROVED_PROSPECTIVE_SELF_CONTAINED_TOKEN_DIRECTION_V2_PREREGISTRATION_ONLY",
+  "researcher_decision": {
+    "path": "governance/mechanism_token_direction_design_v2/researcher_seven_design_decisions_v2.json",
+    "bytes": 2711,
+    "sha256": "1e9a35546e232d696cd821f68f26148024a55df53c36e07a631cb2f9e0bd1d4c"
+  },
+  "protocol": {
+    "path": "governance/mechanism_token_direction_design_v2/token_resolved_directional_analysis_protocol_v2.md",
+    "bytes": 12263,
+    "sha256": "1c7e6e358e39f0b89ed8c11e3685ba50e726b2353647fec397e6bcb00708ea56"
+  },
+  "machine_readable_preregistration": {
+    "path": "governance/mechanism_token_direction_design_v2/token_resolved_directional_analysis_preregistration_v2.json",
+    "bytes": 6816,
+    "sha256": "d0e4ea537ca74e3046f811256005e4eb0ba451ef38c26e87fd5a435ca5fe4c57"
+  },
+  "approved_design": {
+    "scientific_role": "OUTCOME_BLIND_CURRENT_TRANSACTION_TOKEN_RESOLVED_LFE_DIRECTIONAL_READABILITY_DIAGNOSTIC",
+    "separate_from_failed_v1": true,
+    "v1_run_001_reusable": false,
+    "run_003_immutable": true,
+    "run_003_is_descriptive_only_not_validity_gate": true,
+    "run_003_replacement_or_threshold_relaxation": false,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "seed_labelled_source_records": 160,
+    "fresh_preprocessing_calls": 160,
+    "direct_lfe_calls": 200,
+    "same_input_direct_repeat_controls": 40,
+    "four_label_equivalence_comparisons": 120,
+    "current_pooled_lfe_margins": 20,
+    "historical_run_003_comparison_rows": 20,
+    "primary_token_margins": 640,
+    "token_finite_panel_rows": 64,
+    "pair_token_sign_rows": 20,
+    "all_32_token_indices_retained": true,
+    "all_10_pairs_per_attribute_retained": true,
+    "outcome_blind": true,
+    "raw_tensor_or_vector_persistence": false,
+    "best_token_or_top_k_selection": false,
+    "controlled_intervention_deferred": true
+  },
+  "validity_boundary": {
+    "elementwise_tolerance": "abs(a-b) <= 1e-6 + 1e-5*max(abs(a),abs(b))",
+    "all_40_same_input_direct_controls_must_pass": true,
+    "all_120_four_label_comparisons_must_pass": true,
+    "historical_run_003_comparison_cannot_abort_v2": true,
+    "failure_allows_reduced_panel_or_retry": false
+  },
+  "compute_planning_not_execution_authority": {
+    "gpu_devices": 1,
+    "expected_gpu_hours": [0.05, 0.25],
+    "hard_gpu_hours_ceiling": 2,
+    "hooks": 0,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "decoded_videos": 0
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_design_v2/token_direction_v2_design_evidence_manifest.csv",
+    "artifact_rows": 14,
+    "bytes": 2969,
+    "sha256": "84fdd2cb928404777d67ed69431527b881daaf7ddca959efb63311276e347e67"
+  },
+  "current_authority": {
+    "formal_preregistration_complete": true,
+    "implementation": false,
+    "cpu_tests_or_no_weight_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "token_margin_computation": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "claim_boundary": "PROSPECTIVE_FIXED_PANEL_OUTCOME_BLIND_LINEAR_TOKEN_INDEX_READABILITY_ONLY_NO_HISTORICAL_REPAIR_ATTRIBUTE_CONTENT_CAUSAL_LOCALIZATION_SPARSITY_DISTRIBUTION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_ROUTE_NECESSITY_SUFFICIENCY_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_V2_RUNNER_ANALYZER_VERIFIER_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN"
+}
