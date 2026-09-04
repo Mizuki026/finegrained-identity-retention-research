@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "freeze_id": "token_direction_v2_engineering_readiness",
+  "frozen_at_utc": "2026-09-04",
+  "status": "FROZEN_PASS_TOKEN_DIRECTION_V2_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY",
+  "source_head": "599335c756ce33c1b0f2355aceb2ebcd8b50a9bb",
+  "readiness_record": {
+    "path": "governance/mechanism_token_direction_implementation_v2/runner_readiness_record_v2.json",
+    "bytes": 3226,
+    "sha256": "0652e44d8eb6931289bbae8c47d7be2a33de4534643646d781268159a2fd7df8"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_implementation_v2/runner_readiness_evidence_manifest_v2.csv",
+    "bytes": 1990,
+    "sha256": "66c383b6c7b05469049075c58c68cdb75addd4c4cbd02aec7494dd94a210ecb2"
+  },
+  "authoritative_dry_run": "/root/autodl-tmp/finegrained/mechanism_token_direction_v2_dry_run/run_002",
+  "passed": {
+    "implementation": true,
+    "cpu_static_and_synthetic_tests_9_of_9": true,
+    "no_weight_dry_run": true,
+    "independent_no_weight_dry_run_verification": true
+  },
+  "not_performed_or_authorized": {
+    "formal_input_audit": true,
+    "reference_access_or_decode": true,
+    "preprocessing": true,
+    "model_or_weight_loading": true,
+    "gpu_execution": true,
+    "formal_token_margin_computation": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "generation": true,
+    "controlled_intervention": true,
+    "network": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT"
+}

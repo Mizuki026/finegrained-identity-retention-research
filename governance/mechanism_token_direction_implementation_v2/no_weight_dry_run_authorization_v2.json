@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "authorization_id": "token_direction_v2_cpu_only_no_weight_dry_run",
+  "authorized_at_utc": "2026-09-04",
+  "researcher_instruction": "授权 token-direction v2 runner/analyzer/verifier 实现、CPU-only 测试和 no-weight dry-run",
+  "status": "TOKEN_DIRECTION_V2_NO_WEIGHT_DRY_RUN_AUTHORIZED",
+  "gpu_execution_explicitly_approved": false,
+  "implementation_authorization": {
+    "path": "governance/mechanism_token_direction_implementation_v2/researcher_implementation_authorization_v2.json",
+    "bytes": 1859,
+    "sha256": "24b31429e9ef195f15b8a0651d7837dbe69ae9d41b492a63ba9f8ced60fdfe4a"
+  },
+  "code": {
+    "protocol": {
+      "path": "src/token_resolved_lfe_direction_protocol_v2.py",
+      "bytes": 11823,
+      "sha256": "a8bb9b82b8304d28de01676a984c6acd796d3858a4656f7a643df5c7c793d844"
+    },
+    "analyzer": {
+      "path": "src/analyze_token_resolved_lfe_direction_v2.py",
+      "bytes": 11992,
+      "sha256": "fd35da5f8a03fa7ea77f2bc7886d798ea770b8e40cb42af4fd60b9471c5e6c7d"
+    },
+    "verifier": {
+      "path": "src/verify_token_resolved_lfe_direction_v2.py",
+      "bytes": 22990,
+      "sha256": "0ef8be24eb6ff10bd9d9ad338851c69b7ed492a9c39f7f58bcb89f59a84a4313"
+    },
+    "runner": {
+      "path": "src/run_token_resolved_lfe_direction_v2.py",
+      "bytes": 8889,
+      "sha256": "46cdb79b351459d68d6c80e86506add07470e993aa316bac076c3b510389d098"
+    },
+    "runtime": {
+      "path": "src/token_resolved_lfe_direction_runtime_v2.py",
+      "bytes": 6933,
+      "sha256": "2835b7609f4b8cca6c5b3311c9cb0f11bff6eabb6803aedc81fd9f4f35902721"
+    }
+  },
+  "tests": {
+    "path": "tests/test_token_resolved_lfe_direction_v2.py",
+    "bytes": 7147,
+    "sha256": "9263d505859c10671b8f09406fe789aa0f1eee533a0cfa9d680edaf10a858687",
+    "cpu_only_tests_passed": 9
+  },
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_token_direction_v2_dry_run/run_002",
+  "authority": {
+    "cpu_only_no_weight_dry_run": true,
+    "independent_verification": true,
+    "formal_input_audit": false,
+    "reference_access": false,
+    "preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "raw_token_capture": false,
+    "formal_token_margin_computation": false,
+    "outcome_access": false,
+    "association_computation": false,
+    "generation": false,
+    "intervention": false,
+    "network": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT_AFTER_READINESS_FREEZE"
+}

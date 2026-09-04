@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "readiness_id": "token_direction_v2_runner_analyzer_verifier_readiness",
+  "recorded_at_utc": "2026-09-04",
+  "status": "PASS_TOKEN_DIRECTION_V2_ENGINEERING_READINESS_PENDING_SEPARATE_FORMAL_INPUT_AUDIT_AUTHORIZATION",
+  "source_head": "599335c756ce33c1b0f2355aceb2ebcd8b50a9bb",
+  "authorization": {
+    "implementation_cpu_tests_and_no_weight_dry_run": true,
+    "formal_input_audit": false,
+    "reference_access_or_decode": false,
+    "preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "formal_token_margin_computation": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "generation": false,
+    "controlled_intervention": false,
+    "network": false
+  },
+  "implementation": {
+    "protocol_and_plan": "PASS",
+    "outcome_blind_transient_analyzer": "PASS",
+    "independent_transient_and_persisted_verifier": "PASS",
+    "fail_closed_runner": "PASS",
+    "future_single_gpu_runtime_not_executed": "PASS",
+    "top_level_ml_imports": 0,
+    "raw_tensor_serializers": 0
+  },
+  "cpu_tests": {
+    "environment": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+    "cuda_visible_devices": "",
+    "tests_run": 9,
+    "tests_passed": 9,
+    "tests_failed": 0,
+    "synthetic_panel_only": true,
+    "validated_output_counts": {
+      "same_input_direct_repeat_controls": 40,
+      "four_label_equivalence_controls": 120,
+      "current_pooled_margins": 20,
+      "historical_descriptive_comparisons": 20,
+      "token_margins": 640,
+      "token_panels": 64,
+      "pair_token_summaries": 20
+    },
+    "validated_fail_closed_cases": [
+      "validity_control_failure_aborts_before_scientific_family",
+      "independent_recomputation_detects_margin_tamper",
+      "persisted_verifier_checks_complete_crossings",
+      "historical_difference_is_descriptive_not_a_validity_gate"
+    ]
+  },
+  "no_weight_dry_run": {
+    "authoritative_run": "/root/autodl-tmp/finegrained/mechanism_token_direction_v2_dry_run/run_002",
+    "runner_status": "PASS_TOKEN_DIRECTION_V2_CPU_ONLY_NO_WEIGHT_DRY_RUN",
+    "independent_status": "PASS_INDEPENDENT_TOKEN_DIRECTION_V2_NO_WEIGHT_DRY_RUN_VERIFICATION",
+    "plan_rows": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "fresh_preprocessing_calls_planned": 160,
+    "direct_lfe_calls_planned": 200,
+    "token_margin_rows_planned": 640,
+    "torch_imported": false,
+    "reference_images_opened": false,
+    "preprocessing_run": false,
+    "model_or_weight_loading": false,
+    "gpu_used": false,
+    "formal_token_margins_computed": false,
+    "outcomes_opened": false,
+    "associations_computed": false,
+    "network_used": false
+  },
+  "engineering_history": {
+    "run_001": "PASSING_DRY_RUN_SUPERSEDED_BEFORE_READINESS_FREEZE_AFTER_PERSISTED_VERIFIER_CROSSING_CHECKS_WERE_STRENGTHENED",
+    "run_001_used_for_readiness_or_future_execution_binding": false,
+    "run_002": "AUTHORITATIVE_FINAL_CODE_BOUND_NO_WEIGHT_DRY_RUN"
+  },
+  "scientific_boundary": "NO_SCIENTIFIC_RESULT_CREATED_NO_REFERENCE_PREPROCESSING_MODEL_GPU_TOKEN_MARGIN_OUTCOME_ASSOCIATION_GENERATION_OR_INTERVENTION",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT"
+}

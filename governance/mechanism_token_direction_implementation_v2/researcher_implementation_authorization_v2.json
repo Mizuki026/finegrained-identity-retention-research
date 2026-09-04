@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "authorization_id": "token_resolved_lfe_direction_v2_implementation",
+  "authorized_at_utc": "2026-09-04",
+  "researcher_instruction": "授权 token-direction v2 runner/analyzer/verifier 实现、CPU-only 测试和 no-weight dry-run",
+  "status": "TOKEN_DIRECTION_V2_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED_ONLY",
+  "source_head": "599335c756ce33c1b0f2355aceb2ebcd8b50a9bb",
+  "approved_design": {
+    "path": "governance/mechanism_token_direction_design_v2/token_resolved_directional_analysis_design_freeze_v2.json",
+    "bytes": 3863,
+    "sha256": "53cf070343659e9a21eb0bb5c2748b85a3bb1663693440f3938fcaa43245aae8",
+    "required_status": "FROZEN_APPROVED_PROSPECTIVE_SELF_CONTAINED_TOKEN_DIRECTION_V2_PREREGISTRATION_ONLY"
+  },
+  "authorized": {
+    "protocol_and_plan_implementation": true,
+    "transient_analyzer_implementation": true,
+    "independent_verifier_implementation": true,
+    "fail_closed_runner_implementation": true,
+    "future_single_gpu_runtime_implementation": true,
+    "cpu_only_static_and_synthetic_tests": true,
+    "cpu_only_no_weight_dry_run": true
+  },
+  "not_authorized": {
+    "formal_input_audit": true,
+    "reference_image_access_or_decode": true,
+    "face_preprocessing": true,
+    "model_or_weight_loading": true,
+    "gpu_execution": true,
+    "raw_identity_or_token_tensor_capture_in_formal_data": true,
+    "formal_token_margin_computation": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "baseline_replacement": true,
+    "selective_or_automatic_rerun": true,
+    "video_generation_or_decode": true,
+    "controlled_intervention_preregistration": true,
+    "controlled_intervention_execution": true,
+    "network": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT_AFTER_READINESS_FREEZE"
+}
