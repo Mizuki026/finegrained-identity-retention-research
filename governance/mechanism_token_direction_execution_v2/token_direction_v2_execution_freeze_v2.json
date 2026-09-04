@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "freeze_id": "token_direction_v2_single_gpu_run_001",
+  "frozen_at_utc": "2026-09-04",
+  "source_head_before_execution_record_commit": "444765ab32bacf1b2c10cb72316a0f9745eb7e12",
+  "status": "FROZEN_COMPLETE_VERIFIED_TOKEN_DIRECTION_V2_PENDING_RESEARCHER_INTERPRETATION",
+  "execution_verified": {
+    "formal_units": 40,
+    "source_records": 160,
+    "fresh_preprocessing_calls": 160,
+    "direct_lfe_calls": 200,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "elapsed_gpu_hours": 0.016591882194495863,
+    "hard_gpu_hours_ceiling": 2,
+    "model_weight_rows_rehashed": 72,
+    "raw_tensor_files": 0,
+    "decoded_media_files": 0,
+    "outcome_access": false,
+    "association_computation": false
+  },
+  "validity_controls": {
+    "same_input_direct_repeat_rows": 40,
+    "same_input_direct_repeat_bit_exact_rows": 40,
+    "four_label_equivalence_rows": 120,
+    "four_label_bit_exact_rows": 120,
+    "all_frozen_tolerance_gates_passed": true
+  },
+  "complete_families": {
+    "current_pooled_rows": 20,
+    "historical_comparison_rows": 20,
+    "historical_tolerance_pass_rows": 0,
+    "historical_sign_match_rows": 20,
+    "token_margin_rows": 640,
+    "token_panel_rows": 64,
+    "pair_token_summary_rows": 20,
+    "all_tokens_pairs_and_source_records_retained": true
+  },
+  "independent_verification": {
+    "in_memory": "PASS_INDEPENDENT_IN_MEMORY_TOKEN_DIRECTION_V2_RECOMPUTATION",
+    "persisted": "PASS_INDEPENDENT_PERSISTED_TOKEN_DIRECTION_V2_VERIFICATION",
+    "all_640_margins_recomputed_in_memory": true
+  },
+  "execution_record": {
+    "path": "governance/mechanism_token_direction_execution_v2/token_direction_v2_execution_record_v2.json",
+    "bytes": 5312,
+    "sha256": "eeeab45af829a9abb0606c8145c918fac6810ce0adcef7e6cb0b6c164a52bca4"
+  },
+  "scientific_interpretation_proposal": {
+    "path": "governance/mechanism_token_direction_execution_v2/token_direction_v2_scientific_interpretation_proposal_v2.md",
+    "bytes": 6791,
+    "sha256": "ea785e9ab5ce573b598a22ee713e2bb5e4d255855743d0ac9131e8a158151d08",
+    "researcher_accepted": false
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_token_direction_execution_v2/token_direction_v2_execution_evidence_manifest_v2.csv",
+    "artifact_rows": 30,
+    "bytes": 5805,
+    "sha256": "a129af1c34d272802cc26f7eec6fa629fd2329acf8557cb4c8b16a4caf7d40c2"
+  },
+  "runtime_package": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v2_runtime/run_001",
+    "directory_mode": "0555",
+    "file_mode": "0444"
+  },
+  "run_level_limitations": {
+    "face_detection_fallback_stdout_messages_observed": true,
+    "raw_stdout_log_persisted": false,
+    "fallback_count_claimed": false,
+    "task_or_pair_assignment": false,
+    "fallback_based_exclusion_or_rerun": false
+  },
+  "current_authority": {
+    "token_direction_v2_execution_complete_and_closed": true,
+    "automatic_or_selective_rerun": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "best_token_or_subset_selection": false,
+    "controlled_intervention_preregistration": false,
+    "controlled_intervention_execution": false
+  },
+  "next_gate": "RESEARCHER_REVIEW_OF_FIVE_PROPOSED_SCIENTIFIC_INTERPRETATION_DECISIONS"
+}

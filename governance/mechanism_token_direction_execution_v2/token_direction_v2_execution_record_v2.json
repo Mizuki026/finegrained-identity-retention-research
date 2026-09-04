@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "record_id": "token_direction_v2_single_gpu_run_001",
+  "recorded_at_utc": "2026-09-04",
+  "source_head_before_execution_record_commit": "444765ab32bacf1b2c10cb72316a0f9745eb7e12",
+  "status": "COMPLETE_VERIFIED_TOKEN_DIRECTION_V2_PENDING_RESEARCHER_INTERPRETATION",
+  "execution": {
+    "formal_units": 40,
+    "source_records": 160,
+    "fresh_preprocessing_calls": 160,
+    "direct_lfe_calls": 200,
+    "transformer_steps": 0,
+    "full_diffusion_trajectories": 0,
+    "elapsed_gpu_hours": 0.016591882194495863,
+    "hard_gpu_hours_ceiling": 2,
+    "model_weight_rows_rehashed": 72,
+    "raw_tensor_files": 0,
+    "decoded_media_files": 0,
+    "outcome_access": false,
+    "association_computation": false
+  },
+  "validity_controls": {
+    "same_input_direct_repeat_rows": 40,
+    "same_input_direct_repeat_bit_exact_rows": 40,
+    "same_input_direct_repeat_tolerance_pass_rows": 40,
+    "four_label_equivalence_rows": 120,
+    "four_label_bit_exact_rows": 120,
+    "four_label_tolerance_pass_rows": 120,
+    "maximum_absolute_difference": 0.0,
+    "maximum_rms_difference": 0.0
+  },
+  "complete_scientific_families": {
+    "current_pooled_margin_rows": 20,
+    "historical_run_003_comparison_rows": 20,
+    "historical_tolerance_pass_rows": 0,
+    "historical_tolerance_fail_rows": 20,
+    "historical_sign_match_rows": 20,
+    "historical_absolute_difference_minimum": 0.00000972207635641098,
+    "historical_absolute_difference_maximum": 0.00032501283567398787,
+    "token_margin_rows": 640,
+    "token_panel_rows": 64,
+    "pair_token_summary_rows": 20,
+    "ties": 0
+  },
+  "fixed_panel_descriptive_observations": {
+    "eyeglasses": {
+      "pooled_correct_pairs": 5,
+      "pooled_wrong_pairs": 5,
+      "token_positive_margins": 145,
+      "token_negative_margins": 175,
+      "token_indices_more_than_five_correct_pairs": 6,
+      "token_indices_exactly_five_correct_pairs": 10,
+      "token_indices_fewer_than_five_correct_pairs": 16,
+      "token_correct_count_range_over_ten_pairs": [0, 10],
+      "token_indices_with_both_signs": 29,
+      "pairs_with_both_signs_across_tokens": 10
+    },
+    "facial_hair": {
+      "pooled_correct_pairs": 6,
+      "pooled_wrong_pairs": 4,
+      "token_positive_margins": 173,
+      "token_negative_margins": 147,
+      "token_indices_more_than_five_correct_pairs": 16,
+      "token_indices_exactly_five_correct_pairs": 4,
+      "token_indices_fewer_than_five_correct_pairs": 12,
+      "token_correct_count_range_over_ten_pairs": [1, 9],
+      "token_indices_with_both_signs": 32,
+      "pairs_with_both_signs_across_tokens": 10
+    }
+  },
+  "independent_verification": {
+    "in_memory": "PASS_INDEPENDENT_IN_MEMORY_TOKEN_DIRECTION_V2_RECOMPUTATION",
+    "persisted": "PASS_INDEPENDENT_PERSISTED_TOKEN_DIRECTION_V2_VERIFICATION",
+    "all_640_margins_recomputed_in_memory": true
+  },
+  "runtime_output": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_token_direction_v2_runtime/run_001",
+    "artifacts": {
+      "current_pooled_lfe_margins_v2.csv": {"bytes": 991, "sha256": "7b215c242d2d64810457c3a90d781e9a1a610dddfa7b1796e037b05ca92b8e15", "rows": 20},
+      "four_label_lfe_equivalence_v2.csv": {"bytes": 7640, "sha256": "c0a518b3f5f2d72d662f2ebd7409abd86ac3ba74861567c1f390a647e7e27798", "rows": 120},
+      "historical_run_003_comparison_v2.csv": {"bytes": 2799, "sha256": "8fcad5c815b783c2b9e24b480575265287dc342cb80f2a0f3d3709e8b1d503ce", "rows": 20},
+      "independent_persisted_verification_v2.json": {"bytes": 414, "sha256": "67bae66fa7beb1c662fa48fb677f67dd17a5f61aba605f2dc40d5eb8d05420ae"},
+      "lfe_pair_token_signs_v2.csv": {"bytes": 2413, "sha256": "51174bdc45d323392798032e06456876b88610b1b5ad6eaebf3e7b7eff5125d2", "rows": 20},
+      "lfe_token_finite_panel_v2.csv": {"bytes": 7160, "sha256": "9dfa8b188904946f25bdc02f4aa66d58b9da474a9bf3ee9af0e668dd9b2d19c5", "rows": 64},
+      "lfe_token_margins_v2.csv": {"bytes": 31951, "sha256": "5b39f33c706e13ebaee3a65e07ff39c2ad3467ec41fdbeab235f6d3f63620d3f", "rows": 640},
+      "same_input_direct_repeat_controls_v2.csv": {"bytes": 2538, "sha256": "6fc6cb7b9b2af1516c18d294c9d85d96a58f58ad8f26402e12059cc4ebd1f2dd", "rows": 40},
+      "token_direction_v2_execution_status.csv": {"bytes": 31242, "sha256": "185d74eeb8371b3057fa97b36f14241752fbf597fbf97aa82b396a18084f7c90", "rows": 160},
+      "token_direction_v2_execution_summary.json": {"bytes": 967, "sha256": "e8a56b0cb317a4df8d3fae5b903ab896de77bbbadc35ba173dc18acecefd3b9c"},
+      "token_direction_v2_in_memory_verification.json": {"bytes": 368, "sha256": "e3be226fb70e8b5c3392f8b1c6a22c56dd92eb437f6b76a0330e9401c7a244f3"}
+    }
+  },
+  "run_level_limitations": {
+    "face_detection_fallback_stdout_messages_observed": true,
+    "raw_stdout_log_persisted": false,
+    "fallback_count_claimed": false,
+    "task_pair_role_or_attribute_assignment": false,
+    "fallback_based_exclusion_or_rerun": false
+  },
+  "scientific_interpretation_proposal": {
+    "path": "governance/mechanism_token_direction_execution_v2/token_direction_v2_scientific_interpretation_proposal_v2.md",
+    "bytes": 6791,
+    "sha256": "ea785e9ab5ce573b598a22ee713e2bb5e4d255855743d0ac9131e8a158151d08",
+    "researcher_accepted": false
+  },
+  "next_gate": "RESEARCHER_REVIEW_OF_FIVE_PROPOSED_SCIENTIFIC_INTERPRETATION_DECISIONS"
+}
