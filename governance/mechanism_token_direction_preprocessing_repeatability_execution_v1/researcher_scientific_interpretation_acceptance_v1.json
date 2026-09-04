@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "decision_id": "complete_panel_fresh_preprocessing_repeatability_scientific_interpretation_acceptance_v1",
+  "decided_at_utc": "2026-09-04",
+  "status": "ALL_FIVE_PREPROCESSING_REPEATABILITY_SCIENTIFIC_INTERPRETATIONS_ACCEPTED",
+  "decision_source": "Direct researcher acceptance in the current session",
+  "source_proposal": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_execution_v1/preprocessing_repeatability_scientific_interpretation_proposal_v1.md",
+    "bytes": 4686,
+    "sha256": "8d32142b528dfd354a8bcdf41fe5f01d6e8ab6a3d066449a5be051b72e72ee9c"
+  },
+  "source_execution_freeze": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_execution_v1/preprocessing_repeatability_execution_freeze_v1.json",
+    "bytes": 3459,
+    "sha256": "2466396facd2a1352a382ea3539c8e28438bc9b67b4df193d5105d94d98618d2"
+  },
+  "accepted_interpretations": {
+    "current_same_input_direct_lfe_bit_exact_repeatability_is_accepted_narrowly": true,
+    "cross_hardware_software_process_or_arbitrary_input_determinism_is_established": false,
+    "current_process_fresh_preprocessing_lfe_readout_repeatability_is_accepted": true,
+    "within_process_fresh_preprocessing_stochasticity_is_supported_as_historical_mismatch_source": false,
+    "cross_process_initialization_backend_runtime_or_historical_input_difference_remains_possible": true,
+    "specific_historical_source_is_localized": false,
+    "strict_40_of_40_run_003_numerical_replication_failures_are_retained": true,
+    "threshold_relaxation_is_permitted": false,
+    "descriptive_40_of_40_sign_stability_is_retained": true,
+    "sign_stability_makes_current_and_run_003_values_interchangeable": false,
+    "remaining_discrepancy_is_an_unresolved_cross_run_measurement_state_issue": true,
+    "attribute_information_loss_is_established": false,
+    "distributed_multi_path_working_model_is_causally_validated": false,
+    "token_direction_scientific_run_001_remains_nonreusable": true,
+    "token_direction_run_002_or_baseline_replacement_is_authorized": false,
+    "new_diagnostic_or_controlled_intervention_is_authorized": false
+  },
+  "evidence_classification": {
+    "verified_fact": "80_OF_80_WITHIN_PREPROCESSING_AND_40_OF_40_CROSS_PREPROCESSING_LFE_COMPARISONS_BIT_EXACT_WITH_20_OF_20_CROSS_REPLICATE_POOLED_MARGINS_EXACT",
+    "current_fixed_panel_observation": "BOTH_CURRENT_REPLICATE_FAMILIES_FAIL_40_OF_40_STRICT_RUN_003_NUMERICAL_COMPARISONS_WHILE_RETAINING_40_OF_40_SIGNS",
+    "accepted_interpretation": "CURRENT_WITHIN_PROCESS_FRESH_PREPROCESSING_STOCHASTICITY_DOES_NOT_EXPLAIN_THE_OBSERVED_HISTORICAL_MISMATCH",
+    "unverified_hypothesis_class": "PROCESS_INITIALIZATION_BACKEND_RUNTIME_HISTORICAL_INPUT_CONSTRUCTION_OR_OTHER_CROSS_RUN_MEASUREMENT_STATE_DIFFERENCE",
+    "research_decision": "KEEP_V1_RUN_001_NONREUSABLE_AND_REQUIRE_SEPARATE_PROSPECTIVE_DECISION_BEFORE_ANY_V2_RUN_BASELINE_CHANGE_NEW_DIAGNOSTIC_OR_INTERVENTION"
+  },
+  "claim_boundary": "CURRENT_COMPLETE_FIXED_PANEL_WITHIN_PROCESS_MEASUREMENT_PATH_RESULT_ONLY_NO_ATTRIBUTE_INFORMATION_LOSS_FALLBACK_CAUSATION_CAUSAL_LOCALIZATION_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_CLAIMS",
+  "authority_granted_by_acceptance": {
+    "read_only_existing_artifact_review": true,
+    "next_design_decision_proposal_drafting": true,
+    "formal_v2_preregistration": false,
+    "implementation": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "token_direction_scientific_run_002": false,
+    "baseline_replacement": false,
+    "outcome_access_or_join": false,
+    "association_computation": false,
+    "controlled_intervention": false
+  },
+  "next_gate": "RESEARCHER_CONFIRMATION_OR_REJECTION_OF_SEVEN_POST_REPEATABILITY_V2_DESIGN_DECISIONS_BEFORE_PREREGISTRATION"
+}
