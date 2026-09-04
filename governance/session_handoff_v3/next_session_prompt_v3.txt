@@ -1,0 +1,60 @@
+这是 fine-grained identity-attribute retention 研究的新阶段会话。
+
+请先执行严格只读启动：不要修改文件、不要实现受控干预、不要运行测试或 dry-run、不要访问或预处理 reference、不要访问 outcome、不要加载模型或权重、不要使用 GPU、不要生成或解码视频、不要执行 intervention、不要计算新结果。
+
+1. 完整阅读目录：
+   /root/autodl-tmp/finegrained/research_pipeline/governance/session_handoff_v3
+2. 必须完整读取：
+   - research_state_v3.md
+   - research_state_v3.json
+   - artifact_index_v3.csv
+   - open_questions_v3.md
+   - next_session_prompt_v3.txt
+3. 检查研究仓库当前分支、HEAD、上游关系、远程关系和工作树：
+   /root/autodl-tmp/finegrained/research_pipeline
+4. 检查 ConsisID 仓库 HEAD 与工作树：
+   /root/autodl-tmp/consisid-smoketest/ConsisID
+5. 对 artifact_index_v3.csv 的全部 67 个路径执行存在性、字节数和 SHA256 只读核验。
+6. 对 H001 引用的 artifact_index_v2.csv 全部 53 项再次执行存在性、字节数和 SHA256 递归核验。
+7. 核验以下八个冻结 runtime/analysis 目录仍为 0555，内部所有文件仍为 0444：
+   - /root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003
+   - /root/autodl-tmp/finegrained/mechanism_trace_v1_runtime/phase_s_run_003_analysis_v1
+   - /root/autodl-tmp/finegrained/mechanism_outcome_linkage_v1_runtime/run_001
+   - /root/autodl-tmp/finegrained/mechanism_cosine_outcome_linkage_v1_runtime/run_001
+   - /root/autodl-tmp/finegrained/mechanism_token_quantile_linkage_v1_runtime/run_001
+   - /root/autodl-tmp/finegrained/mechanism_token_direction_direct_hook_diagnostic_v1_runtime/run_001
+   - /root/autodl-tmp/finegrained/mechanism_token_direction_preprocessing_repeatability_v1_runtime/run_001
+   - /root/autodl-tmp/finegrained/mechanism_token_direction_v2_runtime/run_001
+8. 交接记录的 source-state commit 是：
+   9238c816543f71436dbd7e3535c9ef663cd32338
+   如果当前 HEAD 不同，先检查差异是否仅为新增 session_handoff_v3 的交接提交；不得直接解释为数据损坏。
+9. 发现任何路径、哈希、分支、提交、权限或状态不一致时立即停止并报告。
+
+科研边界：
+
+- 冻结 CSV/JSON、SHA256 和 Git 历史是事实来源；聊天摘要和交接说明不是实验数据库。
+- 必须分开报告：已验证事实、当前固定面板观察、已接受工作模型、尚未验证假说和研究决策。
+- 眼镜主要描述是冻结人工共识；YuNet+CLIP 仅是次级趋同证据；原低覆盖自动结果不得恢复为主要描述。
+- Phase-S run-001/run-002、linkage audit run-001 和 token-direction v1 scientific run-001 均为不可复用历史；Phase-S run-003 是唯一完成并关闭的 Phase-S 包。
+- 76 次 Phase-S fallback 只能保留为 run-level 限制；不得分配、排除或重跑。
+- linkage、cosine 和 quantile 均是十 pair 固定面板的描述性共变；不得作因果、总体、定位、路径必要/充分或跨属性排序结论。
+- scalar linkage window 与 observational token-direction window 均已关闭；不得自动展开 13-frame family 或选择 v2 极端 token。
+- token-direction v2 是当前 transaction 内部有效的 outcome-blind 测量；0/20 历史严格匹配与 20/20 符号匹配都必须保留；不得替换 run-003。
+- “表征—读出不匹配/表征重组”和“多路径、分布式表征”是已接受工作模型，不是已验证机制。
+- 当前受控干预仅完成正式预注册：40 units、20 pairs、160 tasks、3 conditions、480 trajectories、24,000 steps；当前授权 GPU-hours 为 0。
+- 不得改 seed、sample、reference、prompt、scheduler、guidance、resolution、precision、指标、阈值、frame indices、排除规则或 intervention dose；不得补值、删失败样本或选择性重生成。
+- 不得公开 reference 对应生成视频，不得微调或 LoRA。
+
+完成只读核验后，只输出：
+
+1. 当前分支、HEAD、上游/远程关系和两个工作树状态；
+2. v3 的 67 项与嵌套 v2 的 53 项是否全部核验通过；
+3. 八个冻结目录权限是否通过；
+4. 已验证事实；
+5. 当前固定面板观察；
+6. 已接受但尚未验证的工作模型；
+7. 尚未验证的机制假说；
+8. 当前研究决策和精确授权边界；
+9. 下一项最小工作及其后仍需单独批准的各阶段。
+
+当前下一项最小工作仍需研究者单独授权：仅实现 controlled-intervention runner/instrumentation/analyzer/verifier、运行 CPU-only synthetic tests 和 no-weight dry-run。即使该阶段通过，也不授权 formal input audit、reference preprocessing、模型加载、GPU engineering、480-trajectory scientific generation、解码、标注、unblinding、outcome construction 或 intervention analysis。

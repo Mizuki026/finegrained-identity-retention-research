@@ -1,0 +1,316 @@
+{
+  "schema_version": 3,
+  "handoff_id": "finegrained_identity_retention_session_handoff_v3",
+  "created_at_utc": "2026-09-04",
+  "status": "READY_FOR_NEW_WINDOW_READ_ONLY_BOOTSTRAP_AND_CONTROLLED_INTERVENTION_IMPLEMENTATION_GATE",
+  "supersedes_handoff": "governance/session_handoff_v2",
+  "authoritative_source_policy": "Frozen CSV and JSON artifacts, bound SHA256 values, and Git history supersede this compact summary. Stop on any mismatch.",
+  "source_state": {
+    "research_repository": "/root/autodl-tmp/finegrained/research_pipeline",
+    "branch": "main",
+    "commit": "9238c816543f71436dbd7e3535c9ef663cd32338",
+    "working_tree_clean": true,
+    "upstream": "origin/main",
+    "origin_main_commit": "66c990b3e2451b69e3fda02bfd977c9b2f357476",
+    "ahead": 31,
+    "behind": 0,
+    "remote": "https://github.com/Mizuki026/finegrained-identity-retention-research.git",
+    "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_working_tree_clean": true,
+    "python": "/root/autodl-tmp/consisid-smoketest/env/bin/python"
+  },
+  "research_objective": {
+    "topic": "fine-grained identity-attribute retention in reference-conditioned video generation",
+    "model_system": "ConsisID",
+    "completed_windows": [
+      "formal_output_measurement",
+      "measurement_repair",
+      "static_structure_mapping",
+      "bounded_mechanism_trace",
+      "cpu_mechanism_outcome_linkage",
+      "global_scalar_readout_linkage",
+      "outcome_blind_token_direction_observation"
+    ],
+    "current_transition": "controlled LFE projection-exchange intervention implementation gate",
+    "fine_tuning_planned": false,
+    "lora_planned": false,
+    "public_reference_corresponding_video_release": false
+  },
+  "formal_panel": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "pairs_per_attribute": 10,
+    "reference_units": 40,
+    "seeds_per_unit": 4,
+    "tasks": 160,
+    "completed_videos": 160,
+    "frames_per_video": 49,
+    "seed_reference_prompt_or_task_replacement": false
+  },
+  "output_measurement": {
+    "eyeglasses": {
+      "primary": "frozen human consensus",
+      "positive_zero_negative_seed_pair_differences": [33, 7, 0],
+      "mean_difference": 0.825,
+      "median_difference": 1.0,
+      "yunet_clip": "secondary convergence evidence only",
+      "original_low_coverage_automatic_result_primary": false
+    },
+    "facial_hair": {
+      "planned_pairs_retained": 10,
+      "mean_difference": 0.2052380952,
+      "median_difference": 0.0,
+      "range": [-1.0, 1.0],
+      "substantial_unobservability_retained": true
+    }
+  },
+  "static_mapping": {
+    "local_identity_route": "InsightFace plus EVA inputs to 32x2048 LFE tokens and 21 Perceiver injection sites after blocks 0,2,...,40",
+    "spatial_reference_route": "first-frame reference VAE latent plus zero-padded later reference latent frames before patch embedding",
+    "target_attribute_mask_present": false,
+    "mechanism_or_bottleneck_verified_by_mapping": false
+  },
+  "phase_s": {
+    "run_001": "IMMUTABLE_ABORT_NO_REUSE",
+    "run_002": "IMMUTABLE_POWER_LOSS_ABORT_NO_REUSE",
+    "run_003": {
+      "status": "COMPLETE_VERIFIED_ACCEPTED_CLOSED",
+      "tasks": 160,
+      "transformer_steps": 8000,
+      "injection_rows": 336000,
+      "representation_margins": 180,
+      "pair_grid_rows": 360,
+      "finite_panel_cells": 36,
+      "gpu_hours": 12.500112516284506,
+      "fallback_messages": 76,
+      "fallback_task_mapping": false,
+      "all_tasks_retained": true,
+      "raw_tensors_or_decoded_media_persisted": false
+    },
+    "primary_pooled_lfe_correct_tie_wrong": {
+      "eyeglasses": [5, 0, 5],
+      "facial_hair": [6, 0, 4]
+    },
+    "all_36_injection_cells_mixed_pair_signs": true,
+    "cell_selection_or_localization_supported": false
+  },
+  "formal_linkage": {
+    "input_audit_run_001": {
+      "status": "IMMUTABLE_ABORT_NO_REUSE",
+      "cause": "auditor target-row scope too broad",
+      "nine_missing_all_non_target": true,
+      "facial_hair_target_missing": 0
+    },
+    "audit_correction": "require target field nonempty and finite only on ten facial_hair rows",
+    "input_audit_run_002": "PASS_ALL_FOUR_SOURCES",
+    "execution": {
+      "cpu_only": true,
+      "outcomes": 20,
+      "primary_joined_rows": 20,
+      "secondary_representation_joined_rows": 160,
+      "secondary_injection_joined_rows": 360,
+      "primary_coefficients": 2,
+      "secondary_representation_coefficients": 16,
+      "secondary_injection_coefficients": 36,
+      "independent_recomputation": "PASS",
+      "gpu_hours": 0
+    },
+    "primary_spearman": {
+      "eyeglasses": 0.12060453783110545,
+      "facial_hair": 0.4939912655897707
+    },
+    "relative_residual_rms_secondary": {
+      "eyeglasses_positive_zero_negative": [18, 0, 0],
+      "eyeglasses_range": [0.16080605044147392, 0.41541563030714096],
+      "facial_hair_positive_zero_negative": [2, 2, 14],
+      "facial_hair_range": [-0.3376649157195901, 0.006253053994807224]
+    },
+    "interpretation_accepted": true,
+    "scope": "fixed-panel descriptive covariation only"
+  },
+  "cosine_linkage": {
+    "statistic": "positive-minus-control mean tokenwise cosine between H and R",
+    "coefficients": 36,
+    "all_defined": true,
+    "eyeglasses_positive_zero_negative": [2, 0, 16],
+    "eyeglasses_range": [-0.502518907629606, 0.3283123529846759],
+    "facial_hair_positive_zero_negative": [4, 2, 12],
+    "facial_hair_range": [-0.5190034815689996, 0.17508551185460228],
+    "cpu_only": true,
+    "interpretation_accepted": true,
+    "mean_cosine_is_attribute_direction": false
+  },
+  "token_quantile_linkage": {
+    "quantiles": ["q10", "q50", "q90"],
+    "coefficients": 108,
+    "all_defined_and_independently_recomputed": true,
+    "eyeglasses_positive_negative": [54, 0],
+    "eyeglasses_range": [0.0670025210172808, 0.28141058827257937],
+    "facial_hair_positive_negative": [30, 24],
+    "facial_hair_range": [-0.45647294162092733, 0.13756718788575892],
+    "gpu_hours": 0,
+    "interpretation_accepted": true,
+    "global_scalar_linkage_window": "CLOSED",
+    "frame_by_grid_family_opened": false
+  },
+  "token_direction_history": {
+    "phase_e": {
+      "status": "PASS_ENGINEERING_ONLY",
+      "units": 8,
+      "operations": 24,
+      "one_step_controls": 8,
+      "gpu_hours": 0.026403488656505943,
+      "scientific_result": false
+    },
+    "v1_scientific_run_001": {
+      "status": "FAILED_ABORTED_NONREUSABLE",
+      "reference_records_extracted": 160,
+      "failure": "frozen run-003 pooled-LFE replication mismatch at eyeglasses/FEY_01",
+      "token_margin_rows_persisted": 0,
+      "raw_tensors_persisted": false
+    },
+    "direct_hook_diagnostic": {
+      "units": 40,
+      "direct_hook_bit_exact": 40,
+      "historical_strict_matches": 0,
+      "historical_sign_matches": 20,
+      "gpu_hours": 0.07360209065696431,
+      "interpretation_accepted": true
+    },
+    "preprocessing_repeatability": {
+      "within_preprocessing_bit_exact": 80,
+      "cross_preprocessing_bit_exact": 40,
+      "current_replicate_pooled_matches": 20,
+      "replicate_run_003_strict_matches": 0,
+      "replicate_run_003_sign_matches": 40,
+      "gpu_hours": 0.015562619236297905,
+      "interpretation_accepted": true
+    },
+    "accepted_historical_mismatch_class": "unresolved cross-run measurement state with source unlocalized"
+  },
+  "token_direction_v2": {
+    "status": "COMPLETE_VERIFIED_ACCEPTED_CLOSED",
+    "formal_units": 40,
+    "source_records": 160,
+    "fresh_preprocessing_calls": 160,
+    "direct_lfe_calls": 200,
+    "same_input_bit_exact": 40,
+    "four_label_bit_exact": 120,
+    "current_pooled_rows": 20,
+    "historical_comparison_rows": 20,
+    "historical_strict_matches": 0,
+    "historical_sign_matches": 20,
+    "token_margins": 640,
+    "token_panel_rows": 64,
+    "pair_token_rows": 20,
+    "gpu_hours": 0.016591882194495863,
+    "transformer_steps": 0,
+    "trajectories": 0,
+    "outcome_access": false,
+    "eyeglasses_token_positive_negative": [145, 175],
+    "eyeglasses_token_indices_gt_eq_lt_five_correct": [6, 10, 16],
+    "eyeglasses_mixed_sign_token_indices": 29,
+    "eyeglasses_uniform_positive_indices": 2,
+    "eyeglasses_uniform_negative_indices": 1,
+    "facial_hair_token_positive_negative": [173, 147],
+    "facial_hair_token_indices_gt_eq_lt_five_correct": [16, 4, 12],
+    "facial_hair_mixed_sign_token_indices": 32,
+    "all_pairs_mixed_across_tokens": true,
+    "best_token_selected": false
+  },
+  "accepted_working_model": {
+    "description": "representation-readout mismatch or reorganization in a multi-path distributed system",
+    "attribute_disappearance_in_lfe_established": false,
+    "multi_path_model_causally_verified": false,
+    "residual_magnitude_or_mean_cosine_exhaustive": false,
+    "token_semantics_or_localization_established": false
+  },
+  "unverified_hypotheses": [
+    "attribute-relevant structure may be distributed or reorganized across 32 LFE tokens",
+    "vector direction, token pattern, or video-query alignment may matter beyond scalar summaries",
+    "rms(H) normalization may contribute to facial-hair statistic differences",
+    "local and spatial routes may compensate or interact",
+    "cross-run initialization, backend, input construction, fallback realization, or another state may explain historical numerical mismatch"
+  ],
+  "controlled_intervention_preregistration": {
+    "status": "FORMALLY_PREREGISTERED_DESIGN_ONLY",
+    "conditions": ["baseline", "target_projection_exchange", "orthogonal_sham"],
+    "formal_units": 40,
+    "pairs": 20,
+    "source_tasks": 160,
+    "scientific_trajectories": 480,
+    "scheduler_steps": 24000,
+    "lfe_tokens": 32,
+    "held_pair_out_directions": 640,
+    "fresh_preprocessing_calls": 40,
+    "direct_lfe_acquisitions": 40,
+    "intervention_site": "valid_face_emb before all 21 Perceiver injection sites",
+    "spatial_path_modified": false,
+    "v2_result_based_token_selection": false,
+    "historical_outcomes_reused": false,
+    "planned_blinded_frame_states": 3360,
+    "primary_estimand": "per-attribute complete ten-pair role-aligned target-minus-orthogonal-sham effect",
+    "p_values_or_confidence_intervals": false,
+    "expected_scientific_gpu_hours": [35, 50],
+    "scientific_gpu_hours_hard_ceiling": 72,
+    "engineering_one_step_executions": 24,
+    "engineering_gpu_hours_hard_ceiling": 2,
+    "currently_authorized_gpu_hours": 0
+  },
+  "current_authority": {
+    "handoff_file_creation_and_local_commit": true,
+    "controlled_intervention_preregistration_complete": true,
+    "controlled_intervention_implementation": false,
+    "cpu_synthetic_tests_or_no_weight_dry_run": false,
+    "formal_input_audit": false,
+    "reference_access_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "engineering_gpu_execution": false,
+    "scientific_gpu_execution": false,
+    "video_generation_or_decode": false,
+    "annotation_unblinding_or_outcome_construction": false,
+    "intervention_analysis_or_hypothesis_testing": false,
+    "remote_push": false
+  },
+  "frozen_runtime_permissions": {
+    "directory_mode": "0555",
+    "file_mode": "0444",
+    "trees_verified": 8
+  },
+  "artifact_index": {
+    "path": "governance/session_handoff_v3/artifact_index_v3.csv",
+    "entries": 67,
+    "nested_v2_entries": 53,
+    "bootstrap_verification_required": true
+  },
+  "prohibited_inferences": [
+    "natural mediation",
+    "causal mechanism from observational linkage",
+    "population or model-wide inference",
+    "frame independence",
+    "semantic or spatial token localization",
+    "bottleneck",
+    "route compensation, necessity, or sufficiency",
+    "uniform or sparse token participation",
+    "cross-attribute ranking"
+  ],
+  "next_human_gate": "separate authorization for controlled-intervention runner instrumentation analyzer verifier implementation, CPU-only synthetic tests, and no-weight dry-run only",
+  "next_gate_does_not_authorize": [
+    "formal input audit",
+    "reference preprocessing",
+    "model loading",
+    "GPU engineering",
+    "scientific generation",
+    "annotation",
+    "outcome construction or analysis"
+  ],
+  "next_window_bootstrap": [
+    "Read all five session_handoff_v3 files completely.",
+    "Verify research and ConsisID Git states.",
+    "Verify all 67 artifact_index_v3 paths, bytes, and SHA256 values.",
+    "Recursively verify all 53 artifact_index_v2 entries referenced by H001.",
+    "Verify eight frozen runtime or analysis trees remain 0555 with all files 0444.",
+    "If HEAD differs from 9238c816543f71436dbd7e3535c9ef663cd32338, accept only an intervening session_handoff_v3 commit.",
+    "Stop immediately on any mismatch."
+  ]
+}
