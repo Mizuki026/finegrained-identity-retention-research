@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "authorization_id": "complete_panel_fresh_preprocessing_repeatability_gpu_execution_v1",
+  "authorized_at_utc": "2026-09-04",
+  "researcher_instruction": "授权单 GPU、完整 40-unit preprocessing repeatability diagnostic 正式执行",
+  "status": "SINGLE_GPU_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_EXECUTION_AUTHORIZED",
+  "source_head": "6d321a8c4525280ce549ec6fddab384d68c0adce",
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_token_direction_preprocessing_repeatability_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 2876,
+    "sha256": "790d127322df8d77e260ba6a77abf2ab2d58f3cacfc31cb21191788ed0c97e7b",
+    "required_status": "FROZEN_PASS_COMPLETE_PANEL_FRESH_PREPROCESSING_REPEATABILITY_INPUT_AUDIT"
+  },
+  "authorized": {
+    "single_gpu_execution": true,
+    "complete_fixed_40_unit_panel": true,
+    "fresh_preprocessing_calls": 80,
+    "direct_lfe_calls": 160,
+    "within_preprocessing_rows": 80,
+    "cross_preprocessing_rows": 40,
+    "pooled_margin_rows": 40,
+    "cross_replicate_pooled_rows": 20,
+    "run_003_comparison_rows": 40,
+    "independent_persisted_verification": true,
+    "expected_gpu_hours": [0.05, 0.20],
+    "hard_gpu_hours_ceiling": 2
+  },
+  "not_authorized": {
+    "reduced_panel_or_unit_selection": true,
+    "automatic_or_selective_rerun": true,
+    "token_margin_analysis_640": true,
+    "outcome_access_or_join": true,
+    "association_computation": true,
+    "raw_tensor_or_media_persistence": true,
+    "full_diffusion_trajectory": true,
+    "video_generation_or_decode": true,
+    "fallback_assignment_or_rerun": true,
+    "threshold_modification": true,
+    "controlled_intervention_or_ablation": true,
+    "network": true
+  },
+  "failure_policy": "ABORT_WITHOUT_REDUCED_PANEL_PROMOTION_AND_REQUIRE_NEW_RESEARCHER_DECISION_BEFORE_ANY_RETRY",
+  "next_gate": "RESEARCHER_REVIEW_OF_COMPLETE_RESULTS_AND_SCIENTIFIC_INTERPRETATION_BEFORE_ANY_NEW_DIAGNOSTIC_OR_INTERVENTION"
+}
