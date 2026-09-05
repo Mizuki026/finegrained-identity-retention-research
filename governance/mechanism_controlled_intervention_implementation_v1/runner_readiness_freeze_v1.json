@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_implementation_readiness_v1",
+  "frozen_at_utc": "2026-09-04",
+  "status": "FROZEN_PASS_CONTROLLED_INTERVENTION_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY",
+  "source_head_before_implementation": "3e39f00beb9626eb17c4ccbaea0fe4ac65824492",
+  "implementation_authorization": {
+    "path": "governance/mechanism_controlled_intervention_implementation_v1/researcher_implementation_authorization_v1.json",
+    "bytes": 1896,
+    "sha256": "a9705600d4856f4da4781ee8239c361d755ad36ddf0d363e915909d08699b91c"
+  },
+  "no_weight_dry_run_authorization": {
+    "path": "governance/mechanism_controlled_intervention_implementation_v1/no_weight_dry_run_authorization_v1.json",
+    "bytes": 2913,
+    "sha256": "30ce7a476bee6029732cde5d1dc30af3cc22f11c31f5d175832945145be2b9ca"
+  },
+  "readiness_record": {
+    "path": "governance/mechanism_controlled_intervention_implementation_v1/runner_readiness_record_v1.json",
+    "bytes": 4788,
+    "sha256": "c66dba03b2f02c1499acc73df34cc37182ab4dd8997ecfa869e612732b058ea9"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_implementation_v1/readiness_evidence_manifest_v1.csv",
+    "artifact_rows": 14,
+    "bytes": 2850,
+    "sha256": "3972a8cb515c850685d14503bf880d9fd314c9ae2480049badacfc66d5efc1df"
+  },
+  "evidence_verification": {
+    "path": "governance/mechanism_controlled_intervention_implementation_v1/readiness_evidence_verification_v1.json",
+    "bytes": 1214,
+    "sha256": "497cebbf60a5ce1cf2af194c22b61b4edda2b3e4cf972deed16336ff7613dc87",
+    "status": "PASS_INDEPENDENT_READINESS_EVIDENCE_VERIFICATION"
+  },
+  "passed": {
+    "runner_instrumentation_runtime_analyzer_and_verifier_implemented": true,
+    "delayed_model_import_and_phase_authorization_gates": true,
+    "cpu_only_synthetic_tests_13_of_13": true,
+    "ruff_static_check": true,
+    "no_weight_dry_run": true,
+    "independent_no_weight_dry_run_verification": true,
+    "readiness_manifest_14_of_14": true,
+    "forbidden_identity_lfe_or_direction_tensor_serializers_zero": true,
+    "future_private_final_latent_serializer_site_gated": true
+  },
+  "authoritative_dry_run": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_dry_run/run_004",
+    "plan_rows": 480,
+    "source_tasks": 160,
+    "formal_units": 40,
+    "formal_pairs": 20,
+    "conditions": 3,
+    "scheduler_steps_planned": 24000,
+    "held_pair_out_directions_planned": 640,
+    "planned_frame_states": 3360
+  },
+  "not_performed_or_authorized": {
+    "formal_input_audit_or_formal_manifest_access": true,
+    "reference_access_decode_or_preprocessing": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "model_module_or_weight_loading": true,
+    "gpu_engineering_or_scientific_execution": true,
+    "formal_trajectory_or_intervention_execution": true,
+    "video_or_latent_generation_or_decode": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "network_or_remote_push": true
+  },
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT"
+}

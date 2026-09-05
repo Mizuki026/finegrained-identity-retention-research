@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_single_gpu_engineering_v1",
+  "authorized_at_utc": "2026-09-05",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "单独授权 single-GPU controlled-intervention engineering phase",
+  "status": "SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_PHASE_AUTHORIZED",
+  "source_head_before_authorization_commit": "3e39f00beb9626eb17c4ccbaea0fe4ac65824492",
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 4364,
+    "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe",
+    "required_status": "FROZEN_PASS_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT"
+  },
+  "approved_design": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_intervention_design_freeze_v1.json",
+    "bytes": 3918,
+    "sha256": "12697bf6f44f85ed1dddacfd339a176f65d8b32d1c22c30d5e4e803cd31eb89f"
+  },
+  "authorized": {
+    "single_gpu_device_index": 0,
+    "engineering_gpu_hours_hard_ceiling": 2,
+    "frozen_model_and_weight_loading": true,
+    "exact_40_reference_preprocessing_calls": true,
+    "exact_40_direct_lfe_acquisitions": true,
+    "transient_complete_32_token_held_pair_out_direction_construction": true,
+    "frozen_hash_selected_pairs_per_attribute": 2,
+    "engineering_units": 8,
+    "seed_indices": [1],
+    "conditions": ["baseline", "target_projection_exchange", "orthogonal_sham"],
+    "maximum_one_step_executions": 24,
+    "scalar_diagnostic_persistence": true,
+    "cpu_only_independent_engineering_verification": true,
+    "engineering_record_evidence_manifest_and_freeze": true
+  },
+  "not_authorized": {
+    "scientific_480_trajectory_generation": true,
+    "more_than_one_scheduler_position_per_engineering_condition": true,
+    "decoded_or_persisted_media": true,
+    "raw_identity_eva_lfe_direction_aligned_image_or_keypoint_persistence": true,
+    "latent_persistence": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "pair_token_seed_condition_or_dose_selection_or_change": true,
+    "fallback_assignment_exclusion_or_rerun": true,
+    "automatic_retry_or_resume": true,
+    "distributed_or_multi_gpu_execution": true,
+    "network_access_or_remote_push": true
+  },
+  "failure_policy": "STOP_ON_ANY_BINDING_PREPROCESSING_DIRECTION_HOOK_INVARIANT_OOM_PRIVACY_OR_CEILING_FAILURE_NO_AUTOMATIC_RETRY_RESUME_REPAIR_OR_REDUCED_PANEL",
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_001",
+  "next_gate": "INDEPENDENT_ENGINEERING_FREEZE_THEN_SEPARATE_RESEARCHER_DECISION_FOR_SCIENTIFIC_PHASE"
+}

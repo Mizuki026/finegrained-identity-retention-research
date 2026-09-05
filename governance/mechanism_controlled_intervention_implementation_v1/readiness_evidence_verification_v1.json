@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "verification_id": "controlled_lfe_projection_exchange_readiness_evidence_v1",
+  "verified_at_utc": "2026-09-04",
+  "status": "PASS_INDEPENDENT_READINESS_EVIDENCE_VERIFICATION",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_implementation_v1/readiness_evidence_manifest_v1.csv",
+    "bytes": 2850,
+    "sha256": "3972a8cb515c850685d14503bf880d9fd314c9ae2480049badacfc66d5efc1df",
+    "artifact_rows": 14
+  },
+  "checks": {
+    "all_paths_exist": true,
+    "all_byte_counts_match": true,
+    "all_sha256_match": true,
+    "final_cpu_synthetic_tests": "13_OF_13_PASS",
+    "ruff_static_check": "PASS",
+    "final_no_weight_dry_run": "PASS",
+    "independent_dry_run_recomputation": "PASS",
+    "forbidden_identity_lfe_or_direction_tensor_serializers": 0,
+    "future_private_final_latent_serializer_sites": 1,
+    "formal_manifest_reference_outcome_model_weight_or_gpu_access": false,
+    "formal_trajectory_intervention_generation_decode_or_analysis": false
+  },
+  "authoritative_dry_run": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_dry_run/run_004",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT"
+}

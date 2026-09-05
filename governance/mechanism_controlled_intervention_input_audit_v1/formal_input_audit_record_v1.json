@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "record_id": "controlled_lfe_projection_exchange_formal_input_audit_run_001",
+  "recorded_at_utc": "2026-09-05",
+  "source_head_before_audit_commit": "3e39f00beb9626eb17c4ccbaea0fe4ac65824492",
+  "status": "PASS_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_AND_INDEPENDENT_VERIFICATION",
+  "verified_inputs": {
+    "formal_master": true,
+    "formal_master_artifact_bindings": 16,
+    "runner_readiness_bindings": 14,
+    "generation_tasks": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "controlled_intervention_task_bindings": 160,
+    "planned_trajectories": 480,
+    "planned_scheduler_steps": 24000,
+    "planned_fresh_preprocessing_calls": 40,
+    "planned_direct_lfe_acquisitions": 40,
+    "unique_reference_files": 40,
+    "reference_sha256_matches": 40,
+    "reference_access_mode": "RAW_BYTES_FOR_SHA256_ONLY_NO_IMAGE_DECODING",
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_worktree_clean": true,
+    "consisid_utils_source_verified": true,
+    "transformer_source_verified": true,
+    "pipeline_source_verified": true,
+    "weight_inventory_binding_verified": true,
+    "full_weight_rehash_repeated": false
+  },
+  "independent_verification": {
+    "status": "PASS_INDEPENDENT_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_VERIFICATION",
+    "all_16_master_artifacts_rehashed": true,
+    "all_14_readiness_bindings_rehashed": true,
+    "all_160_generation_rows_reaudited": true,
+    "all_160_task_bindings_reconstructed": true,
+    "all_40_reference_files_rehashed": true,
+    "consisid_utils_transformer_pipeline_sources_rehashed": true
+  },
+  "runtime_output": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001",
+    "directory_mode": "0555",
+    "artifacts": {
+      "audit_summary_v1.json": {
+        "bytes": 1373,
+        "sha256": "9d199c99bd5cf1d5dd85e22443cbd3bf9c4402e169d25805c6c488f0191695a1"
+      },
+      "formal_task_binding_manifest_v1.csv": {
+        "bytes": 49336,
+        "sha256": "d39bee233620ea52a7f0f0719b9bc80f6d15f65d7e8ead96146b06699d5e82a0",
+        "rows": 160
+      },
+      "independent_verification_v1.json": {
+        "bytes": 906,
+        "sha256": "fb75c4e8782bfcd6ba39e803a8949d8c058e3a5edc59c486b76c14ce6b5ed632"
+      },
+      "master_artifact_bindings_v1.csv": {
+        "bytes": 1559,
+        "sha256": "0825fd8c00aeb13fd82a127bad92cd420eb51660fdbb66d1d50fc84dcf8f518d",
+        "rows": 16
+      },
+      "readiness_bindings_v1.csv": {
+        "bytes": 2627,
+        "sha256": "8e24011e18cbc5ba8d5947c3642b94d48e5711801613d4d83939c35ab6b1d64a",
+        "rows": 14
+      },
+      "reference_keys_v1.csv": {
+        "bytes": 5608,
+        "sha256": "8a105d6ba5e45b951bf667e3fbb141e98eb558bdfe51c84ca80b0052023065a7",
+        "rows": 40
+      }
+    }
+  },
+  "actions_not_performed": [
+    "reference_image_decode_visualization_or_preprocessing",
+    "face_detection_alignment_or_embedding_execution",
+    "model_module_or_weight_loading",
+    "full_model_weight_rehash",
+    "gpu_execution",
+    "direct_lfe_execution_or_raw_tensor_capture",
+    "trajectory_or_controlled_intervention_execution",
+    "generation_latent_or_video_creation_or_decode",
+    "outcome_access_annotation_unblinding_construction_or_join",
+    "formal_intervention_analysis_or_hypothesis_testing",
+    "network_access_or_remote_push"
+  ],
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_PHASE"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_implementation_v1",
+  "authorized_at_utc": "2026-09-04",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "实现 runner/instrumentation/analyzer/verifier、CPU-only synthetic tests 和 no-weight dry-run。",
+  "status": "CONTROLLED_INTERVENTION_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED_ONLY",
+  "source_head": "3e39f00beb9626eb17c4ccbaea0fe4ac65824492",
+  "approved_design": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_intervention_design_freeze_v1.json",
+    "bytes": 3918,
+    "sha256": "12697bf6f44f85ed1dddacfd339a176f65d8b32d1c22c30d5e4e803cd31eb89f",
+    "required_status": "FROZEN_FORMALLY_PREREGISTERED_DESIGN_ONLY_NO_IMPLEMENTATION_OR_EXECUTION_AUTHORITY"
+  },
+  "authorized": {
+    "protocol_and_plan_implementation": true,
+    "runner_implementation": true,
+    "lfe_hook_instrumentation_implementation": true,
+    "outcome_analyzer_implementation": true,
+    "independent_verifier_implementation": true,
+    "future_runtime_entrypoint_implementation": true,
+    "cpu_only_synthetic_tests": true,
+    "cpu_only_no_weight_dry_run": true,
+    "readiness_record_and_freeze": true
+  },
+  "not_authorized": {
+    "formal_input_audit": true,
+    "formal_manifest_access": true,
+    "reference_access_decode_or_preprocessing": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "model_module_or_weight_loading": true,
+    "gpu_engineering_execution": true,
+    "scientific_generation": true,
+    "video_or_latent_generation_or_decode": true,
+    "controlled_intervention_execution": true,
+    "formal_intervention_analysis": true,
+    "network_access_or_remote_push": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_INPUT_AUDIT"
+}

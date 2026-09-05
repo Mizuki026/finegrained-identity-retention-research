@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "schema_id": "controlled_lfe_projection_exchange_outputs_v1",
+  "dry_run": {
+    "plan_file": "controlled_intervention_no_weight_plan_v1.csv",
+    "plan_rows": 480,
+    "plan_fields": [
+      "planned_task_id",
+      "planned_unit_id",
+      "formal_pair_id",
+      "attribute",
+      "role",
+      "seed_index",
+      "seed",
+      "condition_position",
+      "condition",
+      "scheduler_positions",
+      "trajectory_kind",
+      "formal_binding_status"
+    ],
+    "summary_file": "controlled_intervention_no_weight_dry_run_v1.json",
+    "independent_verification_file": "independent_verification_v1.json"
+  },
+  "future_runtime": {
+    "trajectory_status_file": "trajectory_status_v1.csv",
+    "engineering_scalar_diagnostics_file": "direction_scalar_diagnostics_v1.csv",
+    "execution_summary_file": "execution_summary_v1.json",
+    "raw_identity_eva_lfe_direction_or_aligned_image_persistence": false,
+    "scientific_private_final_latent_persistence": "EXTERNAL_ONLY_AFTER_SEPARATE_SCIENTIFIC_AUTHORIZATION",
+    "scientific_private_final_latent_serializer_sites": 1
+  },
+  "future_outcome_input": {
+    "required_fields": [
+      "attribute",
+      "formal_pair_id",
+      "role",
+      "condition",
+      "seed",
+      "frame_index",
+      "final_label",
+      "observability_reason"
+    ],
+    "expected_unique_rows": 3360,
+    "eyeglasses_labels": ["present", "absent", "U"],
+    "facial_hair_labels": ["0", "1", "2", "U"]
+  },
+  "future_analysis": {
+    "output_file": "controlled_intervention_analysis_v1.json",
+    "primary_pair_rows": 20,
+    "attribute_summary_rows": 2,
+    "coverage_rows": 6,
+    "reduced_panel_aggregate_allowed": false,
+    "p_values_or_confidence_intervals": false,
+    "cross_attribute_pooling_or_ranking": false
+  },
+  "authority": "SCHEMA_IMPLEMENTATION_ONLY_NO_FORMAL_INPUT_AUDIT_REFERENCE_OUTCOME_MODEL_GPU_GENERATION_DECODE_OR_ANALYSIS_AUTHORITY"
+}

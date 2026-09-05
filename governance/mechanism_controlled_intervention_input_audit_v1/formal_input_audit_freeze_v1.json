@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_formal_input_audit_run_001",
+  "frozen_at_utc": "2026-09-05",
+  "source_head_before_audit_commit": "3e39f00beb9626eb17c4ccbaea0fe4ac65824492",
+  "status": "FROZEN_PASS_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/researcher_formal_input_audit_authorization_v1.json",
+    "bytes": 2799,
+    "sha256": "f6eb402450b2f94bf9c60fcd91de1ded9e8c64e29021b8fbef09737c91d43bc9"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_execution_authorization_v1.json",
+    "bytes": 2517,
+    "sha256": "24299184556d2d69ba605f7c734606bffdc802c6321d735742f2d6e1c1a78298"
+  },
+  "audit_record": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_record_v1.json",
+    "bytes": 3531,
+    "sha256": "f4da87d18ed5d5b8dc836af8af5e4ae8adbb93e2efe6b8b03f830074ba340fe5"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_evidence_manifest_v1.csv",
+    "artifact_rows": 20,
+    "bytes": 3984,
+    "sha256": "630ab3a7a3f54f23fb4463f68000b29b75ee8e7695507a671a5adfd663a42d19"
+  },
+  "evidence_verification": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_evidence_verification_v1.json",
+    "bytes": 1427,
+    "sha256": "3114f5f1717baa4a7dc22a6ccaa1c8d7d86a61c95b8c3465908cfb716822b726",
+    "status": "PASS_INDEPENDENT_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_EVIDENCE_VERIFICATION"
+  },
+  "formal_generation_master": {
+    "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/pre_generation_master_freeze_v1.json",
+    "bytes": 6294,
+    "sha256": "149e5deba4d14b4591186416dbe4e12efb3ed19437c0cca0642eaff8a6d5eed8"
+  },
+  "formal_task_binding_manifest": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001/formal_task_binding_manifest_v1.csv",
+    "bytes": 49336,
+    "sha256": "d39bee233620ea52a7f0f0719b9bc80f6d15f65d7e8ead96146b06699d5e82a0",
+    "rows": 160
+  },
+  "verified_inputs": {
+    "formal_master": true,
+    "formal_master_artifact_bindings": 16,
+    "runner_readiness_bindings": 14,
+    "generation_tasks": 160,
+    "formal_units": 40,
+    "matched_pairs": 20,
+    "controlled_intervention_task_bindings": 160,
+    "planned_trajectories": 480,
+    "planned_scheduler_steps": 24000,
+    "unique_reference_files": 40,
+    "reference_sha256_matches": 40,
+    "reference_images_decoded": false,
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_worktree_clean": true,
+    "consisid_utils_transformer_pipeline_sources_verified": true,
+    "weight_inventory_binding_verified": true,
+    "full_weight_rehash_repeated": false
+  },
+  "runtime_audit": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001",
+    "directory_mode": "0555",
+    "all_files_mode": "0444",
+    "auditor_status": "PASS_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT",
+    "independent_status": "PASS_INDEPENDENT_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_VERIFICATION"
+  },
+  "actions_not_performed": [
+    "reference_image_decode_visualization_or_preprocessing",
+    "face_detection_alignment_or_embedding_execution",
+    "model_module_or_weight_loading",
+    "full_model_weight_rehash",
+    "gpu_execution",
+    "direct_lfe_execution_or_raw_tensor_capture",
+    "trajectory_or_controlled_intervention_execution",
+    "generation_latent_or_video_creation_or_decode",
+    "outcome_access_annotation_unblinding_construction_or_join",
+    "formal_intervention_analysis_or_hypothesis_testing",
+    "network_access_or_remote_push"
+  ],
+  "current_authority": {
+    "cpu_only_formal_input_audit_complete": true,
+    "reference_decode_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_engineering_execution": false,
+    "scientific_generation": false,
+    "controlled_intervention_execution": false,
+    "decode_annotation_unblinding_outcome_or_analysis": false
+  },
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_PHASE"
+}

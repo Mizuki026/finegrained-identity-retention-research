@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "verification_id": "controlled_lfe_projection_exchange_formal_input_audit_evidence_v1",
+  "verified_at_utc": "2026-09-05",
+  "status": "PASS_INDEPENDENT_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_EVIDENCE_VERIFICATION",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_evidence_manifest_v1.csv",
+    "bytes": 3984,
+    "sha256": "630ab3a7a3f54f23fb4463f68000b29b75ee8e7695507a671a5adfd663a42d19",
+    "artifact_rows": 20
+  },
+  "checks": {
+    "all_paths_exist": true,
+    "all_byte_counts_match": true,
+    "all_sha256_match": true,
+    "formal_auditor_status": "PASS_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT",
+    "independent_verifier_status": "PASS_INDEPENDENT_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_VERIFICATION",
+    "formal_master_artifacts": "16_OF_16_PASS",
+    "readiness_bindings": "14_OF_14_PASS",
+    "generation_rows": "160_OF_160_PASS",
+    "formal_task_bindings": "160_OF_160_PASS",
+    "reference_raw_byte_sha256": "40_OF_40_PASS",
+    "run_directory_mode": "0555",
+    "run_file_modes": "ALL_0444",
+    "reference_decode_or_preprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_or_intervention_execution": false,
+    "generation_decode_outcome_or_analysis": false,
+    "network": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_PHASE"
+}

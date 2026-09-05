@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_formal_input_audit_run_001",
+  "authorized_at_utc": "2026-09-05",
+  "status": "CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_EXECUTION_AUTHORIZED",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/researcher_formal_input_audit_authorization_v1.json",
+    "bytes": 2799,
+    "sha256": "f6eb402450b2f94bf9c60fcd91de1ded9e8c64e29021b8fbef09737c91d43bc9"
+  },
+  "code": {
+    "auditor": {
+      "path": "src/audit_controlled_lfe_projection_exchange_inputs_v1.py",
+      "bytes": 17275,
+      "sha256": "f7011b8a88a7da5f33ad4a274d0c4e95602dcfb35177fc0b8ad21475478e8a64"
+    },
+    "independent_verifier": {
+      "path": "src/verify_controlled_lfe_projection_exchange_input_audit_v1.py",
+      "bytes": 19132,
+      "sha256": "070f9f92dd504f75e59b640a2b4b2678b63f2dce5153b02847287f098861ec73"
+    },
+    "protocol_dependency": {
+      "path": "src/controlled_lfe_projection_exchange_protocol_v1.py",
+      "bytes": 12091,
+      "sha256": "68d2018ac4c743c310318f8943a58e34d717a58f9098cca9f4379af59dc220bc"
+    }
+  },
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001",
+  "authority": {
+    "design_and_readiness_binding_audit": true,
+    "formal_master_and_artifact_binding_audit": true,
+    "manifest_schema_and_complete_160_task_audit": true,
+    "controlled_intervention_task_binding_construction": true,
+    "reference_raw_byte_sha256_audit": true,
+    "consisid_commit_and_source_binding_audit": true,
+    "frozen_weight_inventory_artifact_binding_audit": true,
+    "independent_verification": true,
+    "reference_decode_visualization_or_preprocessing": false,
+    "face_detection_alignment_or_embedding": false,
+    "model_module_or_weight_loading": false,
+    "full_model_weight_rehash": false,
+    "gpu_execution": false,
+    "direct_lfe_execution_or_tensor_capture": false,
+    "trajectory_or_intervention_execution": false,
+    "generation_latent_video_or_decode": false,
+    "outcome_access_annotation_unblinding_construction_or_join": false,
+    "formal_analysis_or_hypothesis_testing": false,
+    "network": false
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_PHASE"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_cpu_only_formal_input_audit_v1",
+  "authorized_at_utc": "2026-09-05",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "单独授权：仅 CPU-only formal input audit",
+  "status": "CPU_ONLY_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT_AUTHORIZED",
+  "source_head": "3e39f00beb9626eb17c4ccbaea0fe4ac65824492",
+  "readiness_freeze": {
+    "path": "governance/mechanism_controlled_intervention_implementation_v1/runner_readiness_freeze_v1.json",
+    "bytes": 3193,
+    "sha256": "a4e98a94f350ed7ee50bfd5ab4804f749028d34d6beef4be58385f8e4991ff76",
+    "required_status": "FROZEN_PASS_CONTROLLED_INTERVENTION_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY"
+  },
+  "approved_design": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_intervention_design_freeze_v1.json",
+    "bytes": 3918,
+    "sha256": "12697bf6f44f85ed1dddacfd339a176f65d8b32d1c22c30d5e4e803cd31eb89f"
+  },
+  "authorized": {
+    "cpu_only_auditor_and_independent_verifier_implementation": true,
+    "design_and_readiness_binding_audit": true,
+    "formal_master_and_artifact_binding_audit": true,
+    "generation_manifest_schema_and_complete_160_task_audit": true,
+    "controlled_intervention_160_task_binding_manifest_construction": true,
+    "forty_unique_reference_file_existence_size_and_sha256_audit": true,
+    "reference_access_mode": "RAW_BYTES_FOR_SHA256_ONLY_NO_IMAGE_DECODING",
+    "consisid_commit_and_source_binding_audit": true,
+    "frozen_weight_inventory_artifact_binding_audit": true,
+    "formal_audit_execution_and_independent_verification": true,
+    "audit_record_evidence_manifest_and_freeze": true
+  },
+  "not_authorized": {
+    "reference_image_decode_visualization_or_preprocessing": true,
+    "face_detection_alignment_or_embedding_execution": true,
+    "model_module_or_weight_loading": true,
+    "full_model_weight_rehash": true,
+    "gpu_execution": true,
+    "direct_lfe_execution_or_tensor_capture": true,
+    "trajectory_or_controlled_intervention_execution": true,
+    "generation_latent_or_video_creation_or_decode": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "network_access_or_remote_push": true,
+    "modification_of_frozen_inputs": true
+  },
+  "weight_policy": "VERIFY_FROZEN_MODEL_WEIGHT_INVENTORY_ARTIFACT_BINDING_ONLY_DO_NOT_REPEAT_ACCEPTED_FULL_WEIGHT_AUDIT",
+  "failure_policy": "ABORT_ON_ANY_PATH_SCHEMA_COUNT_SHA256_COMMIT_PANEL_OR_AUTHORITY_MISMATCH_NO_REPAIR_REPLACEMENT_REDUCED_PANEL_OR_RERUN",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_PHASE"
+}
