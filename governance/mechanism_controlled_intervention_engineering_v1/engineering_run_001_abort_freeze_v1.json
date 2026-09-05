@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_engineering_run_001_abort",
+  "frozen_at_utc": "2026-09-05",
+  "status": "FROZEN_ABORTED_FAIL_CLOSED_GPU_OOM_BEFORE_ANY_ENGINEERING_TRAJECTORY",
+  "authorization_commit": "2efe480a1537e6490b61ce49ddb5afa32b72417b",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/researcher_engineering_authorization_v1.json",
+    "bytes": 2835,
+    "sha256": "935f638bb56cbb3b0f2cc60553008d4688904ef78a4d9ec007bd3f77ee58ee5f"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_execution_authorization_v1.json",
+    "bytes": 4001,
+    "sha256": "5359a488cf4fe79cd1edf3af8919523629d161eb948dc4e4d790277ffb55c3dd"
+  },
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 4364,
+    "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+  },
+  "abort_record": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_001_abort_record_v1.json",
+    "bytes": 2846,
+    "sha256": "a3d29a20eb88fd5be8c80b693f6323f1aefa5f57c253d9ceaf47510ea756b58f"
+  },
+  "verified_terminal_state": {
+    "failure": "CUDA_OOM_DURING_REFERENCE_ACQUISITION",
+    "reference_acquisition_complete": false,
+    "directions_constructed": false,
+    "engineering_trajectories": 0,
+    "scheduler_steps": 0,
+    "run_output_absent": true,
+    "partial_output_absent": true,
+    "raw_tensor_media_or_latent_files": 0,
+    "outcomes_opened": false,
+    "scientific_result_created": false
+  },
+  "reuse_policy": {
+    "run_001_reusable": false,
+    "automatic_retry_or_resume": false,
+    "current_execution_authorization_reusable": false
+  },
+  "current_authority": {
+    "memory_lifecycle_correction_implementation": false,
+    "cpu_tests_or_no_weight_dry_run_of_correction": false,
+    "new_engineering_execution": false,
+    "scientific_generation": false,
+    "outcome_access_or_analysis": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_MEMORY_LIFECYCLE_CORRECTION_IMPLEMENTATION_CPU_TESTS_NO_WEIGHT_DRY_RUN_AND_THEN_A_NEW_ENGINEERING_EXECUTION_DECISION"
+}

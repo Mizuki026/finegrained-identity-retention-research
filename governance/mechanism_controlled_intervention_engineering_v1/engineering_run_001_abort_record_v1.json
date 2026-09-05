@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "record_id": "controlled_lfe_projection_exchange_engineering_run_001_abort",
+  "recorded_at_utc": "2026-09-05",
+  "authorization_commit": "2efe480a1537e6490b61ce49ddb5afa32b72417b",
+  "status": "ABORTED_FAIL_CLOSED_GPU_OOM_DURING_ACQUISITION_BEFORE_ANY_TRAJECTORY",
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_execution_authorization_v1.json",
+    "bytes": 4001,
+    "sha256": "5359a488cf4fe79cd1edf3af8919523629d161eb948dc4e4d790277ffb55c3dd"
+  },
+  "prelaunch_wrapper_event": {
+    "event": "MISSING_USR_BIN_TIME_EXIT_127",
+    "python_started": false,
+    "model_or_weight_loaded": false,
+    "reference_accessed": false,
+    "gpu_transaction_started": false,
+    "classified_as_engineering_transaction": false
+  },
+  "actual_transaction": {
+    "run_id": "run_001",
+    "exit_code": 1,
+    "model_and_weights_loaded": true,
+    "gpu_used": true,
+    "reference_preprocessing_started": true,
+    "reference_preprocessing_complete": false,
+    "completed_preprocessing_count": "NOT_STRUCTURED_OR_REPORTED",
+    "run_level_fallback_message_observed": true,
+    "fallback_messages_counted_or_assigned_to_unit_pair_role_or_attribute": false,
+    "direct_lfe_acquisition_complete": false,
+    "held_pair_out_directions_constructed": false,
+    "engineering_trajectory_or_intervention_executions": 0,
+    "scheduler_steps_executed": 0,
+    "final_output_directory_created": false,
+    "partial_output_directory_created": false,
+    "raw_tensor_media_or_latent_files_persisted": 0,
+    "outcomes_opened": false,
+    "network_used": false
+  },
+  "verified_failure": {
+    "exception": "torch.OutOfMemoryError",
+    "site": "xformers memory_efficient_attention inside EVA vision forward during process_face_embeddings_infer",
+    "requested_allocation_mib": 20.0,
+    "reported_gpu_capacity_gib": 47.37,
+    "reported_free_mib_at_failure": 3.88,
+    "reported_pytorch_allocated_gib": 45.36
+  },
+  "post_abort_verification": {
+    "runner_process_absent": true,
+    "run_output_absent": true,
+    "partial_output_absent": true,
+    "gpu_reported_used_mib": 0,
+    "research_worktree_clean_before_abort_record": true,
+    "consisid_worktree_clean": true
+  },
+  "unverified_working_explanation": "PEAK_GPU_RESIDENCY_FROM_SIMULTANEOUS_FACE_MODEL_TRANSFORMER_PIPELINE_AND_ACCUMULATING_GPU_IDENTITY_HANDLES_MAY_HAVE_EXHAUSTED_MEMORY; THIS HAS_NOT_BEEN TESTED",
+  "reuse_policy": {
+    "run_001_reusable": false,
+    "automatic_retry_or_resume": false,
+    "configuration_change_authorized": false,
+    "runtime_code_change_authorized": false
+  },
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_MEMORY_LIFECYCLE_CORRECTION_IMPLEMENTATION_CPU_TESTS_NO_WEIGHT_DRY_RUN_AND_THEN_A_NEW_ENGINEERING_EXECUTION_DECISION"
+}
