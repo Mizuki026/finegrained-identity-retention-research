@@ -29,7 +29,11 @@ CORRECTION_FREEZE_STATUS = (
     "FROZEN_PASS_CONTROLLED_INTERVENTION_MEMORY_LIFECYCLE_CORRECTION_"
     "CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY"
 )
-ABORT_FREEZE_STATUS = "FROZEN_ABORTED_FAIL_CLOSED_GPU_OOM_BEFORE_ANY_ENGINEERING_TRAJECTORY"
+SHAM_CORRECTION_FREEZE_STATUS = (
+    "FROZEN_PASS_CPU_ONLY_SHAM_PROJECTION_NUMERICAL_DIAGNOSTIC_AND_"
+    "THRESHOLD_PRESERVING_CORRECTION_TESTS"
+)
+ABORT_FREEZE_STATUS = "FROZEN_ABORTED_FAIL_CLOSED_SHAM_PROJECTION_INVARIANT_BEFORE_ANY_TRAJECTORY"
 
 
 def _git(repository: Path, *args: str) -> str:
@@ -135,11 +139,16 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
     )
     if protocol.read_json(correction).get("status") != CORRECTION_FREEZE_STATUS:
         raise ControlledInterventionRunnerError("memory lifecycle correction is not frozen pass")
+    sham_correction = protocol.bound(
+        auth.get("sham_projection_correction_freeze", {}), "sham projection correction freeze"
+    )
+    if protocol.read_json(sham_correction).get("status") != SHAM_CORRECTION_FREEZE_STATUS:
+        raise ControlledInterventionRunnerError("sham projection correction is not frozen pass")
     abort = protocol.bound(auth.get("prior_engineering_abort_freeze", {}), "prior engineering abort freeze")
     if protocol.read_json(abort).get("status") != ABORT_FREEZE_STATUS:
         raise ControlledInterventionRunnerError("prior engineering abort freeze drift")
     if phase == "engineering" and (
-        auth.get("engineering_run_id") != "run_002"
+        auth.get("engineering_run_id") != "run_003"
         or auth.get("prior_execution_reused") is not False
     ):
         raise ControlledInterventionRunnerError("new engineering transaction identity drift")
