@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_engineering_run_003_abort",
+  "frozen_at_utc": "2026-09-05",
+  "status": "FROZEN_ABORTED_FAIL_CLOSED_STABLE_SHAM_DISPLACEMENT_ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY",
+  "authorization_commit": "231818fa6eb2fd8201d731ad3d91ea67458c1f4c",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/researcher_engineering_run_003_authorization_v1.json",
+    "bytes": 4065,
+    "sha256": "28b183f3dd81826c1cc599972f387c174e3dbf093170ecb62c3f87c3dfa6b3f6"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_003_execution_authorization_v1.json",
+    "bytes": 5098,
+    "sha256": "966f951bade3e91c0b888fc3edd4c5e12f0b476f6519d79b42c8fee4f47e47a0"
+  },
+  "abort_record": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_003_abort_record_v1.json",
+    "bytes": 4518,
+    "sha256": "a9cf25f5284ab9969abed8b331202c26d37720bcf89931a5b135ade151dee165"
+  },
+  "frozen_dependencies": {
+    "formal_input_audit_freeze": {
+      "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+      "bytes": 4364,
+      "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+    },
+    "memory_lifecycle_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_freeze_v1.json",
+      "bytes": 3809,
+      "sha256": "03df4a5c5a11213023d74e36881a5798525108b2683d517d59d5649a0e738ad9"
+    },
+    "sham_projection_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_sham_projection_correction_v1/sham_projection_correction_freeze_v1.json",
+      "bytes": 3691,
+      "sha256": "f0ea36580e980d66e6e5bc7eff62026cf14e05f8b26cc3cb30d9f60af681e6ba"
+    },
+    "engineering_run_002_abort_freeze": {
+      "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_002_abort_freeze_v1.json",
+      "bytes": 3557,
+      "sha256": "413a29c5de1b67e6d529352231ee29778994f70acf991c04c3d91d981e675f84"
+    }
+  },
+  "verified_terminal_state": {
+    "failure": "STABLE_SHAM_DISPLACEMENT_DOT_EXCEEDED_FROZEN_ABSOLUTE_TOLERANCE",
+    "reference_preprocessing_calls_complete": 40,
+    "direct_lfe_acquisitions_complete": 40,
+    "memory_lifecycle_gate_passed": true,
+    "pipeline_loaded_after_complete_acquisition": true,
+    "held_pair_out_direction_family_constructed_in_memory": 640,
+    "stable_sham_displacement_dot_evaluator_used": true,
+    "condition_tensor_family_complete": false,
+    "engineering_trajectories": 0,
+    "scheduler_steps": 0,
+    "run_output_absent": true,
+    "partial_output_absent": true,
+    "raw_tensor_media_or_latent_files": 0,
+    "gpu_reported_used_mib_after_abort": 0,
+    "outcomes_opened": false,
+    "formal_analysis_computed": false,
+    "scientific_result_created": false
+  },
+  "interpretation_boundary": {
+    "prior_synthetic_cancellation_correction_remains_valid_for_its_tested_case": true,
+    "prior_correction_sufficient_for_current_formal_lfe_panel": false,
+    "run_003_specific_offending_key_or_residual_verified": false,
+    "delta_amplification_or_float32_reconstruction_explanation_verified": false,
+    "threshold_changed": false,
+    "scientific_inference_allowed": false
+  },
+  "reuse_policy": {
+    "run_001_reusable": false,
+    "run_002_reusable": false,
+    "run_003_reusable": false,
+    "run_003_execution_authorization_reusable": false,
+    "automatic_retry_or_resume": false
+  },
+  "current_authority": {
+    "sham_displacement_construction_diagnostic_or_correction": false,
+    "new_engineering_execution": false,
+    "scientific_generation": false,
+    "decode_annotation_unblinding_outcome_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION"
+}
