@@ -292,6 +292,30 @@ class ControlledInterventionTests(unittest.TestCase):
         self.assertTrue(authorization["authorized"]["pipeline_load_deferred_until_all_40_acquisitions"])
         self.assertTrue(authorization["not_authorized"]["new_engineering_execution"])
 
+    def test_17_sham_projection_uses_stable_frozen_displacement_dot(self):
+        import torch
+
+        generator = torch.Generator(device="cpu").manual_seed(20260905)
+        direction = torch.randn(2048, generator=generator)
+        direction = direction / torch.linalg.vector_norm(direction)
+        sham_direction, _ = instrumentation.deterministic_sham_direction(
+            "eyeglasses", "FEY_01", 0, direction
+        )
+        torch.randn(2048, generator=generator)
+        torch.randn(2048, generator=generator)
+        base = torch.randn(2048, generator=generator) * 10.0
+        sham = base + 0.1 * sham_direction
+        projection_subtraction = abs(float(
+            (torch.dot(sham, direction) - torch.dot(base, direction)).item()
+        ))
+        frozen_displacement_dot = abs(float(
+            instrumentation.sham_displacement_direction_dot(sham, base, direction).item()
+        ))
+        self.assertGreater(projection_subtraction, protocol.DIRECTION_ATOL)
+        self.assertLessEqual(frozen_displacement_dot, protocol.DIRECTION_ATOL)
+        self.assertEqual(protocol.DIRECTION_ATOL, 1e-6)
+        self.assertTrue(torch.equal(sham, base + 0.1 * sham_direction))
+
 
 if __name__ == "__main__":
     unittest.main()

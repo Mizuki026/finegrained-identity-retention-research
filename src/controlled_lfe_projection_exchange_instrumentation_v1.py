@@ -44,6 +44,17 @@ def within_frozen_tolerance(left: Any, right: Any) -> bool:
     return bool((torch.abs(a - b) <= 1e-6 + 1e-5 * torch.maximum(torch.abs(a), torch.abs(b))).all())
 
 
+def sham_displacement_direction_dot(sham: Any, base: Any, direction: Any) -> Any:
+    """Evaluate the frozen dot(X_sham - X, u) invariant without projection cancellation."""
+    torch = _torch()
+    if tuple(sham.shape) != tuple(base.shape) or tuple(direction.shape) != tuple(base.shape):
+        raise ControlledInterventionInstrumentationError("sham displacement invariant shape drift")
+    displacement = sham - base
+    if not bool(torch.isfinite(displacement).all() and torch.isfinite(direction).all()):
+        raise ControlledInterventionInstrumentationError("non-finite sham displacement invariant")
+    return torch.dot(displacement, direction)
+
+
 def _unit_vector(vector: Any, label: str) -> tuple[Any, float]:
     torch = _torch()
     norm = float(torch.linalg.vector_norm(vector).item())
@@ -162,14 +173,16 @@ def build_transient_interventions(
                 sham = base[token_index] + delta * sham_direction
                 target_projection = torch.dot(target, direction)
                 counterpart_projection = torch.dot(counterpart[token_index], direction)
-                sham_projection = torch.dot(sham, direction)
-                base_projection = torch.dot(base[token_index], direction)
                 target_displacement = torch.linalg.vector_norm(target - base[token_index])
-                sham_displacement = torch.linalg.vector_norm(sham - base[token_index])
+                sham_displacement_vector = sham - base[token_index]
+                sham_displacement = torch.linalg.vector_norm(sham_displacement_vector)
                 if not within_frozen_tolerance(target_projection, counterpart_projection):
                     raise ControlledInterventionInstrumentationError("target projection exchange failure")
-                if abs(float((sham_projection - base_projection).item())) > protocol.DIRECTION_ATOL:
-                    raise ControlledInterventionInstrumentationError("sham changed target-direction projection")
+                sham_direction_dot = sham_displacement_direction_dot(
+                    sham, base[token_index], direction
+                )
+                if abs(float(sham_direction_dot.item())) > protocol.DIRECTION_ATOL:
+                    raise ControlledInterventionInstrumentationError("sham displacement is not orthogonal")
                 if not within_frozen_tolerance(target_displacement, sham_displacement):
                     raise ControlledInterventionInstrumentationError("target/sham displacement mismatch")
                 target_tokens.append(target)

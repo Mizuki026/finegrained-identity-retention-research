@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "verification_id": "controlled_lfe_projection_exchange_sham_projection_correction_evidence_v1",
+  "verified_at_utc": "2026-09-05",
+  "status": "PASS_INDEPENDENT_SHAM_PROJECTION_CORRECTION_EVIDENCE_VERIFICATION",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_sham_projection_correction_v1/sham_projection_correction_evidence_manifest_v1.csv",
+    "bytes": 2228,
+    "sha256": "05d69fc6de49f7da20e193ef9a1f77dfcd0b5277ed8c3f8e1dee8e38fc2d2f27",
+    "artifact_rows": 10
+  },
+  "checks": {
+    "all_paths_exist": true,
+    "all_byte_counts_match": true,
+    "all_sha256_match": true,
+    "run_002_abort_freeze_binding": "PASS_NON_REUSABLE",
+    "frozen_design_and_preregistration_bindings": "PASS",
+    "frozen_absolute_tolerance": 0.000001,
+    "threshold_changed": false,
+    "sham_formula_changed": false,
+    "stable_frozen_displacement_dot_evaluator": "PASS",
+    "synthetic_cancellation_counterexample": "REPRODUCED",
+    "cpu_synthetic_tests": "17_OF_17_PASS",
+    "ruff_static_check": "PASS",
+    "git_diff_check": "PASS",
+    "independent_cpu_numerical_verification": "PASS",
+    "formal_manifest_reference_model_weight_or_gpu_access": false,
+    "no_weight_dry_run": false,
+    "engineering_execution": false,
+    "outcome_access_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "authoritative_scalar_runtime": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_sham_projection_correction_v1_runtime/run_001",
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

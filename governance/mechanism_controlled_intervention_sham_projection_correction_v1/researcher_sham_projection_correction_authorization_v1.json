@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_sham_projection_numerical_invariant_correction_v1",
+  "authorized_at_utc": "2026-09-05",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "单独授权：SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_SHAM_PROJECTION_NUMERICAL_INVARIANT_DIAGNOSTIC_AND_THRESHOLD_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION",
+  "status": "CPU_ONLY_SHAM_PROJECTION_NUMERICAL_INVARIANT_DIAGNOSTIC_AND_THRESHOLD_PRESERVING_CORRECTION_TESTS_AUTHORIZED_ONLY",
+  "source_head": "a414ddd1ea2cee429dcff7446b463adff8180a8b",
+  "run_002_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_002_abort_freeze_v1.json",
+    "bytes": 3557,
+    "sha256": "413a29c5de1b67e6d529352231ee29778994f70acf991c04c3d91d981e675f84",
+    "required_status": "FROZEN_ABORTED_FAIL_CLOSED_SHAM_PROJECTION_INVARIANT_BEFORE_ANY_TRAJECTORY"
+  },
+  "authorized": {
+    "cpu_only_synthetic_numerical_diagnostic": true,
+    "frozen_formula_and_current_implementation_comparison": true,
+    "algebraically_equivalent_numerically_stable_invariant_evaluation": true,
+    "frozen_absolute_tolerance_retained_at_1e_6": true,
+    "intervention_formula_and_dose_unchanged": true,
+    "adversarial_and_regression_synthetic_tests": true,
+    "ruff_and_static_checks": true,
+    "diagnostic_readiness_evidence_and_freeze": true
+  },
+  "not_authorized": {
+    "formal_manifest_or_reference_access": true,
+    "reference_preprocessing_execution": true,
+    "model_module_or_weight_loading": true,
+    "gpu_execution": true,
+    "no_weight_dry_run": true,
+    "engineering_run_001_or_run_002_reuse_retry_or_resume": true,
+    "new_engineering_execution": true,
+    "threshold_relaxation_or_change": true,
+    "intervention_formula_dose_pair_token_seed_condition_or_scheduler_change": true,
+    "scientific_generation": true,
+    "latent_image_frame_or_video_generation_or_decode": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "network_access_or_remote_push": true
+  },
+  "frozen_invariants": {
+    "sham_formula": "X_SHAM_EQUALS_X_PLUS_DELTA_TIMES_ORTHOGONAL_UNIT_Q",
+    "sham_displacement_target_direction_dot_absolute_tolerance": 0.000001,
+    "target_and_sham_displacement_norm_match_rule_unchanged": true,
+    "target_projection_exchange_rule_unchanged": true,
+    "all_640_directions_required": true,
+    "complete_transaction_fail_closed": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

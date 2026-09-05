@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "readiness_id": "controlled_lfe_projection_exchange_sham_projection_numerical_correction_v1",
+  "recorded_at_utc": "2026-09-05",
+  "status": "PASS_CPU_ONLY_SHAM_PROJECTION_NUMERICAL_DIAGNOSTIC_AND_THRESHOLD_PRESERVING_CORRECTION_TESTS",
+  "source_head_before_correction": "a414ddd1ea2cee429dcff7446b463adff8180a8b",
+  "authorization": {
+    "cpu_only_numerical_diagnostic": true,
+    "threshold_preserving_correction": true,
+    "synthetic_and_adversarial_tests": true,
+    "formal_manifest_or_reference_access": false,
+    "reference_preprocessing": false,
+    "model_module_or_weight_loading": false,
+    "gpu_execution": false,
+    "no_weight_dry_run": false,
+    "engineering_execution": false,
+    "outcome_access_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "verified_diagnosis": {
+    "frozen_requirement": "ABS_DOT_X_SHAM_MINUS_X_WITH_TARGET_DIRECTION_LE_1E_6",
+    "old_evaluator": "ABS_DOT_X_SHAM_U_MINUS_DOT_X_U",
+    "old_and_frozen_evaluators_algebraically_equivalent": true,
+    "old_evaluator_numerically_cancellation_prone": true,
+    "fixed_synthetic_seed": 20260905,
+    "synthetic_dimension": 2048,
+    "synthetic_base_scale": 10.0,
+    "synthetic_delta": 0.1,
+    "old_projection_subtraction_abs_residual": 0.0000019073486328125,
+    "stable_displacement_dot_abs_residual": 0.0000003553577698767185,
+    "sham_direction_abs_dot": 0.0000000013969838619232178,
+    "frozen_absolute_tolerance": 0.000001,
+    "old_evaluator_exceeded_tolerance": true,
+    "stable_frozen_evaluator_passed": true,
+    "run_002_specific_offending_unit_pair_token_delta_or_residual_recovered": false
+  },
+  "correction": {
+    "acceptance_evaluator_before": "DOT_X_SHAM_U_MINUS_DOT_X_U",
+    "acceptance_evaluator_after": "DOT_X_SHAM_MINUS_X_WITH_U",
+    "sham_formula_unchanged": "X_SHAM_EQUALS_X_PLUS_DELTA_TIMES_ORTHOGONAL_UNIT_Q",
+    "target_formula_unchanged": true,
+    "delta_definition_unchanged": true,
+    "direction_and_sham_construction_unchanged": true,
+    "dose_unchanged": true,
+    "absolute_tolerance_before": 0.000001,
+    "absolute_tolerance_after": 0.000001,
+    "shape_and_nonfinite_fail_closed_checks_added": true
+  },
+  "cpu_synthetic_tests": {
+    "environment": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+    "cuda_visible_devices": "",
+    "tests_run": 17,
+    "tests_passed": 17,
+    "tests_failed": 0,
+    "adversarial_regression_test_added": true,
+    "ruff_static_check": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "independent_verification": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_sham_projection_correction_v1_runtime/run_001/independent_verification_v1.json",
+    "bytes": 824,
+    "sha256": "133b2d2bd1cdaf7ef10472a031d59f13c15e9a4ed434c217df457c090630ce1f",
+    "status": "PASS_INDEPENDENT_CPU_ONLY_SHAM_PROJECTION_CORRECTION_VERIFICATION",
+    "directory_mode": "0555",
+    "file_mode": "0444"
+  },
+  "interpretation_boundary": "THIS_VERIFIES_A_CPU_SYNTHETIC_NUMERICAL_EVALUATOR_DEFECT_AND_THRESHOLD_PRESERVING_CORRECTION; IT_DOES_NOT_VERIFY_THE_EXACT_RUN_002_OFFENDING_KEY_OR_AUTHORIZE_OR_PREDICT_GPU_ENGINEERING_SUCCESS",
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}
