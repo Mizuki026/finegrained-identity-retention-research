@@ -316,6 +316,42 @@ class ControlledInterventionTests(unittest.TestCase):
         self.assertEqual(protocol.DIRECTION_ATOL, 1e-6)
         self.assertTrue(torch.equal(sham, base + 0.1 * sham_direction))
 
+    def test_18_constructed_sham_displacement_avoids_float32_reconstruction_failure(self):
+        import torch
+
+        generator = torch.Generator(device="cpu").manual_seed(20260906)
+        realized_failures = 0
+        constructed_failures = 0
+        cases = 0
+        for index in range(640):
+            direction = torch.randn(2048, generator=generator)
+            direction = direction / torch.linalg.vector_norm(direction)
+            attribute = "eyeglasses" if index < 320 else "facial_hair"
+            prefix = "FEY" if index < 320 else "FFH"
+            pair = f"{prefix}_{(index // 32) % 10 + 1:02d}"
+            sham_direction, _ = instrumentation.deterministic_sham_direction(
+                attribute, pair, index % 32, direction
+            )
+            for scale in (0.1, 1.0, 10.0):
+                base = torch.randn(2048, generator=generator) * scale
+                for delta in (0.1, 1.0, 10.0):
+                    cases += 1
+                    constructed = delta * sham_direction
+                    sham = base + constructed
+                    realized = abs(float(torch.dot(sham - base, direction).item()))
+                    stable = abs(float(
+                        instrumentation.constructed_displacement_direction_dot(
+                            constructed, direction
+                        ).item()
+                    ))
+                    realized_failures += int(realized > protocol.DIRECTION_ATOL)
+                    constructed_failures += int(stable > protocol.DIRECTION_ATOL)
+                    self.assertTrue(torch.equal(sham, base + delta * sham_direction))
+        self.assertEqual(cases, 5760)
+        self.assertGreater(realized_failures, 0)
+        self.assertEqual(constructed_failures, 0)
+        self.assertEqual(protocol.DIRECTION_ATOL, 1e-6)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_sham_displacement_construction_correction_v1",
+  "authorized_at_utc": "2026-09-05",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "单独授权：SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION",
+  "status": "CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_AUTHORIZED_ONLY",
+  "source_head": "11ec229835c143491f850cbaf2ed256d21eaa813",
+  "run_003_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_003_abort_freeze_v1.json",
+    "bytes": 4120,
+    "sha256": "fda4e9da2a6d0201c586ea2926a4db76a9e0b2bc441f8823b78d59e313882c80",
+    "required_status": "FROZEN_ABORTED_FAIL_CLOSED_STABLE_SHAM_DISPLACEMENT_ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY"
+  },
+  "authorized": {
+    "cpu_only_synthetic_sham_construction_diagnostic": true,
+    "separate_direction_orthogonalization_and_realized_displacement_rounding_errors": true,
+    "deterministic_higher_precision_or_reorthogonalized_construction_if_supported": true,
+    "frozen_design_preserving_implementation_correction": true,
+    "frozen_absolute_tolerance_retained_at_1e_6": true,
+    "intervention_formula_and_dose_unchanged": true,
+    "adversarial_stress_and_regression_synthetic_tests": true,
+    "ruff_and_static_checks": true,
+    "cpu_only_independent_scalar_verification": true,
+    "diagnostic_readiness_evidence_and_freeze": true
+  },
+  "not_authorized": {
+    "formal_manifest_or_reference_access": true,
+    "reference_preprocessing_execution": true,
+    "model_module_or_weight_loading": true,
+    "gpu_execution": true,
+    "no_weight_dry_run": true,
+    "engineering_run_001_run_002_or_run_003_reuse_retry_or_resume": true,
+    "new_engineering_execution": true,
+    "threshold_relaxation_or_change": true,
+    "rademacher_namespace_attempt_order_or_dense_vector_rule_change": true,
+    "sham_dependence_on_outcome_or_attribute_result": true,
+    "pair_token_seed_condition_dose_or_scheduler_change": true,
+    "scientific_generation": true,
+    "latent_image_frame_or_video_generation_or_decode": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "network_access_or_remote_push": true
+  },
+  "frozen_invariants": {
+    "sham_direction_source": "DETERMINISTIC_SHAKE256_RADEMACHER_ORTHOGONALIZED_TO_TARGET_DIRECTION_AND_L2_NORMALIZED",
+    "sham_formula": "X_SHAM_EQUALS_X_PLUS_DELTA_TIMES_ORTHOGONAL_UNIT_Q",
+    "sham_displacement_target_direction_dot_absolute_tolerance": 0.000001,
+    "target_and_sham_displacement_norm_match_rule_unchanged": true,
+    "target_projection_exchange_rule_unchanged": true,
+    "complete_transaction_fail_closed": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

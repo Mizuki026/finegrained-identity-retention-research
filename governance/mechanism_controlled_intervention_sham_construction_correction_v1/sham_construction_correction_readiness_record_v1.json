@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "readiness_id": "controlled_lfe_projection_exchange_sham_displacement_construction_correction_v1",
+  "recorded_at_utc": "2026-09-05",
+  "status": "PASS_CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS",
+  "source_head_before_correction": "11ec229835c143491f850cbaf2ed256d21eaa813",
+  "authorization": {
+    "cpu_only_construction_diagnostic": true,
+    "frozen_design_preserving_correction": true,
+    "synthetic_stress_tests": true,
+    "formal_manifest_or_reference_access": false,
+    "reference_preprocessing": false,
+    "model_module_or_weight_loading": false,
+    "gpu_execution": false,
+    "no_weight_dry_run": false,
+    "engineering_execution": false,
+    "outcome_access_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "verified_diagnosis": {
+    "synthetic_seed": 20260906,
+    "synthetic_directions": 640,
+    "synthetic_scenarios": 5760,
+    "synthetic_dimension": 2048,
+    "base_scales": [0.1, 1.0, 10.0],
+    "deltas": [0.1, 1.0, 10.0],
+    "frozen_absolute_tolerance": 0.000001,
+    "realized_add_subtract_failures": 2,
+    "constructed_displacement_failures": 0,
+    "ideal_amplification_failures": 0,
+    "reconstruction_dominant_failures": 2,
+    "max_sham_direction_abs_dot": 0.00000002421438694000244,
+    "max_realized_add_subtract_abs_residual": 0.0000014977122191339731,
+    "max_constructed_displacement_abs_residual": 0.0000002384185791015625,
+    "float32_base_addition_then_subtraction_can_create_false_orthogonality_failure": true,
+    "run_003_specific_offending_unit_pair_token_delta_or_residual_recovered": false
+  },
+  "correction": {
+    "explicit_target_displacement": "DELTA_TIMES_DIRECTION",
+    "explicit_sham_displacement": "DELTA_TIMES_SHAM_DIRECTION",
+    "target_tensor_formula": "X_PLUS_EXPLICIT_TARGET_DISPLACEMENT",
+    "sham_tensor_formula": "X_PLUS_EXPLICIT_SHAM_DISPLACEMENT",
+    "orthogonality_gate_uses_explicit_constructed_sham_displacement": true,
+    "matched_norm_gate_uses_explicit_constructed_displacements": true,
+    "target_and_sham_output_tensors_bitwise_operation_equivalent_to_prior_formula": true,
+    "direction_sham_delta_and_dose_unchanged": true,
+    "absolute_tolerance_before": 0.000001,
+    "absolute_tolerance_after": 0.000001,
+    "rademacher_namespace_attempt_order_and_dense_rule_unchanged": true
+  },
+  "cpu_synthetic_tests": {
+    "environment": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+    "cuda_visible_devices": "",
+    "tests_run": 18,
+    "tests_passed": 18,
+    "tests_failed": 0,
+    "stress_scenarios": 5760,
+    "ruff_static_check": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "independent_verification": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_sham_construction_correction_v1_runtime/run_001/independent_verification_v1.json",
+    "bytes": 980,
+    "sha256": "980b06eb11b11ca2b40789c6fcbfd2494b0bf1c5643b0864b9bb4848d8d99d6a",
+    "status": "PASS_INDEPENDENT_CPU_ONLY_SHAM_CONSTRUCTION_CORRECTION_VERIFICATION",
+    "directory_mode": "0555",
+    "file_mode": "0444"
+  },
+  "interpretation_boundary": "THIS_VERIFIES_A_CPU_SYNTHETIC_FLOAT32_RECONSTRUCTION_FAILURE_CLASS_AND_A_DESIGN_PRESERVING_CONSTRUCTION_GROUNDED_GATE; IT_DOES_NOT RECOVER_THE_RUN_003_OFFENDING_KEY_OR_AUTHORIZE_OR_PREDICT_GPU_ENGINEERING_SUCCESS",
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_sham_displacement_construction_correction_v1",
+  "frozen_at_utc": "2026-09-05",
+  "status": "FROZEN_PASS_CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS",
+  "source_head_before_correction": "11ec229835c143491f850cbaf2ed256d21eaa813",
+  "authorization": {
+    "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/researcher_sham_construction_correction_authorization_v1.json",
+    "bytes": 3126,
+    "sha256": "735a5ffa1215e49a6a5333c824b7fd1eddb8aea3352d2c402425ec3f76468f0c"
+  },
+  "run_003_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_003_abort_freeze_v1.json",
+    "bytes": 4120,
+    "sha256": "fda4e9da2a6d0201c586ea2926a4db76a9e0b2bc441f8823b78d59e313882c80",
+    "run_003_reusable": false
+  },
+  "readiness_record": {
+    "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_readiness_record_v1.json",
+    "bytes": 3497,
+    "sha256": "42a6d5e02dfe5843a30bcbd478e6c362c237faf4f9cff2176b04a55aab81f92a"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_evidence_manifest_v1.csv",
+    "artifact_rows": 10,
+    "bytes": 2235,
+    "sha256": "0b5d7c26d12a7ac656326edb58d11cf619241e32ddba197d627340f776133f2e"
+  },
+  "evidence_verification": {
+    "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_evidence_verification_v1.json",
+    "bytes": 1727,
+    "sha256": "69d3353f66d977ef3564a53f41ca5b2da85b23cd3c847edff561e0f1a7a93917",
+    "status": "PASS_INDEPENDENT_SHAM_CONSTRUCTION_CORRECTION_EVIDENCE_VERIFICATION"
+  },
+  "verified": {
+    "synthetic_directions": 640,
+    "synthetic_scenarios": 5760,
+    "realized_add_subtract_failures": 2,
+    "reconstruction_dominant_failures": 2,
+    "constructed_displacement_failures": 0,
+    "ideal_amplification_failures": 0,
+    "max_realized_add_subtract_abs_residual": 0.0000014977122191339731,
+    "max_constructed_displacement_abs_residual": 0.0000002384185791015625,
+    "frozen_absolute_tolerance": 0.000001,
+    "construction_grounded_gate_passes_same_threshold": true,
+    "target_and_sham_tensor_formulas_unchanged": true,
+    "direction_sham_delta_dose_namespace_and_attempt_order_unchanged": true,
+    "cpu_synthetic_tests_18_of_18": true,
+    "ruff_static_check": true,
+    "independent_cpu_scalar_verification": true,
+    "evidence_manifest_10_of_10": true
+  },
+  "authoritative_scalar_runtime": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_sham_construction_correction_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "all_file_modes": "0444",
+    "tensor_media_or_latent_files": 0
+  },
+  "not_performed_or_authorized": {
+    "formal_manifest_or_reference_access": true,
+    "reference_preprocessing": true,
+    "model_module_or_weight_loading": true,
+    "gpu_execution": true,
+    "no_weight_dry_run": true,
+    "engineering_run_001_run_002_or_run_003_reuse_retry_or_resume": true,
+    "new_engineering_execution": true,
+    "threshold_change": true,
+    "rademacher_namespace_attempt_order_or_dense_rule_change": true,
+    "scientific_configuration_or_intervention_dose_change": true,
+    "scientific_generation_or_decode": true,
+    "outcome_access_annotation_unblinding_or_analysis": true,
+    "network_or_remote_push": true
+  },
+  "interpretation_boundary": {
+    "cpu_synthetic_float32_reconstruction_failure_class_verified": true,
+    "run_003_specific_offending_key_or_value_verified": false,
+    "future_gpu_engineering_success_verified_or_implied": false,
+    "scientific_result_created": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

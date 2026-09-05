@@ -55,6 +55,16 @@ def sham_displacement_direction_dot(sham: Any, base: Any, direction: Any) -> Any
     return torch.dot(displacement, direction)
 
 
+def constructed_displacement_direction_dot(displacement: Any, direction: Any) -> Any:
+    """Evaluate the explicitly constructed delta*q displacement without add/subtract loss."""
+    torch = _torch()
+    if tuple(displacement.shape) != tuple(direction.shape):
+        raise ControlledInterventionInstrumentationError("constructed displacement invariant shape drift")
+    if not bool(torch.isfinite(displacement).all() and torch.isfinite(direction).all()):
+        raise ControlledInterventionInstrumentationError("non-finite constructed displacement invariant")
+    return torch.dot(displacement, direction)
+
+
 def _unit_vector(vector: Any, label: str) -> tuple[Any, float]:
     torch = _torch()
     norm = float(torch.linalg.vector_norm(vector).item())
@@ -169,17 +179,18 @@ def build_transient_interventions(
                 direction = directions[(attribute, pair_id, token_index)]
                 sham_direction = sham_directions[(attribute, pair_id, token_index)]
                 delta = torch.dot(counterpart[token_index] - base[token_index], direction)
-                target = base[token_index] + delta * direction
-                sham = base[token_index] + delta * sham_direction
+                target_displacement_vector = delta * direction
+                sham_displacement_vector = delta * sham_direction
+                target = base[token_index] + target_displacement_vector
+                sham = base[token_index] + sham_displacement_vector
                 target_projection = torch.dot(target, direction)
                 counterpart_projection = torch.dot(counterpart[token_index], direction)
-                target_displacement = torch.linalg.vector_norm(target - base[token_index])
-                sham_displacement_vector = sham - base[token_index]
+                target_displacement = torch.linalg.vector_norm(target_displacement_vector)
                 sham_displacement = torch.linalg.vector_norm(sham_displacement_vector)
                 if not within_frozen_tolerance(target_projection, counterpart_projection):
                     raise ControlledInterventionInstrumentationError("target projection exchange failure")
-                sham_direction_dot = sham_displacement_direction_dot(
-                    sham, base[token_index], direction
+                sham_direction_dot = constructed_displacement_direction_dot(
+                    sham_displacement_vector, direction
                 )
                 if abs(float(sham_direction_dot.item())) > protocol.DIRECTION_ATOL:
                     raise ControlledInterventionInstrumentationError("sham displacement is not orthogonal")
