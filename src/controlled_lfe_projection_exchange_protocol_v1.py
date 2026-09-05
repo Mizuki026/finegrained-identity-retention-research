@@ -17,6 +17,9 @@ PREREGISTRATION = DESIGN_DIR / "controlled_lfe_projection_exchange_preregistrati
 IMPLEMENTATION_DIR = REPO / "governance/mechanism_controlled_intervention_implementation_v1"
 IMPLEMENTATION_AUTH = IMPLEMENTATION_DIR / "researcher_implementation_authorization_v1.json"
 DRY_RUN_AUTH = IMPLEMENTATION_DIR / "no_weight_dry_run_authorization_v1.json"
+CORRECTION_DIR = REPO / "governance/mechanism_controlled_intervention_memory_correction_v1"
+CORRECTION_AUTH = CORRECTION_DIR / "researcher_memory_lifecycle_correction_authorization_v1.json"
+CORRECTION_DRY_RUN_AUTH = CORRECTION_DIR / "no_weight_dry_run_authorization_v1.json"
 
 DESIGN_FREEZE_BYTES = 3918
 DESIGN_FREEZE_SHA256 = "12697bf6f44f85ed1dddacfd339a176f65d8b32d1c22c30d5e4e803cd31eb89f"
@@ -24,6 +27,8 @@ PREREGISTRATION_BYTES = 10955
 PREREGISTRATION_SHA256 = "02ef043b3391ac931c5a6bb92f8716954abfcf97b4ed9511eaead1a42ade38eb"
 IMPLEMENTATION_STATUS = "CONTROLLED_INTERVENTION_IMPLEMENTATION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED_ONLY"
 DRY_RUN_STATUS = "CONTROLLED_INTERVENTION_NO_WEIGHT_DRY_RUN_AUTHORIZED"
+CORRECTION_STATUS = "CONTROLLED_INTERVENTION_MEMORY_LIFECYCLE_CORRECTION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED_ONLY"
+CORRECTION_DRY_RUN_STATUS = "CONTROLLED_INTERVENTION_MEMORY_LIFECYCLE_CORRECTION_NO_WEIGHT_DRY_RUN_AUTHORIZED"
 DRY_PASS_STATUS = "PASS_CONTROLLED_INTERVENTION_CPU_ONLY_NO_WEIGHT_DRY_RUN"
 NAMESPACE = "controlled_lfe_projection_exchange_v1"
 ENGINEERING_NAMESPACE = "controlled_lfe_projection_exchange_v1_engineering_pair_subset"
@@ -167,6 +172,40 @@ def validate_implementation_authority() -> dict:
     )
     if any(auth.get("not_authorized", {}).get(key) is not True for key in forbidden):
         raise ControlledInterventionProtocolError("implementation forbidden boundary incomplete")
+    return auth
+
+
+def validate_correction_authority() -> dict:
+    validate_design()
+    auth = read_json(CORRECTION_AUTH)
+    if auth.get("status") != CORRECTION_STATUS:
+        raise ControlledInterventionProtocolError("memory-lifecycle correction authority status drift")
+    abort = bound(auth.get("abort_freeze", {}), "engineering abort freeze")
+    expected_abort = REPO / "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_001_abort_freeze_v1.json"
+    if abort.resolve() != expected_abort.resolve():
+        raise ControlledInterventionProtocolError("engineering abort freeze path drift")
+    if read_json(abort).get("status") != auth.get("abort_freeze", {}).get("required_status"):
+        raise ControlledInterventionProtocolError("engineering abort freeze status drift")
+    required = (
+        "runtime_memory_lifecycle_correction", "acquisition_under_inference_mode",
+        "identity_handle_immediate_cpu_transfer", "pipeline_load_deferred_until_all_40_acquisitions",
+        "face_models_release_before_pipeline_load", "lifecycle_fail_closed_gates_and_scalar_diagnostics",
+        "runner_no_weight_authorization_extension", "cpu_only_synthetic_tests",
+        "cpu_only_no_weight_dry_run", "independent_no_weight_verification",
+        "correction_readiness_record_evidence_and_freeze",
+    )
+    if any(auth.get("authorized", {}).get(key) is not True for key in required):
+        raise ControlledInterventionProtocolError("memory-lifecycle correction authority incomplete")
+    forbidden = (
+        "formal_manifest_or_reference_access", "reference_preprocessing_execution",
+        "model_module_or_weight_loading", "gpu_execution",
+        "engineering_run_001_reuse_retry_or_resume", "new_engineering_execution",
+        "scientific_generation", "latent_image_frame_or_video_generation_or_decode",
+        "outcome_access_annotation_unblinding_construction_or_join",
+        "formal_intervention_analysis_or_hypothesis_testing", "network_access_or_remote_push",
+    )
+    if any(auth.get("not_authorized", {}).get(key) is not True for key in forbidden):
+        raise ControlledInterventionProtocolError("memory-lifecycle forbidden boundary incomplete")
     return auth
 
 

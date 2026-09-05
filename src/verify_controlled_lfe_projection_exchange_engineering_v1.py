@@ -15,7 +15,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 GOV = REPO / "governance/mechanism_controlled_intervention_engineering_v1"
-AUTHORIZATION = GOV / "engineering_execution_authorization_v1.json"
+AUTHORIZATION = GOV / "engineering_run_002_execution_authorization_v1.json"
 CONSISID_REPO = Path("/root/autodl-tmp/consisid-smoketest/ConsisID")
 CONSISID_COMMIT = "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e"
 ATTRIBUTES = ("eyeglasses", "facial_hair")
@@ -26,6 +26,12 @@ SEED = "2686238281"
 NAMESPACE = "controlled_lfe_projection_exchange_v1"
 ENGINEERING_NAMESPACE = "controlled_lfe_projection_exchange_v1_engineering_pair_subset"
 AUTH_STATUS = "CONTROLLED_INTERVENTION_ENGINEERING_GPU_EXECUTION_AUTHORIZED"
+RESEARCHER_STATUS = "NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN_AUTHORIZED"
+CORRECTION_FREEZE_STATUS = (
+    "FROZEN_PASS_CONTROLLED_INTERVENTION_MEMORY_LIFECYCLE_CORRECTION_"
+    "CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY"
+)
+ABORT_FREEZE_STATUS = "FROZEN_ABORTED_FAIL_CLOSED_GPU_OOM_BEFORE_ANY_ENGINEERING_TRAJECTORY"
 SUMMARY_STATUS = "COMPLETE_PENDING_INDEPENDENT_PHASE_VERIFICATION"
 
 
@@ -119,7 +125,7 @@ def validate_authority(run_dir: Path) -> dict:
         str(researcher_item.get("sha256", "")),
     )
     researcher = json.loads(researcher_path.read_text(encoding="utf-8"))
-    if researcher.get("status") != "SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_PHASE_AUTHORIZED":
+    if researcher.get("status") != RESEARCHER_STATUS:
         raise EngineeringVerificationError("researcher engineering authorization drift")
     if Path(str(researcher.get("output_dir", ""))).resolve() != run_dir.resolve():
         raise EngineeringVerificationError("researcher-authorized output path drift")
@@ -127,6 +133,8 @@ def validate_authority(run_dir: Path) -> dict:
         raise EngineeringVerificationError("single-GPU authorization drift")
     if float(auth.get("phase_gpu_hours_ceiling", 0)) != 2.0:
         raise EngineeringVerificationError("engineering GPU-hour ceiling drift")
+    if auth.get("engineering_run_id") != "run_002" or auth.get("prior_execution_reused") is not False:
+        raise EngineeringVerificationError("new engineering transaction identity drift")
     required = (
         "single_gpu_engineering", "frozen_model_and_weight_loading",
         "reference_preprocessing_and_direct_lfe_acquisition",
@@ -155,9 +163,18 @@ def validate_authority(run_dir: Path) -> dict:
         verify_file(resolve(str(item.get("path", ""))), int(item.get("bytes", -1)), str(item.get("sha256", "")))
     verifier = auth.get("engineering_verifier", {})
     verify_file(resolve(str(verifier.get("path", ""))), int(verifier.get("bytes", -1)), str(verifier.get("sha256", "")))
-    for key in ("formal_input_audit_freeze", "formal_generation_master", "formal_task_binding_manifest"):
+    for key in (
+        "formal_input_audit_freeze", "memory_lifecycle_correction_freeze",
+        "prior_engineering_abort_freeze", "formal_generation_master", "formal_task_binding_manifest",
+    ):
         item = auth.get(key, {})
         verify_file(resolve(str(item.get("path", ""))), int(item.get("bytes", -1)), str(item.get("sha256", "")))
+    correction = json.loads(resolve(str(auth["memory_lifecycle_correction_freeze"]["path"])).read_text())
+    if correction.get("status") != CORRECTION_FREEZE_STATUS:
+        raise EngineeringVerificationError("memory lifecycle correction freeze status drift")
+    abort = json.loads(resolve(str(auth["prior_engineering_abort_freeze"]["path"])).read_text())
+    if abort.get("status") != ABORT_FREEZE_STATUS or abort.get("reuse_policy", {}).get("run_001_reusable") is not False:
+        raise EngineeringVerificationError("prior run_001 abort or non-reuse binding drift")
     return auth
 
 

@@ -3,8 +3,11 @@ from __future__ import annotations
 
 import copy
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest import mock
 
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "src"))
@@ -205,10 +208,89 @@ class ControlledInterventionTests(unittest.TestCase):
                 "top_level_ml_imports": 0,
                 "forbidden_identity_lfe_or_direction_tensor_serializers": 0,
                 "future_private_final_latent_serializer_sites": 1,
+                "memory_lifecycle_correction_static_gate": True,
             },
         )
         with self.assertRaises(runner.ControlledInterventionRunnerError):
             runner.validate_active(protocol.IMPLEMENTATION_AUTH, Path("/tmp/not-authorized"), "engineering")
+
+    def test_14_runtime_requires_complete_acquisition_lifecycle_before_trajectory(self):
+        source_bindings = {}
+        for attribute in protocol.ATTRIBUTES:
+            for pair in protocol.pair_ids(attribute):
+                for role in protocol.ROLES:
+                    unit = protocol.unit_id(attribute, pair, role)
+                    source_bindings[unit] = {
+                        "attribute": attribute, "formal_pair_id": pair, "role": role,
+                    }
+
+        class FakeAdapter:
+            def __init__(self):
+                self.events = []
+                self.units = []
+
+            def acquire(self, unit, _binding):
+                self.events.append(("acquire", unit))
+                self.units.append(unit)
+                return {"lfe": object(), "handle": {"unit": unit}}
+
+            def finish_acquisition(self):
+                self.events.append(("finish", len(self.units)))
+                return {
+                    "identity_handles_cpu": True,
+                    "acquisition_inference_mode": True,
+                    "face_models_released_before_pipeline_load": True,
+                    "pipeline_loaded_after_complete_acquisition": True,
+                    "acquisition_units": 40,
+                }
+
+            def run_trajectory(self, row, _handle, _direct, _selected):
+                self.events.append(("run", row["planned_task_id"], row["condition"]))
+                return {"synthetic_lifecycle_probe": "PASS"}
+
+            def close(self):
+                self.events.append(("close",))
+
+        adapter = FakeAdapter()
+        unmodified = {unit: None for unit in source_bindings}
+        selected = {
+            (unit, condition): None
+            for unit in source_bindings for condition in protocol.CONDITIONS
+        }
+        bundle = SimpleNamespace(
+            unmodified=unmodified, selected=selected,
+            diagnostics=[{"synthetic_direction_diagnostic": "PASS"}],
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "engineering"
+            with mock.patch.object(instrumentation, "build_transient_interventions", return_value=bundle):
+                summary = runtime.execute_with_adapter(
+                    "engineering", source_bindings, adapter, output,
+                    {"execution_explicitly_approved": True, "phase": "engineering", "phase_gpu_hours_ceiling": 2},
+                )
+            self.assertEqual(summary["trajectory_rows"], 24)
+            self.assertTrue(summary["identity_handles_cpu"])
+        event_names = [event[0] for event in adapter.events]
+        self.assertEqual(event_names[:40], ["acquire"] * 40)
+        self.assertEqual(event_names[40], "finish")
+        self.assertEqual(event_names[41:65], ["run"] * 24)
+        self.assertEqual(event_names[65], "close")
+
+    def test_15_cpu_clone_detaches_and_owns_storage(self):
+        import torch
+
+        source = torch.arange(8, dtype=torch.float32, requires_grad=True)
+        cloned = runtime.ConsisIDRuntimeAdapter._cpu_clone(source)
+        self.assertEqual(cloned.device.type, "cpu")
+        self.assertFalse(cloned.requires_grad)
+        self.assertNotEqual(cloned.data_ptr(), source.data_ptr())
+        self.assertTrue(torch.equal(cloned, source.detach()))
+
+    def test_16_memory_lifecycle_correction_authority(self):
+        authorization = protocol.validate_correction_authority()
+        self.assertEqual(authorization["status"], protocol.CORRECTION_STATUS)
+        self.assertTrue(authorization["authorized"]["pipeline_load_deferred_until_all_40_acquisitions"])
+        self.assertTrue(authorization["not_authorized"]["new_engineering_execution"])
 
 
 if __name__ == "__main__":

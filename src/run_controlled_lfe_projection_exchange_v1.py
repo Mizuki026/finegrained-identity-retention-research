@@ -25,6 +25,11 @@ CODE_PATHS = {
     "verifier": protocol.REPO / "src/verify_controlled_lfe_projection_exchange_v1.py",
 }
 FORMAL_AUDIT_STATUS = "FROZEN_PASS_CONTROLLED_INTERVENTION_FORMAL_INPUT_AUDIT"
+CORRECTION_FREEZE_STATUS = (
+    "FROZEN_PASS_CONTROLLED_INTERVENTION_MEMORY_LIFECYCLE_CORRECTION_"
+    "CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_ONLY"
+)
+ABORT_FREEZE_STATUS = "FROZEN_ABORTED_FAIL_CLOSED_GPU_OOM_BEFORE_ANY_ENGINEERING_TRAJECTORY"
 
 
 def _git(repository: Path, *args: str) -> str:
@@ -43,13 +48,27 @@ def _validate_code(auth: dict) -> None:
 def validate_dry_authority(auth_file: Path, output_dir: Path) -> dict:
     protocol.require_cpu_only()
     protocol.validate_implementation_authority()
-    if auth_file.resolve() != protocol.DRY_RUN_AUTH.resolve():
-        raise ControlledInterventionRunnerError("dry-run authorization path mismatch")
+    resolved = auth_file.resolve()
     auth = protocol.read_json(auth_file)
-    if auth.get("status") != protocol.DRY_RUN_STATUS or auth.get("gpu_execution_explicitly_approved") is not False:
-        raise ControlledInterventionRunnerError("no-weight dry-run authorization status drift")
-    if protocol.bound(auth.get("implementation_authorization", {}), "implementation authorization").resolve() != protocol.IMPLEMENTATION_AUTH.resolve():
-        raise ControlledInterventionRunnerError("implementation authorization path drift")
+    if resolved == protocol.DRY_RUN_AUTH.resolve():
+        if auth.get("status") != protocol.DRY_RUN_STATUS:
+            raise ControlledInterventionRunnerError("original no-weight dry-run authorization status drift")
+        expected_item = auth.get("implementation_authorization", {})
+        expected_path = protocol.IMPLEMENTATION_AUTH
+        label = "implementation authorization"
+    elif resolved == protocol.CORRECTION_DRY_RUN_AUTH.resolve():
+        protocol.validate_correction_authority()
+        if auth.get("status") != protocol.CORRECTION_DRY_RUN_STATUS:
+            raise ControlledInterventionRunnerError("correction no-weight dry-run authorization status drift")
+        expected_item = auth.get("correction_authorization", {})
+        expected_path = protocol.CORRECTION_AUTH
+        label = "memory-lifecycle correction authorization"
+    else:
+        raise ControlledInterventionRunnerError("dry-run authorization path mismatch")
+    if auth.get("gpu_execution_explicitly_approved") is not False:
+        raise ControlledInterventionRunnerError("no-weight dry-run cannot approve GPU execution")
+    if protocol.bound(expected_item, label).resolve() != expected_path.resolve():
+        raise ControlledInterventionRunnerError(f"{label} path drift")
     _validate_code(auth)
     authority = auth.get("authority", {})
     if authority.get("cpu_only_no_weight_dry_run") is not True or authority.get("independent_verification") is not True:
@@ -81,6 +100,11 @@ def dry_run(auth_file: Path, output_dir: Path) -> int:
         "gpu_used": False, "trajectory_executed": False, "video_or_latent_generated": False,
         "video_decoded": False, "intervention_executed": False,
         "formal_analysis_computed": False, "network_used": False,
+        "memory_lifecycle_correction_bound": auth_file.resolve() == protocol.CORRECTION_DRY_RUN_AUTH.resolve(),
+        "acquisition_inference_mode_planned": auth_file.resolve() == protocol.CORRECTION_DRY_RUN_AUTH.resolve(),
+        "identity_handles_cpu_resident_planned": auth_file.resolve() == protocol.CORRECTION_DRY_RUN_AUTH.resolve(),
+        "pipeline_load_after_40_acquisitions_planned": auth_file.resolve() == protocol.CORRECTION_DRY_RUN_AUTH.resolve(),
+        "face_models_release_before_pipeline_load_planned": auth_file.resolve() == protocol.CORRECTION_DRY_RUN_AUTH.resolve(),
         "torch_imported": "torch" in sys.modules,
     }
     if summary["torch_imported"]:
@@ -106,6 +130,19 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
     audit = protocol.bound(auth.get("formal_input_audit_freeze", {}), "formal input audit")
     if protocol.read_json(audit).get("status") != FORMAL_AUDIT_STATUS:
         raise ControlledInterventionRunnerError("formal input audit is not frozen pass")
+    correction = protocol.bound(
+        auth.get("memory_lifecycle_correction_freeze", {}), "memory lifecycle correction freeze"
+    )
+    if protocol.read_json(correction).get("status") != CORRECTION_FREEZE_STATUS:
+        raise ControlledInterventionRunnerError("memory lifecycle correction is not frozen pass")
+    abort = protocol.bound(auth.get("prior_engineering_abort_freeze", {}), "prior engineering abort freeze")
+    if protocol.read_json(abort).get("status") != ABORT_FREEZE_STATUS:
+        raise ControlledInterventionRunnerError("prior engineering abort freeze drift")
+    if phase == "engineering" and (
+        auth.get("engineering_run_id") != "run_002"
+        or auth.get("prior_execution_reused") is not False
+    ):
+        raise ControlledInterventionRunnerError("new engineering transaction identity drift")
     cuda = str(auth.get("cuda_visible_devices", ""))
     if not cuda.isdigit() or "," in cuda or os.environ.get("CUDA_VISIBLE_DEVICES") != cuda:
         raise ControlledInterventionRunnerError("single-GPU binding mismatch")

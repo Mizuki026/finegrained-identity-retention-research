@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_memory_lifecycle_correction_no_weight_run_005",
+  "authorized_at_utc": "2026-09-05",
+  "status": "CONTROLLED_INTERVENTION_MEMORY_LIFECYCLE_CORRECTION_NO_WEIGHT_DRY_RUN_AUTHORIZED",
+  "gpu_execution_explicitly_approved": false,
+  "correction_authorization": {
+    "path": "governance/mechanism_controlled_intervention_memory_correction_v1/researcher_memory_lifecycle_correction_authorization_v1.json",
+    "bytes": 2535,
+    "sha256": "14fc1975460891bf6404e85afb8c41b67a79f6002bae68cfa8670551b98723a3"
+  },
+  "abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_001_abort_freeze_v1.json",
+    "bytes": 2290,
+    "sha256": "4157dfde60636d8531dd14fbaee182fa806afbde4fbb26c0ad0909c3224d5536"
+  },
+  "code": {
+    "protocol": {"path": "src/controlled_lfe_projection_exchange_protocol_v1.py", "bytes": 14803, "sha256": "58da1291f4600de36edd17724d493e4ea56d2705ba3080869a62b11cf0083ea2"},
+    "instrumentation": {"path": "src/controlled_lfe_projection_exchange_instrumentation_v1.py", "bytes": 14805, "sha256": "1207b418c10f9ed0a2ce63f01bcbc42ab39ca486c294cd7c01adcfeb43b486dc"},
+    "runtime": {"path": "src/controlled_lfe_projection_exchange_runtime_v1.py", "bytes": 18827, "sha256": "c6a4838123e5ee7d44770e8a2be80f5f7bbfc395445ff33be34cdafe9f3b1848"},
+    "runner": {"path": "src/run_controlled_lfe_projection_exchange_v1.py", "bytes": 9142, "sha256": "60cf225ffb0d280f801a5750daee38f88864bd864b45b5c53aeb8a02ba89620a"},
+    "analyzer": {"path": "src/analyze_controlled_lfe_projection_exchange_v1.py", "bytes": 11947, "sha256": "da11e421d83b1350e244e028a61f5f9d88f231fa326bd71376948622d9220de4"},
+    "verifier": {"path": "src/verify_controlled_lfe_projection_exchange_v1.py", "bytes": 15419, "sha256": "fbcf3b9e9b577e2f48c3530c92ec19add5ba697409951e8b5babbdf60a9a42e1"}
+  },
+  "tests": {
+    "path": "tests/test_controlled_lfe_projection_exchange_v1.py",
+    "bytes": 14431,
+    "sha256": "5bac8bb2136482acfed0f90ce88e297d88051baafd9862285b7a358d906487ba",
+    "cpu_only_tests_passed": 16
+  },
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_dry_run/run_005",
+  "authority": {
+    "cpu_only_no_weight_dry_run": true,
+    "independent_verification": true,
+    "memory_lifecycle_static_and_plan_verification": true,
+    "formal_input_audit": false,
+    "formal_manifest_access": false,
+    "reference_access_or_preprocessing": false,
+    "outcome_access": false,
+    "model_module_or_weight_loading": false,
+    "gpu_execution": false,
+    "trajectory_or_intervention_execution": false,
+    "generation_or_decode": false,
+    "formal_analysis": false,
+    "network": false
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_A_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

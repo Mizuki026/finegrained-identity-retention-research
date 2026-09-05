@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "verification_id": "controlled_lfe_projection_exchange_memory_lifecycle_correction_evidence_v1",
+  "verified_at_utc": "2026-09-05",
+  "status": "PASS_INDEPENDENT_MEMORY_LIFECYCLE_CORRECTION_EVIDENCE_VERIFICATION",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_evidence_manifest_v1.csv",
+    "bytes": 3065,
+    "sha256": "936b9c16e855798ea10655533be6431c69baff994f663c5cc7be25b3350cffd2",
+    "artifact_rows": 14
+  },
+  "checks": {
+    "all_paths_exist": true,
+    "all_byte_counts_match": true,
+    "all_sha256_match": true,
+    "engineering_run_001_abort_freeze_binding": "PASS_NON_REUSABLE",
+    "final_cpu_synthetic_tests": "16_OF_16_PASS",
+    "ruff_static_check": "PASS",
+    "git_diff_check": "PASS",
+    "final_no_weight_dry_run": "PASS",
+    "independent_dry_run_verification": "PASS",
+    "memory_lifecycle_correction_static_gate": "PASS",
+    "acquisition_inference_mode": "PASS",
+    "identity_handles_cpu_resident": "PASS",
+    "face_models_released_before_pipeline_load": "PASS",
+    "pipeline_loaded_after_complete_40_unit_acquisition": "PASS",
+    "formal_input_manifest_reference_outcome_access": false,
+    "model_module_or_weight_loading": false,
+    "gpu_or_engineering_rerun": false,
+    "trajectory_intervention_generation_decode_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "authoritative_dry_run": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_dry_run/run_005",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_A_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

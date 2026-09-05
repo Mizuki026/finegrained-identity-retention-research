@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_memory_lifecycle_correction_v1",
+  "authorized_at_utc": "2026-09-05",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "单独授权：仅实现 memory-lifecycle correction，并运行 CPU-only synthetic tests 与 no-weight dry-run。",
+  "status": "CONTROLLED_INTERVENTION_MEMORY_LIFECYCLE_CORRECTION_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_AUTHORIZED_ONLY",
+  "source_head": "e58714b463d987ab024d25938a6f5378ee0a6c9d",
+  "abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_001_abort_freeze_v1.json",
+    "bytes": 2290,
+    "sha256": "4157dfde60636d8531dd14fbaee182fa806afbde4fbb26c0ad0909c3224d5536",
+    "required_status": "FROZEN_ABORTED_FAIL_CLOSED_GPU_OOM_BEFORE_ANY_ENGINEERING_TRAJECTORY"
+  },
+  "authorized": {
+    "runtime_memory_lifecycle_correction": true,
+    "acquisition_under_inference_mode": true,
+    "identity_handle_immediate_cpu_transfer": true,
+    "pipeline_load_deferred_until_all_40_acquisitions": true,
+    "face_models_release_before_pipeline_load": true,
+    "lifecycle_fail_closed_gates_and_scalar_diagnostics": true,
+    "runner_no_weight_authorization_extension": true,
+    "cpu_only_synthetic_tests": true,
+    "cpu_only_no_weight_dry_run": true,
+    "independent_no_weight_verification": true,
+    "correction_readiness_record_evidence_and_freeze": true
+  },
+  "frozen_invariants": {
+    "model_weights_prompts_references_seeds_scheduler_guidance_resolution_precision_unchanged": true,
+    "formal_units": 40,
+    "formal_pairs": 20,
+    "source_tasks": 160,
+    "conditions": 3,
+    "scientific_trajectories": 480,
+    "engineering_one_step_conditions": 24,
+    "lfe_tokens": 32,
+    "intervention_dose_and_math_unchanged": true
+  },
+  "not_authorized": {
+    "formal_manifest_or_reference_access": true,
+    "reference_preprocessing_execution": true,
+    "model_module_or_weight_loading": true,
+    "gpu_execution": true,
+    "engineering_run_001_reuse_retry_or_resume": true,
+    "new_engineering_execution": true,
+    "scientific_generation": true,
+    "latent_image_frame_or_video_generation_or_decode": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "network_access_or_remote_push": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_A_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

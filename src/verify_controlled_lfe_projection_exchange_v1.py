@@ -56,10 +56,27 @@ def assert_static_safety() -> dict:
     private_latent_sites = runtime_text.count("save_file({\"final_latents\": latent}, str(path))")
     if private_latent_sites != 1:
         raise ControlledInterventionVerificationError("future private final-latent serializer site drift")
+    lifecycle_markers = (
+        "with self.torch.inference_mode():\n            values = self.process_face",
+        '"id_cond": self._cpu_clone(id_cond)',
+        '"id_vit_hidden": [self._cpu_clone(tensor) for tensor in id_vit_hidden]',
+        "self.pipe = None",
+        "def finish_acquisition",
+        "lifecycle = adapter.finish_acquisition()",
+    )
+    if any(marker not in runtime_text for marker in lifecycle_markers):
+        raise ControlledInterventionVerificationError("memory-lifecycle correction marker missing")
+    finish_call = runtime_text.index("lifecycle = adapter.finish_acquisition()")
+    direction_build = runtime_text.index("bundle = build_transient_interventions")
+    release = runtime_text.index('"face_helper_1", "face_helper_2", "face_clip_model"')
+    pipeline_load = runtime_text.index("self.pipe = self.pipeline_class.from_pretrained")
+    if not finish_call < direction_build or not release < pipeline_load:
+        raise ControlledInterventionVerificationError("memory-lifecycle ordering drift")
     return {
         "top_level_ml_imports": 0,
         "forbidden_identity_lfe_or_direction_tensor_serializers": 0,
         "future_private_final_latent_serializer_sites": private_latent_sites,
+        "memory_lifecycle_correction_static_gate": True,
     }
 
 
@@ -114,6 +131,15 @@ def verify_dry_run(run_dir: Path) -> dict:
     )
     if any(summary.get(key) is not False for key in forbidden_flags):
         raise ControlledInterventionVerificationError("dry-run forbidden-action flag is not false")
+    correction_flags = (
+        "memory_lifecycle_correction_bound", "acquisition_inference_mode_planned",
+        "identity_handles_cpu_resident_planned", "pipeline_load_after_40_acquisitions_planned",
+        "face_models_release_before_pipeline_load_planned",
+    )
+    if summary.get("memory_lifecycle_correction_bound") is True and any(
+        summary.get(key) is not True for key in correction_flags
+    ):
+        raise ControlledInterventionVerificationError("correction dry-run lifecycle plan drift")
     suffixes = {".pt", ".pth", ".npy", ".npz", ".safetensors", ".png", ".jpg", ".jpeg", ".mp4"}
     if any(path.is_file() and path.suffix.lower() in suffixes for path in run_dir.iterdir()):
         raise ControlledInterventionVerificationError("dry-run persisted tensor or media")
@@ -126,6 +152,7 @@ def verify_dry_run(run_dir: Path) -> dict:
         "outcome_opened": False, "model_or_weight_loading": False, "gpu_used": False,
         "trajectory_or_intervention_executed": False, "media_or_latent_generated": False,
         "formal_analysis_computed": False, "network_used": False,
+        "memory_lifecycle_correction_bound": summary.get("memory_lifecycle_correction_bound", False),
     }
 
 
