@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_engineering_run_002_abort",
+  "frozen_at_utc": "2026-09-05",
+  "status": "FROZEN_ABORTED_FAIL_CLOSED_SHAM_PROJECTION_INVARIANT_BEFORE_ANY_TRAJECTORY",
+  "authorization_commit": "a074bddcc3bd799fdf73917e4682947bb7ad666d",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/researcher_engineering_run_002_authorization_v1.json",
+    "bytes": 3875,
+    "sha256": "359deee60d5046e2624c66cf3188eec60547080592ee26fc60155fd86d271348"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_002_execution_authorization_v1.json",
+    "bytes": 4759,
+    "sha256": "e6d1b42fa4c6bf3f0fdc23100c097fadf0dd460d42efc742deded99e07210726"
+  },
+  "abort_record": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_002_abort_record_v1.json",
+    "bytes": 4179,
+    "sha256": "cd2926bf63a11fd2e842a60148d804d53ee5686fa052da3142239c43f3dd01e7"
+  },
+  "frozen_dependencies": {
+    "formal_input_audit_freeze": {
+      "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+      "bytes": 4364,
+      "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+    },
+    "memory_lifecycle_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_freeze_v1.json",
+      "bytes": 3809,
+      "sha256": "03df4a5c5a11213023d74e36881a5798525108b2683d517d59d5649a0e738ad9"
+    },
+    "engineering_run_001_abort_freeze": {
+      "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_001_abort_freeze_v1.json",
+      "bytes": 2290,
+      "sha256": "4157dfde60636d8531dd14fbaee182fa806afbde4fbb26c0ad0909c3224d5536"
+    }
+  },
+  "verified_terminal_state": {
+    "failure": "SHAM_CHANGED_TARGET_DIRECTION_PROJECTION",
+    "reference_preprocessing_calls_complete": 40,
+    "direct_lfe_acquisitions_complete": 40,
+    "memory_lifecycle_correction_gate_passed": true,
+    "pipeline_loaded_after_complete_acquisition": true,
+    "held_pair_out_direction_family_constructed_in_memory": 640,
+    "condition_tensor_family_complete": false,
+    "engineering_trajectories": 0,
+    "scheduler_steps": 0,
+    "run_output_absent": true,
+    "partial_output_absent": true,
+    "raw_tensor_media_or_latent_files": 0,
+    "gpu_reported_used_mib_after_abort": 0,
+    "outcomes_opened": false,
+    "formal_analysis_computed": false,
+    "scientific_result_created": false
+  },
+  "interpretation_boundary": {
+    "memory_lifecycle_correction_engineering_success_claimed": false,
+    "direction_or_sham_mechanism_result_claimed": false,
+    "numerical_cause_verified": false,
+    "frozen_tolerance_changed": false,
+    "scientific_inference_allowed": false
+  },
+  "reuse_policy": {
+    "run_001_reusable": false,
+    "run_002_reusable": false,
+    "run_002_execution_authorization_reusable": false,
+    "automatic_retry_or_resume": false
+  },
+  "current_authority": {
+    "numerical_invariant_diagnostic_or_correction": false,
+    "new_engineering_execution": false,
+    "scientific_generation": false,
+    "decode_annotation_unblinding_outcome_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_SHAM_PROJECTION_NUMERICAL_INVARIANT_DIAGNOSTIC_AND_THRESHOLD_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION"
+}
