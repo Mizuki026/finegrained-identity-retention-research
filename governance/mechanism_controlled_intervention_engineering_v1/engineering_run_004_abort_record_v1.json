@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "record_id": "controlled_lfe_projection_exchange_engineering_run_004_abort",
+  "recorded_at_utc": "2026-09-05",
+  "authorization_commit": "6da250c8d41ed60fd33b726825bf965e1bd20266",
+  "status": "ABORTED_FAIL_CLOSED_TARGET_PROJECTION_EXCHANGE_INVARIANT_BEFORE_ANY_TRAJECTORY",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/researcher_engineering_run_004_authorization_v1.json",
+    "bytes": 4370,
+    "sha256": "9a6185a115e54b27d114afc5e3015eaedd0d677015f9c0af108d50f82e21bb53"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_004_execution_authorization_v1.json",
+    "bytes": 5441,
+    "sha256": "6c94a91c742a6fab2cc707265b7f07809c1b8ad4f4a0fe0daa16e6aad3bb43a0"
+  },
+  "frozen_dependencies": {
+    "formal_input_audit_freeze": {
+      "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+      "bytes": 4364,
+      "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+    },
+    "memory_lifecycle_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_freeze_v1.json",
+      "bytes": 3809,
+      "sha256": "03df4a5c5a11213023d74e36881a5798525108b2683d517d59d5649a0e738ad9"
+    },
+    "sham_projection_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_sham_projection_correction_v1/sham_projection_correction_freeze_v1.json",
+      "bytes": 3691,
+      "sha256": "f0ea36580e980d66e6e5bc7eff62026cf14e05f8b26cc3cb30d9f60af681e6ba"
+    },
+    "sham_construction_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_freeze_v1.json",
+      "bytes": 3964,
+      "sha256": "483e351a7a3dd2d0b8d252073549da10b24d4e932f1af95122b74def192459cc"
+    },
+    "prior_engineering_abort_freeze": {
+      "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_003_abort_freeze_v1.json",
+      "bytes": 4120,
+      "sha256": "fda4e9da2a6d0201c586ea2926a4db76a9e0b2bc441f8823b78d59e313882c80"
+    }
+  },
+  "actual_transaction": {
+    "run_id": "run_004",
+    "exit_code": 1,
+    "model_and_weights_loaded": true,
+    "single_gpu_used": true,
+    "reference_preprocessing_calls_complete": 40,
+    "run_level_fallback_message_observed": true,
+    "fallback_messages_counted_or_assigned_to_unit_pair_role_or_attribute": false,
+    "direct_lfe_acquisitions_complete": 40,
+    "memory_lifecycle_gate_passed": true,
+    "pipeline_loaded_after_complete_acquisition": true,
+    "held_pair_out_direction_family_constructed_in_memory": 640,
+    "construction_grounded_sham_displacement_logic_used": true,
+    "target_projection_exchange_acceptance_gate_reached": true,
+    "condition_tensor_family_complete": false,
+    "engineering_trajectory_or_intervention_executions": 0,
+    "scheduler_steps_executed": 0,
+    "final_output_directory_created": false,
+    "partial_output_directory_created": false,
+    "raw_tensor_media_or_latent_files_persisted": 0,
+    "transient_tensors_discarded": true,
+    "outcomes_opened": false,
+    "formal_analysis_computed": false,
+    "network_used": false
+  },
+  "verified_failure": {
+    "exception": "ControlledInterventionInstrumentationError",
+    "message": "target projection exchange failure",
+    "site": "build_transient_interventions target projection acceptance gate",
+    "stage": "AFTER_COMPLETE_ACQUISITION_PIPELINE_LOAD_AND_640_DIRECTION_CONSTRUCTION_BEFORE_ANY_TRAJECTORY",
+    "frozen_projection_atol": 0.000001,
+    "frozen_projection_rtol": 0.00001,
+    "threshold_changed": false,
+    "offending_unit_pair_token_delta_projection_or_residual_persisted": false
+  },
+  "post_abort_verification": {
+    "runner_process_absent": true,
+    "run_output_absent": true,
+    "partial_output_absent": true,
+    "gpu_reported_used_mib": 0,
+    "gpu_reported_utilization_percent": 0,
+    "research_worktree_clean_before_abort_record": true,
+    "consisid_worktree_clean": true
+  },
+  "unverified_working_explanation": "FLOAT32_TARGET_CONSTRUCTION_AND_DOT_EVALUATION_OR_DIRECTION_UNIT_NORM_RESIDUAL_MAY_CAUSE_REALIZED_TARGET_PROJECTION_TO_MISS_THE_FROZEN_COUNTERPART_TOLERANCE; NO_OFFENDING_SCALAR_OR_KEY_WAS_PERSISTED_OR_RECOMPUTED",
+  "reuse_policy": {
+    "run_001_reusable": false,
+    "run_002_reusable": false,
+    "run_003_reusable": false,
+    "run_004_reusable": false,
+    "automatic_retry_or_resume": false,
+    "threshold_or_scientific_configuration_change_authorized": false,
+    "target_projection_correction_authorized": false,
+    "new_engineering_execution_authorized": false
+  },
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION"
+}
