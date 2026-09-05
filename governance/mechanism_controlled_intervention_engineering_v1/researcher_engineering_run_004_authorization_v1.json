@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_new_single_gpu_engineering_run_004",
+  "authorized_at_utc": "2026-09-05",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "单独授权任何新的 single-GPU controlled-intervention engineering run",
+  "status": "NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN_AUTHORIZED",
+  "source_head_before_authorization_commit": "cd11153db1fefdbbe3f4e14187f0e4246df034f4",
+  "engineering_run_id": "run_004",
+  "prior_execution_reused": false,
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 4364,
+    "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+  },
+  "memory_lifecycle_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_freeze_v1.json",
+    "bytes": 3809,
+    "sha256": "03df4a5c5a11213023d74e36881a5798525108b2683d517d59d5649a0e738ad9"
+  },
+  "sham_projection_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_sham_projection_correction_v1/sham_projection_correction_freeze_v1.json",
+    "bytes": 3691,
+    "sha256": "f0ea36580e980d66e6e5bc7eff62026cf14e05f8b26cc3cb30d9f60af681e6ba"
+  },
+  "sham_construction_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_freeze_v1.json",
+    "bytes": 3964,
+    "sha256": "483e351a7a3dd2d0b8d252073549da10b24d4e932f1af95122b74def192459cc"
+  },
+  "prior_engineering_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_003_abort_freeze_v1.json",
+    "bytes": 4120,
+    "sha256": "fda4e9da2a6d0201c586ea2926a4db76a9e0b2bc441f8823b78d59e313882c80",
+    "required_status": "FROZEN_ABORTED_FAIL_CLOSED_STABLE_SHAM_DISPLACEMENT_ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY",
+    "run_003_reusable": false
+  },
+  "approved_design": {
+    "path": "governance/mechanism_controlled_intervention_design_v1/controlled_intervention_design_freeze_v1.json",
+    "bytes": 3918,
+    "sha256": "12697bf6f44f85ed1dddacfd339a176f65d8b32d1c22c30d5e4e803cd31eb89f"
+  },
+  "authorized": {
+    "single_gpu_device_index": 0,
+    "engineering_gpu_hours_hard_ceiling": 2,
+    "frozen_model_and_weight_loading": true,
+    "exact_40_reference_preprocessing_calls": true,
+    "exact_40_direct_lfe_acquisitions": true,
+    "memory_lifecycle_corrected_acquisition": true,
+    "threshold_preserving_sham_projection_correction": true,
+    "construction_grounded_sham_displacement_gates": true,
+    "transient_complete_32_token_held_pair_out_direction_construction": true,
+    "frozen_hash_selected_pairs_per_attribute": 2,
+    "engineering_units": 8,
+    "seed_indices": [1],
+    "conditions": ["baseline", "target_projection_exchange", "orthogonal_sham"],
+    "maximum_one_step_executions": 24,
+    "scalar_diagnostic_persistence": true,
+    "cpu_only_independent_engineering_verification": true,
+    "engineering_record_evidence_manifest_and_freeze": true
+  },
+  "not_authorized": {
+    "engineering_run_001_run_002_or_run_003_reuse_retry_or_resume": true,
+    "automatic_retry_or_resume_of_run_004": true,
+    "scientific_480_trajectory_generation": true,
+    "more_than_one_scheduler_position_per_engineering_condition": true,
+    "decoded_or_persisted_media": true,
+    "raw_identity_eva_lfe_direction_aligned_image_or_keypoint_persistence": true,
+    "latent_persistence": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "threshold_pair_token_seed_condition_dose_or_scheduler_change": true,
+    "fallback_assignment_exclusion_or_rerun": true,
+    "distributed_or_multi_gpu_execution": true,
+    "network_access_or_remote_push": true
+  },
+  "failure_policy": "STOP_ON_ANY_BINDING_PREPROCESSING_DIRECTION_LIFECYCLE_HOOK_INVARIANT_OOM_PRIVACY_OR_CEILING_FAILURE_NO_AUTOMATIC_RETRY_RESUME_REPAIR_OR_REDUCED_PANEL",
+  "output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_004",
+  "next_gate": "INDEPENDENT_ENGINEERING_FREEZE_THEN_SEPARATE_RESEARCHER_DECISION_FOR_ANY_SCIENTIFIC_PHASE"
+}

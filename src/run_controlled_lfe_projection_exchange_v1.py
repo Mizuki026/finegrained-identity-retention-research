@@ -33,7 +33,14 @@ SHAM_CORRECTION_FREEZE_STATUS = (
     "FROZEN_PASS_CPU_ONLY_SHAM_PROJECTION_NUMERICAL_DIAGNOSTIC_AND_"
     "THRESHOLD_PRESERVING_CORRECTION_TESTS"
 )
-ABORT_FREEZE_STATUS = "FROZEN_ABORTED_FAIL_CLOSED_SHAM_PROJECTION_INVARIANT_BEFORE_ANY_TRAJECTORY"
+CONSTRUCTION_CORRECTION_FREEZE_STATUS = (
+    "FROZEN_PASS_CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_DIAGNOSTIC_AND_"
+    "FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS"
+)
+ABORT_FREEZE_STATUS = (
+    "FROZEN_ABORTED_FAIL_CLOSED_STABLE_SHAM_DISPLACEMENT_"
+    "ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY"
+)
 
 
 def _git(repository: Path, *args: str) -> str:
@@ -144,11 +151,16 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
     )
     if protocol.read_json(sham_correction).get("status") != SHAM_CORRECTION_FREEZE_STATUS:
         raise ControlledInterventionRunnerError("sham projection correction is not frozen pass")
+    construction_correction = protocol.bound(
+        auth.get("sham_construction_correction_freeze", {}), "sham construction correction freeze"
+    )
+    if protocol.read_json(construction_correction).get("status") != CONSTRUCTION_CORRECTION_FREEZE_STATUS:
+        raise ControlledInterventionRunnerError("sham construction correction is not frozen pass")
     abort = protocol.bound(auth.get("prior_engineering_abort_freeze", {}), "prior engineering abort freeze")
     if protocol.read_json(abort).get("status") != ABORT_FREEZE_STATUS:
         raise ControlledInterventionRunnerError("prior engineering abort freeze drift")
     if phase == "engineering" and (
-        auth.get("engineering_run_id") != "run_003"
+        auth.get("engineering_run_id") != "run_004"
         or auth.get("prior_execution_reused") is not False
     ):
         raise ControlledInterventionRunnerError("new engineering transaction identity drift")
