@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "record_id": "controlled_lfe_projection_exchange_engineering_run_006",
+  "recorded_at_utc": "2026-09-06",
+  "authorization_commit": "e9486ad7b5b75e9764a1801dc127f65d21c27e4b",
+  "status": "PASS_COMPLETE_PENDING_GOVERNANCE_FREEZE_SINGLE_GPU_ENGINEERING",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/researcher_engineering_run_006_authorization_v1.json",
+    "bytes": 5654,
+    "sha256": "36a69e26e889a5c83444c01bff7ec867130f266af036e4e6c6d9b25d3d89213c"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_execution_authorization_v1.json",
+    "bytes": 6268,
+    "sha256": "250b23fcc58bdfe9ee951acd870d1a1fc78d7f86a1b3f19ecbb09aa611d25181"
+  },
+  "actual_transaction": {
+    "run_id": "run_006",
+    "exit_code": 0,
+    "model_and_weights_loaded": true,
+    "single_gpu_used": true,
+    "elapsed_gpu_hours": 0.03942001613995267,
+    "reference_preprocessing_calls": 40,
+    "run_level_fallback_message_observed": true,
+    "fallback_messages_counted_or_assigned": false,
+    "direct_lfe_acquisitions": 40,
+    "directions_constructed": 640,
+    "engineering_tasks": 8,
+    "one_step_condition_executions": 24,
+    "scheduler_steps": 24,
+    "cross_condition_input_invariants_verified": 8,
+    "raw_tensor_media_or_latent_files": 0,
+    "outcomes_opened": false,
+    "formal_analysis_computed": false,
+    "network_used": false
+  },
+  "independent_verification": {
+    "status": "PASS_INDEPENDENT_CONTROLLED_INTERVENTION_ENGINEERING_VERIFICATION",
+    "max_direction_or_sham_unit_norm_abs_error": 2.384185791015625e-07,
+    "max_abs_direction_sham_dot": 9.313225746154785e-09
+  },
+  "runtime_artifacts": {
+    "direction_scalar_diagnostics_v1.csv": {
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_006/direction_scalar_diagnostics_v1.csv",
+      "bytes": 55733,
+      "sha256": "c44a2005428b5c79ac124c7f8592e8ffb04c30127994a05ce9a56098983925b3"
+    },
+    "execution_summary_v1.json": {
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_006/execution_summary_v1.json",
+      "bytes": 599,
+      "sha256": "bd36c2eff75c7a5f56230cd486ca4415df8d62ff449795a916ebea5dd6547a4f"
+    },
+    "independent_verification_v1.json": {
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_006/independent_verification_v1.json",
+      "bytes": 866,
+      "sha256": "03cd83a2a8bc455248c315093e56232cba480048ac4ff1f03c3b6e47181405f1"
+    },
+    "trajectory_status_v1.csv": {
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_006/trajectory_status_v1.csv",
+      "bytes": 8321,
+      "sha256": "7e4744d9a718ba1f8efc619c44280ac851dd65b0245290758af829ef219a5aed"
+    }
+  },
+  "scientific_result_created": false,
+  "interpretation_boundary": "ENGINEERING_FEASIBILITY_AND_INVARIANTS_ONLY_NO_OUTCOME_OR_MECHANISM_EFFECT_INFERENCE",
+  "next_gate": "INDEPENDENT_ENGINEERING_FREEZE_THEN_SEPARATE_RESEARCHER_DECISION_FOR_ANY_SCIENTIFIC_PHASE"
+}

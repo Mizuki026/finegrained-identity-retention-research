@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "PASS_INDEPENDENT_ENGINEERING_RUN_006_EVIDENCE_VERIFICATION",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_evidence_manifest_v1.csv",
+    "bytes": 2560,
+    "sha256": "048515389b8cf38037306aec78804d1aa259889875798389b820cdd8c7abe606",
+    "artifact_rows": 12
+  },
+  "checks": {
+    "all_paths_exist": true,
+    "all_bytes_match": true,
+    "all_sha256_match": true,
+    "runtime_directory_mode": "0555",
+    "all_runtime_file_modes": "0444",
+    "one_step_executions": 24,
+    "scheduler_steps": 24,
+    "raw_tensor_media_or_latent_files": 0,
+    "outcomes_opened": false,
+    "scientific_analysis": false
+  }
+}

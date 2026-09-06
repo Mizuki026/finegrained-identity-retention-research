@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_engineering_run_006",
+  "frozen_at_utc": "2026-09-06",
+  "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_SINGLE_GPU_ENGINEERING",
+  "authorization_commit": "e9486ad7b5b75e9764a1801dc127f65d21c27e4b",
+  "record": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_record_v1.json",
+    "bytes": 3168,
+    "sha256": "7dc2db3dafc515184fb7fc04b7cb384bfc10c202bfd750ebc3a9cd014296a7ec"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_evidence_manifest_v1.csv",
+    "bytes": 2560,
+    "sha256": "048515389b8cf38037306aec78804d1aa259889875798389b820cdd8c7abe606",
+    "artifact_rows": 12
+  },
+  "evidence_verification": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_evidence_verification_v1.json",
+    "bytes": 713,
+    "sha256": "c32ac349c6d44ba50b4beb425ec203f5ca591e84eb75f407cb3c33b51051394b"
+  },
+  "verified": {
+    "run_id": "run_006",
+    "exit_code": 0,
+    "model_and_weights_loaded": true,
+    "single_gpu_used": true,
+    "elapsed_gpu_hours": 0.03942001613995267,
+    "reference_preprocessing_calls": 40,
+    "run_level_fallback_message_observed": true,
+    "fallback_messages_counted_or_assigned": false,
+    "direct_lfe_acquisitions": 40,
+    "directions_constructed": 640,
+    "engineering_tasks": 8,
+    "one_step_condition_executions": 24,
+    "scheduler_steps": 24,
+    "cross_condition_input_invariants_verified": 8,
+    "raw_tensor_media_or_latent_files": 0,
+    "outcomes_opened": false,
+    "formal_analysis_computed": false,
+    "network_used": false,
+    "status": "PASS_INDEPENDENT_CONTROLLED_INTERVENTION_ENGINEERING_VERIFICATION",
+    "max_direction_or_sham_unit_norm_abs_error": 2.384185791015625e-07,
+    "max_abs_direction_sham_dot": 9.313225746154785e-09
+  },
+  "authoritative_scalar_runtime": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_006",
+    "directory_mode": "0555",
+    "all_file_modes": "0444"
+  },
+  "not_authorized": {
+    "scientific_480_trajectory_generation": true,
+    "decode_annotation_unblinding_outcome_or_analysis": true,
+    "remote_push": true
+  },
+  "interpretation_boundary": "ENGINEERING_FEASIBILITY_AND_INVARIANTS_ONLY_NO_OUTCOME_OR_MECHANISM_EFFECT_INFERENCE",
+  "next_gate": "INDEPENDENT_ENGINEERING_FREEZE_THEN_SEPARATE_RESEARCHER_DECISION_FOR_ANY_SCIENTIFIC_PHASE"
+}
