@@ -41,9 +41,13 @@ TARGET_CORRECTION_FREEZE_STATUS = (
     "FROZEN_PASS_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_DIAGNOSTIC_AND_"
     "FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS"
 )
+FORMAL_SCALE_SHAM_CORRECTION_FREEZE_STATUS = (
+    "FROZEN_PASS_CPU_ONLY_FORMAL_SCALE_SHAM_DISPLACEMENT_ORTHOGONALITY_DIAGNOSTIC_AND_"
+    "FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS"
+)
 ABORT_FREEZE_STATUS = (
-    "FROZEN_ABORTED_FAIL_CLOSED_TARGET_PROJECTION_EXCHANGE_"
-    "INVARIANT_BEFORE_ANY_TRAJECTORY"
+    "FROZEN_ABORTED_FAIL_CLOSED_CONSTRUCTED_SHAM_DISPLACEMENT_"
+    "ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY"
 )
 
 
@@ -165,15 +169,20 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
     )
     if protocol.read_json(target_correction).get("status") != TARGET_CORRECTION_FREEZE_STATUS:
         raise ControlledInterventionRunnerError("target projection correction is not frozen pass")
+    formal_scale_sham_correction = protocol.bound(
+        auth.get("formal_scale_sham_correction_freeze", {}), "formal scale sham correction freeze"
+    )
+    if protocol.read_json(formal_scale_sham_correction).get("status") != FORMAL_SCALE_SHAM_CORRECTION_FREEZE_STATUS:
+        raise ControlledInterventionRunnerError("formal scale sham correction is not frozen pass")
     abort = protocol.bound(auth.get("prior_engineering_abort_freeze", {}), "prior engineering abort freeze")
     abort_payload = protocol.read_json(abort)
     if (
         abort_payload.get("status") != ABORT_FREEZE_STATUS
-        or abort_payload.get("reuse_policy", {}).get("run_004_reusable") is not False
+        or abort_payload.get("reuse_policy", {}).get("run_005_reusable") is not False
     ):
-        raise ControlledInterventionRunnerError("prior run_004 abort or non-reuse binding drift")
+        raise ControlledInterventionRunnerError("prior run_005 abort or non-reuse binding drift")
     if phase == "engineering" and (
-        auth.get("engineering_run_id") != "run_005"
+        auth.get("engineering_run_id") != "run_006"
         or auth.get("prior_execution_reused") is not False
     ):
         raise ControlledInterventionRunnerError("new engineering transaction identity drift")
