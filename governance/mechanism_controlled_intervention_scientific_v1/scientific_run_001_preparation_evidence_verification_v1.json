@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "PASS_SCIENTIFIC_RUN_001_PREPARATION_EVIDENCE_VERIFICATION",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_preparation_evidence_manifest_v1.csv",
+    "bytes": 2370,
+    "sha256": "6ef15874e7f62bb083a049ef5f7ebe0fe676e243eaa41ac8731ed6dc9c7b1f75",
+    "artifact_rows": 12
+  },
+  "all_paths_bytes_sha256_match": true,
+  "scientific_execution_started": false
+}

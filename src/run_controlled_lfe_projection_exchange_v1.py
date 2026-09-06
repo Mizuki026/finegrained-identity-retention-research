@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -49,6 +50,7 @@ ABORT_FREEZE_STATUS = (
     "FROZEN_ABORTED_FAIL_CLOSED_CONSTRUCTED_SHAM_DISPLACEMENT_"
     "ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY"
 )
+ENGINEERING_PASS_FREEZE_STATUS = "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_SINGLE_GPU_ENGINEERING"
 
 
 def _git(repository: Path, *args: str) -> str:
@@ -186,6 +188,28 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
         or auth.get("prior_execution_reused") is not False
     ):
         raise ControlledInterventionRunnerError("new engineering transaction identity drift")
+    if phase == "scientific":
+        engineering = protocol.bound(auth.get("engineering_freeze", {}), "engineering pass freeze")
+        if protocol.read_json(engineering).get("status") != ENGINEERING_PASS_FREEZE_STATUS:
+            raise ControlledInterventionRunnerError("engineering pass freeze drift")
+        if auth.get("scientific_run_id") != "run_001" or auth.get("prior_execution_reused") is not False:
+            raise ControlledInterventionRunnerError("scientific transaction identity drift")
+        private_root = Path(str(auth.get("private_latent_output_dir", "")))
+        if not private_root.is_absolute() or protocol.REPO.resolve() in private_root.resolve().parents:
+            raise ControlledInterventionRunnerError("private latent path must be absolute and outside Git")
+        private_parent = private_root.parent
+        if not private_parent.is_dir() or private_parent.stat().st_mode & 0o777 != 0o700:
+            raise ControlledInterventionRunnerError("private latent parent must exist with mode 0700")
+        minimum_free = int(auth.get("minimum_private_filesystem_free_bytes", 0))
+        if minimum_free < 20 * 1024**3 or shutil.disk_usage(private_parent).free < minimum_free:
+            raise ControlledInterventionRunnerError("private latent filesystem free-space gate failed")
+        authority = auth.get("authority", {})
+        required = ("scientific_generation", "private_final_latent_persistence", "complete_480_trajectory_transaction")
+        if any(authority.get(key) is not True for key in required):
+            raise ControlledInterventionRunnerError("scientific generation authority incomplete")
+        forbidden = ("decoded_media", "outcome_access", "annotation", "unblinding", "formal_analysis")
+        if any(authority.get(key) is not False for key in forbidden):
+            raise ControlledInterventionRunnerError("scientific authorization enables a later phase")
     cuda = str(auth.get("cuda_visible_devices", ""))
     if not cuda.isdigit() or "," in cuda or os.environ.get("CUDA_VISIBLE_DEVICES") != cuda:
         raise ControlledInterventionRunnerError("single-GPU binding mismatch")

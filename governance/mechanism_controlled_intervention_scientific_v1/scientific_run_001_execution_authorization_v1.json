@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_scientific_run_001_execution",
+  "authorized_at_utc": "2026-09-06",
+  "status": "CONTROLLED_INTERVENTION_SCIENTIFIC_GPU_EXECUTION_AUTHORIZED",
+  "phase": "scientific",
+  "prior_execution_reused": false,
+  "execution_explicitly_approved": true,
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/researcher_scientific_run_001_authorization_v1.json",
+    "bytes": 2265,
+    "sha256": "9fb3775ec89d946894eea58992e0d77a89c4c4d0f69b88d3c30fb920293a5200"
+  },
+  "formal_input_audit_freeze": {
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "bytes": 4364,
+    "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+  },
+  "memory_lifecycle_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_freeze_v1.json",
+    "bytes": 3809,
+    "sha256": "03df4a5c5a11213023d74e36881a5798525108b2683d517d59d5649a0e738ad9"
+  },
+  "sham_projection_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_sham_projection_correction_v1/sham_projection_correction_freeze_v1.json",
+    "bytes": 3691,
+    "sha256": "f0ea36580e980d66e6e5bc7eff62026cf14e05f8b26cc3cb30d9f60af681e6ba"
+  },
+  "sham_construction_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_freeze_v1.json",
+    "bytes": 3964,
+    "sha256": "483e351a7a3dd2d0b8d252073549da10b24d4e932f1af95122b74def192459cc"
+  },
+  "prior_engineering_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_005_abort_freeze_v1.json",
+    "bytes": 4841,
+    "sha256": "5039fd9d1c3483955b418b80b124db1267d2191e2dbe64cc6524f1a08de6cd15"
+  },
+  "formal_generation_master": {
+    "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/pre_generation_master_freeze_v1.json",
+    "bytes": 6294,
+    "sha256": "149e5deba4d14b4591186416dbe4e12efb3ed19437c0cca0642eaff8a6d5eed8"
+  },
+  "formal_task_binding_manifest": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001/formal_task_binding_manifest_v1.csv",
+    "bytes": 49336,
+    "sha256": "d39bee233620ea52a7f0f0719b9bc80f6d15f65d7e8ead96146b06699d5e82a0"
+  },
+  "code": {
+    "protocol": {
+      "path": "src/controlled_lfe_projection_exchange_protocol_v1.py",
+      "bytes": 14803,
+      "sha256": "58da1291f4600de36edd17724d493e4ea56d2705ba3080869a62b11cf0083ea2"
+    },
+    "instrumentation": {
+      "path": "src/controlled_lfe_projection_exchange_instrumentation_v1.py",
+      "bytes": 17027,
+      "sha256": "a3858ca4ac1f628c7c7249328ebb5a37e27b553936617dd7d6298213b1b7b7da"
+    },
+    "runtime": {
+      "path": "src/controlled_lfe_projection_exchange_runtime_v1.py",
+      "bytes": 18827,
+      "sha256": "c6a4838123e5ee7d44770e8a2be80f5f7bbfc395445ff33be34cdafe9f3b1848"
+    },
+    "runner": {
+      "path": "src/run_controlled_lfe_projection_exchange_v1.py",
+      "bytes": 14498,
+      "sha256": "abc88c7a240a425fed7f60fb45e35d63f0b5dc38912c72f64dc2e37e2118c0a3"
+    },
+    "analyzer": {
+      "path": "src/analyze_controlled_lfe_projection_exchange_v1.py",
+      "bytes": 11947,
+      "sha256": "da11e421d83b1350e244e028a61f5f9d88f231fa326bd71376948622d9220de4"
+    },
+    "verifier": {
+      "path": "src/verify_controlled_lfe_projection_exchange_v1.py",
+      "bytes": 15419,
+      "sha256": "fbcf3b9e9b577e2f48c3530c92ec19add5ba697409951e8b5babbdf60a9a42e1"
+    }
+  },
+  "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+  "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific/run_001",
+  "cuda_visible_devices": "0",
+  "world_size": 1,
+  "local_world_size": 1,
+  "phase_gpu_hours_ceiling": 72.0,
+  "authority": {
+    "single_gpu_engineering": false,
+    "frozen_model_and_weight_loading": true,
+    "reference_preprocessing_and_direct_lfe_acquisition": true,
+    "memory_lifecycle_corrected_acquisition": true,
+    "threshold_preserving_sham_projection_correction": true,
+    "construction_grounded_sham_displacement_gates": true,
+    "transient_direction_and_intervention": true,
+    "maximum_24_one_step_conditions": true,
+    "scalar_only_artifacts": true,
+    "independent_verification": true,
+    "scientific_generation": true,
+    "more_than_one_scheduler_position": false,
+    "media_or_latent_persistence": true,
+    "raw_tensor_or_image_persistence": false,
+    "outcome_access_annotation_unblinding_construction_or_join": false,
+    "formal_analysis_or_hypothesis_testing": false,
+    "distributed_or_multi_gpu": false,
+    "automatic_retry_or_resume": false,
+    "network": false,
+    "construction_grounded_target_projection_gate": true,
+    "formal_scale_stable_sham_orthogonality_gate": true,
+    "private_final_latent_persistence": true,
+    "complete_480_trajectory_transaction": true,
+    "decoded_media": false,
+    "outcome_access": false,
+    "annotation": false,
+    "unblinding": false,
+    "formal_analysis": false
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "WORLD_SIZE": "1",
+    "LOCAL_WORLD_SIZE": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "failure_policy": "STOP_ON_ANY_FAILURE_NO_AUTOMATIC_RETRY_RESUME_REPAIR_OR_REDUCED_PANEL",
+  "next_gate": "INDEPENDENT_GENERATION_VERIFICATION_THEN_SEPARATE_RESEARCHER_AUTHORIZATION_FOR_DECODE_ONLY",
+  "target_projection_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/target_projection_correction_freeze_v1.json",
+    "bytes": 3932,
+    "sha256": "5222013b921657d1f1870607483d5a2deaf4901093f7fb195d0cbb5ea9fc079e"
+  },
+  "formal_scale_sham_correction_freeze": {
+    "path": "governance/mechanism_controlled_intervention_formal_scale_sham_correction_v1/formal_scale_sham_correction_freeze_v1.json",
+    "bytes": 2348,
+    "sha256": "0bf674b601d32c46be07afea79f7bf713429ad563104d6ffa00cdbb0883fb751"
+  },
+  "scientific_run_id": "run_001",
+  "engineering_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_freeze_v1.json",
+    "bytes": 2524,
+    "sha256": "7e37d96b4411bf17a2ca59568a3c77ab31d2918e70a3ded45423d2c30531db14"
+  },
+  "private_latent_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private/run_001",
+  "minimum_private_filesystem_free_bytes": 21474836480,
+  "scientific_generation_verifier": {
+    "path": "src/verify_controlled_lfe_projection_exchange_scientific_generation_v1.py",
+    "bytes": 9525,
+    "sha256": "b8e9ff970a717d183389b4cbdd5109ac671240116a38f8b11a95b205290f20e6"
+  }
+}

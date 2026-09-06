@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_scientific_run_001_preparation",
+  "frozen_at_utc": "2026-09-06",
+  "status": "FROZEN_PASS_SCIENTIFIC_RUN_001_PREPARATION_ONLY_NOT_EXECUTED",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/researcher_scientific_run_001_authorization_v1.json",
+    "bytes": 2265,
+    "sha256": "9fb3775ec89d946894eea58992e0d77a89c4c4d0f69b88d3c30fb920293a5200"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_execution_authorization_v1.json",
+    "bytes": 6947,
+    "sha256": "1760d8a30ecd44ef4a782edd2327dc44779dd3f85441243c2d14adac56c5f9e5"
+  },
+  "readiness": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_preparation_readiness_v1.json",
+    "bytes": 1826,
+    "sha256": "5c1ebb92bdb66f8a73ac80c2734629c373c96b337a6edab73b95297f0debccdf"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_preparation_evidence_manifest_v1.csv",
+    "bytes": 2370,
+    "sha256": "6ef15874e7f62bb083a049ef5f7ebe0fe676e243eaa41ac8731ed6dc9c7b1f75",
+    "artifact_rows": 12
+  },
+  "evidence_verification": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_preparation_evidence_verification_v1.json",
+    "bytes": 456,
+    "sha256": "192e9110896b6c7d65591d2faedbb2a80caf2491a02a31e253c3669ade6dfd2c"
+  },
+  "terminal_entrypoint": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_terminal_command_v1.sh",
+    "bytes": 673,
+    "sha256": "760c110f6825e52620a4b6408d27da75834a19aa3e93ec604f797d8fb0108c20"
+  },
+  "scientific_execution_started": false,
+  "scalar_output_absent": true,
+  "private_run_root_absent": true,
+  "later_phases_authorized": false,
+  "next_gate": "RESEARCHER_MANUAL_TERMINAL_EXECUTION_OF_FROZEN_COMMAND_THEN_INDEPENDENT_GENERATION_VERIFICATION"
+}

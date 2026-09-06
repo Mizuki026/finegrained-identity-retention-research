@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_scientific_run_001",
+  "authorized_at_utc": "2026-09-06",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "\u5355\u72ec\u6388\u6743 scientific execution preparation/generation\uff1b\u5148\u5b8c\u6210\u51c6\u5907\u5de5\u4f5c\uff0c\u6700\u540e\u518d\u7ed9\u51fa\u5728\u7ec8\u7aef\u7684\u6b63\u5f0f\u8fd0\u884c\u547d\u4ee4",
+  "status": "CONTROLLED_INTERVENTION_SCIENTIFIC_PREPARATION_AND_GENERATION_AUTHORIZED_ONLY",
+  "source_head_before_preparation_commit": "6a7f28441b1065e5bef4089d48abbb6618bcee49",
+  "scientific_run_id": "run_001",
+  "prior_execution_reused": false,
+  "engineering_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_freeze_v1.json",
+    "bytes": 2524,
+    "sha256": "7e37d96b4411bf17a2ca59568a3c77ab31d2918e70a3ded45423d2c30531db14"
+  },
+  "authorized": {
+    "single_gpu_device_index": 0,
+    "scientific_gpu_hours_hard_ceiling": 72,
+    "complete_480_trajectory_transaction": true,
+    "transformer_scheduler_steps": 24000,
+    "exact_40_reference_preprocessing_calls": true,
+    "exact_40_direct_lfe_acquisitions": true,
+    "private_external_final_latent_persistence": true,
+    "scalar_manifest_and_independent_generation_verification": true
+  },
+  "not_authorized": {
+    "automatic_execution_by_preparation_agent": true,
+    "partial_resume_selective_rerun_or_reduced_panel": true,
+    "decoded_or_public_media": true,
+    "annotation": true,
+    "outcome_access_or_construction": true,
+    "unblinding": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "network_or_remote_push": true
+  },
+  "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific/run_001",
+  "private_latent_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private/run_001",
+  "minimum_private_filesystem_free_bytes": 21474836480,
+  "failure_policy": "STOP_COMPLETE_TRANSACTION_ON_ANY_FAILURE_NO_AUTOMATIC_RETRY_RESUME_REPAIR_OR_REDUCED_PANEL",
+  "next_gate": "RESEARCHER_MANUAL_TERMINAL_EXECUTION_OF_FROZEN_COMMAND_THEN_INDEPENDENT_GENERATION_VERIFICATION"
+}

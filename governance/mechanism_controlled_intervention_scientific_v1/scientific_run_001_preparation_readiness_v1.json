@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "readiness_id": "controlled_lfe_projection_exchange_scientific_run_001_preparation",
+  "recorded_at_utc": "2026-09-06",
+  "status": "PASS_SCIENTIFIC_RUN_001_PREPARATION_ONLY_NOT_EXECUTED",
+  "source_head_before_preparation": "6a7f28441b1065e5bef4089d48abbb6618bcee49",
+  "frozen_transaction": {
+    "scientific_trajectories": 480,
+    "source_tasks": 160,
+    "formal_units": 40,
+    "formal_pairs": 20,
+    "conditions": 3,
+    "scheduler_steps": 24000,
+    "single_gpu_device": 0,
+    "expected_gpu_hours": [
+      35,
+      50
+    ],
+    "hard_ceiling_gpu_hours": 72,
+    "reduced_panel_allowed": false
+  },
+  "private_storage": {
+    "parent": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private",
+    "parent_mode": "0700",
+    "minimum_free_bytes": 21474836480,
+    "observed_free_bytes": 115632742400,
+    "run_root_absent": true
+  },
+  "verification": {
+    "cpu_synthetic_tests": "21_OF_21_PASS",
+    "ruff": "PASS",
+    "bash_syntax": "PASS",
+    "scientific_authority_torch_free": "PASS",
+    "generation_verifier_requires_480_latent_hashes_and_160_cross_condition_invariants": true
+  },
+  "not_performed": {
+    "formal_reference_preprocessing": true,
+    "model_or_weight_loading": true,
+    "gpu_execution": true,
+    "trajectory_generation": true,
+    "decode": true,
+    "annotation": true,
+    "outcome_access_or_construction": true,
+    "unblinding": true,
+    "formal_analysis": true,
+    "network_or_remote_push": true
+  },
+  "terminal_entrypoint": {
+    "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_terminal_command_v1.sh",
+    "bytes": 673,
+    "sha256": "760c110f6825e52620a4b6408d27da75834a19aa3e93ec604f797d8fb0108c20"
+  },
+  "next_gate": "RESEARCHER_MANUAL_TERMINAL_EXECUTION_OF_FROZEN_COMMAND"
+}
