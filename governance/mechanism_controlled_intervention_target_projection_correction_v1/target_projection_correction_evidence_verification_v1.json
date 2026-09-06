@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "verification_id": "controlled_lfe_projection_exchange_target_projection_correction_evidence_v1",
+  "verified_at_utc": "2026-09-06",
+  "status": "PASS_INDEPENDENT_TARGET_PROJECTION_CORRECTION_EVIDENCE_VERIFICATION",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/target_projection_correction_evidence_manifest_v1.csv",
+    "bytes": 2242,
+    "sha256": "9da0f739b6224a84d488a6b332741beefcd215fae4d4b9359a573ccea5d61dd2",
+    "artifact_rows": 10
+  },
+  "checks": {
+    "all_paths_exist": true,
+    "all_byte_counts_match": true,
+    "all_sha256_match": true,
+    "run_004_abort_freeze_binding": "PASS_NON_REUSABLE",
+    "frozen_design_and_preregistration_bindings": "PASS",
+    "frozen_absolute_tolerance": 0.000001,
+    "frozen_relative_tolerance": 0.00001,
+    "threshold_changed": false,
+    "target_tensor_formula_changed": false,
+    "delta_direction_or_dose_changed": false,
+    "construction_grounded_target_projection_gate": "PASS",
+    "synthetic_float32_target_realization_failure_class": "REPRODUCED",
+    "cpu_synthetic_tests": "19_OF_19_PASS",
+    "synthetic_stress_scenarios": 5760,
+    "realized_target_projection_failures": 11,
+    "constructed_target_projection_failures": 0,
+    "ruff_static_check": "PASS",
+    "git_diff_check": "PASS",
+    "independent_cpu_scalar_verification": "PASS",
+    "formal_manifest_reference_model_weight_or_gpu_access": false,
+    "no_weight_dry_run": false,
+    "engineering_execution": false,
+    "outcome_access_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "authoritative_scalar_runtime": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_target_projection_correction_v1_runtime/run_001",
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

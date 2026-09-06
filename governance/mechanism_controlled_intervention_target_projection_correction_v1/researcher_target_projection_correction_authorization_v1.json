@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "authorization_id": "controlled_lfe_projection_exchange_target_projection_construction_correction_v1",
+  "authorized_at_utc": "2026-09-06",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "researcher_instruction": "单独授权：SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION",
+  "status": "CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_AUTHORIZED_ONLY",
+  "source_head": "30fabc439792ef1c510078a1ac9a93d7d4eac908",
+  "run_004_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_004_abort_freeze_v1.json",
+    "bytes": 4585,
+    "sha256": "b3ee540e9303b5e50dc60029a84fdba1625b48ec6636c7c378ebfcd2f35b4cab",
+    "required_status": "FROZEN_ABORTED_FAIL_CLOSED_TARGET_PROJECTION_EXCHANGE_INVARIANT_BEFORE_ANY_TRAJECTORY"
+  },
+  "authorized": {
+    "cpu_only_synthetic_target_projection_construction_diagnostic": true,
+    "separate_realized_target_addition_and_projection_rounding_from_constructed_displacement_projection": true,
+    "frozen_design_preserving_implementation_correction": true,
+    "frozen_projection_absolute_tolerance_retained_at_1e_6": true,
+    "frozen_projection_relative_tolerance_retained_at_1e_5": true,
+    "target_tensor_formula_delta_direction_and_dose_unchanged": true,
+    "adversarial_stress_and_regression_synthetic_tests": true,
+    "ruff_and_static_checks": true,
+    "cpu_only_independent_scalar_verification": true,
+    "diagnostic_readiness_evidence_and_freeze": true
+  },
+  "not_authorized": {
+    "formal_manifest_or_reference_access": true,
+    "reference_preprocessing_execution": true,
+    "model_module_or_weight_loading": true,
+    "gpu_execution": true,
+    "no_weight_dry_run": true,
+    "engineering_run_001_run_002_run_003_or_run_004_reuse_retry_or_resume": true,
+    "new_engineering_execution": true,
+    "threshold_relaxation_or_change": true,
+    "pair_token_seed_condition_dose_or_scheduler_change": true,
+    "scientific_generation": true,
+    "latent_image_frame_or_video_generation_or_decode": true,
+    "outcome_access_annotation_unblinding_construction_or_join": true,
+    "formal_intervention_analysis_or_hypothesis_testing": true,
+    "network_access_or_remote_push": true
+  },
+  "frozen_invariants": {
+    "delta_formula": "DOT_X_COUNTERPART_MINUS_X_WITH_UNIT_DIRECTION_U",
+    "target_formula": "X_TARGET_EQUALS_X_PLUS_DELTA_TIMES_U",
+    "target_projection_exchange_rule": "TARGET_DISPLACEMENT_ALONG_U_EQUALS_COUNTERPART_MINUS_BASE_DISPLACEMENT_ALONG_U",
+    "projection_absolute_tolerance": 0.000001,
+    "projection_relative_tolerance": 0.00001,
+    "complete_transaction_fail_closed": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

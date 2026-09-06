@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_target_projection_construction_correction_v1",
+  "frozen_at_utc": "2026-09-06",
+  "status": "FROZEN_PASS_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS",
+  "source_head_before_correction": "30fabc439792ef1c510078a1ac9a93d7d4eac908",
+  "authorization": {
+    "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/researcher_target_projection_correction_authorization_v1.json",
+    "bytes": 2981,
+    "sha256": "d98348e93a601c364563936df763160fc2e347fb29676d70762b1e41964a2096"
+  },
+  "run_004_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_004_abort_freeze_v1.json",
+    "bytes": 4585,
+    "sha256": "b3ee540e9303b5e50dc60029a84fdba1625b48ec6636c7c378ebfcd2f35b4cab",
+    "run_004_reusable": false
+  },
+  "readiness_record": {
+    "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/target_projection_correction_readiness_record_v1.json",
+    "bytes": 3558,
+    "sha256": "74cf9e249f78d432b7783d287dc6702521c5219583eaee9855de9e3f06e00f83"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/target_projection_correction_evidence_manifest_v1.csv",
+    "artifact_rows": 10,
+    "bytes": 2242,
+    "sha256": "9da0f739b6224a84d488a6b332741beefcd215fae4d4b9359a573ccea5d61dd2"
+  },
+  "evidence_verification": {
+    "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/target_projection_correction_evidence_verification_v1.json",
+    "bytes": 1867,
+    "sha256": "9051000aa3df6d5256d7dac7860c7c778e204b915a2a690aad2100a684dc5f04",
+    "status": "PASS_INDEPENDENT_TARGET_PROJECTION_CORRECTION_EVIDENCE_VERIFICATION"
+  },
+  "verified": {
+    "synthetic_directions": 640,
+    "synthetic_scenarios": 5760,
+    "realized_target_projection_failures": 11,
+    "constructed_target_projection_failures": 0,
+    "max_realized_target_projection_abs_residual": 0.00000762939453125,
+    "max_constructed_target_projection_abs_residual": 0.00000762939453125,
+    "frozen_absolute_tolerance": 0.000001,
+    "frozen_relative_tolerance": 0.00001,
+    "construction_grounded_gate_passes_same_threshold_rule": true,
+    "target_tensor_formula_unchanged": true,
+    "delta_direction_dose_pair_token_seed_condition_and_scheduler_unchanged": true,
+    "cpu_synthetic_tests_19_of_19": true,
+    "ruff_static_check": true,
+    "independent_cpu_scalar_verification": true,
+    "evidence_manifest_10_of_10": true
+  },
+  "authoritative_scalar_runtime": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_target_projection_correction_v1_runtime/run_001",
+    "directory_mode": "0555",
+    "all_file_modes": "0444",
+    "tensor_media_or_latent_files": 0
+  },
+  "not_performed_or_authorized": {
+    "formal_manifest_or_reference_access": true,
+    "reference_preprocessing": true,
+    "model_module_or_weight_loading": true,
+    "gpu_execution": true,
+    "no_weight_dry_run": true,
+    "engineering_run_001_run_002_run_003_or_run_004_reuse_retry_or_resume": true,
+    "new_engineering_execution": true,
+    "threshold_change": true,
+    "target_formula_delta_direction_or_dose_change": true,
+    "pair_token_seed_condition_or_scheduler_change": true,
+    "scientific_generation_or_decode": true,
+    "outcome_access_annotation_unblinding_or_analysis": true,
+    "network_or_remote_push": true
+  },
+  "interpretation_boundary": {
+    "cpu_synthetic_float32_target_realization_failure_class_verified": true,
+    "run_004_specific_offending_key_or_value_verified": false,
+    "future_gpu_engineering_success_verified_or_implied": false,
+    "scientific_result_created": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

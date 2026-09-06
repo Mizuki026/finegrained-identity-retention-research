@@ -183,11 +183,12 @@ def build_transient_interventions(
                 sham_displacement_vector = delta * sham_direction
                 target = base[token_index] + target_displacement_vector
                 sham = base[token_index] + sham_displacement_vector
-                target_projection = torch.dot(target, direction)
-                counterpart_projection = torch.dot(counterpart[token_index], direction)
+                target_displacement_direction_dot = constructed_displacement_direction_dot(
+                    target_displacement_vector, direction
+                )
                 target_displacement = torch.linalg.vector_norm(target_displacement_vector)
                 sham_displacement = torch.linalg.vector_norm(sham_displacement_vector)
-                if not within_frozen_tolerance(target_projection, counterpart_projection):
+                if not within_frozen_tolerance(target_displacement_direction_dot, delta):
                     raise ControlledInterventionInstrumentationError("target projection exchange failure")
                 sham_direction_dot = constructed_displacement_direction_dot(
                     sham_displacement_vector, direction

@@ -352,6 +352,41 @@ class ControlledInterventionTests(unittest.TestCase):
         self.assertEqual(constructed_failures, 0)
         self.assertEqual(protocol.DIRECTION_ATOL, 1e-6)
 
+    def test_19_constructed_target_projection_avoids_float32_realization_failure(self):
+        import torch
+
+        generator = torch.Generator(device="cpu").manual_seed(20260907)
+        realized_failures = 0
+        constructed_failures = 0
+        cases = 0
+        for _index in range(640):
+            direction = torch.randn(2048, generator=generator)
+            direction = direction / torch.linalg.vector_norm(direction)
+            for base_scale in (0.1, 1.0, 10.0):
+                base = torch.randn(2048, generator=generator) * base_scale
+                for difference_scale in (0.1, 1.0, 10.0):
+                    counterpart = base + torch.randn(2048, generator=generator) * difference_scale
+                    delta = torch.dot(counterpart - base, direction)
+                    target_displacement_vector = delta * direction
+                    target = base + target_displacement_vector
+                    realized_projection = torch.dot(target, direction)
+                    counterpart_projection = torch.dot(counterpart, direction)
+                    constructed_projection_delta = instrumentation.constructed_displacement_direction_dot(
+                        target_displacement_vector, direction
+                    )
+                    cases += 1
+                    realized_failures += int(not instrumentation.within_frozen_tolerance(
+                        realized_projection, counterpart_projection
+                    ))
+                    constructed_failures += int(not instrumentation.within_frozen_tolerance(
+                        constructed_projection_delta, delta
+                    ))
+                    self.assertTrue(torch.equal(target, base + delta * direction))
+        self.assertEqual(cases, 5760)
+        self.assertGreater(realized_failures, 0)
+        self.assertEqual(constructed_failures, 0)
+        self.assertEqual(protocol.DIRECTION_ATOL, 1e-6)
+
 
 if __name__ == "__main__":
     unittest.main()

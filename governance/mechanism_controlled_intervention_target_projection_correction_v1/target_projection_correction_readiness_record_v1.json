@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "readiness_id": "controlled_lfe_projection_exchange_target_projection_construction_correction_v1",
+  "recorded_at_utc": "2026-09-06",
+  "status": "PASS_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS",
+  "source_head_before_correction": "30fabc439792ef1c510078a1ac9a93d7d4eac908",
+  "authorization": {
+    "cpu_only_target_projection_construction_diagnostic": true,
+    "frozen_design_preserving_correction": true,
+    "synthetic_stress_tests": true,
+    "formal_manifest_or_reference_access": false,
+    "reference_preprocessing": false,
+    "model_module_or_weight_loading": false,
+    "gpu_execution": false,
+    "no_weight_dry_run": false,
+    "engineering_execution": false,
+    "outcome_access_or_analysis": false,
+    "network_or_remote_push": false
+  },
+  "verified_diagnosis": {
+    "synthetic_seed": 20260907,
+    "synthetic_directions": 640,
+    "synthetic_scenarios": 5760,
+    "synthetic_dimension": 2048,
+    "base_scales": [0.1, 1.0, 10.0],
+    "difference_scales": [0.1, 1.0, 10.0],
+    "frozen_absolute_tolerance": 0.000001,
+    "frozen_relative_tolerance": 0.00001,
+    "realized_target_projection_failures": 11,
+    "constructed_target_projection_failures": 0,
+    "max_realized_target_projection_abs_residual": 0.00000762939453125,
+    "max_constructed_target_projection_abs_residual": 0.00000762939453125,
+    "constructed_gate_passes_by_the_unchanged_absolute_plus_relative_tolerance_rule": true,
+    "float32_target_addition_and_direct_projection_comparison_can_create_false_projection_exchange_failure": true,
+    "run_004_specific_offending_unit_pair_token_delta_projection_or_residual_recovered": false
+  },
+  "correction": {
+    "delta_formula": "DOT_X_COUNTERPART_MINUS_X_WITH_UNIT_DIRECTION_U",
+    "explicit_target_displacement": "DELTA_TIMES_DIRECTION",
+    "target_tensor_formula": "X_PLUS_EXPLICIT_TARGET_DISPLACEMENT",
+    "projection_exchange_gate_uses_explicit_constructed_target_displacement_direction_dot": true,
+    "projection_exchange_gate_compares_constructed_displacement_projection_to_delta": true,
+    "target_output_tensor_bitwise_operation_equivalent_to_prior_formula": true,
+    "counterpart_target_direction_delta_and_dose_unchanged": true,
+    "absolute_tolerance_before": 0.000001,
+    "absolute_tolerance_after": 0.000001,
+    "relative_tolerance_before": 0.00001,
+    "relative_tolerance_after": 0.00001
+  },
+  "cpu_synthetic_tests": {
+    "environment": "/root/autodl-tmp/consisid-smoketest/env/bin/python",
+    "cuda_visible_devices": "",
+    "tests_run": 19,
+    "tests_passed": 19,
+    "tests_failed": 0,
+    "stress_scenarios": 5760,
+    "ruff_static_check": "PASS"
+  },
+  "independent_verification": {
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_target_projection_correction_v1_runtime/run_001/independent_verification_v1.json",
+    "bytes": 999,
+    "sha256": "73e844ba477d3a1e9c9b4726c41a926bc0a069db3202d1423cf30cf44ab9ad0f",
+    "status": "PASS_INDEPENDENT_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_CORRECTION_VERIFICATION",
+    "directory_mode": "0555",
+    "file_mode": "0444"
+  },
+  "interpretation_boundary": "THIS_VERIFIES_A_CPU_SYNTHETIC_FLOAT32_TARGET_REALIZATION_FAILURE_CLASS_AND_A_FROZEN_DESIGN_PRESERVING_CONSTRUCTION_GROUNDED_GATE; IT_DOES_NOT RECOVER_THE_RUN_004_OFFENDING_KEY_OR_AUTHORIZE_OR_PREDICT_GPU_ENGINEERING_SUCCESS",
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}
