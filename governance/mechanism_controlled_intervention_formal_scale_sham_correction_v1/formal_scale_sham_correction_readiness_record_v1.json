@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "PASS_CPU_ONLY_FORMAL_SCALE_SHAM_DISPLACEMENT_ORTHOGONALITY_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS",
+  "synthetic_seed": 20260908,
+  "synthetic_directions": 640,
+  "formal_scale_deltas": [
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "synthetic_cases": 3200,
+  "pre_correction_failures_by_delta": {
+    "0.1": 0,
+    "1.0": 0,
+    "10.0": 0,
+    "100.0": 18,
+    "1000.0": 499
+  },
+  "rejected_q_only_candidate_failures_by_delta": {
+    "0.1": 0,
+    "1.0": 0,
+    "10.0": 0,
+    "100.0": 24,
+    "1000.0": 500
+  },
+  "corrected_failures": 0,
+  "max_corrected_abs_residual": 1.0082320568705061e-07,
+  "frozen_absolute_tolerance": 1e-06,
+  "correction": {
+    "shake256_namespace_dense_rademacher_and_attempt_order_unchanged": true,
+    "delta_target_and_sham_formula_unchanged": true,
+    "deterministic_fixed_iteration_float64_residual_guided_float32_pivot_refinement": true,
+    "scaled_gate_uses_delta_times_float64_dot_q_u": true,
+    "threshold_changed": false
+  },
+  "cpu_tests": "20_OF_20_PASS",
+  "ruff": "PASS",
+  "run_005_specific_offending_key_delta_or_residual_recovered": false,
+  "reference_formal_manifest_outcome_model_weight_gpu_or_network_used": false,
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

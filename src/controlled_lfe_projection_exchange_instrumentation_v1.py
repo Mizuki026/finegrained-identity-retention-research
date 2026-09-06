@@ -65,6 +65,12 @@ def constructed_displacement_direction_dot(displacement: Any, direction: Any) ->
     return torch.dot(displacement, direction)
 
 
+def constructed_scaled_orthogonality_dot(scale: Any, orthogonal: Any, direction: Any) -> Any:
+    """Evaluate delta*dot(q,u) with float64 accumulation, without scaled-dot loss."""
+    torch = _torch()
+    return scale.double() * torch.dot(orthogonal.double(), direction.double())
+
+
 def _unit_vector(vector: Any, label: str) -> tuple[Any, float]:
     torch = _torch()
     norm = float(torch.linalg.vector_norm(vector).item())
@@ -89,6 +95,14 @@ def deterministic_sham_direction(attribute: str, pair_id: str, token_index: int,
         norm = float(torch.linalg.vector_norm(orthogonal).item())
         if torch.isfinite(torch.tensor(norm)) and norm > protocol.NORM_FLOOR:
             sham = orthogonal / norm
+            pivot = int(torch.argmax(torch.abs(direction)).item())
+            for _ in range(4):
+                residual = torch.dot(sham.double(), direction.double())
+                sham[pivot] = (sham[pivot].double() - residual / direction[pivot].double()).float()
+            sham = sham / torch.linalg.vector_norm(sham)
+            for _ in range(8):
+                residual = torch.dot(sham.double(), direction.double())
+                sham[pivot] = (sham[pivot].double() - residual / direction[pivot].double()).float()
             if abs(float(torch.dot(sham, direction).item())) > protocol.DIRECTION_ATOL:
                 raise ControlledInterventionInstrumentationError("sham orthogonality failure")
             return sham, attempt
@@ -190,8 +204,8 @@ def build_transient_interventions(
                 sham_displacement = torch.linalg.vector_norm(sham_displacement_vector)
                 if not within_frozen_tolerance(target_displacement_direction_dot, delta):
                     raise ControlledInterventionInstrumentationError("target projection exchange failure")
-                sham_direction_dot = constructed_displacement_direction_dot(
-                    sham_displacement_vector, direction
+                sham_direction_dot = constructed_scaled_orthogonality_dot(
+                    delta, sham_direction, direction
                 )
                 if abs(float(sham_direction_dot.item())) > protocol.DIRECTION_ATOL:
                     raise ControlledInterventionInstrumentationError("sham displacement is not orthogonal")

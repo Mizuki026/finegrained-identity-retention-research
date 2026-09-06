@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "authorization_id": "formal_scale_sham_displacement_orthogonality_correction_v1",
+  "authorized_at_utc": "2026-09-06",
+  "researcher_instruction": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_SCALE_SHAM_DISPLACEMENT_ORTHOGONALITY_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION",
+  "status": "CPU_ONLY_FORMAL_SCALE_SHAM_DISPLACEMENT_ORTHOGONALITY_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_AUTHORIZED_ONLY",
+  "source_head": "d4e678a0881c42fdb8518eea77220157fc65b931",
+  "run_005_abort_freeze": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_005_abort_freeze_v1.json",
+    "bytes": 4841,
+    "sha256": "5039fd9d1c3483955b418b80b124db1267d2191e2dbe64cc6524f1a08de6cd15"
+  },
+  "authorized": {
+    "cpu_only_synthetic_diagnostic": true,
+    "deterministic_float64_residual_guided_float32_sham_refinement": true,
+    "stable_scaled_orthogonality_evaluator": true,
+    "frozen_design_preserving_correction": true,
+    "cpu_tests_and_static_checks": true
+  },
+  "not_authorized": {
+    "reference_formal_manifest_or_outcome_access": true,
+    "model_or_weight_loading": true,
+    "gpu_or_engineering_execution": true,
+    "no_weight_dry_run": true,
+    "threshold_or_scientific_configuration_change": true,
+    "network_or_remote_push": true
+  },
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_FOR_ANY_NEW_SINGLE_GPU_CONTROLLED_INTERVENTION_ENGINEERING_RUN"
+}

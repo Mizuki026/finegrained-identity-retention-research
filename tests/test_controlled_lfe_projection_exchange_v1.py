@@ -388,5 +388,27 @@ class ControlledInterventionTests(unittest.TestCase):
         self.assertEqual(protocol.DIRECTION_ATOL, 1e-6)
 
 
+    def test_20_formal_scale_sham_orthogonality_is_stable(self):
+        import torch
+
+        generator = torch.Generator(device="cpu").manual_seed(20260908)
+        failures = 0
+        cases = 0
+        for index in range(640):
+            direction = torch.randn(2048, generator=generator)
+            direction = direction / torch.linalg.vector_norm(direction)
+            attribute = "eyeglasses" if index < 320 else "facial_hair"
+            prefix = "FEY" if index < 320 else "FFH"
+            pair = f"{prefix}_{(index // 32) % 10 + 1:02d}"
+            sham_direction, _ = instrumentation.deterministic_sham_direction(attribute, pair, index % 32, direction)
+            for delta in (0.1, 1.0, 10.0, 100.0, 1000.0):
+                cases += 1
+                residual = instrumentation.constructed_scaled_orthogonality_dot(torch.tensor(delta), sham_direction, direction)
+                failures += int(abs(float(residual.item())) > protocol.DIRECTION_ATOL)
+        self.assertEqual(cases, 3200)
+        self.assertEqual(failures, 0)
+        self.assertEqual(protocol.DIRECTION_ATOL, 1e-6)
+
+
 if __name__ == "__main__":
     unittest.main()
