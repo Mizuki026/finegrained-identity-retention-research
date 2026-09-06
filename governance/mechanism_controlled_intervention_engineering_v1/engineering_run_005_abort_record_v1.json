@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "record_id": "controlled_lfe_projection_exchange_engineering_run_005_abort",
+  "recorded_at_utc": "2026-09-06",
+  "authorization_commit": "9b6cf93ce2d730154d09d3e77158b8925fd1db11",
+  "status": "ABORTED_FAIL_CLOSED_CONSTRUCTED_SHAM_DISPLACEMENT_ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY",
+  "researcher_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/researcher_engineering_run_005_authorization_v1.json",
+    "bytes": 4846,
+    "sha256": "b1773e4b3107c586c3bdedafdb392cc3f03dad867bfff68957e41421533ff28b"
+  },
+  "execution_authorization": {
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_005_execution_authorization_v1.json",
+    "bytes": 5927,
+    "sha256": "7ae90e5be5da4bd9bbd4b4e4b43a19100163a2bbb9a7a706d63c6f4b3d820f6a"
+  },
+  "frozen_dependencies": {
+    "formal_input_audit_freeze": {
+      "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+      "bytes": 4364,
+      "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+    },
+    "memory_lifecycle_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_freeze_v1.json",
+      "bytes": 3809,
+      "sha256": "03df4a5c5a11213023d74e36881a5798525108b2683d517d59d5649a0e738ad9"
+    },
+    "sham_projection_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_sham_projection_correction_v1/sham_projection_correction_freeze_v1.json",
+      "bytes": 3691,
+      "sha256": "f0ea36580e980d66e6e5bc7eff62026cf14e05f8b26cc3cb30d9f60af681e6ba"
+    },
+    "sham_construction_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_freeze_v1.json",
+      "bytes": 3964,
+      "sha256": "483e351a7a3dd2d0b8d252073549da10b24d4e932f1af95122b74def192459cc"
+    },
+    "target_projection_correction_freeze": {
+      "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/target_projection_correction_freeze_v1.json",
+      "bytes": 3932,
+      "sha256": "5222013b921657d1f1870607483d5a2deaf4901093f7fb195d0cbb5ea9fc079e"
+    },
+    "prior_engineering_abort_freeze": {
+      "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_004_abort_freeze_v1.json",
+      "bytes": 4585,
+      "sha256": "b3ee540e9303b5e50dc60029a84fdba1625b48ec6636c7c378ebfcd2f35b4cab"
+    }
+  },
+  "actual_transaction": {
+    "run_id": "run_005",
+    "exit_code": 1,
+    "model_and_weights_loaded": true,
+    "single_gpu_used": true,
+    "reference_preprocessing_calls_complete": 40,
+    "run_level_fallback_message_observed": true,
+    "fallback_messages_counted_or_assigned_to_unit_pair_role_or_attribute": false,
+    "direct_lfe_acquisitions_complete": 40,
+    "memory_lifecycle_gate_passed": true,
+    "pipeline_loaded_after_complete_acquisition": true,
+    "held_pair_out_direction_family_constructed_in_memory": 640,
+    "construction_grounded_target_projection_gate_reached_and_passed_before_failure": true,
+    "construction_grounded_sham_displacement_gate_reached": true,
+    "condition_tensor_family_complete": false,
+    "engineering_trajectory_or_intervention_executions": 0,
+    "scheduler_steps_executed": 0,
+    "final_output_directory_created": false,
+    "partial_output_directory_created": false,
+    "raw_tensor_media_or_latent_files_persisted": 0,
+    "transient_tensors_discarded": true,
+    "outcomes_opened": false,
+    "formal_analysis_computed": false,
+    "network_used": false
+  },
+  "verified_failure": {
+    "exception": "ControlledInterventionInstrumentationError",
+    "message": "sham displacement is not orthogonal",
+    "site": "build_transient_interventions constructed_displacement_direction_dot(sham_displacement_vector, direction) acceptance gate",
+    "stage": "AFTER_COMPLETE_ACQUISITION_PIPELINE_LOAD_AND_640_DIRECTION_CONSTRUCTION_BEFORE_ANY_TRAJECTORY",
+    "frozen_direction_atol": 1e-06,
+    "threshold_changed": false,
+    "offending_unit_pair_token_delta_or_residual_persisted": false
+  },
+  "post_abort_verification": {
+    "runner_process_absent": true,
+    "run_output_absent": true,
+    "partial_output_absent": true,
+    "gpu_reported_used_mib": 0,
+    "gpu_reported_utilization_percent": 0,
+    "research_worktree_clean_before_abort_record": true,
+    "consisid_worktree_clean": true
+  },
+  "unverified_working_explanation": "FORMAL_SCALE_DELTA_TIMES_SHAM_DIRECTION_DOT_RESIDUAL_MAY_EXCEED_THE_FROZEN_ABSOLUTE_TOLERANCE; NO_OFFENDING_SCALAR_OR_KEY_WAS_PERSISTED_OR_RECOMPUTED",
+  "reuse_policy": {
+    "run_001_reusable": false,
+    "run_002_reusable": false,
+    "run_003_reusable": false,
+    "run_004_reusable": false,
+    "run_005_reusable": false,
+    "automatic_retry_or_resume": false,
+    "threshold_or_scientific_configuration_change_authorized": false,
+    "new_numerical_correction_authorized": false,
+    "new_engineering_execution_authorized": false
+  },
+  "scientific_result_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_FORMAL_SCALE_SHAM_DISPLACEMENT_ORTHOGONALITY_NUMERICAL_DIAGNOSTIC_AND_FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS_BEFORE_ANY_NEW_ENGINEERING_DECISION"
+}
