@@ -15,7 +15,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 GOV = REPO / "governance/mechanism_controlled_intervention_engineering_v1"
-AUTHORIZATION = GOV / "engineering_run_004_execution_authorization_v1.json"
+AUTHORIZATION = GOV / "engineering_run_005_execution_authorization_v1.json"
 CONSISID_REPO = Path("/root/autodl-tmp/consisid-smoketest/ConsisID")
 CONSISID_COMMIT = "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e"
 ATTRIBUTES = ("eyeglasses", "facial_hair")
@@ -39,9 +39,13 @@ CONSTRUCTION_CORRECTION_FREEZE_STATUS = (
     "FROZEN_PASS_CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_DIAGNOSTIC_AND_"
     "FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS"
 )
+TARGET_CORRECTION_FREEZE_STATUS = (
+    "FROZEN_PASS_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_DIAGNOSTIC_AND_"
+    "FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS"
+)
 ABORT_FREEZE_STATUS = (
-    "FROZEN_ABORTED_FAIL_CLOSED_STABLE_SHAM_DISPLACEMENT_"
-    "ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY"
+    "FROZEN_ABORTED_FAIL_CLOSED_TARGET_PROJECTION_EXCHANGE_"
+    "INVARIANT_BEFORE_ANY_TRAJECTORY"
 )
 SUMMARY_STATUS = "COMPLETE_PENDING_INDEPENDENT_PHASE_VERIFICATION"
 
@@ -144,13 +148,14 @@ def validate_authority(run_dir: Path) -> dict:
         raise EngineeringVerificationError("single-GPU authorization drift")
     if float(auth.get("phase_gpu_hours_ceiling", 0)) != 2.0:
         raise EngineeringVerificationError("engineering GPU-hour ceiling drift")
-    if auth.get("engineering_run_id") != "run_004" or auth.get("prior_execution_reused") is not False:
+    if auth.get("engineering_run_id") != "run_005" or auth.get("prior_execution_reused") is not False:
         raise EngineeringVerificationError("new engineering transaction identity drift")
     required = (
         "single_gpu_engineering", "frozen_model_and_weight_loading",
         "reference_preprocessing_and_direct_lfe_acquisition",
         "threshold_preserving_sham_projection_correction",
         "construction_grounded_sham_displacement_gates",
+        "construction_grounded_target_projection_gate",
         "transient_direction_and_intervention", "maximum_24_one_step_conditions",
         "scalar_only_artifacts", "independent_verification",
     )
@@ -179,7 +184,7 @@ def validate_authority(run_dir: Path) -> dict:
     for key in (
         "formal_input_audit_freeze", "memory_lifecycle_correction_freeze",
         "sham_projection_correction_freeze", "sham_construction_correction_freeze",
-        "prior_engineering_abort_freeze", "formal_generation_master", "formal_task_binding_manifest",
+        "target_projection_correction_freeze", "prior_engineering_abort_freeze", "formal_generation_master", "formal_task_binding_manifest",
     ):
         item = auth.get(key, {})
         verify_file(resolve(str(item.get("path", ""))), int(item.get("bytes", -1)), str(item.get("sha256", "")))
@@ -194,9 +199,14 @@ def validate_authority(run_dir: Path) -> dict:
     )
     if construction_correction.get("status") != CONSTRUCTION_CORRECTION_FREEZE_STATUS:
         raise EngineeringVerificationError("sham construction correction freeze status drift")
+    target_correction = json.loads(
+        resolve(str(auth["target_projection_correction_freeze"]["path"])).read_text()
+    )
+    if target_correction.get("status") != TARGET_CORRECTION_FREEZE_STATUS:
+        raise EngineeringVerificationError("target projection correction freeze status drift")
     abort = json.loads(resolve(str(auth["prior_engineering_abort_freeze"]["path"])).read_text())
-    if abort.get("status") != ABORT_FREEZE_STATUS or abort.get("reuse_policy", {}).get("run_003_reusable") is not False:
-        raise EngineeringVerificationError("prior run_003 abort or non-reuse binding drift")
+    if abort.get("status") != ABORT_FREEZE_STATUS or abort.get("reuse_policy", {}).get("run_004_reusable") is not False:
+        raise EngineeringVerificationError("prior run_004 abort or non-reuse binding drift")
     return auth
 
 

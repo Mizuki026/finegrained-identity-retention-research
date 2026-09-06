@@ -37,9 +37,13 @@ CONSTRUCTION_CORRECTION_FREEZE_STATUS = (
     "FROZEN_PASS_CPU_ONLY_SHAM_DISPLACEMENT_CONSTRUCTION_DIAGNOSTIC_AND_"
     "FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS"
 )
+TARGET_CORRECTION_FREEZE_STATUS = (
+    "FROZEN_PASS_CPU_ONLY_TARGET_PROJECTION_CONSTRUCTION_DIAGNOSTIC_AND_"
+    "FROZEN_DESIGN_PRESERVING_CORRECTION_TESTS"
+)
 ABORT_FREEZE_STATUS = (
-    "FROZEN_ABORTED_FAIL_CLOSED_STABLE_SHAM_DISPLACEMENT_"
-    "ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY"
+    "FROZEN_ABORTED_FAIL_CLOSED_TARGET_PROJECTION_EXCHANGE_"
+    "INVARIANT_BEFORE_ANY_TRAJECTORY"
 )
 
 
@@ -156,11 +160,20 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
     )
     if protocol.read_json(construction_correction).get("status") != CONSTRUCTION_CORRECTION_FREEZE_STATUS:
         raise ControlledInterventionRunnerError("sham construction correction is not frozen pass")
+    target_correction = protocol.bound(
+        auth.get("target_projection_correction_freeze", {}), "target projection correction freeze"
+    )
+    if protocol.read_json(target_correction).get("status") != TARGET_CORRECTION_FREEZE_STATUS:
+        raise ControlledInterventionRunnerError("target projection correction is not frozen pass")
     abort = protocol.bound(auth.get("prior_engineering_abort_freeze", {}), "prior engineering abort freeze")
-    if protocol.read_json(abort).get("status") != ABORT_FREEZE_STATUS:
-        raise ControlledInterventionRunnerError("prior engineering abort freeze drift")
+    abort_payload = protocol.read_json(abort)
+    if (
+        abort_payload.get("status") != ABORT_FREEZE_STATUS
+        or abort_payload.get("reuse_policy", {}).get("run_004_reusable") is not False
+    ):
+        raise ControlledInterventionRunnerError("prior run_004 abort or non-reuse binding drift")
     if phase == "engineering" and (
-        auth.get("engineering_run_id") != "run_004"
+        auth.get("engineering_run_id") != "run_005"
         or auth.get("prior_execution_reused") is not False
     ):
         raise ControlledInterventionRunnerError("new engineering transaction identity drift")
