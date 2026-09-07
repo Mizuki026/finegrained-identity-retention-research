@@ -1,0 +1,71 @@
+{
+  "active_execution_authorization": {
+    "bytes": 7506,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_authorization_v1.json",
+    "sha256": "4fdd9ce0c8fd8e3d45358c00d4af34685e66d27e5adf1bc95c002846c6536345"
+  },
+  "amendment_freeze": {
+    "bytes": 3202,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_sharding_preparation_freeze_v1.json",
+    "sha256": "bba992895cb5ccef0f4307cb76010c756754df9dbd4032855d47143912d33734"
+  },
+  "authorized_shards": [
+    "seed_1"
+  ],
+  "detached_launch_command": {
+    "bytes": 1109,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_launch_nohup_v1.sh",
+    "sha256": "5c0546555e73b2f02b02221de90a6666691367454ace09ee8624c207f1c22d2a"
+  },
+  "evidence_manifest": {
+    "artifact_rows": 16,
+    "bytes": 2853,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_preparation_evidence_manifest_v1.csv",
+    "sha256": "fe0e3bc948d4ac599c00030a7454756b5f861b7290b9498f4806dda264fd4300"
+  },
+  "evidence_verification": {
+    "bytes": 650,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_preparation_evidence_verification_v1.json",
+    "sha256": "e10b090e7ff1ae44da8033fdf0bce9545d402bd44cd41fca91a68d583a97ddd5"
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_scientific_seed_1_execution_preparation_v1",
+  "frozen_at_utc": "2026-09-07",
+  "later_phases_authorized": false,
+  "monitor_root_absent": true,
+  "next_gate": "RESEARCHER_MANUAL_TERMINAL_LAUNCH_OF_SCIENTIFIC_SEED_1",
+  "preparation_verification": {
+    "bytes": 1022,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_preparation_verification_v1.json",
+    "sha256": "bfe0191f16370303ca585233b6c96e19a3002fd4c2f6a900e03bbcb295544fdb"
+  },
+  "private_shard_root_absent": true,
+  "readiness": {
+    "bytes": 1716,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_readiness_v1.json",
+    "sha256": "07159e11a7e8636c57b8d5a6b73c7821bbf6fd0871557b80cd2277849f072cd4"
+  },
+  "researcher_authorization": {
+    "bytes": 2834,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/researcher_scientific_seed_1_execution_authorization_v1.json",
+    "sha256": "5e91fe30618fd935393df822be3e5a02196bd47e2bf85034d3de8a0fe4412f3f"
+  },
+  "runtime_output_absent": true,
+  "schema_version": 1,
+  "scientific_execution_started": false,
+  "status": "FROZEN_PASS_AUTHORIZED_SCIENTIFIC_SEED_1_EXECUTION_PREPARATION_NOT_STARTED",
+  "status_command": {
+    "bytes": 1468,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_status_v1.sh",
+    "sha256": "d6a647a52611030f685e15d39489e88b1a102e0b4b57382a75634c04b7292153"
+  },
+  "terminal_command": {
+    "bytes": 692,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_terminal_command_v1.sh",
+    "sha256": "e384bd6f7b904916dbb1a005d41ae6f554bd0a93453c976f184763ed035b2951"
+  },
+  "unauthorized_shards": [
+    "seed_2",
+    "seed_3",
+    "seed_4"
+  ]
+}

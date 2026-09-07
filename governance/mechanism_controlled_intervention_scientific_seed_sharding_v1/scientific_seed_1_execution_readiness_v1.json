@@ -1,0 +1,47 @@
+{
+  "authorization_commit": "d489e6b33f6f8edbc2ca10166986492ae903ffc1",
+  "later_phases_authorized": false,
+  "launch": {
+    "automatic_retry": false,
+    "console_log": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_monitor/seed_1/console.log",
+    "detached_nohup": true,
+    "pid_file": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_monitor/seed_1/pid"
+  },
+  "monitoring": {
+    "gpu_status_read_only": true,
+    "private_latent_progress_denominator": 120,
+    "scalar_output_atomic_at_completion": true
+  },
+  "next_gate": "MANUAL_LAUNCH_SEED_1; ON ANY FAILURE STOP AND REQUEST NEW RESEARCHER AUTHORIZATION",
+  "not_started": {
+    "gpu_execution": true,
+    "model_or_weight_loading": true,
+    "reference_preprocessing": true,
+    "trajectory_generation": true
+  },
+  "other_shards_authorized": false,
+  "recorded_at_utc": "2026-09-07",
+  "schema_version": 1,
+  "status": "READY_AUTHORIZED_SCIENTIFIC_SEED_1_EXECUTION_NOT_STARTED",
+  "storage": {
+    "minimum_free_bytes": 21474836480,
+    "observed_free_bytes": 115632168960,
+    "private_parent": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_shards",
+    "private_parent_mode": "0700",
+    "private_shard_root_absent": true,
+    "runtime_output_absent": true,
+    "runtime_partial_absent": true
+  },
+  "transaction": {
+    "conditions": 3,
+    "formal_units": 40,
+    "hard_ceiling_gpu_hours": 18.0,
+    "scheduler_steps": 6000,
+    "scientific_shard_id": "seed_1",
+    "seed": 2686238281,
+    "seed_index": 1,
+    "shard_family_id": "controlled_lfe_projection_exchange_scientific_seed_shards_v1",
+    "source_tasks": 40,
+    "trajectories": 120
+  }
+}

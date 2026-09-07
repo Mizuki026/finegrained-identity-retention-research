@@ -1,0 +1,17 @@
+{
+  "active_runner_gate": "PASS_NO_WEIGHT",
+  "all_paths_bytes_sha256_match": true,
+  "gpu_used": false,
+  "manifest": {
+    "artifact_rows": 16,
+    "bytes": 2853,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_preparation_evidence_manifest_v1.csv",
+    "sha256": "fe0e3bc948d4ac599c00030a7454756b5f861b7290b9498f4806dda264fd4300"
+  },
+  "model_or_weights_loaded": false,
+  "reference_accessed": false,
+  "schema_version": 1,
+  "scientific_execution_started": false,
+  "status": "PASS_SCIENTIFIC_SEED_1_EXECUTION_PREPARATION_EVIDENCE_VERIFICATION",
+  "trajectory_executed": false
+}
