@@ -1,0 +1,38 @@
+{
+  "correction_scope": "Verifier and synthetic regression fixture only",
+  "diagnosed_at_utc": "2026-09-07",
+  "independent_verification_v1_created": false,
+  "nonpersisted_redundant_plan_fields": [
+    "trajectory_kind",
+    "formal_binding_status"
+  ],
+  "original_error": "KeyError: trajectory_kind",
+  "original_verifier_exit": "FAIL_BEFORE_OUTPUT_WRITE",
+  "persisted_core_plan_fields": [
+    "planned_task_id",
+    "planned_unit_id",
+    "formal_pair_id",
+    "attribute",
+    "role",
+    "seed_index",
+    "seed",
+    "condition_position",
+    "condition",
+    "scheduler_positions"
+  ],
+  "read_only_findings": {
+    "elapsed_gpu_hours": 8.79552806577904,
+    "exact_task_condition_key_set_match": true,
+    "persisted_core_plan_order_match": true,
+    "private_latent_bytes": 269579520,
+    "private_latent_files": 120,
+    "scheduler_steps": 6000,
+    "summary_status": "COMPLETE_PENDING_INDEPENDENT_PHASE_VERIFICATION",
+    "trajectory_rows": 120,
+    "unique_task_condition_keys": 120
+  },
+  "regeneration_required": false,
+  "schema_version": 1,
+  "scientific_data_modified": false,
+  "status": "CONFIRMED_VERIFIER_PERSISTED_SCHEMA_ASSUMPTION_BUG_DATA_NOT_FAILED"
+}

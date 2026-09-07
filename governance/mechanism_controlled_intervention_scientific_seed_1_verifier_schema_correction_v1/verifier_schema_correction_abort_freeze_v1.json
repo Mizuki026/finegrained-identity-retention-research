@@ -1,0 +1,61 @@
+{
+  "corrected_v2_verifier": {
+    "bytes": 16520,
+    "path": "src/verify_controlled_lfe_projection_exchange_scientific_generation_v2.py",
+    "sha256": "c4143e02cf3faaa9d9b9b87ec8548ab92b6d2671062017809e77b0851cac20bf"
+  },
+  "evidence_manifest": {
+    "artifact_rows": 13,
+    "bytes": 2607,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/verifier_schema_correction_evidence_manifest_v1.csv",
+    "sha256": "df02fc2bbcadef1cbf619454861b77a39e58958c218d19674b17a4f724bb0dda"
+  },
+  "evidence_verification": {
+    "bytes": 584,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/verifier_schema_correction_evidence_verification_v1.json",
+    "sha256": "6b2bc72ce2e23ca6789d8ccf31cd09304516e154710fd0a4c15c60cb4c8a3476"
+  },
+  "freeze_id": "scientific_seed_1_verifier_schema_correction_and_failed_reverification_v1",
+  "frozen_at_utc": "2026-09-07",
+  "gpu_used": false,
+  "independent_verification_v1_created": false,
+  "independent_verification_v2_created": false,
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_AND_AUTHORIZATION_FOR_SINGLE_GPU_DIRECTION_EVIDENCE_RECOVERY_AUDIT_OR_ALTERNATIVE_PROTOCOL_DECISION",
+  "original_v1_diagnostic": {
+    "bytes": 1180,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/original_v1_failure_diagnostic_v1.json",
+    "sha256": "0ce9f25d7b4a5df6e61f3576c5cfdc44b1a560fccb1d61af84a4f3647b4b8fab"
+  },
+  "readiness": {
+    "bytes": 950,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/verifier_schema_correction_readiness_v1.json",
+    "sha256": "9aa0b5c39432ba2f61d4be2074eeee5c6063ead9b4d993554f12bba035207951"
+  },
+  "regeneration_performed": false,
+  "researcher_authorization": {
+    "bytes": 3913,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/researcher_verifier_schema_correction_authorization_v1.json",
+    "sha256": "a139f5484c3f3dbcc1b58ccf13c4fc6a29a5885ad8d7d8429b436267a8e1abea"
+  },
+  "reuse_policy": {
+    "automatic_rerun_or_recovery": false,
+    "fabricate_or_impute_hashes": false,
+    "lower_verification_threshold": false,
+    "seed_1_as_verified_shard": false
+  },
+  "runtime_or_private_artifacts_modified": false,
+  "schema_version": 1,
+  "scientific_seed_1_generation_complete": true,
+  "scientific_seed_1_independently_verified": false,
+  "status": "FROZEN_SCHEMA_CORRECTION_PASS_REVERIFICATION_BLOCKED_MISSING_DIRECTION_HASH_EVIDENCE_NO_GPU_NO_REGENERATION",
+  "synthetic_regression_test": {
+    "bytes": 1892,
+    "path": "tests/test_controlled_lfe_projection_exchange_scientific_generation_v2.py",
+    "sha256": "d0bcf80f8841d33a6d55d2ae07024570a62fb7fd07273568ce0f76580ae1016d"
+  },
+  "v2_failure_diagnostic": {
+    "bytes": 1921,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/v2_reverification_missing_direction_hash_diagnostic_v1.json",
+    "sha256": "0476a7f047fe261689739a663e833859ebf1151d62760e3a4e63889615a20668"
+  }
+}

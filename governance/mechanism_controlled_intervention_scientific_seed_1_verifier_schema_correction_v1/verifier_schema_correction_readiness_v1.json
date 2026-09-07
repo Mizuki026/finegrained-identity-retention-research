@@ -1,0 +1,21 @@
+{
+  "cpu_only_synthetic_tests": "25_OF_25_PASS",
+  "decode_performed": false,
+  "formal_v2_reverification": "FAIL_CLOSED_MISSING_DIRECTION_HASH_COLUMNS",
+  "gpu_used_by_correction": false,
+  "independent_verification_v1_exists": false,
+  "independent_verification_v2_exists": false,
+  "model_or_weights_loaded": false,
+  "next_gate": "SEPARATE_RESEARCHER_DECISION_AND_AUTHORIZATION_FOR_DIRECTION_EVIDENCE_RECOVERY_OR_PROTOCOL_AMENDMENT",
+  "outcome_accessed": false,
+  "reference_accessed": false,
+  "regeneration_performed": false,
+  "ruff": "PASS",
+  "schema_version": 1,
+  "scientific_seed_1_generation_complete": true,
+  "scientific_seed_1_independently_verified": false,
+  "scientific_seed_1_reusable_as_verified_shard": false,
+  "status": "PASS_SCHEMA_CORRECTION_TESTS_BUT_REVERIFICATION_BLOCKED_BY_MISSING_RUNTIME_DIRECTION_HASH_EVIDENCE",
+  "v1_real_schema_regression": "EXPECTED_KEYERROR_REPRODUCED",
+  "v2_real_schema_regression": "PASS"
+}

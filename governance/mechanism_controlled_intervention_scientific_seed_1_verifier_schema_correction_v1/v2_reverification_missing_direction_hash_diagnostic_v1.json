@@ -1,0 +1,36 @@
+{
+  "acquisition_scalar_hashes_present": 40,
+  "cpu_only_recovery_possible_from_persisted_artifacts": false,
+  "data_corruption": false,
+  "decision_options": {
+    "fallback_if_recovery_lfe_hashes_differ": "Do not backfill; decide whether to authorize a fresh whole-shard replacement transaction while preserving this run as non-verifiable history.",
+    "recommended": "Separately authorize a single-GPU direction-evidence recovery audit: repeat only the 40 frozen acquisitions, require all 40 LFE hashes to exactly match the executed shard, deterministically reconstruct 640 directions/shams, and persist only hashes. No trajectories or decode.",
+    "weaker_not_recommended": "Prospectively amend the family gate to waive exact direction hashes for Seed 1."
+  },
+  "diagnosed_at_utc": "2026-09-07",
+  "direction_diagnostics": {
+    "direction_sha256_present": 0,
+    "duplicate_keys": 0,
+    "missing_keys": 0,
+    "numeric_diagnostic_rows_present": 640,
+    "rows": 640,
+    "sham_direction_sha256_present": 0,
+    "unexpected_keys": 0,
+    "unique_expected_keys": 640
+  },
+  "independent_verification_v2_created": false,
+  "private_latent_bytes_unchanged": 269579520,
+  "private_latent_files_unchanged": 120,
+  "reason": "Raw LFE and direction tensors were intentionally not persisted; direction hashes cannot be reconstructed from norms and dot products.",
+  "root_cause": {
+    "direction_hashes_appended_to_diagnostic_rows": false,
+    "synthetic_fixture_injected_hash_columns_without_exercising_runtime_bundle_diagnostics": true,
+    "tensor_hash_helper_present_in_bound_instrumentation": true
+  },
+  "runtime_artifacts_modified": false,
+  "schema_version": 1,
+  "status": "CONFIRMED_MISSING_DIRECTION_HASH_COLUMNS_IN_FROZEN_RUNTIME_OUTPUT_REVERIFICATION_FAIL_CLOSED",
+  "trajectory_regeneration_performed": false,
+  "v2_error": "direction scalar hash evidence drift",
+  "v2_exit": "FAIL_BEFORE_OUTPUT_WRITE"
+}

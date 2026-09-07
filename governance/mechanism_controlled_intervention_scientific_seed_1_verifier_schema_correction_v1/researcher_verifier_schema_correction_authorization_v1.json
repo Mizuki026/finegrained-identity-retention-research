@@ -1,0 +1,78 @@
+{
+  "authorization_id": "scientific_seed_1_verifier_persisted_schema_correction_v1",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "authorized": {
+    "cpu_only_independent_reverification": true,
+    "new_v2_verifier_preserving_v1": true,
+    "persisted_core_plan_schema_correction": true,
+    "private_latent_file_existence_size_and_sha256_verification": true,
+    "synthetic_real_schema_regression_test": true,
+    "verification_and_shard_freeze": true
+  },
+  "authorized_at_utc": "2026-09-07",
+  "corrected_verifier": {
+    "bytes": 16520,
+    "path": "src/verify_controlled_lfe_projection_exchange_scientific_generation_v2.py",
+    "sha256": "c4143e02cf3faaa9d9b9b87ec8548ab92b6d2671062017809e77b0851cac20bf"
+  },
+  "cpu_only": true,
+  "failed_original_verifier": {
+    "bytes": 13259,
+    "path": "src/verify_controlled_lfe_projection_exchange_scientific_generation_v1.py",
+    "sha256": "a97f6413a1ab00a2f98de860f3072a99930f1f26f53bc43e21532d95579cf267"
+  },
+  "failure_diagnostic": {
+    "bytes": 1180,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/original_v1_failure_diagnostic_v1.json",
+    "sha256": "0ce9f25d7b4a5df6e61f3576c5cfdc44b1a560fccb1d61af84a4f3647b4b8fab"
+  },
+  "frozen_runtime_artifacts": {
+    "acquisition_scalar_hashes_v1.csv": {
+      "bytes": 4933,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/acquisition_scalar_hashes_v1.csv",
+      "sha256": "1a9931eb471c64b446f35b92f2b53155a9783eb16e1490cddf262d8128423b13"
+    },
+    "direction_scalar_diagnostics_v1.csv": {
+      "bytes": 55843,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/direction_scalar_diagnostics_v1.csv",
+      "sha256": "ade1613c7d4aaa690b8e7bf66c5456218f3822f37ea5dca6582ea9357ab753e3"
+    },
+    "execution_summary_v1.json": {
+      "bytes": 920,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/execution_summary_v1.json",
+      "sha256": "8ac7eb2e2efac6fee5d62db5cc432f4c10c56561b0b89fe3945aecbb6b647cb5"
+    },
+    "trajectory_status_v1.csv": {
+      "bytes": 65919,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/trajectory_status_v1.csv",
+      "sha256": "a348141997217a46190a893a11e7067ae9be56c9c29a3cda9cae9c3e2e29f831"
+    }
+  },
+  "gpu_execution_authorized": false,
+  "next_gate": "CPU_ONLY_SYNTHETIC_REGRESSION_TESTS_THEN_V2_INDEPENDENT_REVERIFICATION_AND_FREEZE",
+  "not_authorized": {
+    "decode": true,
+    "gpu_execution": true,
+    "model_or_weight_loading": true,
+    "modify_or_regenerate_private_latents": true,
+    "modify_original_v1_verifier_or_execution_authorization": true,
+    "modify_runtime_scalar_artifacts": true,
+    "network_or_remote_push": true,
+    "outcome_access_annotation_unblinding_or_analysis": true,
+    "reference_access_or_preprocessing": true,
+    "seed_2_or_other_shard_execution": true
+  },
+  "original_execution_authorization": {
+    "bytes": 7506,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_authorization_v1.json",
+    "sha256": "4fdd9ce0c8fd8e3d45358c00d4af34685e66d27e5adf1bc95c002846c6536345"
+  },
+  "regeneration_authorized": false,
+  "researcher_instruction": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_SCIENTIFIC_SEED_1_SHARD_VERIFIER_PERSISTED_SCHEMA_CORRECTION_SYNTHETIC_REGRESSION_TESTS_INDEPENDENT_REVERIFICATION_AND_FREEZE_NO_GPU_NO_REGENERATION",
+  "schema_version": 1,
+  "scientific_seed": 2686238281,
+  "scientific_seed_index": 1,
+  "scientific_shard_id": "seed_1",
+  "source_head_before_correction": "9bff06ba4103fc01bea6f2ed5db38a819d999e5d",
+  "status": "SCIENTIFIC_SEED_1_SHARD_VERIFIER_PERSISTED_SCHEMA_CORRECTION_CPU_ONLY_AUTHORIZED"
+}

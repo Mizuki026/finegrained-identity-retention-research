@@ -1,0 +1,14 @@
+{
+  "all_paths_bytes_sha256_match": true,
+  "gpu_used": false,
+  "independent_verification_output_created": false,
+  "manifest": {
+    "artifact_rows": 13,
+    "bytes": 2607,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/verifier_schema_correction_evidence_manifest_v1.csv",
+    "sha256": "df02fc2bbcadef1cbf619454861b77a39e58958c218d19674b17a4f724bb0dda"
+  },
+  "runtime_artifacts_modified": false,
+  "schema_version": 1,
+  "status": "PASS_VERIFIER_SCHEMA_CORRECTION_EVIDENCE_BINDINGS_REVERIFICATION_REMAINS_FAIL_CLOSED"
+}
