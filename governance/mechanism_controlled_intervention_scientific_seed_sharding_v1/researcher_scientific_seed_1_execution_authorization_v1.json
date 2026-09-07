@@ -1,0 +1,56 @@
+{
+  "authorization_id": "controlled_lfe_projection_exchange_scientific_seed_1_shard_execution",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "authorized": {
+    "640_transient_held_pair_out_directions": true,
+    "all_40_units": true,
+    "all_three_conditions_co_resident": true,
+    "complete_120_trajectory_seed_shard": true,
+    "fresh_40_reference_preprocessing_and_lfe_acquisitions": true,
+    "gpu_hours_hard_ceiling": 18,
+    "independent_seed_shard_verification": true,
+    "private_final_latent_persistence": true,
+    "scalar_lfe_direction_and_trajectory_evidence": true,
+    "scheduler_steps": 6000,
+    "single_gpu_device_index": 0
+  },
+  "authorized_at_utc": "2026-09-07",
+  "engineering_freeze": {
+    "bytes": 2524,
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_freeze_v1.json",
+    "sha256": "7e37d96b4411bf17a2ca59568a3c77ab31d2918e70a3ded45423d2c30531db14"
+  },
+  "execution_explicitly_approved": true,
+  "failure_policy": "STOP_ON_ANY_FAILURE_NO_AUTOMATIC_RETRY_RESUME_REPAIR_OR_SELECTIVE_RERUN; ANY RESTART REQUIRES NEW EXPLICIT RESEARCHER AUTHORIZATION",
+  "later_phases_authorized": false,
+  "next_gate": "MANUAL_TERMINAL_LAUNCH_THEN_INDEPENDENT_SEED_1_SHARD_VERIFICATION",
+  "not_authorized": {
+    "annotation": true,
+    "any_other_seed_shard": true,
+    "automatic_retry_resume_repair_or_rerun": true,
+    "condition_sharding": true,
+    "decoded_media": true,
+    "formal_intervention_analysis": true,
+    "network_or_remote_push": true,
+    "outcome_access_or_construction": true,
+    "selective_condition_or_trajectory_execution": true,
+    "unblinding": true
+  },
+  "phase": "scientific",
+  "phase_gpu_hours_ceiling": 18.0,
+  "private_latent_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_shards/seed_1",
+  "researcher_instruction": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_SEED_1_SHARD_EXECUTION; provide terminal start and status commands",
+  "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1",
+  "schema_version": 1,
+  "scientific_seed": 2686238281,
+  "scientific_seed_index": 1,
+  "scientific_shard_id": "seed_1",
+  "seed_sharding_preparation_freeze": {
+    "bytes": 3202,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_sharding_preparation_freeze_v1.json",
+    "sha256": "bba992895cb5ccef0f4307cb76010c756754df9dbd4032855d47143912d33734"
+  },
+  "shard_family_id": "controlled_lfe_projection_exchange_scientific_seed_shards_v1",
+  "source_head_before_authorization": "5b6e060113a338ed406319804d63b14042dcb791",
+  "status": "CONTROLLED_INTERVENTION_SCIENTIFIC_SEED_SHARD_GPU_EXECUTION_AUTHORIZED"
+}
