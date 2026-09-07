@@ -1,0 +1,156 @@
+{
+  "amendment_id": "controlled_lfe_projection_exchange_prospective_four_seed_shards_v1",
+  "amendment_scope": "Execution packaging and repeated acquisition transactions only; frozen samples, references, prompt, model, scheduler, guidance, precision, metrics, thresholds, frame indices, conditions, intervention dose, and exclusion rules are unchanged.",
+  "condition_sharding": "REJECTED",
+  "failure_policy": {
+    "automatic_retry_resume_or_repair": false,
+    "completed_verified_shard_rerun": false,
+    "failed_or_interrupted_shard_policy": "Stop and preserve/quarantine evidence; restarting the entire shard requires new explicit researcher authorization.",
+    "reduced_3_of_4_or_other_family": false,
+    "trajectory_or_condition_level_resume": false
+  },
+  "frozen_family": {
+    "attributes": [
+      "eyeglasses",
+      "facial_hair"
+    ],
+    "combined_scheduler_steps": 24000,
+    "combined_trajectories": 480,
+    "conditions": [
+      "baseline",
+      "target_projection_exchange",
+      "orthogonal_sham"
+    ],
+    "formal_units": 40,
+    "pairs_per_attribute": 10,
+    "pairs_total": 20,
+    "reduced_family_allowed": false,
+    "seeds": [
+      2686238281,
+      280026145,
+      2169901996,
+      2046930553
+    ]
+  },
+  "global_compute": {
+    "expected_gpu_hours": [
+      35,
+      50
+    ],
+    "single_gpu_only": true,
+    "sum_of_shard_hard_ceilings": 72
+  },
+  "interpretation_limits": {
+    "fallback_only_run_or_shard_level_limitation_no_assignment_exclusion_or_rerun": true,
+    "no_cross_seed_interpretation_until_4_of_4_hash_and_completeness_gate": true,
+    "primary_condition_contrasts_within_seed_shard": true,
+    "seed_and_acquisition_transaction_confounded": true
+  },
+  "later_phase_gate": "No decode, annotation, unblinding, outcome construction, or intervention analysis until all four independently verified shards pass the combined family verifier and receive separate authorization.",
+  "ordering_policy": "Execute seed_1, seed_2, seed_3, seed_4 sequentially; each requires separate authorization and independent shard verification.",
+  "repeated_transaction_change": {
+    "family_total_acquisitions": 160,
+    "family_total_transient_directions": 2560,
+    "fresh_reference_preprocessing_and_lfe_acquisitions_per_shard": 40,
+    "held_pair_out_directions_per_shard": 640,
+    "reason": "Each seed shard is an independently restartable complete transaction; cross-shard scalar hashes gate equivalence."
+  },
+  "scalar_only_cross_shard_evidence": {
+    "acquisition_lfe_hashes_per_shard": 40,
+    "canonical_tensor_bytes": "detached contiguous CPU float32",
+    "direction_and_sham_hash_pairs_per_shard": 640,
+    "four_of_four_exact_hash_equality_required_before_decode": true,
+    "raw_identity_lfe_or_direction_tensors_persisted": false
+  },
+  "schema_version": 1,
+  "seed_complete_sharding": "ACCEPTED",
+  "shard_family_id": "controlled_lfe_projection_exchange_scientific_seed_shards_v1",
+  "shards": [
+    {
+      "conditions": 3,
+      "execution_status": "REQUIRES_SEPARATE_RESEARCHER_GPU_AUTHORIZATION",
+      "expected_gpu_hours": [
+        8.75,
+        12.5
+      ],
+      "formal_units": 40,
+      "hard_ceiling_gpu_hours": 18,
+      "planning_gpu_hours": [
+        9,
+        13
+      ],
+      "scheduler_steps": 6000,
+      "scientific_seed": 2686238281,
+      "scientific_seed_index": 1,
+      "scientific_shard_id": "seed_1",
+      "source_tasks": 40,
+      "trajectories": 120
+    },
+    {
+      "conditions": 3,
+      "execution_status": "REQUIRES_SEPARATE_RESEARCHER_GPU_AUTHORIZATION",
+      "expected_gpu_hours": [
+        8.75,
+        12.5
+      ],
+      "formal_units": 40,
+      "hard_ceiling_gpu_hours": 18,
+      "planning_gpu_hours": [
+        9,
+        13
+      ],
+      "scheduler_steps": 6000,
+      "scientific_seed": 280026145,
+      "scientific_seed_index": 2,
+      "scientific_shard_id": "seed_2",
+      "source_tasks": 40,
+      "trajectories": 120
+    },
+    {
+      "conditions": 3,
+      "execution_status": "REQUIRES_SEPARATE_RESEARCHER_GPU_AUTHORIZATION",
+      "expected_gpu_hours": [
+        8.75,
+        12.5
+      ],
+      "formal_units": 40,
+      "hard_ceiling_gpu_hours": 18,
+      "planning_gpu_hours": [
+        9,
+        13
+      ],
+      "scheduler_steps": 6000,
+      "scientific_seed": 2169901996,
+      "scientific_seed_index": 3,
+      "scientific_shard_id": "seed_3",
+      "source_tasks": 40,
+      "trajectories": 120
+    },
+    {
+      "conditions": 3,
+      "execution_status": "REQUIRES_SEPARATE_RESEARCHER_GPU_AUTHORIZATION",
+      "expected_gpu_hours": [
+        8.75,
+        12.5
+      ],
+      "formal_units": 40,
+      "hard_ceiling_gpu_hours": 18,
+      "planning_gpu_hours": [
+        9,
+        13
+      ],
+      "scheduler_steps": 6000,
+      "scientific_seed": 2046930553,
+      "scientific_seed_index": 4,
+      "scientific_shard_id": "seed_4",
+      "source_tasks": 40,
+      "trajectories": 120
+    }
+  ],
+  "status": "PREREGISTERED_PROSPECTIVE_FOUR_SEED_SHARD_EXECUTION_PACKAGING_ONLY_NO_GPU_AUTHORITY",
+  "within_shard_invariants": {
+    "all_three_conditions_same_process_per_task": true,
+    "condition_selective_execution_forbidden": true,
+    "same_initial_latent_and_spatial_reference_route_across_conditions": true
+  }
+}

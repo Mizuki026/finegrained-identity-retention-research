@@ -92,6 +92,32 @@ class ControlledInterventionTests(unittest.TestCase):
         self.assertEqual(sum(int(row["scheduler_positions"]) for row in rows), 24)
         self.assertEqual({int(row["seed_index"]) for row in rows}, {1})
 
+    def test_03b_scientific_seed_shards_are_complete_and_condition_co_resident(self):
+        with self.assertRaises(runtime.ControlledInterventionRuntimeError):
+            runtime._phase_rows("scientific")
+        combined = []
+        for seed_index, seed in enumerate(protocol.SEEDS, 1):
+            rows = runtime._phase_rows("scientific", seed_index)
+            self.assertEqual(len(rows), 120)
+            self.assertEqual(sum(int(row["scheduler_positions"]) for row in rows), 6000)
+            self.assertEqual({int(row["seed"]) for row in rows}, {seed})
+            by_task = {}
+            for row in rows:
+                by_task.setdefault(row["planned_task_id"], set()).add(row["condition"])
+            self.assertEqual(len(by_task), 40)
+            self.assertTrue(all(value == set(protocol.CONDITIONS) for value in by_task.values()))
+            combined.extend(rows)
+        self.assertEqual(
+            {(row["planned_task_id"], row["condition"]) for row in combined},
+            {(row["planned_task_id"], row["condition"]) for row in protocol.execution_plan()},
+        )
+
+    def test_03c_superseded_monolithic_scientific_authorization_is_rejected(self):
+        old = REPO / "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_execution_authorization_v1.json"
+        output = Path("/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific/run_001")
+        with self.assertRaises(runner.ControlledInterventionRunnerError):
+            runner.validate_active(old, output, "scientific")
+
     def test_04_sham_is_deterministic_unit_and_orthogonal(self):
         import torch
 

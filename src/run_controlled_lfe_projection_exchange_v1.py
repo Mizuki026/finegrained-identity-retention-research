@@ -51,6 +51,12 @@ ABORT_FREEZE_STATUS = (
     "ORTHOGONALITY_INVARIANT_BEFORE_ANY_TRAJECTORY"
 )
 ENGINEERING_PASS_FREEZE_STATUS = "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_SINGLE_GPU_ENGINEERING"
+SHARDING_DIR = protocol.REPO / "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1"
+SHARDING_FREEZE = SHARDING_DIR / "scientific_seed_sharding_preparation_freeze_v1.json"
+SHARDING_FREEZE_STATUS = "FROZEN_PASS_PROSPECTIVE_FOUR_SEED_SHARD_PREPARATION_ONLY_NO_GPU_EXECUTION"
+SHARD_AUTH_STATUS = "CONTROLLED_INTERVENTION_SCIENTIFIC_SEED_SHARD_GPU_EXECUTION_AUTHORIZED"
+SHARD_VERIFIER = protocol.REPO / "src/verify_controlled_lfe_projection_exchange_scientific_generation_v1.py"
+FAMILY_VERIFIER = protocol.REPO / "src/verify_controlled_lfe_projection_exchange_scientific_seed_family_v1.py"
 
 
 def _git(repository: Path, *args: str) -> str:
@@ -142,7 +148,10 @@ def dry_run(auth_file: Path, output_dir: Path) -> int:
 def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
     protocol.validate_implementation_authority()
     auth = protocol.read_json(auth_file)
-    expected_status = f"CONTROLLED_INTERVENTION_{phase.upper()}_GPU_EXECUTION_AUTHORIZED"
+    expected_status = (
+        "CONTROLLED_INTERVENTION_ENGINEERING_GPU_EXECUTION_AUTHORIZED"
+        if phase == "engineering" else SHARD_AUTH_STATUS
+    )
     if auth.get("status") != expected_status or auth.get("execution_explicitly_approved") is not True:
         raise ControlledInterventionRunnerError("active phase execution lacks separate authorization")
     if auth.get("phase") != phase:
@@ -192,9 +201,47 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
         engineering = protocol.bound(auth.get("engineering_freeze", {}), "engineering pass freeze")
         if protocol.read_json(engineering).get("status") != ENGINEERING_PASS_FREEZE_STATUS:
             raise ControlledInterventionRunnerError("engineering pass freeze drift")
-        if auth.get("scientific_run_id") != "run_001" or auth.get("prior_execution_reused") is not False:
-            raise ControlledInterventionRunnerError("scientific transaction identity drift")
+        amendment = protocol.bound(auth.get("seed_sharding_preparation_freeze", {}), "seed sharding preparation freeze")
+        if amendment.resolve() != SHARDING_FREEZE.resolve() or protocol.read_json(amendment).get("status") != SHARDING_FREEZE_STATUS:
+            raise ControlledInterventionRunnerError("prospective seed-sharding amendment is not frozen pass")
+        for label, expected_path in (
+            ("scientific_generation_verifier", SHARD_VERIFIER),
+            ("scientific_seed_family_verifier", FAMILY_VERIFIER),
+        ):
+            if protocol.bound(auth.get(label, {}), label).resolve() != expected_path.resolve():
+                raise ControlledInterventionRunnerError(f"{label} path drift")
+        try:
+            seed_index = int(auth.get("scientific_seed_index"))
+        except (TypeError, ValueError) as error:
+            raise ControlledInterventionRunnerError("scientific seed shard index missing") from error
+        if seed_index not in range(1, 5):
+            raise ControlledInterventionRunnerError("scientific seed shard index outside 1..4")
+        expected_shard = f"seed_{seed_index}"
+        researcher_shard = protocol.bound(
+            auth.get("researcher_shard_execution_authorization", {}), "researcher shard execution authorization"
+        )
+        researcher_payload = protocol.read_json(researcher_shard)
+        if researcher_payload.get("status") != SHARD_AUTH_STATUS or researcher_payload.get("scientific_shard_id") != expected_shard:
+            raise ControlledInterventionRunnerError("researcher shard execution authorization drift")
+        if (
+            auth_file.resolve() != (SHARDING_DIR / f"scientific_{expected_shard}_execution_authorization_v1.json").resolve()
+            or auth.get("status") != SHARD_AUTH_STATUS
+            or auth.get("shard_family_id") != "controlled_lfe_projection_exchange_scientific_seed_shards_v1"
+            or auth.get("scientific_shard_id") != expected_shard
+            or auth.get("scientific_seed") != protocol.SEEDS[seed_index - 1]
+            or auth.get("prior_execution_reused") is not False
+            or auth.get("superseded_monolithic_run_001_reused") is not False
+        ):
+            raise ControlledInterventionRunnerError("scientific seed shard transaction identity drift")
+        expected_output = Path(
+            f"/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/{expected_shard}"
+        )
+        expected_private = Path(
+            f"/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_shards/{expected_shard}"
+        )
         private_root = Path(str(auth.get("private_latent_output_dir", "")))
+        if output_dir.resolve() != expected_output.resolve() or private_root.resolve() != expected_private.resolve():
+            raise ControlledInterventionRunnerError("scientific shard output path drift")
         if not private_root.is_absolute() or protocol.REPO.resolve() in private_root.resolve().parents:
             raise ControlledInterventionRunnerError("private latent path must be absolute and outside Git")
         private_parent = private_root.parent
@@ -203,13 +250,22 @@ def validate_active(auth_file: Path, output_dir: Path, phase: str) -> dict:
         minimum_free = int(auth.get("minimum_private_filesystem_free_bytes", 0))
         if minimum_free < 20 * 1024**3 or shutil.disk_usage(private_parent).free < minimum_free:
             raise ControlledInterventionRunnerError("private latent filesystem free-space gate failed")
+        if float(auth.get("phase_gpu_hours_ceiling", 0)) != 18.0:
+            raise ControlledInterventionRunnerError("scientific seed shard GPU ceiling must be exactly 18 hours")
         authority = auth.get("authority", {})
-        required = ("scientific_generation", "private_final_latent_persistence", "complete_480_trajectory_transaction")
+        required = (
+            "scientific_generation", "private_final_latent_persistence",
+            "complete_120_trajectory_seed_shard", "all_three_conditions_co_resident",
+            "fresh_40_unit_acquisition", "scalar_lfe_and_direction_hash_evidence",
+        )
         if any(authority.get(key) is not True for key in required):
-            raise ControlledInterventionRunnerError("scientific generation authority incomplete")
-        forbidden = ("decoded_media", "outcome_access", "annotation", "unblinding", "formal_analysis")
+            raise ControlledInterventionRunnerError("scientific seed shard authority incomplete")
+        forbidden = (
+            "condition_sharding", "selective_trajectory_resume_or_rerun", "decoded_media",
+            "outcome_access", "annotation", "unblinding", "formal_analysis",
+        )
         if any(authority.get(key) is not False for key in forbidden):
-            raise ControlledInterventionRunnerError("scientific authorization enables a later phase")
+            raise ControlledInterventionRunnerError("scientific seed shard authorization enables a forbidden phase")
     cuda = str(auth.get("cuda_visible_devices", ""))
     if not cuda.isdigit() or "," in cuda or os.environ.get("CUDA_VISIBLE_DEVICES") != cuda:
         raise ControlledInterventionRunnerError("single-GPU binding mismatch")

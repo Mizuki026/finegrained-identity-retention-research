@@ -35,6 +35,12 @@ def _as_cpu_float(value: Any, expected_dim: int) -> Any:
     return tensor.clone()
 
 
+def tensor_scalar_sha256(value: Any) -> str:
+    """Hash canonical CPU float32 bytes without persisting tensor contents."""
+    tensor = value.detach().float().cpu().contiguous()
+    return hashlib.sha256(tensor.numpy().tobytes()).hexdigest()
+
+
 def within_frozen_tolerance(left: Any, right: Any) -> bool:
     torch = _torch()
     a = left.detach().float().cpu()

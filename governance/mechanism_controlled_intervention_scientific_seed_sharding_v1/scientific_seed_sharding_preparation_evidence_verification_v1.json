@@ -1,0 +1,19 @@
+{
+  "active_shard_gpu_authorizations": 0,
+  "all_paths_bytes_sha256_match": true,
+  "cpu_only": true,
+  "gpu_used": false,
+  "manifest": {
+    "artifact_rows": 18,
+    "bytes": 3182,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_sharding_preparation_evidence_manifest_v1.csv",
+    "sha256": "4c39bb1b0dafa1df35e02ad55e40e4e14c7910e4dca66b111da73678d48f9f3b"
+  },
+  "model_or_weights_loaded": false,
+  "outcome_accessed": false,
+  "reference_accessed": false,
+  "schema_version": 1,
+  "status": "PASS_PROSPECTIVE_FOUR_SEED_SHARD_PREPARATION_EVIDENCE_VERIFICATION",
+  "torch_imported": false,
+  "trajectory_executed": false
+}

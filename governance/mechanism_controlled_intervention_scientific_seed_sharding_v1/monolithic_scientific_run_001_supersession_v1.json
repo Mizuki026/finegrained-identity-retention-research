@@ -1,0 +1,36 @@
+{
+  "historical_artifacts_preserved": true,
+  "observed_absent_paths": [
+    "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific/run_001",
+    "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific/run_001.partial",
+    "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private/run_001"
+  ],
+  "prior_scientific_execution_started": false,
+  "reason": "Prospective researcher-approved replacement by four seed-complete shards; condition sharding rejected.",
+  "reuse_policy": {
+    "old_execution_authorization_reusable": false,
+    "old_runtime_output_reusable": false,
+    "old_terminal_command_reusable": false,
+    "runner_must_reject_monolithic_authorization": true
+  },
+  "schema_version": 1,
+  "status": "SUPERSEDED_NEVER_EXECUTED_MONOLITHIC_SCIENTIFIC_RUN_001_NOT_REUSABLE",
+  "superseded_artifacts": {
+    "execution_authorization": {
+      "bytes": 6947,
+      "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_execution_authorization_v1.json",
+      "sha256": "1760d8a30ecd44ef4a782edd2327dc44779dd3f85441243c2d14adac56c5f9e5"
+    },
+    "preparation_freeze": {
+      "bytes": 2046,
+      "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_preparation_freeze_v1.json",
+      "sha256": "06e51af93efaed477de15435f784a2eafea2a55d1dbc360157b97a15d12c6bd4"
+    },
+    "terminal_command": {
+      "bytes": 673,
+      "path": "governance/mechanism_controlled_intervention_scientific_v1/scientific_run_001_terminal_command_v1.sh",
+      "sha256": "760c110f6825e52620a4b6408d27da75834a19aa3e93ec604f797d8fb0108c20"
+    }
+  },
+  "superseded_at_utc": "2026-09-07"
+}

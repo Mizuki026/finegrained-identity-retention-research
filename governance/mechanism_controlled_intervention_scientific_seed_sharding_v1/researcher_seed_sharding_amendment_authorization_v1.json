@@ -1,0 +1,37 @@
+{
+  "accepted_design": {
+    "all_three_conditions_co_resident_per_task": true,
+    "condition_shards": false,
+    "seed_complete_shards": 4
+  },
+  "authorization_id": "prospective_four_seed_shard_scientific_protocol_amendment_cpu_preparation_v1",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "authorized": {
+    "cpu_only_no_weight_preparation_verification": true,
+    "cpu_only_synthetic_tests": true,
+    "empty_private_parent_creation_mode_0700": true,
+    "governance_readiness_and_freeze": true,
+    "prospective_protocol_amendment": true,
+    "runner_instrumentation_and_verifier_preparation": true,
+    "scalar_only_lfe_and_direction_hash_evidence": true
+  },
+  "authorized_at_utc": "2026-09-07",
+  "gpu_execution_authorized": false,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_ONE_SINGLE_GPU_SCIENTIFIC_SEED_SHARD_EXECUTION",
+  "not_authorized": {
+    "active_seed_shard_execution_authorization_creation": true,
+    "condition_sharding": true,
+    "generation_or_decode": true,
+    "gpu_execution": true,
+    "model_module_or_weight_loading": true,
+    "network_or_remote_push": true,
+    "outcome_access_annotation_unblinding_or_analysis": true,
+    "partial_resume_or_selective_rerun": true,
+    "reference_access_or_preprocessing": true,
+    "trajectory_or_intervention_execution": true
+  },
+  "researcher_instruction": "\u63a5\u53d7\u201c\u56db\u4e2a seed-complete shards\u201d\uff0c\u62d2\u7edd\u201c\u4e09\u4e2a condition shards\u201d\uff1b\u5355\u72ec\u6388\u6743 prospective four-seed-shard scientific protocol amendment and CPU-only preparation only, no GPU execution",
+  "schema_version": 1,
+  "source_head_before_amendment": "1596809ad19a97f946089384d7cb30d3c805a26d",
+  "status": "PROSPECTIVE_FOUR_SEED_SHARD_PROTOCOL_AMENDMENT_CPU_PREPARATION_AUTHORIZED_ONLY"
+}

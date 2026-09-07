@@ -23,7 +23,7 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def _phase_rows(mode: str) -> list[dict[str, object]]:
+def _phase_rows(mode: str, scientific_seed_index: int | None = None) -> list[dict[str, object]]:
     rows = protocol.execution_plan()
     if mode == "engineering":
         chosen = protocol.engineering_pairs()
@@ -34,7 +34,24 @@ def _phase_rows(mode: str) -> list[dict[str, object]]:
         ]
         if len(rows) != 24:
             raise ControlledInterventionRuntimeError("engineering plan is not exactly 24 one-step conditions")
-    elif mode != "scientific":
+    elif mode == "scientific":
+        if scientific_seed_index not in range(1, len(protocol.SEEDS) + 1):
+            raise ControlledInterventionRuntimeError("scientific seed shard index must be exactly one of 1..4")
+        rows = [row for row in rows if int(row["seed_index"]) == scientific_seed_index]
+        task_ids = {str(row["planned_task_id"]) for row in rows}
+        if (
+            len(rows) != 120
+            or len(task_ids) != 40
+            or {str(row["condition"]) for row in rows} != set(protocol.CONDITIONS)
+            or any(
+                {str(row["condition"]) for row in rows if row["planned_task_id"] == task}
+                != set(protocol.CONDITIONS)
+                for task in task_ids
+            )
+            or sum(int(row["scheduler_positions"]) for row in rows) != 6000
+        ):
+            raise ControlledInterventionRuntimeError("scientific seed-complete shard plan drift")
+    else:
         raise ControlledInterventionRuntimeError(f"unknown runtime mode: {mode}")
     return rows
 
@@ -109,10 +126,24 @@ def execute_with_adapter(
             raise ControlledInterventionRuntimeError("adapter acquisition lifecycle evidence mismatch")
         from controlled_lfe_projection_exchange_instrumentation_v1 import (
             build_transient_interventions,
+            tensor_scalar_sha256,
         )
 
+        acquisition_hashes = (
+            [
+                {
+                    "planned_unit_id": unit,
+                    **metadata[unit],
+                    "canonical_dtype": "float32",
+                    "lfe_sha256": tensor_scalar_sha256(tensors[unit]),
+                }
+                for unit in sorted(expected_units)
+            ]
+            if mode == "scientific" else []
+        )
         bundle = build_transient_interventions(tensors, metadata)
-        rows = _phase_rows(mode)
+        seed_index = authorization.get("scientific_seed_index") if mode == "scientific" else None
+        rows = _phase_rows(mode, seed_index)
         statuses = []
         for row in rows:
             if time.monotonic() >= deadline:
@@ -134,7 +165,7 @@ def execute_with_adapter(
                 "scheduler_positions": row["scheduler_positions"], "status": "COMPLETE",
                 "finished_at_utc": _now(), **result,
             })
-        expected = 24 if mode == "engineering" else 480
+        expected = 24 if mode == "engineering" else 120
         if len(statuses) != expected:
             raise ControlledInterventionRuntimeError("trajectory completion count drift")
         staging = output_dir.with_name(output_dir.name + ".partial")
@@ -142,6 +173,15 @@ def execute_with_adapter(
         protocol.atomic_csv(staging / "trajectory_status_v1.csv", tuple(statuses[0]), statuses)
         if mode == "engineering":
             protocol.atomic_csv(staging / "direction_scalar_diagnostics_v1.csv", tuple(bundle.diagnostics[0]), bundle.diagnostics)
+        else:
+            protocol.atomic_csv(
+                staging / "acquisition_scalar_hashes_v1.csv",
+                tuple(acquisition_hashes[0]), acquisition_hashes,
+            )
+            protocol.atomic_csv(
+                staging / "direction_scalar_diagnostics_v1.csv",
+                tuple(bundle.diagnostics[0]), bundle.diagnostics,
+            )
         summary = {
             "schema_version": 1, "status": "COMPLETE_PENDING_INDEPENDENT_PHASE_VERIFICATION",
             "phase": mode, "fresh_preprocessing_calls": 40, "direct_lfe_acquisitions": 40,
@@ -152,6 +192,15 @@ def execute_with_adapter(
             "elapsed_gpu_hours": (time.monotonic() - started) / 3600,
             "phase_gpu_hours_ceiling": ceiling,
         }
+        if mode == "scientific":
+            summary.update(
+                shard_family_id=str(authorization.get("shard_family_id")),
+                scientific_shard_id=str(authorization.get("scientific_shard_id")),
+                scientific_seed_index=int(seed_index),
+                scientific_seed=int(protocol.SEEDS[int(seed_index) - 1]),
+                seed_complete_shard=True,
+                conditions_co_resident=list(protocol.CONDITIONS),
+            )
         protocol.atomic_json(staging / "execution_summary_v1.json", summary)
         staging.replace(output_dir)
         return summary

@@ -1,0 +1,25 @@
+{
+  "active_execution_authorization_files_created": false,
+  "first_possible_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_SEED_1_SHARD_EXECUTION",
+  "forbidden": {
+    "automatic_resume_or_retry": true,
+    "condition_sharding": true,
+    "decode_or_later_phase": true,
+    "selective_trajectory_rerun": true
+  },
+  "required_per_shard": {
+    "all_three_conditions_co_resident": true,
+    "clean_bound_code_and_repository_state": true,
+    "exact_120_trajectories_and_6000_steps": true,
+    "exact_seed_index_and_value": true,
+    "fresh_40_unit_acquisition": true,
+    "hard_ceiling_gpu_hours": 18,
+    "output_roots_absent": true,
+    "private_parent_mode_0700_and_free_space_gate": true,
+    "scalar_hash_evidence": true,
+    "separate_direct_researcher_authorization": true,
+    "single_gpu_index_0": true
+  },
+  "schema_version": 1,
+  "status": "PREPARED_REQUIREMENTS_ONLY_NOT_AN_EXECUTION_AUTHORIZATION"
+}

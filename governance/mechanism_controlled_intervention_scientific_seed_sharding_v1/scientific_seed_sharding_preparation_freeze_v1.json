@@ -1,0 +1,60 @@
+{
+  "active_shard_gpu_execution_authorizations": 0,
+  "amended_preregistration": {
+    "bytes": 5256,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/prospective_four_seed_shard_preregistration_v1.json",
+    "sha256": "604ef4b4b915c3dc12dec4a27ebebaea1706013e9e95501c5e3c5f993e08f248"
+  },
+  "condition_sharding_rejected": true,
+  "evidence_manifest": {
+    "artifact_rows": 18,
+    "bytes": 3182,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_sharding_preparation_evidence_manifest_v1.csv",
+    "sha256": "4c39bb1b0dafa1df35e02ad55e40e4e14c7910e4dca66b111da73678d48f9f3b"
+  },
+  "evidence_verification": {
+    "bytes": 680,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_sharding_preparation_evidence_verification_v1.json",
+    "sha256": "245a69fea8aa0ff17c12da948c794975261e6ae2fc3e1154be0f054963b447ac"
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_prospective_four_seed_shard_preparation_v1",
+  "frozen_at_utc": "2026-09-07",
+  "future_authorization_requirements": {
+    "bytes": 960,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/future_per_shard_authorization_requirements_v1.json",
+    "sha256": "6152a96ca8a571e8ce1248abca7502ebe4b0eaa695939919cc35d491472bd54b"
+  },
+  "gpu_execution_authorized": false,
+  "later_phases_authorized": false,
+  "monolithic_scientific_run_001_execution_started": false,
+  "monolithic_scientific_run_001_reusable": false,
+  "monolithic_supersession": {
+    "bytes": 1715,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/monolithic_scientific_run_001_supersession_v1.json",
+    "sha256": "5f9b3e0a18505c5ad3578e0fdc20020793658a0ffd2185029ac2f1f6ec654863"
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_SEED_1_SHARD_EXECUTION",
+  "preparation_verification": {
+    "bytes": 888,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_sharding_preparation_verification_v1.json",
+    "sha256": "ab0b0932d4375dd97c14ce1bdcd9967638e3ec790430d82fca0047e47287e66b"
+  },
+  "readiness": {
+    "bytes": 2339,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_sharding_preparation_readiness_v1.json",
+    "sha256": "381450a68b7cd8e66520bce230267bd9bf7c576b3799a43635a28507da5204a0"
+  },
+  "researcher_authorization": {
+    "bytes": 1833,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/researcher_seed_sharding_amendment_authorization_v1.json",
+    "sha256": "a4fa7a99a1b245a434607175eab4b38d6097db3ee7e4c610b36c3f1c6d5f1559"
+  },
+  "schema_version": 1,
+  "seed_complete_shards": 4,
+  "shard_preparation_matrix": {
+    "bytes": 2024,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_shard_preparation_matrix_v1.csv",
+    "sha256": "67988052473b3b43bb7a55eb6876b09868f1b7860380d9ba0082433fe8020724"
+  },
+  "status": "FROZEN_PASS_PROSPECTIVE_FOUR_SEED_SHARD_PREPARATION_ONLY_NO_GPU_EXECUTION"
+}

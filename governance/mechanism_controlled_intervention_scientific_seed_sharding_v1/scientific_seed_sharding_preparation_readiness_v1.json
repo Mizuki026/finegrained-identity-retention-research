@@ -1,0 +1,62 @@
+{
+  "authority_state": {
+    "active_seed_shard_gpu_execution_authorizations": 0,
+    "decode_or_later_phase_authorized": false,
+    "gpu_execution_authorized": false,
+    "model_or_weight_loading_authorized": false,
+    "reference_preprocessing_authorized": false,
+    "trajectory_generation_authorized": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_SEED_1_SHARD_EXECUTION",
+  "not_performed": {
+    "annotation": true,
+    "decode": true,
+    "formal_analysis": true,
+    "gpu_execution": true,
+    "latent_or_video_generation": true,
+    "model_or_weight_loading": true,
+    "network_or_remote_push": true,
+    "outcome_access_or_construction": true,
+    "reference_access_or_preprocessing": true,
+    "trajectory_or_intervention_execution": true,
+    "unblinding": true
+  },
+  "private_storage": {
+    "all_four_private_shard_roots_absent": true,
+    "observed_free_bytes": 115632394240,
+    "parent": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_shards",
+    "parent_mode": "0700"
+  },
+  "recorded_at_utc": "2026-09-07",
+  "repeated_acquisition_declaration": {
+    "directions_per_shard": 640,
+    "family_total_preprocessing_calls": 160,
+    "family_total_transient_directions": 2560,
+    "fresh_preprocessing_calls_per_shard": 40
+  },
+  "schema_version": 1,
+  "source_head_before_amendment": "1596809ad19a97f946089384d7cb30d3c805a26d",
+  "status": "PASS_PROSPECTIVE_FOUR_SEED_SHARD_CPU_ONLY_PREPARATION_ONLY_NO_GPU_EXECUTION",
+  "transaction": {
+    "combined_scheduler_steps": 24000,
+    "combined_trajectories": 480,
+    "condition_sharding_rejected": true,
+    "conditions_per_shard": 3,
+    "formal_units_per_shard": 40,
+    "global_hard_ceiling_gpu_hours": 72,
+    "hard_ceiling_gpu_hours_per_shard": 18,
+    "scheduler_steps_per_shard": 6000,
+    "seed_complete_shards": 4,
+    "trajectories_per_shard": 120
+  },
+  "verification": {
+    "combined_family_verifier_prepared": true,
+    "cpu_only_synthetic_tests": "24_OF_24_PASS",
+    "no_weight_preparation_verifier": "PASS",
+    "python_syntax": "PASS",
+    "ruff": "PASS",
+    "scalar_direction_and_sham_hash_pairs_per_shard": 640,
+    "scalar_lfe_hashes_per_shard": 40,
+    "superseded_monolithic_runner_gate": "BLOCKED_EXIT_2_BEFORE_MODEL_OR_REFERENCE_ACCESS"
+  }
+}
