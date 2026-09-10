@@ -1,0 +1,111 @@
+{
+  "authority": {
+    "analysis": false,
+    "decode": false,
+    "deterministic_640_direction_and_sham_reconstruction": true,
+    "exact_40_of_40_lfe_hash_gate": true,
+    "generation_pipeline_loading": false,
+    "independent_cpu_verification": true,
+    "latent_or_media_generation": false,
+    "network": false,
+    "outcome_access": false,
+    "private_latent_modification": false,
+    "scalar_hash_persistence": true,
+    "single_gpu_40_unit_acquisition": true,
+    "trajectory_execution": false
+  },
+  "authorization_id": "scientific_seed_1_direction_evidence_recovery_run_001",
+  "authorization_source": "Direct researcher instruction in the current session",
+  "authorized_at_utc": "2026-09-10",
+  "code": {
+    "base_runtime": {
+      "bytes": 21154,
+      "path": "src/controlled_lfe_projection_exchange_runtime_v1.py",
+      "sha256": "f7755e917d780ef4bec96b3e85f73ba24b65a305a3067117205154d2e25c3b4d"
+    },
+    "instrumentation": {
+      "bytes": 17272,
+      "path": "src/controlled_lfe_projection_exchange_instrumentation_v1.py",
+      "sha256": "a9fdd1e6055e6742b20053552d6dcfd9628831e1d063e0c85a8f7fd9354f4a91"
+    },
+    "protocol": {
+      "bytes": 14803,
+      "path": "src/controlled_lfe_projection_exchange_protocol_v1.py",
+      "sha256": "58da1291f4600de36edd17724d493e4ea56d2705ba3080869a62b11cf0083ea2"
+    },
+    "recovery_math": {
+      "bytes": 2213,
+      "path": "src/controlled_lfe_direction_evidence_recovery_v1.py",
+      "sha256": "2e7b78e14728992b59f87f5f87933f882228a78b4dfa068c1272e3d27da6abdf"
+    },
+    "recovery_runner": {
+      "bytes": 8046,
+      "path": "src/run_controlled_lfe_direction_evidence_recovery_v1.py",
+      "sha256": "bde706ff15ac1dcb5ce5efa7bc6a6e4dc2cc2d732125f011feb10c6ae8f24100"
+    },
+    "recovery_verifier": {
+      "bytes": 4685,
+      "path": "src/verify_controlled_lfe_direction_evidence_recovery_v1.py",
+      "sha256": "78532f05aeda3ae66d53285a21cecc72a7fc4f0436ad130619a4f5b0af164291"
+    }
+  },
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+  "cuda_visible_devices": "0",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "HF_HUB_OFFLINE": "1",
+    "LOCAL_WORLD_SIZE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "TRANSFORMERS_OFFLINE": "1",
+    "WORLD_SIZE": "1"
+  },
+  "executed_acquisition_hashes": {
+    "bytes": 4933,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/acquisition_scalar_hashes_v1.csv",
+    "sha256": "1a9931eb471c64b446f35b92f2b53155a9783eb16e1490cddf262d8128423b13"
+  },
+  "executed_direction_diagnostics": {
+    "bytes": 55843,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/direction_scalar_diagnostics_v1.csv",
+    "sha256": "ade1613c7d4aaa690b8e7bf66c5456218f3822f37ea5dca6582ea9357ab753e3"
+  },
+  "execution_explicitly_approved": true,
+  "failure_policy": "FAIL_CLOSED_IF_ANY_OF_40_LFE_HASHES_DIFFERS; NO_DIRECTION_BACKFILL, TRAJECTORY, REGENERATION, RESUME, OR RETRY WITHOUT NEW AUTHORIZATION",
+  "formal_generation_master": {
+    "bytes": 6294,
+    "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/pre_generation_master_freeze_v1.json",
+    "sha256": "149e5deba4d14b4591186416dbe4e12efb3ed19437c0cca0642eaff8a6d5eed8"
+  },
+  "formal_task_binding_manifest": {
+    "bytes": 49336,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001/formal_task_binding_manifest_v1.csv",
+    "sha256": "d39bee233620ea52a7f0f0719b9bc80f6d15f65d7e8ead96146b06699d5e82a0"
+  },
+  "gpu_execution_authorized": true,
+  "local_world_size": 1,
+  "next_gate": "EXECUTE_RECOVERY_RUN_001_THEN_CPU_ONLY_INDEPENDENT_RECOVERY_VERIFICATION_AND_FREEZE",
+  "original_seed_1_execution_authorization": {
+    "bytes": 7506,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_sharding_v1/scientific_seed_1_execution_authorization_v1.json",
+    "sha256": "4fdd9ce0c8fd8e3d45358c00d4af34685e66d27e5adf1bc95c002846c6536345"
+  },
+  "phase_gpu_hours_ceiling": 2.0,
+  "recovery_run_id": "run_001",
+  "researcher_instruction": "\u5355\u72ec\u6388\u6743 single-GPU direction-evidence recovery audit",
+  "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_direction_recovery/seed_1_run_001",
+  "schema_correction_abort_freeze": {
+    "bytes": 3141,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_verifier_schema_correction_v1/verifier_schema_correction_abort_freeze_v1.json",
+    "sha256": "3de584243bef927346c9a65ee1aefe93f2f69e4e283e7072a117119e7a4cfb07"
+  },
+  "schema_version": 1,
+  "scientific_seed": 2686238281,
+  "scientific_seed_index": 1,
+  "scientific_shard_id": "seed_1",
+  "source_head_before_recovery_preparation": "c7a1aef84eda6c41238e1474b68be7531852af79",
+  "status": "SINGLE_GPU_SCIENTIFIC_SEED_1_DIRECTION_EVIDENCE_RECOVERY_AUDIT_AUTHORIZED",
+  "world_size": 1
+}
