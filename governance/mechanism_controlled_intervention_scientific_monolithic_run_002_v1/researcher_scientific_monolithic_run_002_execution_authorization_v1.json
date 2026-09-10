@@ -1,0 +1,37 @@
+{
+  "authorization_id": "researcher_single_gpu_controlled_intervention_scientific_monolithic_run_002_480_trajectory_execution",
+  "authorization_string": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_MONOLITHIC_RUN_002_480_TRAJECTORY_EXECUTION",
+  "authorized": {
+    "complete_480_trajectory_generation": true,
+    "fresh_reference_preprocessing_and_40_direct_lfe_acquisitions": true,
+    "private_final_latent_persistence": true,
+    "scalar_acquisition_direction_and_sham_hash_evidence": true,
+    "single_gpu_scientific_execution": true,
+    "single_transaction_four_seed_monolithic_execution": true
+  },
+  "authorized_at_utc": "2026-09-10",
+  "failure_policy": "FAIL CLOSED; NO RETRY, RESUME, REPAIR, SELECTIVE RERUN, REDUCED PANEL, OR MERGE WITH SEED_1 SHARD",
+  "gpu_hours_ceiling": 72.0,
+  "next_gate": "INDEPENDENT_SCIENTIFIC_MONOLITHIC_RUN_002_GENERATION_VERIFICATION_AND_FREEZE_REQUIRES_SEPARATE_RESEARCHER_AUTHORIZATION",
+  "not_authorized": {
+    "annotation_or_unblinding": true,
+    "automatic_retry_resume_repair_or_selective_rerun": true,
+    "decode_or_public_generated_video": true,
+    "fine_tuning_or_lora": true,
+    "formal_intervention_analysis": true,
+    "multi_gpu_or_distributed_execution": true,
+    "network_or_remote_push": true,
+    "outcome_access_or_construction": true,
+    "prior_direction_or_acquisition_reuse": true,
+    "prior_seed_1_shard_merge_or_reuse": true,
+    "reduced_panel_or_failed_sample_deletion": true,
+    "seed_or_condition_sharding": true
+  },
+  "preparation_freeze": {
+    "bytes": 5900,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_freeze_v1.json",
+    "sha256": "1afe9b7a19451e59e387c7e8e60bea9668b7b0636bdcf25c8cfafa228ed1a461"
+  },
+  "schema_version": 1,
+  "status": "RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_MONOLITHIC_RUN_002_480_TRAJECTORY_EXECUTION"
+}

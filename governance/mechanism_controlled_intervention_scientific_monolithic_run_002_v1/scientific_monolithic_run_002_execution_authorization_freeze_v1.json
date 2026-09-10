@@ -1,0 +1,41 @@
+{
+  "active_binding_verification": "19/19 PASS",
+  "active_execution_authorization": {
+    "bytes": 8090,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_authorization_v1.json",
+    "sha256": "5767c4ffa9395bef18aa5baa40951cc07e3528ea55eba58e455179d544e863e9"
+  },
+  "authorized_gpu_hours_ceiling": 72.0,
+  "authorized_scheduler_steps": 24000,
+  "authorized_trajectories": 480,
+  "execution_readiness": {
+    "bytes": 2688,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_readiness_v1.json",
+    "sha256": "d02ca270dc3b903ac67dde8b1b5514aff0b3603f25a05c241f817ce166b94ca9"
+  },
+  "execution_started_at_freeze": false,
+  "freeze_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002_active_execution_authorization",
+  "frozen_at_utc": "2026-09-10",
+  "launch_script": {
+    "bytes": 1547,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_launch_nohup_v1.sh",
+    "sha256": "012398cc3bc0974ef0a80d58c8617a6ce9f0156e911e8296b8a9975802df5015"
+  },
+  "next_action": "RESEARCHER_MAY_LAUNCH_USING_FROZEN_NOHUP_SCRIPT",
+  "post_generation_stages_authorized": false,
+  "private_output_absent_at_freeze": true,
+  "researcher_execution_authorization": {
+    "bytes": 1966,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/researcher_scientific_monolithic_run_002_execution_authorization_v1.json",
+    "sha256": "cb39452b9f14e9e30e4c5acfb28d15084692098fb0fcc8f8b9f41929af476140"
+  },
+  "runtime_output_absent_at_freeze": true,
+  "runtime_partial_absent_at_freeze": true,
+  "schema_version": 1,
+  "status": "FROZEN_ACTIVE_SINGLE_GPU_MONOLITHIC_RUN_002_EXECUTION_AUTHORIZATION_READY_NOT_STARTED",
+  "status_script": {
+    "bytes": 1131,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_status_v1.sh",
+    "sha256": "394931e71624e6442f2405043d4b779e195385994fd3eae61b69b91c25e1b297"
+  }
+}

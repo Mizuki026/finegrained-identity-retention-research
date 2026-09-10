@@ -1,0 +1,60 @@
+{
+  "active_execution_authorization": {
+    "bytes": 8090,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_authorization_v1.json",
+    "sha256": "5767c4ffa9395bef18aa5baa40951cc07e3528ea55eba58e455179d544e863e9"
+  },
+  "authorized_transaction": {
+    "conditions": 3,
+    "direction_and_sham_hash_pairs": 640,
+    "expected_gpu_hours_range": [
+      35.0,
+      50.0
+    ],
+    "fresh_acquisitions": 40,
+    "gpu_hours_ceiling": 72.0,
+    "scheduler_steps": 24000,
+    "seeds": 4,
+    "single_gpu": true,
+    "single_process": true,
+    "trajectories": 480
+  },
+  "execution_started": false,
+  "failure_policy": "NO AUTOMATIC RETRY, RESUME, REPAIR, SELECTIVE RERUN, REDUCED PANEL, OR PRIOR-SEED MERGE",
+  "later_phases_authorized": false,
+  "launch_script": {
+    "bytes": 1547,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_launch_nohup_v1.sh",
+    "sha256": "012398cc3bc0974ef0a80d58c8617a6ce9f0156e911e8296b8a9975802df5015"
+  },
+  "next_gate_after_generation": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_INDEPENDENT_MONOLITHIC_RUN_002_GENERATION_VERIFICATION_AND_FREEZE",
+  "preflight": {
+    "active_binding_failures": 0,
+    "active_bindings_verified": 19,
+    "consisid_head": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_worktree_clean": true,
+    "minimum_private_filesystem_free_bytes": 21474836480,
+    "private_filesystem_available_bytes": 115360915456,
+    "private_parent_mode": "0700",
+    "private_run_output_absent": true,
+    "research_branch": "main",
+    "research_head_before_authorization_commit": "18194ee17324494078bff7a07b2e8c9cd8a5b5c9",
+    "research_worktree_clean_before_authorization_files": true,
+    "runtime_output_absent": true,
+    "runtime_partial_absent": true
+  },
+  "prepared_at_utc": "2026-09-10",
+  "readiness_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002_active_execution",
+  "researcher_execution_authorization": {
+    "bytes": 1966,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/researcher_scientific_monolithic_run_002_execution_authorization_v1.json",
+    "sha256": "cb39452b9f14e9e30e4c5acfb28d15084692098fb0fcc8f8b9f41929af476140"
+  },
+  "schema_version": 1,
+  "status": "READY_FOR_RESEARCHER_LAUNCH_SINGLE_GPU_MONOLITHIC_RUN_002",
+  "status_script": {
+    "bytes": 1131,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_status_v1.sh",
+    "sha256": "394931e71624e6442f2405043d4b779e195385994fd3eae61b69b91c25e1b297"
+  }
+}

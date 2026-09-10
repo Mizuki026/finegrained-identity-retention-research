@@ -1,0 +1,181 @@
+{
+  "authority": {
+    "all_three_conditions_co_resident": true,
+    "annotation": false,
+    "automatic_retry_resume_or_selective_rerun": false,
+    "complete_480_trajectory_transaction": true,
+    "decoded_media": false,
+    "distributed_or_multi_gpu": false,
+    "formal_analysis": false,
+    "four_seeds_same_process": true,
+    "frozen_model_and_weight_loading": true,
+    "network": false,
+    "outcome_access": false,
+    "private_final_latent_persistence": true,
+    "reference_preprocessing_and_direct_lfe_acquisition": true,
+    "scalar_lfe_direction_and_sham_hash_evidence": true,
+    "scientific_generation": true,
+    "seed_or_condition_sharding": false,
+    "single_fresh_40_unit_acquisition": true,
+    "single_gpu": true,
+    "transient_direction_and_intervention": true,
+    "unblinding": false
+  },
+  "authorization_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002_active_execution",
+  "authorized_at_utc": "2026-09-10",
+  "code": {
+    "instrumentation": {
+      "bytes": 17501,
+      "path": "src/controlled_lfe_projection_exchange_instrumentation_v2.py",
+      "sha256": "c7157c27e8f60789a6bdbbde45626e99983252aff7e6b7ede0ac384461a0e68a"
+    },
+    "protocol": {
+      "bytes": 14803,
+      "path": "src/controlled_lfe_projection_exchange_protocol_v1.py",
+      "sha256": "58da1291f4600de36edd17724d493e4ea56d2705ba3080869a62b11cf0083ea2"
+    },
+    "runner": {
+      "bytes": 14995,
+      "path": "src/run_controlled_lfe_projection_exchange_monolithic_v2.py",
+      "sha256": "c1ce68d3d4b56bab2c50aeeafa2c8c805ccce8943b38fe18c915fca252737853"
+    },
+    "runtime": {
+      "bytes": 19788,
+      "path": "src/controlled_lfe_projection_exchange_monolithic_runtime_v2.py",
+      "sha256": "829c1195281852072455e4678fce9e2b4f7ec8659365a471bdcac2cbd8fc4d4a"
+    },
+    "verifier": {
+      "bytes": 14759,
+      "path": "src/verify_controlled_lfe_projection_exchange_scientific_monolithic_v2.py",
+      "sha256": "787be60e3fd982e0338ef03e9efcc3bc7703112a499339eb6c5079d9cbc5dc8c"
+    }
+  },
+  "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+  "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+  "cuda_visible_devices": "0",
+  "engineering_freeze": {
+    "bytes": 2524,
+    "path": "governance/mechanism_controlled_intervention_engineering_v1/engineering_run_006_freeze_v1.json",
+    "sha256": "7e37d96b4411bf17a2ca59568a3c77ab31d2918e70a3ded45423d2c30531db14"
+  },
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0",
+    "HF_HUB_DISABLE_TELEMETRY": "1",
+    "HF_HUB_OFFLINE": "1",
+    "LOCAL_WORLD_SIZE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TOKENIZERS_PARALLELISM": "false",
+    "TRANSFORMERS_OFFLINE": "1",
+    "WORLD_SIZE": "1"
+  },
+  "execution_explicitly_approved": true,
+  "expected_gpu_hours_range": [
+    35.0,
+    50.0
+  ],
+  "failure_policy": "STOP ON ANY FAILURE; NO AUTOMATIC RETRY, RESUME, REPAIR, SELECTIVE RERUN, REDUCED PANEL, PRIOR SEED MERGE, OR PARTIAL REUSE",
+  "formal_generation_master": {
+    "bytes": 6294,
+    "path": "/root/autodl-tmp/finegrained/formal_experiment_v1_runtime/experiment_freeze_v1/pre_generation_master_freeze_v1.json",
+    "sha256": "149e5deba4d14b4591186416dbe4e12efb3ed19437c0cca0642eaff8a6d5eed8"
+  },
+  "formal_input_audit_freeze": {
+    "bytes": 4364,
+    "path": "governance/mechanism_controlled_intervention_input_audit_v1/formal_input_audit_freeze_v1.json",
+    "sha256": "e4ef5b499495aea052f1c8884a29a28a337f45d8bbc8034370bb6f595aedecbe"
+  },
+  "formal_scale_sham_correction_freeze": {
+    "bytes": 2348,
+    "path": "governance/mechanism_controlled_intervention_formal_scale_sham_correction_v1/formal_scale_sham_correction_freeze_v1.json",
+    "sha256": "0bf674b601d32c46be07afea79f7bf713429ad563104d6ffa00cdbb0883fb751"
+  },
+  "formal_task_binding_manifest": {
+    "bytes": 49336,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001/formal_task_binding_manifest_v1.csv",
+    "sha256": "d39bee233620ea52a7f0f0719b9bc80f6d15f65d7e8ead96146b06699d5e82a0"
+  },
+  "historical_nonreuse": {
+    "bytes": 900,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/historical_transactions_nonreuse_and_supersession_v1.json",
+    "sha256": "4f5bfa1d894b3d1a772a80d1e28c956fe5910aa2b30bf0903f52b3a738256fb2"
+  },
+  "local_world_size": 1,
+  "memory_lifecycle_correction_freeze": {
+    "bytes": 3809,
+    "path": "governance/mechanism_controlled_intervention_memory_correction_v1/memory_lifecycle_correction_freeze_v1.json",
+    "sha256": "03df4a5c5a11213023d74e36881a5798525108b2683d517d59d5649a0e738ad9"
+  },
+  "minimum_private_filesystem_free_bytes": 21474836480,
+  "next_gate": "AFTER COMPLETE GENERATION: SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_INDEPENDENT_MONOLITHIC_RUN_002_GENERATION_VERIFICATION_AND_FREEZE",
+  "not_authorized_after_generation": {
+    "annotation": true,
+    "decode": true,
+    "independent_verification_and_freeze": true,
+    "intervention_analysis": true,
+    "outcome_construction": true,
+    "remote_push": true,
+    "unblinding": true
+  },
+  "operational_scripts": {
+    "launch": {
+      "bytes": 1547,
+      "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_launch_nohup_v1.sh",
+      "sha256": "012398cc3bc0974ef0a80d58c8617a6ce9f0156e911e8296b8a9975802df5015"
+    },
+    "status": {
+      "bytes": 1131,
+      "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_status_v1.sh",
+      "sha256": "394931e71624e6442f2405043d4b779e195385994fd3eae61b69b91c25e1b297"
+    }
+  },
+  "phase": "scientific",
+  "phase_gpu_hours_ceiling": 72.0,
+  "preparation_freeze": {
+    "bytes": 5900,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_freeze_v1.json",
+    "sha256": "1afe9b7a19451e59e387c7e8e60bea9668b7b0636bdcf25c8cfafa228ed1a461"
+  },
+  "preregistered_counts": {
+    "acquisition_hashes": 40,
+    "attributes": 2,
+    "conditions": 3,
+    "direction_and_sham_hash_pairs": 640,
+    "formal_units": 40,
+    "pairs": 20,
+    "pairs_per_attribute": 10,
+    "scheduler_steps": 24000,
+    "seeds": 4,
+    "source_tasks": 160,
+    "trajectories": 480
+  },
+  "prior_direction_evidence_reused": false,
+  "prior_execution_reused": false,
+  "private_latent_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_monolithic/run_002",
+  "research_source_commit": "18194ee17324494078bff7a07b2e8c9cd8a5b5c9",
+  "researcher_execution_authorization": {
+    "bytes": 1966,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/researcher_scientific_monolithic_run_002_execution_authorization_v1.json",
+    "sha256": "cb39452b9f14e9e30e4c5acfb28d15084692098fb0fcc8f8b9f41929af476140"
+  },
+  "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_monolithic/run_002",
+  "schema_version": 1,
+  "scientific_run_id": "monolithic_run_002",
+  "seed_1_shard_merged": false,
+  "sham_construction_correction_freeze": {
+    "bytes": 3964,
+    "path": "governance/mechanism_controlled_intervention_sham_construction_correction_v1/sham_construction_correction_freeze_v1.json",
+    "sha256": "483e351a7a3dd2d0b8d252073549da10b24d4e932f1af95122b74def192459cc"
+  },
+  "sham_projection_correction_freeze": {
+    "bytes": 3691,
+    "path": "governance/mechanism_controlled_intervention_sham_projection_correction_v1/sham_projection_correction_freeze_v1.json",
+    "sha256": "f0ea36580e980d66e6e5bc7eff62026cf14e05f8b26cc3cb30d9f60af681e6ba"
+  },
+  "status": "CONTROLLED_INTERVENTION_SCIENTIFIC_MONOLITHIC_RUN_002_SINGLE_GPU_EXECUTION_AUTHORIZED",
+  "target_projection_correction_freeze": {
+    "bytes": 3932,
+    "path": "governance/mechanism_controlled_intervention_target_projection_correction_v1/target_projection_correction_freeze_v1.json",
+    "sha256": "5222013b921657d1f1870607483d5a2deaf4901093f7fb195d0cbb5ea9fc079e"
+  },
+  "world_size": 1
+}
