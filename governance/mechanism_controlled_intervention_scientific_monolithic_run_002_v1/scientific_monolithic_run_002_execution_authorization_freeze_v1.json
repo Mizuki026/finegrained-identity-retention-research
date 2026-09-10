@@ -3,7 +3,7 @@
   "active_execution_authorization": {
     "bytes": 8090,
     "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_authorization_v1.json",
-    "sha256": "5767c4ffa9395bef18aa5baa40951cc07e3528ea55eba58e455179d544e863e9"
+    "sha256": "7f99dadec9a550d1727c37b17eaf2de80a79bf70465a623e14145914d4ec980f"
   },
   "authorized_gpu_hours_ceiling": 72.0,
   "authorized_scheduler_steps": 24000,
@@ -11,15 +11,15 @@
   "execution_readiness": {
     "bytes": 2688,
     "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_readiness_v1.json",
-    "sha256": "d02ca270dc3b903ac67dde8b1b5514aff0b3603f25a05c241f817ce166b94ca9"
+    "sha256": "f12e9416b669e17739604833dfcafadf4a3cb1446e702716e9ba858d5656aa39"
   },
   "execution_started_at_freeze": false,
   "freeze_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002_active_execution_authorization",
   "frozen_at_utc": "2026-09-10",
   "launch_script": {
-    "bytes": 1547,
+    "bytes": 1546,
     "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_launch_nohup_v1.sh",
-    "sha256": "012398cc3bc0974ef0a80d58c8617a6ce9f0156e911e8296b8a9975802df5015"
+    "sha256": "31b2be19f39a66db659e709047e65848e033acd72f2caa8eb975a9b2dbc240ca"
   },
   "next_action": "RESEARCHER_MAY_LAUNCH_USING_FROZEN_NOHUP_SCRIPT",
   "post_generation_stages_authorized": false,

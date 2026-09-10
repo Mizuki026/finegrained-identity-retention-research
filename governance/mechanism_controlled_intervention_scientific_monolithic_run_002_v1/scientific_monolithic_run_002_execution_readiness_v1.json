@@ -2,7 +2,7 @@
   "active_execution_authorization": {
     "bytes": 8090,
     "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_authorization_v1.json",
-    "sha256": "5767c4ffa9395bef18aa5baa40951cc07e3528ea55eba58e455179d544e863e9"
+    "sha256": "7f99dadec9a550d1727c37b17eaf2de80a79bf70465a623e14145914d4ec980f"
   },
   "authorized_transaction": {
     "conditions": 3,
@@ -23,9 +23,9 @@
   "failure_policy": "NO AUTOMATIC RETRY, RESUME, REPAIR, SELECTIVE RERUN, REDUCED PANEL, OR PRIOR-SEED MERGE",
   "later_phases_authorized": false,
   "launch_script": {
-    "bytes": 1547,
+    "bytes": 1546,
     "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_launch_nohup_v1.sh",
-    "sha256": "012398cc3bc0974ef0a80d58c8617a6ce9f0156e911e8296b8a9975802df5015"
+    "sha256": "31b2be19f39a66db659e709047e65848e033acd72f2caa8eb975a9b2dbc240ca"
   },
   "next_gate_after_generation": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_INDEPENDENT_MONOLITHIC_RUN_002_GENERATION_VERIFICATION_AND_FREEZE",
   "preflight": {

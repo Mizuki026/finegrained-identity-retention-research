@@ -118,9 +118,9 @@
   },
   "operational_scripts": {
     "launch": {
-      "bytes": 1547,
+      "bytes": 1546,
       "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_launch_nohup_v1.sh",
-      "sha256": "012398cc3bc0974ef0a80d58c8617a6ce9f0156e911e8296b8a9975802df5015"
+      "sha256": "31b2be19f39a66db659e709047e65848e033acd72f2caa8eb975a9b2dbc240ca"
     },
     "status": {
       "bytes": 1131,
