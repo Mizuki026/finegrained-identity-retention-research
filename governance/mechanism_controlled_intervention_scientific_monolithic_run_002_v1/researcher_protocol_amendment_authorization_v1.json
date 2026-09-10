@@ -1,0 +1,29 @@
+{
+  "authorization_id": "prospective_single_transaction_four_seed_monolithic_run_002_protocol_amendment_cpu_only",
+  "authorization_string": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_PROSPECTIVE_SINGLE_TRANSACTION_FOUR_SEED_MONOLITHIC_RUN_002_PROTOCOL_AMENDMENT_DIRECTION_HASH_WIRING_VERIFIER_CORRECTION_CPU_ONLY_TESTS_AND_NO_WEIGHT_DRY_RUN_NO_GPU",
+  "authorized": {
+    "cpu_only_no_weight_dry_run": true,
+    "cpu_only_synthetic_tests": true,
+    "direction_and_sham_hash_wiring_correction": true,
+    "new_independent_monolithic_run_002_code_path": true,
+    "preparation_readiness_evidence_and_freeze": true,
+    "prospective_protocol_amendment": true,
+    "runtime_persisted_schema_verifier_correction": true
+  },
+  "authorized_at_utc": "2026-09-10",
+  "gpu_hours_authorized": 0,
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_MONOLITHIC_RUN_002_480_TRAJECTORY_EXECUTION",
+  "not_authorized": {
+    "annotation_unblinding_outcome_construction_or_analysis": true,
+    "formal_input_audit_execution": true,
+    "gpu_execution": true,
+    "latent_or_video_generation_or_decode": true,
+    "model_module_or_weight_loading": true,
+    "network_or_remote_push": true,
+    "outcome_access": true,
+    "reference_access_decode_or_preprocessing": true,
+    "trajectory_generation_or_intervention_execution": true
+  },
+  "schema_version": 1,
+  "status": "MONOLITHIC_RUN_002_PROTOCOL_AMENDMENT_DIRECTION_HASH_WIRING_VERIFIER_CORRECTION_CPU_ONLY_AUTHORIZED"
+}

@@ -1,0 +1,99 @@
+{
+  "cpu_only_tests": {
+    "bytes": 1267,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/cpu_only_synthetic_regression_result_v1.json",
+    "sha256": "b75b810638c3a261e047b9444ee450c8bddc58720132f9e3b6cef51ff3832ccb"
+  },
+  "current_authority": {
+    "active_gpu_execution_authorizations": 0,
+    "analysis": false,
+    "decode": false,
+    "formal_input_audit_execution": false,
+    "gpu_hours": 0,
+    "model_or_weight_loading": false,
+    "outcome_access": false,
+    "reference_access_or_preprocessing": false,
+    "trajectory_generation": false
+  },
+  "external_state": {
+    "private_parent_mode": "0700",
+    "private_run_output_absent": true,
+    "runtime_output_absent": true,
+    "runtime_partial_absent": true
+  },
+  "future_authorization_requirements": {
+    "bytes": 1919,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/future_single_gpu_execution_authorization_requirements_v1.json",
+    "sha256": "2e2beab8a82d4ab189791781dbef5eaaf594b14474470c560007aa6ba15ac7ad"
+  },
+  "historical_nonreuse": {
+    "bytes": 900,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/historical_transactions_nonreuse_and_supersession_v1.json",
+    "sha256": "4f5bfa1d894b3d1a772a80d1e28c956fe5910aa2b30bf0903f52b3a738256fb2"
+  },
+  "history_boundary": {
+    "direction_recovery_reused": false,
+    "monolithic_run_001_reused": false,
+    "seed_1_shard_merged": false,
+    "seed_1_shard_reusable": false
+  },
+  "independent_preparation_verification": {
+    "bytes": 1008,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_verification_v1.json",
+    "sha256": "34e064391ee855d8f673becf8f5c87196b46cae657e54340454c760bb665a788"
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_MONOLITHIC_RUN_002_480_TRAJECTORY_EXECUTION",
+  "no_weight_dry_run": {
+    "bytes": 1053,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_no_weight_dry_run_v1.json",
+    "sha256": "b14decb331ffc6d5dd190f9aae02641a2ff4a091ee406ad26d5bb1ea47d5b389"
+  },
+  "no_weight_plan": {
+    "bytes": 91885,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_no_weight_plan_v1.csv",
+    "sha256": "913a8e273fb3477dea844fec7d27283b6f13d73b3a9ab07f40ae870224e1f39e"
+  },
+  "post_generation_stages_remain_separately_gated": true,
+  "prepared_at_utc": "2026-09-10",
+  "protocol_amendment": {
+    "bytes": 2345,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/prospective_single_transaction_four_seed_monolithic_run_002_preregistration_v1.json",
+    "sha256": "96c6a954b921095fcd7ad5b67a4329b9a898fda6b038b8bdbab217d23ac5ecd7"
+  },
+  "readiness_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002_cpu_preparation",
+  "researcher_cpu_only_authorization": {
+    "bytes": 1504,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/researcher_protocol_amendment_authorization_v1.json",
+    "sha256": "c54362563fbcfe459e0a95c083dc0227b4b6876ae83ff06de8301757bd7b37d0"
+  },
+  "schema_version": 1,
+  "scientific_rationale": {
+    "does_not_establish_cross_run_repeatability": true,
+    "does_not_validate_mechanism": true,
+    "monolithic_design_effect": "removes any need to compare or reuse direction tensors across preprocessing transactions by constructing once and reusing in one process",
+    "not_caused_by_seed_values": true,
+    "observed_issue": "cross-process fresh preprocessing did not satisfy bit-exact LFE hash equality in the recovery transaction"
+  },
+  "static_checks": {
+    "bytes": 291,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/cpu_only_static_check_result_v1.json",
+    "sha256": "f7d0289f94291e78cf2de53f72740b259ffbc546d2dd67b9cd4022cdacb7fb91"
+  },
+  "status": "READY_FOR_SEPARATE_RESEARCHER_DECISION_NO_GPU_AUTHORIZED",
+  "verified_preparation": {
+    "acquisition_hashes_planned": 40,
+    "acquisition_transactions": 1,
+    "conditions": 3,
+    "direction_and_sham_hash_pairs_planned": 640,
+    "direction_families_constructed_once": 640,
+    "formal_pairs": 20,
+    "formal_units": 40,
+    "no_weight_dry_run_passed": true,
+    "real_persisted_schema_fixture_passed": true,
+    "scheduler_steps": 24000,
+    "seeds": 4,
+    "source_tasks": 160,
+    "tests_passed": 31,
+    "trajectories": 480
+  }
+}

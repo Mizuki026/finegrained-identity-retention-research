@@ -1,0 +1,116 @@
+{
+  "amended_preregistration": {
+    "bytes": 2345,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/prospective_single_transaction_four_seed_monolithic_run_002_preregistration_v1.json",
+    "sha256": "96c6a954b921095fcd7ad5b67a4329b9a898fda6b038b8bdbab217d23ac5ecd7"
+  },
+  "corrections": {
+    "direction_hash_wiring": "direction_sha256 persisted for each of 640 directions",
+    "sham_hash_wiring": "sham_direction_sha256 persisted for each of 640 sham directions",
+    "verifier_schema": "requires the 10 fields actually persisted by runtime; does not require two redundant nonpersisted protocol fields"
+  },
+  "cpu_synthetic_tests": {
+    "bytes": 1267,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/cpu_only_synthetic_regression_result_v1.json",
+    "sha256": "b75b810638c3a261e047b9444ee450c8bddc58720132f9e3b6cef51ff3832ccb"
+  },
+  "current_authority": {
+    "active_gpu_execution_authorizations": 0,
+    "annotation_unblinding_or_analysis": false,
+    "formal_manifest_access": false,
+    "gpu_hours": 0,
+    "latent_or_video_generation_or_decode": false,
+    "model_or_weight_loading": false,
+    "network": false,
+    "outcome_access": false,
+    "reference_access_or_preprocessing": false,
+    "trajectory_or_intervention_execution": false
+  },
+  "evidence_manifest": {
+    "artifact_rows": 29,
+    "bytes": 6155,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_evidence_manifest_v1.csv",
+    "sha256": "af35533364b696a7677c4cd33c327bebb971b1763c2e52d1e096c8377c9fea94"
+  },
+  "evidence_verification": {
+    "bytes": 385,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_evidence_verification_v1.json",
+    "sha256": "97d0c2e519abf98bc6a55e8f35784d506c3ae4f3157369bd8ed19f42b779debd"
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002_cpu_preparation",
+  "frozen_at_utc": "2026-09-10",
+  "future_execution_requirements": {
+    "bytes": 1919,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/future_single_gpu_execution_authorization_requirements_v1.json",
+    "sha256": "2e2beab8a82d4ab189791781dbef5eaaf594b14474470c560007aa6ba15ac7ad"
+  },
+  "historical_nonreuse": {
+    "bytes": 900,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/historical_transactions_nonreuse_and_supersession_v1.json",
+    "sha256": "4f5bfa1d894b3d1a772a80d1e28c956fe5910aa2b30bf0903f52b3a738256fb2"
+  },
+  "history_boundary": {
+    "direction_recovery_run_001_reusable": false,
+    "monolithic_run_001_reusable": false,
+    "run_002_requires_fresh_whole_transaction": true,
+    "seed_1_shard_merged": false,
+    "seed_1_shard_reusable_in_run_002": false
+  },
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_MONOLITHIC_RUN_002_480_TRAJECTORY_EXECUTION",
+  "no_weight_dry_run": {
+    "bytes": 1053,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_no_weight_dry_run_v1.json",
+    "sha256": "b14decb331ffc6d5dd190f9aae02641a2ff4a091ee406ad26d5bb1ea47d5b389"
+  },
+  "no_weight_plan": {
+    "bytes": 91885,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_no_weight_plan_v1.csv",
+    "sha256": "913a8e273fb3477dea844fec7d27283b6f13d73b3a9ab07f40ae870224e1f39e"
+  },
+  "post_generation_verification_decode_annotation_unblinding_outcome_and_analysis_remain_separately_gated": true,
+  "preparation_plan": {
+    "bytes": 832,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_plan_v1.json",
+    "sha256": "b5fc4ef7c93fb6a4358db1fdb37587110bfe024aa09aeb42262c5f64f8e6c6aa"
+  },
+  "preparation_verification": {
+    "bytes": 1008,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_verification_v1.json",
+    "sha256": "34e064391ee855d8f673becf8f5c87196b46cae657e54340454c760bb665a788"
+  },
+  "readiness": {
+    "bytes": 4599,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/monolithic_run_002_preparation_readiness_v1.json",
+    "sha256": "c19ec51d93cfd577c386dfdf216fb484881f1cb397944e07027b82f90ac662df"
+  },
+  "researcher_authorization": {
+    "bytes": 1504,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/researcher_protocol_amendment_authorization_v1.json",
+    "sha256": "c54362563fbcfe459e0a95c083dc0227b4b6876ae83ff06de8301757bd7b37d0"
+  },
+  "schema_version": 1,
+  "scientific_interpretation_boundary": "PREPARATION_AND_ENGINEERING_OF_MEASUREMENT_TRANSACTION_ONLY_NO_NEW_SCIENTIFIC_OUTCOME_OR_MECHANISM_EVIDENCE",
+  "source_state_commit": "aa5aca0e6e3309a4bfb340923bffe7ecda415fa4",
+  "static_checks": {
+    "bytes": 291,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/cpu_only_static_check_result_v1.json",
+    "sha256": "f7d0289f94291e78cf2de53f72740b259ffbc546d2dd67b9cd4022cdacb7fb91"
+  },
+  "status": "FROZEN_PASS_MONOLITHIC_RUN_002_PROTOCOL_AMENDMENT_CPU_TESTS_AND_NO_WEIGHT_DRY_RUN_NO_GPU",
+  "verified": {
+    "cpu_tests_failed": 0,
+    "cpu_tests_passed": 31,
+    "direction_and_sham_hash_pairs_planned": 640,
+    "formal_units": 40,
+    "four_seeds_same_process": true,
+    "fresh_acquisitions_planned": 40,
+    "no_weight_plan_rows": 480,
+    "private_parent_mode": "0700",
+    "ruff_errors": 0,
+    "runtime_persisted_plan_schema_fields": 10,
+    "scheduler_steps_planned": 24000,
+    "scientific_trajectories_planned": 480,
+    "single_acquisition_transaction": true,
+    "source_tasks": 160
+  }
+}

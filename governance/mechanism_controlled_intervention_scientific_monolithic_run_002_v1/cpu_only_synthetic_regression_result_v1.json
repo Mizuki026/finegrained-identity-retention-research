@@ -1,0 +1,37 @@
+{
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "HF_HUB_OFFLINE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "errors": 0,
+  "executed_at_utc": "2026-09-10",
+  "failures": 0,
+  "gpu_used": false,
+  "model_or_weights_loaded": false,
+  "modules": [
+    "tests.test_controlled_lfe_projection_exchange_v1",
+    "tests.test_controlled_lfe_projection_exchange_scientific_generation_v1",
+    "tests.test_controlled_lfe_projection_exchange_scientific_generation_v2",
+    "tests.test_controlled_lfe_direction_evidence_recovery_v1",
+    "tests.test_controlled_lfe_projection_exchange_scientific_monolithic_v2"
+  ],
+  "network_used": false,
+  "new_monolithic_tests": 5,
+  "new_verified": {
+    "active_gpu_authorization_absent": true,
+    "complete_480_trajectory_four_seed_plan": true,
+    "missing_direction_hash_fails_closed": true,
+    "missing_private_file_fails_closed": true,
+    "real_runtime_persisted_10_field_schema": true,
+    "real_synthetic_640_direction_and_sham_hash_wiring": true
+  },
+  "outcome_accessed": false,
+  "reference_accessed_or_preprocessed": false,
+  "schema_version": 1,
+  "skips": 0,
+  "status": "PASS_CPU_ONLY_SYNTHETIC_REGRESSION",
+  "tests_run": 31,
+  "trajectory_or_intervention_executed": false
+}

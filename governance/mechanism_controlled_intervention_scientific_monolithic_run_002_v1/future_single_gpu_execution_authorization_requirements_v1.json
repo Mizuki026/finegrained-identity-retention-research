@@ -1,0 +1,59 @@
+{
+  "currently_present_active_gpu_authorizations": 0,
+  "forbidden": [
+    "prior_seed_1_merge_or_reuse",
+    "prior_direction_or_acquisition_reuse",
+    "seed_or_condition_sharding",
+    "automatic_retry_resume_repair_or_selective_rerun",
+    "reduced_panel",
+    "decode",
+    "outcome_access",
+    "annotation",
+    "unblinding",
+    "formal_analysis",
+    "network",
+    "multi_gpu_or_distributed"
+  ],
+  "post_generation_stages_require_new_separate_authorization": [
+    "independent_generation_verification_and_freeze",
+    "decode",
+    "annotation",
+    "unblinding",
+    "outcome_construction",
+    "intervention_analysis"
+  ],
+  "required_authorization_string": "SEPARATE_RESEARCHER_AUTHORIZATION_FOR_SINGLE_GPU_CONTROLLED_INTERVENTION_SCIENTIFIC_MONOLITHIC_RUN_002_480_TRAJECTORY_EXECUTION",
+  "required_bindings": [
+    "preparation_freeze",
+    "formal_input_audit_freeze",
+    "memory_lifecycle_correction_freeze",
+    "sham_projection_correction_freeze",
+    "sham_construction_correction_freeze",
+    "target_projection_correction_freeze",
+    "formal_scale_sham_correction_freeze",
+    "engineering_freeze",
+    "historical_nonreuse",
+    "formal_generation_master",
+    "formal_task_binding_manifest",
+    "exact_code_hashes",
+    "ConsisID_commit"
+  ],
+  "required_future_files": [
+    "researcher_scientific_monolithic_run_002_execution_authorization_v1.json",
+    "scientific_monolithic_run_002_execution_authorization_v1.json"
+  ],
+  "required_transaction": {
+    "all_three_conditions_co_resident": true,
+    "direction_construction_once": true,
+    "four_seeds_same_process": true,
+    "gpu_hours_ceiling": 72.0,
+    "run_id": "monolithic_run_002",
+    "scheduler_steps": 24000,
+    "single_fresh_40_unit_acquisition": true,
+    "single_gpu": true,
+    "single_process": true,
+    "trajectories": 480
+  },
+  "schema_version": 1,
+  "status": "FUTURE_SEPARATE_AUTHORIZATION_REQUIRED_NOT_ACTIVE"
+}

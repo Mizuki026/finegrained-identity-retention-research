@@ -1,0 +1,85 @@
+{
+  "amendment_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002",
+  "compute": {
+    "currently_authorized_gpu_hours": 0,
+    "future_single_gpu_only": true,
+    "hard_gpu_hours_ceiling": 72,
+    "planned_gpu_hours_range": [
+      35,
+      50
+    ]
+  },
+  "design_preserved": {
+    "attributes": [
+      "eyeglasses",
+      "facial_hair"
+    ],
+    "conditions": [
+      "baseline",
+      "target_projection_exchange",
+      "orthogonal_sham"
+    ],
+    "formal_units": 40,
+    "frame_count": 49,
+    "pairs_per_attribute": 10,
+    "pairs_total": 20,
+    "precision": "bfloat16",
+    "prompt_scheduler_guidance_metrics_thresholds_frame_indices_exclusions_and_dose": "UNCHANGED",
+    "resolution": "frozen_original",
+    "roles": [
+      "positive",
+      "control"
+    ],
+    "scheduler_positions_per_trajectory": 50,
+    "scheduler_steps": 24000,
+    "scientific_trajectories": 480,
+    "seeds": [
+      2686238281,
+      280026145,
+      2169901996,
+      2046930553
+    ],
+    "source_tasks": 160
+  },
+  "later_phases_authorized": false,
+  "privacy": {
+    "decoded_media": false,
+    "private_final_latents_only": true,
+    "raw_identity_lfe_or_direction_persistence": false
+  },
+  "scalar_evidence": {
+    "acquisition_lfe_sha256_rows": 40,
+    "direction_rows": 640,
+    "direction_sha256_per_row": true,
+    "persisted_plan_fields": [
+      "planned_task_id",
+      "planned_unit_id",
+      "formal_pair_id",
+      "attribute",
+      "role",
+      "seed_index",
+      "seed",
+      "condition_position",
+      "condition",
+      "scheduler_positions"
+    ],
+    "sham_direction_sha256_per_row": true,
+    "trajectory_status_rows": 480
+  },
+  "schema_version": 1,
+  "status": "PROSPECTIVELY_PREREGISTERED_CPU_ONLY_PREPARATION_NO_GPU_EXECUTION",
+  "transaction": {
+    "acquisition_transactions": 1,
+    "all_three_conditions_co_resident_per_task": true,
+    "automatic_retry_resume_repair_or_selective_rerun": false,
+    "condition_sharding": false,
+    "direction_families_constructed_once": 640,
+    "failure_policy": "WHOLE_TRANSACTION_FAIL_CLOSED",
+    "fresh_preprocessing_acquisitions": 40,
+    "reduced_panel_or_failed_sample_deletion": false,
+    "run_id": "monolithic_run_002",
+    "same_in_memory_directions_reused_across_all_four_seeds": true,
+    "seed_sharding": false,
+    "single_process": true
+  }
+}

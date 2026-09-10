@@ -1,0 +1,32 @@
+{
+  "direction_evidence_recovery_run_001": {
+    "completed": false,
+    "directions_written": false,
+    "failed_exact_lfe_hash_gate": true,
+    "reusable": false
+  },
+  "monolithic_run_001": {
+    "execution_started": false,
+    "reason": "superseded before execution",
+    "reusable": false
+  },
+  "run_002": {
+    "fresh_whole_transaction_required": true,
+    "prior_latents_reused": false,
+    "prior_lfe_or_directions_reused": false
+  },
+  "schema_version": 1,
+  "seed_1_shard": {
+    "generation_complete": true,
+    "independent_verification_passed": false,
+    "merge_into_run_002": false,
+    "reason": "missing direction hash evidence and distinct preprocessing transaction",
+    "reusable": false
+  },
+  "seed_shards_2_to_4": {
+    "authorized": false,
+    "execution_started": false,
+    "reusable": false
+  },
+  "status": "FROZEN_HISTORY_PRESERVED_NONREUSABLE_FOR_MONOLITHIC_RUN_002"
+}

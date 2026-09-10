@@ -1,0 +1,15 @@
+{
+  "artifact_rows": 29,
+  "formal_manifest_opened": false,
+  "gpu_used": false,
+  "missing": 0,
+  "model_or_weights_loaded": false,
+  "network_used": false,
+  "reference_or_outcome_opened": false,
+  "schema_version": 1,
+  "sha256_mismatches": 0,
+  "size_mismatches": 0,
+  "status": "PASS_MONOLITHIC_RUN_002_PREPARATION_EVIDENCE_VERIFICATION",
+  "symlinks": 0,
+  "verified_rows": 29
+}

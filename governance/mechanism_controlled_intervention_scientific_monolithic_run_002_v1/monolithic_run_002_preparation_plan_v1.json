@@ -1,0 +1,23 @@
+{
+  "active_gpu_execution_authorization_present": false,
+  "expected": {
+    "acquisition_hashes": 40,
+    "conditions": 3,
+    "direction_hash_pairs": 640,
+    "formal_pairs": 20,
+    "formal_units": 40,
+    "scheduler_steps": 24000,
+    "seeds": 4,
+    "source_tasks": 160,
+    "trajectory_rows": 480
+  },
+  "four_seeds_same_process": true,
+  "gpu_hours_authorized": 0,
+  "no_weight_dry_run_only": true,
+  "private_latent_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_monolithic/run_002",
+  "run_id": "monolithic_run_002",
+  "runtime_output_dir": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_monolithic/run_002",
+  "schema_version": 1,
+  "single_acquisition_transaction": true,
+  "status": "CPU_ONLY_PREPARATION_IN_PROGRESS_NO_GPU_AUTHORITY"
+}
