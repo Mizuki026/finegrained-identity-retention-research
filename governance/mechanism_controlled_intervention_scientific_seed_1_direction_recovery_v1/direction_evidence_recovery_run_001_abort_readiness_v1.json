@@ -1,0 +1,19 @@
+{
+  "active_no_weight_gate": "PASS",
+  "gpu_recovery_execution": "FAILED_40_OF_40_EXACT_LFE_HASH_GATE",
+  "gpu_released": true,
+  "next_gate": "SEPARATE_RESEARCHER_PROTOCOL_DECISION",
+  "pre_gpu_cpu_tests": "26_OF_26_PASS",
+  "recommendation": "Do not rerun or start Seed 2 until the exact-hash gate is scientifically redesigned; blind repetition is unlikely to resolve a demonstrated cross-transaction bitwise mismatch.",
+  "recovery_output_absent": true,
+  "recovery_partial_absent": true,
+  "research_decision_required": {
+    "option_a": "Prospectively amend the cross-shard equivalence requirement and explicitly accept transaction-varying acquisition/direction as a limitation; then design a CPU-verifiable scalar diagnostic standard for future shards.",
+    "option_b": "Retire this Seed 1 transaction and design a new transaction family with corrected evidence instrumentation; do not assume exact cross-transaction hashes will hold.",
+    "option_c": "Authorize a separate repeatability diagnostic to quantify new-acquisition variability; it cannot retroactively measure magnitude versus Seed 1 because raw Seed 1 LFE tensors were not persisted."
+  },
+  "schema_version": 1,
+  "seed_1_artifacts_unchanged": true,
+  "seed_1_independently_verified": false,
+  "status": "FAIL_CLOSED_RECOVERY_AUDIT_COMPLETE_NO_DIRECTION_EVIDENCE_RECOVERED"
+}

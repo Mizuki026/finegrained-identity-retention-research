@@ -1,0 +1,64 @@
+{
+  "at_least_one_lfe_hash_mismatch": true,
+  "direction_hashes_written": 0,
+  "direction_or_sham_reconstruction_started": false,
+  "exact_lfe_hash_gate_passed": false,
+  "exact_match_count": "NOT_PERSISTED_BY_FAIL_BEFORE_STAGING_AND_MUST_NOT_BE_INFERRED",
+  "executed_at_utc": "2026-09-10",
+  "execution_stage_reached": "ALL_40_RECOVERY_ACQUISITIONS_COMPLETED_THEN_EXACT_HASH_GATE_FAILED",
+  "frozen_references_preprocessed": 40,
+  "generation_pipeline_loaded": false,
+  "gpu_used": true,
+  "latents_or_media_generated": 0,
+  "model_weights_loaded_for_acquisition": true,
+  "next_gate": "SEPARATE_RESEARCHER_PROTOCOL_DECISION; DO_NOT RETRY RECOVERY OR START SEED_2",
+  "recovery_output_created": false,
+  "recovery_partial_created": false,
+  "recovery_run_id": "run_001",
+  "reuse_policy": {
+    "automatic_retry": false,
+    "direction_hash_backfill": false,
+    "recovery_run_001_reusable_or_resumable": false,
+    "seed_1_verified": false
+  },
+  "schema_version": 1,
+  "scientific_interpretation": {
+    "consequence": "The preregistered exact cross-shard SHA256 equality gate cannot certify Seed 1 using this recovery transaction.",
+    "not_established": [
+      "Mismatch count",
+      "Mismatch magnitude",
+      "Affected units",
+      "Whether differences are numerically negligible",
+      "Whether nondeterminism or another source caused the mismatch"
+    ],
+    "verified_fact": "Bitwise LFE equality across the original Seed 1 transaction and this independently repeated acquisition transaction did not hold for all 40 units."
+  },
+  "scientific_shard_id": "seed_1",
+  "seed_1_generation_artifacts_unchanged": {
+    "acquisition_hashes": {
+      "bytes": 4933,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/acquisition_scalar_hashes_v1.csv",
+      "sha256": "1a9931eb471c64b446f35b92f2b53155a9783eb16e1490cddf262d8128423b13"
+    },
+    "direction_diagnostics": {
+      "bytes": 55843,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/direction_scalar_diagnostics_v1.csv",
+      "sha256": "ade1613c7d4aaa690b8e7bf66c5456218f3822f37ea5dca6582ea9357ab753e3"
+    },
+    "execution_summary": {
+      "bytes": 920,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/execution_summary_v1.json",
+      "sha256": "8ac7eb2e2efac6fee5d62db5cc432f4c10c56561b0b89fe3945aecbb6b647cb5"
+    },
+    "private_latent_bytes": 269579520,
+    "private_latent_files": 120,
+    "trajectory_status": {
+      "bytes": 65919,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_shards/seed_1/trajectory_status_v1.csv",
+      "sha256": "a348141997217a46190a893a11e7067ae9be56c9c29a3cda9cae9c3e2e29f831"
+    }
+  },
+  "seed_1_private_latents_modified": 0,
+  "status": "ABORTED_FAIL_CLOSED_RECOVERED_LFE_HASHES_NOT_EXACTLY_40_OF_40_IDENTICAL",
+  "trajectories_executed": 0
+}

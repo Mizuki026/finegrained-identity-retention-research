@@ -1,0 +1,42 @@
+{
+  "abort_diagnostic": {
+    "bytes": 2970,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_direction_recovery_v1/direction_evidence_recovery_run_001_abort_diagnostic_v1.json",
+    "sha256": "40b0928170dd6587a9273996fdcd3f6b2bf48c792ddaf0e5bec0b60203e4191d"
+  },
+  "all_40_acquisitions_completed": true,
+  "authorization": {
+    "bytes": 5109,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_direction_recovery_v1/direction_evidence_recovery_run_001_authorization_v1.json",
+    "sha256": "e404d32038e61c5968319f03589297371f9a2f1f3cdb1ee97221848ef960aa5e"
+  },
+  "automatic_retry_authorized": false,
+  "direction_hashes_recovered": false,
+  "evidence_manifest": {
+    "artifact_rows": 9,
+    "bytes": 1686,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_direction_recovery_v1/direction_evidence_recovery_run_001_abort_evidence_manifest_v1.csv",
+    "sha256": "7b010a9b3faf0dbc8b2ff8814308df70eec1c293a10696a14bda265705f1365a"
+  },
+  "evidence_verification": {
+    "bytes": 554,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_direction_recovery_v1/direction_evidence_recovery_run_001_abort_evidence_verification_v1.json",
+    "sha256": "ee6ebfc34c6778bb37ea95bd835ef0e5b207271d6ca5c7764277108575f621ea"
+  },
+  "exact_40_of_40_lfe_hash_gate_passed": false,
+  "freeze_id": "scientific_seed_1_direction_evidence_recovery_run_001_abort",
+  "frozen_at_utc": "2026-09-10",
+  "next_gate": "SEPARATE_RESEARCHER_PROTOCOL_DECISION_BEFORE_ANY_NEW_GPU_RUN_OR_SEED_2",
+  "readiness": {
+    "bytes": 1348,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_direction_recovery_v1/direction_evidence_recovery_run_001_abort_readiness_v1.json",
+    "sha256": "f21feceac161f8870412b3d90e9f9618bdb0e27b82bb8d8b96d9e5ac8a98a02d"
+  },
+  "recovery_output_created": false,
+  "recovery_run_001_reusable": false,
+  "schema_version": 1,
+  "seed_1_artifacts_modified": false,
+  "seed_1_independently_verified": false,
+  "seed_2_authorized": false,
+  "status": "FROZEN_ABORTED_FAIL_CLOSED_RECOVERED_LFE_HASHES_NOT_EXACTLY_40_OF_40_IDENTICAL_NO_DIRECTION_BACKFILL"
+}

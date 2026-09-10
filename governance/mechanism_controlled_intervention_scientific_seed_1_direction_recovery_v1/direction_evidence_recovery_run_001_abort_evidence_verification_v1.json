@@ -1,0 +1,14 @@
+{
+  "all_paths_bytes_sha256_match": true,
+  "gpu_released": true,
+  "manifest": {
+    "artifact_rows": 9,
+    "bytes": 1686,
+    "path": "governance/mechanism_controlled_intervention_scientific_seed_1_direction_recovery_v1/direction_evidence_recovery_run_001_abort_evidence_manifest_v1.csv",
+    "sha256": "7b010a9b3faf0dbc8b2ff8814308df70eec1c293a10696a14bda265705f1365a"
+  },
+  "recovery_output_absent": true,
+  "schema_version": 1,
+  "seed_1_artifacts_unchanged": true,
+  "status": "PASS_DIRECTION_EVIDENCE_RECOVERY_RUN_001_ABORT_EVIDENCE_BINDINGS"
+}
