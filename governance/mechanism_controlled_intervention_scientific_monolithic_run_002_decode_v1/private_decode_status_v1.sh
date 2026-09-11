@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd /root/autodl-tmp/finegrained/research_pipeline
-pid_file=governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/private_decode_execution_v1.pid
-log_file=governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/private_decode_execution_v1.log
+pid_file=/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic_logs/run_002.pid
+log_file=/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic_logs/run_002.log
 if [[ -f "$pid_file" ]]; then
   pid=$(<"$pid_file")
   if kill -0 "$pid" 2>/dev/null; then state=RUNNING; else state=NOT_RUNNING; fi
