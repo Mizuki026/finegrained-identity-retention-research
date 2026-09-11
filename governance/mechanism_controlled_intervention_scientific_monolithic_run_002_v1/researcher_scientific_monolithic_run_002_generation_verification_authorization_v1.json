@@ -1,0 +1,37 @@
+{
+  "active_execution_authorization": {
+    "bytes": 8090,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_authorization_v1.json",
+    "sha256": "7f99dadec9a550d1727c37b17eaf2de80a79bf70465a623e14145914d4ec980f"
+  },
+  "authorization_id": "cpu_only_independent_scientific_monolithic_run_002_generation_verification_and_freeze",
+  "authorized": {
+    "cpu_only_independent_generation_verifier": true,
+    "hash_size_schema_and_invariant_verification": true,
+    "read_only_completion_audit": true,
+    "verification_evidence_manifest_and_freeze": true
+  },
+  "authorized_at_utc": "2026-09-11",
+  "execution_authorization_freeze": {
+    "bytes": 2142,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_v1/scientific_monolithic_run_002_execution_authorization_freeze_v1.json",
+    "sha256": "2f0e5747a47a55a52194384af22ed00a1881cfffb12eabd94385f9b073cf1c2a"
+  },
+  "gpu_hours_authorized": 0,
+  "interpretation": "AUTHORIZED_ONLY_FOR_THE_IMMEDIATE_CPU_ONLY_INDEPENDENT_GENERATION_VERIFICATION_AND_FREEZE_STAGE",
+  "next_gate": "SEPARATE_RESEARCHER_AUTHORIZATION_REQUIRED_FOR_ANY_DECODE_ANNOTATION_UNBLINDING_OUTCOME_CONSTRUCTION_OR_INTERVENTION_ANALYSIS",
+  "not_authorized": {
+    "annotation_or_unblinding": true,
+    "gpu_execution_or_regeneration": true,
+    "intervention_analysis_or_hypothesis_testing": true,
+    "latent_decode_or_public_video": true,
+    "model_or_weight_loading": true,
+    "network_or_remote_push": true,
+    "outcome_access_or_construction": true,
+    "reference_reprocessing": true,
+    "retry_resume_repair_selective_rerun_or_reduced_panel": true
+  },
+  "researcher_message": "\u751f\u6210\u5b8c\u6210\u4e86\uff0c\u8bf7\u4f60\u81ea\u4e3b\u63a8\u8fdb\u540e\u7eed\u5de5\u4f5c",
+  "schema_version": 1,
+  "status": "RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_INDEPENDENT_MONOLITHIC_RUN_002_GENERATION_VERIFICATION_AND_FREEZE"
+}

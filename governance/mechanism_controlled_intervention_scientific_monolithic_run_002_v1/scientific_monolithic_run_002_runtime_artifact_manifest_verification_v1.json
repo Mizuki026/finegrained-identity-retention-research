@@ -1,0 +1,20 @@
+{
+  "artifact_rows": 485,
+  "decoded_media_files": 0,
+  "gpu_used": false,
+  "missing": 0,
+  "model_or_weights_loaded": false,
+  "network_used": false,
+  "outcome_opened": false,
+  "private_final_latent_bytes": 1078318080,
+  "private_final_latent_files": 480,
+  "raw_identity_lfe_or_direction_files": 0,
+  "reference_reprocessed": false,
+  "scalar_runtime_files": 5,
+  "schema_version": 1,
+  "sha256_mismatches": 0,
+  "size_mismatches": 0,
+  "status": "PASS_SCIENTIFIC_MONOLITHIC_RUN_002_RUNTIME_ARTIFACT_MANIFEST_VERIFICATION",
+  "symlinks": 0,
+  "verified_rows": 485
+}

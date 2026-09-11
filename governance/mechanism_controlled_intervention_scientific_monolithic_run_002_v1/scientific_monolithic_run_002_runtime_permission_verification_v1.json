@@ -1,0 +1,19 @@
+{
+  "execution_log_mode": "0444",
+  "pid_record_mode": "0444",
+  "private_directory_mode": "0500",
+  "private_file_modes": [
+    "0400"
+  ],
+  "private_final_latent_files": 480,
+  "private_latent_directory": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_monolithic/run_002",
+  "scalar_directory_mode": "0555",
+  "scalar_file_modes": [
+    "0444"
+  ],
+  "scalar_files": 5,
+  "scalar_runtime_directory": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_monolithic/run_002",
+  "schema_version": 1,
+  "status": "PASS_SCIENTIFIC_MONOLITHIC_RUN_002_RUNTIME_PERMISSION_FREEZE",
+  "writable_runtime_files_or_directories": 0
+}
