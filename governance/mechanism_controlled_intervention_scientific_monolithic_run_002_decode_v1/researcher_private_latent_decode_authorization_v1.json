@@ -1,0 +1,32 @@
+{
+  "authorization_id": "researcher_private_latent_decode_protocol_preparation_and_execution",
+  "authorization_string": "授权私有 latent decode 的协议准备与执行",
+  "authorized": {
+    "complete_480_video_private_decode_transaction": true,
+    "cpu_only_protocol_preparation_synthetic_tests_and_no_weight_dry_run": true,
+    "native_vae_only_decode": true,
+    "private_decoded_video_persistence": true,
+    "single_gpu_execution": true
+  },
+  "authorized_at_utc": "2026-09-11",
+  "failure_policy": "FAIL CLOSED; NO RETRY, RESUME, REPAIR, SELECTIVE DECODE, REDUCED PANEL, OR REGENERATION",
+  "gpu_execution_authorized": true,
+  "gpu_hours_ceiling": 12.0,
+  "next_gate": "ANNOTATION, UNBLINDING, OUTCOME CONSTRUCTION, AND INTERVENTION ANALYSIS EACH REQUIRE SEPARATE RESEARCHER AUTHORIZATION",
+  "not_authorized": {
+    "annotation": true,
+    "fine_tuning_or_lora": true,
+    "frame_interpolation": true,
+    "intervention_analysis": true,
+    "network_or_remote_push": true,
+    "outcome_access_or_construction": true,
+    "public_generated_video": true,
+    "reference_access_or_preprocessing": true,
+    "regeneration_or_intervention_execution": true,
+    "selective_decode_or_failed_sample_deletion": true,
+    "unblinding": true,
+    "upscale": true
+  },
+  "schema_version": 1,
+  "status": "RESEARCHER_AUTHORIZATION_FOR_PRIVATE_LATENT_DECODE_PROTOCOL_PREPARATION_AND_EXECUTION"
+}

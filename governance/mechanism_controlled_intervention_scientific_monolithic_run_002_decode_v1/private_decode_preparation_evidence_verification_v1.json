@@ -1,0 +1,10 @@
+{
+  "artifact_rows": 17,
+  "bytes_and_sha256_verified": 17,
+  "gpu_used": false,
+  "model_or_weights_loaded": false,
+  "network_used": false,
+  "reference_or_outcome_opened": false,
+  "schema_version": 1,
+  "status": "PASS_PRIVATE_LATENT_DECODE_PREPARATION_EVIDENCE_MANIFEST_VERIFICATION"
+}

@@ -1,0 +1,35 @@
+{
+  "compute": {
+    "gpu_hours_ceiling": 12.0,
+    "private_filesystem_free_bytes_observed": 114277310464,
+    "single_gpu": true,
+    "single_process": true
+  },
+  "frozen_source": {
+    "generation_freeze_status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_SCIENTIFIC_MONOLITHIC_RUN_002_GENERATION",
+    "private_latent_files": 480,
+    "private_latent_root_mode": "0500",
+    "scalar_generation_root_mode": "0555"
+  },
+  "implementation": {
+    "complete_plan_rows": 480,
+    "independent_verifier": true,
+    "native_vae_only_decode": true,
+    "no_weight_dry_run": "PASS",
+    "private_output_parent_mode": "0700",
+    "ruff_errors": 0,
+    "synthetic_tests_failed": 0,
+    "synthetic_tests_passed": 4
+  },
+  "privacy_and_scope": {
+    "annotation_unblinding_or_analysis": false,
+    "decoded_output_private_only": true,
+    "network": false,
+    "outcome_access": false,
+    "public_video": false,
+    "reference_access_or_preprocessing": false,
+    "regeneration_or_intervention_execution": false
+  },
+  "schema_version": 1,
+  "status": "PASS_PRIVATE_LATENT_DECODE_PREPARATION_READY_FOR_AUTHORIZED_SINGLE_GPU_EXECUTION"
+}

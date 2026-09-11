@@ -1,0 +1,19 @@
+{
+  "active_gpu_authorization_present": false,
+  "annotation_unblinding_or_analysis": false,
+  "cuda_visible_devices": "",
+  "decoded_frames_planned": 23520,
+  "gpu_used": false,
+  "model_or_weights_loaded": false,
+  "native_vae_decode_wiring_verified": true,
+  "network_used": false,
+  "private_parent_mode": "0700",
+  "private_video_output_present": false,
+  "private_videos_planned": 480,
+  "reference_or_outcome_opened": false,
+  "runtime_output_present": false,
+  "schema_version": 1,
+  "source_latent_bindings_planned": 480,
+  "status": "PASS_INDEPENDENT_PRIVATE_LATENT_DECODE_CPU_PREPARATION_VERIFICATION",
+  "torch_imported": false
+}

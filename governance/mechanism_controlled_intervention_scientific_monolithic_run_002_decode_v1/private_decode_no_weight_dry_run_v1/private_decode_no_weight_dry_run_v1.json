@@ -1,0 +1,31 @@
+{
+  "active_execution_authorization_present": false,
+  "annotation_unblinding_or_analysis": false,
+  "decoded_video_generated": false,
+  "fps": 8,
+  "frame_interpolation": false,
+  "frames_per_video": 49,
+  "gpu_used": false,
+  "height": 480,
+  "latent_dtype": "torch.bfloat16",
+  "latent_shape": [
+    1,
+    13,
+    16,
+    60,
+    90
+  ],
+  "latent_tensor_opened": false,
+  "model_or_weights_loaded": false,
+  "network_used": false,
+  "planned_private_videos": 480,
+  "reference_or_outcome_opened": false,
+  "schema_version": 1,
+  "source_latents": 480,
+  "status": "PASS_PRIVATE_LATENT_DECODE_CPU_ONLY_NO_WEIGHT_DRY_RUN",
+  "torch_imported": false,
+  "upscale": false,
+  "vae_only_model_loading_planned": true,
+  "vae_scaling_factor": 0.7,
+  "width": 720
+}
