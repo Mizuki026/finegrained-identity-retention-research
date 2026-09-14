@@ -1,0 +1,14 @@
+{
+  "annotation_labels_present": false,
+  "artifact_bytes": 1332706338,
+  "artifact_rows": 3368,
+  "bytes_and_sha256_verified": 3368,
+  "gpu_used": false,
+  "model_or_weights_loaded": false,
+  "packet_files": 3366,
+  "private_mapping_files": 2,
+  "reference_or_outcome_opened": false,
+  "schema_version": 1,
+  "status": "PASS_PRIVATE_ANNOTATION_PACKET_ARTIFACT_MANIFEST_VERIFICATION",
+  "unblinding_performed": false
+}

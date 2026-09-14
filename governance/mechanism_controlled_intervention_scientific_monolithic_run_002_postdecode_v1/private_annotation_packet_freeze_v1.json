@@ -1,0 +1,52 @@
+{
+  "artifact_manifest": {
+    "artifact_rows": 3368,
+    "bytes": 848629,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/private_annotation_packet_artifact_manifest_v1.csv",
+    "sha256": "b2553e0c78cd358e90f0c57be13009db40f8a95debed912aea6874e116c2b9cd"
+  },
+  "artifact_manifest_verification": {
+    "bytes": 419,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/private_annotation_packet_artifact_manifest_verification_v1.json",
+    "sha256": "c2da510019b758530ce34a125324fd9d4bb556cb996532ece37f018110755038"
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_private_annotation_packet_v1",
+  "frozen_at_utc": "2026-09-14",
+  "mapping": {
+    "blind_key_persisted_private": true,
+    "bytes": 2015543,
+    "directory_mode": "0500",
+    "file_modes": "0400",
+    "mapping_rows": 3360,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_mapping_monolithic/run_002/private_annotation_mapping_v1.csv",
+    "sha256": "ff0bf91ff04679c98d6dece1d578cb98355ed91c6aaff4c3ac9369eabd2a70ed"
+  },
+  "next_gate": "TWO_INDEPENDENT_HUMAN_BLIND_ANNOTATION_SUBMISSIONS_AND_COMPLETE_DISAGREEMENT_ADJUDICATION_MUST_BE_RECEIVED_AND_FROZEN_BEFORE_UNBLINDING",
+  "packet": {
+    "annotation_items": 3360,
+    "annotation_started": false,
+    "annotators": 2,
+    "artifact_bytes": 1332706338,
+    "directory_modes": "0555",
+    "file_modes": "0444",
+    "manifest_bytes": 493,
+    "manifest_path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_packets_monolithic/run_002/annotation_packet_manifest_v1.json",
+    "manifest_sha256": "af13fe179237899f18227e8af3bff5017beceb973d6257de8cda7708cb07deb5",
+    "packet_files": 3366,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_packets_monolithic/run_002"
+  },
+  "privacy": {
+    "condition_pair_role_seed_and_source_path_visible_to_annotators": false,
+    "mapping_given_to_annotators": false,
+    "packet_private": true,
+    "public_media_files": 0
+  },
+  "schema_version": 1,
+  "stage_state": {
+    "annotation_complete": false,
+    "intervention_analysis_executable": false,
+    "outcome_construction_executable": false,
+    "unblinding_executable": false
+  },
+  "status": "FROZEN_PASS_PRIVATE_ANNOTATION_PACKET_READY_FOR_TWO_INDEPENDENT_HUMAN_ANNOTATORS"
+}
