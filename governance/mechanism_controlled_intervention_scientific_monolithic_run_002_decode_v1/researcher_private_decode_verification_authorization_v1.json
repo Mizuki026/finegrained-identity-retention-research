@@ -1,0 +1,30 @@
+{
+  "authorization_id": "researcher_cpu_only_independent_private_latent_decode_verifier",
+  "authorization_string": "授权执行 CPU-only 独立 verifier",
+  "authorized_at_utc": "2026-09-14",
+  "cpu_only_independent_verifier_authorized": true,
+  "execution_authorization": {
+    "bytes": 3622,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/private_decode_execution_authorization_v1.json",
+    "sha256": "5a90a680bff05fc053d693d87ba5553f3f3bf01a78394027636f205eb3b628da"
+  },
+  "not_authorized": {
+    "annotation_or_unblinding": true,
+    "freeze_or_permission_change": true,
+    "gpu_use": true,
+    "intervention_analysis": true,
+    "model_or_weight_loading": true,
+    "network_or_remote_push": true,
+    "outcome_access_or_construction": true,
+    "public_video": true,
+    "reference_access_or_preprocessing": true,
+    "regeneration_or_decode": true
+  },
+  "schema_version": 1,
+  "status": "RESEARCHER_AUTHORIZATION_FOR_CPU_ONLY_INDEPENDENT_PRIVATE_LATENT_DECODE_VERIFIER",
+  "verifier_code": {
+    "bytes": 4691,
+    "path": "src/verify_controlled_lfe_private_decode_v2.py",
+    "sha256": "5995905bafb2404eb53deafa30c9d9a81a5bfb37211d3928663b280316ffa9f3"
+  }
+}
