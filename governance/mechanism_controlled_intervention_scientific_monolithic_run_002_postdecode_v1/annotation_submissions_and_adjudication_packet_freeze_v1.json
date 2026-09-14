@@ -1,0 +1,51 @@
+{
+  "adjudication_packet": {
+    "directory_mode": "0555",
+    "disagreements": 1839,
+    "eyeglasses_disagreements": 702,
+    "facial_hair_disagreements": 1137,
+    "file_modes": "0444",
+    "manifest": {
+      "bytes": 469,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_adjudication_monolithic/run_002/adjudication_packet_manifest_v1.json",
+      "sha256": "e295ac85588e6689af47ec8cae6ceeb3b632bd536b77c1b20992e6864e5c149a"
+    },
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_adjudication_monolithic/run_002",
+    "template": {
+      "bytes": 171913,
+      "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_adjudication_monolithic/run_002/adjudication_template_v1.csv",
+      "sha256": "c524f17f00633a1b9f45d8c532652ebf9619de2defa5c28751e4190b257ade5d"
+    }
+  },
+  "annotation_verification": {
+    "complete_rows_per_annotator": 3360,
+    "duplicate_or_missing_ids": 0,
+    "exact_label_and_observability_agreements": 1521,
+    "illegal_labels_or_schema_errors": 0,
+    "private_mapping_accessed": false
+  },
+  "annotator_A_submission": {
+    "bytes": 241511,
+    "file_mode": "0400",
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_submissions_monolithic/run_002/annotator_A_submitted_v1.csv",
+    "sha256": "2b401bae0800cf1069042654901dc094c2d1ebcd7ed5d22953e20a35062d028c"
+  },
+  "annotator_B_submission": {
+    "bytes": 220620,
+    "file_mode": "0400",
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_submissions_monolithic/run_002/annotator_B_submitted_v1.csv",
+    "sha256": "a1e649caecdbdd8704a83bbdf5afc01a882a36dd65d473ebca2245954951ef38"
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_annotation_submissions_and_adjudication_packet_v1",
+  "frozen_at_utc": "2026-09-14",
+  "next_gate": "COMPLETE_ALL_1839_BLIND_DISAGREEMENT_ADJUDICATION_ROWS_AND_FREEZE_BEFORE_UNBLINDING",
+  "schema_version": 1,
+  "stage_state": {
+    "adjudication_complete": false,
+    "annotation_submissions_complete": true,
+    "intervention_analysis_executable": false,
+    "outcome_construction_executable": false,
+    "unblinding_executable": false
+  },
+  "status": "FROZEN_PASS_TWO_COMPLETE_BLIND_ANNOTATION_SUBMISSIONS_ADJUDICATION_REQUIRED"
+}
