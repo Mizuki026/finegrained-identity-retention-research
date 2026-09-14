@@ -1,0 +1,18 @@
+{
+  "annotation_items": 3360,
+  "annotators": 2,
+  "blind_key": "NEW_256_BIT_RANDOM_KEY_STORED_ONLY_IN_PRIVATE_MAPPING_ROOT",
+  "condition_pair_role_seed_and_source_path_visible_to_annotators": false,
+  "disagreement_adjudication": "REQUIRED_BEFORE_UNBLINDING",
+  "eyeglasses_labels": ["present", "absent", "U"],
+  "facial_hair_labels": ["0", "1", "2", "U"],
+  "frame_indices": [0, 8, 16, 24, 32, 40, 48],
+  "frames_per_video": 7,
+  "independent_annotation": true,
+  "packet_randomization": "INDEPENDENT_SHA256_ORDER_PER_ANNOTATOR_OVER_BLIND_IDS",
+  "private_mapping_given_to_annotators": false,
+  "schema_version": 1,
+  "source_videos": 480,
+  "status": "PREREGISTERED_PRIVATE_BLIND_ANNOTATION_PACKET_CONSTRUCTION",
+  "unblinding_before_complete_annotation_and_adjudication": false
+}

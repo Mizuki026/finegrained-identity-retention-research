@@ -1,0 +1,35 @@
+{
+  "authorization_string": "分别授权后续 annotation、unblinding、outcome construction 和 intervention analysis",
+  "authorized_at_utc": "2026-09-14",
+  "schema_version": 1,
+  "separate_authorizations": {
+    "annotation": {
+      "authorized": true,
+      "requires": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_PRIVATE_LATENT_DECODE",
+      "status": "SEPARATELY_AUTHORIZED_PRIVATE_CONDITION_BLINDED_ANNOTATION"
+    },
+    "intervention_analysis": {
+      "authorized": true,
+      "requires": "COMPLETE_FROZEN_OUTCOME_CONSTRUCTION_WITHOUT_MISSING_REQUIRED_UNIT_CONDITION_SCORE",
+      "status": "SEPARATELY_AUTHORIZED_PREREGISTERED_INTERVENTION_ANALYSIS"
+    },
+    "outcome_construction": {
+      "authorized": true,
+      "requires": "COMPLETE_FROZEN_UNBLINDING",
+      "status": "SEPARATELY_AUTHORIZED_PREREGISTERED_OUTCOME_CONSTRUCTION"
+    },
+    "unblinding": {
+      "authorized": true,
+      "requires": "TWO_COMPLETE_INDEPENDENT_ANNOTATIONS_AND_COMPLETE_DISAGREEMENT_ADJUDICATION_FROZEN",
+      "status": "SEPARATELY_AUTHORIZED_UNBLINDING"
+    }
+  },
+  "sequence": [
+    "annotation",
+    "unblinding",
+    "outcome_construction",
+    "intervention_analysis"
+  ],
+  "stage_skipping": false,
+  "status": "FOUR_SEPARATE_POST_DECODE_STAGE_AUTHORIZATIONS_RECORDED"
+}
