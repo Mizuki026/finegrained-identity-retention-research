@@ -1,0 +1,79 @@
+{
+  "authoritative_verification": {
+    "bytes": 1022,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic/run_002/independent_private_decode_verification_v2.json",
+    "sha256": "7257c406f2c32530300beaa662b4fef615296a3966b6509158a0f178aa951f0b"
+  },
+  "completion_record": {
+    "bytes": 1395,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/private_decode_completion_record_v1.json",
+    "sha256": "02b0008b092fe460c5aa2147909e78191a50bb38c74c0368f2c60f1a1cd464f6"
+  },
+  "current_authority": {
+    "annotation": false,
+    "decode_or_regeneration": false,
+    "gpu_hours": 0,
+    "intervention_analysis": false,
+    "model_or_weight_loading": false,
+    "network_or_remote_push": false,
+    "outcome_access_or_construction": false,
+    "reference_access_or_preprocessing": false,
+    "unblinding": false
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_scientific_monolithic_run_002_private_decode_verification",
+  "frozen_at_utc": "2026-09-14",
+  "frozen_runtime": {
+    "private_directory_mode": "0500",
+    "private_file_modes": "0400",
+    "private_path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_decoded_monolithic/run_002",
+    "scalar_directory_mode": "0555",
+    "scalar_file_modes": "0444",
+    "scalar_path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic/run_002"
+  },
+  "next_gate": "ANNOTATION, UNBLINDING, OUTCOME CONSTRUCTION, AND INTERVENTION ANALYSIS EACH REQUIRE SEPARATE RESEARCHER AUTHORIZATION",
+  "researcher_freeze_authorization": {
+    "bytes": 853,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/researcher_private_decode_verification_freeze_authorization_v1.json",
+    "sha256": "a2f57a0139491c9256618aff61e7f3aeb3fedba70abc2c93b6e6bc3d632335f6"
+  },
+  "runtime_artifact_manifest": {
+    "artifact_rows": 484,
+    "bytes": 116142,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/private_decode_runtime_artifact_manifest_v1.csv",
+    "sha256": "a9af683f2eec05d2df5fd7a5b94641883b051d73a48654196d747273a6e13359"
+  },
+  "runtime_artifact_manifest_verification": {
+    "bytes": 468,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/private_decode_runtime_artifact_manifest_verification_v1.json",
+    "sha256": "f5f435d47b15db95859ae37ca88f497f38692c91cd5a752c5432462578f2f080"
+  },
+  "runtime_permission_verification": {
+    "bytes": 555,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_decode_v1/private_decode_runtime_permission_verification_v1.json",
+    "sha256": "2eac170057ad058609bbbe38937785f614a52fc87e4e101214b3c0175a751b68"
+  },
+  "schema_version": 1,
+  "scientific_state": {
+    "accepted_working_models_unchanged": true,
+    "current_fixed_panel_observation": "No outcome observations have been constructed or opened in this phase.",
+    "mechanism_hypotheses_tested": false,
+    "verified_fact": "All 480 frozen source latents and 480 private decoded videos passed independent byte/SHA256 verification; all 23520 decoded frames passed the frozen media contract.",
+    "working_models_mechanistically_verified": false
+  },
+  "source_state_commit": "5e0ac5e060e6685e6780415a51ab4b34dd3a3364",
+  "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_PRIVATE_LATENT_DECODE",
+  "superseded_verification_v1": {
+    "authoritative": false,
+    "disposition": "SUPERSEDED_NONAUTHORITATIVE_DUE_TO_SOURCE_LATENT_REHASH_OMISSION",
+    "preserved": true
+  },
+  "verified": {
+    "decode_gpu_hours": 0.7415468338732091,
+    "decoded_frames": 23520,
+    "private_decoded_video_bytes": 152497109,
+    "private_decoded_videos": 480,
+    "runtime_artifacts_hash_verified": 484,
+    "source_latent_bytes": 1078318080,
+    "source_latents_rehashed": 480
+  }
+}

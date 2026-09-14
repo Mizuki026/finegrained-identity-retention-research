@@ -1,0 +1,15 @@
+{
+  "annotation_unblinding_or_analysis": false,
+  "artifact_rows": 484,
+  "authoritative_verification": "v2",
+  "bytes_and_sha256_verified": 484,
+  "gpu_used": false,
+  "model_or_weights_loaded": false,
+  "network_used": false,
+  "private_video_files": 480,
+  "reference_or_outcome_opened": false,
+  "scalar_files": 4,
+  "schema_version": 1,
+  "status": "PASS_PRIVATE_DECODE_RUNTIME_ARTIFACT_MANIFEST_VERIFICATION",
+  "v1_disposition": "SUPERSEDED_NONAUTHORITATIVE"
+}

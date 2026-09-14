@@ -1,0 +1,23 @@
+{
+  "authorization_id": "researcher_private_decode_verification_freeze",
+  "authorization_string": "单独授权 private decode verification freeze",
+  "authorized": {
+    "authoritative_v2_verification_freeze": true,
+    "runtime_artifact_manifest_and_hash_verification": true,
+    "scalar_runtime_mode_0555_files_0444": true,
+    "private_video_runtime_mode_0500_files_0400": true
+  },
+  "authorized_at_utc": "2026-09-14",
+  "not_authorized": {
+    "annotation_or_unblinding": true,
+    "decode_or_regeneration": true,
+    "intervention_analysis": true,
+    "model_or_weight_loading": true,
+    "network_or_remote_push": true,
+    "outcome_access_or_construction": true,
+    "public_video": true,
+    "reference_access_or_preprocessing": true
+  },
+  "schema_version": 1,
+  "status": "RESEARCHER_AUTHORIZATION_FOR_PRIVATE_DECODE_VERIFICATION_FREEZE"
+}

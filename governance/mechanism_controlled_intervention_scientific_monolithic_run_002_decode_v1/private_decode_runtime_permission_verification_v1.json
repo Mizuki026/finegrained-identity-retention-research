@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-09-14",
+  "private_directory": {
+    "files": 480,
+    "files_mode": "0400",
+    "mode": "0500",
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_decoded_monolithic/run_002"
+  },
+  "scalar_directory": {
+    "files": 4,
+    "files_mode": "0444",
+    "mode": "0555",
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic/run_002"
+  },
+  "schema_version": 1,
+  "status": "PASS_PRIVATE_DECODE_RUNTIME_PERMISSION_VERIFICATION"
+}

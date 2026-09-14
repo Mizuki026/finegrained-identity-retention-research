@@ -1,0 +1,35 @@
+{
+  "authoritative_verification": {
+    "bytes": 1022,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic/run_002/independent_private_decode_verification_v2.json",
+    "sha256": "7257c406f2c32530300beaa662b4fef615296a3966b6509158a0f178aa951f0b",
+    "status": "PASS_INDEPENDENT_PRIVATE_LATENT_DECODE_VERIFICATION_V2"
+  },
+  "completed": {
+    "decode_gpu_hours": 0.7415468338732091,
+    "decoded_frames_verified": 23520,
+    "private_decoded_video_bytes": 152497109,
+    "private_decoded_videos": 480,
+    "source_latent_bytes": 1078318080,
+    "source_latents_rehashed": 480
+  },
+  "frozen_runtime_artifacts": {
+    "artifact_rows": 484,
+    "bytes": 152819581,
+    "private_video_files": 480,
+    "scalar_files": 4
+  },
+  "privacy_and_scientific_boundary": {
+    "annotation_unblinding_or_analysis": false,
+    "model_loaded_by_verifier": false,
+    "outcome_opened": false,
+    "public_video_files": 0,
+    "reference_opened": false
+  },
+  "schema_version": 1,
+  "status": "COMPLETE_INDEPENDENTLY_VERIFIED_AND_PERMISSION_FROZEN_PRIVATE_LATENT_DECODE",
+  "superseded_record": {
+    "disposition": "SUPERSEDED_NONAUTHORITATIVE_DUE_TO_SOURCE_LATENT_REHASH_OMISSION",
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic/run_002/independent_private_decode_verification_v1.json"
+  }
+}
