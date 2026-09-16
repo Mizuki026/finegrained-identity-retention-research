@@ -1,0 +1,36 @@
+{
+  "freeze_id": "controlled_lfe_projection_exchange_intervention_analysis_v1",
+  "frozen_at_utc": "2026-09-16",
+  "independent_verification": "PASS_INDEPENDENT_PREREGISTERED_INTERVENTION_ANALYSIS_VERIFICATION_20_OF_20",
+  "outcome_construction_freeze": {
+    "bytes": 1677,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/outcome_construction_freeze_v1.json",
+    "sha256": "9c6017c5bcb41e69df2f3992a99d20f8b84cd852c3fbf3debee4e1373c271473"
+  },
+  "outputs": {
+    "attribute_primary_summary": {"bytes": 203, "sha256": "ad2fd82c2afc84ef3538bcd890ff0d731ca65eafb79056da2fc98224685ffaa6"},
+    "analysis_summary": {"bytes": 864, "sha256": "e4d7f486e6e60c246f1babd3c44355891580518b006457b8b3b7568611f02e0b"},
+    "pair_effects": {"bytes": 1567, "sha256": "d5d56c6ead305e603d8a188671a5175a8b9798e7e4b25894b8b028c21d11a69b"},
+    "role_contrasts": {"bytes": 5851, "sha256": "74d9cd39216e014f0fc06595194dd1b130b04c97eecd79b4163ebcab63fd407c"}
+  },
+  "primary_results": {
+    "eyeglasses": {"correct": 0, "tie": 7, "wrong": 3, "mean": -0.023214285714285715, "median": 0, "minimum": -0.125, "maximum": 0},
+    "facial_hair": {"correct": 2, "tie": 7, "wrong": 1, "mean": 0.005093700159489633, "median": 0, "minimum": -0.029239766081871343, "maximum": 0.05555555555555555}
+  },
+  "runtime": {
+    "directory_mode": "0555",
+    "file_modes": "0444",
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_intervention_analysis_monolithic/run_002"
+  },
+  "schema_version": 1,
+  "scientific_interpretation_status": "PROPOSED_FOR_RESEARCHER_ACCEPTANCE_NOT_YET_ACCEPTED",
+  "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_PREREGISTERED_INTERVENTION_ANALYSIS",
+  "verified_boundaries": {
+    "complete_pair_effects": 20,
+    "confidence_intervals": false,
+    "cross_attribute_pooling_or_ranking": false,
+    "missing_pair_effects": 0,
+    "p_values": false,
+    "reduced_panel": false
+  }
+}
