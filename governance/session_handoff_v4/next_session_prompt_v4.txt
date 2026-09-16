@@ -1,0 +1,69 @@
+这是 fine-grained identity-attribute retention 研究在 controlled-intervention run-002 完成、验证、解释接受并关闭后的新阶段会话。
+
+请先执行严格只读启动：不要修改文件、不要运行测试或 dry-run、不要访问或预处理 reference、不要重新访问或构造 outcome、不要打开 private decoded media、不要加载模型或权重、不要使用 GPU、不要生成或解码视频、不要执行 intervention、不要重新标注、不要计算新结果。
+
+1. 完整阅读目录：
+   /root/autodl-tmp/finegrained/research_pipeline/governance/session_handoff_v4
+2. 必须完整读取：
+   - research_state_v4.md
+   - research_state_v4.json
+   - artifact_index_v4.csv
+   - open_questions_v4.md
+   - next_session_prompt_v4.txt
+3. 检查研究仓库当前分支、HEAD、上游关系、远程关系和工作树：
+   /root/autodl-tmp/finegrained/research_pipeline
+4. 检查 ConsisID 仓库 HEAD 与工作树：
+   /root/autodl-tmp/consisid-smoketest/ConsisID
+5. 对 artifact_index_v4.csv 的全部 31 个路径执行存在性、字节数和 SHA256 只读核验。
+6. 对 H001 引用的 artifact_index_v3.csv 全部 67 项再次执行存在性、字节数和 SHA256 递归核验；继续对其中 H001 引用的 artifact_index_v2.csv 全部 53 项递归核验。
+7. 核验以下冻结目录及内部文件权限：
+   - 0555 / 0444: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_input_audit/run_001
+   - 0555 / 0444: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_engineering/run_006
+   - 0555 / 0444: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_monolithic/run_002
+   - 0500 / 0400: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_monolithic/run_002
+   - 0555 / 0444: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_decode_monolithic/run_002
+   - 0500 / 0400: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_decoded_monolithic/run_002
+   - 0555 / 0444: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_packets_monolithic/run_002
+   - 0500 / 0400: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_mapping_monolithic/run_002
+   - 0500 / 0400: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_consensus_monolithic/run_002
+   - 0500 / 0400: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_unblinded_monolithic/run_002_v2
+   - 0555 / 0444: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_outcomes_monolithic/run_002
+   - 0555 / 0444: /root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_intervention_analysis_monolithic/run_002
+8. 交接记录的 source-state commit 是：
+   290dd40a5a97cfeb211f3df00379fed0220420da
+   如果当前 HEAD 不同，先检查差异是否仅为新增 session_handoff_v4 的交接提交；不得直接解释为数据损坏。
+9. 研究工作树在 source state 预期仅有以下四个用户所有的未跟踪工具；不得修改、暂存或删除：
+   - tools/bootstrap_mechanism_annotations_v1.py
+   - tools/build_mechanism_annotation_contact_sheets.py
+   - tools/build_mechanism_prediction_review_sheets.py
+   - tools/finalize_mechanism_annotator_a_v1.py
+10. 发现任何路径、哈希、分支、提交、权限或其他状态不一致时立即停止并报告。
+
+科研边界：
+
+- 冻结 CSV/JSON、SHA256 和 Git 历史是事实来源；聊天摘要和交接说明不是实验数据库。
+- 必须分开报告：已验证事实、当前固定面板观察、已接受科学解释、已接受但尚未验证的工作模型、尚未验证机制假说和研究决策。
+- v3 之前的全部历史边界继续生效；Phase-S run-003 仍是唯一完成的 Phase-S 包，历史失败运行均不可复用。
+- engineering run-001 至 run-005、seed-1 shard/verifier/direction-recovery 路径均为不可复用历史；monolithic scientific run-002 是唯一权威 controlled-intervention 科学 transaction。
+- generation、decode、annotation、unblinding、outcome 和 intervention analysis 均已完成并冻结。unblinding v1 保留但非权威；corrected v2 是唯一权威 unblinding。
+- 受控干预结果是完整固定面板的混合/接近零结果：眼镜 0/7/3，面部毛发 2/7/1（correct/tie/wrong）。不得隐藏 ties 或 wrong-direction pairs。
+- 已接受的科学解释是：在固定 dose、LFE interface、完整 32-token family、人类读出和有限面板下，不支持广泛稳健的方向性因果贡献；仅有有限 pair-specific facial-hair 证据。
+- 不得把该结果解释为 LFE 中没有属性信息、local route 无关、自然 mediation、bottleneck、路径必要/充分、定位、总体/模型范围、frame-independent 或跨属性排序结论。
+- “表征—读出不匹配/表征重组”和“多路径、分布式表征”仍是已接受工作模型，不是已验证机制。
+- controlled-intervention v1 analysis window 已关闭：不得重跑、选择性重生成、改 dose/指标/阈值/frame indices/排除规则，不得挑选有利 pair/token，不得恢复自动指标为主要结果，不得展开 post-hoc frame family。
+- 不得公开 reference 对应生成视频，不得微调或 LoRA。
+
+完成只读核验后，只输出：
+
+1. 当前分支、HEAD、上游/远程关系和两个工作树状态；
+2. v4 的 31 项、嵌套 v3 的 67 项与嵌套 v2 的 53 项是否全部核验通过；
+3. 十二个冻结目录权限是否通过；
+4. 已验证事实；
+5. 当前固定面板观察；
+6. 已接受科学解释；
+7. 已接受但尚未验证的工作模型；
+8. 尚未验证的机制假说；
+9. 当前研究决策和精确授权边界；
+10. 下一项最小工作及其后仍需单独批准的阶段。
+
+当前下一项最小工作仅是 bounded manuscript-style result synthesis 与是否结束机制路线的研究决策。任何新的 empirical diagnostic、reference/outcome reprocessing、模型加载、GPU 运行、generation、decode、annotation、unblinding、outcome construction 或 analysis family 都需要新的、前瞻性的单独研究者授权。

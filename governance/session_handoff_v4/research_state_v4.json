@@ -1,0 +1,184 @@
+{
+  "schema_version": 4,
+  "handoff_id": "finegrained_identity_retention_session_handoff_v4",
+  "created_at_utc": "2026-09-16",
+  "status": "CONTROLLED_INTERVENTION_RUN_002_COMPLETE_VERIFIED_INTERPRETATION_ACCEPTED_AND_CLOSED",
+  "supersedes_handoff": "governance/session_handoff_v3",
+  "authoritative_source_policy": "Frozen CSV and JSON artifacts, bound SHA256 values, and Git history supersede this compact summary. Stop on any mismatch.",
+  "source_state": {
+    "research_repository": "/root/autodl-tmp/finegrained/research_pipeline",
+    "branch": "main",
+    "commit": "290dd40a5a97cfeb211f3df00379fed0220420da",
+    "working_tree_clean": false,
+    "expected_untracked_user_files": [
+      "tools/bootstrap_mechanism_annotations_v1.py",
+      "tools/build_mechanism_annotation_contact_sheets.py",
+      "tools/build_mechanism_prediction_review_sheets.py",
+      "tools/finalize_mechanism_annotator_a_v1.py"
+    ],
+    "upstream": "origin/main",
+    "origin_main_commit": "66c990b3e2451b69e3fda02bfd977c9b2f357476",
+    "ahead": 72,
+    "behind": 0,
+    "remote": "https://github.com/Mizuki026/finegrained-identity-retention-research.git",
+    "consisid_repository": "/root/autodl-tmp/consisid-smoketest/ConsisID",
+    "consisid_commit": "60429e4b0d24d36ce8df7fb58f7ab42b86e2b70e",
+    "consisid_working_tree_clean": true,
+    "python": "/root/autodl-tmp/consisid-smoketest/env/bin/python"
+  },
+  "research_objective": {
+    "topic": "fine-grained identity-attribute retention in reference-conditioned video generation",
+    "model_system": "ConsisID",
+    "completed_windows": [
+      "formal_output_measurement",
+      "measurement_repair",
+      "static_structure_mapping",
+      "bounded_mechanism_trace",
+      "cpu_mechanism_outcome_linkage",
+      "global_scalar_readout_linkage",
+      "outcome_blind_token_direction_observation",
+      "controlled_lfe_projection_exchange_intervention"
+    ],
+    "current_transition": "closed result synthesis and prospective next-question decision",
+    "fine_tuning_planned": false,
+    "lora_planned": false,
+    "public_reference_corresponding_video_release": false
+  },
+  "formal_panel": {
+    "attributes": ["eyeglasses", "facial_hair"],
+    "pairs_per_attribute": 10,
+    "formal_units": 40,
+    "seeds_per_unit": 4,
+    "source_tasks": 160,
+    "conditions": ["baseline", "target_projection_exchange", "orthogonal_sham"],
+    "scientific_trajectories": 480,
+    "scheduler_steps": 24000,
+    "sample_reference_prompt_scheduler_guidance_resolution_precision_metric_threshold_frame_indices_exclusion_or_dose_changed": false
+  },
+  "controlled_intervention_history": {
+    "implementation": "PASS_CPU_ONLY_SYNTHETIC_TESTS_AND_NO_WEIGHT_DRY_RUN",
+    "formal_input_audit": "PASS_160_TASKS_40_UNITS_20_PAIRS",
+    "engineering_runs_001_to_005": "IMMUTABLE_ABORTED_NONREUSABLE",
+    "engineering_run_006": {
+      "status": "PASS_ENGINEERING_ONLY",
+      "tasks": 8,
+      "condition_executions": 24,
+      "scheduler_steps": 24,
+      "gpu_hours": 0.03942001613995267,
+      "outcomes_opened": false
+    },
+    "scientific_run_001_and_seed_sharding_path": "SUPERSEDED_OR_NONREUSABLE_HISTORY",
+    "seed_1_verifier_correction_and_direction_recovery": "IMMUTABLE_ABORTED_NONREUSABLE",
+    "authoritative_scientific_transaction": "MONOLITHIC_RUN_002_ONLY"
+  },
+  "scientific_generation_run_002": {
+    "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED",
+    "single_acquisition_transaction": true,
+    "four_seeds_same_process": true,
+    "formal_units": 40,
+    "source_tasks": 160,
+    "trajectories": 480,
+    "scheduler_steps": 24000,
+    "gpu_hours": 35.55920854484714,
+    "private_final_latent_files": 480,
+    "private_final_latent_bytes": 1078318080,
+    "decoded_media_files_during_generation": 0,
+    "raw_identity_lfe_or_direction_files": 0,
+    "runtime_artifacts_verified": 485
+  },
+  "private_decode_run_002": {
+    "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED",
+    "videos": 480,
+    "decoded_frames": 23520,
+    "source_latents_rehashed": 480,
+    "gpu_hours": 0.7415468338732091,
+    "public_media_files": 0,
+    "verification_v1": "PRESERVED_SUPERSEDED_NONAUTHORITATIVE_DUE_TO_SOURCE_LATENT_REHASH_OMISSION",
+    "verification_v2": "AUTHORITATIVE_PASS"
+  },
+  "blind_annotation": {
+    "sampled_frame_items": 3360,
+    "annotators": 2,
+    "A_B_agreements": 1521,
+    "adjudicated_disagreements": 1839,
+    "final_consensus_rows": 3360,
+    "private_mapping_accessed_before_consensus_freeze": false,
+    "human_independence": "RESEARCHER_ATTESTED_NOT_FILE_VERIFIABLE"
+  },
+  "unblinding_and_outcomes": {
+    "unblinding_v1": "PRESERVED_SUPERSEDED_NONAUTHORITATIVE_DUE_TO_REASON_OMISSION",
+    "unblinding_v2": "AUTHORITATIVE_PASS_3360_ROWS_WITH_625_U_REASONS",
+    "unit_condition_scores": 120,
+    "zero_valid_scores": 0,
+    "unobservable_states_retained": 625,
+    "imputation": false,
+    "reduced_panel": false,
+    "valid_frame_coverage": {
+      "eyeglasses": {"baseline": "530/560", "target": "531/560", "sham": "533/560"},
+      "facial_hair": {"baseline": "379/560", "target": "382/560", "sham": "380/560"}
+    }
+  },
+  "intervention_analysis": {
+    "status": "FROZEN_COMPLETE_INDEPENDENTLY_VERIFIED_AND_RESEARCHER_ACCEPTED",
+    "complete_pair_effects": 20,
+    "missing_pair_effects": 0,
+    "confidence_intervals": false,
+    "p_values": false,
+    "cross_attribute_pooling_or_ranking": false,
+    "eyeglasses": {
+      "correct_tie_wrong": [0, 7, 3],
+      "mean": -0.023214285714285715,
+      "median": 0,
+      "range": [-0.125, 0]
+    },
+    "facial_hair": {
+      "correct_tie_wrong": [2, 7, 1],
+      "mean": 0.005093700159489633,
+      "median": 0,
+      "range": [-0.029239766081871343, 0.05555555555555555]
+    }
+  },
+  "verified_facts": [
+    "The preregistered monolithic run-002 completed all 480 trajectories and 24000 scheduler steps and passed independent persisted verification.",
+    "All 480 private latents and 480 private decoded videos were independently hash verified; all 23520 decoded frames passed the media contract.",
+    "Blind consensus covers all 3360 sampled frames; all disagreements were adjudicated before private mapping access.",
+    "Authoritative corrected unblinding retains every final reason, including all 625 U-state reasons.",
+    "All 120 unit-condition scores and all 20 preregistered pair effects are complete without imputation or reduced panel.",
+    "The researcher accepted and froze the scientific interpretation on 2026-09-16."
+  ],
+  "current_fixed_panel_observation": "The complete-family target-versus-sham intervention result is sparse, mixed, and centered near zero: no positive eyeglasses pair effect, two modest positive facial-hair effects, four total wrong-direction effects, and fourteen ties.",
+  "accepted_scientific_interpretation": {
+    "broad_robust_directional_causal_contribution": "NOT_SUPPORTED_UNDER_THIS_FIXED_INTERVENTION_AND_PANEL",
+    "limited_pair_specific_facial_hair_evidence": ["FFH_08", "FFH_09"],
+    "facial_hair_counterexample": ["FFH_10"],
+    "measurement_state_limitation": "MANY_ROLE_SCORES_AT_PREREGISTERED_FLOORS_OR_CEILINGS",
+    "attribute_information_absent_from_lfe": false,
+    "local_route_irrelevant": false
+  },
+  "accepted_working_models_not_verified_mechanisms": [
+    "representation-readout mismatch or representation reorganization",
+    "multi-path distributed representation"
+  ],
+  "unverified_mechanism_hypotheses": [
+    "attribute-relevant structure may be distributed or reorganized across LFE tokens",
+    "nonlinear downstream use may make the fixed linear projection exchange incomplete",
+    "the fixed displacement may be partly off-manifold",
+    "local and spatial routes may compensate or interact",
+    "readout saturation may mask some intervention-induced movement",
+    "historical cross-run numerical mismatch source remains unlocalized"
+  ],
+  "research_decision": {
+    "controlled_intervention_v1_analysis_window": "CLOSED",
+    "retain_complete_mixed_near_zero_result": true,
+    "rerun_or_selective_regeneration": false,
+    "dose_or_metric_change": false,
+    "favorable_pair_or_token_selection": false,
+    "post_hoc_frame_family": false,
+    "new_empirical_stage_currently_authorized": false
+  },
+  "next_minimal_work": {
+    "authorized_now": "governance closure, current-state handoff, and result synthesis only",
+    "recommended_decision": "prepare a bounded manuscript-style result synthesis and decide whether the mechanism line ends here",
+    "requires_separate_prospective_authorization": "any new empirical diagnostic, reprocessing, model loading, GPU use, generation, decode, annotation, outcome construction, or analysis family"
+  }
+}
