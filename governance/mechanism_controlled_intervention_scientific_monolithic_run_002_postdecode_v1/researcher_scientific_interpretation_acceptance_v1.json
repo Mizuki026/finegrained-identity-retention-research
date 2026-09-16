@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "decision_id": "controlled_lfe_projection_exchange_run_002_scientific_interpretation_acceptance",
+  "decided_at_utc": "2026-09-16",
+  "status": "RESEARCHER_ACCEPTED_COMPLETE_MIXED_NEAR_ZERO_FIXED_PANEL_INTERPRETATION",
+  "decision_source": "Direct researcher instruction in the current session: 接受科学解释，请你继续推进后续工作",
+  "base_research_commit": "74820899bdb22edc8989adf2967e3c76ae14d27a",
+  "source_proposal": {
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/scientific_interpretation_proposal_v1.md",
+    "bytes": 3836,
+    "sha256": "70069330c256ea9742b39ac177dde81e96898b59678be71df5a219f42e90adfa"
+  },
+  "source_analysis_freeze": {
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/intervention_analysis_freeze_v1.json",
+    "bytes": 1973,
+    "sha256": "44237840e38bed7910df5fd570840881404c95c92561483b41dd040b4bcd69ba"
+  },
+  "accepted_interpretation": {
+    "complete_preregistered_result": "MIXED_SPARSE_AND_CENTERED_NEAR_ZERO_ON_THE_FIXED_TWENTY_PAIR_PANEL",
+    "broad_robust_directional_causal_contribution_supported": false,
+    "eyeglasses_predicted_direction_pairs": 0,
+    "eyeglasses_ties": 7,
+    "eyeglasses_wrong_direction_pairs": 3,
+    "facial_hair_predicted_direction_pairs": 2,
+    "facial_hair_ties": 7,
+    "facial_hair_wrong_direction_pairs": 1,
+    "limited_pair_specific_facial_hair_evidence": ["FFH_08", "FFH_09"],
+    "facial_hair_counterexample": ["FFH_10"],
+    "saturated_readout_is_a_measurement_state_limitation": true,
+    "absence_of_attribute_information_from_lfe_established": false,
+    "local_route_irrelevance_established": false,
+    "natural_mediation_bottleneck_necessity_or_sufficiency_established": false,
+    "population_model_wide_or_cross_attribute_claim_supported": false,
+    "representation_readout_mismatch_or_reorganization": "RETAINED_AS_ACCEPTED_WORKING_MODEL_NOT_VERIFIED_MECHANISM",
+    "multi_path_distributed_representation": "RETAINED_AS_ACCEPTED_WORKING_MODEL_NOT_VERIFIED_MECHANISM"
+  },
+  "research_decision": {
+    "preregistered_intervention_analysis_window": "CLOSED",
+    "rerun_or_selective_regeneration": false,
+    "dose_change": false,
+    "favorable_pair_or_token_selection": false,
+    "human_metric_replacement": false,
+    "post_hoc_frame_family_expansion": false,
+    "result_driven_redesign": false
+  },
+  "authority_granted_by_this_decision": {
+    "freeze_interpretation_acceptance": true,
+    "prepare_current_state_handoff_and_claim_ledger": true,
+    "new_empirical_experiment_or_diagnostic": false,
+    "reference_or_outcome_reprocessing": false,
+    "model_or_weight_loading": false,
+    "gpu_execution": false,
+    "video_generation_or_decode": false,
+    "new_annotation_unblinding_or_outcome_construction": false,
+    "new_intervention_or_analysis_family": false
+  },
+  "claim_boundary": "FIXED_TWENTY_PAIR_PANEL_FIXED_DOSE_FIXED_LFE_INTERFACE_AND_COMPLETE_32_TOKEN_FAMILY_ONLY_NO_ABSENCE_OF_LFE_INFORMATION_LOCAL_ROUTE_IRRELEVANCE_NATURAL_MEDIATION_BOTTLENECK_ROUTE_NECESSITY_SUFFICIENCY_LOCALIZATION_POPULATION_MODEL_WIDE_FRAME_INDEPENDENT_OR_CROSS_ATTRIBUTE_ORDERING_CLAIMS",
+  "next_gate": "FREEZE_ACCEPTED_INTERPRETATION_AND_CURRENT_RESEARCH_STATE_THEN_REQUIRE_A_SEPARATE_PROSPECTIVE_RESEARCH_DECISION_BEFORE_ANY_NEW_EMPIRICAL_STAGE"
+}

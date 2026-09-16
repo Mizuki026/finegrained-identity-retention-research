@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "freeze_id": "controlled_lfe_projection_exchange_run_002_scientific_interpretation_acceptance",
+  "frozen_at_utc": "2026-09-16",
+  "base_research_commit": "74820899bdb22edc8989adf2967e3c76ae14d27a",
+  "status": "FROZEN_RESEARCHER_ACCEPTED_COMPLETE_MIXED_NEAR_ZERO_FIXED_PANEL_INTERPRETATION",
+  "researcher_acceptance": {
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/researcher_scientific_interpretation_acceptance_v1.json",
+    "bytes": 3395,
+    "sha256": "7a98a46871ebbe177d5da5bcec6afc7c49cd925496f4b02bbb32ef39a7bd9071"
+  },
+  "evidence_manifest": {
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/scientific_interpretation_acceptance_evidence_manifest_v1.csv",
+    "artifact_rows": 9,
+    "bytes": 2251,
+    "sha256": "252bfd385a0bac05657f16b013ce2780b1d6a188e45aefac1330fefb4523fae3"
+  },
+  "independent_evidence_verification": {
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/scientific_interpretation_acceptance_evidence_verification_v1.json",
+    "bytes": 1024,
+    "sha256": "0470080482ee587fb658702e5177ad63db6c50f0d0216d7ccc41a57b5761beda"
+  },
+  "accepted_scientific_state": {
+    "primary_result": "COMPLETE_FIXED_PANEL_EFFECTS_ARE_SPARSE_MIXED_AND_CENTERED_NEAR_ZERO",
+    "eyeglasses_target_vs_sham_correct_tie_wrong": [0, 7, 3],
+    "eyeglasses_mean_median_range": [-0.023214285714285715, 0, [-0.125, 0]],
+    "facial_hair_target_vs_sham_correct_tie_wrong": [2, 7, 1],
+    "facial_hair_mean_median_range": [0.005093700159489633, 0, [-0.029239766081871343, 0.05555555555555555]],
+    "broad_robust_directional_causal_contribution": "NOT_SUPPORTED_UNDER_THIS_FIXED_INTERVENTION_AND_PANEL",
+    "limited_pair_specific_direction_consistent_evidence": ["FFH_08", "FFH_09"],
+    "pair_specific_counterevidence": ["FFH_10", "THREE_EYEGLASSES_PAIRS"],
+    "measurement_state_limitation": "MANY_ROLE_SCORES_AT_PREREGISTERED_FLOORS_OR_CEILINGS",
+    "absence_of_lfe_attribute_information_or_local_route_irrelevance": "NOT_ESTABLISHED",
+    "working_models": "REPRESENTATION_READOUT_MISMATCH_OR_REORGANIZATION_AND_MULTI_PATH_DISTRIBUTED_REPRESENTATION_REMAIN_COMPATIBLE_BUT_UNVERIFIED",
+    "intervention_analysis_window": "CLOSED"
+  },
+  "research_decision": {
+    "retain_complete_result_without_rerun": true,
+    "retain_all_ties_and_wrong_direction_pairs": true,
+    "dose_metric_threshold_frame_indices_and_exclusion_rules_frozen": true,
+    "selective_regeneration_pair_or_token_selection_and_post_hoc_expansion_prohibited": true,
+    "new_empirical_stage_requires_separate_prospective_researcher_authorization": true
+  },
+  "authority": {
+    "interpretation_acceptance_and_governance_closure": true,
+    "current_state_handoff_preparation": true,
+    "new_reference_or_outcome_access": false,
+    "model_or_weight_loading": false,
+    "gpu_execution_generation_or_decode": false,
+    "new_annotation_unblinding_or_outcome_construction": false,
+    "new_intervention_diagnostic_or_analysis_family": false
+  },
+  "claim_boundary": "FIXED_TWENTY_PAIR_PANEL_FIXED_DOSE_FIXED_LFE_INTERFACE_COMPLETE_32_TOKEN_FAMILY_AND_PREREGISTERED_HUMAN_READOUT_ONLY",
+  "next_gate": "CURRENT_STATE_HANDOFF_AND_SEPARATE_PROSPECTIVE_DECISION_ON_WHETHER_TO_END_WITH_SYNTHESIS_OR_PREREGISTER_A_DISTINCT_NEW_QUESTION"
+}

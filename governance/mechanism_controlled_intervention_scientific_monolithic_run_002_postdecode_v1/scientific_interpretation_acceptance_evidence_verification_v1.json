@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "verification_id": "controlled_lfe_projection_exchange_run_002_scientific_interpretation_acceptance_evidence",
+  "verified_at_utc": "2026-09-16",
+  "status": "PASS_ALL_9_ACCEPTANCE_EVIDENCE_ARTIFACTS",
+  "manifest": {
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/scientific_interpretation_acceptance_evidence_manifest_v1.csv",
+    "artifact_rows": 9,
+    "bytes": 2251,
+    "sha256": "252bfd385a0bac05657f16b013ce2780b1d6a188e45aefac1330fefb4523fae3"
+  },
+  "checks": {
+    "paths_exist": 9,
+    "byte_sizes_match": 9,
+    "sha256_values_match": 9,
+    "mismatches": 0
+  },
+  "verified_chain": [
+    "preregistered_design",
+    "scientific_generation",
+    "private_decode_verification",
+    "blind_annotation_consensus_and_adjudication",
+    "authoritative_corrected_unblinding",
+    "outcome_construction",
+    "intervention_analysis",
+    "scientific_interpretation_proposal",
+    "researcher_scientific_interpretation_acceptance"
+  ]
+}
