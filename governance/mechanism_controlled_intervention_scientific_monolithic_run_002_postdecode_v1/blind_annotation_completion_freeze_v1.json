@@ -1,0 +1,47 @@
+{
+  "adjudication_submission": {
+    "bytes": 316944,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_adjudication_submissions_monolithic/run_002/adjudication_submitted_v1.csv",
+    "sha256": "7fc0b201674dba9829502c1f968b310dab16d4eac7de4db72db81afc5c218525"
+  },
+  "annotation_packet_freeze": {
+    "bytes": 2472,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/private_annotation_packet_freeze_v1.json",
+    "sha256": "6d0d51f2087ab5afd46a8b80ea42aecb009606435770d9fb839e1fb145091ccc"
+  },
+  "annotator_A_submission": {
+    "bytes": 241511,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_submissions_monolithic/run_002/annotator_A_submitted_v1.csv",
+    "sha256": "2b401bae0800cf1069042654901dc094c2d1ebcd7ed5d22953e20a35062d028c"
+  },
+  "annotator_B_submission": {
+    "bytes": 220620,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_submissions_monolithic/run_002/annotator_B_submitted_v1.csv",
+    "sha256": "a1e649caecdbdd8704a83bbdf5afc01a882a36dd65d473ebca2245954951ef38"
+  },
+  "blind_consensus": {
+    "A_B_agreements": 1521,
+    "adjudicated_disagreements": 1839,
+    "bytes": 365582,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_consensus_monolithic/run_002/final_blind_consensus_labels_v1.csv",
+    "rows": 3360,
+    "sha256": "128de87bb9d1265d74699ec85df8e8ae5909986d5430ba42a3163182e6721176"
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_complete_blind_annotation_v1",
+  "frozen_at_utc": "2026-09-16",
+  "independent_verification": "PASS_INDEPENDENT_BLIND_CONSENSUS_VERIFICATION_3360_OF_3360",
+  "private_mapping_accessed_before_freeze": false,
+  "schema_version": 1,
+  "stage_state": {
+    "annotation_complete_and_frozen": true,
+    "intervention_analysis_executable": false,
+    "outcome_construction_executable": false,
+    "unblinding_executable": true
+  },
+  "stage_authorizations": {
+    "bytes": 1285,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/researcher_stage_authorizations_v1.json",
+    "sha256": "785154d4d7a8fc4470ddfab1987478fdc2235ce10375b1b288e5b7ea31aeb2cf"
+  },
+  "status": "FROZEN_PASS_COMPLETE_TWO_ANNOTATOR_BLIND_CONSENSUS_AND_ADJUDICATION"
+}
