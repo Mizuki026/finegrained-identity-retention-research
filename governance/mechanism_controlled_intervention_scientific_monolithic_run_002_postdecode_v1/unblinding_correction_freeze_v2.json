@@ -1,0 +1,18 @@
+{
+  "correction": "Retain final_reason_or_note for every frame, including all U reasons required by the frozen outcome protocol.",
+  "freeze_id": "controlled_lfe_projection_exchange_unblinding_v2",
+  "frozen_at_utc": "2026-09-16",
+  "independent_verification": "PASS_INDEPENDENT_CORRECTED_UNBLINDING_V2_VERIFICATION_3360_OF_3360",
+  "output": {
+    "U_reasons_retained": 625,
+    "bytes": 702686,
+    "directory_mode": "0500",
+    "file_mode": "0400",
+    "joined_rows": 3360,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_unblinded_monolithic/run_002_v2/unblinded_frame_labels_v2.csv",
+    "sha256": "219f7cb3e2ffb7ecd9053dee5af7de24c85edca00be0c9f3da61174527354285"
+  },
+  "schema_version": 2,
+  "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_CORRECTED_UNBLINDING_V2",
+  "v1_disposition": "PRESERVED_BUT_SUPERSEDED_NONAUTHORITATIVE_FOR_OUTCOME_DUE_TO_REASON_OMISSION"
+}
