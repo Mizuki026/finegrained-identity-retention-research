@@ -1,0 +1,27 @@
+{
+  "annotation_completion_freeze": {
+    "bytes": 2451,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/blind_annotation_completion_freeze_v1.json",
+    "sha256": "9168cc6b73fea5f2648f13fad6588c58264f12f349f780f7c514edbab4aba0a7"
+  },
+  "freeze_id": "controlled_lfe_projection_exchange_unblinding_v1",
+  "frozen_at_utc": "2026-09-16",
+  "independent_verification": "PASS_INDEPENDENT_UNBLINDING_VERIFICATION_3360_OF_3360",
+  "output": {
+    "bytes": 544807,
+    "directory_mode": "0500",
+    "file_mode": "0400",
+    "frames_per_trajectory_condition": 7,
+    "joined_rows": 3360,
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_private_annotation_unblinded_monolithic/run_002/unblinded_frame_labels_v1.csv",
+    "sha256": "06294c71ed9f3c06af77105e15f7368d7e794adfe3397215455223df2c880347",
+    "trajectory_condition_groups": 480
+  },
+  "schema_version": 1,
+  "stage_state": {
+    "intervention_analysis_executable": false,
+    "outcome_construction_executable": true,
+    "unblinding_complete_and_frozen": true
+  },
+  "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_UNBLINDING"
+}
