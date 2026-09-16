@@ -1,0 +1,36 @@
+{
+  "freeze_id": "controlled_lfe_projection_exchange_outcome_construction_v1",
+  "frozen_at_utc": "2026-09-16",
+  "independent_verification": "PASS_INDEPENDENT_OUTCOME_CONSTRUCTION_VERIFICATION_120_OF_120_ZERO_VALID_0",
+  "outputs": {
+    "condition_coverage_diagnostics": {"bytes": 625, "sha256": "949773ae1608e60cc59f5c1970f8ff1b0d57f4c6b943e9d32efb0d375572eaa4"},
+    "outcome_summary": {"bytes": 313, "sha256": "49be267d7905fea5465b252b7befc1eaf3c7b416d66db9f6ee36bf7b39df8615"},
+    "unit_condition_outcomes": {"bytes": 10914, "sha256": "f8813883d67b36de56bbbb68fe325229147f73911c14f33e52bace8f7650cd02"},
+    "unobservable_reason_counts": {"bytes": 1065, "sha256": "2cf294933468d0704fe7f5ba7f1f584487a8d4efe57e2dd18680505f2c4abd54"}
+  },
+  "runtime": {
+    "directory_mode": "0555",
+    "file_modes": "0444",
+    "path": "/root/autodl-tmp/finegrained/mechanism_controlled_intervention_v1_scientific_outcomes_monolithic/run_002"
+  },
+  "schema_version": 1,
+  "stage_state": {
+    "intervention_analysis_executable": true,
+    "outcome_construction_complete_and_frozen": true
+  },
+  "status": "FROZEN_PASS_COMPLETE_INDEPENDENTLY_VERIFIED_OUTCOME_CONSTRUCTION",
+  "unblinding_v2_freeze": {
+    "bytes": 943,
+    "path": "governance/mechanism_controlled_intervention_scientific_monolithic_run_002_postdecode_v1/unblinding_correction_freeze_v2.json",
+    "sha256": "fd5eb7935dd8bd6096f0f6e53b2e0154149aafc9b8b44a041b9c7ce73043ff7c"
+  },
+  "verified": {
+    "frame_labels": 3360,
+    "imputation": false,
+    "planned_states_per_score": 28,
+    "reduced_panel": false,
+    "unit_condition_scores": 120,
+    "unobservable_states_retained": 625,
+    "zero_valid_scores": 0
+  }
+}
