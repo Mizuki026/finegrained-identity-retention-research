@@ -1,0 +1,9 @@
+item_id,type,title,input_artifact,script_or_source,output_path,output_sha256,boundary
+F-M3-001,figure,Auditable evidence ladder,"Frozen protocols plus manuscript structure",make_figures.py,paper/manuscript/v3/figures/audit_overview.pdf,c692f393275011908fa954fdee0c26a4b30c0f02af96478abd97e0bd40f1a352,"Presentation-only diagram; no new scientific result"
+F-M3-002,figure,All 20 preregistered pair effects,pair_effects_v1.csv,make_figures.py,paper/manuscript/v3/figures/pair_effects.pdf,ebf201493411f385ecaa48471e91d361d399bc301a78bf90cf9cefcbe7a53759,"Complete fixed panel; values are copied from frozen aggregate CSV"
+T-M3-001,table,Closed evidence windows,"Phase-S linkage and token-direction frozen summaries",main.tex,main.tex:tab:ladder,not_applicable,"Stage-specific descriptive boundaries"
+T-M3-002,table,Primary attribute summaries,attribute_primary_summary_v1.csv,main.tex,main.tex:tab:primary,not_applicable,"Ten pairs per attribute; no inferential statistics"
+T-M3-003,table,Complete eyeglasses pair family,pair_effects_v1.csv,supplementary.tex,supplementary.tex:tab:eye-all,not_applicable,"All ten pairs"
+T-M3-004,table,Complete facial-hair pair family,pair_effects_v1.csv,supplementary.tex,supplementary.tex:tab:hair-all,not_applicable,"All ten pairs"
+T-M3-005,table,Condition-level coverage,condition_coverage_diagnostics_v1.csv,supplementary.tex,supplementary.tex:tab:coverage,not_applicable,"U states retained without imputation"
+T-M3-006,table,Experimental lineage,"Frozen governance and runtime records",supplementary.tex,supplementary.tex:tab:lineage,not_applicable,"Historical failures are not reused"
